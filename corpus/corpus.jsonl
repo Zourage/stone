@@ -60,10 +60,10 @@
 {"id": "s0060", "en": "I compared this result with that one.", "st": "아 이 도 파 우 하 티왜타카", "features": ["direct", "past", "det", "obj", "with"], "split": "held"}
 {"id": "s0061", "en": "I measured the time.", "st": "아 유 파 소히타카", "features": ["direct", "past", "obj", "nominal-root"], "split": "train"}
 {"id": "s0062", "en": "It came out as this.", "st": "우 이 파 도타카", "features": ["direct", "past", "obj"], "split": "train"}
-{"id": "s0063", "en": "Wait for the result.", "st": "에 도 헤 로니카마", "features": ["direct", "intend", "imperative", "for", "nominal-root"], "split": "train"}
+{"id": "s0063", "en": "Wait for the result.", "st": "에 도 헤 로헤카마", "features": ["direct", "intend", "imperative", "for", "nominal-root"], "split": "train"}
 {"id": "s0064", "en": "Run the test.", "st": "에 와 파 다카마", "features": ["direct", "intend", "imperative", "obj", "nominal-root"], "split": "train"}
 {"id": "s0065", "en": "Read this file.", "st": "에 이 왜 파 데카마", "features": ["direct", "intend", "imperative", "det", "obj"], "split": "train"}
-{"id": "s0066", "en": "I waited.", "st": "아 로니타카", "features": ["direct", "past"], "split": "train"}
+{"id": "s0066", "en": "I waited.", "st": "아 로헤타카", "features": ["direct", "past"], "split": "train"}
 {"id": "s0067", "en": "Count the parts.", "st": "에 네쿠 파 수포카마", "features": ["direct", "intend", "imperative", "obj"], "split": "train"}
 {"id": "s0068", "en": "I counted the files.", "st": "아 왜 파 수포타카", "features": ["direct", "past", "obj"], "split": "train"}
 {"id": "s0069", "en": "Name the file.", "st": "에 왜 파 요카마", "features": ["direct", "intend", "imperative", "obj"], "split": "train"}
@@ -170,3 +170,23 @@
 {"id": "s0170", "en": "There are six machines.", "st": "포나 니포 얘카", "features": ["direct", "numeral", "det", "hold-exist"], "split": "train"}
 {"id": "s0171", "en": "I ran six of them.", "st": "아 포나 파 다타카", "features": ["direct", "past", "numeral", "obj"], "split": "train"}
 {"id": "s0172", "en": "Six parts are faulty, I gather.", "st": "포나 네쿠 노키", "features": ["inferred", "numeral", "det", "stative"], "split": "train"}
+{"id": "s0173", "en": "The result is three.", "st": "도 니카", "features": ["direct", "equative", "numeral"], "split": "train"}
+{"id": "s0174", "en": "The result was five, I'm told.", "st": "도 포타케", "features": ["reported", "past", "equative", "numeral"], "split": "train"}
+{"id": "s0175", "en": "The result must be ten.", "st": "도 푸키", "features": ["inferred", "equative", "numeral"], "split": "train"}
+{"id": "s0176", "en": "Is the result three?", "st": "도 니 추", "features": ["question", "equative", "numeral"], "split": "train"}
+{"id": "s0177", "en": "The result is not three.", "st": "도 니루카", "features": ["direct", "neg", "equative", "numeral"], "split": "held"}
+{"id": "s0178", "en": "What is the result?", "st": "도 야 추", "features": ["question", "q-what", "equative"], "split": "train"}
+{"id": "s0179", "en": "This is the cause.", "st": "이 대카", "features": ["direct", "equative"], "split": "train"}
+{"id": "s0180", "en": "That is not the cause. I looked.", "st": "우 대루카", "features": ["direct", "neg", "equative"], "split": "train"}
+{"id": "s0181", "en": "This is a fault, not a failure.", "st": "이 노카 이 누루카", "features": ["direct", "neg", "equative"], "split": "train"}
+{"id": "s0182", "en": "That was a mistake, I gather.", "st": "우 내타키", "features": ["inferred", "past", "equative"], "split": "train"}
+{"id": "s0183", "en": "This is a test.", "st": "이 와카", "features": ["direct", "equative"], "split": "train"}
+{"id": "s0184", "en": "This thing is a machine.", "st": "이 토 니포카", "features": ["direct", "equative", "det"], "split": "held"}
+{"id": "s0185", "en": "Is this a part?", "st": "이 네쿠 추", "features": ["question", "equative"], "split": "train"}
+{"id": "s0186", "en": "What is this?", "st": "이 야 추", "features": ["question", "q-what", "equative"], "split": "train"}
+{"id": "s0187", "en": "Who is that?", "st": "우 야 예 추", "features": ["question", "q-who", "equative", "det"], "split": "train"}
+{"id": "s0188", "en": "The file's name is this.", "st": "왜 피 요 이카", "features": ["direct", "poss", "equative"], "split": "train"}
+{"id": "s0189", "en": "Its name is that, I'm told.", "st": "우 피 요 우케", "features": ["reported", "poss", "equative"], "split": "held"}
+{"id": "s0190", "en": "What is the file's name?", "st": "왜 피 요 야 추", "features": ["question", "q-what", "poss", "equative"], "split": "train"}
+{"id": "s0191", "en": "The cause is the fault. That's known.", "st": "대 노코", "features": ["general", "equative"], "split": "train"}
+{"id": "s0192", "en": "The number is the result.", "st": "수포 도카", "features": ["direct", "equative"], "split": "train"}

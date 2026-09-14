@@ -13,7 +13,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
-- Words enter only via `scripts/validate.py --add`; run `scripts/validate.py` before every commit. (rules 4, 6)
+- Words enter only via `scripts/validate.py --add`; run `scripts/validate.py` before every commit. Multi-syllable forms are rejected if they are Korean words (`data/ko_frequency.json`). (rules 4, 6; D55)
 - Codepoints: BMP PUA is stripped by Claude's input pipeline (D20); Yi Syllables trip a content classifier on the chat surface (D52). Neither is usable.
 
 ## Open
@@ -30,7 +30,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Syllable budget: 66 of 74 single syllables used; 8 left, all reserve. Glyph identity changed in D52; every word kept its sound. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus
-- 172 sentences, 21 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. (D43, D46, D47, D49, D51)
+- 192 sentences, 24 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. Equatives = second term takes the verb ending; no copula. (D43, D46, D47, D49, D51, D56)
 
 ## Next
-Decide equatives. Then coin from corpus need: sentences the two of you would say about code and experiments, roots coined two syllables each. Fill coverage to D11's targets; re-test. Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.
+Coin from corpus need: sentences the two of you would say about code and experiments, roots coined two syllables each. Fill coverage to D11's targets; re-test. Open grammar: valency (passive), plural marking without a numeral.

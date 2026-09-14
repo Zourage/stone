@@ -7,6 +7,7 @@ Implemented now (spec/codepoints.json exists, D28):
   - form length 1-3 syllables (D37)
   - pos is one of the schema enum (D29, D33)
   - no Latin letters anywhere in `form` or `st` (CLAUDE.md rule 3)
+  - no form of 2+ syllables is a Korean word (data/ko_frequency.json; D13, D55)
 
 Corpus checks (D11, D15, D25, D43):
   - every `st` token is a known word: a func/root/num word alone, or a root
@@ -31,6 +32,7 @@ CODEPOINTS = {int(c, 16) for c in json.load(open(ROOT / "spec/codepoints.json"))
 SCHEMA = json.load(open(ROOT / "lexicon/schema.json"))
 POS = set(SCHEMA["properties"]["pos"]["enum"])
 LATIN = re.compile(r"[A-Za-z]")
+KO = json.load(open(ROOT / "data/ko_frequency.json", encoding="utf-8"))
 
 
 def check_script(s, where, errors):
@@ -51,6 +53,8 @@ def validate_entries(lex, errors):
         check_script(e["form"], e["id"], errors)
         if not 1 <= len(e["form"]) <= 3:
             errors.append(f"{e['id']}: form is {len(e['form'])} syllables, must be 1-3")
+        if len(e["form"]) >= 2 and e["form"] in KO:
+            errors.append(f"{e['id']}: form {e['form']!r} is a Korean word (frequency {KO[e['form']]}); recoin")
         if e["pos"] not in POS:
             errors.append(f"{e['id']}: pos {e['pos']!r} not in {sorted(POS)}")
         if e["form"] in forms:
@@ -114,7 +118,8 @@ def check_corpus(lex, errors):
                 seen.add(by_form[t]["id"])
                 continue
             root = next((t[:k] for k in range(len(t), 0, -1)
-                         if t[:k] in by_form and by_form[t[:k]]["pos"] == "root"), None)
+                         if t[:k] in by_form and by_form[t[:k]]["pos"] in ("root", "num")
+                         or t[:k] in by_form and by_form[t[:k]]["gloss"].startswith("pronoun")), None)
             if root is None:
                 errors.append(f"{s['id']}: token {t!r} is not a word (no known root prefix)")
                 continue
