@@ -42,3 +42,7 @@ Append-only. Newest at the bottom. Each entry: date, decision, why. Reversals ar
 - O3. Which semantic distinctions to build in (D12).
 - O4. Domain and size of the first vocabulary tranche.
 - O5. Teaching materials for the learner (what the second person studies from).
+
+## 2026-09-14 — Session 1 (Claude Code)
+
+**D17. Codepoint cost is measured as marginal tokens per glyph inside a run, not tokens of an isolated glyph.** `scripts/measure_codepoints.py` implemented: for each codepoint in U+E000–U+F8FF it sends a run of 16 copies to `count_tokens`, subtracts the empty-message baseline, and divides by 16. One request per codepoint, concurrent, resumable, written to `spec/codepoints_cost.json` cheapest-first. Rationale: BPE merges across neighbours, so a glyph's cost inside a word (the case that matters) differs from its cost alone; a run averages the boundary effects out. Not yet run — no API key in this environment. `--dry-run` produces a byte-count estimate marked `estimated: true` that must never be used for assignment.
