@@ -6,4 +6,4 @@ The primary artifact is `corpus/` — a parallel text (English ↔ stone) that s
 
 **Definition of done:** a fresh model session given only the corpus can translate held-out sentences correctly in both directions.
 
-Read `decisions.md` before doing anything. Append to it when you decide anything.
+Read `STATE.md` before doing anything; it points to the specs. `decisions.md` is the append-only history: append to it when you decide anything, then update `STATE.md`.

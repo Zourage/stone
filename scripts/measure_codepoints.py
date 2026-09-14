@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Measure token cost of PUA codepoints (D10).
+"""Measure token cost and visibility of codepoint blocks (D10, retired by D24).
 
-For each codepoint in a block, ask the Messages count_tokens endpoint how many
-tokens a run of that glyph costs, and record tokens per glyph. Output goes to
-spec/codepoints_cost.json sorted cheapest first, so syllables can be assigned
-to codepoints by frequency (most frequent syllable -> cheapest codepoint).
+History: written to assign syllables to the cheapest BMP PUA codepoints. The
+measurement showed the BMP PUA is stripped from Claude's input (D20, D21) and
+every usable block costs a flat rate (D22), so assignment is by seeded draw
+(scripts/assign_codepoints.py) and this script is kept as the measuring tool.
+
+For each codepoint in a block, count how many tokens a run of that glyph costs
+and record tokens per glyph. Output goes to spec/codepoints_cost*.json sorted
+cheapest first. Cost 0 means stripped: unusable, not cheap.
 
 Method
 ------
