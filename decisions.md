@@ -57,3 +57,5 @@ Append-only. Newest at the bottom. Each entry: date, decision, why. Reversals ar
 
 ### OPEN (added)
 - O6. Where glyphs live now that BMP PUA is invisible to Claude (D20): plane-15/16 PUA at a flat 4 tokens/glyph, or a reversal of D5/D6.
+
+**D21. Full BMP PUA histogram: 6400 of 6400 codepoints at cost 0.** `spec/codepoints_cost.json` now holds the complete measurement of U+E000–U+F8FF on Haiku 4.5 via OpenRouter (16-glyph runs, baseline 8 tokens, one request per codepoint). There is no cheapest range: the whole block, contiguous from U+E000 to U+F8FF with no surviving sub-range, is stripped before tokenization, so the file's `costs` table is empty and all 6400 codepoints sit under `stripped`. Nothing in this block may be used for assignment. The only measured usable PUA is planes 15 and 16 at a flat 4 tokens per glyph (D20); the D10 assignment step is moot there because every codepoint costs the same.
