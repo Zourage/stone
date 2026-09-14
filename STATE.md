@@ -9,7 +9,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). A pronoun, the interrogative or a numeral before a root is a determiner. No adjectives, no adverbs. (D26, D29–D33, D44)
 - Evidentials, obligatory: direct, reported, inferred, general. Stance, optional: intend, predict, propose, trust, risk, assert. Tense: past, present unmarked, future (temporal only). (D30, D31, D34)
 - Semantic carving, `lexicon/README.md`: knowing ×3, error ×3, asking ×3, change ×3; experiment/test/try = 1. (D35)
-- First tranche (D36): grammatical pieces, carves, inquiry core, statives, numerals, deixis all coined; 77 words. Remaining roots of the 150 are coined from corpus need.
+- Target: 300 lexicon entries (D54); 77 today. New roots are two syllables, coined from corpus need, checked against Korean for collisions. Corpus grows alongside to ~1000 sentences for coverage.
 
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
