@@ -1,6 +1,3 @@
 # Font
 
-Glyphs as SVG in `glyphs/`, one file per syllable named by codepoint (e.g. `A0C4.svg`; the 74 are in `spec/codepoints.json`).
-`build.py` assembles them into `stone.ttf` with fontTools, mapping each SVG to its Yi-block codepoint (D23). The real Yi glyph at that codepoint is only what shows when the font is missing.
-
-Blocked on spec/orthography.md.
+Not needed since D52: the glyphs are Hangul syllable blocks, rendered by every system font. This directory stays for an optional custom typeface over the same codepoints (D9), if one is ever wanted.

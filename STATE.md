@@ -4,7 +4,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## The language
 - Purpose: asking, code, discussion, engineering and science talk between two people; the corpus is its codex. (D1, D34)
-- Script: 74 syllable glyphs on Yi codepoints, `spec/codepoints.json`; sounds in `spec/phonology.md`; own glyphs to be designed, `spec/orthography.md`. 3 tokens per glyph. (D23, D28, D37)
+- Script: 74 syllable glyphs as Hangul blocks that spell their own sound (initial + vowel, no final), `spec/codepoints.json` from `scripts/compose_hangul.py`; sounds in `spec/phonology.md`. 1–3 tokens per glyph. Priors accepted and to be watched with the drift test. (D28, D37, D52)
 - No Latin form of any word exists anywhere. IPA describes sounds only. (CLAUDE.md rule 3)
 - Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). A pronoun, the interrogative or a numeral before a root is a determiner. No adjectives, no adverbs. (D26, D29–D33, D44)
 - Evidentials, obligatory: direct, reported, inferred, general. Stance, optional: intend, predict, propose, trust, risk, assert. Tense: past, present unmarked, future (temporal only). (D30, D31, D34)
@@ -14,7 +14,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
 - Words enter only via `scripts/validate.py --add`; run `scripts/validate.py` before every commit. (rules 4, 6)
-- Codepoints: BMP PUA is stripped by Claude's input pipeline; never use it. (D20)
+- Codepoints: BMP PUA is stripped by Claude's input pipeline (D20); Yi Syllables trip a content classifier on the chat surface (D52). Neither is usable.
 
 ## Open
 - O5 teaching materials (after corpus). O7 formal code register (later). Number marking and derivation suffixes: decide when roots need them.
@@ -27,7 +27,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
 - 20 inquiry-core roots, w0039–w0058: one interrogative root does all question words; number/count is one root. (D45)
 - 19 more, w0059–w0077: 7 statives (different/false/broken are negations or fault), before/after, numerals 1–10 with quinary 6–9 and a ten rule. Deixis = pronoun + location/time. (D48)
-- Syllable budget: 66 of 74 single syllables used; 8 left, all reserve. New roots are two syllables unless a reserve syllable is spent by decision.
+- Syllable budget: 66 of 74 single syllables used; 8 left, all reserve. Glyph identity changed in D52; every word kept its sound. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus
 - 164 sentences, 21 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. (D43, D46, D47, D49, D51)

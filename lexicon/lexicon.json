@@ -1,6 +1,6 @@
 [
  {
-  "form": "ꍲ",
+  "form": "카",
   "pos": "affix",
   "gloss": "evidential: direct",
   "sense_notes": "Speaker witnessed it. Mandatory slot; scopes over negation (D30).",
@@ -8,7 +8,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꆜ",
+  "form": "케",
   "pos": "affix",
   "gloss": "evidential: reported",
   "sense_notes": "Speaker was told it. Source is someone else's statement.",
@@ -16,7 +16,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꀗ",
+  "form": "키",
   "pos": "affix",
   "gloss": "evidential: inferred",
   "sense_notes": "Speaker reasoned it out from evidence, did not witness it.",
@@ -24,7 +24,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꇳ",
+  "form": "코",
   "pos": "affix",
   "gloss": "evidential: general",
   "sense_notes": "Known without a source: definition, convention, common knowledge.",
@@ -32,7 +32,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈷ",
+  "form": "마",
   "pos": "affix",
   "gloss": "stance: intend",
   "sense_notes": "Speaker is committed to doing it. The commitment half of English 'will' (D31).",
@@ -40,7 +40,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉇ",
+  "form": "매",
   "pos": "affix",
   "gloss": "stance: predict",
   "sense_notes": "Speaker expects it, without commitment. The prediction half of English 'will'.",
@@ -48,7 +48,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋴ",
+  "form": "메",
   "pos": "affix",
   "gloss": "stance: propose",
   "sense_notes": "Offered for testing or discussion, not claimed. A hypothesis, never a finding (D34).",
@@ -56,7 +56,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꊓ",
+  "form": "미",
   "pos": "affix",
   "gloss": "stance: trust",
   "sense_notes": "Speaker relies on it as an assumption; the thing being built on.",
@@ -64,7 +64,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꂅ",
+  "form": "모",
   "pos": "affix",
   "gloss": "stance: risk",
   "sense_notes": "Speaker knows it may go wrong and says so.",
@@ -72,7 +72,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎽ",
+  "form": "무",
   "pos": "affix",
   "gloss": "stance: assert",
   "sense_notes": "Speaker insists, against pushback. Carries emphasis (D32).",
@@ -80,7 +80,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋣ",
+  "form": "타",
   "pos": "affix",
   "gloss": "tense: past",
   "sense_notes": "Before now. Present is unmarked.",
@@ -88,7 +88,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꐃ",
+  "form": "투",
   "pos": "affix",
   "gloss": "tense: future",
   "sense_notes": "After now, strictly temporal; intention and prediction are stance (D31).",
@@ -96,7 +96,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꃿ",
+  "form": "루",
   "pos": "affix",
   "gloss": "negation",
   "sense_notes": "Piece of the verb ending, before tense. Evidential scopes over it (D32).",
@@ -104,7 +104,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꁋ",
+  "form": "디",
   "pos": "affix",
   "gloss": "subordinator",
   "sense_notes": "Last piece of the embedded verb's ending; makes a clause a complement or a relative clause (D33).",
@@ -112,7 +112,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꏡ",
+  "form": "파",
   "pos": "func",
   "gloss": "case: object",
   "sense_notes": "On the argument acted on. Subject is bare.",
@@ -120,7 +120,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꑚ",
+  "form": "페",
   "pos": "func",
   "gloss": "case: location",
   "sense_notes": "On the argument that is a place, source or goal of location.",
@@ -128,7 +128,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꑅ",
+  "form": "피",
   "pos": "func",
   "gloss": "case: possessor",
   "sense_notes": "On the possessor, which precedes the possessed.",
@@ -136,7 +136,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꑈ",
+  "form": "추",
   "pos": "func",
   "gloss": "question particle",
   "sense_notes": "Sentence-final. The answer supplies the evidential (D30, D33).",
@@ -144,7 +144,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꀃ",
+  "form": "아",
   "pos": "func",
   "gloss": "pronoun: I",
   "sense_notes": "Speaker. Takes case markers, nothing else.",
@@ -152,7 +152,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋌ",
+  "form": "에",
   "pos": "func",
   "gloss": "pronoun: you",
   "sense_notes": "Addressee.",
@@ -160,7 +160,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎿ",
+  "form": "이",
   "pos": "func",
   "gloss": "pronoun: this one",
   "sense_notes": "Near or just mentioned; person or thing. No gender, no animacy.",
@@ -168,7 +168,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꍋ",
+  "form": "우",
   "pos": "func",
   "gloss": "pronoun: that one",
   "sense_notes": "Far or earlier mentioned; person or thing.",
@@ -176,7 +176,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꀚ",
+  "form": "하",
   "pos": "func",
   "gloss": "relational: with",
   "sense_notes": "Accompaniment or instrument. Separate word after its argument.",
@@ -184,7 +184,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈝ",
+  "form": "헤",
   "pos": "func",
   "gloss": "relational: for",
   "sense_notes": "Beneficiary or purpose.",
@@ -192,7 +192,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꆇ",
+  "form": "호",
   "pos": "func",
   "gloss": "relational: from",
   "sense_notes": "Origin, cause or source, when the location case is not enough.",
@@ -200,7 +200,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈆ",
+  "form": "사",
   "pos": "root",
   "gloss": "know by test",
   "sense_notes": "Knowing carve, side 1 of 3: known because it was tried or observed to hold. Not by definition (side 2), not belief (side 3). As an argument: a tested fact.",
@@ -208,7 +208,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎝ",
+  "form": "세",
   "pos": "root",
   "gloss": "know by definition",
   "sense_notes": "Knowing carve, side 2 of 3: known because that is what the word, rule or convention says. Not tested, not believed. As an argument: a definition, a convention.",
@@ -216,7 +216,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꊂ",
+  "form": "시",
   "pos": "root",
   "gloss": "know by belief",
   "sense_notes": "Knowing carve, side 3 of 3: held to be so without test or definition. Covers English believe, assume, take for granted. As an argument: a belief.",
@@ -224,7 +224,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꊶ",
+  "form": "내",
   "pos": "root",
   "gloss": "mistake",
   "sense_notes": "Error carve, side 1 of 3: a wrong act by someone. The person erred. Not the fault it may have left in the thing (side 2), not what happened at run time (side 3).",
@@ -232,7 +232,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꄂ",
+  "form": "노",
   "pos": "root",
   "gloss": "fault",
   "sense_notes": "Error carve, side 2 of 3: a wrong state in the thing itself, present whether or not anything has gone wrong yet. English bug, defect. Verbal: to be faulty.",
@@ -240,7 +240,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꊖ",
+  "form": "누",
   "pos": "root",
   "gloss": "failure",
   "sense_notes": "Error carve, side 3 of 3: something went wrong when it ran or was used. The event, not its cause. English crash, fail, error at run time. Verbal: to fail.",
@@ -248,7 +248,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꁽ",
+  "form": "차",
   "pos": "root",
   "gloss": "ask for information",
   "sense_notes": "Asking carve, side 1 of 3: a request to be told something. Same consonant family as the question particle. Not a request for action (side 2), not a check (side 3).",
@@ -256,7 +256,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꇏ",
+  "form": "체",
   "pos": "root",
   "gloss": "ask for action",
   "sense_notes": "Asking carve, side 2 of 3: a request that someone do something. English please, could you, request. Never a question about facts.",
@@ -264,7 +264,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꐼ",
+  "form": "치",
   "pos": "root",
   "gloss": "check an assumption",
   "sense_notes": "Asking carve, side 3 of 3: asking whether something taken as so actually holds. English confirm, verify with someone, sanity-check. The answer is a stance or evidential.",
@@ -272,7 +272,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꄩ",
+  "form": "라",
   "pos": "root",
   "gloss": "fix",
   "sense_notes": "Change carve, side 1 of 3: change what is broken so that it works. Presupposes a fault or failure. Not alter (side 2), not build (side 3).",
@@ -280,7 +280,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꃃ",
+  "form": "레",
   "pos": "root",
   "gloss": "alter",
   "sense_notes": "Change carve, side 2 of 3: change what already works into something else that works. English modify, update, refactor, tweak. Nothing was broken.",
@@ -288,7 +288,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꇲ",
+  "form": "리",
   "pos": "root",
   "gloss": "build",
   "sense_notes": "Change carve, side 3 of 3: bring into existence what was not there. English make, create, write from scratch, implement. As an argument: a thing built.",
@@ -296,7 +296,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎵ",
+  "form": "와",
   "pos": "root",
   "gloss": "experiment, test, try",
   "sense_notes": "Lumped root (D35): the act of doing something in order to observe what happens. One root for lab experiment, unit test, and trying a thing to see. The evidential carries the result. As an argument: a test, an experiment, an attempt.",
@@ -304,7 +304,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꅽ",
+  "form": "야",
   "pos": "root",
   "gloss": "what, which",
   "sense_notes": "The one interrogative root. Bare: what. Before a root as a determiner: which (D44). With location case: where. With 'for': why. With 'with': how, by what means. With the time root: when. With the person root: who. There are no other question words.",
@@ -312,7 +312,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꌑ",
+  "form": "예",
   "pos": "root",
   "gloss": "person",
   "sense_notes": "A human. Verbal use: to be a person, to be someone. With the interrogative before it: who.",
@@ -320,7 +320,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꅍ",
+  "form": "다",
   "pos": "root",
   "gloss": "run",
   "sense_notes": "Make something go: execute a program, start a process, operate a machine. Not moving on foot; that is not in the language yet.",
@@ -328,7 +328,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꃉ",
+  "form": "데",
   "pos": "root",
   "gloss": "read",
   "sense_notes": "Take in what is written or displayed. As an argument: a reading, a read.",
@@ -336,7 +336,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꃘ",
+  "form": "워",
   "pos": "root",
   "gloss": "write",
   "sense_notes": "Put down in writing or in code. As an argument: a piece of writing, code written.",
@@ -344,7 +344,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꁺ",
+  "form": "위",
   "pos": "root",
   "gloss": "look",
   "sense_notes": "Direct attention at; examine, inspect. Does not imply finding anything. As an argument: a look, an inspection.",
@@ -352,7 +352,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꏇ",
+  "form": "웨",
   "pos": "root",
   "gloss": "find",
   "sense_notes": "Locate or discover what was looked for or not. Implies success. As an argument: a finding.",
@@ -360,7 +360,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꊴ",
+  "form": "토",
   "pos": "root",
   "gloss": "thing",
   "sense_notes": "Any entity, abstract or concrete. The default noun; use a narrower root when one exists.",
@@ -368,7 +368,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꍑ",
+  "form": "대",
   "pos": "root",
   "gloss": "cause",
   "sense_notes": "What brings something about. Verbal use: to cause. Paired with result.",
@@ -376,7 +376,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꏔ",
+  "form": "도",
   "pos": "root",
   "gloss": "result",
   "sense_notes": "What is brought about; an outcome, output, the value a test gives. Verbal use: to result, to come out as.",
@@ -384,7 +384,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋪ",
+  "form": "유",
   "pos": "root",
   "gloss": "time",
   "sense_notes": "A point or stretch of time. With the interrogative before it: when. Verbal use: to take time, to last.",
@@ -392,7 +392,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꏟ",
+  "form": "요",
   "pos": "root",
   "gloss": "name",
   "sense_notes": "Identifier of a thing or person: a name, a label, a variable name. Verbal use: to name, to call.",
@@ -400,7 +400,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꌇ",
+  "form": "왜",
   "pos": "root",
   "gloss": "file",
   "sense_notes": "A document or file on a machine; also a page of text. Verbal use: to file, to save as a file.",
@@ -408,7 +408,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꑜꌇ",
+  "form": "티왜",
   "pos": "root",
   "gloss": "compare",
   "sense_notes": "Set two or more things side by side to see how they differ or agree. As an argument: a comparison.",
@@ -416,7 +416,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꐎꄀ",
+  "form": "소히",
   "pos": "root",
   "gloss": "measure",
   "sense_notes": "Find how much or how big by a procedure with a unit. As an argument: a measurement, a measure.",
@@ -424,7 +424,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉉꉍ",
+  "form": "로니",
   "pos": "root",
   "gloss": "wait",
   "sense_notes": "Let time pass until something happens. As an argument: a wait, a delay.",
@@ -432,7 +432,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋆꌱ",
+  "form": "네쿠",
   "pos": "root",
   "gloss": "part",
   "sense_notes": "A component of a larger thing. Verbal use: to be part of.",
@@ -440,7 +440,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꁀꎏ",
+  "form": "수포",
   "pos": "root",
   "gloss": "number, count",
   "sense_notes": "One root: nominal use is a number or quantity, verbal use is to count. English splits these; the language does not (D25).",
@@ -448,7 +448,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈺꃎ",
+  "form": "후태",
   "pos": "root",
   "gloss": "place",
   "sense_notes": "A location, physical or in a file or system. With the interrogative before it: where. Verbal use: to be located at, to put.",
@@ -456,7 +456,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉍꎏ",
+  "form": "니포",
   "pos": "root",
   "gloss": "machine",
   "sense_notes": "A computer, device or mechanism that runs. Verbal use: to be mechanical, to run automatically.",
@@ -464,7 +464,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꃎ",
+  "form": "태",
   "pos": "root",
   "gloss": "big",
   "sense_notes": "Large in size, amount or importance. Stative: 'the file bigs' = the file is big. Small is its own root, not big-NEG.",
@@ -472,7 +472,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꄾ",
+  "form": "테",
   "pos": "root",
   "gloss": "small",
   "sense_notes": "Little in size, amount or importance. Own root; not-big is weaker than small.",
@@ -480,7 +480,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉉ",
+  "form": "로",
   "pos": "root",
   "gloss": "good",
   "sense_notes": "Good for its purpose; working well; approved of. Stative. As an argument: a good, a benefit.",
@@ -488,7 +488,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꂂ",
+  "form": "래",
   "pos": "root",
   "gloss": "bad",
   "sense_notes": "Bad for its purpose; working badly; disapproved of. Own root; not-good is weaker than bad.",
@@ -496,7 +496,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈗ",
+  "form": "두",
   "pos": "root",
   "gloss": "same",
   "sense_notes": "Identical or equivalent to the thing compared with ('with'). Different = same-NEG; there is no separate root (D25).",
@@ -504,7 +504,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꂸ",
+  "form": "얘",
   "pos": "root",
   "gloss": "true, hold",
   "sense_notes": "Is the case; holds. False = true-NEG; there is no separate root (D25). As an argument: a truth, a fact that holds.",
@@ -512,7 +512,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉏ",
+  "form": "초",
   "pos": "root",
   "gloss": "done",
   "sense_notes": "Finished, complete. Stative. Not-done = still in progress. Broken is not a root: use fault verbally (D35).",
@@ -520,7 +520,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꄀ",
+  "form": "히",
   "pos": "func",
   "gloss": "relational: before",
   "sense_notes": "Earlier than its argument, in time or in order. After its argument like the other relational words. 'this time before' = before now.",
@@ -528,7 +528,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꈺ",
+  "form": "후",
   "pos": "func",
   "gloss": "relational: after",
   "sense_notes": "Later than its argument, in time or in order. 'test after' = after the test.",
@@ -536,7 +536,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꏆ",
+  "form": "나",
   "pos": "num",
   "gloss": "one",
   "sense_notes": "Numeral 1. Numerals stand before the root they count, like determiners (D44, D48).",
@@ -544,7 +544,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋆ",
+  "form": "네",
   "pos": "num",
   "gloss": "two",
   "sense_notes": "Numeral 2.",
@@ -552,7 +552,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꉍ",
+  "form": "니",
   "pos": "num",
   "gloss": "three",
   "sense_notes": "Numeral 3.",
@@ -560,7 +560,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꁇ",
+  "form": "패",
   "pos": "num",
   "gloss": "four",
   "sense_notes": "Numeral 4.",
@@ -568,7 +568,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎏ",
+  "form": "포",
   "pos": "num",
   "gloss": "five",
   "sense_notes": "Numeral 5. Base of 6-9: five-one, five-two, five-three, five-four, written solid.",
@@ -576,7 +576,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꋁ",
+  "form": "푸",
   "pos": "num",
   "gloss": "ten",
   "sense_notes": "Numeral 10. A numeral before ten multiplies it, anything after adds: two-ten = 20, ten-five = 15, two-ten-five-one = 26.",
@@ -584,7 +584,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎏꏆ",
+  "form": "포나",
   "pos": "num",
   "gloss": "six",
   "sense_notes": "5+1, written solid. Composed, but listed so the corpus can count it.",
@@ -592,7 +592,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎏꋆ",
+  "form": "포네",
   "pos": "num",
   "gloss": "seven",
   "sense_notes": "5+2, written solid.",
@@ -600,7 +600,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎏꉍ",
+  "form": "포니",
   "pos": "num",
   "gloss": "eight",
   "sense_notes": "5+3, written solid.",
@@ -608,7 +608,7 @@
   "added": "2026-09-14"
  },
  {
-  "form": "ꎏꁇ",
+  "form": "포패",
   "pos": "num",
   "gloss": "nine",
   "sense_notes": "5+4, written solid.",
