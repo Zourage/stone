@@ -462,5 +462,157 @@
   "sense_notes": "A computer, device or mechanism that runs. Verbal use: to be mechanical, to run automatically.",
   "id": "w0058",
   "added": "2026-09-14"
+ },
+ {
+  "form": "ꃎ",
+  "pos": "root",
+  "gloss": "big",
+  "sense_notes": "Large in size, amount or importance. Stative: 'the file bigs' = the file is big. Small is its own root, not big-NEG.",
+  "id": "w0059",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꄾ",
+  "pos": "root",
+  "gloss": "small",
+  "sense_notes": "Little in size, amount or importance. Own root; not-big is weaker than small.",
+  "id": "w0060",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉉ",
+  "pos": "root",
+  "gloss": "good",
+  "sense_notes": "Good for its purpose; working well; approved of. Stative. As an argument: a good, a benefit.",
+  "id": "w0061",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꂂ",
+  "pos": "root",
+  "gloss": "bad",
+  "sense_notes": "Bad for its purpose; working badly; disapproved of. Own root; not-good is weaker than bad.",
+  "id": "w0062",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꈗ",
+  "pos": "root",
+  "gloss": "same",
+  "sense_notes": "Identical or equivalent to the thing compared with ('with'). Different = same-NEG; there is no separate root (D25).",
+  "id": "w0063",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꂸ",
+  "pos": "root",
+  "gloss": "true, hold",
+  "sense_notes": "Is the case; holds. False = true-NEG; there is no separate root (D25). As an argument: a truth, a fact that holds.",
+  "id": "w0064",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉏ",
+  "pos": "root",
+  "gloss": "done",
+  "sense_notes": "Finished, complete. Stative. Not-done = still in progress. Broken is not a root: use fault verbally (D35).",
+  "id": "w0065",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꄀ",
+  "pos": "func",
+  "gloss": "relational: before",
+  "sense_notes": "Earlier than its argument, in time or in order. After its argument like the other relational words. 'this time before' = before now.",
+  "id": "w0066",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꈺ",
+  "pos": "func",
+  "gloss": "relational: after",
+  "sense_notes": "Later than its argument, in time or in order. 'test after' = after the test.",
+  "id": "w0067",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꏆ",
+  "pos": "num",
+  "gloss": "one",
+  "sense_notes": "Numeral 1. Numerals stand before the root they count, like determiners (D44, D48).",
+  "id": "w0068",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋆ",
+  "pos": "num",
+  "gloss": "two",
+  "sense_notes": "Numeral 2.",
+  "id": "w0069",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉍ",
+  "pos": "num",
+  "gloss": "three",
+  "sense_notes": "Numeral 3.",
+  "id": "w0070",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꁇ",
+  "pos": "num",
+  "gloss": "four",
+  "sense_notes": "Numeral 4.",
+  "id": "w0071",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎏ",
+  "pos": "num",
+  "gloss": "five",
+  "sense_notes": "Numeral 5. Base of 6-9: five-one, five-two, five-three, five-four, written solid.",
+  "id": "w0072",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋁ",
+  "pos": "num",
+  "gloss": "ten",
+  "sense_notes": "Numeral 10. A numeral before ten multiplies it, anything after adds: two-ten = 20, ten-five = 15, two-ten-five-one = 26.",
+  "id": "w0073",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎏꏆ",
+  "pos": "num",
+  "gloss": "six",
+  "sense_notes": "5+1, written solid. Composed, but listed so the corpus can count it.",
+  "id": "w0074",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎏꋆ",
+  "pos": "num",
+  "gloss": "seven",
+  "sense_notes": "5+2, written solid.",
+  "id": "w0075",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎏꉍ",
+  "pos": "num",
+  "gloss": "eight",
+  "sense_notes": "5+3, written solid.",
+  "id": "w0076",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎏꁇ",
+  "pos": "num",
+  "gloss": "nine",
+  "sense_notes": "5+4, written solid.",
+  "id": "w0077",
+  "added": "2026-09-14"
  }
 ]

@@ -12,8 +12,11 @@ Decided (D31): three-way tense, present unmarked, future strictly temporal (stan
 Decided (D32): negation is a piece of the verb ending. Ending order: root, negation, tense, evidential; only the evidential is mandatory.
 Decided (D33): closed function-word class: 3 case markers (object, location, possessor), 1 question particle, pronouns, a few relational words. Subordinator is the last piece of the verb ending.
 
-## Determiners (D44)
-A pronoun or the interrogative root directly before a root restricts it: this test, which machine. Case markers follow the phrase.
+## Determiners (D44, D48)
+A pronoun, the interrogative root or a numeral directly before a root restricts it: this test, which machine, three files. Case markers follow the phrase.
+
+## Deixis (D48)
+Here = this + location case; there = that + location; now = this + time; then = that + time. Before and after are relational words after their argument.
 
 ## Morphology (D29, D32, D33)
 Verb template: root, negation, tense, evidential, stance, subordinator. Only the evidential is mandatory. Arguments: bare, or root plus one case marker.
@@ -23,8 +26,8 @@ Past, present (unmarked), future. Future is temporal only. Aspect: none decided.
 Piece of the verb ending, before tense and evidential. Evidential scopes over it.
 ## Questions (D33, D45)
 Sentence-final particle; the evidential slot is empty and the answer supplies it. One interrogative root (w0039) does all question words: bare = what; as determiner = which; + location case = where; + for = why; + with = how; before time = when; before person = who.
-## Number
-Open. Decide when the first roots need it; leaning optional plural marking on the argument.
+## Number (D48)
+Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: still open.
 ## Possession (D33)
 Possessor case marker on the possessor, before the possessed.
 ## Subordination (D33)
