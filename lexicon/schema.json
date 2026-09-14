@@ -2,16 +2,60 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "stone lexicon entry",
   "type": "object",
-  "required": ["id", "form", "pos", "gloss", "added"],
+  "required": [
+    "id",
+    "form",
+    "pos",
+    "gloss",
+    "added"
+  ],
   "properties": {
-    "id": {"type": "string", "description": "stable id, e.g. w0001"},
-    "form": {"type": "string", "description": "the word, in script (PUA codepoints only)"},
-    "pos": {"type": "string", "enum": ["noun", "verb", "adj", "adv", "pron", "func", "affix", "num"]},
-    "gloss": {"type": "string", "description": "English meaning, with its boundaries stated"},
-    "sense_notes": {"type": "string", "description": "what this word covers that English/Persian words don't, and vice versa (D12)"},
-    "root": {"type": "string", "description": "id of the root if derived"},
-    "derivation": {"type": "string", "description": "which suffix/rule produced it"},
-    "examples": {"type": "array", "items": {"type": "string"}, "description": "corpus sentence ids where it appears"},
-    "added": {"type": "string", "format": "date"}
+    "id": {
+      "type": "string",
+      "description": "stable id, e.g. w0001"
+    },
+    "form": {
+      "type": "string",
+      "description": "the word, in script (PUA codepoints only)"
+    },
+    "pos": {
+      "type": "string",
+      "enum": [
+        "noun",
+        "verb",
+        "pron",
+        "func",
+        "affix",
+        "num"
+      ],
+      "description": "PROVISIONAL until O2 closes. No adj, no adv (D26). Whether noun/verb belongs on the root or the suffix is open (O2.i)."
+    },
+    "gloss": {
+      "type": "string",
+      "description": "English meaning, with its boundaries stated"
+    },
+    "sense_notes": {
+      "type": "string",
+      "description": "what this word covers that English/Persian words don't, and vice versa (D12)"
+    },
+    "root": {
+      "type": "string",
+      "description": "id of the root if derived"
+    },
+    "derivation": {
+      "type": "string",
+      "description": "which suffix/rule produced it"
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "corpus sentence ids where it appears"
+    },
+    "added": {
+      "type": "string",
+      "format": "date"
+    }
   }
 }

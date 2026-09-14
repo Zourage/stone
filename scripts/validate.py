@@ -9,6 +9,9 @@ Checks (D11, D15):
   - every feature tag appears in >=10 train sentences
   - every corpus `st` string uses only known words
   - held/train split ratio
+  - relexification (D25): flag sentences whose stone side matches the English
+    side in word count and order; fail if too many
+  - no `adj`/`adv` in pos (D26)
 
 --add: interactive path to add a lexicon entry through validation.
 
