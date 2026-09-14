@@ -26,12 +26,21 @@ Backends
 --------
   --backend anthropic   (default) Messages count_tokens; free; needs ANTHROPIC_API_KEY.
   --backend openrouter  OpenRouter has no count endpoint, so send a 1-token
-                        completion and read the NATIVE prompt token count from
-                        /api/v1/generation (OpenRouter's completion response
-                        reports a normalized count, not Anthropic's). Needs
-                        OPENROUTER_API_KEY. Whole PUA block on Haiku costs well
-                        under a dollar; the tokenizer is shared across Claude
-                        models, so Haiku's count is the count.
+                        completion with usage accounting on ("usage":
+                        {"include": true}); usage.prompt_tokens is then the
+                        provider's NATIVE count (verified against
+                        /api/v1/generation native_tokens_prompt; without usage
+                        accounting OpenRouter reports a normalized count, and
+                        the generation endpoint lags the completion by several
+                        seconds and 404s until then). Needs OPENROUTER_API_KEY.
+                        Whole BMP PUA block on Haiku costs well under a dollar;
+                        the tokenizer is shared across Claude models, so
+                        Haiku's count is the count.
+
+A cost of 0 means the codepoint was stripped from the input before
+tokenization: the model never sees it, so it is unusable, not cheap. The
+script counts these in meta.stripped_codepoints and excludes them from the
+"costs" table.
 
 --dry-run substitutes the UTF-8 byte count for a network call so the pipeline
 can be exercised offline; the file it writes is marked "estimated" and must not
@@ -50,7 +59,6 @@ from pathlib import Path
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages/count_tokens"
 ANTHROPIC_VERSION = "2023-06-01"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-OPENROUTER_GEN_URL = "https://openrouter.ai/api/v1/generation?id="
 DEFAULT_MODELS = {
     "anthropic": "claude-haiku-4-5-20251001",
     "openrouter": "anthropic/claude-haiku-4.5",
@@ -61,6 +69,8 @@ PREFIX = "."
 
 BLOCKS = {
     "pua": (0xE000, 0xF8FF),       # Basic Multilingual Plane Private Use Area
+    "pua-a": (0xF0000, 0xFFFFD),   # Supplementary Private Use Area-A (plane 15)
+    "pua-b": (0x100000, 0x10FFFD),  # Supplementary Private Use Area-B (plane 16)
     "hangul": (0xAC00, 0xD7A3),    # precomposed Hangul syllables (D6 experiment)
 }
 
@@ -113,12 +123,9 @@ def count_openrouter(text, model, api_key):
         "messages": [{"role": "user", "content": text}],
         "max_tokens": 1,
         "temperature": 0,
-    })
-    gen_id = out["id"]
-    # Generation stats lag the completion by a moment; retry until populated.
-    stats = http_json(OPENROUTER_GEN_URL + gen_id, auth,
-                      retry_on_missing=lambda o: not (o.get("data") or {}).get("native_tokens_prompt"))
-    return int(stats["data"]["native_tokens_prompt"])
+        "usage": {"include": True},
+    }, retry_on_missing=lambda o: "usage" not in o)
+    return int(out["usage"]["prompt_tokens"])
 
 
 def dry_count(text):
@@ -131,15 +138,21 @@ def load_existing(path, resume):
     if resume and path.exists():
         with path.open(encoding="utf-8") as f:
             data = json.load(f)
-        return {int(k, 16): v for k, v in data.get("costs", {}).items()}, data.get("meta", {})
+        costs = {int(k, 16): v for k, v in data.get("costs", {}).items()}
+        costs.update({int(k, 16): 0.0 for k in data.get("stripped", [])})
+        return costs, data.get("meta", {})
     return {}, {}
 
 
 def write(path, meta, costs):
     ordered = sorted(costs.items(), key=lambda kv: (kv[1], kv[0]))
+    stripped = [cp for cp, cost in ordered if cost <= 0]
     out = {
-        "meta": meta,
-        "costs": {f"{cp:04X}": cost for cp, cost in ordered},
+        "meta": {**meta, "stripped_codepoints": len(stripped),
+                 "stripped_note": "cost 0 = removed from the input before tokenization; "
+                                  "the model never sees the glyph. Unusable, not cheap."},
+        "costs": {f"{cp:04X}": cost for cp, cost in ordered if cost > 0},
+        "stripped": [f"{cp:04X}" for cp in stripped],
     }
     tmp = path.with_suffix(".json.tmp")
     with tmp.open("w", encoding="utf-8") as f:
@@ -156,13 +169,14 @@ def main():
     ap.add_argument("--repeats", type=int, default=16)
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--limit", type=int, default=0, help="measure only the first N codepoints (smoke test)")
+    ap.add_argument("--stride", type=int, default=1, help="measure every Nth codepoint (sampling a large block)")
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--no-resume", action="store_true", help="discard an existing output file")
     ap.add_argument("--dry-run", action="store_true", help="no network; byte-count estimate only")
     args = ap.parse_args()
 
     lo, hi = BLOCKS[args.block]
-    codepoints = list(range(lo, hi + 1))
+    codepoints = list(range(lo, hi + 1, args.stride))
     if args.limit:
         codepoints = codepoints[: args.limit]
 
@@ -176,6 +190,7 @@ def main():
     costs, meta = load_existing(args.out, resume=not args.no_resume)
     if costs and (meta.get("block") != args.block or meta.get("model") != model
                   or meta.get("repeats") != args.repeats or meta.get("estimated") != args.dry_run
+                  or meta.get("stride", 1) != args.stride
                   or meta.get("backend") != ("dry-run" if args.dry_run else args.backend)):
         print(f"{args.out} was produced with different settings; pass --no-resume or a different --out.",
               file=sys.stderr)
@@ -196,6 +211,7 @@ def main():
         "backend": "dry-run" if args.dry_run else args.backend,
         "model": model,
         "repeats": args.repeats,
+        "stride": args.stride,
         "estimated": args.dry_run,
         "unit": "tokens per glyph, marginal, inside a run of `repeats` copies",
         "baseline_tokens": base,
@@ -221,7 +237,7 @@ def main():
     hist = {}
     for c in costs.values():
         hist[c] = hist.get(c, 0) + 1
-    print("cost histogram (tokens/glyph: count):")
+    print("cost histogram (tokens/glyph: count; 0 = stripped, unusable):")
     for c in sorted(hist):
         print(f"  {c:.3f}: {hist[c]}")
     print(f"wrote {args.out}")
