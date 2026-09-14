@@ -1,6 +1,6 @@
 # Orthography
 
-Status: codepoint block decided (D23); glyph design open, blocked on phonology (O1).
+Status: codepoints drawn (D28) and paired to sounds (D37, see phonology.md); glyph design open (D9).
 
 ## Codepoint block (D23)
 Yi Syllables, U+A000–U+A48C. Three tokens per glyph, flat (D22). Real Yi letterforms are only the fallback rendering; our font maps each codepoint to our own glyph.

@@ -114,11 +114,21 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 ### OPEN (updated)
 - O2. Closed.
 - O3. Closed by D34, D35.
-- O4. First vocabulary tranche.
-- O5. Teaching materials.
-- O7. Formal code register, later.
-- Phonology (D8, D28): which consonants and vowels, the 74-syllable grid and its gaps, glyph-to-sound table. Next after O3, or in parallel; nothing in O3 depends on it.
+
+
+
+
 
 **D34. Purpose sharpened, and the stance slot: six optional markers.** The language is for asking, writing code, cultivating discussion, engineering and science talk, translatable through the corpus as its codex (D2). Stance markers, one per predicate, all optional, in a slot separate from the evidential (D30): intend (committed to doing), predict (expected, not committed), propose (offered for testing or discussion, not claimed), trust (relied on as an assumption), risk (known to be shaky), assert (insisted on). Propose is the one that serves the purpose most: a hypothesis is never mistaken for a finding, and a discussion is a series of proposals answered with evidentials. Intend and predict take the non-temporal half of English "will" (D31); assert takes emphasis (D32).
 
 **D35. First semantic carving.** Split, where English has one word, into two or three roots: knowing (by test, by definition or convention, by belief); error (a mistake made, a fault in the thing, a failure at run time); asking (for information, for action, to check an assumption); change (fix what is broken, alter what works, build what is new). Lumped, where English splits: experiment, test, try are one root, the act of doing and observing, with the evidential carrying the result. Silence (D12) deferred to a later, conversational tranche. O3 closes; the list grows under O4 as roots are coined, each addition logged.
+
+**D36. O4 closed: first tranche is 150 roots plus the grammatical pieces (~25).** Contents, in coining order: the grammatical pieces (4 evidentials, 6 stance, 2 tense, negation, subordinator, 3 case markers, question particle, pronouns, a few relational words), all one syllable; the D35 carves (12 roots); the inquiry core (question words; run, read, write, look, find, compare, measure, count, wait; thing, part, cause, result, number, time, place, name, file, machine); basic stative predicates (big, small, good, bad, same, different, true, false, done, broken); numbers one to ten with composition; deixis (this, that, here, there, now, then, before, after). Syllable budget (D13): grammatical pieces and the ~40 most frequent roots are one syllable, ~65 of 74; everything else two syllables; ~9 single syllables held in reserve for words that prove frequent in use. Corpus for this tranche: ~500 sentences at ≥3 contexts per word (D11). Coining runs through the validator and a wordlist collision check, one root at a time, in frequency order.
+
+**D37. Phonology.** 12 consonants /p t k m n s l ɾ h w j tʃ/, 6 vowels /a æ e i o u/, all native to both English and Persian speakers. 12 × 6 = 72 minus /wu/ and /ji/ (not reliably distinct from bare /u/, /i/ when subvocalized) plus 4 bare vowels /a e i u/ = 74 (D28). Syllable-to-glyph pairing is a seeded shuffle (seed 20260914) over the D23 draw, so the table in `spec/phonology.md` is in codepoint order and neither our grid nor Yi's phonetic order is recoverable from it. Words are 1–3 syllables.
+
+### OPEN (updated)
+- O4. Closed by D36. Coining begins next session: grammatical pieces first.
+- O5. Teaching materials. After the corpus exists.
+- O7. Formal code register. Later.
+- Grammar leftovers: number marking; derivation suffixes (D13), decided when the first roots need them.
