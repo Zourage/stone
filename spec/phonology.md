@@ -3,13 +3,34 @@
 Status: decided (D28, D37). Sounds described in IPA. This file describes how each glyph is pronounced; it is not a way of writing words (CLAUDE.md rule 3). Words are written only in the glyphs.
 
 ## Purpose (D8)
-A memory aid. The language is text-only; sounds exist so that words can be subvocalized and retained. Every sound below is in both an English and a Persian speaker's native inventory.
+A memory aid. The language is text-only; sounds exist so that words can be subvocalized and retained. Every sound below already exists in an English speaker's mouth (D40); the descriptions are keyed to English words.
 
 ## Consonants (12)
-/p t k m n s l ɾ h w j tʃ/. /ɾ/ is a tap, as in Persian or Spanish r. /tʃ/ is English "ch".
+| IPA | say it as | note |
+|---|---|---|
+| /p/ | p in "spin" | plain p |
+| /t/ | t in "stop" | plain t |
+| /k/ | k in "skip" | plain k |
+| /m/ | m in "me" | |
+| /n/ | n in "no" | |
+| /s/ | s in "see" | always s, never z |
+| /l/ | l in "leaf" | the light l at the start of a word, not the dark l of "full" |
+| /ɾ/ | the tt in American "butter", the dd in "ladder" | a single tap of the tongue; not the English r of "red" |
+| /h/ | h in "hat" | |
+| /w/ | w in "we" | |
+| /j/ | y in "yes" | |
+| /tʃ/ | ch in "chip" | |
 
 ## Vowels (6)
-/a æ e i o u/. /a/ as in "father", /æ/ as in "cat" (Persian short a), the rest as in Spanish.
+Every vowel is short and pure: one position of the mouth, no glide. This is the main thing an English speaker has to watch, since English "a", "o", "e" tend to slide.
+| IPA | say it as | watch for |
+|---|---|---|
+| /a/ | a in "father" | |
+| /æ/ | a in "cat" | |
+| /e/ | e in "bet" | not the "ay" of "bay" |
+| /i/ | ee in "see" | |
+| /o/ | the first part of "go", stopped before the lips close further | not "oh-oo" |
+| /u/ | oo in "food" | |
 
 ## Syllable structure
 CV and V only. No codas, no clusters. Every syllable is one glyph. A word is 1–3 syllables; grammatical pieces and the most frequent roots are 1 syllable (D13, D36).
