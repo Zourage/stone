@@ -162,3 +162,11 @@
 {"id": "s0162", "en": "I got the file from you.", "st": "아 왜 파 에 호 웨타카", "features": ["direct", "past", "from", "obj"], "split": "train"}
 {"id": "s0163", "en": "The result comes from the test.", "st": "도 와 호 도코", "features": ["general", "from", "nominal-root"], "split": "held"}
 {"id": "s0164", "en": "It failed from that fault, I gather.", "st": "우 우 노 호 누타키", "features": ["inferred", "past", "from", "det"], "split": "train"}
+{"id": "s0165", "en": "Compare the two files.", "st": "에 네 왜 파 티왜카마", "features": ["direct", "intend", "imperative", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0166", "en": "I compared the results. They are the same.", "st": "아 도 파 티왜타카 우 두카", "features": ["direct", "past", "obj", "stative"], "split": "train"}
+{"id": "s0167", "en": "Did you compare this with that?", "st": "에 이 파 우 하 티왜타 추", "features": ["question", "past", "obj", "with"], "split": "train"}
+{"id": "s0168", "en": "The machine compared them, I'm told.", "st": "니포 우 파 티왜타케", "features": ["reported", "past", "obj"], "split": "train"}
+{"id": "s0169", "en": "Six tests failed.", "st": "포나 와 누타카", "features": ["direct", "past", "numeral", "det"], "split": "train"}
+{"id": "s0170", "en": "There are six machines.", "st": "포나 니포 얘카", "features": ["direct", "numeral", "det", "hold-exist"], "split": "train"}
+{"id": "s0171", "en": "I ran six of them.", "st": "아 포나 파 다타카", "features": ["direct", "past", "numeral", "obj"], "split": "train"}
+{"id": "s0172", "en": "Six parts are faulty, I gather.", "st": "포나 네쿠 노키", "features": ["inferred", "numeral", "det", "stative"], "split": "train"}
