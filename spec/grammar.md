@@ -1,6 +1,6 @@
 # Grammar
 
-Status: OPEN (O2, O3). Scaffolding for corpus construction; the corpus is authoritative.
+Status: O2 closed (D26, D29–D33). Open: number, derivation suffixes, stance (O3), forms (phonology). Scaffolding for corpus construction; the corpus is authoritative.
 
 ## Word order (D33)
 Subject, object, verb. Subject bare; object case-marked.
