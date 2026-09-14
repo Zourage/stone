@@ -198,5 +198,109 @@
   "sense_notes": "Origin, cause or source, when the location case is not enough.",
   "id": "w0025",
   "added": "2026-09-14"
+ },
+ {
+  "form": "ꈆ",
+  "pos": "root",
+  "gloss": "know by test",
+  "sense_notes": "Knowing carve, side 1 of 3: known because it was tried or observed to hold. Not by definition (side 2), not belief (side 3). As an argument: a tested fact.",
+  "id": "w0026",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎝ",
+  "pos": "root",
+  "gloss": "know by definition",
+  "sense_notes": "Knowing carve, side 2 of 3: known because that is what the word, rule or convention says. Not tested, not believed. As an argument: a definition, a convention.",
+  "id": "w0027",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꊂ",
+  "pos": "root",
+  "gloss": "know by belief",
+  "sense_notes": "Knowing carve, side 3 of 3: held to be so without test or definition. Covers English believe, assume, take for granted. As an argument: a belief.",
+  "id": "w0028",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꊶ",
+  "pos": "root",
+  "gloss": "mistake",
+  "sense_notes": "Error carve, side 1 of 3: a wrong act by someone. The person erred. Not the fault it may have left in the thing (side 2), not what happened at run time (side 3).",
+  "id": "w0029",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꄂ",
+  "pos": "root",
+  "gloss": "fault",
+  "sense_notes": "Error carve, side 2 of 3: a wrong state in the thing itself, present whether or not anything has gone wrong yet. English bug, defect. Verbal: to be faulty.",
+  "id": "w0030",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꊖ",
+  "pos": "root",
+  "gloss": "failure",
+  "sense_notes": "Error carve, side 3 of 3: something went wrong when it ran or was used. The event, not its cause. English crash, fail, error at run time. Verbal: to fail.",
+  "id": "w0031",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꁽ",
+  "pos": "root",
+  "gloss": "ask for information",
+  "sense_notes": "Asking carve, side 1 of 3: a request to be told something. Same consonant family as the question particle. Not a request for action (side 2), not a check (side 3).",
+  "id": "w0032",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꇏ",
+  "pos": "root",
+  "gloss": "ask for action",
+  "sense_notes": "Asking carve, side 2 of 3: a request that someone do something. English please, could you, request. Never a question about facts.",
+  "id": "w0033",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꐼ",
+  "pos": "root",
+  "gloss": "check an assumption",
+  "sense_notes": "Asking carve, side 3 of 3: asking whether something taken as so actually holds. English confirm, verify with someone, sanity-check. The answer is a stance or evidential.",
+  "id": "w0034",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꄩ",
+  "pos": "root",
+  "gloss": "fix",
+  "sense_notes": "Change carve, side 1 of 3: change what is broken so that it works. Presupposes a fault or failure. Not alter (side 2), not build (side 3).",
+  "id": "w0035",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꃃ",
+  "pos": "root",
+  "gloss": "alter",
+  "sense_notes": "Change carve, side 2 of 3: change what already works into something else that works. English modify, update, refactor, tweak. Nothing was broken.",
+  "id": "w0036",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꇲ",
+  "pos": "root",
+  "gloss": "build",
+  "sense_notes": "Change carve, side 3 of 3: bring into existence what was not there. English make, create, write from scratch, implement. As an argument: a thing built.",
+  "id": "w0037",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎵ",
+  "pos": "root",
+  "gloss": "experiment, test, try",
+  "sense_notes": "Lumped root (D35): the act of doing something in order to observe what happens. One root for lab experiment, unit test, and trying a thing to see. The evidential carries the result. As an argument: a test, an experiment, an attempt.",
+  "id": "w0038",
+  "added": "2026-09-14"
  }
 ]

@@ -21,6 +21,8 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## Lexicon
 - 25 grammatical pieces coined, `lexicon/lexicon.json` w0001–w0025. Slot = consonant, value = vowel; pronouns = bare vowels. (D39)
+- 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
+- Syllable budget: 38 of 74 used; 36 left, 9 of them in reserve.
 
 ## Next
-Coin the first roots (D35 carves, then the inquiry core, D36) and write the first corpus sentences as soon as a few roots exist.
+Write the first corpus sentences with the 38 words that exist, then coin the inquiry core (D36) as the sentences call for it.
