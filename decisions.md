@@ -95,7 +95,7 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 ### OPEN (updated)
 - O1. Closed by D28 (74).
-- O2, remaining: (i) closed by D29; (ii) evidentiality closed by D30; tense closed by D31; negation still open; (iii) a closed function-word class for case, subordination, questions. Proposed, not decided.
+- O2, remaining: (i) closed by D29; (ii) evidentiality closed by D30; tense closed by D31; negation closed by D32; (iii) a closed function-word class for case, subordination, questions. Proposed, not decided.
 - O6. Closed by D23.
 - O7. A formal code/spec register inside the language (D27). Later.
 
@@ -106,3 +106,5 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D30. Four evidentials, obligatory on every predicate: direct (witnessed), reported (told), inferred (reasoned), general (known, no source needed). Stance (trust, risk; D12) is a separate slot, not fused with evidentiality.** Chosen over three (general knowledge is too common in ordinary talk and in code work to be shoehorned into inferred) and over five-plus (seen vs. heard is charm without payoff in a text-only language). Fixed with it: the evidential scopes over negation ("not-leave, direct" = I witnessed the not-leaving); questions ask for the listener's source. Tense and negation join the ending as separable pieces, never fused into unrelated forms; their shape is the rest of O2.ii. Stance is decided under O3.
 
 **D31. Three-way tense in the verb ending: past, present (unmarked), future. The future marker is strictly temporal.** Intention, prediction, promise and commitment never live in the future marker; they are stance (O3). This is the condition that makes three-way cost nothing over two-way: without it the future piece would absorb half of what stance is for, and learners would carry English "will" into it. Chosen over two-way for an explicit future (reported + future is a real and common combination) and for a model learning from the corpus, which reads a marker more reliably than a time word. Pieces of the ending stay separable: tense and evidential are learned as 2 + 4 things, not 12 forms.
+
+**D32. Negation is a piece of the verb ending, not a separate word.** Order of pieces after the root: negation, tense, evidential. Only the evidential is mandatory. Rationale: all grammar in one slot (D29), and the evidential-over-negation scope rule (D30) is visible inside a single form. Cost accepted: a negator that cannot be stressed or moved for emphasis; emphasis is stance's job (O3). Whether common combinations fuse into single syllables is a phonology-stage choice, left open.

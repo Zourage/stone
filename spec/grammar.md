@@ -8,12 +8,14 @@ Decided (D26): no adjective class, no adverb class. Property words are stative v
 Decided (D29): one open class of content roots. Predicate use takes an obligatory verb ending; argument use is bare, case-marked only when needed.
 Decided (D30): four obligatory evidentials on the predicate: direct, reported, inferred, general. Evidential scopes over negation. Stance is a separate slot (O3).
 Decided (D31): three-way tense, present unmarked, future strictly temporal (stance carries intention and prediction).
-Open (O2): negation in the verb ending or a separate word; function-word class.
+Decided (D32): negation is a piece of the verb ending. Ending order: root, negation, tense, evidential; only the evidential is mandatory.
+Open (O2): function-word class.
 
 ## Morphology
 ## Tense (D31)
 Past, present (unmarked), future. Future is temporal only. Aspect: none decided.
-## Negation
+## Negation (D32)
+Piece of the verb ending, before tense and evidential. Evidential scopes over it.
 ## Questions
 ## Number
 ## Possession
