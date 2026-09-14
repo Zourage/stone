@@ -74,3 +74,48 @@
 {"id": "s0074", "en": "It takes time. That's how it is.", "st": "ꍋ ꋪꇳ", "features": ["general"], "split": "train"}
 {"id": "s0075", "en": "The test will take time, I expect.", "st": "ꎵ ꋪꐃꀗꉇ", "features": ["inferred", "future", "predict", "nominal-root"], "split": "train"}
 {"id": "s0076", "en": "I'm asking you for a measurement.", "st": "ꀃ ꋌ ꏡ ꐎꄀ ꈝ ꇏꍲ", "features": ["direct", "obj", "for", "ask", "nominal-root"], "split": "train"}
+{"id": "s0077", "en": "The file is big.", "st": "ꌇ ꃎꍲ", "features": ["direct", "stative"], "split": "train"}
+{"id": "s0078", "en": "This part is small.", "st": "ꎿ ꋆꌱ ꄾꍲ", "features": ["direct", "stative", "det"], "split": "train"}
+{"id": "s0079", "en": "The fix is good. I tested it.", "st": "ꄩ ꉉꍲ", "features": ["direct", "stative", "nominal-root"], "split": "train"}
+{"id": "s0080", "en": "That result is bad, I'm told.", "st": "ꍋ ꏔ ꂂꆜ", "features": ["reported", "stative", "det"], "split": "train"}
+{"id": "s0081", "en": "The two results are the same.", "st": "ꋆ ꏔ ꈗꍲ", "features": ["direct", "stative", "numeral", "det"], "split": "train"}
+{"id": "s0082", "en": "This result is not the same as that one.", "st": "ꎿ ꏔ ꍋ ꀚ ꈗꃿꍲ", "features": ["direct", "stative", "neg", "with", "det"], "split": "held"}
+{"id": "s0083", "en": "That holds. I insist.", "st": "ꍋ ꂸꍲꎽ", "features": ["direct", "stative", "assert"], "split": "train"}
+{"id": "s0084", "en": "That does not hold. It's just what I believe.", "st": "ꍋ ꂸꃿꍲ ꀃ ꍋ ꏡ ꊂꍲ", "features": ["direct", "stative", "neg", "know", "obj"], "split": "train"}
+{"id": "s0085", "en": "The test is done.", "st": "ꎵ ꉏꍲ", "features": ["direct", "stative", "nominal-root"], "split": "train"}
+{"id": "s0086", "en": "The fix is not done yet, I gather.", "st": "ꄩ ꉏꃿꀗ", "features": ["inferred", "stative", "neg", "nominal-root"], "split": "train"}
+{"id": "s0087", "en": "It will be done after the test, I expect.", "st": "ꍋ ꎵ ꈺ ꉏꐃꀗꉇ", "features": ["inferred", "future", "predict", "stative", "after"], "split": "held"}
+{"id": "s0088", "en": "Is the file big?", "st": "ꌇ ꃎ ꑈ", "features": ["question", "stative"], "split": "train"}
+{"id": "s0089", "en": "Is it done?", "st": "ꍋ ꉏ ꑈ", "features": ["question", "stative"], "split": "train"}
+{"id": "s0090", "en": "Is that true?", "st": "ꍋ ꂸ ꑈ", "features": ["question", "stative"], "split": "train"}
+{"id": "s0091", "en": "Which machine is good?", "st": "ꅽ ꉍꎏ ꉉ ꑈ", "features": ["question", "q-which", "det", "stative"], "split": "train"}
+{"id": "s0092", "en": "A big machine is not, as such, a good one.", "st": "ꃎ ꉍꎏ ꉉꃿꇳ", "features": ["general", "stative", "neg", "det"], "split": "train"}
+{"id": "s0093", "en": "I have one file.", "st": "ꀃ ꑅ ꏆ ꌇ ꂸꍲ", "features": ["direct", "numeral", "det", "poss", "stative"], "split": "train"}
+{"id": "s0094", "en": "Three tests failed.", "st": "ꉍ ꎵ ꊖꋣꍲ", "features": ["direct", "past", "numeral", "det"], "split": "train"}
+{"id": "s0095", "en": "I ran ten tests.", "st": "ꀃ ꋁ ꎵ ꏡ ꅍꋣꍲ", "features": ["direct", "past", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0096", "en": "Two of them are faulty, I gather.", "st": "ꋆ ꄂꀗ", "features": ["inferred", "numeral", "stative"], "split": "train"}
+{"id": "s0097", "en": "I read four files.", "st": "ꀃ ꁇ ꌇ ꏡ ꃉꋣꍲ", "features": ["direct", "past", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0098", "en": "I counted six parts.", "st": "ꀃ ꎏꏆ ꋆꌱ ꏡ ꁀꎏꋣꍲ", "features": ["direct", "past", "numeral", "det", "obj"], "split": "held"}
+{"id": "s0099", "en": "Seven machines ran it.", "st": "ꎏꋆ ꉍꎏ ꍋ ꏡ ꅍꋣꍲ", "features": ["direct", "past", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0100", "en": "It came out as eight.", "st": "ꍋ ꎏꉍ ꏡ ꏔꋣꍲ", "features": ["direct", "past", "numeral", "obj"], "split": "train"}
+{"id": "s0101", "en": "Nine people read it, I'm told.", "st": "ꎏꁇ ꌑ ꍋ ꏡ ꃉꋣꆜ", "features": ["reported", "past", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0102", "en": "I measured five.", "st": "ꀃ ꎏ ꏡ ꐎꄀꋣꍲ", "features": ["direct", "past", "numeral", "obj"], "split": "train"}
+{"id": "s0103", "en": "Twenty-six files.", "st": "ꋆ ꋁ ꎏ ꏆ ꌇ ꂸꍲ", "features": ["direct", "numeral", "det", "stative"], "split": "train"}
+{"id": "s0104", "en": "Fifteen tests are done.", "st": "ꋁ ꎏ ꎵ ꉏꍲ", "features": ["direct", "numeral", "det", "stative"], "split": "train"}
+{"id": "s0105", "en": "How many files failed?", "st": "ꅽ ꁀꎏ ꌇ ꊖꋣ ꑈ", "features": ["question", "q-what", "det", "numeral", "past"], "split": "train"}
+{"id": "s0106", "en": "Test it before the fix.", "st": "ꋌ ꍋ ꏡ ꄩ ꄀ ꎵꍲꈷ", "features": ["direct", "intend", "imperative", "before", "obj", "nominal-root"], "split": "train"}
+{"id": "s0107", "en": "Read the file before you alter it.", "st": "ꋌ ꌇ ꏡ ꋌ ꍋ ꏡ ꃃꍲꁋ ꄀ ꃉꍲꈷ", "features": ["direct", "intend", "imperative", "before", "sub", "obj"], "split": "held"}
+{"id": "s0108", "en": "I tested it after the fix.", "st": "ꀃ ꍋ ꏡ ꄩ ꈺ ꎵꋣꍲ", "features": ["direct", "past", "after", "obj", "nominal-root"], "split": "train"}
+{"id": "s0109", "en": "After the test, it was good.", "st": "ꎵ ꈺ ꍋ ꉉꋣꍲ", "features": ["direct", "past", "after", "stative"], "split": "train"}
+{"id": "s0110", "en": "Before that, it was faulty.", "st": "ꍋ ꄀ ꍋ ꄂꋣꍲ", "features": ["direct", "past", "before", "stative"], "split": "train"}
+{"id": "s0111", "en": "It failed here.", "st": "ꍋ ꎿ ꑚ ꊖꋣꍲ", "features": ["direct", "past", "here", "loc"], "split": "train"}
+{"id": "s0112", "en": "Put it there.", "st": "ꋌ ꍋ ꏡ ꍋ ꑚ ꈺꃎꍲꈷ", "features": ["direct", "intend", "imperative", "there", "loc", "obj"], "split": "train"}
+{"id": "s0113", "en": "The fault is here, I gather.", "st": "ꄂ ꎿ ꑚ ꈺꃎꀗ", "features": ["inferred", "here", "loc"], "split": "train"}
+{"id": "s0114", "en": "Run it now.", "st": "ꋌ ꍋ ꏡ ꎿ ꋪ ꑚ ꅍꍲꈷ", "features": ["direct", "intend", "imperative", "now", "loc", "obj"], "split": "train"}
+{"id": "s0115", "en": "It's done now.", "st": "ꍋ ꎿ ꋪ ꑚ ꉏꍲ", "features": ["direct", "now", "loc", "stative"], "split": "train"}
+{"id": "s0116", "en": "It was faulty then.", "st": "ꍋ ꍋ ꋪ ꑚ ꄂꋣꍲ", "features": ["direct", "past", "then", "loc", "stative"], "split": "held"}
+{"id": "s0117", "en": "Then it failed.", "st": "ꍋ ꋪ ꑚ ꍋ ꊖꋣꍲ", "features": ["direct", "past", "then", "loc"], "split": "train"}
+{"id": "s0118", "en": "Is it good now?", "st": "ꍋ ꎿ ꋪ ꑚ ꉉ ꑈ", "features": ["question", "now", "loc", "stative"], "split": "train"}
+{"id": "s0119", "en": "Are the two the same?", "st": "ꋆ ꈗ ꑈ", "features": ["question", "numeral", "stative"], "split": "train"}
+{"id": "s0120", "en": "The small test is done; the big one is not.", "st": "ꄾ ꎵ ꉏꍲ ꃎ ꎵ ꉏꃿꍲ", "features": ["direct", "stative", "neg", "det"], "split": "train"}
+{"id": "s0121", "en": "I'll build a small one first, then a big one.", "st": "ꀃ ꄾ ꊴ ꏡ ꇲꐃꍲꈷ ꍋ ꈺ ꀃ ꃎ ꊴ ꏡ ꇲꐃꍲꈷ", "features": ["direct", "future", "intend", "after", "det", "obj"], "split": "train"}

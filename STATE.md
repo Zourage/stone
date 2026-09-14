@@ -27,7 +27,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Syllable budget: 66 of 74 single syllables used; 8 left, all reserve. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus
-- 76 sentences, 8 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. (D43, D46, D47)
+- 121 sentences, 13 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. (D43, D46, D47, D49)
 
 ## Next
-Write sentences for the third tranche (statives, numerals, before/after, deixis phrases); then coin from corpus need. Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.
+Coin from corpus need: write the sentences the two of you would actually say about code and experiments, and coin the roots they lack (two syllables each). Then fill coverage gaps to D11's targets and run the first acceptance test (D3). Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.

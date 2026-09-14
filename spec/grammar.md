@@ -28,8 +28,8 @@ Piece of the verb ending, before tense and evidential. Evidential scopes over it
 Sentence-final particle; the evidential slot is empty and the answer supplies it. One interrogative root (w0039) does all question words: bare = what; as determiner = which; + location case = where; + for = why; + with = how; before time = when; before person = who.
 ## Number (D48)
 Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: still open.
-## Possession (D33)
-Possessor case marker on the possessor, before the possessed.
+## Possession and existence (D33, D49)
+Possessor case marker on the possessor, before the possessed. No verb have: 'I have a file' is my file + hold. No verb exist: 'there are three files' is three files + hold.
 ## Subordination (D33)
 Subordinator piece on the embedded verb, after its evidential. Covers complement and relative clauses.
 ## Evidentiality (D30)
