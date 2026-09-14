@@ -95,8 +95,10 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 ### OPEN (updated)
 - O1. Closed by D28 (74).
-- O2, remaining: (i) whether noun/verb is a property of the root or of a suffix (one open class of content roots vs. separate noun and verb classes); (ii) a closed class of obligatory evidential/stance particles; (iii) a closed function-word class for case, subordination, questions. Proposed, not decided.
+- O2, remaining: (i) closed by D29; (ii) a closed class of obligatory evidential/stance particles; (iii) a closed function-word class for case, subordination, questions. Proposed, not decided.
 - O6. Closed by D23.
 - O7. A formal code/spec register inside the language (D27). Later.
 
 **D28. O1 closed: 74 syllables.** Chosen over the 65 of D7. 74 does not fill a full consonant × vowel grid (V·(C+1) is never 74), so the inventory will have gaps or a partial bare-vowel set, e.g. 12 C × 6 V + 2 bare, or 14 C × 5 V + 4 bare; which one is a phonology decision, not reopened here. Codepoints drawn: `scripts/assign_codepoints.py --count 74`, seed 20260914, written to `spec/codepoints.json`. Any redraw is a new decision.
+
+**D29. O2.i closed: one open class of content roots, verbal use marked, nominal use bare.** A root is neither noun nor verb until used. Predicate use takes an obligatory verb ending; that ending is the slot that will also carry evidentiality and whatever else O2.ii puts there. Argument use is bare, taking a case marker only when the role needs one. Rejected: separate noun/verb classes (reproduces English's basic split root by root); unmarked one-class by position (saves a syllable per word, then spends it on particles, and leaves no slot for obligatory categories); one-class with a per-root default use (a class system through the back door whose defaults would track English). Rationale: strongest anti-reskin move (D25), halves the root count (D13), concentrates grammar in one place for the learner (D1, D8), and gives evidentiality a mandatory home (D12). `lexicon/schema.json` pos becomes: root, func, affix, num (pron folded into func or root at O2.iii).

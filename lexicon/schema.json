@@ -21,14 +21,12 @@
     "pos": {
       "type": "string",
       "enum": [
-        "noun",
-        "verb",
-        "pron",
+        "root",
         "func",
         "affix",
         "num"
       ],
-      "description": "PROVISIONAL until O2 closes. No adj, no adv (D26). Whether noun/verb belongs on the root or the suffix is open (O2.i)."
+      "description": "root = open class, neither noun nor verb (D29). func/affix/num provisional until O2.ii-iii close."
     },
     "gloss": {
       "type": "string",
