@@ -24,5 +24,8 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
 - Syllable budget: 38 of 74 used; 36 left, 9 of them in reserve.
 
+## Corpus
+- 30 sentences, 3 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. (D43)
+
 ## Next
-Write the first corpus sentences with the 38 words that exist, then coin the inquiry core (D36) as the sentences call for it.
+Coin the inquiry core (D36): question words, the work verbs, the domain nouns, then write sentences for them. Open grammar the corpus is already brushing against: valency (passive), pronouns as determiners, number.

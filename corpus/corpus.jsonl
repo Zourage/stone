@@ -1,0 +1,30 @@
+{"id": "s0001", "en": "I tested it.", "st": "ꀃ ꍋ ꏡ ꎵꋣꍲ", "features": ["direct", "past", "obj"], "split": "train"}
+{"id": "s0002", "en": "It failed. I saw it.", "st": "ꍋ ꊖꋣꍲ", "features": ["direct", "past"], "split": "train"}
+{"id": "s0003", "en": "I'm told it failed.", "st": "ꍋ ꊖꋣꆜ", "features": ["reported", "past"], "split": "train"}
+{"id": "s0004", "en": "It must have failed.", "st": "ꍋ ꊖꋣꀗ", "features": ["inferred", "past"], "split": "train"}
+{"id": "s0005", "en": "You know that from the definition.", "st": "ꋌ ꍋ ꏡ ꎝꇳ", "features": ["general", "obj", "know"], "split": "train"}
+{"id": "s0006", "en": "I know this; I tested it.", "st": "ꀃ ꎿ ꏡ ꈆꍲ", "features": ["direct", "obj", "know"], "split": "train"}
+{"id": "s0007", "en": "I believe it, that's all.", "st": "ꀃ ꍋ ꏡ ꊂꍲ", "features": ["direct", "obj", "know"], "split": "train"}
+{"id": "s0008", "en": "I'll fix it.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꈷ", "features": ["direct", "future", "intend", "obj"], "split": "train"}
+{"id": "s0009", "en": "It'll probably fail.", "st": "ꍋ ꊖꐃꀗꉇ", "features": ["inferred", "future", "predict"], "split": "train"}
+{"id": "s0010", "en": "I suspect this one is faulty. Just a hypothesis.", "st": "ꎿ ꄂꀗꋴ", "features": ["inferred", "propose"], "split": "train"}
+{"id": "s0011", "en": "I was told that was tested, and I'm counting on it.", "st": "ꍋ ꎵꋣꆜꊓ", "features": ["reported", "past", "trust"], "split": "train"}
+{"id": "s0012", "en": "I changed it. That might break something.", "st": "ꀃ ꍋ ꏡ ꃃꋣꍲꂅ", "features": ["direct", "past", "risk", "obj"], "split": "train"}
+{"id": "s0013", "en": "It did not fail. I saw it, I insist.", "st": "ꍋ ꊖꃿꋣꍲꎽ", "features": ["direct", "past", "neg", "assert"], "split": "train"}
+{"id": "s0014", "en": "Did it fail?", "st": "ꍋ ꊖꋣ ꑈ", "features": ["question", "past"], "split": "train"}
+{"id": "s0015", "en": "Did you test it?", "st": "ꋌ ꍋ ꏡ ꎵꋣ ꑈ", "features": ["question", "past", "obj"], "split": "train"}
+{"id": "s0016", "en": "I asked you.", "st": "ꀃ ꋌ ꏡ ꁽꋣꍲ", "features": ["direct", "past", "obj", "ask"], "split": "train"}
+{"id": "s0017", "en": "I'm asking you for a fix.", "st": "ꀃ ꋌ ꏡ ꄩ ꈝ ꇏꍲ", "features": ["direct", "obj", "for", "ask", "nominal-root"], "split": "train"}
+{"id": "s0018", "en": "I'm checking what you told me: that you tested it.", "st": "ꀃ ꋌ ꍋ ꏡ ꎵꋣꆜꁋ ꐼꍲ", "features": ["direct", "reported", "past", "sub", "obj", "ask"], "split": "train"}
+{"id": "s0019", "en": "I fixed the one that failed.", "st": "ꀃ ꊖꋣꍲꁋ ꍋ ꏡ ꄩꋣꍲ", "features": ["direct", "past", "sub", "obj"], "split": "train"}
+{"id": "s0020", "en": "I know your mistake; the test showed it.", "st": "ꀃ ꋌ ꑅ ꊶ ꏡ ꈆꍲ", "features": ["direct", "poss", "obj", "know"], "split": "train"}
+{"id": "s0021", "en": "It failed in this one.", "st": "ꍋ ꎿ ꑚ ꊖꋣꍲ", "features": ["direct", "past", "loc"], "split": "held"}
+{"id": "s0022", "en": "I tested it with you.", "st": "ꀃ ꍋ ꏡ ꋌ ꀚ ꎵꋣꍲ", "features": ["direct", "past", "obj", "with"], "split": "held"}
+{"id": "s0023", "en": "I believe that because you told me.", "st": "ꀃ ꍋ ꏡ ꋌ ꆇ ꊂꆜ", "features": ["reported", "obj", "from", "know"], "split": "train"}
+{"id": "s0024", "en": "I'm going to build this.", "st": "ꀃ ꎿ ꏡ ꇲꐃꍲꈷ", "features": ["direct", "future", "intend", "obj"], "split": "train"}
+{"id": "s0025", "en": "A fault is not, by itself, a failure.", "st": "ꄂ ꊖꃿꇳ", "features": ["general", "neg", "nominal-root"], "split": "train"}
+{"id": "s0026", "en": "I didn't fix it. I altered it.", "st": "ꀃ ꍋ ꏡ ꄩꃿꋣꍲ ꀃ ꍋ ꏡ ꃃꋣꍲ", "features": ["direct", "past", "neg", "obj"], "split": "held"}
+{"id": "s0027", "en": "You'll fix it, I'm told.", "st": "ꋌ ꍋ ꏡ ꄩꐃꆜ", "features": ["reported", "future", "obj"], "split": "train"}
+{"id": "s0028", "en": "The test failed.", "st": "ꎵ ꊖꋣꍲ", "features": ["direct", "past", "nominal-root"], "split": "train"}
+{"id": "s0029", "en": "Faults get fixed.", "st": "ꄂ ꏡ ꄩꇳ", "features": ["general", "obj", "nominal-root"], "split": "train"}
+{"id": "s0030", "en": "You'll build it, I expect.", "st": "ꋌ ꍋ ꏡ ꇲꐃꀗꉇ", "features": ["inferred", "future", "predict", "obj"], "split": "train"}
