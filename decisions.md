@@ -113,8 +113,12 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 ### OPEN (updated)
 - O2. Closed.
-- O3. Semantic distinctions (D12): stance slot contents (trust, risk, intention, prediction, emphasis: D30, D31, D32 all defer here); kinds of silence; what else to carve.
+- O3. Closed by D34, D35.
 - O4. First vocabulary tranche.
 - O5. Teaching materials.
 - O7. Formal code register, later.
 - Phonology (D8, D28): which consonants and vowels, the 74-syllable grid and its gaps, glyph-to-sound table. Next after O3, or in parallel; nothing in O3 depends on it.
+
+**D34. Purpose sharpened, and the stance slot: six optional markers.** The language is for asking, writing code, cultivating discussion, engineering and science talk, translatable through the corpus as its codex (D2). Stance markers, one per predicate, all optional, in a slot separate from the evidential (D30): intend (committed to doing), predict (expected, not committed), propose (offered for testing or discussion, not claimed), trust (relied on as an assumption), risk (known to be shaky), assert (insisted on). Propose is the one that serves the purpose most: a hypothesis is never mistaken for a finding, and a discussion is a series of proposals answered with evidentials. Intend and predict take the non-temporal half of English "will" (D31); assert takes emphasis (D32).
+
+**D35. First semantic carving.** Split, where English has one word, into two or three roots: knowing (by test, by definition or convention, by belief); error (a mistake made, a fault in the thing, a failure at run time); asking (for information, for action, to check an assumption); change (fix what is broken, alter what works, build what is new). Lumped, where English splits: experiment, test, try are one root, the act of doing and observing, with the evidential carrying the result. Silence (D12) deferred to a later, conversational tranche. O3 closes; the list grows under O4 as roots are coined, each addition logged.

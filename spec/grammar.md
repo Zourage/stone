@@ -1,6 +1,6 @@
 # Grammar
 
-Status: O2 closed (D26, D29–D33). Open: number, derivation suffixes, stance (O3), forms (phonology). Scaffolding for corpus construction; the corpus is authoritative.
+Status: O2 closed (D26, D29–D33). Open: number, derivation suffixes, forms (phonology). Scaffolding for corpus construction; the corpus is authoritative.
 
 ## Word order (D33)
 Subject, object, verb. Subject bare; object case-marked.
@@ -13,7 +13,7 @@ Decided (D32): negation is a piece of the verb ending. Ending order: root, negat
 Decided (D33): closed function-word class: 3 case markers (object, location, possessor), 1 question particle, pronouns, a few relational words. Subordinator is the last piece of the verb ending.
 
 ## Morphology (D29, D32, D33)
-Verb template: root, negation, tense, evidential, subordinator. Only the evidential is mandatory. Arguments: bare, or root plus one case marker.
+Verb template: root, negation, tense, evidential, stance, subordinator. Only the evidential is mandatory. Arguments: bare, or root plus one case marker.
 ## Tense (D31)
 Past, present (unmarked), future. Future is temporal only. Aspect: none decided.
 ## Negation (D32)
@@ -27,4 +27,7 @@ Possessor case marker on the possessor, before the possessed.
 Subordinator piece on the embedded verb, after its evidential. Covers complement and relative clauses.
 ## Evidentiality (D30)
 Four, obligatory on every predicate: direct, reported, inferred, general. Scopes over negation. Questions ask for the listener's source. Forms: _TBD_ (phonology first).
+## Stance (D34)
+Optional, one per predicate, own slot after the evidential and before the subordinator: intend, predict, propose, trust, risk, assert. Forms: _TBD_.
+
 ## Derivation suffixes (D13)
