@@ -1038,5 +1038,21 @@
   "sense_notes": "Talk something over together; the exchange itself. The matter is the object; the other party takes 'with'. Built audibly from person plus ask. Covers discuss, talk about, go over. Not ask (one-directional) and not say. As an argument: a discussion.",
   "id": "w0130",
   "added": "2026-09-14"
+ },
+ {
+  "form": "쿠",
+  "pos": "func",
+  "gloss": "or",
+  "sense_notes": "Alternative. Stands between the two things joined: two arguments, two predicates, or two clauses. In a question, asks which alternative holds. 'And' has no word: clauses are juxtaposed, arguments are joined with 'with' (D59).",
+  "id": "w0131",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "채",
+  "pos": "func",
+  "gloss": "but",
+  "sense_notes": "Contrast between two clauses; stands between them. Not needed for mild contrast, which juxtaposition and stance already carry; used when the second clause runs against the expectation set by the first (D59).",
+  "id": "w0132",
+  "added": "2026-09-14"
  }
 ]

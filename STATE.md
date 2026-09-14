@@ -9,7 +9,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). A pronoun, the interrogative or a numeral before a root is a determiner. No adjectives, no adverbs. (D26, D29–D33, D44)
 - Evidentials, obligatory: direct, reported, inferred, general. Stance, optional: intend, predict, propose, trust, risk, assert. Tense: past, present unmarked, future (temporal only). (D30, D31, D34)
 - Semantic carving, `lexicon/README.md`: knowing ×3, error ×3, asking ×3, change ×3; experiment/test/try = 1. (D35)
-- Target: 300 lexicon entries (D54); 130 today: 53 roots from the first subagent batch (code, experiments, discussion), D58. New roots are two syllables, coined from corpus need, checked against Korean for collisions. Corpus grows alongside to ~1000 sentences for coverage.
+- Target: 300 lexicon entries (D54); 132 today: 53 roots from the first subagent batch (code, experiments, discussion), D58. New roots are two syllables, coined from corpus need, checked against Korean for collisions. Corpus grows alongside to ~1000 sentences for coverage.
 
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
@@ -17,7 +17,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Codepoints: BMP PUA is stripped by Claude's input pipeline (D20); Yi Syllables trip a content classifier on the chat surface (D52). Neither is usable.
 
 ## Open
-- Grammar gaps G1–G11 in decisions.md (coordination, conditionals, can, want/should, we, quantifiers, comparison, passives, N times, compounds, while). Decide one at a time; agents leave out sentences that need them.
+- Grammar gaps G2–G11 in decisions.md (G1 closed by D59; conditionals, can, want/should, we, quantifiers, comparison, passives, N times, compounds, while). Decide one at a time; agents leave out sentences that need them.
 - O5 teaching materials (after corpus). O7 formal code register (later). Derivation suffixes: when roots need them.
 
 ## Tests
@@ -28,10 +28,10 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
 - 20 inquiry-core roots, w0039–w0058: one interrogative root does all question words; number/count is one root. (D45)
 - 19 more, w0059–w0077: 7 statives (different/false/broken are negations or fault), before/after, numerals 1–10 with quinary 6–9 and a ten rule. Deixis = pronoun + location/time. (D48)
-- Syllable budget: 66 of 74 single syllables used; 8 left, all reserve. Glyph identity changed in D52; every word kept its sound. New roots are two syllables unless a reserve syllable is spent by decision.
+- Syllable budget: 68 of 74 single syllables used; 6 left, all reserve. Glyph identity changed in D52; every word kept its sound. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus
-- 428 sentences, 50 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. Equatives = second term takes the verb ending; no copula. Recipient = location case. (D43, D46, D47, D49, D51, D56, D57)
+- 444 sentences, 52 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. Equatives = second term takes the verb ending; no copula. Recipient = location case. Or and but exist; and is juxtaposition or with. (D43, D46, D47, D49, D51, D56, D57, D59)
 
 ## Next
-Decide G1–G11 in order of how often they blocked sentences (coordination, conditionals, quantifiers first). Then the next subagent batch: `scripts/merge_batch.py BATCH_DIR` to dry-run, review, `--apply`. Re-test at ~500 sentences. Open grammar: valency (passive), plural marking without a numeral.
+Decide G2–G11 in order of how often they blocked sentences (coordination, conditionals, quantifiers first). Then the next subagent batch: `scripts/merge_batch.py BATCH_DIR` to dry-run, review, `--apply`. Re-test at ~500 sentences. Open grammar: valency (passive), plural marking without a numeral.

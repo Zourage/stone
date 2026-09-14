@@ -28,6 +28,9 @@ Piece of the verb ending, before tense and evidential. Evidential scopes over it
 Sentence-final particle; the evidential slot is empty and the answer supplies it. One interrogative root (w0039) does all question words: bare = what; as determiner = which; + location case = where; + for = why; + with = how; before time = when; before person = who.
 ## Number (D48)
 Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: still open.
+## Coordination (D59)
+No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
+
 ## Recipients (D57)
 Content is the object; the recipient takes the location case: result-OBJ me-LOC show. For = beneficiary or purpose only.
 

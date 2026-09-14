@@ -426,3 +426,19 @@
 {"id": "s0426", "en": "Which reason is good?", "st": "야 대유 로 추", "features": ["question", "q-which", "det", "stative", "nominal-root", "domain-discussion"], "split": "train"}
 {"id": "s0427", "en": "You chose it. I decided it. Those are not the same. I insist.", "st": "에 우 파 야헤타카 아 우 파 초해타카 우 두루카무", "features": ["direct", "past", "neg", "assert", "obj", "stative", "domain-discussion"], "split": "train"}
 {"id": "s0428", "en": "Begin it after the discussion. Just a proposal.", "st": "에 우 파 예차 후 쿠태카메", "features": ["direct", "propose", "after", "obj", "nominal-root", "domain-discussion"], "split": "held"}
+{"id": "s0429", "en": "Is it a fault or a failure?", "st": "우 노 쿠 누 추", "features": ["question", "or", "equative"], "split": "train"}
+{"id": "s0430", "en": "Is the value a number or text?", "st": "키토 수포 쿠 티패 추", "features": ["question", "or", "equative"], "split": "train"}
+{"id": "s0431", "en": "Did you run it, or did the machine?", "st": "에 우 파 다타 쿠 니포 우 파 다타 추", "features": ["question", "or", "past", "obj"], "split": "held"}
+{"id": "s0432", "en": "The result is three or five.", "st": "도 니 쿠 포카", "features": ["direct", "or", "equative", "numeral"], "split": "train"}
+{"id": "s0433", "en": "I'll fix it or remove it.", "st": "아 우 파 라투카마 쿠 아 우 파 쿠피투카마", "features": ["direct", "future", "intend", "or", "obj"], "split": "train"}
+{"id": "s0434", "en": "It's a mistake or a fault, I gather.", "st": "우 내 쿠 노키", "features": ["inferred", "or", "equative"], "split": "train"}
+{"id": "s0435", "en": "Test it with this file or that one.", "st": "에 우 파 이 왜 쿠 우 하 와카마", "features": ["direct", "intend", "imperative", "or", "with", "det", "obj"], "split": "train"}
+{"id": "s0436", "en": "Which is it, big or small?", "st": "우 태 쿠 테 추", "features": ["question", "or", "stative"], "split": "train"}
+{"id": "s0437", "en": "It ran, but it failed.", "st": "우 다타카 채 우 누타카", "features": ["direct", "past", "but"], "split": "train"}
+{"id": "s0438", "en": "The fix is done, but the test is not.", "st": "라 초카 채 와 초루카", "features": ["direct", "neg", "but", "stative", "nominal-root"], "split": "held"}
+{"id": "s0439", "en": "I tested it, but I did not find the fault.", "st": "아 우 파 와타카 채 아 노 파 웨루타카", "features": ["direct", "past", "neg", "but", "obj"], "split": "train"}
+{"id": "s0440", "en": "The result is good, but the time is bad.", "st": "도 로카 채 유 래카", "features": ["direct", "but", "stative"], "split": "train"}
+{"id": "s0441", "en": "You'll fix it, I'm told, but I doubt it.", "st": "에 우 파 라투케 채 아 우 파 치호카", "features": ["reported", "direct", "future", "but", "obj"], "split": "train"}
+{"id": "s0442", "en": "That holds, but it's not the cause.", "st": "우 얘카 채 우 대루카", "features": ["direct", "neg", "but", "equative", "stative"], "split": "train"}
+{"id": "s0443", "en": "It's small, but it's not done. That might go wrong.", "st": "우 테카 채 우 초루카모", "features": ["direct", "neg", "but", "risk", "stative"], "split": "train"}
+{"id": "s0444", "en": "Read the file, but don't alter it.", "st": "에 왜 파 데카마 채 에 우 파 레루카마", "features": ["direct", "intend", "imperative", "neg", "but", "obj"], "split": "train"}

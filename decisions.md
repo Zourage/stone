@@ -180,7 +180,7 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D58. Method: batches by subagent, disjoint syllable pools, dry-run merge, human review before commit.** Three agents, one domain each (code work; experiments and measurement; discussion and reasoning), each restricted to its own rows of the syllable grid so no two can coin the same form, each told to leave out any sentence that needs grammar the language lacks and to record the gap instead. `scripts/merge_batch.py` dry-runs a batch through the validator without writing; the maintainer reviews roots, sample sentences and notes, then applies. First batch: 58 proposed roots reduced to 53 (three agents coined repeat separately, two coined begin, stop and show; one of each kept, sentences remapped), two glosses tightened into carves (message vs. say/tell; condition vs. choose), 236 sentences (s0193–s0428, 26 held), 4 duplicate English lines dropped. Lexicon 130, corpus 428. Every root carries sense_notes stating its carve.
 
 ### OPEN (grammar gaps reported by all three agents, to decide one at a time)
-- G1. Coordination: and, or, but.
+- G1. Closed by D59.
 - G2. Conditionals: if.
 - G3. Ability: can.
 - G4. Want, should.
@@ -191,3 +191,5 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 - G9. Counting occurrences: N times.
 - G10. Root-before-root compounds: time limit, control result.
 - G11. Simultaneity: while.
+
+**D59. G1 closed: two conjunctions, or and but; no word for and.** And between clauses is juxtaposition, which the corpus already does; and between arguments is the with relational word. Or and but are function words standing between the things they join (arguments, predicates or clauses); or in a question asks which alternative holds. Both spent from the reserve single syllables (w0131, w0132); 6 reserve syllables remain. 16 sentences (s0429–s0444, 2 held). Existing sentences unchanged: juxtaposition stays valid.
