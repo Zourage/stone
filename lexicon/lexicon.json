@@ -614,5 +614,429 @@
   "sense_notes": "5+4, written solid.",
   "id": "w0077",
   "added": "2026-09-14"
+ },
+ {
+  "form": "새루",
+  "pos": "root",
+  "gloss": "set up",
+  "sense_notes": "Arrange the pieces of an experiment or benchmark so that it can run: the apparatus, the configuration, the harness. As an argument: the setup, the configuration. Sits outside the change carve: it is neither fix, alter nor build; it is placing what already exists into working order for a run. Not the test itself (the lumped experiment root covers that).",
+  "id": "w0078",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "소네",
+  "pos": "root",
+  "gloss": "sample",
+  "sense_notes": "A part taken to stand for a whole: a specimen, a data point, a subset drawn from a population. Verbal: to sample, to draw a subset. Not the whole body of data (data root), not a part in the structural sense (the part root).",
+  "id": "w0079",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "모나",
+  "pos": "root",
+  "gloss": "control, hold fixed",
+  "sense_notes": "What is deliberately kept unchanged so that a comparison is fair: the control group, the baseline run, the fixed condition. Verbal: to hold fixed, to keep constant. Paired with the vary root. Not fix in the repair sense (that is the change carve).",
+  "id": "w0080",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "모누",
+  "pos": "root",
+  "gloss": "vary, variable",
+  "sense_notes": "What is deliberately set to different values across runs: the independent variable, the factor being changed. Verbal: to vary, to set to a different value on purpose. Outside the change carve: nothing is repaired, modified or built; a value is chosen. Paired with the control root. Unplanned change is not this root: use increase or decrease, or same-NEG.",
+  "id": "w0081",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "수미",
+  "pos": "root",
+  "gloss": "unit",
+  "sense_notes": "The standard a measurement counts in: seconds, bytes, runs. As a determiner-free nominal beside a number. Verbal: to be the unit of, to be counted in. Not the number itself (number root), not the measuring act (measure root).",
+  "id": "w0082",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "마소",
+  "pos": "root",
+  "gloss": "more, a greater amount",
+  "sense_notes": "A greater amount, much, many. Stative: the count is more, there is more of it. An amount word, not a grammatical comparison: the language has no 'more than X' construction. Own root; less is not more-NEG.",
+  "id": "w0083",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "마수",
+  "pos": "root",
+  "gloss": "less, a smaller amount",
+  "sense_notes": "A smaller amount, little, few. Stative: the count is less, there is less of it. Own root; not-more is a weaker claim than less. An amount word, not a comparison.",
+  "id": "w0084",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "무소",
+  "pos": "root",
+  "gloss": "increase",
+  "sense_notes": "Go up in amount over time; grow, rise. The change event, not the state (the state is the more root). As an argument: an increase, a rise. Undirected or unplanned change; deliberate setting of a value is the vary root. Outside the change carve.",
+  "id": "w0085",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "무수",
+  "pos": "root",
+  "gloss": "decrease",
+  "sense_notes": "Go down in amount over time; shrink, drop, fall. Own root, not increase-NEG (not-increasing includes staying flat). As an argument: a decrease, a drop. Paired with increase.",
+  "id": "w0086",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "메루",
+  "pos": "root",
+  "gloss": "repeat, loop, again",
+  "sense_notes": "Do the same thing again: rerun, iterate, loop, try again. One root for the loop in code, the repeat of an experiment, and the adverb again (the activity done again is its object, or it stands alone). As an argument: a repetition, a run, a trial, an iteration, a loop.",
+  "id": "w0087",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "미노",
+  "pos": "root",
+  "gloss": "record",
+  "sense_notes": "Put an observed value or event into a durable store: log it, write it into a table or a file. As an argument: a record, a log entry. Carved from write (producing text or code) and from data (the body of records); this root is the capturing act and one captured item.",
+  "id": "w0088",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "새메",
+  "pos": "root",
+  "gloss": "observe",
+  "sense_notes": "Attend to what happens and take it in: watch, notice, perceive during a run. As an argument: an observation. Carved from look (aim attention at a thing; may see nothing) and find (locate what was sought; implies success): observe is seeing what occurs, the ground of the direct evidential.",
+  "id": "w0089",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "미네",
+  "pos": "root",
+  "gloss": "data",
+  "sense_notes": "The body of recorded values from a run or a set of runs: dataset, measurements taken together. Verbal: to be the data of, to serve as data for. Carved from record (one entry or the act of logging) and sample (a subset drawn from it).",
+  "id": "w0090",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "매노",
+  "pos": "root",
+  "gloss": "pattern",
+  "sense_notes": "A regularity across data: a trend, a recurring shape, a correlation. Verbal: to follow a pattern, to recur regularly. Carved against chance: a pattern is what is not chance, and it does not by itself say what the cause is.",
+  "id": "w0091",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "소루",
+  "pos": "root",
+  "gloss": "chance",
+  "sense_notes": "What happens with no cause in the variable: randomness, noise, luck, coincidence. Verbal: to happen by chance. Carved against cause and against pattern; 'from chance' names the null explanation.",
+  "id": "w0092",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "수래",
+  "pos": "root",
+  "gloss": "spread",
+  "sense_notes": "How far a set of values differ among themselves: variance, scatter, noise band, range. Stative: the results are spread out. As an argument: the spread. Not same-NEG (which is about two things differing), not the pattern.",
+  "id": "w0093",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "모메",
+  "pos": "root",
+  "gloss": "average",
+  "sense_notes": "The typical or central value of a set: mean, median, the middle. Verbal: to average, to take the mean of. As an argument: the average.",
+  "id": "w0094",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "무네",
+  "pos": "root",
+  "gloss": "limit",
+  "sense_notes": "A bound a value must not pass: a threshold, a cap, a timeout, a maximum or minimum. Verbal: to limit, to bound, to cap. Not big or small (which are about size, not about a bound).",
+  "id": "w0095",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "타푸",
+  "pos": "root",
+  "gloss": "function",
+  "sense_notes": "A named piece of code that takes input and gives a result; a procedure, routine, method. Verbal: to act as a function, to compute. Calling a function is run + function (no separate call root). Sits beside part (a component of anything) and write-as-argument (code in general): a function is the unit of code that runs on its own.",
+  "id": "w0096",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "키토",
+  "pos": "root",
+  "gloss": "value",
+  "sense_notes": "What a name, slot or expression holds or evaluates to; the content, not the container. Verbal: to be worth, to evaluate to. Carved against result (what a run brings about; the output) and against variable (the slot that holds a value). A number and a text are kinds of value.",
+  "id": "w0097",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "키포",
+  "pos": "root",
+  "gloss": "variable, store",
+  "sense_notes": "A named slot that holds a value; a variable, a field, a store. Verbal: to store, to assign, to put a value into a slot. Same consonant family as value: variable is the container, value the content. Not name (the label of the slot; that is the name root) and not place (a location).",
+  "id": "w0098",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "페티",
+  "pos": "root",
+  "gloss": "input",
+  "sense_notes": "What is fed into a function, test or machine before it runs: an argument, a parameter, input data. Verbal: to feed in, to give as input. Paired with result, which already covers output; there is no separate output root.",
+  "id": "w0099",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "카티",
+  "pos": "root",
+  "gloss": "condition, branch",
+  "sense_notes": "A yes/no test inside a run that selects which path runs next; a branch, an if-condition, a branch point in code. Verbal: to choose, to branch on, to select. Lumped: condition and choice are one root, the choosing thing and the choosing act. Not the test root (doing something to observe), not check-an-assumption (asking a person). A person choosing is the choose root.",
+  "id": "w0100",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "피토",
+  "pos": "root",
+  "gloss": "line",
+  "sense_notes": "One line of a file or of code; a row. Verbal: to be on a line, to line up. Counts with numerals: ten lines. Not part (any component) and not place (a location), though a line can be named as a place with the location case.",
+  "id": "w0101",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "쿠테",
+  "pos": "root",
+  "gloss": "stop, end",
+  "sense_notes": "Halt a running thing or come to an end; a stop, a halt, the end of something. Verbal: to stop, to halt, to end. Lumped: stop, halt, end, terminate are one root. Opposite of run (make go) and of begin (same consonant family). Not done (finished, complete): a thing can stop without being done. Transitive (stop the test) or intransitive (the test stopped). Stopped is not done: stop is the cease event, done (w0065) is completion.",
+  "id": "w0102",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "쿠태",
+  "pos": "root",
+  "gloss": "begin, start",
+  "sense_notes": "Come into motion or be the first point of a stretch; a beginning, a start, the head of a file. Verbal: to begin, to start. Same consonant family as stop. Not the run root: run makes a thing go, begin marks the first point of anything, a run, a test, a file, a stretch of time. Transitive (begin the test) or intransitive (the test began).",
+  "id": "w0103",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "파테",
+  "pos": "root",
+  "gloss": "version",
+  "sense_notes": "The state of a thing as of one point in time, kept so it can be gone back to; a version, a revision, a snapshot, a commit. Verbal: to save as a version, to commit. Not copy (a duplicate that exists alongside) and not alter (the change itself).",
+  "id": "w0104",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "케포",
+  "pos": "root",
+  "gloss": "message",
+  "sense_notes": "A message: words or output sent from one party to another, what a machine prints when it fails, a notice. Verbal: to output a message. The act of a person saying or telling is the say/tell root.",
+  "id": "w0105",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "코피",
+  "pos": "root",
+  "gloss": "review, judge",
+  "sense_notes": "Look at someone's work and give a verdict of good or bad; a review, a judgement, a verdict. Verbal: to review, to judge, to evaluate. Carved against look (inspect, no verdict implied), against check-an-assumption (asking whether something taken as so holds) and against compare (side by side, no verdict). Approve and reject are review + good / review + bad.",
+  "id": "w0106",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "캐토",
+  "pos": "root",
+  "gloss": "kind, type",
+  "sense_notes": "A category that things fall into; a kind, a type, a class, a sort. Verbal: to be of a kind, to be a type of. Used for the type of a value (number, text) and for kinds of anything. Not same (identical): two things of one kind are not the same thing.",
+  "id": "w0107",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "티포",
+  "pos": "root",
+  "gloss": "list, order",
+  "sense_notes": "Many things in a sequence; a list, a sequence, an ordering. Verbal: to list, to order, to sort, to put in sequence. Lumped: list and ordering are one root. Not number/count (how many) and not part (one member); a member of a list is part + possessor.",
+  "id": "w0108",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "코푸",
+  "pos": "root",
+  "gloss": "copy",
+  "sense_notes": "A duplicate made from an original and existing alongside it; a copy, a clone. Verbal: to copy, to duplicate. Not version (a saved state of the same thing over time) and not build (a new thing from nothing) or same (identical: a copy is same-with the original, but is a second thing).",
+  "id": "w0109",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "쿠피",
+  "pos": "root",
+  "gloss": "remove",
+  "sense_notes": "Take a thing out so that it is no longer there; a removal, a deletion. Verbal: to remove, to delete, to drop. Outside the change carve: fix, alter and build all leave a thing present; remove ends its presence. Not stop (halts a run; the thing remains).",
+  "id": "w0110",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "카푸",
+  "pos": "root",
+  "gloss": "give, pass",
+  "sense_notes": "Move a thing from one holder to another; a giving, a handing-over, a passing of a value to a function. Verbal: to give, to pass, to send, to hand. The receiver takes the location case as goal. Lumped: give, pass, send, hand over are one root. Not message (words sent) and not find-from (get).",
+  "id": "w0111",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "파캐",
+  "pos": "root",
+  "gloss": "new",
+  "sense_notes": "Recently built, changed or arrived; fresh. Stative: 'the version news' = the version is new. Old = new-NEG; there is no separate root, following the same/true pattern (D25). Before a root as an attributive stative, like big and small.",
+  "id": "w0112",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "페포",
+  "pos": "root",
+  "gloss": "show",
+  "sense_notes": "Make visible or evident: display, print to a screen, demonstrate, point out to someone. The thing shown is the object; the person shown takes the location case as recipient (D57). As an argument: a display, a demonstration.",
+  "id": "w0113",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "티패",
+  "pos": "root",
+  "gloss": "text",
+  "sense_notes": "A sequence of characters as a value; a string, a word, a piece of text as data. Verbal: to be text, to be a string. Sits beside number as a kind of value. Not write (the act of writing, or code written) and not file (a document holding text) and not name (a label; a name is text, but not every text names).",
+  "id": "w0114",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "두하",
+  "pos": "root",
+  "gloss": "agree",
+  "sense_notes": "Accept another person's claim or proposal; be of one mind with them. The other party takes 'with'; the claim agreed to is the object. Covers agree, accept, go along with. Not the trust stance (which is relying on something as an assumption) and not knowing by belief. Disagreeing as mere non-acceptance is agree-NEG; pushing back is its own root (object). As an argument: an agreement.",
+  "id": "w0115",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "차워",
+  "pos": "root",
+  "gloss": "object, push back",
+  "sense_notes": "Speak against a claim or proposal; resist it in discussion. Stronger than agree-NEG, which only withholds acceptance. The claim pushed against is the object. Covers object, disagree, contest, push back. It is the pushback that the assert stance answers; assert is a stance on one's own claim, this root is an act against another's. As an argument: an objection.",
+  "id": "w0116",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "헤도",
+  "pos": "root",
+  "gloss": "explain",
+  "sense_notes": "Give an account of something so that the other person grasps it. The thing explained is the object; the hearer takes 'for'. Covers explain, account for, lay out, walk through. Not the reason itself (own root) and not saying in general (own root). As an argument: an explanation.",
+  "id": "w0117",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "대유",
+  "pos": "root",
+  "gloss": "reason, grounds",
+  "sense_notes": "A reason as something a person offers: grounds, justification, the why given in argument. Carved from cause (w0047): cause is what actually brings a thing about in the world; reason is what someone puts forward as grounds, which may or may not be the cause. Verbal use: to give grounds for, to justify. With 'for' after the interrogative the question word for why stays as it is; this root is the answer to it.",
+  "id": "w0118",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "데하",
+  "pos": "root",
+  "gloss": "understand",
+  "sense_notes": "Grasp what something means or how it works; follow an explanation. Not a side of the knowing carve: knowing is about a fact being held to hold, understanding is about the meaning or workings being grasped. Not understanding is understand-NEG; there is no separate root for confusion. As an argument: an understanding.",
+  "id": "w0119",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "유호",
+  "pos": "root",
+  "gloss": "remember",
+  "sense_notes": "Hold in mind or bring back to mind something from before. The thing remembered is the object. Forgetting is lumped as remember-NEG: 'I forgot the name' is 'I do not remember the name'; 'do not forget X' is an imperative of remember. Not knowing by test (w0026): that is about how the fact is warranted, this is about keeping it. As an argument: a memory of something.",
+  "id": "w0120",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "워야",
+  "pos": "root",
+  "gloss": "say, tell",
+  "sense_notes": "The act of uttering something to someone. One root for say and tell: the addressee, if present, is the object; the content is a subordinate clause standing bare before the verb, or the object when there is no addressee. The reported evidential marks that the speaker's source is someone's saying; this root is the saying itself as an event ('I told you', 'what did you say'). Not ask (asking carve), not explain, not answer. As an argument: a saying, what was said.",
+  "id": "w0121",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "채차",
+  "pos": "root",
+  "gloss": "answer",
+  "sense_notes": "Respond to an ask of any of the three kinds (w0032-w0034). The person answered is the object; the content is a bare subordinate clause. Shares its second syllable with the asking family so that ask and answer are one audible pair. Not say in general (own root). As an argument: an answer, a reply.",
+  "id": "w0122",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "요하",
+  "pos": "root",
+  "gloss": "mean",
+  "sense_notes": "Signify; stand for; be what a speaker intends by a word or act. Subject is the sign or the speaker, object is what is meant. Covers 'what does this mean' and 'I meant this'. Not name (w0050, the label itself) and not the intend stance (commitment to act). As an argument: a meaning.",
+  "id": "w0123",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "해위",
+  "pos": "root",
+  "gloss": "clear",
+  "sense_notes": "Stative: plain, unambiguous, easy to grasp; said of an explanation, a reason, a name, a result. Unclear, vague and confusing are lumped as clear-NEG. Before another root it restricts it like the other statives (a clear name). Not true (w0064): a claim can be clear and false. As an argument: clarity.",
+  "id": "w0124",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "호하",
+  "pos": "root",
+  "gloss": "help",
+  "sense_notes": "Make someone's task easier or possible; assist. The person helped is the object; the task takes 'with'. A thing can be the subject ('the explanation helped'). Not fix (w0035) and not good (w0061). As an argument: help, assistance.",
+  "id": "w0125",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "초해",
+  "pos": "root",
+  "gloss": "decide",
+  "sense_notes": "Settle an open question so that it is closed and acted on. The matter settled is the object. Carved from choose: deciding closes a question, choosing takes one item out of a set; one can decide without a set of alternatives and choose without closing anything. As an argument: a decision, as in the project's decisions file.",
+  "id": "w0126",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "야헤",
+  "pos": "root",
+  "gloss": "choose",
+  "sense_notes": "Take one item out of a set of alternatives. The item taken is the object; the set takes 'from'. Carved from decide (see that root). Shares its first syllable with the interrogative so that which-question and choice are audibly related. As an argument: a choice, the thing chosen.",
+  "id": "w0127",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "얘하",
+  "pos": "root",
+  "gloss": "right, correct",
+  "sense_notes": "Stative of a person (or a claim they made): correct about a matter. The matter takes the object case ('right about the cause'). Carved from true (w0064), which is about a proposition holding, and from mistake (w0029), which is a wrong act: being wrong is a state of the person's view. Wrong is lumped as right-NEG. Shares its first syllable with true.",
+  "id": "w0128",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "치호",
+  "pos": "root",
+  "gloss": "doubt",
+  "sense_notes": "Withhold belief from a claim; hold it in question. An act or state of the doubter, with the claim as object or as a bare subordinate clause. Carved from check (w0034), which is asking someone whether an assumption holds; doubt is internal and asks no one. Not belief-NEG (w0028): one can neither believe nor doubt. Shares its first syllable with check. As an argument: a doubt.",
+  "id": "w0129",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "예차",
+  "pos": "root",
+  "gloss": "discuss",
+  "sense_notes": "Talk something over together; the exchange itself. The matter is the object; the other party takes 'with'. Built audibly from person plus ask. Covers discuss, talk about, go over. Not ask (one-directional) and not say. As an argument: a discussion.",
+  "id": "w0130",
+  "added": "2026-09-14"
  }
 ]

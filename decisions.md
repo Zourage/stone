@@ -172,3 +172,22 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D55. Korean collision check is in the validator, with a wordlist in the repo.** `data/ko_frequency.json` (OpenSubtitles 2018 top-50k Korean forms, filtered to pure Hangul of 1–4 syllables) is checked against every lexicon form of two or more syllables; a match fails validation. Single syllables are exempt (D39): 60 of our 74 are Korean words or particles, unavoidably. First application: the wait root collided and was recoined (w0054, 2 corpus sentences updated); every other multi-syllable form is clean. 4,898 two-syllable forms remain free of both Korean and our lexicon, ample for D54.
 
 **D56. Equatives: the predicate is the second term with a verb ending; no copula.** "The result is three" is result + three-direct; "this is the cause" is this + cause-direct; "the file's name is this" is file-possessor-name + this-direct; "what is this" is this + interrogative + question particle. Numerals and pronouns can therefore take the verb ending, like roots; the validator allows it. Rationale: falls out of the one-class grammar (D29), costs no word, and a copula would be English's. Closes the last of the D43 grammar questions except valency. 20 sentences (s0173–s0192, 3 held).
+
+## 2026-09-14 — Session 6 (Claude Code, first subagent batch)
+
+**D57. Recipient: the content is the object, the recipient takes the location case.** "Show me the result" = result-object me-location show; "tell you it failed" = you-location + subordinate clause + tell; "pass the value to the function" = value-object function-location pass. The location case already marks goals ("put it there"); a recipient is a goal. "For" stays beneficiary and purpose only. Rationale: three agents produced three patterns; one rule, and one the grammar already had.
+
+**D58. Method: batches by subagent, disjoint syllable pools, dry-run merge, human review before commit.** Three agents, one domain each (code work; experiments and measurement; discussion and reasoning), each restricted to its own rows of the syllable grid so no two can coin the same form, each told to leave out any sentence that needs grammar the language lacks and to record the gap instead. `scripts/merge_batch.py` dry-runs a batch through the validator without writing; the maintainer reviews roots, sample sentences and notes, then applies. First batch: 58 proposed roots reduced to 53 (three agents coined repeat separately, two coined begin, stop and show; one of each kept, sentences remapped), two glosses tightened into carves (message vs. say/tell; condition vs. choose), 236 sentences (s0193–s0428, 26 held), 4 duplicate English lines dropped. Lexicon 130, corpus 428. Every root carries sense_notes stating its carve.
+
+### OPEN (grammar gaps reported by all three agents, to decide one at a time)
+- G1. Coordination: and, or, but.
+- G2. Conditionals: if.
+- G3. Ability: can.
+- G4. Want, should.
+- G5. First person plural: we.
+- G6. Quantifiers and plural without a numeral: every, all, nothing, nobody.
+- G7. Comparison: more than.
+- G8. Valency: passives.
+- G9. Counting occurrences: N times.
+- G10. Root-before-root compounds: time limit, control result.
+- G11. Simultaneity: while.
