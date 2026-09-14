@@ -12,4 +12,5 @@ _TBD_
 CV and V only. No codas, no clusters. Every syllable = one glyph.
 
 ## Syllable inventory
-12 × 5 + 5 = 65 (pending O1).
+74 (D28). Does not fill a full grid; choose the C × V shape and the gaps here.
+

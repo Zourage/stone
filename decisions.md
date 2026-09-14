@@ -94,7 +94,9 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D27. Code is a use, not a design target.** Once fluent from the corpus, a model takes instructions in stone and writes code from them; no formal grammar is needed for that and one would hurt the human goal (D1). A small formal register for specs and commands may be added later, on top, without changing anything decided here. Noted as O7.
 
 ### OPEN (updated)
-- O1. Syllable count. Still open; D23 does not fix it.
+- O1. Closed by D28 (74).
 - O2, remaining: (i) whether noun/verb is a property of the root or of a suffix (one open class of content roots vs. separate noun and verb classes); (ii) a closed class of obligatory evidential/stance particles; (iii) a closed function-word class for case, subordination, questions. Proposed, not decided.
 - O6. Closed by D23.
 - O7. A formal code/spec register inside the language (D27). Later.
+
+**D28. O1 closed: 74 syllables.** Chosen over the 65 of D7. 74 does not fill a full consonant × vowel grid (V·(C+1) is never 74), so the inventory will have gaps or a partial bare-vowel set, e.g. 12 C × 6 V + 2 bare, or 14 C × 5 V + 4 bare; which one is a phonology decision, not reopened here. Codepoints drawn: `scripts/assign_codepoints.py --count 74`, seed 20260914, written to `spec/codepoints.json`. Any redraw is a new decision.
