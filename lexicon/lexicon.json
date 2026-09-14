@@ -302,5 +302,165 @@
   "sense_notes": "Lumped root (D35): the act of doing something in order to observe what happens. One root for lab experiment, unit test, and trying a thing to see. The evidential carries the result. As an argument: a test, an experiment, an attempt.",
   "id": "w0038",
   "added": "2026-09-14"
+ },
+ {
+  "form": "ꅽ",
+  "pos": "root",
+  "gloss": "what, which",
+  "sense_notes": "The one interrogative root. Bare: what. Before a root as a determiner: which (D44). With location case: where. With 'for': why. With 'with': how, by what means. With the time root: when. With the person root: who. There are no other question words.",
+  "id": "w0039",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꌑ",
+  "pos": "root",
+  "gloss": "person",
+  "sense_notes": "A human. Verbal use: to be a person, to be someone. With the interrogative before it: who.",
+  "id": "w0040",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꅍ",
+  "pos": "root",
+  "gloss": "run",
+  "sense_notes": "Make something go: execute a program, start a process, operate a machine. Not moving on foot; that is not in the language yet.",
+  "id": "w0041",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꃉ",
+  "pos": "root",
+  "gloss": "read",
+  "sense_notes": "Take in what is written or displayed. As an argument: a reading, a read.",
+  "id": "w0042",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꃘ",
+  "pos": "root",
+  "gloss": "write",
+  "sense_notes": "Put down in writing or in code. As an argument: a piece of writing, code written.",
+  "id": "w0043",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꁺ",
+  "pos": "root",
+  "gloss": "look",
+  "sense_notes": "Direct attention at; examine, inspect. Does not imply finding anything. As an argument: a look, an inspection.",
+  "id": "w0044",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꏇ",
+  "pos": "root",
+  "gloss": "find",
+  "sense_notes": "Locate or discover what was looked for or not. Implies success. As an argument: a finding.",
+  "id": "w0045",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꊴ",
+  "pos": "root",
+  "gloss": "thing",
+  "sense_notes": "Any entity, abstract or concrete. The default noun; use a narrower root when one exists.",
+  "id": "w0046",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꍑ",
+  "pos": "root",
+  "gloss": "cause",
+  "sense_notes": "What brings something about. Verbal use: to cause. Paired with result.",
+  "id": "w0047",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꏔ",
+  "pos": "root",
+  "gloss": "result",
+  "sense_notes": "What is brought about; an outcome, output, the value a test gives. Verbal use: to result, to come out as.",
+  "id": "w0048",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋪ",
+  "pos": "root",
+  "gloss": "time",
+  "sense_notes": "A point or stretch of time. With the interrogative before it: when. Verbal use: to take time, to last.",
+  "id": "w0049",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꏟ",
+  "pos": "root",
+  "gloss": "name",
+  "sense_notes": "Identifier of a thing or person: a name, a label, a variable name. Verbal use: to name, to call.",
+  "id": "w0050",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꌇ",
+  "pos": "root",
+  "gloss": "file",
+  "sense_notes": "A document or file on a machine; also a page of text. Verbal use: to file, to save as a file.",
+  "id": "w0051",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꑜꌇ",
+  "pos": "root",
+  "gloss": "compare",
+  "sense_notes": "Set two or more things side by side to see how they differ or agree. As an argument: a comparison.",
+  "id": "w0052",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꐎꄀ",
+  "pos": "root",
+  "gloss": "measure",
+  "sense_notes": "Find how much or how big by a procedure with a unit. As an argument: a measurement, a measure.",
+  "id": "w0053",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉉꉍ",
+  "pos": "root",
+  "gloss": "wait",
+  "sense_notes": "Let time pass until something happens. As an argument: a wait, a delay.",
+  "id": "w0054",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋆꌱ",
+  "pos": "root",
+  "gloss": "part",
+  "sense_notes": "A component of a larger thing. Verbal use: to be part of.",
+  "id": "w0055",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꁀꎏ",
+  "pos": "root",
+  "gloss": "number, count",
+  "sense_notes": "One root: nominal use is a number or quantity, verbal use is to count. English splits these; the language does not (D25).",
+  "id": "w0056",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꈺꃎ",
+  "pos": "root",
+  "gloss": "place",
+  "sense_notes": "A location, physical or in a file or system. With the interrogative before it: where. Verbal use: to be located at, to put.",
+  "id": "w0057",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉍꎏ",
+  "pos": "root",
+  "gloss": "machine",
+  "sense_notes": "A computer, device or mechanism that runs. Verbal use: to be mechanical, to run automatically.",
+  "id": "w0058",
+  "added": "2026-09-14"
  }
 ]

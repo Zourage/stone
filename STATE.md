@@ -6,7 +6,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Purpose: asking, code, discussion, engineering and science talk between two people; the corpus is its codex. (D1, D34)
 - Script: 74 syllable glyphs on Yi codepoints, `spec/codepoints.json`; sounds in `spec/phonology.md`; own glyphs to be designed, `spec/orthography.md`. 3 tokens per glyph. (D23, D28, D37)
 - No Latin form of any word exists anywhere. IPA describes sounds only. (CLAUDE.md rule 3)
-- Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). No adjectives, no adverbs. (D26, D29–D33)
+- Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). A pronoun or the interrogative before a root is a determiner. No adjectives, no adverbs. (D26, D29–D33, D44)
 - Evidentials, obligatory: direct, reported, inferred, general. Stance, optional: intend, predict, propose, trust, risk, assert. Tense: past, present unmarked, future (temporal only). (D30, D31, D34)
 - Semantic carving, `lexicon/README.md`: knowing ×3, error ×3, asking ×3, change ×3; experiment/test/try = 1. (D35)
 - First tranche: ~25 grammatical pieces (one syllable each), then 150 roots in frequency order; ~9 single syllables held in reserve. (D36)
@@ -22,10 +22,11 @@ Current state of the language and the method, kept short on purpose. `decisions.
 ## Lexicon
 - 25 grammatical pieces coined, `lexicon/lexicon.json` w0001–w0025. Slot = consonant, value = vowel; pronouns = bare vowels. (D39)
 - 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
-- Syllable budget: 38 of 74 used; 36 left, 9 of them in reserve.
+- 20 inquiry-core roots, w0039–w0058: one interrogative root does all question words; number/count is one root. (D45)
+- Syllable budget: 51 of 74 single syllables used; 23 left, 9 of them in reserve.
 
 ## Corpus
 - 30 sentences, 3 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. (D43)
 
 ## Next
-Coin the inquiry core (D36): question words, the work verbs, the domain nouns, then write sentences for them. Open grammar the corpus is already brushing against: valency (passive), pronouns as determiners, number.
+Write sentences for the inquiry core (questions with the interrogative root especially), then coin the stative predicates, numbers and deixis (D36). Open grammar: valency (passive), number marking.
