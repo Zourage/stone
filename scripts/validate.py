@@ -16,8 +16,11 @@ Still to implement once there is a corpus (D11, D15, D25):
   - relexification (D25): flag sentences whose stone side matches the English
     side in word count and order; fail if too many
 
---add: interactive path to add a lexicon entry through validation (TODO).
+--add FILE: FILE is a JSON list of entries (or one entry). Each is validated
+against the schema and the current lexicon, then appended. Nothing is written
+if any entry fails. Ids are assigned here (w0001, ...); `added` defaults to today.
 """
+import datetime
 import json
 import re
 import sys
@@ -38,9 +41,7 @@ def check_script(s, where, errors):
             errors.append(f"{where}: U+{ord(ch):04X} is not one of the 74 syllables")
 
 
-def main():
-    errors = []
-    lex = json.load(open(ROOT / "lexicon/lexicon.json"))
+def validate_entries(lex, errors):
     forms, glosses = {}, {}
     for e in lex:
         missing = [k for k in SCHEMA["required"] if k not in e]
@@ -59,6 +60,39 @@ def main():
         if g in glosses:
             errors.append(f"{e['id']}: duplicate gloss of {glosses[g]}")
         glosses[g] = e["id"]
+
+
+def add(path):
+    lex = json.load(open(ROOT / "lexicon/lexicon.json"))
+    new = json.load(open(path))
+    if isinstance(new, dict):
+        new = [new]
+    today = datetime.date.today().isoformat()
+    n = max((int(e["id"][1:]) for e in lex), default=0)
+    for e in new:
+        n += 1
+        e.setdefault("id", f"w{n:04d}")
+        e.setdefault("added", today)
+    errors = []
+    validate_entries(lex + new, errors)
+    for err in errors:
+        print("FAIL", err)
+    if errors:
+        print(f"--add: {len(errors)} errors, nothing written")
+        return 1
+    with open(ROOT / "lexicon/lexicon.json", "w", encoding="utf-8") as f:
+        json.dump(lex + new, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    print(f"--add: {len(new)} entries added, lexicon now {len(lex) + len(new)}")
+    return 0
+
+
+def main():
+    if len(sys.argv) == 3 and sys.argv[1] == "--add":
+        return add(sys.argv[2])
+    errors = []
+    lex = json.load(open(ROOT / "lexicon/lexicon.json"))
+    validate_entries(lex, errors)
     n_corpus = 0
     corpus_path = ROOT / "corpus/corpus.jsonl"
     if corpus_path.exists():

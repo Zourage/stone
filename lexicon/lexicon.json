@@ -1,1 +1,202 @@
-[]
+[
+ {
+  "form": "ꍲ",
+  "pos": "affix",
+  "gloss": "evidential: direct",
+  "sense_notes": "Speaker witnessed it. Mandatory slot; scopes over negation (D30).",
+  "id": "w0001",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꆜ",
+  "pos": "affix",
+  "gloss": "evidential: reported",
+  "sense_notes": "Speaker was told it. Source is someone else's statement.",
+  "id": "w0002",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꀗ",
+  "pos": "affix",
+  "gloss": "evidential: inferred",
+  "sense_notes": "Speaker reasoned it out from evidence, did not witness it.",
+  "id": "w0003",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꇳ",
+  "pos": "affix",
+  "gloss": "evidential: general",
+  "sense_notes": "Known without a source: definition, convention, common knowledge.",
+  "id": "w0004",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꈷ",
+  "pos": "affix",
+  "gloss": "stance: intend",
+  "sense_notes": "Speaker is committed to doing it. The commitment half of English 'will' (D31).",
+  "id": "w0005",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꉇ",
+  "pos": "affix",
+  "gloss": "stance: predict",
+  "sense_notes": "Speaker expects it, without commitment. The prediction half of English 'will'.",
+  "id": "w0006",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋴ",
+  "pos": "affix",
+  "gloss": "stance: propose",
+  "sense_notes": "Offered for testing or discussion, not claimed. A hypothesis, never a finding (D34).",
+  "id": "w0007",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꊓ",
+  "pos": "affix",
+  "gloss": "stance: trust",
+  "sense_notes": "Speaker relies on it as an assumption; the thing being built on.",
+  "id": "w0008",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꂅ",
+  "pos": "affix",
+  "gloss": "stance: risk",
+  "sense_notes": "Speaker knows it may go wrong and says so.",
+  "id": "w0009",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎽ",
+  "pos": "affix",
+  "gloss": "stance: assert",
+  "sense_notes": "Speaker insists, against pushback. Carries emphasis (D32).",
+  "id": "w0010",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋣ",
+  "pos": "affix",
+  "gloss": "tense: past",
+  "sense_notes": "Before now. Present is unmarked.",
+  "id": "w0011",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꐃ",
+  "pos": "affix",
+  "gloss": "tense: future",
+  "sense_notes": "After now, strictly temporal; intention and prediction are stance (D31).",
+  "id": "w0012",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꃿ",
+  "pos": "affix",
+  "gloss": "negation",
+  "sense_notes": "Piece of the verb ending, before tense. Evidential scopes over it (D32).",
+  "id": "w0013",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꁋ",
+  "pos": "affix",
+  "gloss": "subordinator",
+  "sense_notes": "Last piece of the embedded verb's ending; makes a clause a complement or a relative clause (D33).",
+  "id": "w0014",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꏡ",
+  "pos": "func",
+  "gloss": "case: object",
+  "sense_notes": "On the argument acted on. Subject is bare.",
+  "id": "w0015",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꑚ",
+  "pos": "func",
+  "gloss": "case: location",
+  "sense_notes": "On the argument that is a place, source or goal of location.",
+  "id": "w0016",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꑅ",
+  "pos": "func",
+  "gloss": "case: possessor",
+  "sense_notes": "On the possessor, which precedes the possessed.",
+  "id": "w0017",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꑈ",
+  "pos": "func",
+  "gloss": "question particle",
+  "sense_notes": "Sentence-final. The answer supplies the evidential (D30, D33).",
+  "id": "w0018",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꀃ",
+  "pos": "func",
+  "gloss": "pronoun: I",
+  "sense_notes": "Speaker. Takes case markers, nothing else.",
+  "id": "w0019",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꋌ",
+  "pos": "func",
+  "gloss": "pronoun: you",
+  "sense_notes": "Addressee.",
+  "id": "w0020",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꎿ",
+  "pos": "func",
+  "gloss": "pronoun: this one",
+  "sense_notes": "Near or just mentioned; person or thing. No gender, no animacy.",
+  "id": "w0021",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꍋ",
+  "pos": "func",
+  "gloss": "pronoun: that one",
+  "sense_notes": "Far or earlier mentioned; person or thing.",
+  "id": "w0022",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꀚ",
+  "pos": "func",
+  "gloss": "relational: with",
+  "sense_notes": "Accompaniment or instrument. Separate word after its argument.",
+  "id": "w0023",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꈝ",
+  "pos": "func",
+  "gloss": "relational: for",
+  "sense_notes": "Beneficiary or purpose.",
+  "id": "w0024",
+  "added": "2026-09-14"
+ },
+ {
+  "form": "ꆇ",
+  "pos": "func",
+  "gloss": "relational: from",
+  "sense_notes": "Origin, cause or source, when the location case is not enough.",
+  "id": "w0025",
+  "added": "2026-09-14"
+ }
+]
