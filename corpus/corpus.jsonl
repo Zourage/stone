@@ -28,3 +28,49 @@
 {"id": "s0028", "en": "The test failed.", "st": "ꎵ ꊖꋣꍲ", "features": ["direct", "past", "nominal-root"], "split": "train"}
 {"id": "s0029", "en": "Faults get fixed.", "st": "ꄂ ꏡ ꄩꇳ", "features": ["general", "obj", "nominal-root"], "split": "train"}
 {"id": "s0030", "en": "You'll build it, I expect.", "st": "ꋌ ꍋ ꏡ ꇲꐃꀗꉇ", "features": ["inferred", "future", "predict", "obj"], "split": "train"}
+{"id": "s0031", "en": "What failed?", "st": "ꅽ ꊖꋣ ꑈ", "features": ["question", "q-what", "past"], "split": "train"}
+{"id": "s0032", "en": "What did you find?", "st": "ꋌ ꅽ ꏡ ꏇꋣ ꑈ", "features": ["question", "q-what", "past", "obj"], "split": "train"}
+{"id": "s0033", "en": "Which file failed?", "st": "ꅽ ꌇ ꊖꋣ ꑈ", "features": ["question", "q-which", "det", "past"], "split": "train"}
+{"id": "s0034", "en": "Where is the fault?", "st": "ꄂ ꅽ ꑚ ꈺꃎ ꑈ", "features": ["question", "q-where", "loc"], "split": "train"}
+{"id": "s0035", "en": "Where did it fail?", "st": "ꍋ ꅽ ꑚ ꊖꋣ ꑈ", "features": ["question", "q-where", "loc", "past"], "split": "held"}
+{"id": "s0036", "en": "Why did it fail?", "st": "ꍋ ꅽ ꈝ ꊖꋣ ꑈ", "features": ["question", "q-why", "for", "past"], "split": "train"}
+{"id": "s0037", "en": "How did you fix it?", "st": "ꋌ ꍋ ꏡ ꅽ ꀚ ꄩꋣ ꑈ", "features": ["question", "q-how", "with", "past", "obj"], "split": "train"}
+{"id": "s0038", "en": "When did you run it?", "st": "ꋌ ꍋ ꏡ ꅽ ꋪ ꑚ ꅍꋣ ꑈ", "features": ["question", "q-when", "det", "loc", "past", "obj"], "split": "train"}
+{"id": "s0039", "en": "Who wrote this?", "st": "ꅽ ꌑ ꎿ ꏡ ꃘꋣ ꑈ", "features": ["question", "q-who", "det", "past", "obj"], "split": "train"}
+{"id": "s0040", "en": "Who ran it?", "st": "ꅽ ꌑ ꍋ ꏡ ꅍꋣ ꑈ", "features": ["question", "q-who", "det", "past", "obj"], "split": "train"}
+{"id": "s0041", "en": "Which part is faulty?", "st": "ꅽ ꋆꌱ ꄂ ꑈ", "features": ["question", "q-which", "det"], "split": "train"}
+{"id": "s0042", "en": "What did the machine find?", "st": "ꉍꎏ ꅽ ꏡ ꏇꋣ ꑈ", "features": ["question", "q-what", "past", "obj"], "split": "train"}
+{"id": "s0043", "en": "Why do you believe that?", "st": "ꋌ ꍋ ꏡ ꅽ ꈝ ꊂ ꑈ", "features": ["question", "q-why", "for", "obj", "know"], "split": "train"}
+{"id": "s0044", "en": "How did you find it?", "st": "ꋌ ꍋ ꏡ ꅽ ꀚ ꏇꋣ ꑈ", "features": ["question", "q-how", "with", "past", "obj"], "split": "held"}
+{"id": "s0045", "en": "Where did you find the file?", "st": "ꋌ ꌇ ꏡ ꅽ ꑚ ꏇꋣ ꑈ", "features": ["question", "q-where", "loc", "past", "obj"], "split": "train"}
+{"id": "s0046", "en": "When will you run it?", "st": "ꋌ ꍋ ꏡ ꅽ ꋪ ꑚ ꅍꐃ ꑈ", "features": ["question", "q-when", "det", "loc", "future", "obj"], "split": "train"}
+{"id": "s0047", "en": "Who read this?", "st": "ꅽ ꌑ ꎿ ꏡ ꃉꋣ ꑈ", "features": ["question", "q-who", "det", "past", "obj"], "split": "train"}
+{"id": "s0048", "en": "What does this thing run?", "st": "ꎿ ꊴ ꅽ ꏡ ꅍ ꑈ", "features": ["question", "q-what", "det", "obj"], "split": "train"}
+{"id": "s0049", "en": "I ran the test.", "st": "ꀃ ꎵ ꏡ ꅍꋣꍲ", "features": ["direct", "past", "obj", "nominal-root"], "split": "train"}
+{"id": "s0050", "en": "The machine ran it.", "st": "ꉍꎏ ꍋ ꏡ ꅍꋣꍲ", "features": ["direct", "past", "obj"], "split": "train"}
+{"id": "s0051", "en": "I read the file.", "st": "ꀃ ꌇ ꏡ ꃉꋣꍲ", "features": ["direct", "past", "obj"], "split": "train"}
+{"id": "s0052", "en": "I read your file. It's faulty, I'm told.", "st": "ꀃ ꋌ ꑅ ꌇ ꏡ ꃉꋣꍲ ꍋ ꄂꆜ", "features": ["direct", "reported", "past", "poss", "obj"], "split": "held"}
+{"id": "s0053", "en": "I'll write the fix.", "st": "ꀃ ꄩ ꏡ ꃘꐃꍲꈷ", "features": ["direct", "future", "intend", "obj", "nominal-root"], "split": "train"}
+{"id": "s0054", "en": "I wrote this part.", "st": "ꀃ ꎿ ꋆꌱ ꏡ ꃘꋣꍲ", "features": ["direct", "past", "det", "obj"], "split": "train"}
+{"id": "s0055", "en": "I looked at it. I did not find it.", "st": "ꀃ ꍋ ꏡ ꁺꋣꍲ ꀃ ꍋ ꏡ ꏇꃿꋣꍲ", "features": ["direct", "past", "neg", "obj"], "split": "train"}
+{"id": "s0056", "en": "I found the cause.", "st": "ꀃ ꍑ ꏡ ꏇꋣꍲ", "features": ["direct", "past", "obj", "nominal-root"], "split": "train"}
+{"id": "s0057", "en": "The fault must have caused the failure.", "st": "ꄂ ꊖ ꏡ ꍑꋣꀗ", "features": ["inferred", "past", "obj", "nominal-root"], "split": "train"}
+{"id": "s0058", "en": "I know the cause; I tested it.", "st": "ꀃ ꍑ ꏡ ꈆꍲ", "features": ["direct", "obj", "know", "nominal-root"], "split": "train"}
+{"id": "s0059", "en": "A result is a number.", "st": "ꏔ ꁀꎏꇳ", "features": ["general", "nominal-root"], "split": "train"}
+{"id": "s0060", "en": "I compared this result with that one.", "st": "ꀃ ꎿ ꏔ ꏡ ꍋ ꀚ ꑜꌇꋣꍲ", "features": ["direct", "past", "det", "obj", "with"], "split": "held"}
+{"id": "s0061", "en": "I measured the time.", "st": "ꀃ ꋪ ꏡ ꐎꄀꋣꍲ", "features": ["direct", "past", "obj", "nominal-root"], "split": "train"}
+{"id": "s0062", "en": "It came out as this.", "st": "ꍋ ꎿ ꏡ ꏔꋣꍲ", "features": ["direct", "past", "obj"], "split": "train"}
+{"id": "s0063", "en": "Wait for the result.", "st": "ꋌ ꏔ ꈝ ꉉꉍꍲꈷ", "features": ["direct", "intend", "imperative", "for", "nominal-root"], "split": "train"}
+{"id": "s0064", "en": "Run the test.", "st": "ꋌ ꎵ ꏡ ꅍꍲꈷ", "features": ["direct", "intend", "imperative", "obj", "nominal-root"], "split": "train"}
+{"id": "s0065", "en": "Read this file.", "st": "ꋌ ꎿ ꌇ ꏡ ꃉꍲꈷ", "features": ["direct", "intend", "imperative", "det", "obj"], "split": "train"}
+{"id": "s0066", "en": "I waited.", "st": "ꀃ ꉉꉍꋣꍲ", "features": ["direct", "past"], "split": "train"}
+{"id": "s0067", "en": "Count the parts.", "st": "ꋌ ꋆꌱ ꏡ ꁀꎏꍲꈷ", "features": ["direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s0068", "en": "I counted the files.", "st": "ꀃ ꌇ ꏡ ꁀꎏꋣꍲ", "features": ["direct", "past", "obj"], "split": "train"}
+{"id": "s0069", "en": "Name the file.", "st": "ꋌ ꌇ ꏡ ꏟꍲꈷ", "features": ["direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s0070", "en": "The machine is in that place.", "st": "ꉍꎏ ꍋ ꈺꃎ ꑚ ꈺꃎꍲ", "features": ["direct", "det", "loc"], "split": "train"}
+{"id": "s0071", "en": "Put the file in this place.", "st": "ꋌ ꌇ ꏡ ꎿ ꈺꃎ ꑚ ꈺꃎꍲꈷ", "features": ["direct", "intend", "imperative", "det", "obj", "loc"], "split": "held"}
+{"id": "s0072", "en": "Someone made a mistake, it seems. The machine did not.", "st": "ꌑ ꊶꋣꀗ ꉍꎏ ꊶꃿꋣꀗ", "features": ["inferred", "past", "neg"], "split": "train"}
+{"id": "s0073", "en": "The thing I found is faulty.", "st": "ꀃ ꏇꋣꍲꁋ ꊴ ꄂꍲ", "features": ["direct", "past", "sub"], "split": "train"}
+{"id": "s0074", "en": "It takes time. That's how it is.", "st": "ꍋ ꋪꇳ", "features": ["general"], "split": "train"}
+{"id": "s0075", "en": "The test will take time, I expect.", "st": "ꎵ ꋪꐃꀗꉇ", "features": ["inferred", "future", "predict", "nominal-root"], "split": "train"}
+{"id": "s0076", "en": "I'm asking you for a measurement.", "st": "ꀃ ꋌ ꏡ ꐎꄀ ꈝ ꇏꍲ", "features": ["direct", "obj", "for", "ask", "nominal-root"], "split": "train"}

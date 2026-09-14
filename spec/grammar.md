@@ -31,6 +31,9 @@ Possessor case marker on the possessor, before the possessed.
 Subordinator piece on the embedded verb, after its evidential. Covers complement and relative clauses.
 ## Evidentiality (D30)
 Four, obligatory on every predicate: direct, reported, inferred, general. Scopes over negation. Questions ask for the listener's source. Forms: w0001–w0004.
+## Imperatives (D46)
+Second-person subject with the intend stance. No imperative mood. Requests use the ask-for-action root instead.
+
 ## Stance (D34)
 Optional, one per predicate, own slot after the evidential and before the subordinator: intend, predict, propose, trust, risk, assert. Forms: w0005–w0010.
 

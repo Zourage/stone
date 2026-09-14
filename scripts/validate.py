@@ -113,10 +113,12 @@ def check_corpus(lex, errors):
             if t in by_form:
                 seen.add(by_form[t]["id"])
                 continue
-            root, rest = t[0], t[1:]
-            if root not in by_form or by_form[root]["pos"] != "root":
-                errors.append(f"{s['id']}: token {t!r} is not a word (root {root!r} unknown)")
+            root = next((t[:k] for k in range(len(t), 0, -1)
+                         if t[:k] in by_form and by_form[t[:k]]["pos"] == "root"), None)
+            if root is None:
+                errors.append(f"{s['id']}: token {t!r} is not a word (no known root prefix)")
                 continue
+            rest = t[len(root):]
             seen.add(by_form[root]["id"])
             last, slots = -1, []
             for ch in rest:

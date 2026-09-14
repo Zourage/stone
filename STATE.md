@@ -26,7 +26,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Syllable budget: 51 of 74 single syllables used; 23 left, 9 of them in reserve.
 
 ## Corpus
-- 30 sentences, 3 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. (D43)
+- 76 sentences, 8 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. (D43, D46, D47)
 
 ## Next
-Write sentences for the inquiry core (questions with the interrogative root especially), then coin the stative predicates, numbers and deixis (D36). Open grammar: valency (passive), number marking.
+Coin the stative predicates, numbers and deixis (D36), then sentences for them. Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.
