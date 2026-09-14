@@ -19,6 +19,9 @@ Current state of the language and the method, kept short on purpose. `decisions.
 ## Open
 - O5 teaching materials (after corpus). O7 formal code register (later). Number marking and derivation suffixes: decide when roots need them.
 
+## Tests
+- Acceptance test 1 passed: 13/13 comprehension, 12/13 exact production. Bar: 100% / ≥90% with misses grammatical. Weak: general evidential, stance slot, hold root untested. `tests/results/`. (D50)
+
 ## Lexicon
 - 25 grammatical pieces coined, `lexicon/lexicon.json` w0001–w0025. Slot = consonant, value = vowel; pronouns = bare vowels. (D39)
 - 13 carve roots coined, w0026–w0038: each carve is a consonant family, members differ by vowel. (D42)
@@ -30,4 +33,4 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - 121 sentences, 13 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. (D43, D46, D47, D49)
 
 ## Next
-Coin from corpus need: write the sentences the two of you would actually say about code and experiments, and coin the roots they lack (two syllables each). Then fill coverage gaps to D11's targets and run the first acceptance test (D3). Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.
+Add minimal pairs contrasting evidentials with stances, and held sentences for the hold root; decide equatives. Then coin from corpus need: sentences the two of you would say about code and experiments, roots coined two syllables each. Fill coverage to D11's targets; re-test. Open grammar: valency (passive), number marking, equative sentences ("this file's name is X") which have no copula yet.
