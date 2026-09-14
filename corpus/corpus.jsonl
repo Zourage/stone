@@ -119,3 +119,46 @@
 {"id": "s0119", "en": "Are the two the same?", "st": "ꋆ ꈗ ꑈ", "features": ["question", "numeral", "stative"], "split": "train"}
 {"id": "s0120", "en": "The small test is done; the big one is not.", "st": "ꄾ ꎵ ꉏꍲ ꃎ ꎵ ꉏꃿꍲ", "features": ["direct", "stative", "neg", "det"], "split": "train"}
 {"id": "s0121", "en": "I'll build a small one first, then a big one.", "st": "ꀃ ꄾ ꊴ ꏡ ꇲꐃꍲꈷ ꍋ ꈺ ꀃ ꃎ ꊴ ꏡ ꇲꐃꍲꈷ", "features": ["direct", "future", "intend", "after", "det", "obj"], "split": "train"}
+{"id": "s0122", "en": "The machine is faulty. I saw it.", "st": "ꉍꎏ ꄂꍲ", "features": ["direct", "stative", "minimal-evid"], "split": "train"}
+{"id": "s0123", "en": "The machine is faulty, I'm told.", "st": "ꉍꎏ ꄂꆜ", "features": ["reported", "stative", "minimal-evid"], "split": "train"}
+{"id": "s0124", "en": "The machine must be faulty.", "st": "ꉍꎏ ꄂꀗ", "features": ["inferred", "stative", "minimal-evid"], "split": "held"}
+{"id": "s0125", "en": "Machines are faulty. That's just how it is.", "st": "ꉍꎏ ꄂꇳ", "features": ["general", "stative", "minimal-evid"], "split": "train"}
+{"id": "s0126", "en": "The test takes time. I timed it.", "st": "ꎵ ꋪꍲ", "features": ["direct", "minimal-evid", "nominal-root"], "split": "train"}
+{"id": "s0127", "en": "The test takes time, they say.", "st": "ꎵ ꋪꆜ", "features": ["reported", "minimal-evid", "nominal-root"], "split": "train"}
+{"id": "s0128", "en": "The test takes time, I gather.", "st": "ꎵ ꋪꀗ", "features": ["inferred", "minimal-evid", "nominal-root"], "split": "train"}
+{"id": "s0129", "en": "Tests take time. Everyone knows that.", "st": "ꎵ ꋪꇳ", "features": ["general", "minimal-evid", "nominal-root"], "split": "held"}
+{"id": "s0130", "en": "Faults get fixed. Everyone knows that. And I'm counting on it.", "st": "ꄂ ꏡ ꄩꇳꊓ", "features": ["general", "trust", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0131", "en": "This fault will get fixed, I gather. And I'm counting on it.", "st": "ꎿ ꄂ ꏡ ꄩꐃꀗꊓ", "features": ["inferred", "future", "trust", "obj", "det", "minimal-stance"], "split": "train"}
+{"id": "s0132", "en": "Faults cause failures. That's a known thing. I insist.", "st": "ꄂ ꊖ ꏡ ꍑꇳꎽ", "features": ["general", "assert", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0133", "en": "I'll fix it. That's my intention.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꈷ", "features": ["direct", "future", "intend", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0134", "en": "I'll fix it, I expect.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꉇ", "features": ["direct", "future", "predict", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0135", "en": "I'll fix it. Just a proposal.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꋴ", "features": ["direct", "future", "propose", "obj", "minimal-stance"], "split": "held"}
+{"id": "s0136", "en": "I'll fix it. You can count on that.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꊓ", "features": ["direct", "future", "trust", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0137", "en": "I'll fix it, but that might go wrong.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꂅ", "features": ["direct", "future", "risk", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0138", "en": "I'll fix it. I insist.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲꎽ", "features": ["direct", "future", "assert", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0139", "en": "I'll fix it.", "st": "ꀃ ꍋ ꏡ ꄩꐃꍲ", "features": ["direct", "future", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0140", "en": "It'll fail, I'm told. And I expect so.", "st": "ꍋ ꊖꐃꆜꉇ", "features": ["reported", "future", "predict", "minimal-stance"], "split": "train"}
+{"id": "s0141", "en": "It'll fail, I'm told. I'm counting on that.", "st": "ꍋ ꊖꐃꆜꊓ", "features": ["reported", "future", "trust", "minimal-stance"], "split": "held"}
+{"id": "s0142", "en": "It must be the cause. Just a proposal.", "st": "ꍋ ꍑꀗꋴ", "features": ["inferred", "propose", "minimal-stance"], "split": "train"}
+{"id": "s0143", "en": "It's the cause. I saw it. I insist.", "st": "ꍋ ꍑꍲꎽ", "features": ["direct", "assert", "minimal-stance"], "split": "train"}
+{"id": "s0144", "en": "It's the cause. I saw it. Just a proposal.", "st": "ꍋ ꍑꍲꋴ", "features": ["direct", "propose", "minimal-stance"], "split": "train"}
+{"id": "s0145", "en": "You'll run it, I'm told. That's the plan.", "st": "ꋌ ꍋ ꏡ ꅍꐃꆜꈷ", "features": ["reported", "future", "intend", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0146", "en": "I have a machine.", "st": "ꀃ ꑅ ꉍꎏ ꂸꍲ", "features": ["direct", "poss", "hold-exist"], "split": "train"}
+{"id": "s0147", "en": "I have two machines.", "st": "ꀃ ꑅ ꋆ ꉍꎏ ꂸꍲ", "features": ["direct", "poss", "numeral", "det", "hold-exist"], "split": "train"}
+{"id": "s0148", "en": "I don't have the file.", "st": "ꀃ ꑅ ꌇ ꂸꃿꍲ", "features": ["direct", "neg", "poss", "hold-exist"], "split": "held"}
+{"id": "s0149", "en": "You have the file, I'm told.", "st": "ꋌ ꑅ ꌇ ꂸꆜ", "features": ["reported", "poss", "hold-exist"], "split": "train"}
+{"id": "s0150", "en": "Do you have the file?", "st": "ꋌ ꑅ ꌇ ꂸ ꑈ", "features": ["question", "poss", "hold-exist"], "split": "train"}
+{"id": "s0151", "en": "There is a fault.", "st": "ꄂ ꂸꍲ", "features": ["direct", "hold-exist"], "split": "train"}
+{"id": "s0152", "en": "There's no fault. I looked.", "st": "ꄂ ꂸꃿꍲ", "features": ["direct", "neg", "hold-exist"], "split": "held"}
+{"id": "s0153", "en": "There must be a fault.", "st": "ꄂ ꂸꀗ", "features": ["inferred", "hold-exist"], "split": "train"}
+{"id": "s0154", "en": "There are three parts.", "st": "ꉍ ꋆꌱ ꂸꍲ", "features": ["direct", "numeral", "det", "hold-exist"], "split": "train"}
+{"id": "s0155", "en": "Is there a result?", "st": "ꏔ ꂸ ꑈ", "features": ["question", "hold-exist", "nominal-root"], "split": "held"}
+{"id": "s0156", "en": "There's a fault here, I gather.", "st": "ꄂ ꎿ ꑚ ꂸꀗ", "features": ["inferred", "here", "loc", "hold-exist"], "split": "train"}
+{"id": "s0157", "en": "There was a failure before the fix.", "st": "ꄩ ꄀ ꊖ ꂸꋣꍲ", "features": ["direct", "past", "before", "hold-exist", "nominal-root"], "split": "train"}
+{"id": "s0158", "en": "There will be a test after this.", "st": "ꎿ ꈺ ꎵ ꂸꐃꍲꈷ", "features": ["direct", "future", "intend", "after", "hold-exist", "nominal-root"], "split": "train"}
+{"id": "s0159", "en": "The machine has a fault.", "st": "ꉍꎏ ꑅ ꄂ ꂸꍲ", "features": ["direct", "poss", "hold-exist"], "split": "train"}
+{"id": "s0160", "en": "This file has no name.", "st": "ꎿ ꌇ ꑅ ꏟ ꂸꃿꍲ", "features": ["direct", "neg", "poss", "det", "hold-exist"], "split": "train"}
+{"id": "s0161", "en": "I have the cause, I think.", "st": "ꀃ ꑅ ꍑ ꂸꀗ", "features": ["inferred", "poss", "hold-exist"], "split": "train"}
+{"id": "s0162", "en": "I got the file from you.", "st": "ꀃ ꌇ ꏡ ꋌ ꆇ ꏇꋣꍲ", "features": ["direct", "past", "from", "obj"], "split": "train"}
+{"id": "s0163", "en": "The result comes from the test.", "st": "ꏔ ꎵ ꆇ ꏔꇳ", "features": ["general", "from", "nominal-root"], "split": "held"}
+{"id": "s0164", "en": "It failed from that fault, I gather.", "st": "ꍋ ꍋ ꄂ ꆇ ꊖꋣꀗ", "features": ["inferred", "past", "from", "det"], "split": "train"}
