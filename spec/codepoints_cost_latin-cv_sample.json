@@ -1,0 +1,42 @@
+{
+ "meta": {
+  "block": "latin-cv",
+  "backend": "openrouter",
+  "model": "anthropic/claude-haiku-4.5",
+  "repeats": 16,
+  "stride": 1,
+  "estimated": false,
+  "unit": "tokens per glyph, marginal, inside a run of `repeats` copies",
+  "baseline_tokens": 8,
+  "probe_note": "ASCII tokenizer probes measured as a control for the glyph blocks. Not words, not transliterations of words; the language has no Latin form.",
+  "see_check": {
+   "applicable": false,
+   "why": "ASCII probe strings"
+  },
+  "stripped_codepoints": 0,
+  "stripped_note": "cost 0 = removed from the input before tokenization; the model never sees the glyph. Unusable, not cheap."
+ },
+ "costs": {
+  "ki": 0.5625,
+  "le": 0.5625,
+  "lo": 0.5625,
+  "ma": 0.5625,
+  "me": 0.5625,
+  "mo": 0.5625,
+  "ne": 0.5625,
+  "no": 0.5625,
+  "nu": 0.5625,
+  "pi": 0.5625,
+  "ri": 0.5625,
+  "ru": 0.5625,
+  "se": 0.5625,
+  "su": 0.5625,
+  "ta": 0.5625,
+  "ti": 0.5625,
+  "to": 0.5625,
+  "ka": 0.9375,
+  "pa": 0.9375,
+  "hu": 1.0
+ },
+ "stripped": []
+}

@@ -1,0 +1,54 @@
+{
+ "meta": {
+  "block": "hangul",
+  "backend": "openrouter",
+  "model": "anthropic/claude-haiku-4.5",
+  "repeats": 16,
+  "stride": 512,
+  "estimated": false,
+  "unit": "tokens per glyph, marginal, inside a run of `repeats` copies",
+  "baseline_tokens": 8,
+  "see_check": {
+   "applicable": true,
+   "glyphs": [
+    "AC00",
+    "AE00",
+    "B000",
+    "B200",
+    "B400",
+    "B600",
+    "B800",
+    "BA00"
+   ],
+   "question": "how many of these 8 characters are non-ASCII",
+   "reply": "8"
+  },
+  "stripped_codepoints": 0,
+  "stripped_note": "cost 0 = removed from the input before tokenization; the model never sees the glyph. Unusable, not cheap."
+ },
+ "costs": {
+  "AC00": 1.0,
+  "AE00": 1.0,
+  "C600": 1.0,
+  "C800": 1.0,
+  "B200": 2.0,
+  "B400": 2.0,
+  "B600": 2.0,
+  "B800": 2.0,
+  "BA00": 2.0,
+  "BC00": 2.0,
+  "BE00": 2.0,
+  "C200": 2.0,
+  "CC00": 2.0,
+  "CE00": 2.0,
+  "D200": 2.0,
+  "D600": 2.0,
+  "B000": 3.0,
+  "C000": 3.0,
+  "C400": 3.0,
+  "CA00": 3.0,
+  "D000": 3.0,
+  "D400": 3.0
+ },
+ "stripped": []
+}
