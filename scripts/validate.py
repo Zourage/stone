@@ -24,6 +24,8 @@ Corpus checks (D11, D15, D25, D43):
     of its own cues (D84, D88, D91, D94, D105)
   - REPORT: English words that name more than one predicate root, which leaves
     English -> stone undetermined (D90, D94)
+  - REPORT: held sentences resting on a construction pair the train split never
+    shows together, which is what failed acceptance test 6 (D112, D113)
   - ERROR: a held sentence whose `st` or `en` is verbatim in the train split,
     which would hand the acceptance test that item for free (D93)
   - ERROR: corpus/README.md's cue sentence or feature-tag list out of step with
@@ -31,6 +33,9 @@ Corpus checks (D11, D15, D25, D43):
   - ERROR: an adverbial standing before the main-clause subject (D78). This was
     a count until D102, and the count read 0 while eleven lines were wrong
   - ERROR: an adverbial standing before the object rather than after it (D103)
+  - ERROR: the three orders G35 settled — a region nominal with a possessor, a
+    possessor predicate with a spare leading pronoun, and a subordinate clause
+    repeating a subject it shares with the main clause (D114, D115, D116)
 
 --add FILE: FILE is a JSON list of entries (or one entry). Each is validated
 against the schema and the current lexicon, then appended. Nothing is written
@@ -386,6 +391,87 @@ def readme_sync(sents):
     return out
 
 
+def g35_errors(sents, lx):
+    """The three orders G35 settled (D114, D115, D116).
+
+    Each was found by acceptance test 6 as a line where the corpus rendered one
+    construction two ways, and each is checked here because a rule that lives
+    only in the spec gets broken (D82).
+
+      * a region nominal compounds with its landmark and takes no possessor —
+        the corpus was 8 to 5 and D70 already said "compounded before a root";
+      * a possessor predicate takes no leading pronoun, 15 to 1;
+    A third order was settled without a check: a subordinate clause states its
+    own subject even when it is the main clause's (D117). Detecting the
+    violation means detecting an ABSENT subject, which is not distinguishable
+    from a legitimately agentless embedded clause, so that rule is stated in
+    `spec/grammar.md` and enforced by nothing. It is recorded here as unchecked
+    rather than left to look checked.
+    """
+    g = lambda gloss: next((e["form"] for e in lx.entries if e["gloss"] == gloss), None)  # noqa: E731
+    poss, loc = g("case: possessor"), g("case: location")
+    i_, you = g("pronoun: I"), g("pronoun: you")
+    pron = {e["form"] for e in lx.entries if e["gloss"].startswith("pronoun")}
+    head = {e["gloss"].split(",")[0].strip(): e["form"] for e in lx.entries}
+    region = {head[k] for k in ("inside", "outside", "up", "down", "near", "far") if k in head}
+    out = []
+    for s in sents:
+        t = s["st"].split()
+        for i, x in enumerate(t):
+            # only the locative region nominal: `machine's inside FROM` is a source
+            # phrase and a different construction entirely
+            if x in region and i and t[i - 1] == poss and i + 1 < len(t) and t[i + 1] == loc:
+                out.append(f"{s['id']}: a region nominal carries a possessor; it compounds with "
+                           f"its landmark instead (D114)")
+                break
+        # only where the possessed root is itself the predicate: in `you my note-OBJ
+        # read` the possessor phrase is an argument and the leading pronoun is the
+        # subject, which is ordinary
+        if (len(t) == 4 and t[0] in pron and t[1] in (i_, you) and t[2] == poss
+                and parse_sentence(s["st"], lx).tokens[3].affixes):
+            out.append(f"{s['id']}: a possessor predicate opens with a spare pronoun; the "
+                       f"possessor comes first (D116)")
+    return out
+
+
+def composition_report(sents):
+    """Held sentences resting on a pair of constructions the train split never
+    shows together.
+
+    D11 counts features one at a time, and after D109 every feature sits at 13+.
+    That says nothing about their compositions: when acceptance test 6 ran,
+    `agentless` had 17 train examples and `modal` had 56 and the two had never
+    once appeared together — which is the line that failed the run (s0730,
+    D112), and the same shape as s0522 in test 5 (D97). A count per feature is
+    not a count per construction.
+
+    This belongs to the PRE-RUN protocol, not to the corpus's health: draw a
+    held set, run this, teach the compositions it names in train — with other
+    words and other choices, so the held line still has to be generalised to
+    (D97's technique) — and only then spend a run. Domain tags are skipped
+    because they describe subject matter rather than construction (D113).
+    """
+    from itertools import combinations
+    train = [s for s in sents if s["split"] == "train"]
+    held = [s for s in sents if s["split"] == "held"]
+    count, pair = {}, {}
+    for s in train:
+        fs = sorted(set(s["features"]))
+        for f in fs:
+            count[f] = count.get(f, 0) + 1
+        for a, b in combinations(fs, 2):
+            pair[(a, b)] = pair.get((a, b), 0) + 1
+    skip = {f for f in count if f.startswith("domain-")} | {"minimal-evid", "minimal-stance"}
+    out = []
+    for s in held:
+        fs = sorted(set(s["features"]) - skip)
+        bad = [(a, b) for a, b in combinations(fs, 2)
+               if not pair.get((a, b)) and count.get(a, 0) >= 8 and count.get(b, 0) >= 8]
+        if bad:
+            out.append((s["id"], bad))
+    return out
+
+
 def leak_report(sents):
     """Held sentences whose answer sits verbatim in the train split.
 
@@ -511,9 +597,12 @@ def check_corpus(lex, errors):
         errors.append(msg)
     for msg in object_order_errors(sents, lx):
         errors.append(msg)
+    for msg in g35_errors(sents, lx):
+        errors.append(msg)
     for msg in rule_errors(sents, lx):
         errors.append(msg)
     collisions = gloss_collisions(sents, lx)
+    comps = composition_report(sents)
     errors.extend(readme_sync(sents))
     for sid in leak_report(sents):
         errors.append(f"{sid}: held sentence whose script or English is verbatim in the train "
@@ -527,6 +616,8 @@ def check_corpus(lex, errors):
               f"held {held}/{n}, same-length-as-English {same_len}/{n}")
         print(f"gloss collisions: {len(collisions)} English words naming more than one "
               f"predicate root ({', '.join(collisions) or 'none'}) (D94)")
+        print(f"compositions: {len(comps)} held sentences rest on a construction pair train "
+              f"never shows{': ' + ', '.join(i for i, _ in comps) if comps else ''} (D113)")
     return n
 
 

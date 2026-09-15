@@ -72,8 +72,17 @@ A subordinate clause fills a subject slot as well as an object slot, so an equat
 ## Until and since (D70)
 Subordinate clause + the time root + before = until; + after = since.
 
-## Region nominals (D70)
-Inside, outside, up and down with the location case, or compounded before a root.
+## Region nominals (D70, D114)
+Inside, outside, up and down with the location case. A region nominal **compounds directly with its landmark and takes no possessor**: `machine outside-LOC`, not `machine-POSS outside-LOC` (8 to 5 in the corpus; D70 already said "compounded"). With no landmark it stands alone: `above-LOC`.
+
+## Locating a thing against saying it exists (D115)
+Locating a definite thing takes the **place** root: `fault inside-LOC place-DIRECT` = the fault is inside. Saying something exists takes the **hold** root: `danger here-LOC hold-DIRECT` = there is a danger here. The corpus rendered these two ways until D115; the distinction is not marked in the script, so nothing checks it.
+
+## Possession as a predicate (D69, D116)
+The possessor takes the possessor case and comes first, with no leading pronoun: `I-POSS turn-DIRECT` = it is my turn, not `this I-POSS turn-DIRECT`.
+
+## A shared subordinate subject (D117)
+A subordinate clause states its own subject even when it is the same as the main clause's: `you you it-OBJ fix-GEN-SUB time LOC alone-NEG-DIRECT-INTEND`. Thin evidence (2 to 1) and unchecked, because an absent subject cannot be told from a legitimately agentless embedded clause.
 
 ## Comparison (D65)
 The standard takes the from word; the quality is the predicate. This that-FROM big-DIRECT = this is bigger than that. No comparative form.

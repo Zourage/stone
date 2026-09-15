@@ -550,19 +550,19 @@
 {"id": "s0550", "en": "You should act now.", "st": "에 이 유 페 파로코디 티페카", "features": ["direct", "domain-physical", "loc", "modal", "now", "should", "sub"], "split": "train"}
 {"id": "s0551", "en": "I'll do it; it will probably be fast.", "st": "아 우 파 파로투카마 우 파시투키매", "features": ["direct", "domain-physical", "future", "intend", "obj", "predict", "stative"], "split": "train"}
 {"id": "s0552", "en": "The machine is near.", "st": "니포 패노카", "features": ["direct", "domain-physical", "stative"], "split": "train"}
-{"id": "s0553", "en": "Put the file near the machine.", "st": "에 왜 파 니포 피 패노 페 후태카마", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "nominal-root", "obj", "poss"], "split": "train"}
+{"id": "s0553", "en": "Put the file near the machine.", "st": "에 왜 파 니포 패노 페 후태카마", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "nominal-root", "obj", "poss"], "split": "train"}
 {"id": "s0554", "en": "The place is far.", "st": "후태 패누카", "features": ["direct", "domain-physical", "stative"], "split": "train"}
 {"id": "s0555", "en": "Everything is far, I'm told.", "st": "새 토 패누케", "features": ["all", "det", "domain-physical", "quantifier", "reported", "stative"], "split": "train"}
 {"id": "s0556", "en": "The machine is far. I cannot hold it.", "st": "니포 패누카 아 우 파 토시코디 티캐루카", "features": ["able", "direct", "domain-physical", "modal", "neg", "obj", "sub"], "split": "train"}
-{"id": "s0557", "en": "There is a value inside the file.", "st": "키토 왜 피 페세 페 얘카", "features": ["direct", "domain-physical", "hold-exist", "loc", "nominal-root", "poss"], "split": "train"}
+{"id": "s0557", "en": "There is a value inside the file.", "st": "키토 왜 페세 페 얘카", "features": ["direct", "domain-physical", "hold-exist", "loc", "nominal-root", "poss"], "split": "train"}
 {"id": "s0558", "en": "Look inside the machine.", "st": "에 니포 피 페세 파 위카마", "features": ["direct", "domain-physical", "imperative", "intend", "nominal-root", "obj", "poss"], "split": "train"}
-{"id": "s0559", "en": "The part is outside.", "st": "네쿠 페소 페 얘카", "features": ["direct", "domain-physical", "hold-exist", "loc"], "split": "held"}
-{"id": "s0560", "en": "Nothing is outside the machine.", "st": "소 토 니포 피 페소 페 얘카", "features": ["det", "direct", "domain-physical", "hold-exist", "loc", "none", "poss", "quantifier"], "split": "train"}
+{"id": "s0559", "en": "The part is outside.", "st": "네쿠 페소 페 후태카", "features": ["direct", "domain-physical", "hold-exist", "loc"], "split": "held"}
+{"id": "s0560", "en": "Nothing is outside the machine.", "st": "소 토 니포 페소 페 얘카", "features": ["det", "direct", "domain-physical", "hold-exist", "loc", "none", "poss", "quantifier"], "split": "train"}
 {"id": "s0561", "en": "Move it up.", "st": "에 우 파 피레 페 투도카마", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "obj"], "split": "train"}
-{"id": "s0562", "en": "The line is above, I gather.", "st": "피토 피레 페 얘키", "features": ["domain-physical", "hold-exist", "inferred", "loc"], "split": "train"}
-{"id": "s0563", "en": "Is the machine above?", "st": "니포 피레 페 얘 추", "features": ["domain-physical", "hold-exist", "loc", "question"], "split": "train"}
+{"id": "s0562", "en": "The line is above, I gather.", "st": "피토 피레 페 후태키", "features": ["domain-physical", "hold-exist", "inferred", "loc"], "split": "train"}
+{"id": "s0563", "en": "Is the machine above?", "st": "니포 피레 페 후태 추", "features": ["domain-physical", "hold-exist", "loc", "question"], "split": "train"}
 {"id": "s0564", "en": "Move the file down.", "st": "에 왜 파 피라 페 투도카마", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "obj"], "split": "held"}
-{"id": "s0565", "en": "The part is below the machine.", "st": "네쿠 니포 피 피라 페 얘카", "features": ["direct", "domain-physical", "hold-exist", "loc", "poss"], "split": "held"}
+{"id": "s0565", "en": "The part is below the machine.", "st": "네쿠 니포 피라 페 후태카", "features": ["direct", "domain-physical", "hold-exist", "loc", "poss"], "split": "held"}
 {"id": "s0566", "en": "I did not look below.", "st": "아 피라 페 위루타카", "features": ["direct", "domain-physical", "loc", "neg", "past"], "split": "train"}
 {"id": "s0567", "en": "The file is open.", "st": "왜 포하카", "features": ["direct", "domain-physical", "stative"], "split": "train"}
 {"id": "s0568", "en": "I opened every file.", "st": "아 새 왜 파 포하타카", "features": ["all", "det", "direct", "domain-physical", "obj", "past", "quantifier"], "split": "train"}
@@ -611,7 +611,7 @@
 {"id": "s0611", "en": "I am moving the heavy part; that might go wrong.", "st": "아 태네 네쿠 파 투도카모", "features": ["direct", "domain-physical", "obj", "risk"], "split": "train"}
 {"id": "s0612", "en": "I want to open the machine and take the whole part.", "st": "아 니포 파 포하코디 티파카 아 투와 네쿠 파 토사코디 티파카", "features": ["compound", "direct", "domain-physical", "modal", "obj", "sub", "want"], "split": "train"}
 {"id": "s0613", "en": "While the machine is hot, do not open it.", "st": "에 우 파 니포 테해코디 유 페 포하루카마", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "neg", "obj", "sub", "while"], "split": "train"}
-{"id": "s0614", "en": "We should move the machine near the place.", "st": "아 에 하 니포 파 후태 피 패노 페 투도코디 티페카", "features": ["direct", "domain-physical", "loc", "modal", "obj", "poss", "should", "sub", "we", "with"], "split": "train"}
+{"id": "s0614", "en": "We should move the machine near the place.", "st": "아 에 하 니포 파 후태 패노 페 투도코디 티페카", "features": ["direct", "domain-physical", "loc", "modal", "obj", "poss", "should", "sub", "we", "with"], "split": "train"}
 {"id": "s0615", "en": "Everyone can do this. That's just how it is.", "st": "새 예 이 파 파로코디 티캐코", "features": ["able", "all", "det", "domain-physical", "general", "modal", "obj", "quantifier", "sub"], "split": "train"}
 {"id": "s0616", "en": "I moved it three times, but it is not fast.", "st": "아 니 메루 우 파 투도타카 채 우 파시루카", "features": ["but", "det", "direct", "domain-physical", "n-times", "neg", "numeral", "obj", "past"], "split": "train"}
 {"id": "s0617", "en": "The whole test is slow, but every part of it is fast.", "st": "투와 와 파수카 채 새 우 피 네쿠 파시카", "features": ["all", "but", "compound", "det", "direct", "domain-physical", "poss", "quantifier", "stative"], "split": "train"}
@@ -696,7 +696,7 @@
 {"id": "s0696", "en": "Can the machine continue?", "st": "니포 쿠로코디 티캐 추", "features": ["modal", "able", "sub", "question", "domain-time"], "split": "train"}
 {"id": "s0697", "en": "You may not continue. I insist.", "st": "에 쿠로코디 티피루카무", "features": ["modal", "allow", "sub", "neg", "direct", "assert", "domain-time"], "split": "train"}
 {"id": "s0698", "en": "I paused the loop, and then I continued it.", "st": "아 메루 파 쿠라타카 아 우 파 우 후 쿠로타카", "features": ["direct", "past", "after", "obj", "domain-time"], "split": "train"}
-{"id": "s0699", "en": "It is my turn.", "st": "이 아 피 미예카", "features": ["direct", "poss", "equative", "domain-time"], "split": "held"}
+{"id": "s0699", "en": "It is my turn.", "st": "아 피 미예카", "features": ["direct", "poss", "equative", "domain-time"], "split": "held"}
 {"id": "s0700", "en": "Whose turn is it?", "st": "야 예 피 미예 추", "features": ["question", "q-who", "poss", "equative", "domain-time"], "split": "train"}
 {"id": "s0701", "en": "Wait for your turn.", "st": "에 에 피 미예 헤 로헤카마", "features": ["direct", "intend", "imperative", "poss", "for", "domain-time"], "split": "train"}
 {"id": "s0702", "en": "Everyone has a turn. Everyone knows that.", "st": "새 예 피 미예 얘코", "features": ["general", "quantifier", "all", "det", "poss", "hold-exist", "domain-time"], "split": "train"}
@@ -776,7 +776,7 @@
 {"id": "s0776", "en": "We should discuss the open items.", "st": "아 에 하 데패 파 예차코디 티페카", "features": ["direct", "domain-work", "modal", "obj", "should", "sub", "we", "with"], "split": "train"}
 {"id": "s0777", "en": "Every open item was recorded.", "st": "새 데패 파 미노타카", "features": ["agentless", "all", "det", "direct", "domain-work", "obj", "past", "quantifier"], "split": "train"}
 {"id": "s0778", "en": "I was alone.", "st": "아 리네타카", "features": ["direct", "domain-work", "past", "stative"], "split": "train"}
-{"id": "s0779", "en": "Don't be alone while you fix it.", "st": "에 우 파 라코디 유 페 리네루카마", "features": ["direct", "domain-work", "imperative", "intend", "loc", "neg", "obj", "sub", "while"], "split": "held"}
+{"id": "s0779", "en": "Don't be alone while you fix it.", "st": "에 에 우 파 라코디 유 페 리네루카마", "features": ["direct", "domain-work", "imperative", "intend", "loc", "neg", "obj", "sub", "while"], "split": "held"}
 {"id": "s0780", "en": "Nobody is alone here.", "st": "소 예 이 페 리네카", "features": ["det", "direct", "domain-work", "here", "loc", "none", "quantifier", "stative"], "split": "train"}
 {"id": "s0781", "en": "We are not alone.", "st": "아 에 하 리네루카", "features": ["direct", "domain-work", "neg", "stative", "we", "with"], "split": "train"}
 {"id": "s0782", "en": "I trust you.", "st": "아 에 파 라태카", "features": ["direct", "domain-work", "obj"], "split": "train"}
@@ -1243,3 +1243,30 @@
 {"id": "s1243", "en": "That one and I discussed the plan.", "st": "아 우 하 소테 파 예차타카", "features": ["we-exclusive", "with", "obj", "past", "direct"], "split": "train"}
 {"id": "s1244", "en": "Stage two is done.", "st": "캐도 네 초카", "features": ["ordinal", "numeral", "direct", "stative"], "split": "train"}
 {"id": "s1245", "en": "Read the note while the machine runs.", "st": "에 도차 파 니포 다코디 유 페 데카마", "features": ["while", "sub", "obj", "imperative", "intend", "direct", "loc"], "split": "train"}
+{"id": "s1246", "en": "Five files are big. That's just how it is.", "st": "포 왜 태코", "features": ["general", "numeral", "stative"], "split": "train"}
+{"id": "s1247", "en": "Every file has two lines. That's just how it is.", "st": "새 왜 피 네 피토 얘코", "features": ["general", "numeral", "all", "quantifier", "poss", "hold-exist"], "split": "train"}
+{"id": "s1248", "en": "Who is ready?", "st": "야 예 코대 추", "features": ["q-who", "question", "stative"], "split": "train"}
+{"id": "s1249", "en": "I'll begin or I'll wait.", "st": "아 쿠태투카마 쿠 아 로헤투카마", "features": ["future", "or", "intend", "direct"], "split": "train"}
+{"id": "s1250", "en": "If the number is five, stop it.", "st": "수포 포코 해 에 우 파 쿠테카마", "features": ["conditional", "if", "numeral", "imperative", "intend", "direct", "obj"], "split": "train"}
+{"id": "s1251", "en": "If you begin, I'll help. You can count on that.", "st": "에 쿠태코 해 아 호하투카미", "features": ["conditional", "if", "trust", "future", "direct"], "split": "train"}
+{"id": "s1252", "en": "I can read it now.", "st": "아 우 파 이 유 페 데코디 티캐카", "features": ["able", "modal", "now", "loc", "obj", "sub", "direct"], "split": "train"}
+{"id": "s1253", "en": "Is every step done?", "st": "새 캐다 초 추", "features": ["all", "quantifier", "question", "stative"], "split": "train"}
+{"id": "s1254", "en": "We should observe while the test runs.", "st": "아 에 하 와 다코디 유 페 새메코디 티페카", "features": ["modal", "should", "we", "with", "while", "sub", "loc", "direct"], "split": "train"}
+{"id": "s1255", "en": "It failed three times, I'm told.", "st": "우 니 메루 누타케", "features": ["n-times", "numeral", "reported", "past"], "split": "train"}
+{"id": "s1256", "en": "It was slow then, but it is fast now.", "st": "우 우 유 페 파수타카 채 우 이 유 페 파시카", "features": ["but", "then", "now", "loc", "past", "direct", "stative"], "split": "train"}
+{"id": "s1257", "en": "Every fault should be recorded. That's just how it is.", "st": "새 노 파 미노코디 티페코", "features": ["agentless", "general", "modal", "should", "sub", "obj", "all", "quantifier"], "split": "train"}
+{"id": "s1258", "en": "The file should be read.", "st": "왜 파 데코디 티페카", "features": ["agentless", "modal", "should", "sub", "obj", "direct"], "split": "train"}
+{"id": "s1259", "en": "The message may be removed.", "st": "케포 파 쿠피코디 티피카", "features": ["agentless", "modal", "allow", "sub", "obj", "direct"], "split": "train"}
+{"id": "s1260", "en": "I'll run your test two times.", "st": "아 네 메루 에 피 와 파 다투카마", "features": ["future", "n-times", "poss", "numeral", "obj", "intend", "direct"], "split": "train"}
+{"id": "s1261", "en": "Where is the progress?", "st": "수네 야 페 후태 추", "features": ["q-where", "question", "loc", "nominal-root"], "split": "train"}
+{"id": "s1262", "en": "The value was stored in the file.", "st": "키토 파 왜 페 키포타카", "features": ["agentless", "loc", "obj", "past", "direct", "domain-code"], "split": "train"}
+{"id": "s1263", "en": "I own three lines.", "st": "아 니 피토 파 레세카", "features": ["ownership", "numeral", "obj", "direct"], "split": "train"}
+{"id": "s1264", "en": "The plan is clear. Therefore there is no danger.", "st": "소테 해위카 소 두차 얘카", "features": ["therefore", "hold-exist", "none", "quantifier", "direct", "stative"], "split": "train"}
+{"id": "s1265", "en": "This plan is good. Just a proposal.", "st": "이 소테 로카메", "features": ["propose", "det", "direct", "stative"], "split": "train"}
+{"id": "s1266", "en": "How did you measure both?", "st": "에 네 파 야 하 소히타 추", "features": ["both", "numeral", "q-how", "question", "with", "obj", "past"], "split": "train"}
+{"id": "s1267", "en": "The part is measured every week. That's just how it is.", "st": "네쿠 파 새 캐파 페 소히코", "features": ["agentless", "general", "loc", "obj", "all", "quantifier"], "split": "train"}
+{"id": "s1268", "en": "Two results are the same. I'm told.", "st": "네 도 두케", "features": ["numeral", "reported", "stative"], "split": "train"}
+{"id": "s1269", "en": "If the test fails two times, tell me.", "st": "와 네 메루 누코 해 에 아 페 워야카마", "features": ["conditional", "if", "n-times", "numeral", "imperative", "intend", "direct", "loc"], "split": "train"}
+{"id": "s1270", "en": "The slow run was stopped.", "st": "파수 다 파 쿠테타카", "features": ["agentless", "stative", "obj", "past", "direct"], "split": "train"}
+{"id": "s1271", "en": "The empty file was removed, I'm told.", "st": "푸소 왜 파 쿠피타케", "features": ["agentless", "stative", "obj", "past", "reported"], "split": "train"}
+{"id": "s1272", "en": "The big result should be reviewed.", "st": "태 도 파 코피코디 티페카", "features": ["agentless", "stative", "modal", "should", "sub", "obj", "direct"], "split": "train"}
