@@ -64,6 +64,32 @@ CONTRACTIONS = [
 ]
 # The interrogative root plus a marker does every question word (D45).
 WH_ADVERB = {"how": "WITH", "where": "LOC", "why": "FOR"}
+
+# English renderings the corpus uses that are not the root's gloss. Kept short
+# and explicit rather than guessed: each one is how some corpus line actually
+# translates that root.
+SYNONYM = {"put": "place", "act": "do", "acted": "do", "object": "disagree",
+           "started": "begin", "start": "begin", "finish": "stop", "finished": "stop",
+           "receive": "take", "got": "get", "made": "do", "make": "do",
+           "spread": "spread", "raise": "increase", "drop": "decrease"}
+
+# Constructions, not words. This is the whole of the toki pona lesson that fits:
+# a missing English word is a phrase-building problem, not a dead end. Most of
+# these are already named in lexicon/README.md's "Not coined on purpose" list,
+# which has said since D35 that the constructions cover them (D108).
+PERIPHRASIS = {
+    "everyone": ["every", "person"], "everybody": ["every", "person"],
+    "everything": ["every", "thing"], "nothing": ["no", "thing"],
+    "nobody": ["no", "person"], "no one": ["no", "person"],
+    "always": ["every", "time"], "never": ["no", "time"],
+    "both": ["two"], "many": ["more"], "few": ["less"],
+}
+
+# A subordinate clause becomes an adverbial by taking the general evidential and
+# the subordinator, then a closer (D64, D69, D70). The clause goes after the
+# object like any other adverbial (D103).
+CLAUSE_JOIN = {"while": ("TIME", "LOC"), "because": (None, "FROM"), "as": (None, "FROM"),
+               "until": ("TIME", "BEF"), "since": ("TIME", "AFT")}
 MODAL_WORD = {"can": "be able, have the capacity", "could": "be able, have the capacity",
               "able": "be able, have the capacity", "want": "want", "wants": "want",
               "should": "should, ought", "ought": "should, ought",
@@ -114,8 +140,27 @@ class Composer:
         return idx, clash
 
     # ---------- English analysis ----------
+    def derive(self, w):
+        """A word that is not a root may still be built from one: `faulty` from
+        fault, `slowly` from slow, `measurement` from measure, `bigger` from big.
+        Returns (lemma, construction) — the construction is what the caller has
+        to build, and is None when the derived word simply IS the root."""
+        for suf, add, kind in (("ly", "", "MANNER"), ("ily", "y", "MANNER"),
+                               ("ier", "y", "COMPARE"), ("er", "", "COMPARE"),
+                               ("ger", "g", "COMPARE"), ("est", "", "COMPARE"),
+                               ("ment", "", None), ("ion", "e", None), ("ation", "e", None),
+                               ("ness", "", None), ("y", "", None), ("ty", "", None)):
+            if not w.endswith(suf) or len(w) <= len(suf) + 1:
+                continue
+            for cand in (w[: -len(suf)] + add, w[: -len(suf)]):
+                if cand in self.reverse:
+                    return cand, kind
+        return None, None
+
     def lemma(self, w):
         w = w.lower().strip(".,;:!?")
+        if w in SYNONYM:
+            w = SYNONYM[w]
         if w in self.reverse:
             return w
         if w in PAST_TO_BASE:
@@ -127,7 +172,10 @@ class Composer:
                     return cand
                 if cand + "e" in self.reverse:
                     return cand + "e"
-        return w
+                if cand.endswith(cand[-1:] * 2) and cand[:-1] in self.reverse:
+                    return cand[:-1]          # stopped -> stop
+        d, _ = self.derive(w)
+        return d or w
 
     def slots(self, en, imperative, question):
         """Evidential and stance from the fixed cues. A question's slot is empty
@@ -189,12 +237,14 @@ class Composer:
                 out.append(self.THIS)
             elif lw in ("every", "all", "each"):
                 out.append(self.EVERY)
-            elif lw in ("no", "nothing", "nobody", "none"):
-                out.append(self.NONE)
-                if lw == "nothing":
-                    out.append(self.lx.by_form.get("토", {}).get("form", "토"))
-                if lw == "nobody":
-                    out.append(self.PERSON)
+            elif lw in PERIPHRASIS:
+                for part in PERIPHRASIS[lw]:     # built, not coined (D35, D108)
+                    if part == "every":
+                        out.append(self.EVERY)
+                    elif part == "no":
+                        out.append(self.NONE)
+                    else:
+                        out.append(self.reverse[part])
             elif lw in self.NUM:
                 out.append(self.NUM[lw])
             elif lw in ("what", "which"):
@@ -217,8 +267,80 @@ class Composer:
            "am", "has", "have", "had", "'ll", "'s"}
     COPULA_WORDS = {"is", "are", "was", "were", "be"}
 
+    def has_verb(self, text):
+        low = [w.lower() for w in re.findall(r"[A-Za-z']+", text)]
+        return any(w in self.COPULA_WORDS or w in ("do", "does", "did", "have", "has", "had")
+                   or self.lemma(w) in self.reverse for w in low)
+
+    def subordinate(self, text, closer, notes):
+        """Compose a clause and turn it into an adverbial: the general evidential
+        and the subordinator, then the closer (D64, D69, D70)."""
+        script, _, sub_notes = self.compose_clause(text)
+        if script is None:
+            notes += sub_notes
+            return None
+        toks = script.split()
+        parsed = parse_sentence(script, self.lx)
+        pred = next((t for t in reversed(parsed.tokens) if t.affixes), None)
+        if pred is None:
+            return None
+        toks[-1] = self.verb_ending(pred.base["form"],
+                                    any(a["gloss"] == "negation" for a in pred.affixes),
+                                    next((a["gloss"] for a in pred.affixes
+                                          if a["gloss"].startswith("tense")), None),
+                                    "evidential: general", None, sub=True)
+        time_, mark = closer
+        return toks + ([self.TIME] if time_ else []) + [self.M[mark]]
+
     def compose(self, english):
-        """English -> (script, gloss, notes). `notes` is what it could not settle."""
+        """English -> (script, gloss, notes).
+
+        Splits at clause connectives first and builds the construction the corpus
+        uses for each, rather than declining on anything with two clauses in it.
+        A missing piece of English is a phrase-building problem (D108).
+        """
+        text = english.strip()
+        notes = []
+        # a subordinate clause becomes an adverbial and sits after the object (D103)
+        for word, closer in CLAUSE_JOIN.items():
+            m = re.search(r"(?<![A-Za-z])" + word + r"(?![A-Za-z])", text, re.I)
+            if not m:
+                continue
+            left, right = text[:m.start()].strip(" ,."), text[m.end():].strip(" ,.")
+            if not (self.has_verb(left) and self.has_verb(right)):
+                continue
+            if m.start() < 3:                      # "While A, B" — the main clause is second
+                parts = re.split(r",", right, 1)
+                if len(parts) != 2:
+                    continue
+                sub_text, main_text = parts[0], parts[1]
+            else:
+                sub_text, main_text = right, left
+            adv = self.subordinate(sub_text, closer, notes)
+            main, _, m_notes = self.compose_clause(main_text)
+            if adv is None or main is None:
+                return None, None, notes + m_notes
+            toks = main.split()
+            out = toks[:-1] + adv + [toks[-1]]
+            if text.rstrip().endswith("?") and out[-1] != self.Q:
+                out.append(self.Q)
+            return self._finish(out, notes)
+        # clause-level coordination: or and but are words, and is juxtaposition (D59)
+        for word, joiner in (("but", self.BUT), ("or", self.OR), ("and", None)):
+            for m in re.finditer(r"(?<![A-Za-z])" + word + r"(?![A-Za-z])", text, re.I):
+                left, right = text[:m.start()].strip(" ,."), text[m.end():].strip(" ,.")
+                if not (self.has_verb(left) and self.has_verb(right) and len(right.split()) > 1):
+                    continue
+                a, _, an = self.compose_clause(left)
+                b, _, bn = self.compose_clause(right)
+                if a is None or b is None:
+                    break
+                out = a.split() + ([joiner] if joiner else []) + b.split()
+                return self._finish(out, notes)
+        return self.compose_clause(english)
+
+    def compose_clause(self, english):
+        """One clause. English -> (script, gloss, notes)."""
         notes = []
         text = english.strip()
         low_all = text.lower()
@@ -273,15 +395,18 @@ class Composer:
             return self._finish(out, notes)
 
         # the verb: the first non-auxiliary whose lemma names a root
-        vi = None
+        vi, seen_content = None, 0
         for i, w in enumerate(low):
             if w in self.AUX:
                 if w == "did":
                     tense = "tense: past"
                 continue
-            if self.lemma(w) in self.reverse and (i > 0 or imperative):
+            if w in ("the", "a", "an", "of", "this", "that", "every", "no", "all"):
+                continue                      # a determiner is not the subject
+            if self.lemma(w) in self.reverse and (seen_content > 0 or imperative):
                 vi = i
                 break
+            seen_content += 1
         if vi is None:
             for i, w in enumerate(low):
                 if w in self.COPULA_WORDS:
@@ -307,18 +432,34 @@ class Composer:
         subj_words = pre
         rest = words[vi + 1:]
         if low[vi] in self.COPULA_WORDS and rest:           # equative: no copula (D56)
-            head = self.lemma(rest[-1])
-            verb_root = self.reverse.get(head)
-            if verb_root is None:
-                return None, None, [f"no root for the complement {rest[-1]!r}"]
+            tail = self.phrase([rest[-1]], notes)
+            if not tail:
+                return None, None, notes + [f"no root for the complement {rest[-1]!r}"]
+            verb_root = tail[-1]
             rest = rest[:-1]
         else:
-            verb_root = self.reverse.get(self.lemma(words[vi]))
+            lem = self.lemma(words[vi])
+            if lem in self.ambiguous:
+                return None, None, [f"{words[vi]!r} names {len(self.ambiguous[lem])} roots; "
+                                    f"the corpus does not decide it from the English alone"]
+            verb_root = self.reverse.get(lem)
             if verb_root is None:
                 return None, None, [f"no root for the verb {words[vi]!r}"]
 
         # split what follows the verb into an object and prepositional phrases
         obj_words, advs, cur, prep = [], [], [], None
+        built = []
+        for w in list(rest):
+            lw = w.lower().strip(".,")
+            if lw in self.reverse or lw in PREP or lw in WH_ADVERB:
+                continue
+            lem, kind = self.derive(lw)
+            if lem and kind == "MANNER":
+                built.append(("WITH", [lem]))   # fast-WITH do = do it fast (D68)
+                rest = [x for x in rest if x is not w]
+            elif lem and kind == "COMPARE":
+                built.append(("COMPARE", [lem]))
+                rest = [x for x in rest if x is not w]
         for w in rest:
             lw = w.lower().strip(".,")
             if lw in WH_ADVERB:
@@ -342,6 +483,8 @@ class Composer:
             obj_words = obj_words or cur
         else:
             advs.append((prep, cur))
+        compare = next((b for b in built if b[0] == "COMPARE"), None)
+        advs += [b for b in built if b[0] != "COMPARE"]
 
         if subj_words and subj_words[0].lower() == "there":   # existence (D49)
             subj_words, obj_words, verb_root = obj_words or subj_words[1:], [], self.TRUE
@@ -378,6 +521,11 @@ class Composer:
             adv_out += [self.WHAT, self.TIME, self.M["LOC"]]
         elif lead_wh:
             adv_out += [self.WHAT, self.M[lead_wh]]
+        if compare:
+            verb_root = self.reverse[compare[1][0]]
+            for k, (mk, ws) in enumerate(advs):
+                if mk == "FROM":
+                    break
         ev, stance = self.slots(english, imperative, question)
         if modal:
             inner = self.verb_ending(verb_root, neg, tense, "evidential: general", None, sub=True)
