@@ -30,6 +30,7 @@ Corpus checks (D11, D15, D25, D43):
     the code and the data it claims to be generated from (D101)
   - ERROR: an adverbial standing before the main-clause subject (D78). This was
     a count until D102, and the count read 0 while eleven lines were wrong
+  - ERROR: an adverbial standing before the object rather than after it (D103)
 
 --add FILE: FILE is a JSON list of entries (or one entry). Each is validated
 against the schema and the current lexicon, then appended. Nothing is written
@@ -152,6 +153,10 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, cl
     is an object, so it rightly follows, and reaching the predicate first means
     no subject was displaced.
 
+    Every clause is walked, not only the first: D102 checked the sentence-initial
+    phrase alone and so missed s0121 and s0698, where the second clause of a
+    juxtaposed pair fronts "then" before its subject (D103).
+
     The first two shapes are D87's: a subordinate clause closed by the from word
     (because) or by time plus before/after/at (until, since, while), and an
     n-times phrase. The third is D102's, and it is the one the corpus was
@@ -195,14 +200,15 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, cl
         start = i - 2 if i >= 2 and t[i - 2] == "야" else i - 1
         if start == 0 and (t[0] in nums or t[0] == "야"):
             return subject_after(i + 1)
-    if 0 in pred_idx:                    # opens with the verb: nothing to displace
-        return False
-    j = 0                                # walk the opening phrase: determiners, then the head
-    while (j + 1 < len(t) and (j + 1) not in pred_idx
-           and t[j + 1] in heads and t[j] not in pronouns):
-        j += 1
-    if j + 1 < len(t) and t[j + 1] in closers:
-        return subject_after(j + 2)
+    for start in [0] + [k + 1 for k in sorted(pred_idx)]:
+        if start >= len(t) or start in pred_idx:
+            continue                     # the clause opens with its verb: nothing to displace
+        j = start                        # walk the opening phrase: determiners, then the head
+        while (j + 1 < len(t) and (j + 1) not in pred_idx
+               and t[j + 1] in heads and t[j] not in pronouns):
+            j += 1
+        if j + 1 < len(t) and t[j + 1] in closers and subject_after(j + 2):
+            return True
     return False
 
 
@@ -371,6 +377,56 @@ def leak_report(sents):
     return leaked
 
 
+def adverbial_before_object(t, pred_idx, closers, pronouns, obj, with_, repeat):
+    """Markers closing an adverbial phrase before the object marker of its own clause.
+
+    D103 puts every adverbial after the object and immediately before the
+    predicate: subject, n-times, object, adverbials, verb. Three things that
+    stand before the object are not adverbials and are skipped. An n-times
+    phrase counts the event and counting material precedes what it counts
+    (D48, D97) — it is bare, so only its how-often variant, which puts the
+    stretch in the location case (D69), needs the repeat root as its marker.
+    The possessor case binds to the noun after it rather than closing a phrase.
+    And the with word joining two juxtaposed pronouns coordinates them into a
+    subject, so it is part of the subject rather than an adverbial before the
+    object (D98).
+    """
+    out = []
+    for i, tok in enumerate(t):
+        if tok != obj:
+            continue
+        start = max([k + 1 for k in pred_idx if k < i - 1] + [0])
+        if any(t[k] == repeat and t[k + 1] != obj for k in range(start, i)):
+            continue                     # an n-times phrase, not the loop root as the object
+        for k in range(start, i):
+            if t[k] not in closers:
+                continue
+            if t[k] == with_ and k >= 2 and t[k - 1] in pronouns and t[k - 2] in pronouns:
+                continue
+            out.append(t[k])
+    return out
+
+
+def object_order_errors(sents, lx):
+    """Sentences putting an adverbial before the object instead of after it (D103)."""
+    g = lambda gloss: next(e["form"] for e in lx.entries if e["gloss"] == gloss)  # noqa: E731
+    cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
+    rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
+    pronouns = {e["form"] for e in lx.entries if e["gloss"].startswith("pronoun")}
+    obj, poss, with_ = g("case: object"), g("case: possessor"), g("relational: with")
+    closers = (cases | rel) - {obj, poss}
+    out = []
+    for s in sents:
+        parsed = parse_sentence(s["st"], lx)
+        t = s["st"].split()
+        found = adverbial_before_object(t, _predicates(parsed, t), closers, pronouns,
+                                        obj, with_, "메루")
+        if found:
+            out.append(f"{s['id']}: an adverbial ({' '.join(found)}) stands before the object; "
+                       f"every adverbial but the n-times phrase follows it (D103)")
+    return out
+
+
 def fronted_errors(sents, lx):
     """Sentences that put an adverbial before the main-clause subject (D78).
 
@@ -424,6 +480,8 @@ def check_corpus(lex, errors):
         if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(s["st"].split()):
             same_len += 1
     for msg in fronted_errors(sents, lx):
+        errors.append(msg)
+    for msg in object_order_errors(sents, lx):
         errors.append(msg)
     for msg in rule_errors(sents, lx):
         errors.append(msg)

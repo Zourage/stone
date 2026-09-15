@@ -27,7 +27,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from stonelib import ROOT, Lexicon  # noqa: E402
 from validate import (fronted_errors, gloss_collisions, leak_report,  # noqa: E402
-                      rule_errors)
+                      object_order_errors, rule_errors)
 
 FIXTURES = ROOT / "tests/fixtures/pre_correction.jsonl"
 
@@ -37,6 +37,8 @@ def fired(sents, sid, lx, baseline):
     out = []
     if any(m.startswith(sid + ":") for m in fronted_errors(sents, lx)):
         out.append("fronted")
+    if any(m.startswith(sid + ":") for m in object_order_errors(sents, lx)):
+        out.append("object-order")
     if any(m.startswith(sid + ":") for m in rule_errors(sents, lx)):
         out.append("rules")
     if set(gloss_collisions(sents, lx)) - baseline:
