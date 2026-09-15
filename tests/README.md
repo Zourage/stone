@@ -29,6 +29,19 @@ Two translators and not one, because tolerance for paraphrase *is* the measureme
 
 **Re-running it requires a fresh blind draw.** Reusing a source set after coining against it measures the coining, not the language.
 
+## Dictionary probe (D122) — how the language solves ordinary words
+The coverage test uses sentences someone wrote to a domain description, so whoever wrote the description shaped the result. A frequency list has no opinion about what the language ought to cover. It also asks the better question: not *is this word missing* but **how is it solved**.
+
+Word list: OpenSubtitles English via hermitdave/FrequencyWords — the same source and license as `data/ko_frequency.json`, and conversational rather than web register. Filter with an **explicit, literal** stop list of function words the grammar handles by construction, and lemmatize mechanically so the probe counts concepts and not English morphology; a language with no inflection must not be charged a miss for `went` and another for `gone`. Give the agents an INFLECTION verdict so what the lemmatizer misses is visible rather than swallowed.
+
+Two independent arms per band, each with `spec/grammar.md`, the complete lexicon, **`lexicon/README.md`** and `corpus/README.md`. The lexicon README is not optional — its "Not coined on purpose" list is what separates a real gap from a concept the constructions cover, and an agent without it calls *always* and *nobody* gaps.
+
+Verdicts: ROOT / DERIVED / CONSTRUCTION / COMPOUND / GAP / INFLECTION, and every GAP takes a scope call against D1 and D34. **Make COMPOUND strict in the prompt** — name an example that is not one (*small machine* is not screwdriver), or the verdict inflates. Without the scope call the number is meaningless: a subtitle corpus is film dialogue and most of what it reports missing was never claimed.
+
+Report the curve by frequency band, not one total. Coverage falling 67% to 27% across 800 words is the finding; the mean of those is not.
+
+**Nothing from this touches the corpus.** The dictionary decides what gets looked at, never what gets added — corpus lines are written deliberately, per D11, for words that were coined by decision. Re-run after any coining round; the list is fixed and the point is that the number moves.
+
 ## Drift test (D15, protocol fixed in D74)
 `scripts/drift_test.py` is the executable form of this protocol; the prose here and the script must say the same thing.
 
