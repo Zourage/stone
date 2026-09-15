@@ -7,7 +7,8 @@ live in one place.
 
 Template (D29, D32, D33, D34): root, negation, tense, evidential, stance,
 subordinator. Only the evidential is mandatory, and not in a question, where
-the slot is empty and the answer supplies it (D33).
+the slot is empty and the answer supplies it (D33). A marker follows the word
+it marks, so it opens nothing and never doubles (D104).
 """
 import json
 import re
@@ -64,6 +65,12 @@ class Lexicon:
                       if e.get("pos") in ("root", "num") or e.get("gloss", "").startswith("pronoun")}
         self.question_particle = next(
             (e["form"] for e in self.entries if e["gloss"] == "question particle"), None)
+        # Words that cannot open a sentence: a case marker, a relational word and
+        # the question particle all follow what they mark, and or/but stand
+        # between the things they join (D59). None may double either.
+        self.markers = {e["form"] for e in self.entries
+                        if e["gloss"].startswith(("case", "relational"))
+                        or e["gloss"] in ("question particle", "or", "but")}
         self.codepoints = {int(c, 16) for c in
                            json.load(open(ROOT / "spec/codepoints.json", encoding="utf-8"))["codepoints"]}
 
@@ -172,6 +179,14 @@ def parse_sentence(text, lx):
     errors = list(check_script(text, lx))
     surfaces = text.split()
     is_question = bool(surfaces) and surfaces[-1] == lx.question_particle
+    # A case marker, relational word or the question particle marks the thing
+    # before it, so it cannot open a sentence or follow another marker. The
+    # corpus never does either in 1019 lines; before D104 the parser accepted
+    # both, so `check` called a stranded marker well formed and the translation
+    # guardrail would have passed such a sentence through.
+    for i, sf in enumerate(surfaces):
+        if sf in lx.markers and (i == 0 or surfaces[i - 1] in lx.markers):
+            errors.append(f"{sf!r} has nothing to mark: a marker follows the word it marks")
     tokens = []
     for s in surfaces:
         t = parse_token(s, lx, is_question)

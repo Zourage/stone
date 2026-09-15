@@ -5,4 +5,4 @@
 3. Words are written ONLY in the script (the 74 Hangul syllable blocks in `spec/codepoints.json`). No Latin transliteration exists anywhere in this repo, not in comments, not in filenames, not in tests. IPA in `spec/phonology.md` describes sounds; it is not a way of writing words.
 4. New lexicon entries go through `scripts/validate.py`, never straight into `lexicon/lexicon.json`.
 5. Any decision that changes the language or the method gets appended to `decisions.md` with a date and a one-line rationale, and `STATE.md` is updated to match.
-6. Run `scripts/validate.py` before every commit.
+6. Run `scripts/validate.py` and `scripts/regression_test.py` before every commit. The first checks the corpus; the second checks the checks, against the pre-correction form of every line ever corrected.

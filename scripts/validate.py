@@ -143,7 +143,8 @@ def _predicates(parsed, t):
     return idx
 
 
-def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, closers):
+def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, closers,
+                       with_, interval):
     """True if an adverbial constituent stands before the main-clause subject.
 
     D78 puts the subject first and the adverbial after it. Three shapes carry an
@@ -166,13 +167,21 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, cl
     faulty". The check ran clean for two sessions because it was only ever
     asked about the two shapes D87 had already corrected.
 
-    Two markers are deliberately not closers for the third shape. The possessor
-    case binds to the noun after it (D33, D49), so it does not close a phrase.
-    The with word coordinating two arguments is part of the subject rather than
-    an adverbial before it (D98), and where an adverbial with-phrase sits is
-    G33, not this rule. The personal pronouns are not determiners either —
-    possession takes the possessor case — so `I` or `you` before a root is a
-    subject followed by the next phrase, not one phrase.
+    The possessor case is not a closer for the third shape: it binds to the noun
+    after it (D33, D49) rather than ending a phrase. The personal pronouns are
+    not determiners either — possession takes the possessor case — so `I` or
+    `you` before a root is a subject followed by the next phrase, not one phrase.
+
+    The with word IS a closer here, with one exemption. D102 excluded it
+    outright, on the grounds that it coordinates two arguments into a subject
+    (D98) and that where an adverbial with-phrase sits was still G33. G33 closed
+    in D103, and the exclusion then hid a shape nothing else checked: a fronted
+    comitative or manner phrase, `with you, I tested it`, which is a D78
+    violation and is not the coordination, because the coordination is two
+    juxtaposed pronouns and the walk above stops at the first of them. What does
+    need exempting is the between-nominal, `run with run interval`, where the
+    with word joins two points inside one subject (D69) — it is recognised by
+    the interval root following it (D104).
     """
     sub, frm, time_, loc = marks
 
@@ -207,8 +216,11 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, cl
         while (j + 1 < len(t) and (j + 1) not in pred_idx
                and t[j + 1] in heads and t[j] not in pronouns):
             j += 1
-        if j + 1 < len(t) and t[j + 1] in closers and subject_after(j + 2):
-            return True
+        if j + 1 < len(t) and t[j + 1] in closers:
+            if t[j + 1] == with_ and interval in t[j + 2:]:
+                continue                 # the between-nominal, inside one subject (D69)
+            if subject_after(j + 2):
+                return True
     return False
 
 
@@ -444,13 +456,14 @@ def fronted_errors(sents, lx):
              {g("case: location"), g("relational: before"), g("relational: after")})
     heads = {e["form"] for e in lx.entries if e.get("pos") in ("root", "num")}
     pronouns = {g("pronoun: I"), g("pronoun: you")}
-    closers = (cases | rel) - {g("case: possessor"), g("relational: with")}
+    closers = (cases | rel) - {g("case: possessor")}
+    with_, interval = g("relational: with"), g("interval, gap between")
     out = []
     for s in sents:
         parsed = parse_sentence(s["st"], lx)
         t = s["st"].split()
         if _fronted_adverbial(t, _predicates(parsed, t), nums, cases, rel, marks,
-                              heads, pronouns, closers):
+                              heads, pronouns, closers, with_, interval):
             out.append(f"{s['id']}: an adverbial stands before the main-clause subject; "
                        f"the subject comes first (D78, D102)")
     return out

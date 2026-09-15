@@ -28,8 +28,10 @@ A pronoun, the interrogative root or a numeral directly before a root restricts 
 ## Deixis (D48)
 Here = this + location case; there = that + location; now = this + time; then = that + time. Before and after are relational words after their argument.
 
-## Morphology (D29, D32, D33)
+## Morphology (D29, D32, D33, D104)
 Verb template: root, negation, tense, evidential, stance, subordinator. Only the evidential is mandatory. Arguments: bare, or root plus one case marker.
+
+A marker follows the word it marks, so it can neither open a sentence nor follow another marker: the three case markers, the relational words and the question particle all attach leftwards, and or and but stand between the things they join (D59). The parser enforces this, which it did not before D104 — `check` called a sentence opening with a bare relational word well formed, and the translation guardrail would have shown such output as a translation.
 ## Tense (D31)
 Past, present (unmarked), future. Future is temporal only. Aspect: none decided.
 ## Negation (D32)

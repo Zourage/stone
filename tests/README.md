@@ -36,6 +36,13 @@ D82 says a check never shown to catch a real violation is not evidence of anythi
 
 The fixtures with an empty `catches` list are the more useful half: **11 of the 62 corrections are invisible to every check**, including both lines of the D95 choose carve and both of the D90 say/message carve. They are asserted to stay invisible, so a widened check fails here and has to be recorded rather than passing unnoticed.
 
+## Mutation test of a check (D104) — not a test of the language
+`regression_test.py` proves a check catches the defects that were once in the corpus. It says nothing about defects nobody happened to write. Mutation testing covers that: take the held sentences that exercise a rule, mutate each into a violation of it, and require the check to fire.
+
+Do it whenever a check is added or widened, and record the score. At D104 the object-order check caught 6 of 8 and the subject check 16 of 16 — the latter only after the mutation test found that a fronted with-phrase was invisible to it.
+
+Read the non-catches before calling them failures. Two of the object check's are correct: sliding the comitative in s0022 across the object produces `아 에 하 우 파 와타카`, which is train line s0515 "We tested it" — not a violation but a different sentence, because position relative to the object is the only thing separating the comitative from the coordination. And a mutation that produces an ill-formed string is not a missed violation; two of those exposed a real gap anyway, since the parser was calling them well formed (D104).
+
 ## Translation protocol (D72) — not a test
 For actually using the language, unlike the acceptance test, give the model everything: `spec/grammar.md`, `lexicon/lexicon.json` and the corpus. Withholding them is a property of the test, not of normal use.
 
