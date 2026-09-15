@@ -27,8 +27,8 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## Open
 - No open grammar gaps: G1–G28 all closed (D59–D65, D68–D71, D78, D79). New gaps get logged as G29+.
-- Vocabulary gap for a coining batch: calendar and clock units above the day (D71).
-- Acceptance test 3 has not been re-run since D78–D80 corrected 27 lines. The same agent answers would score 91.6% under the corrected corpus, but that is arithmetic, not a measurement.
+- Acceptance test 3 has not been re-run since D78–D85, which corrected 32 lines and added 103 sentences. The same agent answers would score 91.6% under the corrected corpus, but that is arithmetic, not a measurement.
+- D11 coverage: every word now appears in ≥3 train sentences, met for the first time (D85). 32 features are still under 10; the rarest constructions need more examples.
 - One language ambiguity left standing: the true/hold root does existence and truth both, so an argument plus that root negated reads as both "there is no X" and "X is not true". (D76)
 - O5 teaching materials (after the corpus). O7 formal code register (later). Derivation suffixes: when roots need them.
 
@@ -38,7 +38,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - **Drift test 1 (2026-09-15): no drift on all three signals.** Probe divergence 0/12; filler accuracy 28/40 in the long session against 24/40 in the fresh-session control, with the long session right on all 4 disagreements and never wrong where the control was right; zero Korean leakage in 461 tokens. A long session made output more faithful, not less. It did surface a stable guardrail hole (modal without subordinator) that is now advised on. `tests/results/2026-09-15-drift.md`.
 - Bar: 100% / ≥90% with every miss grammatical. (D50)
 
-## Lexicon — 196 entries, target 300 (D54)
+## Lexicon — 206 entries, target 300 (D54)
 - w0001–w0025 grammatical pieces, one syllable, slot = consonant and value = vowel; pronouns are the bare vowels. (D39)
 - w0026–w0038 carve roots, each carve a consonant family. (D42)
 - w0039–w0058 inquiry core; one interrogative root does every question word. (D45)
@@ -46,6 +46,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - w0078–w0130 first subagent batch: code, experiments, discussion. (D58)
 - w0131–w0139 or, but, if, able, want, should, allow, every/all, no/none. (D59–D63)
 - w0140–w0196 second subagent batch: physical handling, time and process, work. (D66)
+- w0197–w0206 calendar and clock units (week, month, year, hour, minute) plus use, need, example, word, size. (D85)
 - Syllable budget: 71 of 74 single syllables used, 3 in reserve. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus — 889 sentences, 107 held

@@ -136,7 +136,7 @@
 {"id": "s0136", "en": "I'll fix it. You can count on that.", "st": "아 우 파 라투카미", "features": ["direct", "future", "trust", "obj", "minimal-stance"], "split": "train"}
 {"id": "s0137", "en": "I'll fix it, but that might go wrong.", "st": "아 우 파 라투카모", "features": ["direct", "future", "risk", "obj", "minimal-stance"], "split": "train"}
 {"id": "s0138", "en": "I'll fix it. I insist.", "st": "아 우 파 라투카무", "features": ["direct", "future", "assert", "obj", "minimal-stance"], "split": "train"}
-{"id": "s0139", "en": "I'll fix it.", "st": "아 우 파 라투카", "features": ["direct", "future", "obj", "minimal-stance"], "split": "train"}
+{"id": "s0139", "en": "The machine will fix it.", "st": "니포 우 파 라투카", "features": ["direct", "future", "obj", "minimal-stance"], "split": "train"}
 {"id": "s0140", "en": "It'll fail, I'm told. And I expect so.", "st": "우 누투케매", "features": ["reported", "future", "predict", "minimal-stance"], "split": "train"}
 {"id": "s0141", "en": "It'll fail, I'm told. I'm counting on that.", "st": "우 누투케미", "features": ["reported", "future", "trust", "minimal-stance"], "split": "held"}
 {"id": "s0142", "en": "It must be the cause. Just a proposal.", "st": "우 대키메", "features": ["inferred", "propose", "minimal-stance"], "split": "train"}
@@ -155,7 +155,7 @@
 {"id": "s0155", "en": "Is there a result?", "st": "도 얘 추", "features": ["question", "hold-exist", "nominal-root"], "split": "held"}
 {"id": "s0156", "en": "There's a fault here, I gather.", "st": "노 이 페 얘키", "features": ["inferred", "here", "loc", "hold-exist"], "split": "train"}
 {"id": "s0157", "en": "There was a failure before the fix.", "st": "라 히 누 얘타카", "features": ["direct", "past", "before", "hold-exist", "nominal-root"], "split": "train"}
-{"id": "s0158", "en": "There will be a test after this.", "st": "이 후 와 얘투카마", "features": ["direct", "future", "intend", "after", "hold-exist", "nominal-root"], "split": "train"}
+{"id": "s0158", "en": "There will be a test after this. That's the plan.", "st": "이 후 와 얘투카마", "features": ["direct", "future", "intend", "after", "hold-exist", "nominal-root"], "split": "train"}
 {"id": "s0159", "en": "The machine has a fault.", "st": "니포 피 노 얘카", "features": ["direct", "poss", "hold-exist"], "split": "train"}
 {"id": "s0160", "en": "This file has no name.", "st": "이 왜 피 요 얘루카", "features": ["direct", "neg", "poss", "det", "hold-exist"], "split": "train"}
 {"id": "s0161", "en": "I have the cause, I think.", "st": "아 피 대 얘키", "features": ["inferred", "poss", "hold-exist"], "split": "train"}
@@ -452,7 +452,7 @@
 {"id": "s0452", "en": "If the machine stops, the test fails. That's just how it is.", "st": "니포 쿠테코 해 와 누코", "features": ["conditional", "if", "general"], "split": "train"}
 {"id": "s0453", "en": "If I'm right, the cause is the fault.", "st": "아 얘하코 해 대 노카", "features": ["conditional", "if", "direct", "equative", "stative"], "split": "train"}
 {"id": "s0454", "en": "If there is a fault, the test will fail, I expect.", "st": "노 얘코 해 와 누투키매", "features": ["conditional", "if", "inferred", "future", "predict", "hold-exist"], "split": "train"}
-{"id": "s0455", "en": "If you read the file, you'll understand it.", "st": "에 왜 파 데코 해 에 우 파 데하투키매", "features": ["conditional", "if", "inferred", "future", "predict", "obj"], "split": "held"}
+{"id": "s0455", "en": "If you read the file, you'll understand it, I expect.", "st": "에 왜 파 데코 해 에 우 파 데하투키매", "features": ["conditional", "if", "inferred", "future", "predict", "obj"], "split": "held"}
 {"id": "s0456", "en": "If it failed, tell me now.", "st": "우 누타코 해 에 아 페 이 유 페 워야카마", "features": ["conditional", "if", "past", "direct", "intend", "imperative", "now", "loc"], "split": "train"}
 {"id": "s0457", "en": "If the limit is ten, the result is bad.", "st": "무네 푸코 해 도 래카", "features": ["conditional", "if", "direct", "equative", "numeral", "stative"], "split": "train"}
 {"id": "s0458", "en": "If you help me, I'll fix it. You can count on that.", "st": "에 아 파 호하코 해 아 우 파 라투카미", "features": ["conditional", "if", "direct", "future", "trust", "obj"], "split": "train"}
@@ -604,7 +604,7 @@
 {"id": "s0604", "en": "The parts were joined, I gather.", "st": "네쿠 파 투두타키", "features": ["agentless", "domain-physical", "inferred", "obj", "past"], "split": "train"}
 {"id": "s0605", "en": "Separate the parts.", "st": "에 네쿠 파 투데카마", "features": ["direct", "domain-physical", "imperative", "intend", "obj"], "split": "train"}
 {"id": "s0606", "en": "I cannot separate them.", "st": "아 우 파 투데코디 티캐루카", "features": ["able", "direct", "domain-physical", "modal", "neg", "obj", "sub"], "split": "train"}
-{"id": "s0607", "en": "If you separate this part, the machine will stop.", "st": "에 이 네쿠 파 투데코 해 니포 쿠테투키매", "features": ["conditional", "det", "domain-physical", "future", "general", "if", "inferred", "obj", "predict"], "split": "train"}
+{"id": "s0607", "en": "If you separate this part, the machine will stop, I expect.", "st": "에 이 네쿠 파 투데코 해 니포 쿠테투키매", "features": ["conditional", "det", "domain-physical", "future", "general", "if", "inferred", "obj", "predict"], "split": "train"}
 {"id": "s0608", "en": "Read the whole file.", "st": "에 투와 왜 파 데카마", "features": ["compound", "direct", "domain-physical", "imperative", "intend", "obj"], "split": "train"}
 {"id": "s0609", "en": "The whole is more than the parts. That's just how it is.", "st": "투와 네쿠 호 마소코", "features": ["comparison", "domain-physical", "from", "general", "nominal-root", "stative"], "split": "train"}
 {"id": "s0610", "en": "Take the part out of the machine and hold it.", "st": "에 니포 피 페세 호 네쿠 파 토사카마 에 우 파 토시카마", "features": ["direct", "domain-physical", "from", "imperative", "intend", "obj", "poss"], "split": "train"}
@@ -849,7 +849,7 @@
 {"id": "s0849", "en": "Can you finish by night?", "st": "에 카요 히 우 파 쿠테코디 티캐 추", "features": ["deadline", "before", "able", "sub", "question", "obj"], "split": "train"}
 {"id": "s0850", "en": "How often does it fail?", "st": "우 야 수포 메루 카유 페 누 추", "features": ["how-often", "question", "q-what", "numeral", "det", "loc"], "split": "train"}
 {"id": "s0851", "en": "It fails three times a day.", "st": "우 니 메루 카유 페 누카", "features": ["how-often", "numeral", "det", "loc", "direct"], "split": "train"}
-{"id": "s0852", "en": "It fails often.", "st": "우 매수카", "features": ["how-often", "direct", "stative"], "split": "held"}
+{"id": "s0852", "en": "It is frequent.", "st": "우 매수카", "features": ["how-often", "direct", "stative"], "split": "held"}
 {"id": "s0853", "en": "Failures are rare, I gather.", "st": "누 매시키", "features": ["how-often", "inferred", "stative"], "split": "train"}
 {"id": "s0854", "en": "The machine stopped. I did not understand that.", "st": "니포 쿠테타카 아 우 파 데하루타카", "features": ["clause-anaphora", "past", "neg", "direct", "obj"], "split": "train"}
 {"id": "s0855", "en": "You agreed. I remember that.", "st": "에 두하타카 아 우 파 유호카", "features": ["clause-anaphora", "past", "direct", "obj"], "split": "train"}
@@ -887,3 +887,106 @@
 {"id": "s0887", "en": "It has been slow since the test began.", "st": "우 와 쿠태타코디 유 후 파수카", "features": ["since", "sub", "after", "past", "direct", "stative"], "split": "train"}
 {"id": "s0888", "en": "Since the data is empty, the function stops. That's just how it is.", "st": "미네 푸소코디 호 타푸 쿠테코", "features": ["because", "sub", "from", "general"], "split": "train"}
 {"id": "s0889", "en": "I have been blocked since you began.", "st": "에 쿠태타코디 유 후 아 수초카", "features": ["since", "sub", "after", "past", "direct"], "split": "train"}
+{"id": "s0890", "en": "The test ran for three hours.", "st": "와 니 캐피 소히타카", "features": ["numeral", "det", "past", "direct"], "split": "train"}
+{"id": "s0891", "en": "I waited ten minutes.", "st": "아 푸 캐포 로헤타카", "features": ["numeral", "det", "past", "direct"], "split": "train"}
+{"id": "s0892", "en": "The plan is a week, I'm told.", "st": "소테 나 캐파케", "features": ["reported", "numeral", "det", "equative"], "split": "train"}
+{"id": "s0893", "en": "How many weeks will the task take?", "st": "사세 야 수포 캐파 소히투 추", "features": ["question", "q-what", "numeral", "det", "future"], "split": "held"}
+{"id": "s0894", "en": "Every month the machine is measured. That's just how it is.", "st": "니포 새 캐패 페 소히코", "features": ["quantifier", "all", "det", "loc", "general", "agentless"], "split": "train"}
+{"id": "s0895", "en": "This version is a year old, I gather.", "st": "이 파테 나 캐페키", "features": ["inferred", "numeral", "det", "equative"], "split": "train"}
+{"id": "s0896", "en": "The run took four hours.", "st": "다 패 캐피 소히타카", "features": ["numeral", "det", "past", "direct"], "split": "train"}
+{"id": "s0897", "en": "Nine minutes are done, I insist.", "st": "포패 캐포 초카무", "features": ["numeral", "det", "assert", "direct"], "split": "train"}
+{"id": "s0898", "en": "I'll begin next week. That's the plan.", "st": "아 니래 캐파 페 쿠태투카마", "features": ["intend", "future", "direct", "loc", "det"], "split": "train"}
+{"id": "s0899", "en": "The previous month was bad.", "st": "니로 캐패 래타카", "features": ["past", "direct", "det", "stative"], "split": "train"}
+{"id": "s0900", "en": "I use this function.", "st": "아 이 타푸 파 테파카", "features": ["direct", "det", "obj"], "split": "train"}
+{"id": "s0901", "en": "Which file did you use?", "st": "에 야 왜 파 테파타 추", "features": ["question", "q-which", "det", "past", "obj"], "split": "held"}
+{"id": "s0902", "en": "Don't use that machine.", "st": "에 우 니포 파 테파루카마", "features": ["imperative", "intend", "neg", "direct", "det", "obj"], "split": "train"}
+{"id": "s0903", "en": "I used it for the test.", "st": "아 우 파 와 헤 테파타카", "features": ["past", "direct", "for", "obj"], "split": "train"}
+{"id": "s0904", "en": "Everyone uses this word. Everyone knows that.", "st": "새 예 이 테피 파 테파코", "features": ["quantifier", "all", "general", "det", "obj"], "split": "train"}
+{"id": "s0905", "en": "I need the data.", "st": "아 미네 파 테패카", "features": ["direct", "obj"], "split": "train"}
+{"id": "s0906", "en": "You don't need that part.", "st": "에 우 네쿠 파 테패루카", "features": ["neg", "direct", "det", "obj"], "split": "train"}
+{"id": "s0907", "en": "What do you need?", "st": "에 야 파 테패 추", "features": ["question", "q-what", "obj"], "split": "train"}
+{"id": "s0908", "en": "I need you to review this. I'm counting on it.", "st": "아 에 이 파 코피코디 테패카미", "features": ["trust", "direct", "sub", "det", "obj"], "split": "held"}
+{"id": "s0909", "en": "I want it, but I do not need it.", "st": "아 우 파 티파카 채 아 우 파 테패루카", "features": ["but", "neg", "direct", "obj"], "split": "train"}
+{"id": "s0910", "en": "This is an example.", "st": "이 테페카", "features": ["direct", "equative"], "split": "train"}
+{"id": "s0911", "en": "Show me an example.", "st": "에 테페 파 아 페 페포카마", "features": ["imperative", "intend", "direct", "loc", "obj"], "split": "train"}
+{"id": "s0912", "en": "I read two examples.", "st": "아 네 테페 파 데타카", "features": ["numeral", "det", "past", "direct", "obj"], "split": "train"}
+{"id": "s0913", "en": "What does this word mean?", "st": "이 테피 야 파 요하 추", "features": ["question", "q-what", "det", "obj"], "split": "train"}
+{"id": "s0914", "en": "I do not understand that word.", "st": "아 우 테피 파 데하루카", "features": ["neg", "direct", "det", "obj"], "split": "train"}
+{"id": "s0915", "en": "What is the size of the file?", "st": "왜 피 테포 야 추", "features": ["question", "q-what", "poss", "equative"], "split": "held"}
+{"id": "s0916", "en": "I measured the size.", "st": "아 테포 파 소히타카", "features": ["past", "direct", "obj"], "split": "train"}
+{"id": "s0917", "en": "The size is big, I gather.", "st": "테포 태키", "features": ["inferred", "stative"], "split": "train"}
+{"id": "s0918", "en": "This file's size is bigger than that one's.", "st": "이 왜 피 테포 우 피 테포 호 태카", "features": ["comparison", "from", "poss", "direct", "det", "stative"], "split": "train"}
+{"id": "s0919", "en": "You know that by definition.", "st": "에 우 파 세코", "features": ["general", "obj", "know"], "split": "train"}
+{"id": "s0920", "en": "I know the word by definition.", "st": "아 테피 파 세카", "features": ["direct", "obj", "know"], "split": "train"}
+{"id": "s0921", "en": "Do you know that by definition?", "st": "에 우 파 세 추", "features": ["question", "obj", "know"], "split": "train"}
+{"id": "s0922", "en": "I am checking whether the data is empty.", "st": "아 미네 푸소코디 치카", "features": ["direct", "sub", "ask"], "split": "held"}
+{"id": "s0923", "en": "Check whether the version is new.", "st": "에 파테 파캐코디 치카마", "features": ["imperative", "intend", "direct", "sub", "ask"], "split": "train"}
+{"id": "s0924", "en": "I checked that.", "st": "아 우 파 치타카", "features": ["past", "direct", "obj", "ask"], "split": "train"}
+{"id": "s0925", "en": "Ask me about the result.", "st": "에 도 파 아 페 차카마", "features": ["imperative", "intend", "direct", "loc", "obj", "ask"], "split": "train"}
+{"id": "s0926", "en": "I asked about the cause.", "st": "아 대 파 차타카", "features": ["past", "direct", "obj", "ask"], "split": "train"}
+{"id": "s0927", "en": "Four steps are done.", "st": "패 캐다 초카", "features": ["numeral", "det", "direct", "stative"], "split": "train"}
+{"id": "s0928", "en": "I removed four lines.", "st": "아 패 피토 파 쿠피타카", "features": ["numeral", "det", "past", "direct", "obj"], "split": "train"}
+{"id": "s0929", "en": "Seven files are new.", "st": "포네 왜 파캐카", "features": ["numeral", "det", "direct", "stative"], "split": "train"}
+{"id": "s0930", "en": "I read seven examples.", "st": "아 포네 테페 파 데타카", "features": ["numeral", "det", "past", "direct", "obj"], "split": "held"}
+{"id": "s0931", "en": "Eight tests failed, I'm told.", "st": "포니 와 누타케", "features": ["numeral", "det", "past", "reported"], "split": "train"}
+{"id": "s0932", "en": "I need eight minutes.", "st": "아 포니 캐포 파 테패카", "features": ["numeral", "det", "direct", "obj"], "split": "train"}
+{"id": "s0933", "en": "Nine parts are faulty.", "st": "포패 네쿠 노카", "features": ["numeral", "det", "direct", "stative"], "split": "train"}
+{"id": "s0934", "en": "I used nine samples.", "st": "아 포패 소네 파 테파타카", "features": ["numeral", "det", "past", "direct", "obj"], "split": "train"}
+{"id": "s0935", "en": "The file is there.", "st": "왜 우 페 후태카", "features": ["there", "loc", "direct"], "split": "train"}
+{"id": "s0936", "en": "I put the data there.", "st": "아 미네 파 우 페 후태타카", "features": ["there", "loc", "past", "direct", "obj"], "split": "train"}
+{"id": "s0937", "en": "Is the machine there?", "st": "니포 우 페 후태 추", "features": ["there", "loc", "question"], "split": "train"}
+{"id": "s0938", "en": "The example is here.", "st": "테페 이 페 후태카", "features": ["here", "loc", "direct"], "split": "train"}
+{"id": "s0939", "en": "I found the word here.", "st": "아 테피 파 이 페 웨타카", "features": ["here", "loc", "past", "direct", "obj"], "split": "train"}
+{"id": "s0940", "en": "The file is big. Therefore the run is slow.", "st": "왜 태카 다 파수카", "features": ["therefore", "direct", "stative"], "split": "train"}
+{"id": "s0941", "en": "The data is empty. Therefore the function stops.", "st": "미네 푸소카 타푸 쿠테카", "features": ["therefore", "direct", "stative"], "split": "held"}
+{"id": "s0942", "en": "The version is new. Therefore it is fast.", "st": "파테 파캐카 우 파시카", "features": ["therefore", "direct", "stative"], "split": "train"}
+{"id": "s0943", "en": "It is slow because the file is big.", "st": "우 왜 태코디 호 파수카", "features": ["because", "sub", "from", "direct", "stative"], "split": "train"}
+{"id": "s0944", "en": "I waited because you asked me.", "st": "아 에 아 페 차타코디 호 로헤타카", "features": ["because", "sub", "from", "past", "direct", "loc"], "split": "train"}
+{"id": "s0945", "en": "Why did you use that?", "st": "에 우 파 야 헤 테파타 추", "features": ["question", "q-why", "for", "past", "obj"], "split": "train"}
+{"id": "s0946", "en": "Why is the size big?", "st": "테포 야 헤 태 추", "features": ["question", "q-why", "for", "stative"], "split": "train"}
+{"id": "s0947", "en": "The task is not done yet.", "st": "사세 초루카", "features": ["not-yet", "neg", "direct", "stative"], "split": "held"}
+{"id": "s0948", "en": "The week is not done yet, I gather.", "st": "캐파 초루키", "features": ["not-yet", "neg", "inferred", "stative"], "split": "train"}
+{"id": "s0949", "en": "It is still slow.", "st": "우 파수코디 쿠로카", "features": ["still", "sub", "direct"], "split": "train"}
+{"id": "s0950", "en": "The machine is still running, I'm told.", "st": "니포 다코디 쿠로케", "features": ["still", "sub", "reported"], "split": "train"}
+{"id": "s0951", "en": "I used it then.", "st": "아 우 파 우 유 페 테파타카", "features": ["then", "loc", "past", "direct", "obj"], "split": "train"}
+{"id": "s0952", "en": "The size was small then.", "st": "테포 우 유 페 테타카", "features": ["then", "loc", "past", "direct", "stative"], "split": "held"}
+{"id": "s0953", "en": "You agreed. I remember that.", "st": "에 두하타카 아 우 파 유호카", "features": ["clause-anaphora", "past", "direct", "obj"], "split": "train"}
+{"id": "s0954", "en": "The test failed. I do not understand that.", "st": "와 누타카 아 우 파 데하루카", "features": ["clause-anaphora", "past", "neg", "direct", "obj"], "split": "train"}
+{"id": "s0955", "en": "The machine stopped. That is the cause.", "st": "니포 쿠테타카 우 대카", "features": ["clause-anaphora", "past", "direct", "equative"], "split": "train"}
+{"id": "s0956", "en": "The interval between the two steps is small.", "st": "캐다 하 캐다 니유 테카", "features": ["between", "with", "direct", "stative"], "split": "train"}
+{"id": "s0957", "en": "I measured the interval between the runs.", "st": "아 다 니유 파 소히타카", "features": ["between", "compound", "past", "direct", "obj"], "split": "train"}
+{"id": "s0958", "en": "It failed between the two examples.", "st": "우 테페 하 테페 니유 페 누타카", "features": ["between", "with", "loc", "past", "direct"], "split": "train"}
+{"id": "s0959", "en": "I'll wait until the hour is done. That's the plan.", "st": "아 캐피 초코디 유 히 로헤투카마", "features": ["until", "sub", "before", "intend", "future", "direct"], "split": "held"}
+{"id": "s0960", "en": "Use it until it stops.", "st": "에 우 파 우 쿠테코디 유 히 테파카마", "features": ["until", "sub", "before", "imperative", "intend", "direct", "obj"], "split": "train"}
+{"id": "s0961", "en": "It has been fast since the version changed.", "st": "우 파테 레타코디 유 후 파시카", "features": ["since", "sub", "after", "past", "direct", "stative"], "split": "train"}
+{"id": "s0962", "en": "I have used it since the previous week.", "st": "아 니로 캐파 후 우 파 테파타카", "features": ["since", "after", "past", "direct", "det", "obj"], "split": "train"}
+{"id": "s0963", "en": "Hand it over by the next hour.", "st": "에 우 파 니래 캐피 히 레차카마", "features": ["deadline", "before", "imperative", "intend", "direct", "det", "obj"], "split": "train"}
+{"id": "s0964", "en": "It will be ready by that minute, I expect.", "st": "우 우 캐포 히 코대투키매", "features": ["deadline", "before", "future", "inferred", "predict", "det"], "split": "train"}
+{"id": "s0965", "en": "Both examples are good.", "st": "네 테페 로카", "features": ["both", "numeral", "det", "direct", "stative"], "split": "train"}
+{"id": "s0966", "en": "Both are ready, I'm told.", "st": "네 코대케", "features": ["both", "numeral", "reported", "stative"], "split": "held"}
+{"id": "s0967", "en": "We help each other.", "st": "아 에 하 호하카", "features": ["reciprocal", "we", "with", "direct"], "split": "train"}
+{"id": "s0968", "en": "We compare with each other.", "st": "아 에 하 티왜카", "features": ["reciprocal", "we", "with", "direct"], "split": "train"}
+{"id": "s0969", "en": "This word is yours.", "st": "에 이 테피 파 레세카", "features": ["ownership", "direct", "det", "obj"], "split": "train"}
+{"id": "s0970", "en": "I own two files.", "st": "아 네 왜 파 레세카", "features": ["ownership", "numeral", "det", "direct", "obj"], "split": "train"}
+{"id": "s0971", "en": "Who owns this example?", "st": "야 예 이 테페 파 레세 추", "features": ["ownership", "question", "q-who", "det", "obj"], "split": "train"}
+{"id": "s0972", "en": "Read example three.", "st": "에 테페 니 파 데카마", "features": ["ordinal", "imperative", "intend", "direct", "obj"], "split": "train"}
+{"id": "s0973", "en": "Week two was slow.", "st": "캐파 네 파수타카", "features": ["ordinal", "past", "direct", "stative"], "split": "held"}
+{"id": "s0974", "en": "Step four is difficult.", "st": "캐다 패 타리카", "features": ["ordinal", "direct", "stative"], "split": "train"}
+{"id": "s0975", "en": "The size became big.", "st": "테포 태코디 쿠태타카", "features": ["become", "sub", "past", "direct"], "split": "train"}
+{"id": "s0976", "en": "The word became new, I gather.", "st": "테피 파캐코디 쿠태타키", "features": ["become", "sub", "past", "inferred"], "split": "train"}
+{"id": "s0977", "en": "Use it easily.", "st": "에 우 파 타로 하 테파카마", "features": ["manner", "with", "imperative", "intend", "direct", "obj"], "split": "train"}
+{"id": "s0978", "en": "I measured it fast.", "st": "아 우 파 파시 하 소히타카", "features": ["manner", "with", "past", "direct", "obj"], "split": "train"}
+{"id": "s0979", "en": "Move it slowly.", "st": "에 우 파 파수 하 투도카마", "features": ["manner", "with", "imperative", "intend", "direct", "obj"], "split": "train"}
+{"id": "s0980", "en": "Where is the example?", "st": "테페 야 페 후태 추", "features": ["question", "q-where", "loc"], "split": "held"}
+{"id": "s0981", "en": "Where did you use it?", "st": "에 우 파 야 페 테파타 추", "features": ["question", "q-where", "loc", "past", "obj"], "split": "train"}
+{"id": "s0982", "en": "How did you measure the size?", "st": "에 테포 파 야 하 소히타 추", "features": ["question", "q-how", "with", "past", "obj"], "split": "train"}
+{"id": "s0983", "en": "How do you use this word?", "st": "에 이 테피 파 야 하 테파 추", "features": ["question", "q-how", "with", "det", "obj"], "split": "train"}
+{"id": "s0984", "en": "When will the month be done?", "st": "캐패 야 유 페 초투 추", "features": ["question", "q-when", "loc", "future"], "split": "train"}
+{"id": "s0985", "en": "When did you need it?", "st": "에 우 파 야 유 페 테패타 추", "features": ["question", "q-when", "loc", "past", "obj"], "split": "train"}
+{"id": "s0986", "en": "That one and I used the machine.", "st": "아 우 하 니포 파 테파타카", "features": ["we-exclusive", "with", "past", "direct", "obj"], "split": "train"}
+{"id": "s0987", "en": "That one and I agree.", "st": "아 우 하 두하카", "features": ["we-exclusive", "with", "direct"], "split": "held"}
+{"id": "s0988", "en": "Seven steps are done.", "st": "포네 캐다 초카", "features": ["numeral", "det", "direct", "stative"], "split": "train"}
+{"id": "s0989", "en": "I ran seven tests.", "st": "아 포네 와 파 다타카", "features": ["numeral", "det", "past", "direct", "obj"], "split": "train"}
+{"id": "s0990", "en": "The plan is one year, I'm told.", "st": "소테 나 캐페케", "features": ["reported", "numeral", "det", "equative"], "split": "train"}
+{"id": "s0991", "en": "I used it for a year.", "st": "아 나 캐페 헤 우 파 테파타카", "features": ["numeral", "det", "for", "past", "direct", "obj"], "split": "train"}
+{"id": "s0992", "en": "Every year the machine is slow. That's just how it is.", "st": "니포 새 캐페 페 파수코", "features": ["quantifier", "all", "det", "loc", "general", "stative"], "split": "train"}

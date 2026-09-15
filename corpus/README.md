@@ -17,6 +17,10 @@ Coverage targets: every lexicon word in ≥3 `train` sentences; every feature in
 - Questions: the evidential slot is empty; the sentence ends in the question particle.
 - The English side carries what the stone side marks: evidential and stance show up as natural English cues, never as bracketed labels. A sentence whose English has no cue is direct.
 
+**Every stance must carry its cue in the English** (D84). The imperative counts as the intend cue, so a command needs nothing extra; anything else carrying intend does. The rule exists because a stance the English does not signal makes the sentence undetermined in the English → stone direction, which is what the acceptance test measures. Predict is the one that slips most easily, because English renders both a plain future and a prediction as "will".
+
+**One English sentence must have exactly one rendering in the script** (D83). Where two corpus lines share an English string and differ in the script, one of them is wrong; fix the English or the script so the pair is distinguishable.
+
 **A general-evidential sentence must carry a general cue in its English** (D79). This was the rule all along but the corpus broke it in ten places, which is three of the twenty misses in acceptance test 3 and the only three that changed meaning. It applies to gnomic statements, the ones asserting how things are. It does not apply where the general evidential follows from the irrealis rule — a condition, or a modal complement — because there the construction supplies it and no cue is needed or wanted. Fixed cues: reported "I'm told / they say"; inferred "must / I gather / it seems"; general "that's just how it is / everyone knows that / as such"; intend "I'll / that's the plan" or an imperative; predict "I expect / probably"; propose "just a proposal / just a hypothesis"; trust "I'm counting on it / you can count on that"; risk "that might go wrong / might break something"; assert "I insist".
 ## Feature tags
 

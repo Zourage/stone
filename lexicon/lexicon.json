@@ -1566,5 +1566,85 @@
   "sense_notes": "A bad outcome that may come, named as a thing: a hazard, an exposure, what could go wrong here. Verbal: to be dangerous. Carved from the risk stance (w0009), which is the speaker flagging that their own claim may go wrong, and from chance (w0092, randomness with no cause): a danger can be found, listed, compared and removed. Not fault (w0030) and not failure (w0031), which are actual.",
   "id": "w0196",
   "added": "2026-09-15"
+ },
+ {
+  "form": "캐파",
+  "pos": "root",
+  "gloss": "week",
+  "sense_notes": "Seven days taken as one unit. Calendar units share a first syllable with day and night so the set is audible (D85).",
+  "id": "w0197",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐패",
+  "pos": "root",
+  "gloss": "month",
+  "sense_notes": "A calendar month. Not defined against the week or the day here; a span of roughly thirty days.",
+  "id": "w0198",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐페",
+  "pos": "root",
+  "gloss": "year",
+  "sense_notes": "A calendar year.",
+  "id": "w0199",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐피",
+  "pos": "root",
+  "gloss": "hour",
+  "sense_notes": "A clock hour. Clock units share the calendar first syllable, since both answer the how-long and when questions.",
+  "id": "w0200",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐포",
+  "pos": "root",
+  "gloss": "minute",
+  "sense_notes": "A clock minute.",
+  "id": "w0201",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테파",
+  "pos": "root",
+  "gloss": "use",
+  "sense_notes": "Put a thing to work for a purpose: use a function, a machine, a file, a method. The thing used is the object; the purpose takes the for word. Carved against run, which is making something execute, and against take, which is acquiring it. As an argument: a use.",
+  "id": "w0202",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테패",
+  "pos": "root",
+  "gloss": "need",
+  "sense_notes": "The subject must have or do the thing for something else to hold. Modal-shaped in meaning but a plain root: the thing needed is the object, or a subordinate clause. Carved against want, which is desire, and against should, which is what ought to be done: one can need what one does not want.",
+  "id": "w0203",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테페",
+  "pos": "root",
+  "gloss": "example",
+  "sense_notes": "One case shown to stand for a kind. What a corpus sentence is to the language. Carved against sample, which is drawn to represent a population for measurement, and against part.",
+  "id": "w0204",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테피",
+  "pos": "root",
+  "gloss": "word",
+  "sense_notes": "One word of a language, as a unit of meaning; also a term or a name for a kind. Carved against text, which is characters as data, and against name, which identifies one thing.",
+  "id": "w0205",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테포",
+  "pos": "root",
+  "gloss": "size",
+  "sense_notes": "How big a thing is, as a measurable quantity. The stative big and small say which end; this is the dimension itself, the thing a measurement of bigness yields.",
+  "id": "w0206",
+  "added": "2026-09-15"
  }
 ]
