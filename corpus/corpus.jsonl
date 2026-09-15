@@ -204,7 +204,7 @@
 {"id": "s0204", "en": "The control is good, I'm told.", "st": "모나 로케", "features": ["reported", "stative", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0205", "en": "I varied the number.", "st": "아 수포 파 모누타카", "features": ["direct", "past", "obj", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0206", "en": "Which one did you vary?", "st": "에 야 파 모누타 추", "features": ["question", "q-what", "past", "obj", "domain-experiment"], "split": "train"}
-{"id": "s0207", "en": "The time is the variable. Just a hypothesis.", "st": "유 모누카메", "features": ["direct", "equative", "propose", "nominal-root", "domain-experiment"], "split": "train"}
+{"id": "s0207", "en": "The time is the factor. Just a hypothesis.", "st": "유 모누카메", "features": ["direct", "equative", "propose", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0208", "en": "Vary one thing.", "st": "에 나 토 파 모누카마", "features": ["direct", "intend", "imperative", "numeral", "det", "obj", "domain-experiment"], "split": "train"}
 {"id": "s0209", "en": "Do not vary the sample.", "st": "에 소네 파 모누루카마", "features": ["direct", "intend", "imperative", "neg", "obj", "domain-experiment"], "split": "held"}
 {"id": "s0210", "en": "The unit is time. That's just how it is.", "st": "수미 유코", "features": ["general", "equative", "nominal-root", "domain-experiment"], "split": "train"}
@@ -250,7 +250,7 @@
 {"id": "s0250", "en": "The pattern must be chance.", "st": "매노 소루키", "features": ["inferred", "equative", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0251", "en": "Is this a pattern?", "st": "이 매노 추", "features": ["question", "equative", "domain-experiment"], "split": "train"}
 {"id": "s0252", "en": "The failures follow a pattern, I'm told.", "st": "누 매노케", "features": ["reported", "stative", "nominal-root", "domain-experiment"], "split": "train"}
-{"id": "s0253", "en": "That result came from chance; it did not come from the variable.", "st": "우 도 소루 호 도타카 우 모누 호 도루타카", "features": ["direct", "past", "from", "neg", "det", "nominal-root", "domain-experiment"], "split": "train"}
+{"id": "s0253", "en": "That result came from chance; it did not come from the factor.", "st": "우 도 소루 호 도타카 우 모누 호 도루타카", "features": ["direct", "past", "from", "neg", "det", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0254", "en": "Two repeats are chance; ten repeats are a pattern. Everyone knows that.", "st": "네 메루 소루코 푸 메루 매노코", "features": ["general", "equative", "numeral", "det", "nominal-root", "domain-experiment"], "split": "train"}
 {"id": "s0255", "en": "Did it fail by chance?", "st": "우 소루 호 누타 추", "features": ["question", "from", "past", "domain-experiment"], "split": "train"}
 {"id": "s0256", "en": "Chance is not a cause, as such.", "st": "소루 대루코", "features": ["general", "equative", "neg", "nominal-root", "domain-experiment"], "split": "held"}
@@ -1006,7 +1006,7 @@
 {"id": "s1006", "en": "The version has changed, I'm told.", "st": "파테 레케", "features": ["reported", "domain-code"], "split": "train"}
 {"id": "s1007", "en": "Did you write it, or did I?", "st": "에 쿠 아 우 파 워타 추", "features": ["question", "or", "past", "obj", "domain-code"], "split": "train"}
 {"id": "s1008", "en": "Did the machine stop, or did the run?", "st": "니포 쿠 다 쿠테타 추", "features": ["question", "or", "past", "domain-physical"], "split": "train"}
-{"id": "s1009", "en": "Does the function hold the value, or does the machine?", "st": "타푸 쿠 니포 키토 파 토시 추", "features": ["question", "or", "obj", "domain-code", "hold-exist"], "split": "train"}
+{"id": "s1009", "en": "Does the person hold the part, or does the machine?", "st": "예 쿠 니포 네쿠 파 토시 추", "features": ["question", "or", "obj", "domain-code", "hold-exist"], "split": "train"}
 {"id": "s1010", "en": "How many times did the machine run the test?", "st": "니포 야 수포 메루 와 파 다타 추", "features": ["question", "q-what", "n-times", "numeral", "det", "obj", "past", "domain-time"], "split": "train"}
 {"id": "s1011", "en": "How often does the machine run the test?", "st": "니포 야 수포 메루 카유 페 와 파 다 추", "features": ["how-often", "n-times", "question", "q-what", "numeral", "loc", "obj", "domain-time"], "split": "train"}
 {"id": "s1012", "en": "How many times was the step repeated?", "st": "야 수포 메루 캐다 파 메루타 추", "features": ["question", "q-what", "n-times", "numeral", "det", "obj", "past", "agentless", "domain-time"], "split": "train"}
