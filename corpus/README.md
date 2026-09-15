@@ -21,7 +21,9 @@ Coverage targets: every lexicon word in ≥3 `train` sentences; every feature in
 
 **One English sentence must have exactly one rendering in the script** (D83). Where two corpus lines share an English string and differ in the script, one of them is wrong; fix the English or the script so the pair is distinguishable.
 
-**A general-evidential sentence must carry a general cue in its English** (D79). This was the rule all along but the corpus broke it in ten places, which is three of the twenty misses in acceptance test 3 and the only three that changed meaning. It applies to gnomic statements, the ones asserting how things are. It does not apply where the general evidential follows from the irrealis rule — a condition, or a modal complement — because there the construction supplies it and no cue is needed or wanted. Fixed cues: reported "I'm told / they say"; inferred "must / I gather / it seems"; general "that's just how it is / everyone knows that / as such"; intend "I'll / that's the plan" or an imperative; predict "I expect / probably"; propose "just a proposal / just a hypothesis"; trust "I'm counting on it / you can count on that"; risk "that might go wrong / might break something"; assert "I insist".
+**An alternative question coordinates the smallest constituent that differs** (D89). The shared material is stated once: the two alternatives flank the or word and nothing else is repeated. This holds whether the alternation is on the subject, the predicate or a complement.
+
+**Every evidential must carry its English cue** (D79, generalised in D91). A sentence whose English carries no cue is direct; any other evidential needs its cue, or the sentence is undetermined in the English → stone direction. This was the rule all along but the corpus broke it in ten places, which is three of the twenty misses in acceptance test 3 and the only three that changed meaning. For the general evidential it applies to gnomic statements, the ones asserting how things are. It does not apply where the general evidential follows from the irrealis rule — a condition, or a modal complement — because there the construction supplies it and no cue is needed or wanted. Fixed cues: reported "I'm told / they say"; inferred "must / I gather / it seems"; general "that's just how it is / everyone knows that / as such"; intend "I'll / that's the plan" or an imperative; predict "I expect / probably"; propose "just a proposal / just a hypothesis"; trust "I'm counting on it / you can count on that"; risk "that might go wrong / might break something"; assert "I insist".
 ## Feature tags
 
 Generated from the corpus itself, so this list cannot drift from the data. Regenerate it whenever tags are added.
@@ -37,4 +39,4 @@ Generated from the corpus itself, so this list cannot drift from the data. Regen
 - **corpus bookkeeping**: minimal-evid, minimal-stance
 - **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
 
-Total: 88 distinct tags over 865 sentences.
+Total: 88 distinct tags over 1009 sentences.

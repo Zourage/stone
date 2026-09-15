@@ -5,6 +5,8 @@ Protocol: fresh agents with no access to this repo, context = the corpus **train
 
 **The two directions go to different agents** (D75). One agent given both sides of a held sentence has the answer to the English → stone item sitting in its own prompt; tests 1 and 2 were run that way and the leak was real. Split the held set into chunks, give one set of agents only the stone side and another set only the English side, and every sentence still gets both directions with no agent seeing both sides of one sentence. Splitting by chunk also keeps each prompt manageable; total the scores and say in the result file how it was split.
 
+**A held sentence may not be a copy of a train sentence** (D93). If its script is already in the train split the English → stone item is answered for the agent, and if its English is already there the other direction is; either way the item scores for free and measures nothing. Test 4 scored two such items before this was caught, and discounting them moved the run from just over the bar to just under it. `scripts/validate.py` now fails on any held line whose `st` or `en` is verbatim in train, so the held set is valid by construction.
+
 The bar that counts as done: **stone → English 100% meaning-correct, English → stone ≥90% exact**, with every miss read by hand and judged grammatical. A miss that is ungrammatical or changes meaning fails the run.
 
 Score exact match first, then read the near-misses. A miss caused by a word or construction that has no train sentence is a corpus gap, not a model failure; fix the corpus and say so in the result file. A miss caused by the corpus contradicting itself, or by a point the spec never decided, is neither — log it as a grammar gap and say so.
