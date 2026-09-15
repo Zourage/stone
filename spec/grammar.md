@@ -26,8 +26,13 @@ Past, present (unmarked), future. Future is temporal only. Aspect: none decided.
 Piece of the verb ending, before tense and evidential. Evidential scopes over it.
 ## Questions (D33, D45)
 Sentence-final particle; the evidential slot is empty and the answer supplies it. One interrogative root (w0039) does all question words: bare = what; as determiner = which; + location case = where; + for = why; + with = how; before time = when; before person = who.
-## Number (D48)
-Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: still open.
+## Quantifiers (D62)
+Every/all and no/none stand before the root, like numerals. With the thing and person roots they give everything, everyone, nothing, nobody. A negative determiner carries the negation alone: the predicate is not also negated.
+
+## Number (D48, D62)
+Bare arguments are number-neutral: no plural marking exists or is needed.
+
+Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: none, by D62.
 ## Coordination (D59)
 No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
 

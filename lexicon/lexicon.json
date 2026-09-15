@@ -1070,5 +1070,21 @@
   "sense_notes": "The subject has what it takes to do the thing: a person is able, a machine or a value has the capacity, a state of affairs is within reach. Takes a subordinate clause as its complement, whose predicate carries the general evidential because the thing is not (yet) actual. Cannot = this root negated. Carved against the risk stance, which warns that something might go wrong: capacity is a fact about the subject, risk is the speaker's attitude to their own claim. Does not cover permission (D61).",
   "id": "w0134",
   "added": "2026-09-15"
+ },
+ {
+  "form": "새",
+  "pos": "func",
+  "gloss": "every, all",
+  "sense_notes": "Determiner standing before the root it quantifies, like a numeral (D44, D48): every test, all parts. With the thing root it is everything; with the person root, everyone. English needs every, all, everything, everyone and everybody; this is one word plus the roots that already exist (D62).",
+  "id": "w0135",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "소",
+  "pos": "func",
+  "gloss": "no, none",
+  "sense_notes": "Negative determiner before the root it quantifies: no fault, no machine. The predicate is NOT also negated; the determiner alone carries the negation. With the thing root it is nothing; with the person root, nobody. Distinct from negating a predicate about a particular thing, which is still the negation affix (D62).",
+  "id": "w0136",
+  "added": "2026-09-15"
  }
 ]

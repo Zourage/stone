@@ -476,3 +476,23 @@
 {"id": "s0476", "en": "Can the machine record the data?", "st": "니포 미네 파 미노코디 티캐 추", "features": ["able", "sub", "question", "obj"], "split": "train"}
 {"id": "s0477", "en": "I could fix it, but I did not fix it.", "st": "아 우 파 라코디 티캐타카 채 아 우 파 라루타카", "features": ["able", "sub", "past", "neg", "but", "direct", "obj"], "split": "train"}
 {"id": "s0478", "en": "You can understand this, I'm told.", "st": "에 이 파 데하코디 티캐케", "features": ["able", "sub", "reported", "det", "obj"], "split": "train"}
+{"id": "s0479", "en": "Every test failed.", "st": "새 와 누타카", "features": ["quantifier", "all", "past", "det"], "split": "train"}
+{"id": "s0480", "en": "All the values are text.", "st": "새 키토 티패카", "features": ["quantifier", "all", "equative", "det"], "split": "train"}
+{"id": "s0481", "en": "Run every test.", "st": "에 새 와 파 다카마", "features": ["quantifier", "all", "direct", "intend", "imperative", "det", "obj"], "split": "train"}
+{"id": "s0482", "en": "All the parts are faulty, I'm told.", "st": "새 네쿠 노케", "features": ["quantifier", "all", "reported", "det", "stative"], "split": "train"}
+{"id": "s0483", "en": "Every function can fail.", "st": "새 타푸 누코디 티캐코", "features": ["quantifier", "all", "able", "sub", "general", "det"], "split": "train"}
+{"id": "s0484", "en": "Everything is done.", "st": "새 토 초카", "features": ["quantifier", "all", "direct", "det", "stative"], "split": "train"}
+{"id": "s0485", "en": "Everyone agrees with that, I'm told.", "st": "새 예 우 하 두하케", "features": ["quantifier", "all", "reported", "with", "det"], "split": "held"}
+{"id": "s0486", "en": "Is everything done?", "st": "새 토 초 추", "features": ["quantifier", "all", "question", "det", "stative"], "split": "train"}
+{"id": "s0487", "en": "Every result is the same. I insist.", "st": "새 도 두카무", "features": ["quantifier", "all", "direct", "assert", "det", "stative"], "split": "train"}
+{"id": "s0488", "en": "I removed every copy.", "st": "아 새 코푸 파 쿠피타카", "features": ["quantifier", "all", "past", "direct", "det", "obj"], "split": "train"}
+{"id": "s0489", "en": "I found nothing.", "st": "아 소 토 파 웨타카", "features": ["quantifier", "none", "past", "direct", "det", "obj"], "split": "train"}
+{"id": "s0490", "en": "Nobody read it.", "st": "소 예 우 파 데타카", "features": ["quantifier", "none", "past", "direct", "det", "obj"], "split": "train"}
+{"id": "s0491", "en": "There is no fault.", "st": "소 노 얘카", "features": ["quantifier", "none", "direct", "det", "hold-exist"], "split": "train"}
+{"id": "s0492", "en": "No machine stopped.", "st": "소 니포 쿠테타카", "features": ["quantifier", "none", "past", "direct", "det"], "split": "train"}
+{"id": "s0493", "en": "Nothing failed.", "st": "소 토 누타카", "features": ["quantifier", "none", "past", "direct", "det"], "split": "held"}
+{"id": "s0494", "en": "I understand nothing.", "st": "아 소 토 파 데하카", "features": ["quantifier", "none", "direct", "det", "obj"], "split": "train"}
+{"id": "s0495", "en": "No version is new.", "st": "소 파테 파캐카", "features": ["quantifier", "none", "direct", "det", "stative"], "split": "train"}
+{"id": "s0496", "en": "If every test is done, tell me.", "st": "새 와 초코 해 에 아 페 워야카마", "features": ["quantifier", "all", "conditional", "if", "direct", "intend", "imperative", "det", "loc"], "split": "train"}
+{"id": "s0497", "en": "Every part is small, but nothing is done.", "st": "새 네쿠 테카 채 소 토 초카", "features": ["quantifier", "all", "none", "but", "direct", "det", "stative"], "split": "train"}
+{"id": "s0498", "en": "Nobody can fix it, I gather.", "st": "소 예 우 파 라코디 티캐키", "features": ["quantifier", "none", "able", "sub", "inferred", "det", "obj"], "split": "held"}

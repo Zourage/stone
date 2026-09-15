@@ -185,7 +185,7 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 - G3. Closed by D61.
 - G4. Want, should.
 - G5. First person plural: we.
-- G6. Quantifiers and plural without a numeral: every, all, nothing, nobody.
+- G6. Closed by D62.
 - G7. Comparison: more than.
 - G8. Valency: passives.
 - G9. Counting occurrences: N times.
@@ -201,3 +201,5 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 **D61. G3 closed: ability is a root taking a subordinate clause, not an affix.** One root (w0134), two syllables, not spent from reserve: roots are two syllables by D48 and the reserve is kept for function words. It means the subject has what it takes — a person is able, a machine or a value has the capacity. Rejected as an affix because the stance slot is the speaker's attitude to their own claim, while ability is a fact about the subject; a root also negates, questions and takes tense normally. Construction: the complement clause carries the general evidential and the subordinator, then the ability root as the main predicate with its own evidential. This generalises D60's rule — a clause that is not actual takes the general evidential — now used by both conditionals and ability. Carved against the risk stance, which warns that something might go wrong; English blurs capacity and warning into can/might. One lumping kept: person-ability and thing-capacity are one root. Not covered and newly noted as G12: permission ("you may"). 16 sentences (s0463–s0478, 2 held). The Korean check rejected the first form proposed for this root; recoined.
 
+
+**D62. G6 closed: two quantifier determiners, and bare arguments are number-neutral.** Plural needs no marking at all: a bare root is unspecified for number, so "faults get fixed" and "the fault is fixed" are the same form and the context or a numeral decides. English forces a number choice on every noun; this language does not (D25). Quantifiers are two function words standing before the root they quantify, in the same position as a numeral (D44, D48): every/all (w0135) and no/none (w0136), both spent from reserve, leaving 3. Compositional wins: everything and everyone are the quantifier plus the existing thing and person roots, and so are nothing and nobody, where English needs four more words. Scope rule fixed here: a negative determiner carries the negation by itself and the predicate is NOT also negated; negating a predicate about a particular thing is still the negation affix. "Some" is not coined: a bare argument already covers it. 20 sentences (s0479–s0498, 3 held).
