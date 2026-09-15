@@ -183,15 +183,15 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 - G1. Closed by D59.
 - G2. Closed by D60.
 - G3. Closed by D61.
-- G4. Want, should.
-- G5. First person plural: we.
+- G4. Closed by D63.
+- G5. Closed by D64.
 - G6. Closed by D62.
-- G7. Comparison: more than.
-- G8. Valency: passives.
-- G9. Counting occurrences: N times.
-- G10. Root-before-root compounds: time limit, control result.
-- G11. Simultaneity: while.
-- G12. Permission: may, allowed to (noted while closing G3).
+- G7. Closed by D65.
+- G8. Closed by D65.
+- G9. Closed by D64.
+- G10. Closed by D64.
+- G11. Closed by D64.
+- G12. Closed by D63.
 
 **D59. G1 closed: two conjunctions, or and but; no word for and.** And between clauses is juxtaposition, which the corpus already does; and between arguments is the with relational word. Or and but are function words standing between the things they join (arguments, predicates or clauses); or in a question asks which alternative holds. Both spent from the reserve single syllables (w0131, w0132); 6 reserve syllables remain. 16 sentences (s0429–s0444, 2 held). Existing sentences unchanged: juxtaposition stays valid.
 
@@ -203,3 +203,9 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 
 **D62. G6 closed: two quantifier determiners, and bare arguments are number-neutral.** Plural needs no marking at all: a bare root is unspecified for number, so "faults get fixed" and "the fault is fixed" are the same form and the context or a numeral decides. English forces a number choice on every noun; this language does not (D25). Quantifiers are two function words standing before the root they quantify, in the same position as a numeral (D44, D48): every/all (w0135) and no/none (w0136), both spent from reserve, leaving 3. Compositional wins: everything and everyone are the quantifier plus the existing thing and person roots, and so are nothing and nobody, where English needs four more words. Scope rule fixed here: a negative determiner carries the negation by itself and the predicate is NOT also negated; negating a predicate about a particular thing is still the negation affix. "Some" is not coined: a bare argument already covers it. 20 sentences (s0479–s0498, 3 held).
+
+**D63. G4 and G12 closed: want, should and allow are modal roots, in one family with ability.** Three roots (w0137–w0139), two syllables each, sharing their first syllable with the ability root so that "modal over a subordinate clause" is audible as a class, the way each carve and each grammatical slot already is. All four take a complement clause carrying the general evidential and the subordinator (D61). Carves: want is not the intend stance, because wanting is not committing and one can want what one cannot do; should is a claim about what ought to be done, not about the speaker's will; allow is permission, carved against ability, which is capacity. Negated, allow is "must not".
+
+**D64. G5, G9, G10 and G11 closed with no new words.** We = the I pronoun, the you pronoun and the with word (inclusive); exclusive we replaces the second with whatever third party is meant. N times = a numeral before the repeat root, as a determiner: "three repeats it run-PAST". Compounds = a root standing directly before another root modifies it, extending the determiner position (D44) from pronouns, the interrogative and numerals to roots: time limit, failure message, test data. While = the subordinate clause with the general evidential, then the time root with the location case, literally "at the time that it runs" — the same machinery as the deixis phrases (D48).
+
+**D65. G7 and G8 closed with no new words.** Comparison: the standard takes the from word and the quality is the predicate, "this that-FROM big-DIRECT" for "this is bigger than that". This is how many languages do comparison and it reuses a word the language already has; there is no separate comparative form of a stative. Agentless clauses replace the passive: drop the subject and keep the object marker on the patient, "line-OBJECT remove-PAST-DIRECT" for "the line was removed". No passive voice exists; the object marker alone shows the patient is not the subject, so nothing is ambiguous. 44 sentences across D63–D65 (s0499–s0542, 7 held).

@@ -36,8 +36,26 @@ Numerals precede the root they count: three files. One to five and ten are simpl
 ## Coordination (D59)
 No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
 
-## Ability (D61)
-Complement clause with the general evidential and the subordinator, then the ability root as main predicate. Cannot = that root negated. Capacity is a fact about the subject; the risk stance is the speaker's warning.
+## Modals (D61, D63)
+Four roots share a first syllable and one construction: complement clause with the general evidential and the subordinator, then the modal root as main predicate with its own evidential. Able (capacity, not the risk stance), want (not the intend stance), should (obligation), allow (permission). Each negates normally.
+
+## Comparison (D65)
+The standard takes the from word; the quality is the predicate. This that-FROM big-DIRECT = this is bigger than that. No comparative form.
+
+## Agentless clauses (D65)
+No passive. Drop the subject and keep the object marker: line-OBJ remove-PAST-DIRECT = the line was removed.
+
+## We (D64)
+I + you + the with word (inclusive); the third party replaces you for the exclusive sense.
+
+## Occurrences (D64)
+A numeral before the repeat root: three repeats = three times.
+
+## Compounds (D64)
+A root directly before another root modifies it: time limit, failure message.
+
+## Simultaneity (D64)
+Subordinate clause with the general evidential, then the time root with the location case: at the time that it runs.
 
 ## Irrealis rule (D60, D61)
 A clause that is not actual — a condition, an ability complement — carries the general evidential.

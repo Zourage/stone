@@ -1086,5 +1086,29 @@
   "sense_notes": "Negative determiner before the root it quantifies: no fault, no machine. The predicate is NOT also negated; the determiner alone carries the negation. With the thing root it is nothing; with the person root, nobody. Distinct from negating a predicate about a particular thing, which is still the negation affix (D62).",
   "id": "w0136",
   "added": "2026-09-15"
+ },
+ {
+  "form": "티파",
+  "pos": "root",
+  "gloss": "want",
+  "sense_notes": "The subject wants the thing in the complement clause to be so. Modal root taking a subordinate clause whose predicate carries the general evidential (D61 irrealis rule); shares its first syllable with the other modal roots (able, should, allow), so the class is audible. Carved against the intend stance, which is commitment to act: wanting is not yet committing, and one can want what one cannot do.",
+  "id": "w0137",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "티페",
+  "pos": "root",
+  "gloss": "should, ought",
+  "sense_notes": "The thing in the complement clause is what ought to be done or ought to hold. Obligation or advice, whoever the subject is. Carved against the intend stance (the speaker's own commitment) and against want (desire): should is a claim about what is right to do, not about the speaker's will. Modal root over a subordinate clause.",
+  "id": "w0138",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "티피",
+  "pos": "root",
+  "gloss": "allow, may",
+  "sense_notes": "The subject is permitted the thing in the complement clause; someone or some rule permits it. Carved against the ability root: capacity is what the subject can do, permission is what the subject is let do. Negated it is 'must not'. Modal root over a subordinate clause.",
+  "id": "w0139",
+  "added": "2026-09-15"
  }
 ]
