@@ -1,0 +1,38 @@
+# Pre-correction forms of every corpus line corrected since 855226d, recovered from git.
+# `catches` is what the checks in validate.py fire on when this form is put back into
+# the current corpus. An empty list is a correction no check can see, recorded so the
+# blind spots are as legible as the coverage. Generated once; do not hand-edit.
+{"id": "s0021", "from": "855226d", "st": "우 이 페 누타카", "en": "It failed in this one.", "features": ["direct", "past", "loc"], "split": "held", "catches": ["leak"]}
+{"id": "s0134", "from": "855226d", "st": "아 우 파 라투카매", "en": "I'll fix it, I expect.", "features": ["direct", "future", "predict", "obj", "minimal-stance"], "split": "train", "catches": ["rules"]}
+{"id": "s0207", "from": "855226d", "st": "유 모누카메", "en": "The time is the variable. Just a hypothesis.", "features": ["direct", "equative", "propose", "nominal-root", "domain-experiment"], "split": "train", "catches": ["collision"]}
+{"id": "s0253", "from": "855226d", "st": "우 도 소루 호 도타카 우 모누 호 도루타카", "en": "That result came from chance; it did not come from the variable.", "features": ["direct", "past", "from", "neg", "det", "nominal-root", "domain-experiment"], "split": "train", "catches": []}
+{"id": "s0295", "from": "855226d", "st": "에 나 파 카티카마", "en": "Choose one.", "features": ["direct", "intend", "imperative", "numeral", "obj", "domain-code"], "split": "train", "catches": []}
+{"id": "s0296", "from": "855226d", "st": "아 테 토 파 카티타카", "en": "I chose the small one.", "features": ["direct", "past", "det", "obj", "domain-code"], "split": "train", "catches": []}
+{"id": "s0313", "from": "855226d", "st": "니포 이 파 케포타카", "en": "The machine said this.", "features": ["direct", "past", "obj", "domain-code"], "split": "train", "catches": []}
+{"id": "s0317", "from": "855226d", "st": "니포 야 파 케포타 추", "en": "What did the machine say?", "features": ["question", "q-what", "past", "obj", "domain-code"], "split": "train", "catches": []}
+{"id": "s0431", "from": "855226d", "st": "에 우 파 다타 쿠 니포 우 파 다타 추", "en": "Did you run it, or did the machine?", "features": ["question", "or", "past", "obj"], "split": "held", "catches": []}
+{"id": "s0475", "from": "855226d", "st": "우 노코디 티캐루키", "en": "It can't be a fault.", "features": ["able", "sub", "neg", "inferred", "equative"], "split": "held", "catches": ["rules"]}
+{"id": "s0520", "from": "855226d", "st": "네 메루 우 누타카", "en": "It failed two times.", "features": ["n-times", "numeral", "det", "past", "direct"], "split": "train", "catches": ["fronted"]}
+{"id": "s0522", "from": "855226d", "st": "야 수포 메루 에 우 파 데타 추", "en": "How many times did you read it?", "features": ["n-times", "question", "q-what", "numeral", "det", "past", "obj"], "split": "held", "catches": ["fronted"]}
+{"id": "s0540", "from": "855226d", "st": "아 우 파 데타코디 유 페 우 누타카", "en": "It failed while I was reading it.", "features": ["while", "sub", "loc", "past", "direct", "obj"], "split": "held", "catches": ["fronted"]}
+{"id": "s0547", "from": "855226d", "st": "파수 와 누코디 파시 와 호 로카", "en": "A slow test is better than a fast test that fails.", "features": ["comparison", "direct", "domain-physical", "from", "general", "stative", "sub"], "split": "held", "catches": []}
+{"id": "s0551", "from": "855226d", "st": "아 우 파 파로카마 우 파시투카매", "en": "I'll do it; it will probably be fast.", "features": ["direct", "domain-physical", "future", "intend", "obj", "predict", "stative"], "split": "held", "catches": ["rules"]}
+{"id": "s0624", "from": "855226d", "st": "네 네쿠 파 투두타카 니 네쿠 파 투데타카", "en": "Two parts are joined, three are separated.", "features": ["agentless", "det", "direct", "domain-physical", "numeral", "obj", "past"], "split": "held", "catches": []}
+{"id": "s0629", "from": "855226d", "st": "예 태네 토 파 토시코디 타리코", "en": "Holding a heavy thing is difficult. That's just how it is.", "features": ["domain-physical", "general", "obj", "stative", "sub"], "split": "held", "catches": []}
+{"id": "s0630", "from": "855226d", "st": "아 태노 네쿠 파 에 페 카푸카마 에 태네 네쿠 파 토사카마", "en": "I'll give you the light part; you take the heavy one.", "features": ["direct", "domain-physical", "imperative", "intend", "loc", "obj"], "split": "train", "catches": ["rules"]}
+{"id": "s0655", "from": "855226d", "st": "야 수포 메루 우 누 추", "en": "How many times does it fail?", "features": ["question", "q-what", "n-times", "numeral", "det", "domain-time"], "split": "train", "catches": ["fronted"]}
+{"id": "s0685", "from": "855226d", "st": "에 코대코디 유 페 에 아 페 워야카마", "en": "Tell me at the time you are ready.", "features": ["while", "sub", "loc", "direct", "intend", "imperative", "domain-time"], "split": "train", "catches": ["fronted"]}
+{"id": "s0708", "from": "855226d", "st": "아 와 초코디 유 히 로헤카마", "en": "I'll wait until the test is done.", "features": ["sub", "before", "direct", "intend", "imperative", "domain-time"], "split": "held", "catches": ["rules"]}
+{"id": "s0804", "from": "855226d", "st": "아 수초타코디 유 페 에 수네타카", "en": "While I was blocked, you made progress.", "features": ["direct", "domain-work", "loc", "past", "sub", "while"], "split": "train", "catches": ["fronted"]}
+{"id": "s0806", "from": "855226d", "st": "사세 코대 쿠 우 노대 추", "en": "Is the task ready, or is it late?", "features": ["domain-work", "or", "question", "stative"], "split": "train", "catches": []}
+{"id": "s0816", "from": "855226d", "st": "에 아 페 워야타코디 호 아 우 파 쿠피타카", "en": "I removed it because you told me to.", "features": ["because", "sub", "from", "past", "direct", "loc", "obj"], "split": "train", "catches": ["fronted"]}
+{"id": "s0817", "from": "855226d", "st": "키토 푸소코디 호 와 누타키", "en": "The test failed because the value is empty, I gather.", "features": ["because", "sub", "from", "past", "inferred", "stative"], "split": "held", "catches": ["fronted"]}
+{"id": "s0856", "from": "855226d", "st": "네 메루 우 누타카 우 두차카", "en": "It failed two times. That is the danger.", "features": ["clause-anaphora", "numeral", "det", "past", "direct", "equative"], "split": "held", "catches": ["fronted"]}
+{"id": "s0858", "from": "855226d", "st": "우 쿠테타코디 유 히 아 로헤타카", "en": "I waited until it stopped.", "features": ["until", "sub", "before", "past", "direct"], "split": "train", "catches": ["fronted"]}
+{"id": "s0859", "from": "855226d", "st": "에 우 파 레타코디 유 후 우 파수카", "en": "It has been slow since you altered it.", "features": ["since", "sub", "after", "past", "direct", "obj", "stative"], "split": "train", "catches": ["fronted"]}
+{"id": "s0880", "from": "855226d", "st": "야 수포 메루 카유 페 니포 쿠테 추", "en": "How often does the machine stop?", "features": ["how-often", "n-times", "question", "q-what", "numeral", "loc"], "split": "train", "catches": ["fronted"]}
+{"id": "s0886", "from": "855226d", "st": "에 파테 파 레타코디 호 우 파수카", "en": "Since you altered the version, it is slow.", "features": ["because", "sub", "past", "from", "direct", "stative"], "split": "train", "catches": ["fronted"]}
+{"id": "s0888", "from": "855226d", "st": "미네 푸소코디 호 타푸 쿠테코", "en": "Since the data is empty, the function stops. That's just how it is.", "features": ["because", "sub", "from", "general"], "split": "train", "catches": ["fronted"]}
+{"id": "s0889", "from": "855226d", "st": "에 쿠태타코디 유 후 아 수초카", "en": "I have been blocked since you began.", "features": ["since", "sub", "after", "past", "direct"], "split": "train", "catches": ["fronted"]}
+{"id": "s0987", "from": "855226d", "st": "아 우 하 두하카", "en": "That one and I agree.", "features": ["we-exclusive", "with", "direct"], "split": "held", "catches": ["leak"]}
+{"id": "s1009", "from": "31b0c11", "st": "타푸 쿠 니포 키토 파 토시 추", "en": "Does the function hold the value, or does the machine?", "features": ["question", "or", "obj", "domain-code", "hold-exist"], "split": "train", "catches": []}

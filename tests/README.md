@@ -27,6 +27,15 @@ Three signals, because the first one alone cannot be read:
 
 Record as `results/YYYY-MM-DD-drift.md`. Changing the probe list makes a new test, not a new run of this one.
 
+## Regression test of the checks (D101) — not a test of the language
+`scripts/regression_test.py`. The acceptance test measures the language; this measures the checks that are supposed to keep the acceptance test from being spent as a linter.
+
+`tests/fixtures/pre_correction.jsonl` holds the pre-correction form of every corpus line corrected since 855226d, recovered from git, each recorded with the checks that fire when it is put back into the current corpus. The script puts each one back, one at a time, and fails if a check that fired then does not fire now. Run it beside `validate.py`.
+
+D82 says a check never shown to catch a real violation is not evidence of anything. D87 and D94 both answered that in prose, once, and prose does not re-run — the demonstrations could not be repeated and nothing failed if an edit weakened a check. This is that answer made executable.
+
+The fixtures with an empty `catches` list are the more useful half: **11 of the 34 corrections are invisible to every check**, including both lines of the D95 choose carve and both of the D90 say/message carve. They are asserted to stay invisible, so a widened check fails here and has to be recorded rather than passing unnoticed.
+
 ## Translation protocol (D72) — not a test
 For actually using the language, unlike the acceptance test, give the model everything: `spec/grammar.md`, `lexicon/lexicon.json` and the corpus. Withholding them is a property of the test, not of normal use.
 

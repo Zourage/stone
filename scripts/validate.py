@@ -26,6 +26,8 @@ Corpus checks (D11, D15, D25, D43):
     English -> stone undetermined (D90, D94)
   - ERROR: a held sentence whose `st` or `en` is verbatim in the train split,
     which would hand the acceptance test that item for free (D93)
+  - ERROR: corpus/README.md's cue sentence or feature-tag list out of step with
+    the code and the data it claims to be generated from (D101)
   - convention REPORT, heuristic so not an error: sentences that front an
     adverbial before a pronoun subject (D78 says subject first) and gnomic
     general-evidential sentences whose English carries no general cue (D79)
@@ -268,6 +270,52 @@ def gloss_collisions(sents, lx):
     return sorted(w for w, roots in used.items() if len(owners.get(w, set()) & roots) > 1)
 
 
+def readme_sync(sents):
+    """corpus/README.md restates two things the data decides; check it still matches.
+
+    D73 and D94 both say a list in the README is generated from the thing it
+    describes "so the two cannot drift". Neither was: both were copied by hand
+    once, and both did drift — the tag total went stale at the 1019-sentence
+    merge, and the cue sentence was reworded in a way that silently broke the
+    regex `translate.py` reads it with, so the model was prompted without the
+    cue table. A claim of no-drift is worth what checks it, so this checks it.
+    """
+    txt = (ROOT / "corpus/README.md").read_text(encoding="utf-8")
+    out = []
+
+    m = re.search(r"Fixed cues[^:]*:(.*?)(?:\n|$)", txt)
+    if not m:
+        out.append("corpus/README.md: no 'Fixed cues' sentence; translate.py reads the cue "
+                   "table out of it and would prompt the model without one")
+    else:
+        for slot, cues in SLOT_CUES.items():
+            name = slot.split(": ")[1]
+            mm = re.search(re.escape(name) + r' "([^"]+)"', m.group(1))
+            if not mm:
+                out.append(f"corpus/README.md: the cue sentence names no cues for {name}")
+            elif tuple(c.strip() for c in mm.group(1).split("/")) != cues:
+                out.append(f"corpus/README.md: the {name} cues differ from SLOT_CUES in "
+                           f"validate.py; the corpus was written to one of them")
+
+    listed = set()
+    for line in txt.split("## Feature tags")[-1].splitlines():
+        mm = re.match(r"- \*\*(.+?)\*\*: (.+)", line.strip())
+        if mm:
+            listed |= {x.strip() for x in mm.group(2).split(",")}
+    actual = {f for s in sents for f in s["features"]}
+    for f in sorted(actual - listed):
+        out.append(f"corpus/README.md: feature tag {f!r} is used in the corpus but not listed")
+    for f in sorted(listed - actual):
+        out.append(f"corpus/README.md: feature tag {f!r} is listed but no longer used")
+    m = re.search(r"Total: (\d+) distinct tags over (\d+) sentences", txt)
+    if not m:
+        out.append("corpus/README.md: no 'Total: N distinct tags over M sentences' line")
+    elif (int(m.group(1)), int(m.group(2))) != (len(actual), len(sents)):
+        out.append(f"corpus/README.md: says {m.group(1)} tags over {m.group(2)} sentences; "
+                   f"the corpus has {len(actual)} over {len(sents)}")
+    return out
+
+
 def leak_report(sents):
     """Held sentences whose answer sits verbatim in the train split.
 
@@ -332,6 +380,7 @@ def check_corpus(lex, errors):
     for msg in rule_errors(sents, lx):
         errors.append(msg)
     collisions = gloss_collisions(sents, lx)
+    errors.extend(readme_sync(sents))
     for sid in leak_report(sents):
         errors.append(f"{sid}: held sentence whose script or English is verbatim in the train "
                       f"split, so the acceptance test would score it for free (D93)")

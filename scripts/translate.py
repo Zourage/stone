@@ -179,12 +179,19 @@ def cue_table():
     """The fixed English cues for the evidentials and stances.
 
     Read out of corpus/README.md rather than restated here, so the tool cannot
-    drift from the convention the corpus was written to (D73).
+    drift from the convention the corpus was written to (D73). That only works
+    if something checks it: this regex was broken by the D94 rewrite of that
+    sentence and returned nothing for a whole session's worth of translations,
+    so `validate.py` now fails when the README's cue list and SLOT_CUES differ,
+    and this raises rather than returning an empty table (D101).
     """
     txt = (ROOT / "corpus/README.md").read_text(encoding="utf-8")
-    m = re.search(r"Fixed cues:(.*?)(?:\n|$)", txt)
+    m = re.search(r"Fixed cues[^:]*:(.*?)(?:\n|$)", txt)
     if not m:
-        return ""
+        raise SystemExit("corpus/README.md no longer contains a 'Fixed cues' sentence, so the "
+                         "model is being prompted without the cue table. Fix the README or this "
+                         "regex; do not translate without it. (This failed silently once: the "
+                         "D94 rewrite broke a stricter version of this pattern.)")
     return ("The fixed English cues the corpus uses, one of which every marked predicate "
             "must come out as: " + m.group(1).strip() +
             " A predicate with the direct evidential and no stance gets no cue at all.\n")
