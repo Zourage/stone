@@ -13,7 +13,7 @@ The with word coordinating two arguments into a subject is not an adverbial and 
 
 `scripts/validate.py` **fails** on an adverbial before the object as it does on one before the subject, and both checks are re-proved against the pre-correction forms by `scripts/regression_test.py` on every run (D102, D103).
 
-**Still open below the object: where two adverbials sit relative to each other.** One line has the configuration — s0625, a manner interrogative and a region nominal — and it is placed to keep both attested adjacencies, not to settle the question (D103).
+**Two adverbials in one clause run: with-phrase, then time/place/region/before-after, then the recipient** (D120). The recipient sits immediately before the verb because it is an argument of the verb rather than a circumstance — D57 already made it an argument. Thin evidence, and stated rather than discovered: the corpus had four such clauses and contradicted itself on the only comparable pair (s0685 time-then-recipient against s0456 recipient-then-time, same verb), which cost a miss in acceptance test 7. The rule fits three of the four; s0456 was corrected and eight sentences added. `scripts/validate.py` fails on a recipient standing before another adverbial.
 ## Word classes
 Decided (D26): no adjective class, no adverb class. Property words are stative verbs; manner is a serial verb or a case-marked nominal.
 Decided (D29): one open class of content roots. Predicate use takes an obligatory verb ending; argument use is bare, case-marked only when needed.

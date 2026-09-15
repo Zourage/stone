@@ -80,3 +80,4 @@
 {"id": "s0508", "from": "pre-D119", "st": "새 도 미노코디 티페코", "en": "Every result should be recorded. That's just how it is.", "features": ["modal", "should", "sub", "general", "quantifier", "all", "det"], "split": "held", "catches": []}
 {"id": "s0016", "from": "pre-D119", "st": "아 에 파 차타카", "en": "I asked you.", "features": ["direct", "past", "obj", "ask"], "split": "held", "catches": []}
 {"id": "s0813", "from": "pre-D119", "st": "에 우 파 야 하 파로타 추", "en": "How did you do it? I did it easily.", "features": ["manner", "with", "question", "q-how", "past", "obj"], "split": "held", "catches": []}
+{"id": "s0456", "from": "pre-D120", "st": "우 누타코 해 에 아 페 이 유 페 워야카마", "en": "If it failed, tell me now.", "features": ["conditional", "if", "past", "direct", "intend", "imperative", "now", "loc"], "split": "held", "catches": ["recipient-order"]}

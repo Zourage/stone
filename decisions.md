@@ -569,3 +569,18 @@ Counting all 2604 pairs of features that never co-occur is useless — most are 
 - **The corpus is at about 90% on a fresh held set and the bar is 90%.** Two runs agree. The gap is entirely corpus work, itemised above; none of it is a limit of the language or of the reader.
 - **Two adverbials after the object** is the oldest open item still costing misses. It should go next, with the D78 treatment.
 - The next run needs a third fresh draw; the eligibility rule handles it.
+
+**D120. Two adverbials in one clause run: with-phrase, then time/place/region/before-after, then the recipient. The last open word-order question is closed.** 2026-09-15. D103 left this open with one line in the configuration; test 7 charged a miss for it (s0456) and D118 called it the oldest item still costing.
+
+**The counts are thin and the honest version of them is thinner still.** A first pass found fourteen clauses with two adverbials, and ten were artefacts: six were the between-nominal, where the with word joins two points inside one phrase, and four were the coordinated we-subject, which D98 already says is part of the subject rather than an adverbial. **Four genuine cases remain**, and the only comparable pair contradicts itself outright — s0685 "Tell me at the time you are ready" puts the time phrase before the recipient, s0456 "If it failed, tell me now" puts the recipient first, same verb, same two kinds.
+
+**The rule and why.** The recipient goes last, immediately before the verb, because D57 already made it an argument of the verb rather than a circumstance, and an argument sits closer to its verb than a circumstance does. The with-phrase goes first, on two examples (s0625 manner-then-region, s0792 comitative-then-before) and nothing against. The rule fits three of the four; s0456 is corrected, and **the corrected order is what test 7's agent produced independently** — a cold reader's vote is worth more here than the fourth line.
+
+This is stated rather than discovered, and the spec says so. Eight sentences added so the order is learnable rather than merely legislated, and the check is shown against s0456's pre-correction form.
+
+**The check needed narrowing once, for a reason worth keeping.** Its first version flagged one of the eight new sentences: it read *this-one LOC* as a recipient when it is deixis — "here", not "to this one". Only the personal pronouns and the person root mark a recipient; a demonstrative in the location case is a place. That distinction is not in any rule until now.
+
+### OPEN
+- **Word order is closed at every level.** Subject, n-times, object, adverbials in their own order, verb. G1–G35 closed.
+- Remaining known gaps are the standing ambiguities (true/hold, the "hold" gloss collision, the compound-or-determiner reading) and the constructions test 7 listed as undetermined. None has been decided because none has been counted.
+- The next acceptance run needs a third fresh draw.

@@ -453,7 +453,7 @@
 {"id": "s0453", "en": "If I'm right, the cause is the fault.", "st": "아 얘하코 해 대 노카", "features": ["conditional", "if", "direct", "equative", "stative"], "split": "train"}
 {"id": "s0454", "en": "If there is a fault, the test will fail, I expect.", "st": "노 얘코 해 와 누투키매", "features": ["conditional", "if", "inferred", "future", "predict", "hold-exist"], "split": "train"}
 {"id": "s0455", "en": "If you read the file, you'll understand it, I expect.", "st": "에 왜 파 데코 해 에 우 파 데하투키매", "features": ["conditional", "if", "inferred", "future", "predict", "obj"], "split": "train"}
-{"id": "s0456", "en": "If it failed, tell me now.", "st": "우 누타코 해 에 아 페 이 유 페 워야카마", "features": ["conditional", "if", "past", "direct", "intend", "imperative", "now", "loc"], "split": "held"}
+{"id": "s0456", "en": "If it failed, tell me now.", "st": "우 누타코 해 에 이 유 페 아 페 워야카마", "features": ["conditional", "if", "past", "direct", "intend", "imperative", "now", "loc"], "split": "held"}
 {"id": "s0457", "en": "If the limit is ten, the result is bad.", "st": "무네 푸코 해 도 래카", "features": ["conditional", "if", "direct", "equative", "numeral", "stative"], "split": "train"}
 {"id": "s0458", "en": "If you help me, I'll fix it. You can count on that.", "st": "에 아 파 호하코 해 아 우 파 라투카미", "features": ["conditional", "if", "direct", "future", "trust", "obj"], "split": "train"}
 {"id": "s0459", "en": "If it's not a fault, it's a mistake.", "st": "우 노루코 해 우 내카", "features": ["conditional", "if", "neg", "direct", "equative"], "split": "train"}
@@ -1285,3 +1285,11 @@
 {"id": "s1285", "en": "We waited until the machine stopped.", "st": "아 에 하 니포 쿠테타코디 유 히 로헤타카", "features": ["until", "before", "we", "with", "sub", "past", "direct"], "split": "train"}
 {"id": "s1286", "en": "We help each other, I'm told.", "st": "아 에 하 호하케", "features": ["reciprocal", "we", "with", "reported"], "split": "train"}
 {"id": "s1287", "en": "The interval got small.", "st": "니유 테코디 쿠태타카", "features": ["become", "between", "sub", "past", "direct"], "split": "train"}
+{"id": "s1288", "en": "Show me the result now.", "st": "에 도 파 이 유 페 아 페 페포카마", "features": ["now", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1289", "en": "Tell me the reason after the test.", "st": "에 대유 파 와 후 아 페 워야카마", "features": ["after", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1290", "en": "Report the progress to me every day.", "st": "에 수네 파 새 카유 페 아 페 도해카마", "features": ["loc", "obj", "imperative", "intend", "direct", "all", "quantifier"], "split": "train"}
+{"id": "s1291", "en": "Give the file to me here.", "st": "에 왜 파 이 페 아 페 카푸카마", "features": ["here", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1292", "en": "Explain it to me slowly.", "st": "에 우 파 파수 하 아 페 헤도카마", "features": ["manner", "with", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1293", "en": "I showed the note to you then.", "st": "아 도차 파 우 유 페 에 페 페포타카", "features": ["then", "loc", "obj", "past", "direct"], "split": "train"}
+{"id": "s1294", "en": "Hand it over to me before night.", "st": "에 우 파 카요 히 아 페 레차카마", "features": ["deadline", "before", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1295", "en": "I compared it with you here.", "st": "아 우 파 에 하 이 페 티왜타카", "features": ["with", "here", "loc", "obj", "past", "direct"], "split": "train"}

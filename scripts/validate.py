@@ -33,6 +33,7 @@ Corpus checks (D11, D15, D25, D43):
   - ERROR: an adverbial standing before the main-clause subject (D78). This was
     a count until D102, and the count read 0 while eleven lines were wrong
   - ERROR: an adverbial standing before the object rather than after it (D103)
+  - ERROR: a recipient standing before another adverbial in its clause (D120)
   - ERROR: the three orders G35 settled — a region nominal with a possessor, a
     possessor predicate with a spare leading pronoun, and a subordinate clause
     repeating a subject it shares with the main clause (D114, D115, D116)
@@ -446,6 +447,50 @@ def g35_errors(sents, lx):
     return out
 
 
+def recipient_order_errors(sents, lx):
+    """A recipient standing before another adverbial in its own clause (D120).
+
+    Adverbials run with-phrase, then time/place/region/before-after, then the
+    recipient, which sits immediately before the verb because it is an argument
+    of the verb rather than a circumstance. The corpus had four clauses with two
+    adverbials and contradicted itself on the only comparable pair — s0685 put
+    the time phrase first and s0456 the recipient — which cost a miss in
+    acceptance test 7.
+    """
+    g = lambda gloss: next((e["form"] for e in lx.entries if e["gloss"] == gloss), None)  # noqa: E731
+    loc, person = g("case: location"), g("person")
+    with_, for_, from_ = g("relational: with"), g("relational: for"), g("relational: from")
+    bef, aft = g("relational: before"), g("relational: after")
+    marks = {loc, with_, for_, from_, bef, aft}
+    # only the PERSONAL pronouns: a demonstrative in the location case is deixis
+    # (`this one LOC` is "here", not "to this one"), which is what the first
+    # version of this check could not tell apart.
+    pron = {g("pronoun: I"), g("pronoun: you")}
+    out = []
+    for s in sents:
+        t = s["st"].split()
+        parsed = parse_sentence(s["st"], lx)
+        pred = {i for i, tk in enumerate(parsed.tokens) if tk.affixes}
+        start = 0
+        for stop in sorted(pred) + [len(t)]:
+            span = list(range(start, min(stop, len(t))))
+            phrases, cur = [], []
+            for i in span:
+                if t[i] in marks:
+                    phrases.append((cur, t[i], i))
+                    cur = []
+                else:
+                    cur.append(i)
+            for k, (grp, mark, at) in enumerate(phrases[:-1]):
+                # a recipient: the location case on a person or a pronoun
+                if mark == loc and grp and (t[grp[-1]] in pron or t[grp[-1]] == person):
+                    out.append(f"{s['id']}: a recipient stands before another adverbial; the "
+                               f"recipient comes last, next to the verb (D120)")
+                    break
+            start = stop + 1
+    return out
+
+
 def composition_report(sents):
     """Held sentences resting on a pair of constructions the train split never
     shows together.
@@ -610,6 +655,8 @@ def check_corpus(lex, errors):
     for msg in object_order_errors(sents, lx):
         errors.append(msg)
     for msg in g35_errors(sents, lx):
+        errors.append(msg)
+    for msg in recipient_order_errors(sents, lx):
         errors.append(msg)
     for msg in rule_errors(sents, lx):
         errors.append(msg)
