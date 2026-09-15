@@ -34,9 +34,11 @@ Taken from the corpus itself. `scripts/validate.py` fails if this list or the to
 - **clause type**: question, imperative, conditional, if, equative, agentless, clause-subject, clause-anaphora
 - **argument marking**: obj, loc, poss, with, for, from, det, compound, nominal-root, region
 - **quantity**: numeral, quantifier, all, none, both, ordinal, n-times, how-often, comparison
+- **colour and approximation**: color, approx, fraction
 - **question words**: q-what, q-which, q-where, q-why, q-how, q-when, q-who
 - **other constructions**: modal, able, want, should, allow, manner, because, therefore, become, between, still, not-yet, until, since, while, deadline, ownership, reciprocal, we, we-exclusive, or, but, stative, hold-exist, know, ask
 - **corpus bookkeeping**: minimal-evid, minimal-stance
+- **calendar**: weekday, part-of-day
 - **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
 
-Total: 88 distinct tags over 1295 sentences.
+Total: 93 distinct tags over 1367 sentences.

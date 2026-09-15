@@ -41,12 +41,30 @@ Sentence-final particle; the evidential slot is empty and the answer supplies it
 ## Quantifiers (D62)
 Every/all and no/none stand before the root, like numerals. With the thing and person roots they give everything, everyone, nothing, nobody. A negative determiner carries the negation alone: the predicate is not also negated.
 
+## Approximation (D123)
+One determiner word, in the same slot as every/all and no/none and on the same consonant, standing before a numeral or before a root: about five files, almost done. It hedges **an amount or a degree, never a claim**. Hedging a claim is what the stance slot is for — risk and propose (D34) — and the two must not be run together: "about five" is a quantity the speaker has not pinned down, "five, I suspect" is a number the speaker is offering for testing. The language had four obligatory evidentials for epistemic precision and nothing at all for quantitative approximation until this was coined.
+
 ## Number (D48, D62)
 Bare arguments are number-neutral: no plural marking exists or is needed.
 
 Numerals precede the root they count: three files. One to five and ten are simple; six to nine are five-plus-N; a numeral before ten multiplies, after it adds. Plural marking without a numeral: none, by D62.
+## Fractions (D123)
+Numeral, possessor case, the part root: two-POSS part is a half, three-POSS part a third. The possessor is doing the denominator's work — it names the whole the part is taken from — and the construction reuses `우 피 네쿠`, "its part", which the corpus already had. No root is coined and none should be. Naming the thing divided puts a second possessor outside the first: test-POSS two-POSS part, half of the tests.
+
+## Calendar names (D123)
+Neither weekdays nor parts of day take roots; both fall out of machinery the language already has.
+
+**Weekday: the week root compounded with the day root, then an ordinal.** Week-day-one is Monday, week-day-seven Sunday, on the ordinal pattern of step-three and version-two (D48). **Day one is Monday**, stated here because nothing derives it and two speakers who each guess will diverge.
+
+**Part of day: early or late compounded with the day root.** Early-day is morning, late-day is afternoon, on the ordinary modifier-before-head compound rule. Evening is not distinguished — it falls to late-day or to the night root, and that collapse is accepted rather than patched.
+
 ## Coordination (D59)
 No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
+
+## Colour (D123)
+Six basic terms, a family on the look root because a colour is a seen quality, told apart by the second syllable's vowel: black, white, red, green, blue, yellow. They are ordinary stative roots and take the verb ending in predicate use, like big and hot.
+
+Six and no more. The set and its order follow the sequence in which languages acquire basic colour terms, so a seventh — brown, then the purple/pink/orange band — has a determined place rather than an arbitrary one. There are no light, dark or saturation terms and none should be coined: a colour root covers its focal colour and the whole range around it.
 
 ## Modals (D61, D63)
 Four roots share a first syllable and one construction: complement clause with the general evidential and the subordinator, then the modal root as main predicate with its own evidential. Able (capacity, not the risk stance), want (not the intend stance), should (obligation), allow (permission). Each negates normally.

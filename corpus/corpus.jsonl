@@ -1293,3 +1293,75 @@
 {"id": "s1293", "en": "I showed the note to you then.", "st": "아 도차 파 우 유 페 에 페 페포타카", "features": ["then", "loc", "obj", "past", "direct"], "split": "train"}
 {"id": "s1294", "en": "Hand it over to me before night.", "st": "에 우 파 카요 히 아 페 레차카마", "features": ["deadline", "before", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
 {"id": "s1295", "en": "I compared it with you here.", "st": "아 우 파 에 하 이 페 티왜타카", "features": ["with", "here", "loc", "obj", "past", "direct"], "split": "train"}
+{"id": "s1296", "en": "The line is red.", "st": "피토 위페카", "features": ["direct", "stative", "color"], "split": "train"}
+{"id": "s1297", "en": "This line is green.", "st": "이 피토 위피카", "features": ["direct", "stative", "color", "det"], "split": "train"}
+{"id": "s1298", "en": "That line is yellow, I'm told.", "st": "우 피토 위포케", "features": ["reported", "stative", "color", "det"], "split": "train"}
+{"id": "s1299", "en": "I looked at the blue line.", "st": "아 위푸 피토 파 위타카", "features": ["direct", "past", "obj", "color", "det"], "split": "train"}
+{"id": "s1300", "en": "Read the black line.", "st": "에 위파 피토 파 데카마", "features": ["direct", "intend", "imperative", "obj", "color", "det"], "split": "train"}
+{"id": "s1301", "en": "The white thing is new.", "st": "위패 토 파캐카", "features": ["direct", "stative", "color", "det"], "split": "train"}
+{"id": "s1302", "en": "The machine is black.", "st": "니포 위파카", "features": ["direct", "stative", "color"], "split": "train"}
+{"id": "s1303", "en": "I found the green thing.", "st": "아 위피 토 파 웨타카", "features": ["direct", "past", "obj", "color", "det"], "split": "train"}
+{"id": "s1304", "en": "Every line is blue.", "st": "새 피토 위푸카", "features": ["direct", "stative", "color", "quantifier", "all", "det"], "split": "train"}
+{"id": "s1305", "en": "No line is red.", "st": "소 피토 위페카", "features": ["direct", "stative", "color", "quantifier", "none", "det"], "split": "train"}
+{"id": "s1306", "en": "That one is not white.", "st": "우 위패루카", "features": ["direct", "neg", "stative", "color"], "split": "train"}
+{"id": "s1307", "en": "Take the yellow thing.", "st": "에 위포 토 파 토사카마", "features": ["direct", "intend", "imperative", "obj", "color", "det"], "split": "train"}
+{"id": "s1308", "en": "This is not green but blue.", "st": "이 위피루카 채 위푸카", "features": ["direct", "neg", "but", "stative", "color"], "split": "train"}
+{"id": "s1309", "en": "The red line is bad.", "st": "위페 피토 래카", "features": ["direct", "stative", "color", "det"], "split": "train"}
+{"id": "s1310", "en": "The red line is bigger than the blue line.", "st": "위페 피토 위푸 피토 호 태카", "features": ["direct", "comparison", "stative", "color", "det", "from"], "split": "train"}
+{"id": "s1311", "en": "Is that one black?", "st": "우 위파 추", "features": ["question", "stative", "color"], "split": "train"}
+{"id": "s1312", "en": "If the line is red, fix it.", "st": "피토 위페코 해 에 우 파 라카마", "features": ["conditional", "if", "direct", "intend", "imperative", "obj", "color"], "split": "train"}
+{"id": "s1313", "en": "I'll look at the blue line.", "st": "아 위푸 피토 파 위투카마", "features": ["direct", "future", "intend", "obj", "color", "det"], "split": "train"}
+{"id": "s1314", "en": "Three lines are green.", "st": "니 피토 위피카", "features": ["direct", "stative", "color", "numeral", "det"], "split": "train"}
+{"id": "s1315", "en": "The white machine is new, I'm told.", "st": "위패 니포 파캐케", "features": ["reported", "stative", "color", "det"], "split": "train"}
+{"id": "s1316", "en": "I compared yellow with red.", "st": "아 위포 파 위페 하 티왜타카", "features": ["direct", "past", "obj", "with", "color"], "split": "train"}
+{"id": "s1317", "en": "Blue is good but red is bad.", "st": "위푸 로카 채 위페 래카", "features": ["direct", "but", "stative", "color"], "split": "train"}
+{"id": "s1318", "en": "Look at the white line.", "st": "에 위패 피토 파 위카마", "features": ["direct", "intend", "imperative", "obj", "color", "det"], "split": "train"}
+{"id": "s1319", "en": "The green line is clear.", "st": "위피 피토 해위카", "features": ["direct", "stative", "color", "det"], "split": "train"}
+{"id": "s1320", "en": "I read about five files.", "st": "아 수 포 왜 파 데타카", "features": ["direct", "past", "obj", "numeral", "det", "approx"], "split": "train"}
+{"id": "s1321", "en": "The run lasted about two hours.", "st": "다 수 네 캐피 유타카", "features": ["direct", "past", "numeral", "det", "nominal-root", "domain-time", "approx"], "split": "train"}
+{"id": "s1322", "en": "It is almost done.", "st": "우 수 초카", "features": ["direct", "stative", "approx", "det"], "split": "train"}
+{"id": "s1323", "en": "About ten tests failed.", "st": "수 푸 와 누타카", "features": ["direct", "past", "numeral", "det", "approx"], "split": "train"}
+{"id": "s1324", "en": "I waited about three days.", "st": "아 수 니 카유 로헤타카", "features": ["direct", "past", "numeral", "det", "domain-time", "approx"], "split": "train"}
+{"id": "s1325", "en": "It is almost ready.", "st": "우 수 코대카", "features": ["direct", "stative", "approx", "det"], "split": "train"}
+{"id": "s1326", "en": "About two machines stopped, I'm told.", "st": "수 네 니포 쿠테타케", "features": ["reported", "past", "numeral", "det", "approx"], "split": "train"}
+{"id": "s1327", "en": "I'll wait about five minutes.", "st": "아 수 포 캐포 로헤투카마", "features": ["direct", "future", "intend", "numeral", "det", "domain-time", "approx"], "split": "train"}
+{"id": "s1328", "en": "It is almost full.", "st": "우 수 푸세카", "features": ["direct", "stative", "approx", "det"], "split": "train"}
+{"id": "s1329", "en": "This run's time is about one hour.", "st": "이 다 피 유 수 나 캐피카", "features": ["direct", "equative", "poss", "numeral", "det", "domain-time", "approx"], "split": "train"}
+{"id": "s1330", "en": "About five people tested it.", "st": "수 포 예 우 파 와타카", "features": ["direct", "past", "obj", "numeral", "det", "approx"], "split": "train"}
+{"id": "s1331", "en": "Is it almost done?", "st": "우 수 초 추", "features": ["question", "stative", "approx", "det"], "split": "train"}
+{"id": "s1332", "en": "Half failed.", "st": "네 피 네쿠 누타카", "features": ["direct", "past", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1333", "en": "I read half.", "st": "아 네 피 네쿠 파 데타카", "features": ["direct", "past", "obj", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1334", "en": "A third is good.", "st": "니 피 네쿠 로카", "features": ["direct", "stative", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1335", "en": "A quarter is done.", "st": "패 피 네쿠 초카", "features": ["direct", "stative", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1336", "en": "Half of the tests failed, I'm told.", "st": "와 피 네 피 네쿠 누타케", "features": ["reported", "past", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1337", "en": "I waited half a day.", "st": "아 카유 피 네 피 네쿠 로헤타카", "features": ["direct", "past", "poss", "numeral", "domain-time", "fraction"], "split": "train"}
+{"id": "s1338", "en": "Half is ready.", "st": "네 피 네쿠 코대카", "features": ["direct", "stative", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1339", "en": "I'll fix half.", "st": "아 네 피 네쿠 파 라투카마", "features": ["direct", "future", "intend", "obj", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1340", "en": "If a third fails, tell me.", "st": "니 피 네쿠 누코 해 에 아 페 워야카마", "features": ["conditional", "if", "direct", "intend", "imperative", "loc", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1341", "en": "Did you run half?", "st": "에 네 피 네쿠 파 다타 추", "features": ["question", "past", "obj", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1342", "en": "Half of the data is bad.", "st": "미네 피 네 피 네쿠 래카", "features": ["direct", "stative", "poss", "numeral", "fraction"], "split": "train"}
+{"id": "s1343", "en": "A quarter is almost done.", "st": "패 피 네쿠 수 초카", "features": ["direct", "stative", "poss", "numeral", "fraction", "approx", "det"], "split": "train"}
+{"id": "s1344", "en": "I'll run it in the morning.", "st": "아 우 파 나대 카유 페 다투카마", "features": ["direct", "future", "intend", "obj", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1345", "en": "The machine stopped in the morning.", "st": "니포 나대 카유 페 쿠테타카", "features": ["direct", "past", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1346", "en": "Test it in the afternoon.", "st": "에 우 파 노대 카유 페 와카마", "features": ["direct", "intend", "imperative", "obj", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1347", "en": "The morning is good.", "st": "나대 카유 로카", "features": ["direct", "stative", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1348", "en": "I waited in the afternoon.", "st": "아 노대 카유 페 로헤타카", "features": ["direct", "past", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1349", "en": "Hand it over before the morning.", "st": "에 우 파 나대 카유 히 레차카마", "features": ["direct", "intend", "imperative", "obj", "deadline", "before", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1350", "en": "It failed in the afternoon, I'm told.", "st": "우 노대 카유 페 누타케", "features": ["reported", "past", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1351", "en": "It will be done before the morning, I expect.", "st": "우 나대 카유 히 초투키매", "features": ["inferred", "predict", "future", "stative", "deadline", "before", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1352", "en": "I'll read it in the afternoon.", "st": "아 우 파 노대 카유 페 데투카마", "features": ["direct", "future", "intend", "obj", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1353", "en": "Every morning the machine runs. That's just how it is.", "st": "니포 새 나대 카유 페 다코", "features": ["general", "quantifier", "all", "det", "loc", "compound", "how-often", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1354", "en": "Are you ready in the afternoon?", "st": "에 노대 카유 페 코대 추", "features": ["question", "loc", "stative", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1355", "en": "I'll tell you in the morning.", "st": "아 나대 카유 페 에 페 워야투카마", "features": ["direct", "future", "intend", "loc", "compound", "domain-time", "part-of-day"], "split": "train"}
+{"id": "s1356", "en": "I'll run it on Monday.", "st": "아 우 파 캐파 카유 나 페 다투카마", "features": ["direct", "future", "intend", "obj", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1357", "en": "We'll get the parts on Friday, I expect.", "st": "아 에 하 네쿠 파 캐파 카유 포 페 토소투키매", "features": ["inferred", "predict", "future", "obj", "loc", "with", "we", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1358", "en": "Monday is good.", "st": "캐파 카유 나 로카", "features": ["direct", "stative", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1359", "en": "Test it on Wednesday.", "st": "에 우 파 캐파 카유 니 페 와카마", "features": ["direct", "intend", "imperative", "obj", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1360", "en": "The review begins on Thursday, I'm told.", "st": "코피 캐파 카유 패 페 쿠태케", "features": ["reported", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1361", "en": "I waited on Tuesday.", "st": "아 캐파 카유 네 페 로헤타카", "features": ["direct", "past", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1362", "en": "Are you ready on Saturday?", "st": "에 캐파 카유 포나 페 코대 추", "features": ["question", "loc", "stative", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1363", "en": "It failed on Sunday.", "st": "우 캐파 카유 포네 페 누타카", "features": ["direct", "past", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1364", "en": "I'll finish it by Thursday.", "st": "아 우 파 캐파 카유 패 히 쿠테투카마", "features": ["direct", "future", "intend", "obj", "deadline", "before", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1365", "en": "Tell me on Monday.", "st": "에 캐파 카유 나 페 아 페 워야카마", "features": ["direct", "intend", "imperative", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1366", "en": "The machine stopped on Wednesday, I'm told.", "st": "니포 캐파 카유 니 페 쿠테타케", "features": ["reported", "past", "loc", "compound", "ordinal", "numeral", "domain-time", "weekday"], "split": "train"}
+{"id": "s1367", "en": "Every Monday the discussion begins. That's just how it is.", "st": "예차 새 캐파 카유 나 페 쿠태코", "features": ["general", "quantifier", "all", "det", "loc", "compound", "ordinal", "numeral", "how-often", "domain-time", "weekday"], "split": "train"}

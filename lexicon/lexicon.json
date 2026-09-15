@@ -1646,5 +1646,61 @@
   "sense_notes": "How big a thing is, as a measurable quantity. The stative big and small say which end; this is the dimension itself, the thing a measurement of bigness yields.",
   "id": "w0206",
   "added": "2026-09-15"
+ },
+ {
+  "form": "수",
+  "pos": "func",
+  "gloss": "approximately, about",
+  "sense_notes": "Determiner slot, standing before a numeral or a root exactly where every/all (w0135) and no/none (w0136) stand, and on the same consonant as both. Quantitative approximation only: it hedges an amount or a degree, never a claim. Hedging a claim is the stance slot's job — risk and propose (D34) — and the two must not be confused. With a numeral it is 'about five'; with a stative root it is 'almost done'. A reserve syllable spent by decision (D123).",
+  "id": "w0207",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위파",
+  "pos": "root",
+  "gloss": "black",
+  "sense_notes": "Basic colour term. The colour family sits on the look root, because a colour is a seen quality; members are told apart by the second syllable's vowel, in the order languages acquire basic colour terms. Covers the focal colour and its whole range; no separate light, dark or saturation terms exist and none should be coined (D123).",
+  "id": "w0208",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위패",
+  "pos": "root",
+  "gloss": "white",
+  "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
+  "id": "w0209",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위페",
+  "pos": "root",
+  "gloss": "red",
+  "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
+  "id": "w0210",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위피",
+  "pos": "root",
+  "gloss": "green",
+  "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
+  "id": "w0211",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위포",
+  "pos": "root",
+  "gloss": "yellow",
+  "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
+  "id": "w0212",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "위푸",
+  "pos": "root",
+  "gloss": "blue",
+  "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
+  "id": "w0213",
+  "added": "2026-09-15"
  }
 ]
