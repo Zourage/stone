@@ -39,4 +39,4 @@ Taken from the corpus itself. `scripts/validate.py` fails if this list or the to
 - **corpus bookkeeping**: minimal-evid, minimal-stance
 - **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
 
-Total: 88 distinct tags over 1019 sentences.
+Total: 88 distinct tags over 1245 sentences.
