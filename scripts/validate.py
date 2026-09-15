@@ -8,6 +8,8 @@ Implemented now (spec/codepoints.json exists, D28):
   - pos is one of the schema enum (D29, D33)
   - no Latin letters anywhere in `form` or `st` (CLAUDE.md rule 3)
   - no form of 2+ syllables is a Korean word (data/ko_frequency.json; D13, D55)
+  - no multi-syllable form splits into a shorter root plus a valid run of
+    affixes, which would make the word ambiguous with an inflected shorter one
 
 Corpus checks (D11, D15, D25, D43):
   - every `st` token is a known word: a func/root/num word alone, or a root
@@ -43,6 +45,38 @@ def check_script(s, where, errors):
             errors.append(f"{where}: U+{ord(ch):04X} is not one of the 74 syllables")
 
 
+SLOT = {"negation": 0, "tense": 1, "evidential": 2, "stance": 3, "subordinator": 4}
+
+
+def slot_of(entry):
+    g = entry["gloss"]
+    if g == "negation":
+        return 0
+    if g == "subordinator":
+        return 4
+    return SLOT.get(g.split(":")[0])
+
+
+def ambiguous_split(entry, lex):
+    """Return the shorter base if this form could be read as base + verb ending."""
+    if entry.get("pos") == "affix" or len(entry["form"]) < 2:
+        return None
+    bases = {e["form"]: e for e in lex
+             if e.get("pos") in ("root", "num") or e.get("gloss", "").startswith("pronoun")}
+    affixes = {e["form"]: slot_of(e) for e in lex if e.get("pos") == "affix"}
+    f = entry["form"]
+    for k in range(1, len(f)):
+        if f[:k] not in bases:
+            continue
+        rest = f[k:]
+        if not all(ch in affixes for ch in rest):
+            continue
+        slots = [affixes[ch] for ch in rest]
+        if all(a < b for a, b in zip(slots, slots[1:])):
+            return f[:k]
+    return None
+
+
 def validate_entries(lex, errors):
     forms, glosses = {}, {}
     for e in lex:
@@ -53,6 +87,9 @@ def validate_entries(lex, errors):
         check_script(e["form"], e["id"], errors)
         if not 1 <= len(e["form"]) <= 3:
             errors.append(f"{e['id']}: form is {len(e['form'])} syllables, must be 1-3")
+        clash = ambiguous_split(e, lex)
+        if clash:
+            errors.append(f"{e['id']}: form {e['form']!r} reads as {clash} plus a verb ending; recoin")
         if len(e["form"]) >= 2 and e["form"] in KO:
             errors.append(f"{e['id']}: form {e['form']!r} is a Korean word (frequency {KO[e['form']]}); recoin")
         if e["pos"] not in POS:
