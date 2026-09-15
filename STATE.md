@@ -40,7 +40,8 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## Open
 - **G34, uncounted: 64 sentences (11 held) where `[root][root][marker]` is structurally undecidable** — a compound, or a bare argument plus a marked phrase. Found by `realize.py --ambiguous` (D106), which breaks the tie with the subject rule and is right everywhere it was checked by hand. Not yet triaged into genuinely two-way against merely structurally so; a held sentence the script does not determine is what cost acceptance tests 3 and 4.
-- **Re-run the acceptance test on a fresh held set.** Two independent reasons now: the current held set has been edited in response to test results (D94, D100), and 43 of the 888 train pairs have changed or been added under it since test 5 was scored (D104). Until then, test 5's 118/121 is a record of the corpus at 31b0c11, not a statement about the corpus as it stands.
+- **Done: test 6 ran on a fresh held set (D110, D111).** It did not pass — 91.2% exact clears the bar but s0730 changes meaning. Ten of eleven misses trace to the corpus; six were corrected, six are G35.
+- **G35: six constructions the corpus does not decide** (D111) — locative predication, the region nominal's possessor, a shared embedded subject, "it" before a possessor, the D76 true/hold ambiguity, and hold-fixed against vary-negated. Its own session.
 - **No word-order gap is open.** G31, G32 and G33 are closed by D102 and D103; G1–G33 are all closed. New gaps get logged as G34+.
 - Still undecided below the object: **where two adverbials sit relative to each other.** Exactly one line has the configuration (s0625) and it is placed to keep both attested adjacencies rather than to settle it. (D103)
 - D11 coverage: every word appears in ≥3 train sentences (met first at D85, still true), and no held sentence rests on a thin or absent word (D101). 31 features are still under 10; held s0947 rests on the thinnest, `not-yet` at 2 train sentences.
@@ -71,7 +72,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - w0197–w0206 calendar and clock units (week, month, year, hour, minute) plus use, need, example, word, size. (D85)
 - Syllable budget: 71 of 74 single syllables used, 3 in reserve. New roots are two syllables unless a reserve syllable is spent by decision.
 
-## Corpus — 1019 sentences, 121 held
+## Corpus — 1245 sentences, 125 held
 `corpus/corpus.jsonl`; writing conventions and the English cue phrases in `corpus/README.md`. Constructions decided so far: imperative = you + intend stance; existence and having = the hold root, no have and no exist; equative = second term takes the verb ending, no copula; recipient = location case, after the object; and = juxtaposition or the with word, with or and but as words; if follows its clause; quantifiers every/none are determiners and bare arguments are number-neutral; no passive, drop the subject and keep the object marker; comparison uses the from word; manner = quality + the with word; because = clause + the from word; therefore = bare juxtaposition; become = stative clause + begin; ordinals = numeral after the root; still = the continue root; until/since = clause + time + before/after; an alternative question coordinates the smallest constituent that differs; a modified anaphoric "one" repeats its head root when the English names that head in the same sentence and takes the thing root otherwise. (D43–D49, D51, D56–D70, D89, D96, D103)
 - s0866–s0889 added 2026-09-15 for the constructions test 3 found too thin. All pass in tests 4 and 5. (D77)
 - s0890–s0992 added 2026-09-15 with the ten calendar, clock and utility roots. (D85)

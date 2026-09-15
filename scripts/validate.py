@@ -186,13 +186,23 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, cl
     sub, frm, time_, loc = marks
 
     def subject_after(k):
+        """Walk forward looking for a BARE argument, which would be the displaced
+        subject. A phrase of any length that ends in a marker is case-marked and
+        therefore not the subject — checking only the next token assumed every
+        marked phrase was two tokens long, and flagged `machine-OBJ every month-LOC
+        measure-GEN` because `every month` is three (D111)."""
         while k < len(t) - 1:
             if k in pred_idx:           # hit the verb before any bare argument
                 return False
             if t[k] in cases or t[k] in rel:
                 k += 1
-            elif t[k + 1] in cases or t[k + 1] in rel:
-                k += 2                  # a case-marked argument: not the subject
+                continue
+            j = k                       # the phrase: determiners, then the head
+            while (j + 1 < len(t) and (j + 1) not in pred_idx
+                   and t[j + 1] in heads and t[j] not in pronouns):
+                j += 1
+            if j + 1 < len(t) and (t[j + 1] in cases or t[j + 1] in rel):
+                k = j + 2               # the phrase closed with a marker: not the subject
             else:
                 return True             # a bare argument: the displaced subject
         return False
