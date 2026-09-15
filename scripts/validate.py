@@ -18,6 +18,9 @@ Corpus checks (D11, D15, D25, D43):
   - coverage REPORT (not yet a failure while the corpus is small): words with
     <3 train sentences, features with <10, held share, and the share of
     sentences whose stone and English word counts are equal (relexification proxy)
+  - convention REPORT, heuristic so not an error: sentences that front an
+    adverbial before a pronoun subject (D78 says subject first) and gnomic
+    general-evidential sentences whose English carries no general cue (D79)
 
 --add FILE: FILE is a JSON list of entries (or one entry). Each is validated
 against the schema and the current lexicon, then appended. Nothing is written
@@ -114,6 +117,39 @@ def add(path):
     return 0
 
 
+GENERAL_CUES = ("how it is", "everyone knows", "as such", "known", "by definition")
+
+
+def convention_report(sents, lx):
+    """Heuristic counts for the two conventions the corpus has broken before."""
+    g = lambda gloss: next(e["form"] for e in lx.entries if e["gloss"] == gloss)  # noqa: E731
+    pron = {e["form"] for e in lx.entries if e["gloss"].startswith("pronoun")}
+    cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
+    rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
+    loc, sub, gen = g("case: location"), g("subordinator"), g("evidential: general")
+    fronted = uncued = 0
+    for s in sents:
+        t = s["st"].split()
+        if t and t[0] not in pron:
+            for i, tok in enumerate(t):
+                if tok in pron and i > 0:
+                    if i + 1 < len(t) and t[i + 1] in cases:
+                        break
+                    pre = t[:i]
+                    if loc in pre or any(x in rel for x in pre) or any(x.endswith(sub) for x in pre):
+                        fronted += 1
+                    break
+        parsed = parse_sentence(s["st"], lx)
+        preds = [tk for tk in parsed.tokens if tk.affixes]
+        if preds and not parsed.is_question:
+            forms = [a["form"] for a in preds[-1].affixes]
+            if gen in forms and sub not in forms:
+                if not any(c in s["en"].lower() for c in GENERAL_CUES):
+                    uncued += 1
+    return (f"conventions: {fronted} sentences front an adverbial before a pronoun subject (D78), "
+            f"{uncued} gnomic general sentences with no English cue (D79)")
+
+
 def check_corpus(lex, errors):
     """Parse every corpus sentence with stonelib and report coverage."""
     lx = Lexicon(lex)
@@ -137,8 +173,10 @@ def check_corpus(lex, errors):
                 feat_count[f] = feat_count.get(f, 0) + 1
         if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(s["st"].split()):
             same_len += 1
+    conv = convention_report(sents, lx)
     n = len(sents)
     if n:
+        print(conv)
         thin = [w for w, c in word_count.items() if c < 3]
         weak = [f for f, c in feat_count.items() if c < 10]
         held = sum(1 for s in sents if s["split"] == "held")

@@ -2,8 +2,10 @@
 
 Status: O2 closed (D26, D29–D33); grammatical pieces coined (D39, see `lexicon/lexicon.json` w0001–w0025). Open: number, derivation suffixes. Scaffolding for corpus construction; the corpus is authoritative.
 
-## Word order (D33)
+## Word order (D33, D78)
 Subject, object, verb. Subject bare; object case-marked.
+
+**The subject comes first, always.** An adverbial — a time or place phrase, a while-clause, an until- or since-clause, a because-clause — follows the subject and precedes the object. Fronting an adverbial before the subject is not allowed, even though it reads naturally in English. The rule exists because free order made English → stone undetermined and cost six misses in acceptance test 3; the corpus taught both orders and contradicted itself. Exception, and it only looks like one: a pronoun inside an embedded clause may precede the main subject, because it is that clause's subject, not the main one.
 ## Word classes
 Decided (D26): no adjective class, no adverb class. Property words are stative verbs; manner is a serial verb or a case-marked nominal.
 Decided (D29): one open class of content roots. Predicate use takes an obligatory verb ending; argument use is bare, case-marked only when needed.
