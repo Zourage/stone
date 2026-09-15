@@ -31,6 +31,12 @@ Numerals precede the root they count: three files. One to five and ten are simpl
 ## Coordination (D59)
 No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
 
+## Ability (D61)
+Complement clause with the general evidential and the subordinator, then the ability root as main predicate. Cannot = that root negated. Capacity is a fact about the subject; the risk stance is the speaker's warning.
+
+## Irrealis rule (D60, D61)
+A clause that is not actual — a condition, an ability complement — carries the general evidential.
+
 ## Conditionals (D60)
 The condition clause comes first, its predicate carrying the general evidential, followed by the `if` word. Then the main clause, with its own evidential and stance. No word for `then`.
 

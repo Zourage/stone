@@ -1062,5 +1062,13 @@
   "sense_notes": "Marks the clause before it as a condition. Follows its clause, like every other relational word (with, for, from, before, after), and sits in the same consonant family as them. The condition clause comes first and its predicate carries the general evidential, since a condition is stated as a rule, not as something witnessed; the main clause carries whatever evidential and stance it needs. No word for 'then' (D60).",
   "id": "w0133",
   "added": "2026-09-15"
+ },
+ {
+  "form": "티캐",
+  "pos": "root",
+  "gloss": "be able, have the capacity",
+  "sense_notes": "The subject has what it takes to do the thing: a person is able, a machine or a value has the capacity, a state of affairs is within reach. Takes a subordinate clause as its complement, whose predicate carries the general evidential because the thing is not (yet) actual. Cannot = this root negated. Carved against the risk stance, which warns that something might go wrong: capacity is a fact about the subject, risk is the speaker's attitude to their own claim. Does not cover permission (D61).",
+  "id": "w0134",
+  "added": "2026-09-15"
  }
 ]

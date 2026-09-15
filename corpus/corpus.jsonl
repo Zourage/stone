@@ -460,3 +460,19 @@
 {"id": "s0460", "en": "If the version is new or the test failed, read the message.", "st": "파테 파캐코 쿠 와 누타코 해 에 케포 파 데카마", "features": ["conditional", "if", "or", "past", "direct", "intend", "imperative", "obj", "stative"], "split": "train"}
 {"id": "s0461", "en": "If it is done, I'll remove the old version.", "st": "우 초코 해 아 파캐루코디 파테 파 쿠피투카마", "features": ["conditional", "if", "neg", "direct", "future", "intend", "sub", "obj"], "split": "train"}
 {"id": "s0462", "en": "What is the cause, if it failed?", "st": "우 누타코 해 대 야 추", "features": ["conditional", "if", "question", "q-what", "past", "equative"], "split": "train"}
+{"id": "s0463", "en": "I can explain it.", "st": "아 우 파 헤도코디 티캐카", "features": ["able", "sub", "direct", "obj"], "split": "train"}
+{"id": "s0464", "en": "I can't explain it.", "st": "아 우 파 헤도코디 티캐루카", "features": ["able", "sub", "neg", "direct", "obj"], "split": "train"}
+{"id": "s0465", "en": "Can you fix it?", "st": "에 우 파 라코디 티캐 추", "features": ["able", "sub", "question", "obj"], "split": "train"}
+{"id": "s0466", "en": "The machine can run ten tests.", "st": "니포 푸 와 파 다코디 티캐카", "features": ["able", "sub", "direct", "numeral", "det", "obj"], "split": "train"}
+{"id": "s0467", "en": "This function can fail, I gather.", "st": "이 타푸 누코디 티캐키", "features": ["able", "sub", "inferred", "det"], "split": "train"}
+{"id": "s0468", "en": "The value can be text.", "st": "키토 티패코디 티캐카", "features": ["able", "sub", "direct", "equative"], "split": "held"}
+{"id": "s0469", "en": "I could not find it.", "st": "아 우 파 웨코디 티캐루타카", "features": ["able", "sub", "neg", "past", "direct", "obj"], "split": "train"}
+{"id": "s0470", "en": "You'll be able to read it, I expect.", "st": "에 우 파 데코디 티캐투키매", "features": ["able", "sub", "future", "inferred", "predict", "obj"], "split": "train"}
+{"id": "s0471", "en": "If you can help me, tell me.", "st": "에 아 파 호하코디 티캐코 해 에 아 페 워야카마", "features": ["able", "sub", "conditional", "if", "direct", "intend", "imperative", "obj", "loc"], "split": "train"}
+{"id": "s0472", "en": "The machine cannot stop. I saw it.", "st": "니포 쿠테코디 티캐루카", "features": ["able", "sub", "neg", "direct"], "split": "train"}
+{"id": "s0473", "en": "Who can review this?", "st": "야 예 이 파 코피코디 티캐 추", "features": ["able", "sub", "question", "q-who", "det", "obj"], "split": "train"}
+{"id": "s0474", "en": "I can begin now.", "st": "아 이 유 페 쿠태코디 티캐카", "features": ["able", "sub", "direct", "now", "loc"], "split": "train"}
+{"id": "s0475", "en": "It can't be a fault.", "st": "우 노코디 티캐루키", "features": ["able", "sub", "neg", "inferred", "equative"], "split": "held"}
+{"id": "s0476", "en": "Can the machine record the data?", "st": "니포 미네 파 미노코디 티캐 추", "features": ["able", "sub", "question", "obj"], "split": "train"}
+{"id": "s0477", "en": "I could fix it, but I did not fix it.", "st": "아 우 파 라코디 티캐타카 채 아 우 파 라루타카", "features": ["able", "sub", "past", "neg", "but", "direct", "obj"], "split": "train"}
+{"id": "s0478", "en": "You can understand this, I'm told.", "st": "에 이 파 데하코디 티캐케", "features": ["able", "sub", "reported", "det", "obj"], "split": "train"}
