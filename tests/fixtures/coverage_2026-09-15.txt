@@ -1,0 +1,60 @@
+1. The build broke again after your last change.
+2. Did you push that fix yet?
+3. Run the tests before you merge anything.
+4. If the log is empty, the writer never started.
+5. She said the parser chokes on blank lines.
+6. It must be reading the old config; nothing else explains it.
+7. I'll rewrite the loop tonight.
+8. This will crash on the second pass.
+9. I doubt the bug is in the driver.
+10. Don't touch that branch until I'm done.
+11. Where does this function get called from?
+12. The same error came back three times in a row.
+13. The second run gave a lower number than the first.
+14. Are you reading the raw counts or the average?
+15. Put both runs on one plot.
+16. If we heat it slower, the drift should get smaller.
+17. He told me the third sample was contaminated.
+18. Someone left the door open; that's why the readings jumped.
+19. I'm going to repeat it with a fresh batch.
+20. The next run will take about four hours.
+21. I don't believe that peak is real.
+22. Write down the room temperature every hour.
+23. How many trials do we have so far?
+24. Nothing changed when we doubled the voltage.
+25. The clamp is loose on the left side.
+26. Hand me the small screwdriver.
+27. Do we have another cable like this one?
+28. If the fan stops, shut the whole thing down.
+29. They said the new bearings ship on Monday.
+30. Somebody dropped this; look at the bent corner.
+31. I'll swap the pump out in the morning.
+32. That seal is going to leak.
+33. I'm not sure this bracket will hold.
+34. Check the pressure before you open the valve.
+35. Which box did the spare fittings go in?
+36. The motor runs hot after ten minutes.
+37. We're two days behind.
+38. Can you come in early tomorrow?
+39. Start the long run before you leave.
+40. If the parts come Friday, we can test on Monday.
+41. She said the review moved to next week.
+42. He's been gone a while, so he must be at lunch.
+43. I'll finish the wiring by Thursday.
+44. This is going to take longer than we told them.
+45. I doubt we'll be done before the holiday.
+46. Don't put anything else on that afternoon.
+47. What time does the shop close?
+48. We lost half a day waiting on the order.
+49. I don't think that's the real cause.
+50. Why do you want to do it that way?
+51. Let's do the simple version first.
+52. If you're right, then the whole model is wrong.
+53. He says we should start over.
+54. You've already decided, haven't you?
+55. I'd rather fix it now than ship it broken.
+56. That won't work with the old hardware.
+57. I'm not convinced either way yet.
+58. Pick one and we'll move on.
+59. We agreed last week to keep the old format.
+60. Fine, we'll try yours first.

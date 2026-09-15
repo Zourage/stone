@@ -13,6 +13,22 @@ Score exact match first, then read the near-misses. A miss caused by a word or c
 
 Record each run in `results/` as `YYYY-MM-DD.md` with the corpus and lexicon size, both scores, the rules the agent inferred, what it got wrong, and a verdict.
 
+## Coverage test (D121) — what the acceptance test cannot measure
+The acceptance test scores sentences drawn from the corpus, and every corpus sentence was written by someone with the lexicon open. A thing the language cannot say was never written down, so it is never scored. That test measures whether the corpus teaches the language; it cannot report a gap.
+
+This one inverts the deprivation. The acceptance test starves the **translator**; the coverage test starves the **source** and gives the translator everything, per the translation protocol below.
+
+1. **Blind source.** One cold agent, given a one-paragraph domain description and nothing else — no lexicon, no grammar, no spec, no corpus, and no hint of what the language can do — writes the English sentences. Keep them verbatim in `fixtures/coverage_YYYY-MM-DD.txt`.
+2. **Two full-materials translators**, independently, each with `spec/grammar.md`, the complete lexicon as form/pos/gloss/notes, and a sample of train pairs. Paraphrase and compounding encouraged; **stretching a root past its gloss is defined as a block, not a paraphrase**; inventing a form forbidden.
+3. **Verdicts:** OK / CLUMSY (said, but lossy — record what is lost) / BLOCKED_WORD (list the words) / BLOCKED_GRAMMAR (describe the construction).
+4. **Parse everything produced.** An OK verdict on a string `stonelib.parse_sentence` rejects is not a coverage result.
+
+Two translators and not one, because tolerance for paraphrase *is* the measurement and one agent's tolerance is unfalsifiable. Report their agreement on sayable-against-blocked as the interval; a disagreement that is OK against BLOCKED is a different problem from one on the CLUMSY/BLOCKED line.
+
+**No bar, and none should be set.** It reports where the language ends, not whether it passes. Record as `results/YYYY-MM-DD-<letter>.md` with the band breakdown, the words both arms named, and which blocks are gaps against which are scope boundaries under D1 and D34 — they are not the same finding.
+
+**Re-running it requires a fresh blind draw.** Reusing a source set after coining against it measures the coining, not the language.
+
 ## Drift test (D15, protocol fixed in D74)
 `scripts/drift_test.py` is the executable form of this protocol; the prose here and the script must say the same thing.
 
