@@ -18,6 +18,12 @@ Corpus checks (D11, D15, D25, D43):
   - coverage REPORT (not yet a failure while the corpus is small): words with
     <3 train sentences, features with <10, held share, and the share of
     sentences whose stone and English word counts are equal (relexification proxy)
+  - ERROR: rules the corpus decided and then broke: a first-person intend
+    predicate without the future marker, the predict stance on the direct
+    evidential, and any marked evidential or stance whose English carries none
+    of its cues (D84, D88, D91, D94)
+  - REPORT: English words that name more than one predicate root, which leaves
+    English -> stone undetermined (D90, D94)
   - ERROR: a held sentence whose `st` or `en` is verbatim in the train split,
     which would hand the acceptance test that item for free (D93)
   - convention REPORT, heuristic so not an error: sentences that front an
@@ -30,6 +36,7 @@ if any entry fails. Ids are assigned here (w0001, ...); `added` defaults to toda
 """
 import datetime
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -119,9 +126,6 @@ def add(path):
     return 0
 
 
-GENERAL_CUES = ("how it is", "everyone knows", "as such", "known", "by definition")
-
-
 def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks):
     """True if an adverbial constituent stands before the main-clause subject.
 
@@ -163,6 +167,107 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks):
     return False
 
 
+# The fixed English cues, per evidential and stance slot. The prose list lives in
+# corpus/README.md and this must say the same thing (the D73 lesson); a marked
+# slot whose English carries none of its cues leaves the sentence undetermined
+# in the English -> stone direction, which is what the acceptance test measures.
+SLOT_CUES = {
+    "evidential: reported": ("i'm told", "i am told", "they say", "you told me", "i was told"),
+    "evidential: inferred": ("must", "i gather", "it seems", "seems", "i think"),
+    "evidential: general": ("how it is", "everyone knows", "as such", "known", "by definition",
+                            "from the definition"),
+    "stance: intend": ("i'll", "we'll", "i will", "we will", "that's the plan",
+                       "that's my intention", "going to"),
+    "stance: predict": ("i expect", "probably", "expect"),
+    "stance: propose": ("just a proposal", "just a hypothesis", "i suspect", "perhaps"),
+    "stance: trust": ("counting on", "you can count"),
+    "stance: risk": ("might go wrong", "might break", "that might"),
+    "stance: assert": ("i insist",),
+}
+
+
+def _clauses(sent, lx, pron_i, pron_you, cases, rel):
+    """Walk a sentence, yielding (clause subject, predicate token, index, tokens).
+
+    The nearest preceding bare pronoun is that clause's subject; a predicate
+    ends its clause. Crude, but enough to tell an imperative from a first-person
+    declarative, which is what the two pairing rules below turn on.
+    """
+    parsed = parse_sentence(sent["st"], lx)
+    forms = sent["st"].split()
+    subj = None
+    for i, tk in enumerate(parsed.tokens):
+        if not tk.affixes:
+            nxt = forms[i + 1] if i + 1 < len(forms) else None
+            if forms[i] in (pron_i, pron_you) and nxt not in cases and nxt not in rel:
+                subj = forms[i]
+            continue
+        yield subj, tk, i, forms
+        if not any(a["gloss"] == "subordinator" for a in tk.affixes):
+            subj = None        # an embedded clause does not end the main one
+
+
+def rule_errors(sents, lx):
+    """Rules the corpus decided and then broke anyway. Exact, so these are errors.
+
+    Each one cost a miss in acceptance test 4 and each is a rule, not a
+    heuristic, so it is checked rather than counted (D94).
+    """
+    g = lambda gloss: next(e["form"] for e in lx.entries if e["gloss"] == gloss)  # noqa: E731
+    pron_i, pron_you, if_w = g("pronoun: I"), g("pronoun: you"), g("if")
+    cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
+    rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
+    out = []
+    for s in sents:
+        parsed = parse_sentence(s["st"], lx)
+        en = s["en"].lower()
+        for subj, tk, i, forms in _clauses(s, lx, pron_i, pron_you, cases, rel):
+            gs = [a["gloss"] for a in tk.affixes]
+            if "subordinator" in gs:            # embedded clause or modal complement
+                continue
+            # D88: a first-person intend predicate carries the future marker (train 20:1)
+            if ("stance: intend" in gs and subj == pron_i and "tense: future" not in gs):
+                out.append(f"{s['id']}: first-person intend predicate without the future "
+                           f"marker (D88)")
+            # D88: the predict stance does not sit on the direct evidential (train 14:1)
+            if "stance: predict" in gs and "evidential: direct" in gs:
+                out.append(f"{s['id']}: predict stance on the direct evidential (D88)")
+            # D84, D91: every marked evidential and stance carries its English cue
+            if parsed.is_question:
+                continue
+            if "evidential: general" in gs and if_w in forms[i + 1:]:
+                continue                        # irrealis protasis: the construction supplies it
+            if "stance: intend" in gs and (subj == pron_you or forms[0] == pron_you):
+                continue                        # the imperative is the intend cue
+            marked = [x for x in gs if x in SLOT_CUES]
+            if marked and not any(c in en for m in marked for c in SLOT_CUES[m]):
+                out.append(f"{s['id']}: {' and '.join(marked)} with no English cue (D84, D91)")
+    return out
+
+
+def gloss_collisions(sents, lx):
+    """English words that are the gloss of more than one root used as a predicate.
+
+    Two roots that one English word can name leave the English -> stone
+    direction undetermined: the say/tell root against the message root cost a
+    miss in test 4, and the code and experiment senses of "variable" were the
+    same defect waiting to happen (D90, D94).
+    """
+    used = {}
+    for s in sents:
+        roots = {tk.base["form"] for tk in parse_sentence(s["st"], lx).tokens
+                 if tk.affixes and tk.base}
+        for w in re.findall(r"[a-z']+", s["en"].lower()):
+            used.setdefault(w, set()).update(roots)
+    owners = {}
+    for e in lx.entries:
+        if e["pos"] != "root":
+            continue
+        for part in e["gloss"].split(","):
+            owners.setdefault(part.strip().lower(), set()).add(e["form"])
+    return sorted(w for w, roots in used.items() if len(owners.get(w, set()) & roots) > 1)
+
+
 def leak_report(sents):
     """Held sentences whose answer sits verbatim in the train split.
 
@@ -187,23 +292,17 @@ def convention_report(sents, lx):
     nums = {e["form"] for e in lx.entries if e["pos"] == "num"}
     cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
     rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
-    sub, gen = g("subordinator"), g("evidential: general")
+    sub = g("subordinator")
     marks = (sub, g("relational: from"), g("time"),
              {g("case: location"), g("relational: before"), g("relational: after")})
-    fronted = uncued = 0
+    fronted = 0
     for s in sents:
         parsed = parse_sentence(s["st"], lx)
         preds = {i for i, tk in enumerate(parsed.tokens) if tk.affixes}
         if _fronted_adverbial(s["st"].split(), preds, nums, cases, rel, marks):
             fronted += 1
-        pred_toks = [tk for tk in parsed.tokens if tk.affixes]
-        if pred_toks and not parsed.is_question:
-            forms = [a["form"] for a in pred_toks[-1].affixes]
-            if gen in forms and sub not in forms:
-                if not any(c in s["en"].lower() for c in GENERAL_CUES):
-                    uncued += 1
-    return (f"conventions: {fronted} sentences front an adverbial before a subject (D78), "
-            f"{uncued} gnomic general sentences with no English cue (D79)")
+    return (f"conventions: {fronted} sentences front an adverbial before a subject (D78); "
+            f"the D79 cue rule is now a hard error, not a count (D94)")
 
 
 def check_corpus(lex, errors):
@@ -230,6 +329,9 @@ def check_corpus(lex, errors):
         if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(s["st"].split()):
             same_len += 1
     conv = convention_report(sents, lx)
+    for msg in rule_errors(sents, lx):
+        errors.append(msg)
+    collisions = gloss_collisions(sents, lx)
     for sid in leak_report(sents):
         errors.append(f"{sid}: held sentence whose script or English is verbatim in the train "
                       f"split, so the acceptance test would score it for free (D93)")
@@ -241,6 +343,8 @@ def check_corpus(lex, errors):
         held = sum(1 for s in sents if s["split"] == "held")
         print(f"coverage: {len(thin)} words under 3 train sentences, {len(weak)} features under 10, "
               f"held {held}/{n}, same-length-as-English {same_len}/{n}")
+        print(f"gloss collisions: {len(collisions)} English words naming more than one "
+              f"predicate root ({', '.join(collisions) or 'none'}) (D94)")
     return n
 
 

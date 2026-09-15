@@ -24,12 +24,15 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Drift test: two arms, the long session and the fresh-session control. A run without the control is not interpretable. (D74)
 - Words enter only via `scripts/validate.py --add`; run `scripts/validate.py` before every commit. Multi-syllable forms are rejected if they are Korean words (`data/ko_frequency.json`) or if they read as a shorter root plus a verb ending. (rules 4, 6; D55)
 - Batches: one subagent per domain with a disjoint first-syllable pool; `scripts/merge_batch.py BATCH_DIR` dry-runs, the maintainer reviews, `--apply` writes. It only appends. (D58, D66)
-- A convention that lives only in prose gets broken, so the validator counts both conventions on every run — but **a check that has never been shown to catch a real violation is not evidence of anything.** The D78 check reported 1 while 14 lines were wrong; it now catches 14 of 14 on those forms. **Baseline: 0 for D78, 1 for D79** (s0005, a known false positive). A rise means new drift. (D82, D87)
+- A convention that lives only in prose gets broken, so the validator checks them — but **a check that has never been shown to catch a real violation is not evidence of anything.** The D78 check reported 1 while 14 lines were wrong; it now catches 14 of 14 on those forms. Every check here is regression-tested against the forms it failed to catch. (D82, D87, D94)
+- `validate.py` now **errors** on: a held sentence whose script or English is verbatim in train (D93); a first-person intend predicate without the future marker; the predict stance on the direct evidential; a marked evidential or stance whose English carries none of its cues (D88, D84, D91, D94). It **reports**: adverbials fronted before the subject, baseline 0 (D78); English words naming more than one predicate root, baseline 1 — "hold", where transitivity separates the two (D94). A rise in either means new drift.
+- **The acceptance test is not a linter.** Test 4 cost ~683k subagent tokens and eleven of its twelve misses were findable by static audit; that is what the checks above are for. Spend a run on the question only it can answer. (D94)
 - Codepoints: BMP PUA is stripped by Claude's input pipeline (D20); Yi Syllables trip a content classifier on the chat surface (D52). Neither is usable.
 
 ## Open
 - No open grammar gaps: G1–G29 all closed (D59–D65, D68–D71, D78, D79, D89). New gaps get logged as G30+.
-- **The acceptance test has not been passed.** Test 4 scored 90.1% on English → stone but 89.9% once its two invalid items were discounted, so the ≥90% bar is not met. Everything it faulted is now corrected; the next run on this corpus is the measurement.
+- **The acceptance test has not been passed.** Test 4 scored 90.1% on English → stone but 89.9% once its two invalid items were discounted, so the ≥90% bar is not met.
+- **The next run needs a fresh held set.** Fourteen of the current 121 held sentences have been edited in response to a test result (four after test 3, ten after test 4), so re-running on them measures a corpus fitted to them, not the language. Draw new held sentences that no test has seen before spending another run. (D94)
 - D11 coverage: every word appears in ≥3 train sentences (met first at D85, still true). 31 features are still under 10; the rarest constructions need more examples.
 - One language ambiguity left standing: the true/hold root does existence and truth both, so an argument plus that root negated reads as both "there is no X" and "X is not true". (D76)
 - O5 teaching materials (after the corpus). O7 formal code register (later). Derivation suffixes: when roots need them.
@@ -57,7 +60,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - s0866–s0889 added 2026-09-15 for the constructions test 3 found too thin: we-exclusive, region nominals, how-often, clause-as-subject, causal against temporal since. All four pass in test 4. (D77)
 - s0890–s0992 added 2026-09-15 with the ten calendar, clock and utility roots. (D85)
 - s0993–s1009 added 2026-09-15 for the three constructions test 4 found too thin: quantified duration with the measure root, a past-marked while-clause, the English perfect of an event, plus subject alternation in an alternative question. No new roots. (D92)
-- Thirty lines corrected in the same session through `correct_corpus.py` (D87–D93): fifteen D78 word-order violations D78 itself had left, four on the intend/predict endings, two on the alternative question, two on the say/message carve, four English sides that said something their script did not, and three held-or-train duplicates.
+- Thirty-three lines corrected in the same session through `correct_corpus.py` (D87–D94): fifteen D78 word-order violations D78 itself had left, four on the intend/predict endings, two on the alternative question, two on the say/message carve, four English sides that said something their script did not, three held-or-train duplicates, and three found by the new gloss-collision check.
 
 ## Editing this file
 Rewrite it whole. Patching it by string replacement has silently failed before (D73).
