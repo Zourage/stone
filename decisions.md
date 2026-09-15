@@ -209,3 +209,23 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D64. G5, G9, G10 and G11 closed with no new words.** We = the I pronoun, the you pronoun and the with word (inclusive); exclusive we replaces the second with whatever third party is meant. N times = a numeral before the repeat root, as a determiner: "three repeats it run-PAST". Compounds = a root standing directly before another root modifies it, extending the determiner position (D44) from pronouns, the interrogative and numerals to roots: time limit, failure message, test data. While = the subordinate clause with the general evidential, then the time root with the location case, literally "at the time that it runs" — the same machinery as the deixis phrases (D48).
 
 **D65. G7 and G8 closed with no new words.** Comparison: the standard takes the from word and the quality is the predicate, "this that-FROM big-DIRECT" for "this is bigger than that". This is how many languages do comparison and it reuses a word the language already has; there is no separate comparative form of a stative. Agentless clauses replace the passive: drop the subject and keep the object marker on the patient, "line-OBJECT remove-PAST-DIRECT" for "the line was removed". No passive voice exists; the object marker alone shows the patient is not the subject, so nothing is ambiguous. 44 sentences across D63–D65 (s0499–s0542, 7 held).
+
+**D66. Second subagent batch: 57 roots, 266 sentences (s0543–s0808, 27 held). Lexicon 196, corpus 808.** Three agents on physical handling, time and process, and work coordination, same method as D58 but with the grammar complete, so they used modals, quantifiers, comparison, conditionals, while, agentless clauses and compounds rather than working around them. Three glosses were coined twice across batches and one of each was kept: difficult (physical), late and ready (time, because late pairs audibly with early and ready is carved from the set-up root); the work agent's three forms were dropped and its sentences remapped. The agents declined to coin far more than they coined, each refusal recorded in its sense_notes or the batch notes: always and never are the quantifier determiners before the time root; soon, already, still, first, last, duration, deadline, process, round and at-the-same-time are constructions; put, send, enter, leave, distance, together, assign, easy and high-priority are already sayable. A subordinate clause was used as the subject of a stative in two sentences and is hereby licensed: the subordinator already makes a clause into an argument, so it may fill a subject slot as well as an object slot.
+
+**D67. Correction: the addressee of say/tell takes the location case, not the object case.** The entry's sense_notes said object; the corpus and D57 both use the location case, as they should, since a recipient is a goal. The note was wrong and is corrected; no sentence changes.
+
+### OPEN (new grammar gaps from the second batch, G13+)
+- G13. Manner adverbials. D26 says manner is a serial verb or a case-marked nominal but never says which case, and no corpus sentence shows one, so "do it fast" cannot be written. This is a hole in an existing decision, not a new feature; decide first.
+- G14. Because, as a clause ("it was late because the machine stopped"); and so/therefore.
+- G15. Become / inchoative ("when did the machine get cold?").
+- G16. Ordinals ("the third step" is currently indistinguishable from "three steps"); and first/next in a sequence as an adverbial.
+- G17. Between, as a relation over two points.
+- G18. A nominaliser for a clause as an equative term ("the danger is that the machine stops").
+- G19. A possessor phrase as a predicate ("this task is yours").
+- G20. Both, and reciprocals ("we are both responsible", "they agree with each other").
+- G21. Still / not yet, as distinct from done-negated.
+- G22. Calendar and clock units above the day; and a "by a time" deadline marker.
+- G23. A rate question, how often, distinct from how many times.
+- G24. A pronoun whose antecedent is a whole clause (used as "that after" for clause-linking "then"; not discussed in the grammar).
+- G25. Until and since: subordinate clause + time root + before/after. Already used and following from D64, but undocumented; write it into the grammar rather than deciding it.
+- G26. Region nominals: inside/outside/up/down plus the location case as a systematic convention; used, worth blessing explicitly.

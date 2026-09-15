@@ -9,7 +9,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Grammar, `spec/grammar.md`: SOV. One open root class; roots are neither noun nor verb. Verb template: root, negation, tense, evidential, stance, subordinator; only the evidential is mandatory. Arguments bare, or root plus one case marker (object, location, possessor). A pronoun, the interrogative or a numeral before a root is a determiner. No adjectives, no adverbs. (D26, D29–D33, D44)
 - Evidentials, obligatory: direct, reported, inferred, general. Stance, optional: intend, predict, propose, trust, risk, assert. Tense: past, present unmarked, future (temporal only). (D30, D31, D34)
 - Semantic carving, `lexicon/README.md`: knowing ×3, error ×3, asking ×3, change ×3; experiment/test/try = 1. (D35)
-- Target: 300 lexicon entries (D54); 139 today: 53 roots from the first subagent batch (code, experiments, discussion), D58. New roots are two syllables, coined from corpus need, checked against Korean for collisions. Corpus grows alongside to ~1000 sentences for coverage.
+- Target: 300 lexicon entries (D54); 196 today: 53 roots from the first subagent batch (code, experiments, discussion), D58. New roots are two syllables, coined from corpus need, checked against Korean for collisions. Corpus grows alongside to ~1000 sentences for coverage.
 
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
@@ -31,7 +31,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Syllable budget: 71 of 74 single syllables used; 3 left, all reserve. Glyph identity changed in D52; every word kept its sound. New roots are two syllables unless a reserve syllable is spent by decision.
 
 ## Corpus
-- 542 sentences, 67 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. Equatives = second term takes the verb ending; no copula. Recipient = location case. Or and but exist; and is juxtaposition or with. If follows its clause; condition first, general evidential on it. Ability is a root over a subordinate clause. Bare arguments are number-neutral; every/all and no/none are determiners. Four modal roots (able, want, should, allow) take a subordinate clause. No passive: drop the subject, keep the object marker. Comparison uses the from word. (D43, D46, D47, D49, D51, D56, D57, D59, D60, D61–D65)
+- 808 sentences, 94 held, `corpus/corpus.jsonl`; conventions in `corpus/README.md`. Imperative = you + intend stance. Existence and having = the hold root; no have, no exist. Equatives = second term takes the verb ending; no copula. Recipient = location case. Or and but exist; and is juxtaposition or with. If follows its clause; condition first, general evidential on it. Ability is a root over a subordinate clause. Bare arguments are number-neutral; every/all and no/none are determiners. Four modal roots (able, want, should, allow) take a subordinate clause. No passive: drop the subject, keep the object marker. Comparison uses the from word. (D43, D46, D47, D49, D51, D56, D57, D59, D60, D61–D65)
 
 ## Next
-Next subagent batch: `scripts/merge_batch.py BATCH_DIR` to dry-run, review, `--apply`. Re-test at ~500 sentences. Open grammar: valency (passive), plural marking without a numeral.
+Close G13 first, then the rest. Next subagent batch: `scripts/merge_batch.py BATCH_DIR` to dry-run, review, `--apply`. Re-test at ~500 sentences. Open grammar: valency (passive), plural marking without a numeral.

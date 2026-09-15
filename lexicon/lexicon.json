@@ -963,7 +963,7 @@
   "form": "워야",
   "pos": "root",
   "gloss": "say, tell",
-  "sense_notes": "The act of uttering something to someone. One root for say and tell: the addressee, if present, is the object; the content is a subordinate clause standing bare before the verb, or the object when there is no addressee. The reported evidential marks that the speaker's source is someone's saying; this root is the saying itself as an event ('I told you', 'what did you say'). Not ask (asking carve), not explain, not answer. As an argument: a saying, what was said.",
+  "sense_notes": "The act of uttering something to someone. One root for say and tell. The addressee takes the location case, like every recipient (D57); the content is the object, or a subordinate clause. Corrected from the entry's original note, which said the addressee was the object (D67).",
   "id": "w0121",
   "added": "2026-09-14"
  },
@@ -1109,6 +1109,462 @@
   "gloss": "allow, may",
   "sense_notes": "The subject is permitted the thing in the complement clause; someone or some rule permits it. Carved against the ability root: capacity is what the subject can do, permission is what the subject is let do. Negated it is 'must not'. Modal root over a subordinate clause.",
   "id": "w0139",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "파시",
+  "pos": "root",
+  "gloss": "fast",
+  "sense_notes": "Quick; takes little time; covers high speed of a machine, a run, a person acting. Stative ('the run fasts' = the run is fast) and the property named as an argument (speed as shortness of time). Own root; slow is its own root, not fast-NEG, on the big/small and good/bad pattern (D25 keeps negation only where it is genuinely the whole of the other sense). Carved from the time root (w0049, how long something lasts): fast is the rate, not the duration, and from more/less, which are amounts.",
+  "id": "w0140",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "파수",
+  "pos": "root",
+  "gloss": "slow",
+  "sense_notes": "Takes much time; low speed. Own root, paired with fast: not-fast is a weaker claim than slow. Same first syllable as fast, differing vowel, so the pair is audible. Not the wait root (w0054, letting time pass until something happens): slow is a property of how a thing proceeds, waiting is an act.",
+  "id": "w0141",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "파로",
+  "pos": "root",
+  "gloss": "do, act",
+  "sense_notes": "The general root for performing any action: do, act, carry out, perform. Stands where no narrower root applies ('what did you do', 'nobody acted', 'do it now'), and takes as object the thing done. Deliberately the widest root in the language: build, fix, run, write and the rest are all narrowings of it, and the narrow root is preferred whenever one fits. As an argument: an act, an action, a deed. Not cause (w0047, what brings a thing about) and not work-as-a-thing-produced.",
+  "id": "w0142",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "패노",
+  "pos": "root",
+  "gloss": "near",
+  "sense_notes": "Close in space or in order; a short distance away. Stative ('the machine nears' = the machine is near) and, before a root or after a possessor, the region close to it ('the machine's near' = the vicinity of the machine), which takes the location case for 'near the machine'. Own root, paired with far. Not the place root (w0057, a location itself) and not before/after (w0066-w0067, which are about time and order).",
+  "id": "w0143",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "패누",
+  "pos": "root",
+  "gloss": "far",
+  "sense_notes": "A long distance away in space or in order. Stative, and as a region-nominal with the location case like near. Own root; not-near is weaker. Distance as a measured quantity is this root or its pair with the measure root; there is no separate root for distance.",
+  "id": "w0144",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "페세",
+  "pos": "root",
+  "gloss": "inside",
+  "sense_notes": "The interior of a thing, and being in it: in, within, the inside. As an argument with the possessor and the location case: 'the file's inside at' = inside the file. Stative: 'it insides' = it is inside. Entering is the move root plus this with the location case; there is no separate root for enter. Carved from place (w0057, any location) and part (w0055, a component): a thing's inside is a region, not one of its pieces.",
+  "id": "w0145",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "페소",
+  "pos": "root",
+  "gloss": "outside",
+  "sense_notes": "The exterior of a thing, and being out of it: out, outside, beyond it. Same shape of use as inside, with which it pairs: possessor plus location case for 'outside the machine'. Leaving is the move root plus this with the location case. Own root, not inside-NEG.",
+  "id": "w0146",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "피레",
+  "pos": "root",
+  "gloss": "up, above",
+  "sense_notes": "The region above a thing, and being higher than it: up, above, over, the top. With the location case for 'above it' and as the goal of the move root for 'move it up'. Spatial only: a value going up in amount is the increase root (w0085), never this. Own root, paired with down.",
+  "id": "w0147",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "피라",
+  "pos": "root",
+  "gloss": "down, below",
+  "sense_notes": "The region below a thing, and being lower than it: down, below, under, the bottom. Spatial only; a value going down in amount is the decrease root (w0086). Paired with up, sharing its first syllable.",
+  "id": "w0148",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "포하",
+  "pos": "root",
+  "gloss": "open",
+  "sense_notes": "Not shut: a state in which a thing can be entered, read from or written to, and the act of putting it into that state. One root for the act and the state, like the other physical-state roots; the evidential and tense carry the rest. Covers opening a file, a machine's cover, a way in. Not begin (w0103, the first point of a stretch): a thing can be open long before anything begins.",
+  "id": "w0149",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "포해",
+  "pos": "root",
+  "gloss": "closed, shut",
+  "sense_notes": "Shut: a state in which a thing cannot be entered or used, and the act of putting it into that state. Own root, paired with open and sharing its first syllable; not-open is a weaker claim than closed. Not stop (w0102, halting a run) and not done (w0065, finished).",
+  "id": "w0150",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "푸세",
+  "pos": "root",
+  "gloss": "full",
+  "sense_notes": "Holding as much as it can, or as much as it is meant to hold: full, filled, at capacity. Stative, said of a file, a store, a machine, a list. Carved against more (w0083, a greater amount) and against the limit root (w0095, a bound a value must not pass): full is the state of having reached what the thing holds.",
+  "id": "w0151",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "푸소",
+  "pos": "root",
+  "gloss": "empty",
+  "sense_notes": "Holding nothing: empty, blank, vacant. Own root, paired with full; not-full includes everything in between and so will not serve. Said of a file, a store, a list, a place. Not none (w0136, the negative determiner) and not the removal act (w0110).",
+  "id": "w0152",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "타리",
+  "pos": "root",
+  "gloss": "difficult, hard",
+  "sense_notes": "Takes much effort or skill to do; hard to carry out. Stative of a task, an act or a thing to be done. Own root, paired with easy. Carved against clear (w0124, plain and easy to grasp, which is about understanding) and against bad (w0062): a difficult task can be a good one. As an argument: difficulty.",
+  "id": "w0153",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "타로",
+  "pos": "root",
+  "gloss": "easy",
+  "sense_notes": "Takes little effort or skill. Own root, paired with difficult and sharing its first syllable; not-difficult is a weaker claim. Not clear (w0124), which is about an explanation or a name being unambiguous, and not help (w0125), which is the act of making a task easier.",
+  "id": "w0154",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "태네",
+  "pos": "root",
+  "gloss": "heavy",
+  "sense_notes": "Much weight; hard to lift or move. Stative, and by extension of a load on a machine. Own root, paired with light-in-weight. Carved from big (w0059, size or importance): a small thing can be heavy. As an argument: weight in the sense of how heavy a thing is; measuring it is this root with the measure root (w0053).",
+  "id": "w0155",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "태노",
+  "pos": "root",
+  "gloss": "light in weight",
+  "sense_notes": "Little weight; easy to lift or move. Own root, paired with heavy and sharing its first syllable. Weight only: light in the sense of illumination is not in the language, and light in the sense of easy is the easy root.",
+  "id": "w0156",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테해",
+  "pos": "root",
+  "gloss": "hot",
+  "sense_notes": "High in temperature: hot, warm. Stative, said of a machine, a place, a thing. Own root, paired with cold. Temperature only: there is no figurative sense. As an argument: heat, or temperature named through this root.",
+  "id": "w0157",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "테호",
+  "pos": "root",
+  "gloss": "cold",
+  "sense_notes": "Low in temperature: cold, cool. Own root, paired with hot and sharing its first syllable; not-hot is a weaker claim than cold.",
+  "id": "w0158",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "토사",
+  "pos": "root",
+  "gloss": "take",
+  "sense_notes": "Come to hold a thing by one's own action: pick it up, get it, take it. The thing taken is the object; the source takes the from word or the location case. Carved from receive (its pair): taking is initiated by the taker, receiving by the giver. Not give (w0111, which moves a thing to another holder) and not find (w0045, locating what was sought).",
+  "id": "w0159",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "토소",
+  "pos": "root",
+  "gloss": "receive, get",
+  "sense_notes": "Come to hold a thing because someone or something passed it: receive, get, be given, take delivery. The converse of the give root (w0111), which had no converse; the giver takes the from word. Carved from take (its pair, sharing its first syllable): the receiver does not initiate. Also used of a machine receiving input.",
+  "id": "w0160",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "토시",
+  "pos": "root",
+  "gloss": "hold, grasp",
+  "sense_notes": "Keep a thing in hand or in place; grip it, hold on to it, keep hold of it. The physical act and the state of keeping something held. Carved from the true/hold root (w0064), which carries existence and possession in this language: that root says a thing is there or is someone's, this one says a hand or a mechanism is gripping it. Also the control root (w0080) is different again: that is keeping a value unchanged for a fair comparison.",
+  "id": "w0161",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "투도",
+  "pos": "root",
+  "gloss": "move",
+  "sense_notes": "Change place: move, shift, go, carry to another place. Transitive (move the part) or intransitive (the part moved). The goal takes the location case, the source the from word. Carved from run (w0041, making a thing go or execute, which need not change its place) and from give (w0111, which changes who holds a thing, not where it is).",
+  "id": "w0162",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "투두",
+  "pos": "root",
+  "gloss": "join",
+  "sense_notes": "Put two or more things together so that they hold as one: join, attach, connect, combine, merge. The things joined are the object, or one is the object and the other takes the with word. Paired with separate. Not build (w0037, bringing into existence what was not there) and not same (w0063): joined things stay two things.",
+  "id": "w0163",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "투데",
+  "pos": "root",
+  "gloss": "separate",
+  "sense_notes": "Take apart what was together: separate, detach, split, take off. The thing separated is the object; what it is separated from takes the from word. Own root, not join-NEG, because it is an act and not the withholding of one. Not remove (w0110, which ends a thing's presence altogether).",
+  "id": "w0164",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "투와",
+  "pos": "root",
+  "gloss": "whole, entire",
+  "sense_notes": "All of a thing with none of it left out: the whole, the entirety, entire. Before a root it restricts it like the statives: the whole file, the entire machine. Carved from part (w0055, one component) as its counterpart, from every/all (w0135, which quantifies over many things, where this is about one thing complete), and from done (w0065, which is about a process finished).",
+  "id": "w0165",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "카유",
+  "pos": "root",
+  "gloss": "day",
+  "sense_notes": "The light stretch between two nights, and by extension one whole light-dark cycle when counted with a numeral (three days). Lumped deliberately: daytime and the counted cycle are one root, as in many languages; the dark stretch is its own root (night). Verbal use: to be day, for day to come. Not the general time root (a point or stretch of any size): this is the cycle the sky gives. Not a unit word: the unit root plus this root names it as a unit of measure.",
+  "id": "w0166",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "카요",
+  "pos": "root",
+  "gloss": "night",
+  "sense_notes": "The dark stretch between two days. Shares its first syllable with day so the pair is audible; it is not day-NEG, because the counted-cycle sense of day includes the night. Verbal use: to be night. A stretch, so it takes the location case for 'at night'.",
+  "id": "w0167",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "나대",
+  "pos": "root",
+  "gloss": "early",
+  "sense_notes": "Stative: at a point before the expected, due or proper one. Paired with late, which is its own root, not this one negated (not-early includes on time). Carved from the before relational word (w0066), which is purely relative to a named argument and says nothing about an expectation: early needs no argument, the expectation is understood. Before another root it restricts it like the other statives: an early stage, an early stop. As an argument: earliness.",
+  "id": "w0168",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "노대",
+  "pos": "root",
+  "gloss": "late",
+  "sense_notes": "Stative: at a point after the expected, due or proper one; overdue, delayed, behind. Shares its second syllable with early. Not the after relational word (w0067), which is relative to a named argument only. Where a deadline is actually named, 'after the time limit' says the same thing compositionally; this root is for when the due point is understood rather than stated. Not wait (w0054), which is letting time pass on purpose.",
+  "id": "w0169",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "매수",
+  "pos": "root",
+  "gloss": "often, frequent",
+  "sense_notes": "Stative of an event or a kind of event: it occurs at many points over a stretch of time. 'The failure oftens' = it fails often. Before a root it restricts it: frequent failure. Carved from the more root (w0083), which is amount, not rate, and from the numeral-plus-repeat construction (three times), which names an exact count instead of a rate. Paired with rare.",
+  "id": "w0170",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "매시",
+  "pos": "root",
+  "gloss": "rare, seldom",
+  "sense_notes": "Stative of an event or a kind of event: it occurs at few points over a stretch of time. Own root, not often-NEG, on the more/less precedent (D25 lumps only where the negation really covers the sense; not-often takes in both rare and never). Never is the none determiner before the time root (D62) and is not this root.",
+  "id": "w0171",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "니래",
+  "pos": "root",
+  "gloss": "next, following",
+  "sense_notes": "The one that comes immediately after in a sequence or in time: the next step, the next run, the next day (tomorrow). Stands before the root it restricts, like the statives. Carved from the after relational word (w0067), which only orders two named things and does not pick out the immediately following member, and from begin (w0103). Verbal use: to follow, to come next. Paired with previous.",
+  "id": "w0172",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "니로",
+  "pos": "root",
+  "gloss": "previous, preceding",
+  "sense_notes": "The one that comes immediately before in a sequence or in time: the previous version, the previous stage, the previous day (yesterday). Shares its first syllable with next. Not new-NEG (w0112), which is about age, and not the before relational word, which orders two named things. Verbal use: to precede.",
+  "id": "w0173",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐다",
+  "pos": "root",
+  "gloss": "step",
+  "sense_notes": "One act in an ordered series of acts: a step of a procedure, a move in a process, one instruction carried out. Carved from part (w0055), which is a component of a thing and not an act, and from stage, which is a larger span containing steps. A procedure is not a separate root: step plus the list root (a list of steps) says it. As a verb: to take a step, to carry out one step.",
+  "id": "w0174",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "캐도",
+  "pos": "root",
+  "gloss": "stage, phase",
+  "sense_notes": "A named span of a process with its own character, containing steps: the setup stage, the run stage, the review stage. Shares its first syllable with step. Carved from step (one act) and from the time root (any point or stretch, with no place in a process). Verbal use: to be at a stage, to be in a phase.",
+  "id": "w0175",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "코대",
+  "pos": "root",
+  "gloss": "ready, prepared",
+  "sense_notes": "Stative: everything needed is in place, so the thing can begin. Carved from set up (w0078), which is the act of arranging an apparatus: this root is the state arrival at which that act aims, and it holds of people and of things that were never set up by anyone. Not done (w0065), which is the state after finishing, and not able (w0134), which is capacity regardless of preparation. As an argument: readiness.",
+  "id": "w0176",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "쿠라",
+  "pos": "root",
+  "gloss": "pause, suspend",
+  "sense_notes": "Halt a running thing with the expectation that it goes on from where it left off; the halt itself. Shares its first syllable with begin and stop, the same family. Carved from stop (w0102), which ends the thing, and from wait (w0054), which is letting time pass, not halting anything. Transitive (pause the run) or intransitive (the machine paused). Paired with continue.",
+  "id": "w0177",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "쿠로",
+  "pos": "root",
+  "gloss": "continue, resume",
+  "sense_notes": "Go on from where a thing stands, without starting over: keep going, or take it up again after a pause. Lumped: carrying on and resuming are one root, since both are the opposite of starting over. Carved from repeat (w0087), which does the whole thing again from the beginning, and from begin (w0103). Paired with pause; same family as begin and stop.",
+  "id": "w0178",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "미예",
+  "pos": "root",
+  "gloss": "turn (a party's turn to act)",
+  "sense_notes": "The point in a sequence at which it falls to a given party to act: my turn, your turn, whose turn. Built audibly from the person family. Carved from the repeat root (w0087), which already covers a round, an iteration or a go of a repeated thing: this root is about whose go it is, not about the go itself. The party is the possessor. Verbal use: for it to be someone's turn.",
+  "id": "w0179",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "니유",
+  "pos": "root",
+  "gloss": "interval, gap between",
+  "sense_notes": "The stretch that lies between two points or two events: the gap between runs, the space between two lines, the wait between a request and its answer. Carved from the time root (w0049), which is a point or stretch taken on its own, and from wait (w0054), which is a person letting time pass. The language has no word for 'between'; a compound (run interval) or the possessor case names the two ends. Verbal use: to lie between.",
+  "id": "w0180",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "사세",
+  "pos": "root",
+  "gloss": "task, piece of work",
+  "sense_notes": "A unit of work someone takes on and can finish: a job, a ticket, an item of work. Verbal: to work on, to do as one's work. Carved from thing (w0046, any entity) and from the change carve (fix/alter/build name what is done to a thing; this root names the assigned unit of work itself, whatever is done in it). Not the goal (the state aimed at) and not the plan (the ordered whole).",
+  "id": "w0181",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "사해",
+  "pos": "root",
+  "gloss": "effort, work as a quantity",
+  "sense_notes": "How much work a thing costs: labour, workload, the amount of doing a task demands. Stative/verbal: to cost work, to take effort. Same first syllable as task: this is the size of the task, not the task. Carved from time (w0049, how long it lasts) and from difficulty (how hard it is): a long or hard task and a big-effort task are different claims. Not more/less (w0083-84), which are bare amounts.",
+  "id": "w0182",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "소테",
+  "pos": "root",
+  "gloss": "plan",
+  "sense_notes": "An ordered set of intended acts for reaching a goal: a plan, a schedule, an approach. Verbal: to plan, to lay out what will be done. Carved from decide (w0126, settling one open question) and from the intend stance (commitment to one act): a plan is the whole shape of the work, may be made by one party for another, and can exist without commitment. Not the goal, which is its end point.",
+  "id": "w0183",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "소차",
+  "pos": "root",
+  "gloss": "goal",
+  "sense_notes": "The state of affairs the work is aimed at: the end wanted, the objective, what done would mean here. Verbal: to aim at, to have as the goal. Carved from result (w0048, what actually comes about, whether wanted or not) and from want (w0137, a person's desire): the goal is the target itself, and work can miss it. Shares its first syllable with plan and priority, the direction family.",
+  "id": "w0184",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "소패",
+  "pos": "root",
+  "gloss": "priority",
+  "sense_notes": "Which work is to be done before which: rank in the order of doing. Verbal: to rank, to have priority. Carved from list/order (w0108, sequence of anything) and from big (w0059, importance or size in general): a small task can have high priority. High priority = priority + big; low = priority + small. Not should (w0138), which says a thing ought to be done at all, not when.",
+  "id": "w0185",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "수네",
+  "pos": "root",
+  "gloss": "progress",
+  "sense_notes": "How far a piece of work has come toward being done, and the making of that headway. Verbal: to make progress, to move along. Carved from done (w0065, the end state) and from increase (w0085, a value going up): progress is the covered part of a task, it can be reported and compared while nothing is finished. Not the result.",
+  "id": "w0186",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "수초",
+  "pos": "root",
+  "gloss": "blocked, waiting on",
+  "sense_notes": "Cannot go on until something else happens; be held up by it. The blocker takes the object case. Verbal and stative. Carved from wait (w0054, letting time pass, which may be idle choice) and from able-NEG (w0134, lacking the capacity): a blocked person is able and not idle, and is stopped by a named other thing. Not stop (w0102), which halts a thing that was running.",
+  "id": "w0187",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "레세",
+  "pos": "root",
+  "gloss": "be responsible for, own",
+  "sense_notes": "The tie between a person and a piece of work that makes it theirs to do and theirs to answer for. The work takes the object case. Lumped on purpose: English responsible, accountable, owner of and whose job it is are one root here, since between two people they never come apart. Not possession (the possessor case, w0017) and not hold/exist (w0064). As an argument: a responsibility, an owner's charge.",
+  "id": "w0188",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "레차",
+  "pos": "root",
+  "gloss": "hand over, take over",
+  "sense_notes": "Move the responsibility for a piece of work from one person to another. The one giving it up is the subject and the receiver takes the location case; for take over, the receiver is the subject and the former holder takes 'from'. Also covers assigning work that had no holder. Carved from give/pass (w0111), which moves a thing, and from show (w0113): what moves here is the charge, not the object. As an argument: a handover.",
+  "id": "w0189",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "레포",
+  "pos": "root",
+  "gloss": "share",
+  "sense_notes": "Hold or do a thing jointly, or split it between people: share a task, share the data, split the effort. The other party takes 'with'; the thing shared is the object. Carved from give (w0111, which leaves the giver without it), from hand over (the charge passes entirely) and from with (w0023, mere accompaniment): sharing leaves both parties holding it. As an argument: a share, a split.",
+  "id": "w0190",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "도해",
+  "pos": "root",
+  "gloss": "report",
+  "sense_notes": "Tell the person who needs it how the work stands. The content is the object or a bare subordinate clause; the person reported to takes the location case. Carved from say/tell (w0121, any utterance), from show (w0113, making visible) and from explain (w0117, giving an account so it is grasped): reporting is owed, is about the state of work, and needs no explaining. As an argument: a report.",
+  "id": "w0191",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "도차",
+  "pos": "root",
+  "gloss": "note",
+  "sense_notes": "A short written thing left for a person to read later: a memo, a comment in code, a line left on the matter. Verbal: to leave a note. Carved from record (w0088), which captures an observed value into a durable store for the data, and from write (w0043, producing text or code) and message (w0105, output sent by a machine or party): a note is written for a person to come back to.",
+  "id": "w0192",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "데패",
+  "pos": "root",
+  "gloss": "open item",
+  "sense_notes": "A matter that is not settled and is kept on a list until it is: an open question, an outstanding point, a to-do that is still a question rather than a task. Verbal: to be open, to remain unsettled. Carved from ask-for-information (w0032, the act of asking), from question particle and from task: nobody need have asked it aloud, and it is closed by deciding, not by doing. Closed = decide, or open-item-NEG.",
+  "id": "w0193",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "리네",
+  "pos": "root",
+  "gloss": "alone",
+  "sense_notes": "Stative: with no other person in it; doing or being by oneself. Together is the with construction (w0023) or this root negated, so only one root is coined (D25 pattern). Said of a person, or of an act through the while construction: at the time that I was alone. Carved from the none determiner (w0136) and from help-NEG (w0125): being alone is a state, not a lack of assistance.",
+  "id": "w0194",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "라태",
+  "pos": "root",
+  "gloss": "trust (a person)",
+  "sense_notes": "Rely on a person to do what they said they would, or on a machine to behave. The person relied on takes the object case; the matter relied on for takes 'with'. Carved from the trust stance (w0008), which is the speaker relying on a proposition as an assumption: this root is a standing relation between two people that can be built, held and lost, and can be the object of other verbs. Not agree (w0115) and not belief (w0028).",
+  "id": "w0195",
+  "added": "2026-09-15"
+ },
+ {
+  "form": "두차",
+  "pos": "root",
+  "gloss": "danger",
+  "sense_notes": "A bad outcome that may come, named as a thing: a hazard, an exposure, what could go wrong here. Verbal: to be dangerous. Carved from the risk stance (w0009), which is the speaker flagging that their own claim may go wrong, and from chance (w0092, randomness with no cause): a danger can be found, listed, compared and removed. Not fault (w0030) and not failure (w0031), which are actual.",
+  "id": "w0196",
   "added": "2026-09-15"
  }
 ]
