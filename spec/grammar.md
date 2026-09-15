@@ -39,6 +39,30 @@ No and: clauses are juxtaposed, arguments joined with the with word. Or and but 
 ## Modals (D61, D63)
 Four roots share a first syllable and one construction: complement clause with the general evidential and the subordinator, then the modal root as main predicate with its own evidential. Able (capacity, not the risk stance), want (not the intend stance), should (obligation), allow (permission). Each negates normally.
 
+## Manner (D26, D68)
+The quality plus the with word: fast-WITH do = do it fast. The how-question has the same shape.
+
+## Because and therefore (D69)
+Because: subordinate clause + the from word. Therefore: state the cause clause first and juxtapose.
+
+## Become (D69)
+Stative clause + the begin root: cold-GEN-SUB begin-PAST = got cold.
+
+## Ordinals (D69)
+A numeral before a root counts it (three steps); after it, identifies it (step three).
+
+## Between, still, both, reciprocals, deadlines, rate (D69)
+Between: the interval root over two points joined by with. Still: the continue root over a subordinate clause. Both: the numeral two alone. Reciprocal: a joint with-subject and no object. By a time: before on the time phrase. How often: how many times with the stretch in the location case.
+
+## Clause as an argument (D66, D69)
+A subordinate clause fills a subject slot as well as an object slot, so an equative with a clause puts the clause first. A pronoun may take a whole clause as antecedent.
+
+## Until and since (D70)
+Subordinate clause + the time root + before = until; + after = since.
+
+## Region nominals (D70)
+Inside, outside, up and down with the location case, or compounded before a root.
+
 ## Comparison (D65)
 The standard takes the from word; the quality is the predicate. This that-FROM big-DIRECT = this is bigger than that. No comparative form.
 

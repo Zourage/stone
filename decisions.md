@@ -215,17 +215,25 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 **D67. Correction: the addressee of say/tell takes the location case, not the object case.** The entry's sense_notes said object; the corpus and D57 both use the location case, as they should, since a recipient is a goal. The note was wrong and is corrected; no sentence changes.
 
 ### OPEN (new grammar gaps from the second batch, G13+)
-- G13. Manner adverbials. D26 says manner is a serial verb or a case-marked nominal but never says which case, and no corpus sentence shows one, so "do it fast" cannot be written. This is a hole in an existing decision, not a new feature; decide first.
-- G14. Because, as a clause ("it was late because the machine stopped"); and so/therefore.
-- G15. Become / inchoative ("when did the machine get cold?").
-- G16. Ordinals ("the third step" is currently indistinguishable from "three steps"); and first/next in a sequence as an adverbial.
-- G17. Between, as a relation over two points.
-- G18. A nominaliser for a clause as an equative term ("the danger is that the machine stops").
-- G19. A possessor phrase as a predicate ("this task is yours").
-- G20. Both, and reciprocals ("we are both responsible", "they agree with each other").
-- G21. Still / not yet, as distinct from done-negated.
-- G22. Calendar and clock units above the day; and a "by a time" deadline marker.
-- G23. A rate question, how often, distinct from how many times.
-- G24. A pronoun whose antecedent is a whole clause (used as "that after" for clause-linking "then"; not discussed in the grammar).
-- G25. Until and since: subordinate clause + time root + before/after. Already used and following from D64, but undocumented; write it into the grammar rather than deciding it.
-- G26. Region nominals: inside/outside/up/down plus the location case as a systematic convention; used, worth blessing explicitly.
+- G13. Closed by D68.
+- G14. Closed by D69.
+- G15. Closed by D69.
+- G16. Closed by D69.
+- G17. Closed by D69.
+- G18. Closed by D69.
+- G19. Closed by D69.
+- G20. Closed by D69.
+- G21. Closed by D69.
+- G22. Closed by D69 (deadline marker); calendar and clock units moved to vocabulary by D71.
+- G23. Closed by D69.
+- G24. Closed by D69.
+- G25. Closed by D70.
+- G26. Closed by D70.
+
+**D68. G13 closed, and D26's hole with it: manner is the quality plus the `with` word.** "Do it fast" is fast-WITH do; "move the heavy part slowly" is slow-WITH move. D26 said manner was "a serial verb or a case-marked nominal" and never said which, and no corpus sentence showed one, so manner was unwritable. The with word already carries instrument and means, the interrogative already asks how by combining with it, and now the answer to a how-question has the same shape as the question. No new word.
+
+**D69. G14–G24 closed, every one with existing words.** Because: the subordinate clause plus the from word, which already marks cause ("the machine stop-GEN-SUB from, it was late"). Therefore: state the cause clause first and juxtapose, as with and (D59). Become: the stative clause plus the begin root, "cold-GEN-SUB begin-PAST" for "got cold". Ordinals: a numeral BEFORE a root counts it (three steps), a numeral AFTER it identifies which one (step three) — position alone, no marker. Between: the interval root over two points joined by with. A clause as an equative term: put it in the subject slot, licensed by D66, so "that the machine stops is the danger" rather than English's order. Possession as a predicate: the own root, "this task you own" for "this task is yours". Both: the numeral two standing alone, which the corpus already does. Reciprocal: a joint subject with the with word and no object — "I you-with agree" is already "we agree with each other". Still: the continue root over a subordinate clause; not-yet stays done-negated. By a time: the before word on the time phrase. How often: how many times within a stretch, with the stretch in the location case; the often and rare roots answer it as statives. A pronoun may take a whole clause as its antecedent.
+
+**D70. G25 and G26 were documentation, not decisions, and are now written down.** Until is the subordinate clause plus the time root plus before; since is the same with after. Region nominals are inside, outside, up and down with the location case, or compounded before a root ("the line above"). Both follow from D64 and were already in use. 57 sentences across D68–D70 (s0809–s0865, 13 held).
+
+**D71. Calendar and clock units are a vocabulary gap, not a grammar gap.** Day and night exist; week, month, year, hour and minute do not. Nothing about the grammar blocks them and nothing in the corpus needs them yet, so they wait for a coining batch rather than a decision. Removed from the gap list.
