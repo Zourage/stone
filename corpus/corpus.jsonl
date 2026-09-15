@@ -7,7 +7,7 @@
 {"id": "s0007", "en": "I believe it, that's all.", "st": "아 우 파 시카", "features": ["direct", "obj", "know"], "split": "train"}
 {"id": "s0008", "en": "I'll fix it.", "st": "아 우 파 라투카마", "features": ["direct", "future", "intend", "obj"], "split": "train"}
 {"id": "s0009", "en": "It'll probably fail.", "st": "우 누투키매", "features": ["inferred", "future", "predict"], "split": "train"}
-{"id": "s0010", "en": "I suspect this one is faulty. Just a hypothesis.", "st": "이 노키메", "features": ["inferred", "propose"], "split": "train"}
+{"id": "s0010", "en": "This one seems faulty. Just a hypothesis.", "st": "이 노키메", "features": ["inferred", "propose"], "split": "train"}
 {"id": "s0011", "en": "I was told that was tested, and I'm counting on it.", "st": "우 와타케미", "features": ["reported", "past", "trust"], "split": "train"}
 {"id": "s0012", "en": "I changed it. That might break something.", "st": "아 우 파 레타카모", "features": ["direct", "past", "risk", "obj"], "split": "train"}
 {"id": "s0013", "en": "It did not fail. I saw it, I insist.", "st": "우 누루타카무", "features": ["direct", "past", "neg", "assert"], "split": "train"}

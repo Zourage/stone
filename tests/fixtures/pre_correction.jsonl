@@ -64,3 +64,4 @@
 {"id": "s0849", "from": "pre-D103", "st": "에 카요 히 우 파 쿠테코디 티캐 추", "en": "Can you finish by night?", "features": ["deadline", "before", "able", "sub", "question", "obj"], "split": "train", "catches": ["object-order"]}
 {"id": "s0962", "from": "pre-D103", "st": "아 니로 캐파 후 우 파 테파타카", "en": "I have used it since the previous week.", "features": ["since", "after", "past", "direct", "det", "obj"], "split": "train", "catches": ["object-order"]}
 {"id": "s0991", "from": "pre-D103", "st": "아 나 캐페 헤 우 파 테파타카", "en": "I used it for a year.", "features": ["numeral", "det", "for", "past", "direct", "obj"], "split": "train", "catches": ["object-order"]}
+{"id": "s0010", "from": "pre-D105", "st": "이 노키메", "en": "I suspect this one is faulty. Just a hypothesis.", "features": ["inferred", "propose"], "split": "train", "catches": ["rules"]}

@@ -20,8 +20,8 @@ Corpus checks (D11, D15, D25, D43):
     sentences whose stone and English word counts are equal (relexification proxy)
   - ERROR: rules the corpus decided and then broke: a first-person intend
     predicate without the future marker, the predict stance on the direct
-    evidential, and any marked evidential or stance whose English carries none
-    of its cues (D84, D88, D91, D94)
+    evidential, and EVERY marked evidential or stance whose English carries none
+    of its own cues (D84, D88, D91, D94, D105)
   - REPORT: English words that name more than one predicate root, which leaves
     English -> stone undetermined (D90, D94)
   - ERROR: a held sentence whose `st` or `en` is verbatim in the train split,
@@ -294,11 +294,16 @@ def rule_errors(sents, lx):
                 continue
             if "evidential: general" in gs and if_w in forms[i + 1:]:
                 continue                        # irrealis protasis: the construction supplies it
-            if "stance: intend" in gs and (subj == pron_you or forms[0] == pron_you):
-                continue                        # the imperative is the intend cue
             marked = [x for x in gs if x in SLOT_CUES]
-            if marked and not any(c in en for m in marked for c in SLOT_CUES[m]):
-                out.append(f"{s['id']}: {' and '.join(marked)} with no English cue (D84, D91)")
+            if "stance: intend" in marked and (subj == pron_you or forms[0] == pron_you):
+                marked.remove("stance: intend")   # the imperative is the intend cue
+            if "stance: predict" in gs and "evidential: inferred" in marked:
+                marked.remove("evidential: inferred")  # the predict stance supplies it (D88)
+            missing = [m for m in marked if not any(c in en for c in SLOT_CUES[m])]
+            if missing:
+                out.append(f"{s['id']}: {' and '.join(missing)} with no English cue (D84, D91). "
+                           f"The rule is that EVERY marked slot carries its own cue; until D105 "
+                           f"this check accepted a line where any one of them did")
     return out
 
 
