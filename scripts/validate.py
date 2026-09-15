@@ -28,9 +28,8 @@ Corpus checks (D11, D15, D25, D43):
     which would hand the acceptance test that item for free (D93)
   - ERROR: corpus/README.md's cue sentence or feature-tag list out of step with
     the code and the data it claims to be generated from (D101)
-  - convention REPORT, heuristic so not an error: sentences that front an
-    adverbial before a pronoun subject (D78 says subject first) and gnomic
-    general-evidential sentences whose English carries no general cue (D79)
+  - ERROR: an adverbial standing before the main-clause subject (D78). This was
+    a count until D102, and the count read 0 while eleven lines were wrong
 
 --add FILE: FILE is a JSON list of entries (or one entry). Each is validated
 against the schema and the current lexicon, then appended. Nothing is written
@@ -128,17 +127,47 @@ def add(path):
     return 0
 
 
-def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks):
+def _predicates(parsed, t):
+    """Indices of the predicate tokens, questions included.
+
+    A question's predicate carries no affix at all — the evidential slot is
+    empty and the answer supplies it (D33) — so counting affix-bearing tokens
+    misses it, and any walk that stops at the verb walks straight past it into
+    the next clause. That blind spot is why the old version of the check below
+    reported 0 while eleven lines were wrong (D102).
+    """
+    idx = {i for i, tk in enumerate(parsed.tokens) if tk.affixes}
+    if parsed.is_question and len(t) >= 2:
+        idx.add(len(t) - 2)                   # the token before the question particle
+    return idx
+
+
+def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks, heads, pronouns, closers):
     """True if an adverbial constituent stands before the main-clause subject.
 
-    D78 puts the subject first and the adverbial after it. Two shapes carry an
-    adverbial that can be fronted: a subordinate clause closed by the from word
+    D78 puts the subject first and the adverbial after it. Three shapes carry an
+    adverbial that can be fronted, and in all three the giveaway is the same: a
+    BARE argument standing after the adverbial has closed is the main subject,
+    and under D78 it should have come first. An argument carrying a case marker
+    is an object, so it rightly follows, and reaching the predicate first means
+    no subject was displaced.
+
+    The first two shapes are D87's: a subordinate clause closed by the from word
     (because) or by time plus before/after/at (until, since, while), and an
-    n-times phrase (a count word plus the repeat root). In both, the giveaway
-    is a BARE argument standing after the adverbial has closed: a bare argument
-    there is the main subject, and under D78 it should have come first. An
-    argument carrying a case marker is an object, so it rightly follows, and
-    reaching the predicate first means no subject was displaced.
+    n-times phrase. The third is D102's, and it is the one the corpus was
+    breaking in eleven places while this function reported 0 — a plain phrase
+    closed by a case marker or a relational word, standing before the subject:
+    "then it failed", "every day the machine stops", "before that, it was
+    faulty". The check ran clean for two sessions because it was only ever
+    asked about the two shapes D87 had already corrected.
+
+    Two markers are deliberately not closers for the third shape. The possessor
+    case binds to the noun after it (D33, D49), so it does not close a phrase.
+    The with word coordinating two arguments is part of the subject rather than
+    an adverbial before it (D98), and where an adverbial with-phrase sits is
+    G33, not this rule. The personal pronouns are not determiners either —
+    possession takes the possessor case — so `I` or `you` before a root is a
+    subject followed by the next phrase, not one phrase.
     """
     sub, frm, time_, loc = marks
 
@@ -166,6 +195,14 @@ def _fronted_adverbial(t, pred_idx, nums, cases, rel, marks):
         start = i - 2 if i >= 2 and t[i - 2] == "야" else i - 1
         if start == 0 and (t[0] in nums or t[0] == "야"):
             return subject_after(i + 1)
+    if 0 in pred_idx:                    # opens with the verb: nothing to displace
+        return False
+    j = 0                                # walk the opening phrase: determiners, then the head
+    while (j + 1 < len(t) and (j + 1) not in pred_idx
+           and t[j + 1] in heads and t[j] not in pronouns):
+        j += 1
+    if j + 1 < len(t) and t[j + 1] in closers:
+        return subject_after(j + 2)
     return False
 
 
@@ -334,8 +371,14 @@ def leak_report(sents):
     return leaked
 
 
-def convention_report(sents, lx):
-    """Heuristic counts for the two conventions the corpus has broken before."""
+def fronted_errors(sents, lx):
+    """Sentences that put an adverbial before the main-clause subject (D78).
+
+    A count, which is what this was, gets read as coverage: D87 and D101 both
+    reported 0 while eleven lines were wrong, because the detector only knew the
+    shapes D87 had corrected. It is a decided rule the corpus has now broken
+    twice, so by D94's standard it is an error rather than a number (D102).
+    """
     g = lambda gloss: next(e["form"] for e in lx.entries if e["gloss"] == gloss)  # noqa: E731
     nums = {e["form"] for e in lx.entries if e["pos"] == "num"}
     cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
@@ -343,14 +386,18 @@ def convention_report(sents, lx):
     sub = g("subordinator")
     marks = (sub, g("relational: from"), g("time"),
              {g("case: location"), g("relational: before"), g("relational: after")})
-    fronted = 0
+    heads = {e["form"] for e in lx.entries if e.get("pos") in ("root", "num")}
+    pronouns = {g("pronoun: I"), g("pronoun: you")}
+    closers = (cases | rel) - {g("case: possessor"), g("relational: with")}
+    out = []
     for s in sents:
         parsed = parse_sentence(s["st"], lx)
-        preds = {i for i, tk in enumerate(parsed.tokens) if tk.affixes}
-        if _fronted_adverbial(s["st"].split(), preds, nums, cases, rel, marks):
-            fronted += 1
-    return (f"conventions: {fronted} sentences front an adverbial before a subject (D78); "
-            f"the D79 cue rule is now a hard error, not a count (D94)")
+        t = s["st"].split()
+        if _fronted_adverbial(t, _predicates(parsed, t), nums, cases, rel, marks,
+                              heads, pronouns, closers):
+            out.append(f"{s['id']}: an adverbial stands before the main-clause subject; "
+                       f"the subject comes first (D78, D102)")
+    return out
 
 
 def check_corpus(lex, errors):
@@ -376,7 +423,8 @@ def check_corpus(lex, errors):
                 feat_count[f] = feat_count.get(f, 0) + 1
         if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(s["st"].split()):
             same_len += 1
-    conv = convention_report(sents, lx)
+    for msg in fronted_errors(sents, lx):
+        errors.append(msg)
     for msg in rule_errors(sents, lx):
         errors.append(msg)
     collisions = gloss_collisions(sents, lx)
@@ -386,7 +434,6 @@ def check_corpus(lex, errors):
                       f"split, so the acceptance test would score it for free (D93)")
     n = len(sents)
     if n:
-        print(conv)
         thin = [w for w, c in word_count.items() if c < 3]
         weak = [f for f, c in feat_count.items() if c < 10]
         held = sum(1 for s in sents if s["split"] == "held")

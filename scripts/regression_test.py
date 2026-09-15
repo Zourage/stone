@@ -25,23 +25,18 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from stonelib import ROOT, Lexicon, parse_sentence  # noqa: E402
-from validate import (_fronted_adverbial, gloss_collisions, leak_report,  # noqa: E402
+from stonelib import ROOT, Lexicon  # noqa: E402
+from validate import (fronted_errors, gloss_collisions, leak_report,  # noqa: E402
                       rule_errors)
 
 FIXTURES = ROOT / "tests/fixtures/pre_correction.jsonl"
 
 
-def fired(sents, sid, lx, marks, nums, cases, rel, baseline):
+def fired(sents, sid, lx, baseline):
     """Which checks fire on sentence `sid` in this version of the corpus."""
     out = []
-    for r in sents:
-        if r["id"] != sid:
-            continue
-        parsed = parse_sentence(r["st"], lx)
-        preds = {i for i, t in enumerate(parsed.tokens) if t.affixes}
-        if _fronted_adverbial(r["st"].split(), preds, nums, cases, rel, marks):
-            out.append("fronted")
+    if any(m.startswith(sid + ":") for m in fronted_errors(sents, lx)):
+        out.append("fronted")
     if any(m.startswith(sid + ":") for m in rule_errors(sents, lx)):
         out.append("rules")
     if set(gloss_collisions(sents, lx)) - baseline:
@@ -60,12 +55,6 @@ def main():
     fixtures = [json.loads(l) for l in FIXTURES.read_text(encoding="utf-8").splitlines()
                 if l.strip() and not l.startswith("#")]
 
-    g = lambda gloss: next(e["form"] for e in lx.entries if e["gloss"] == gloss)  # noqa: E731
-    nums = {e["form"] for e in lx.entries if e["pos"] == "num"}
-    cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
-    rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
-    marks = (g("subordinator"), g("relational: from"), g("time"),
-             {g("case: location"), g("relational: before"), g("relational: after")})
     baseline = set(gloss_collisions(corpus, lx))
 
     failures, blind = [], []
@@ -78,7 +67,7 @@ def main():
         for r in test:
             if r["id"] == sid:
                 r.update({k: fx[k] for k in ("st", "en", "features", "split")})
-        got = fired(test, sid, lx, marks, nums, cases, rel, baseline)
+        got = fired(test, sid, lx, baseline)
         want = fx["catches"]
         if not want:
             blind.append(sid)
