@@ -454,3 +454,27 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 - The realizer's named gaps, in rough order of how many lines they touch: possession, the take-time idiom, alternative questions, region nominals, reciprocals, who-questions over a clause. None needs a language decision.
 - **The 64 undecidable splits are a real gap and are not yet triaged.** They are not obviously wrong — the corpus reads them through the English — but 11 are held, and a held sentence the script does not determine is the defect class that cost acceptance tests 3 and 4. Log as **G34** when someone counts how many are genuinely two-way as against merely structurally so.
 - English → stone remains unbuilt. The measurement above says the slot-filling and lexical steps are close to mechanical and the linearisation is now total; what is left is an English parser, which is the ordinary hard part and has nothing to do with this language.
+
+## 2026-09-15 — Session 14 (Claude Code, the translator framework)
+
+**D107. `scripts/compose.py`: deterministic English → stone, and with `realize.py` a model-free translator in both directions, wired into `translate.py` as `stone` and `english`.** 2026-09-15. D106 built the realizer as a corpus check; the point of this session is the tool itself — a translator that needs no key, and a framework a model can be hung off later rather than one built around a model.
+
+**Both directions, measured against the corpus.**
+
+| | exact against gold | declines, saying so | wrong, silently |
+|---|---|---|---|
+| `english` (stone → English) | 22.2% | — | — |
+| `stone` (English → stone) | 25.3% | 30.2% | 44.5% |
+
+Exact match is the right bar in the English → stone direction, which is what the acceptance test scores that way, and the wrong one in the other, which it scores as meaning-correct. **Hand-read on 30 random lines, the realizer is meaning-correct on 27** — up from 16 of 30 at D106, after the named construction gaps were closed: possession, existence, the take-time idiom, region nominals, imperatives, plurals after a numeral, who-questions, alternative equatives, possessive pronouns and the compound tie-break. Two of the 27 are judgement calls, and one of them, `I agree with you` for `아 에 하 두하카`, is one of the three readings the corpus itself attests for that exact script.
+
+**The composer declines rather than guessing, and that is the design.** Where it cannot resolve a word to a root, cannot find a verb, or hits one of the three English terms that name two roots, it returns no script and a note saying which. A model asked to translate always answers; an answer with no confession is useless as a check and dangerous as a translation. The 44.5% it gets wrong without saying so is the honest weak spot of this version, and it is concentrated in multi-clause English, coordination with `and`, and subordinate clauses — all English parsing, which is step 4 of the four and the only one that is not close to mechanical.
+
+**Why the other three steps are nearly free, which is the part that generalises.** The evidential and stance are a table lookup because D84, D91, D94 and D105 forced every marked slot to carry one of a fixed list of cues. Lexical selection is a lookup because 240 of 243 English terms name exactly one root. Linearisation is a total function because D102 and D103 closed word order. **None of those three was decided in order to make a translator possible, and together they are most of one.**
+
+**The round trip, and where a model goes.** With both directions deterministic the framework checks itself: `compose.py --roundtrip` composes, realises the result back, and reports the drift. Measured over the corpus it separates — mean similarity 0.69 where the composition was exactly right against 0.44 where it was not — but too weakly to gate on: at a 0.8 threshold it keeps 116 right and 71 wrong. So it is reported as a confidence and never as a verdict. It is also the seam: a wrapper that wants a model should hand it the declines and the low-similarity cases, not the whole corpus, and should keep the deterministic answer where there is one.
+
+### OPEN
+- The composer's weak spot is English parsing, not the language: multi-clause input, `and`-coordination, and subordinate clauses. Nothing here needs a language decision.
+- The realizer's three remaining failures in the sample: the n-times phrase as a subject, `made a mistake` as an equative, and or-alternation over adverbials.
+- Both scores are floors, not ceilings — every gap found so far has been a named construction rather than anything structural.

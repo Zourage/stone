@@ -167,13 +167,32 @@ class Realizer:
         self.ROOTS = {e["form"] for e in self.lx.entries if e.get("pos") == "root"}
         self.pron = {self.I: ("I", "me"), self.YOU: ("you", "you"),
                      self.THIS: ("this one", "this one"), self.THAT: ("it", "it")}
+        self.possessive = {self.I: "my", self.YOU: "your", self.THIS: "this one's",
+                           self.THAT: "its"}
+        self.NUMS = {e["form"]: e["gloss"].split(",")[0].strip()
+                     for e in self.lx.entries if e.get("pos") == "num"}
+        head = {e["gloss"].split(",")[0].strip(): e["form"] for e in self.lx.entries}
+        self.REGION = {head[k]: v for k, v in
+                       (("inside", "inside"), ("outside", "outside"), ("up", "above"),
+                        ("down", "below"), ("near", "near"), ("far", "far from"))
+                       if k in head}
 
     # ---------- phrases ----------
+    def plural(self, w):
+        if w.endswith(("s", "x", "ch", "sh")):
+            return w + "es"
+        if re.search(r"[^aeiou]y$", w):
+            return w[:-1] + "ies"
+        return w + "s"
+
     def np(self, idx, toks, forms, case=None):
         """Render a bare argument phrase: determiners, numerals, compounds, head."""
         heads = [forms[i] for i in idx]
         if len(heads) == 1 and heads[0] in self.pron:
             return self.pron[heads[0]][1 if case else 0]
+        if len(heads) == 2 and heads[0] == self.WHAT and heads[1] == self.PERSON:
+            return "who"                      # the interrogative before person (D45)
+        num = next((k for k, f in enumerate(heads) if f in self.NUMS), None)
         words = []
         for k, f in enumerate(heads):
             last = k == len(heads) - 1
@@ -189,8 +208,14 @@ class Realizer:
                 words.append(self.pron[f][0])
             else:
                 words.append(self.en.noun.get(f, f))
-        if not any(w in ("every", "no", "which", "this", "that", "what") for w in words[:-1]):
-            if words and not words[0][0].isdigit() and words[0] not in ("I", "you", "it", "this one"):
+        if num is not None:
+            words[num] = self.NUMS[heads[num]]
+            if self.NUMS[heads[num]] != "one" and num == len(words) - 2:
+                words[-1] = self.plural(words[-1])   # a numeral counts the root (D48)
+            return " ".join(words)
+        if not any(w in ("every", "no", "which", "this", "that", "what", "who")
+                   for w in words[:-1]):
+            if words and words[0] not in ("I", "you", "it", "this one", "who"):
                 words[0] = "the " + words[0]
         return " ".join(words)
 
@@ -218,9 +243,15 @@ class Realizer:
         d = self.deictic(idx, forms, mark)
         if d:
             return d
+        heads = [forms[i] for i in idx]
+        if mark == self.LOC and len(heads) >= 2 and heads[-1] in self.REGION:
+            rest = self.np(idx[:-1], idx[:-1], forms, case=True)
+            rest = re.sub(r"'s$", "", rest)
+            return f"{self.REGION[heads[-1]]} {rest}"
+        if mark == self.LOC and len(heads) == 1 and heads[0] in self.REGION:
+            return self.REGION[heads[0]]
         inner = self.np(idx, idx, forms, case=True)
         if mark == self.LOC:
-            heads = [forms[i] for i in idx]
             if heads[-1] in self.pron or heads[-1] == self.PERSON:
                 return "to " + inner       # a recipient takes the location case (D57)
             return "in " + inner
@@ -317,10 +348,13 @@ class Realizer:
 
         Two roots in a row are genuinely undecidable — a compound, or a bare
         argument followed by a separate marked phrase — and the corpus leaves it
-        to the English (STATE, the fourth standing ambiguity). The subject rule
-        breaks the tie: the first bare phrase of a clause is its subject (D78,
-        D102), so a root that opens a clause is the subject rather than the head
-        of a compound. `--ambiguous` lists every place this had to choose.
+        to the English (STATE, the fourth standing ambiguity). Two things break
+        the tie. Splitting has to produce two real phrases, so the second root
+        must be followed by a marker; `previous stage done-REP` has none, so it
+        is a compound. And where it would, the subject rule decides: the first
+        bare phrase of a clause is its subject (D78, D102), so a root opening a
+        clause heads a phrase rather than a compound. `--ambiguous` lists every
+        place this had to choose.
         """
         out, k, have_subject = [], 0, False
         while k < len(idx):
@@ -328,7 +362,8 @@ class Realizer:
             while (k + 1 < len(idx) and forms[idx[k + 1]] not in self.markers
                    and forms[idx[k + 1]] in self.HEADS
                    and forms[idx[k]] not in (self.I, self.YOU)
-                   and not (forms[idx[k]] in self.ROOTS and not have_subject and k == start)):
+                   and not (forms[idx[k]] in self.ROOTS and not have_subject and k == start
+                            and k + 2 < len(idx) and forms[idx[k + 2]] in self.markers)):
                 k += 1
             group, mark = idx[start:k + 1], None
             if k + 1 < len(idx) and forms[idx[k + 1]] in self.markers:
@@ -416,23 +451,39 @@ class Realizer:
                 parts[-1] += " " + ("or" if lead == self.OR else "but")
             phr = self.constituents(idx, forms)
             subj, obj, advs = None, None, []
-            pending_poss, conj = None, None
+            pending_poss, holder, pending_alt = None, None, None
             for group, mark in phr:
                 if mark is None and subj is None and group:
                     subj = self.np(group, group, forms)
                     if pending_poss:
-                        subj, pending_poss = f"{pending_poss} {re.sub(r'^the ', '', subj)}", None
+                        subj = f"{pending_poss} {re.sub(r'^the ', '', subj)}"
+                        pending_poss = None
+                    else:
+                        holder = None
                 elif mark == self.OBJ:
                     obj = self.np(group, group, forms, case=True)
+                    if pending_alt:
+                        obj, pending_alt = f"{pending_alt[1]} {pending_alt[0]} {obj}", None
                     if pending_poss:
                         obj, pending_poss = f"{pending_poss} {re.sub(r'^the ', '', obj)}", None
                 elif mark == self.POSS:
-                    poss = self.np(group, group, forms, case=True)
-                    pending_poss = re.sub(r"^the ", "", poss) + "'s"
+                    if len(group) == 1 and forms[group[0]] in self.possessive:
+                        pending_poss = self.possessive[forms[group[0]]]
+                    else:
+                        pending_poss = re.sub(r"^the ", "", self.np(group, group, forms, case=True)) + "'s"
+                    holder = self.np(group, group, forms)
                 elif mark in (self.OR, self.BUT):
-                    conj = "or" if mark == self.OR else "but"
+                    pending_alt = ("or" if mark == self.OR else "but",
+                                   self.np(group, group, forms, case=True))
                 elif mark is not None:
-                    advs.append(self.adverbial(group, mark, forms))
+                    adv = self.adverbial(group, mark, forms)
+                    if pending_poss:
+                        m = re.match(r"^(inside|outside|above|below|near|far from)$", adv)
+                        adv = f"{adv} {holder}" if m else f"{adv} of {pending_poss}"
+                        pending_poss, holder = None, None
+                    if pending_alt:
+                        adv, pending_alt = f"{pending_alt[1]} {pending_alt[0]} {adv}", None
+                    advs.append(adv)
                 elif group:
                     advs.append(self.np(group, group, forms, case=True))
             if tok is None:
@@ -453,7 +504,59 @@ class Realizer:
             # (D65); English has only the passive for that.
             passive = obj is not None and subj is None and not carried
             self._last_root = tok.base["form"]
+            if tok.base["form"] == self.TRUE and not passive:
+                # No verb have and no verb exist: possession is possessor-case plus
+                # the hold root, existence is the same root with no possessor (D49).
+                gs2 = [a["gloss"] for a in tok.affixes]
+                t = "had" if "tense: past" in gs2 else "has"
+                if holder and subj:
+                    owned = re.sub(r"^(my|your|its|this one's)\s+", "", subj)
+                    if not re.match(r"^(a|an|the|one|two|three|four|five|six|seven|eight|"
+                                    r"nine|ten|every|no|this|that)\b", owned):
+                        owned = "the " + owned
+                    if "tense: past" in gs2:
+                        have = "did not have" if "negation" in gs2 else "had"
+                    elif holder in ("I", "you", "we"):
+                        have = "do not have" if "negation" in gs2 else "have"
+                    else:
+                        have = "does not have" if "negation" in gs2 else "has"
+                    _, cues = self.predicate(tok)
+                    clause = " ".join([holder, have, owned] + advs).strip()
+                    if is_q:
+                        clause = self.question(clause, holder, have, gs2)
+                    parts.append(clause + cues)
+                    continue
+                if subj:
+                    _, cues = self.predicate(tok)
+                    verb = "was" if "tense: past" in gs2 else "is"
+                    art = re.sub(r"^the ", "a ", subj)
+                    clause = " ".join([f"there {verb} {art}"] + advs)
+                    if is_q:
+                        clause = f"{verb} there {art}" + ("".join(" " + a for a in advs))
+                    parts.append(clause + cues)
+                    continue
+            if tok.base["form"] == self.TIME and subj and not obj:
+                _, cues = self.predicate(tok)
+                gs2 = [a["gloss"] for a in tok.affixes]
+                v = ("will take" if "tense: future" in gs2 else
+                     "took" if "tense: past" in gs2 else "takes")
+                parts.append(" ".join([subj, v, "time"] + advs) + cues)
+                continue
+            gs_all = [a["gloss"] for a in tok.affixes]
+            imperative = (subj == "you" and "stance: intend" in gs_all
+                          and "tense: future" not in gs_all and not is_q)
             body, cues = self.predicate(tok, passive=passive)
+            if imperative:
+                base = self.en.verb.get(tok.base["form"], tok.base["form"])
+                body = ("do not " + base) if "negation" in gs_all else base
+                cues = cues.replace(CUE["stance: intend"], "")
+                subj = None
+            if pending_alt and not re.match(r"^(is|was|will be)\b", body) and not tok.affixes:
+                body = self.copula(tok.base["form"], [])   # X, A or B: an equative (D56)
+            if pending_alt and re.match(r"^(is|was|will be)\b", body):
+                cop, term = body.split(" ", 1)
+                body = f"{cop} {pending_alt[1]} {pending_alt[0]} {term}"
+                pending_alt = None
             std = next((a for a in advs if a.startswith("from ")), None)
             if std and tok.base["form"] in COPULA and body.startswith(("is ", "was ")):
                 adj = body.split(" ", 1)[1]

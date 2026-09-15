@@ -197,6 +197,30 @@ def cue_table():
             " A predicate with the direct evidential and no stance gets no cue at all.\n")
 
 
+def cmd_english(args, lx):
+    """Deterministic stone -> English (D106). No key."""
+    from realize import Realizer
+    out, errs = Realizer().realize(args.text)
+    for e in errs:
+        print("  problem:", e, file=sys.stderr)
+    if out:
+        print(out)
+    return 0 if out else 1
+
+
+def cmd_stone(args, lx):
+    """Deterministic English -> stone (D107). No key, and it says so when it
+    cannot decide rather than producing a plausible guess."""
+    from compose import Composer
+    script, gloss, notes = Composer().compose(args.text)
+    for n in notes:
+        print("  note:", n, file=sys.stderr)
+    if script:
+        print(script)
+        print("  " + gloss, file=sys.stderr)
+    return 0 if script else 1
+
+
 def cmd_to_english(args, lx):
     key = require_key()
     ex = relevant_examples(args.text, lx, english_side=False)
@@ -306,6 +330,8 @@ def main():
         ("check", cmd_check, "say whether a sentence is well formed"),
         ("lookup", cmd_lookup, "lexicon entries matching an English word"),
         ("examples", cmd_examples, "corpus sentences whose English contains a word"),
+        ("english", cmd_english, "stone -> English, deterministic, no key"),
+        ("stone", cmd_stone, "English -> stone, deterministic, no key"),
         ("to-english", cmd_to_english, "natural English (needs a key)"),
         ("to-stone", cmd_to_stone, "compose and validate (needs a key)"),
         ("roundtrip", cmd_roundtrip, "compose, then gloss back (needs a key)"),
