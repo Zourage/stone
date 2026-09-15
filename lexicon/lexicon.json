@@ -1054,5 +1054,13 @@
   "sense_notes": "Contrast between two clauses; stands between them. Not needed for mild contrast, which juxtaposition and stance already carry; used when the second clause runs against the expectation set by the first (D59).",
   "id": "w0132",
   "added": "2026-09-14"
+ },
+ {
+  "form": "해",
+  "pos": "func",
+  "gloss": "if",
+  "sense_notes": "Marks the clause before it as a condition. Follows its clause, like every other relational word (with, for, from, before, after), and sits in the same consonant family as them. The condition clause comes first and its predicate carries the general evidential, since a condition is stated as a rule, not as something witnessed; the main clause carries whatever evidential and stance it needs. No word for 'then' (D60).",
+  "id": "w0133",
+  "added": "2026-09-15"
  }
 ]

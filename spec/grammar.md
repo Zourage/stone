@@ -31,6 +31,9 @@ Numerals precede the root they count: three files. One to five and ten are simpl
 ## Coordination (D59)
 No and: clauses are juxtaposed, arguments joined with the with word. Or and but stand between the things they join.
 
+## Conditionals (D60)
+The condition clause comes first, its predicate carrying the general evidential, followed by the `if` word. Then the main clause, with its own evidential and stance. No word for `then`.
+
 ## Recipients (D57)
 Content is the object; the recipient takes the location case: result-OBJ me-LOC show. For = beneficiary or purpose only.
 

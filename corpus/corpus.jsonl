@@ -442,3 +442,21 @@
 {"id": "s0442", "en": "That holds, but it's not the cause.", "st": "우 얘카 채 우 대루카", "features": ["direct", "neg", "but", "equative", "stative"], "split": "train"}
 {"id": "s0443", "en": "It's small, but it's not done. That might go wrong.", "st": "우 테카 채 우 초루카모", "features": ["direct", "neg", "but", "risk", "stative"], "split": "train"}
 {"id": "s0444", "en": "Read the file, but don't alter it.", "st": "에 왜 파 데카마 채 에 우 파 레루카마", "features": ["direct", "intend", "imperative", "neg", "but", "obj"], "split": "train"}
+{"id": "s0445", "en": "If it fails, tell me.", "st": "우 누코 해 에 아 페 워야카마", "features": ["conditional", "if", "direct", "intend", "imperative", "loc"], "split": "train"}
+{"id": "s0446", "en": "If the test fails, fix it.", "st": "와 누코 해 에 우 파 라카마", "features": ["conditional", "if", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s0447", "en": "If the value is a number, show it.", "st": "키토 수포코 해 에 우 파 페포카마", "features": ["conditional", "if", "direct", "intend", "imperative", "equative", "obj"], "split": "train"}
+{"id": "s0448", "en": "If you agree, I'll begin.", "st": "에 두하코 해 아 쿠태투카마", "features": ["conditional", "if", "direct", "future", "intend"], "split": "held"}
+{"id": "s0449", "en": "If it does not stop, remove it.", "st": "우 쿠테루코 해 에 우 파 쿠피카마", "features": ["conditional", "if", "neg", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s0450", "en": "If the result is bad, I'll review the function.", "st": "도 래코 해 아 타푸 파 코피투카마", "features": ["conditional", "if", "direct", "future", "intend", "obj", "stative"], "split": "train"}
+{"id": "s0451", "en": "If you don't understand, ask me.", "st": "에 데하루코 해 에 아 페 차카마", "features": ["conditional", "if", "neg", "direct", "intend", "imperative", "loc", "ask"], "split": "train"}
+{"id": "s0452", "en": "If the machine stops, the test fails. That's just how it is.", "st": "니포 쿠테코 해 와 누코", "features": ["conditional", "if", "general"], "split": "train"}
+{"id": "s0453", "en": "If I'm right, the cause is the fault.", "st": "아 얘하코 해 대 노카", "features": ["conditional", "if", "direct", "equative", "stative"], "split": "train"}
+{"id": "s0454", "en": "If there is a fault, the test will fail, I expect.", "st": "노 얘코 해 와 누투키매", "features": ["conditional", "if", "inferred", "future", "predict", "hold-exist"], "split": "train"}
+{"id": "s0455", "en": "If you read the file, you'll understand it.", "st": "에 왜 파 데코 해 에 우 파 데하투키매", "features": ["conditional", "if", "inferred", "future", "predict", "obj"], "split": "held"}
+{"id": "s0456", "en": "If it failed, tell me now.", "st": "우 누타코 해 에 아 페 이 유 페 워야카마", "features": ["conditional", "if", "past", "direct", "intend", "imperative", "now", "loc"], "split": "train"}
+{"id": "s0457", "en": "If the limit is ten, the result is bad.", "st": "무네 푸코 해 도 래카", "features": ["conditional", "if", "direct", "equative", "numeral", "stative"], "split": "train"}
+{"id": "s0458", "en": "If you help me, I'll fix it. You can count on that.", "st": "에 아 파 호하코 해 아 우 파 라투카미", "features": ["conditional", "if", "direct", "future", "trust", "obj"], "split": "train"}
+{"id": "s0459", "en": "If it's not a fault, it's a mistake.", "st": "우 노루코 해 우 내카", "features": ["conditional", "if", "neg", "direct", "equative"], "split": "held"}
+{"id": "s0460", "en": "If the version is new or the test failed, read the message.", "st": "파테 파캐코 쿠 와 누타코 해 에 케포 파 데카마", "features": ["conditional", "if", "or", "past", "direct", "intend", "imperative", "obj", "stative"], "split": "train"}
+{"id": "s0461", "en": "If it is done, I'll remove the old version.", "st": "우 초코 해 아 파캐루코디 파테 파 쿠피투카마", "features": ["conditional", "if", "neg", "direct", "future", "intend", "sub", "obj"], "split": "train"}
+{"id": "s0462", "en": "What is the cause, if it failed?", "st": "우 누타코 해 대 야 추", "features": ["conditional", "if", "question", "q-what", "past", "equative"], "split": "train"}

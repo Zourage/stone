@@ -181,7 +181,7 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 
 ### OPEN (grammar gaps reported by all three agents, to decide one at a time)
 - G1. Closed by D59.
-- G2. Conditionals: if.
+- G2. Closed by D60.
 - G3. Ability: can.
 - G4. Want, should.
 - G5. First person plural: we.
@@ -193,3 +193,7 @@ Training-data prior per block, from general knowledge, all estimates: **Yi** (Nu
 - G11. Simultaneity: while.
 
 **D59. G1 closed: two conjunctions, or and but; no word for and.** And between clauses is juxtaposition, which the corpus already does; and between arguments is the with relational word. Or and but are function words standing between the things they join (arguments, predicates or clauses); or in a question asks which alternative holds. Both spent from the reserve single syllables (w0131, w0132); 6 reserve syllables remain. 16 sentences (s0429–s0444, 2 held). Existing sentences unchanged: juxtaposition stays valid.
+
+## 2026-09-15 — Session 6 continued
+
+**D60. G2 closed: `if` is a function word following its clause, not a piece of the verb ending.** Chosen over a second subordinator affix (the maintainer's call; the affix would have kept all subordination in the verb, but a separate word keeps the condition visible as its own unit). Placement follows the language's existing shape: like with, for, from, before and after, it comes after the thing it governs, and it is coined in the same consonant family as them, so the relational set stays audible as one group. Rules fixed with it: the condition clause comes first and its predicate carries the general evidential, since a condition is stated as a rule rather than witnessed; the main clause carries whatever evidential and stance it needs; there is no word for "then". Coined from reserve (w0133); 5 reserve syllables remain. 18 sentences (s0445–s0462, 3 held), including conditions in the past, negated, with `or` inside the condition, with a relative clause in the main clause, and a question under a condition.
