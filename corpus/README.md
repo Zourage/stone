@@ -16,4 +16,19 @@ Coverage targets: every lexicon word in ≥3 `train` sentences; every feature in
 - Function words (case markers, pronouns, relational words, question particle) are separate tokens, after the word they belong to.
 - Questions: the evidential slot is empty; the sentence ends in the question particle.
 - The English side carries what the stone side marks: evidential and stance show up as natural English cues, never as bracketed labels. A sentence whose English has no cue is direct. Fixed cues: reported "I'm told / they say"; inferred "must / I gather / it seems"; general "that's just how it is / everyone knows that / as such"; intend "I'll / that's the plan" or an imperative; predict "I expect / probably"; propose "just a proposal / just a hypothesis"; trust "I'm counting on it / you can count on that"; risk "that might go wrong / might break something"; assert "I insist".
-- `features` tags: evidentials and stances by name, past, future, neg, question, q-what/q-which/q-where/q-why/q-how/q-when/q-who, imperative, det, sub, obj, loc, poss, with, for, from, nominal-root (a root used as an argument), stative, numeral, before, after, here, there, now, then, know, ask, minimal-evid, minimal-stance, hold-exist.
+## Feature tags
+
+Generated from the corpus itself, so this list cannot drift from the data. Regenerate it whenever tags are added.
+
+- **evidential**: direct, reported, inferred, general
+- **stance**: intend, predict, propose, trust, risk, assert
+- **verb ending**: past, future, neg, sub
+- **clause type**: question, imperative, conditional, if, equative, agentless, clause-subject, clause-anaphora
+- **argument marking**: obj, loc, poss, with, for, from, det, compound, nominal-root, region
+- **quantity**: numeral, quantifier, all, none, both, ordinal, n-times, how-often, comparison
+- **question words**: q-what, q-which, q-where, q-why, q-how, q-when, q-who
+- **other constructions**: modal, able, want, should, allow, manner, because, therefore, become, between, still, not-yet, until, since, while, deadline, ownership, reciprocal, we, we-exclusive, or, but, stative, hold-exist, know, ask
+- **corpus bookkeeping**: minimal-evid, minimal-stance
+- **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
+
+Total: 88 distinct tags over 865 sentences.

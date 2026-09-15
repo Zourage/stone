@@ -11,6 +11,9 @@ Current state of the language and the method, kept short on purpose. `decisions.
 - Four modal roots share a syllable and one construction over a subordinate clause: able, want, should, allow. (D61, D63)
 - Semantic carving, `lexicon/README.md`: knowing ×3, error ×3, asking ×3, change ×3; experiment/test/try = 1. (D35)
 
+## Tools
+- `scripts/translate.py`: gloss, check, lookup, examples need no key; to-english, to-stone, roundtrip need `OPENROUTER_API_KEY`. `scripts/stonelib.py` holds the parsing both it and the validator use. See `scripts/README.md`. (D72)
+
 ## The method
 - `corpus/` is the deliverable; spec and lexicon are scaffolding. Done = a cold session with only the train corpus translates held-out sentences both ways. (D2, D3)
 - Words enter only via `scripts/validate.py --add`; run `scripts/validate.py` before every commit. Multi-syllable forms are rejected if they are Korean words (`data/ko_frequency.json`) or if they read as a shorter root plus a verb ending. (rules 4, 6; D55)
@@ -24,7 +27,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 
 ## Tests
 - Test 1 (Yi glyphs): 13/13 comprehension, 12/13 exact production. Test 2 (Hangul): 21/21 and 20/21, the miss a corpus gap since fixed; the agent called it constructed, not Korean. Bar: 100% / ≥90% with every miss grammatical. `tests/results/`. (D50, D53)
-- Drift test (D15) has never been run.
+- Drift test (D15) has never been run. It is the instrument for the priors accepted in D52.
 
 ## Lexicon — 196 entries, target 300 (D54)
 - w0001–w0025 grammatical pieces, one syllable, slot = consonant and value = vowel; pronouns are the bare vowels. (D39)
@@ -40,4 +43,7 @@ Current state of the language and the method, kept short on purpose. `decisions.
 `corpus/corpus.jsonl`; writing conventions and the English cue phrases in `corpus/README.md`. Constructions decided so far: imperative = you + intend stance; existence and having = the hold root, no have and no exist; equative = second term takes the verb ending, no copula; recipient = location case; and = juxtaposition or the with word, with or and but as words; if follows its clause; quantifiers every/none are determiners and bare arguments are number-neutral; no passive, drop the subject and keep the object marker; comparison uses the from word; manner = quality + the with word; because = clause + the from word; become = stative clause + begin; ordinals = numeral after the root; still = the continue root; until/since = clause + time + before/after. (D43–D49, D51, D56–D70)
 
 ## Next
-Third subagent batch toward 300 entries, calendar and clock units among them. Then the third acceptance test on the 107 held sentences, and the drift test, which has never been run.
+Third acceptance test on the 107 held sentences, and the first drift test; both need a container with `OPENROUTER_API_KEY`. Then the third subagent batch toward 300 entries, calendar and clock units among them.
+
+## Editing this file
+Rewrite it whole. Patching it by string replacement has silently failed before (D73).

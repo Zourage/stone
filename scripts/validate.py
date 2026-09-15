@@ -25,36 +25,22 @@ if any entry fails. Ids are assigned here (w0001, ...); `added` defaults to toda
 """
 import datetime
 import json
-import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from stonelib import Lexicon, check_script as _check_script, parse_sentence, slot_of  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
-CODEPOINTS = {int(c, 16) for c in json.load(open(ROOT / "spec/codepoints.json"))["codepoints"]}
 SCHEMA = json.load(open(ROOT / "lexicon/schema.json"))
 POS = set(SCHEMA["properties"]["pos"]["enum"])
-LATIN = re.compile(r"[A-Za-z]")
 KO = json.load(open(ROOT / "data/ko_frequency.json", encoding="utf-8"))
+_LX_FOR_SCRIPT = Lexicon()
 
 
 def check_script(s, where, errors):
-    if LATIN.search(s):
-        errors.append(f"{where}: Latin letters in script field")
-    for ch in s:
-        if ch != " " and ord(ch) not in CODEPOINTS:
-            errors.append(f"{where}: U+{ord(ch):04X} is not one of the 74 syllables")
-
-
-SLOT = {"negation": 0, "tense": 1, "evidential": 2, "stance": 3, "subordinator": 4}
-
-
-def slot_of(entry):
-    g = entry["gloss"]
-    if g == "negation":
-        return 0
-    if g == "subordinator":
-        return 4
-    return SLOT.get(g.split(":")[0])
+    for msg in _check_script(s, _LX_FOR_SCRIPT):
+        errors.append(f"{where}: {msg}")
 
 
 def ambiguous_split(entry, lex):
@@ -129,15 +115,8 @@ def add(path):
 
 
 def check_corpus(lex, errors):
-    by_form = {e["form"]: e for e in lex}
-    slot_of = {}
-    for e in lex:
-        if e["pos"] != "affix":
-            continue
-        g = e["gloss"]
-        slot_of[e["form"]] = (0 if g == "negation" else 1 if g.startswith("tense") else
-                              2 if g.startswith("evidential") else 3 if g.startswith("stance") else 4)
-    qp = next((e["form"] for e in lex if e["gloss"] == "question particle"), None)
+    """Parse every corpus sentence with stonelib and report coverage."""
+    lx = Lexicon(lex)
     corpus_path = ROOT / "corpus/corpus.jsonl"
     if not corpus_path.exists():
         return 0
@@ -146,42 +125,17 @@ def check_corpus(lex, errors):
     feat_count = {}
     same_len = 0
     for s in sents:
-        check_script(s["st"], s["id"], errors)
-        toks = s["st"].split()
-        is_q = bool(toks) and toks[-1] == qp
-        seen = set()
-        for t in toks:
-            if t in by_form:
-                seen.add(by_form[t]["id"])
-                continue
-            root = next((t[:k] for k in range(len(t), 0, -1)
-                         if t[:k] in by_form and by_form[t[:k]]["pos"] in ("root", "num")
-                         or t[:k] in by_form and by_form[t[:k]]["gloss"].startswith("pronoun")), None)
-            if root is None:
-                errors.append(f"{s['id']}: token {t!r} is not a word (no known root prefix)")
-                continue
-            rest = t[len(root):]
-            seen.add(by_form[root]["id"])
-            last, slots = -1, []
-            for ch in rest:
-                if ch not in slot_of:
-                    errors.append(f"{s['id']}: {ch!r} in {t!r} is not an affix")
-                    break
-                sl = slot_of[ch]
-                if sl <= last:
-                    errors.append(f"{s['id']}: affixes out of template order in {t!r}")
-                    break
-                last = sl
-                slots.append(sl)
-                seen.add(by_form[ch]["id"])
-            if 2 not in slots and not is_q:
-                errors.append(f"{s['id']}: predicate {t!r} has no evidential and the sentence is not a question")
+        parsed = parse_sentence(s["st"], lx)
+        for msg in parsed.errors:
+            errors.append(f"{s['id']}: {msg}")
         if s["split"] == "train":
-            for w in seen:
-                word_count[w] += 1
+            seen = {e["id"] for t in parsed.tokens
+                    for e in ([t.base] if t.base else []) + t.affixes}
+            for wid in seen:                      # distinct sentences, not occurrences (D11)
+                word_count[wid] = word_count.get(wid, 0) + 1
             for f in s["features"]:
                 feat_count[f] = feat_count.get(f, 0) + 1
-        if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(toks):
+        if len(s["en"].replace(".", " ").replace(",", " ").split()) == len(s["st"].split()):
             same_len += 1
     n = len(sents)
     if n:
