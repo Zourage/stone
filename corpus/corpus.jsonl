@@ -863,3 +863,27 @@
 {"id": "s0863", "en": "Read the line above.", "st": "에 피레 피토 파 데카마", "features": ["region", "compound", "direct", "intend", "imperative", "obj"], "split": "train"}
 {"id": "s0864", "en": "The value is below the limit.", "st": "키토 무네 피라 페 후태카", "features": ["region", "compound", "loc", "direct"], "split": "held"}
 {"id": "s0865", "en": "It is near.", "st": "우 패노카", "features": ["region", "direct", "stative"], "split": "train"}
+{"id": "s0866", "en": "That one and I ran the test.", "st": "아 우 하 와 파 다타카", "features": ["we-exclusive", "with", "past", "direct", "obj"], "split": "train"}
+{"id": "s0867", "en": "You and I ran the test.", "st": "아 에 하 와 파 다타카", "features": ["we", "with", "past", "direct", "obj"], "split": "train"}
+{"id": "s0868", "en": "That one and I are responsible for this task.", "st": "아 우 하 이 사세 파 레세카", "features": ["we-exclusive", "with", "direct", "obj", "det"], "split": "train"}
+{"id": "s0869", "en": "You and I are responsible for this task.", "st": "아 에 하 이 사세 파 레세카", "features": ["we", "with", "direct", "obj", "det"], "split": "train"}
+{"id": "s0870", "en": "That one and I agree.", "st": "아 우 하 두하카", "features": ["we-exclusive", "with", "direct", "reciprocal"], "split": "train"}
+{"id": "s0871", "en": "That one and I will begin; that's the plan.", "st": "아 우 하 쿠태투카마", "features": ["we-exclusive", "with", "future", "direct", "intend"], "split": "train"}
+{"id": "s0872", "en": "The value is above the limit.", "st": "키토 무네 피레 페 후태카", "features": ["region", "compound", "loc", "direct"], "split": "train"}
+{"id": "s0873", "en": "The fault is inside the machine.", "st": "노 니포 페세 페 후태카", "features": ["region", "compound", "loc", "direct"], "split": "train"}
+{"id": "s0874", "en": "Put the part outside the machine.", "st": "에 네쿠 파 니포 페소 페 후태카마", "features": ["region", "compound", "loc", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s0875", "en": "The note is below this line.", "st": "도차 이 피토 피라 페 후태카", "features": ["region", "compound", "loc", "direct", "det"], "split": "train"}
+{"id": "s0876", "en": "I did not look inside the file.", "st": "아 왜 페세 페 위루타카", "features": ["region", "compound", "loc", "neg", "past", "direct"], "split": "train"}
+{"id": "s0877", "en": "This fault is frequent.", "st": "이 노 매수카", "features": ["how-often", "direct", "stative", "det"], "split": "train"}
+{"id": "s0878", "en": "That failure is rare.", "st": "우 누 매시카", "features": ["how-often", "direct", "stative", "det"], "split": "train"}
+{"id": "s0879", "en": "It fails two times a day.", "st": "네 메루 카유 페 우 누카", "features": ["how-often", "n-times", "numeral", "loc", "direct", "domain-time"], "split": "train"}
+{"id": "s0880", "en": "How often does the machine stop?", "st": "야 수포 메루 카유 페 니포 쿠테 추", "features": ["how-often", "n-times", "question", "q-what", "numeral", "loc"], "split": "train"}
+{"id": "s0881", "en": "That the test fails is the danger.", "st": "와 누코디 두차카", "features": ["clause-subject", "sub", "general", "direct"], "split": "train"}
+{"id": "s0882", "en": "Reading the whole file is difficult.", "st": "투와 왜 파 데코디 타리카", "features": ["clause-subject", "sub", "general", "obj", "direct"], "split": "train"}
+{"id": "s0883", "en": "That the value is empty is the cause.", "st": "키토 푸소코디 대카", "features": ["clause-subject", "sub", "general", "direct"], "split": "train"}
+{"id": "s0884", "en": "Holding the heavy part is not easy.", "st": "태네 네쿠 파 토시코디 타로루카", "features": ["clause-subject", "sub", "general", "obj", "neg", "direct", "domain-physical"], "split": "train"}
+{"id": "s0885", "en": "That you did not tell me is the fault.", "st": "에 아 페 워야루타코디 노카", "features": ["clause-subject", "sub", "general", "neg", "past", "loc", "direct"], "split": "train"}
+{"id": "s0886", "en": "Since you altered the version, it is slow.", "st": "에 파테 파 레타코디 호 우 파수카", "features": ["because", "sub", "past", "from", "direct", "stative"], "split": "train"}
+{"id": "s0887", "en": "It has been slow since the test began.", "st": "와 쿠태타코디 유 후 우 파수카", "features": ["since", "sub", "after", "past", "direct", "stative"], "split": "train"}
+{"id": "s0888", "en": "Since the data is empty, the function stops.", "st": "미네 푸소코디 호 타푸 쿠테코", "features": ["because", "sub", "from", "general"], "split": "train"}
+{"id": "s0889", "en": "I have been blocked since you began.", "st": "에 쿠태타코디 유 후 아 수초카", "features": ["since", "sub", "after", "past", "direct"], "split": "train"}

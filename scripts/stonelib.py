@@ -75,14 +75,21 @@ class Lexicon:
         return None
 
     def search_english(self, query, limit=12):
-        """Lexicon entries whose gloss or sense notes mention `query`."""
+        """Lexicon entries whose gloss or sense notes mention `query` as a word.
+
+        The match is on whole words: looking up "fix" must not hit every entry
+        whose note contains "affix", and looking up "if" must not hit "Fifteen".
+        """
         q = query.strip().lower()
+        if not q:
+            return []
+        word = re.compile(r"(?<!\w)" + re.escape(q) + r"(?!\w)")
         exact, partial = [], []
         for e in self.entries:
             terms = [t.strip().lower() for t in e["gloss"].split(",")]
             if q in terms:
                 exact.append(e)
-            elif q in e["gloss"].lower() or q in e.get("sense_notes", "").lower():
+            elif word.search(e["gloss"].lower()) or word.search(e.get("sense_notes", "").lower()):
                 partial.append(e)
         return (exact + partial)[:limit]
 

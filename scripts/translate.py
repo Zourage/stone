@@ -30,6 +30,7 @@ produced by layer 1, not by the model, so it cannot flatter the translation.
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -59,11 +60,43 @@ def cmd_gloss(args, lx):
     return 0 if s.ok else 1
 
 
+MODAL_GLOSSES = ("be able, have the capacity", "want", "should, ought", "allow, may")
+
+
+def modal_warnings(sentence, lx):
+    """Modal predicates whose complement looks like a bare root, not a clause.
+
+    D61 and D63 put all four modals over a subordinate clause, so the complement
+    should end in the subordinator. A bare root sitting immediately before the
+    modal still parses, because a root before a root is a determiner or compound
+    (D44, D48) — so the validator cannot reject it, and a model that drops the
+    subordinator gets a well-formed sentence with the wrong meaning. This says so
+    instead. Not an error: the corpus has one modal with a plain object
+    (asking what someone wants), and that shape is not flagged.
+    """
+    sub = next((e["form"] for e in lx.entries if e["gloss"] == "subordinator"), None)
+    modals = {e["form"] for e in lx.entries if e["gloss"] in MODAL_GLOSSES}
+    out = []
+    for k, t in enumerate(sentence.tokens):
+        if not (t.base and t.base["form"] in modals) or k == 0:
+            continue
+        prev = sentence.tokens[k - 1]
+        if prev.surface.endswith(sub or "\0"):
+            continue
+        if prev.base and prev.base.get("pos") == "root" and not prev.affixes:
+            out.append(f"modal {t.surface!r} follows the bare root {prev.surface!r}: read as a "
+                       f"compound, not as a modal over a clause. A modal complement ends in the "
+                       f"subordinator (D61, D63).")
+    return out
+
+
 def cmd_check(args, lx):
     s = parse_sentence(args.text, lx)
     print(s.gloss())
     if s.ok:
         print("well formed" + (" (question: evidential slot correctly empty)" if s.is_question else ""))
+        for w in modal_warnings(s, lx):
+            print("  but note:", w)
         return 0
     for e in s.errors:
         print("FAIL", e)
@@ -83,8 +116,9 @@ def cmd_lookup(args, lx):
 
 
 def cmd_examples(args, lx):
-    q = args.text.lower()
-    hits = [s for s in load_corpus() if q in s["en"].lower()]
+    # Whole-word match: asking for "if" must not return "Fifteen tests are done".
+    word = re.compile(r"(?<!\w)" + re.escape(args.text.strip().lower()) + r"(?!\w)")
+    hits = [s for s in load_corpus() if word.search(s["en"].lower())]
     if not hits:
         print(f"no corpus sentence's English contains {args.text!r}")
         return 1
@@ -141,6 +175,21 @@ def context_block(lx, examples):
             f"CORPUS EXAMPLES (English ||| the language)\n{ex}\n")
 
 
+def cue_table():
+    """The fixed English cues for the evidentials and stances.
+
+    Read out of corpus/README.md rather than restated here, so the tool cannot
+    drift from the convention the corpus was written to (D73).
+    """
+    txt = (ROOT / "corpus/README.md").read_text(encoding="utf-8")
+    m = re.search(r"Fixed cues:(.*?)(?:\n|$)", txt)
+    if not m:
+        return ""
+    return ("The fixed English cues the corpus uses, one of which every marked predicate "
+            "must come out as: " + m.group(1).strip() +
+            " A predicate with the direct evidential and no stance gets no cue at all.\n")
+
+
 def cmd_to_english(args, lx):
     key = require_key()
     ex = relevant_examples(args.text, lx, english_side=False)
@@ -150,11 +199,12 @@ def cmd_to_english(args, lx):
         for e in parsed.errors:
             print("  ", e, file=sys.stderr)
         return 1
-    prompt = (context_block(lx, ex) +
+    prompt = (context_block(lx, ex) + "\n" + cue_table() +
               f"\nThe morpheme gloss of the sentence is: {parsed.gloss()}\n"
               f"Sentence: {args.text}\n\n"
               "Give the most natural English. Render the evidential and any stance as the natural "
-              "English cue the corpus uses, never as a bracketed label. Reply with the English only.")
+              "English cue the corpus uses, never as a bracketed label; do not silently drop a "
+              "cue the gloss marks. Reply with the English only.")
     print(call_model([{"role": "user", "content": prompt}], args.model, key))
     return 0
 
@@ -215,10 +265,11 @@ def cmd_roundtrip(args, lx):
         print("Could not produce a well-formed sentence.", file=sys.stderr)
         return 1
     ex = relevant_examples(cand, lx, english_side=False)
-    back = call_model([{"role": "user", "content": context_block(lx, ex) +
+    back = call_model([{"role": "user", "content": context_block(lx, ex) + "\n" + cue_table() +
                         f"\nThe morpheme gloss is: {parsed.gloss()}\nSentence: {cand}\n\n"
                         "Give the most natural English. Render evidential and stance as natural "
-                        "English cues. Reply with the English only."}], args.model, key)
+                        "English cues; do not silently drop a cue the gloss marks. Reply with the "
+                        "English only."}], args.model, key)
     print(f"in    : {args.text}")
     print(f"stone : {cand}")
     print(f"gloss : {parsed.gloss()}")
