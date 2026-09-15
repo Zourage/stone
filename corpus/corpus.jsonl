@@ -13,7 +13,7 @@
 {"id": "s0013", "en": "It did not fail. I saw it, I insist.", "st": "우 누루타카무", "features": ["direct", "past", "neg", "assert"], "split": "train"}
 {"id": "s0014", "en": "Did it fail?", "st": "우 누타 추", "features": ["question", "past"], "split": "train"}
 {"id": "s0015", "en": "Did you test it?", "st": "에 우 파 와타 추", "features": ["question", "past", "obj"], "split": "train"}
-{"id": "s0016", "en": "I asked you.", "st": "아 에 파 차타카", "features": ["direct", "past", "obj", "ask"], "split": "held"}
+{"id": "s0016", "en": "I asked you.", "st": "아 에 페 차타카", "features": ["direct", "past", "obj", "ask"], "split": "held"}
 {"id": "s0017", "en": "I'm asking you for a fix.", "st": "아 에 파 라 헤 체카", "features": ["direct", "obj", "for", "ask", "nominal-root"], "split": "train"}
 {"id": "s0018", "en": "I'm checking what you told me: that you tested it.", "st": "아 에 우 파 와타케디 치카", "features": ["direct", "reported", "past", "sub", "obj", "ask"], "split": "train"}
 {"id": "s0019", "en": "I fixed the one that failed.", "st": "아 누타카디 우 파 라타카", "features": ["direct", "past", "sub", "obj"], "split": "train"}
@@ -505,7 +505,7 @@
 {"id": "s0505", "en": "We should test it first.", "st": "아 에 하 우 파 와코디 티페카", "features": ["modal", "should", "sub", "direct", "we", "with", "obj"], "split": "train"}
 {"id": "s0506", "en": "You should not alter this file.", "st": "에 이 왜 파 레코디 티페루카", "features": ["modal", "should", "sub", "neg", "direct", "det", "obj"], "split": "train"}
 {"id": "s0507", "en": "Should I begin?", "st": "아 쿠태코디 티페 추", "features": ["modal", "should", "sub", "question"], "split": "train"}
-{"id": "s0508", "en": "Every result should be recorded. That's just how it is.", "st": "새 도 미노코디 티페코", "features": ["modal", "should", "sub", "general", "quantifier", "all", "det"], "split": "held"}
+{"id": "s0508", "en": "Every result should be recorded. That's just how it is.", "st": "새 도 파 미노코디 티페코", "features": ["modal", "should", "sub", "general", "quantifier", "all", "det"], "split": "held"}
 {"id": "s0509", "en": "You may remove it.", "st": "에 우 파 쿠피코디 티피카", "features": ["modal", "allow", "sub", "direct", "obj"], "split": "train"}
 {"id": "s0510", "en": "You may not alter the version.", "st": "에 파테 파 레코디 티피루카", "features": ["modal", "allow", "sub", "neg", "direct", "obj"], "split": "train"}
 {"id": "s0511", "en": "May I read your file?", "st": "아 에 피 왜 파 데코디 티피 추", "features": ["modal", "allow", "sub", "question", "poss", "obj"], "split": "train"}
@@ -810,7 +810,7 @@
 {"id": "s0810", "en": "Move the heavy part slowly.", "st": "에 태네 네쿠 파 파수 하 투도카마", "features": ["manner", "with", "direct", "intend", "imperative", "compound", "obj"], "split": "held"}
 {"id": "s0811", "en": "I read it fast.", "st": "아 우 파 파시 하 데타카", "features": ["manner", "with", "past", "direct", "obj"], "split": "train"}
 {"id": "s0812", "en": "The machine ran it slowly, I'm told.", "st": "니포 우 파 파수 하 다타케", "features": ["manner", "with", "past", "reported", "obj"], "split": "train"}
-{"id": "s0813", "en": "How did you do it? I did it easily.", "st": "에 우 파 야 하 파로타 추", "features": ["manner", "with", "question", "q-how", "past", "obj"], "split": "held"}
+{"id": "s0813", "en": "How did you do it?", "st": "에 우 파 야 하 파로타 추", "features": ["manner", "with", "question", "q-how", "past", "obj"], "split": "held"}
 {"id": "s0814", "en": "I did it easily.", "st": "아 우 파 타로 하 파로타카", "features": ["manner", "with", "past", "direct", "obj"], "split": "train"}
 {"id": "s0815", "en": "It was late because the machine stopped.", "st": "우 니포 쿠테타코디 호 노대타카", "features": ["because", "sub", "from", "past", "direct", "stative"], "split": "train"}
 {"id": "s0816", "en": "I removed it because you told me to.", "st": "아 우 파 에 아 페 워야타코디 호 쿠피타카", "features": ["because", "sub", "from", "past", "direct", "loc", "obj"], "split": "train"}
@@ -1277,8 +1277,8 @@
 {"id": "s1277", "en": "If the run is slow, what is the reason?", "st": "다 파수코 해 대유 야 추", "features": ["conditional", "if", "q-what", "question", "stative"], "split": "train"}
 {"id": "s1278", "en": "What is the failure message?", "st": "누 케포 야 추", "features": ["compound", "q-what", "question"], "split": "train"}
 {"id": "s1279", "en": "No test is fast. That's just how it is.", "st": "소 와 파시코", "features": ["general", "none", "quantifier", "stative"], "split": "train"}
-{"id": "s1280", "en": "You should not wait. I insist.", "st": "에 로헤루코디 티페카무", "features": ["assert", "modal", "should", "sub", "neg", "direct"], "split": "train"}
-{"id": "s1281", "en": "You may not begin. I insist.", "st": "에 쿠태루코디 티피카무", "features": ["assert", "allow", "modal", "sub", "neg", "direct"], "split": "train"}
+{"id": "s1280", "en": "You should not wait. I insist.", "st": "에 로헤코디 티페루카무", "features": ["assert", "modal", "should", "sub", "neg", "direct"], "split": "train"}
+{"id": "s1281", "en": "You may not begin. I insist.", "st": "에 쿠태코디 티피루카무", "features": ["assert", "allow", "modal", "sub", "neg", "direct"], "split": "train"}
 {"id": "s1282", "en": "The size is not big, I insist.", "st": "테포 태루카무", "features": ["assert", "nominal-root", "neg", "direct", "stative"], "split": "train"}
 {"id": "s1283", "en": "Read the failure message slowly.", "st": "에 누 케포 파 파수 하 데카마", "features": ["compound", "manner", "with", "obj", "imperative", "intend", "direct"], "split": "train"}
 {"id": "s1284", "en": "How did you write the note?", "st": "에 도차 파 야 하 워타 추", "features": ["manner", "q-how", "question", "with", "obj", "past"], "split": "train"}

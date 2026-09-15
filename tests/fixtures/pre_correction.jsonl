@@ -75,3 +75,8 @@
 {"id": "s0563", "from": "pre-D114", "st": "니포 피레 페 얘 추", "en": "Is the machine above?", "features": ["domain-physical", "hold-exist", "loc", "question"], "split": "train", "catches": []}
 {"id": "s0699", "from": "pre-D114", "st": "이 아 피 미예카", "en": "It is my turn.", "features": ["direct", "poss", "equative", "domain-time"], "split": "held", "catches": ["g35"]}
 {"id": "s0779", "from": "pre-D114", "st": "에 우 파 라코디 유 페 리네루카마", "en": "Don't be alone while you fix it.", "features": ["direct", "domain-work", "imperative", "intend", "loc", "neg", "obj", "sub", "while"], "split": "held", "catches": []}
+{"id": "s1280", "from": "pre-D119", "st": "에 로헤루코디 티페카무", "en": "You should not wait. I insist.", "features": ["assert", "modal", "should", "sub", "neg", "direct"], "split": "train", "catches": ["rules"]}
+{"id": "s1281", "from": "pre-D119", "st": "에 쿠태루코디 티피카무", "en": "You may not begin. I insist.", "features": ["assert", "allow", "modal", "sub", "neg", "direct"], "split": "train", "catches": ["rules"]}
+{"id": "s0508", "from": "pre-D119", "st": "새 도 미노코디 티페코", "en": "Every result should be recorded. That's just how it is.", "features": ["modal", "should", "sub", "general", "quantifier", "all", "det"], "split": "held", "catches": []}
+{"id": "s0016", "from": "pre-D119", "st": "아 에 파 차타카", "en": "I asked you.", "features": ["direct", "past", "obj", "ask"], "split": "held", "catches": []}
+{"id": "s0813", "from": "pre-D119", "st": "에 우 파 야 하 파로타 추", "en": "How did you do it? I did it easily.", "features": ["manner", "with", "question", "q-how", "past", "obj"], "split": "held", "catches": []}

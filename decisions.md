@@ -554,3 +554,18 @@ Counting all 2604 pairs of features that never co-occur is useless — most are 
 - G35 is closed but for its two standing ambiguities. G1–G35 are otherwise closed.
 - **The held set has now been used to choose train sentences** (D113) and ten of its lines were corrected, so it is no longer clean in D94's sense. The next run needs a fresh draw, which the eligibility rule gives for free: corrected lines are in the fixture and blocked.
 - **19 of the 73 fixtures are corrections no check can see** — up from 11, because D115 and D117 are rules without checks. The number is meant to be uncomfortable.
+
+**D118. Acceptance test 7 on a second fresh draw, with the composition check run before the agents: 125/125 meaning-correct, 112/125 = 89.6% exact. It fails, and it is the most useful run yet.** 2026-09-15. Write-up in `tests/results/2026-09-15-e.md`. Two fresh-set runs now agree on about 90% against test 5's 97.5% on a combed set, and **neither has found a single real model miss.** Every miss in both is corpus work.
+
+**D119. Two of test 7's thirteen misses were caused by sentences written twenty minutes before the run, and they are the whole margin.** 2026-09-15. The pre-run composition check named fifteen pairs the new held set needed; fifteen sentences were written to teach them; **two of the fifteen contradicted a nineteen-line pattern.** Negation on a modal sits on the modal (19 lines); s1280 and s1281 put it on the complement. The agent followed the newest examples on exactly the two held sentences using that construction. With those two the run is 114/125 = 91.2% and over the bar.
+
+`validate.py` did not catch it because there was no check for modal negation scope, and there was none **because the corpus had never broken that rule.** Every check in this repo exists because something broke first. That is the D82 method working as designed, and it has a consequence nobody had drawn: **newly written sentences are the most dangerous content in the corpus, because they are written against precisely the rules no check covers yet.** The check now exists and is shown against both forms. What would have caught it without a check is cheaper still and was not done: reading the nineteen existing examples of the construction before writing the twentieth.
+
+**Three more corpus defects, all corrected, all with the agent right**: s0508 dropped the object marker from an agentless clause, which is s0730 one line over; s0016 marked the addressee of *ask* with the object case where D57 and s0451 put every recipient in the location case, so the line actually read "I asked about you"; and s0813's English carried a clause its script does not encode, which produced **the run's only ill-formed answer** — a defective English causing the only grammatical failure in the run.
+
+**Still open and now twice paid for**: where two adverbials both follow the object (D103's open item, s0456 this run), and the standing true/hold ambiguity (D76, s0491, its fourth run untouched). Six further misses are constructions the corpus does not determine and are not decided here.
+
+### OPEN
+- **The corpus is at about 90% on a fresh held set and the bar is 90%.** Two runs agree. The gap is entirely corpus work, itemised above; none of it is a limit of the language or of the reader.
+- **Two adverbials after the object** is the oldest open item still costing misses. It should go next, with the D78 treatment.
+- The next run needs a third fresh draw; the eligibility rule handles it.

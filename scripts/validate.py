@@ -289,12 +289,24 @@ def rule_errors(sents, lx):
     pron_i, pron_you, if_w = g("pronoun: I"), g("pronoun: you"), g("if")
     cases = {e["form"] for e in lx.entries if e["gloss"].startswith("case")}
     rel = {e["form"] for e in lx.entries if e["gloss"].startswith("relational")}
+    modal_roots = {e["form"] for e in lx.entries if e["gloss"] in
+                   ("be able, have the capacity", "want", "should, ought", "allow, may")}
     out = []
     for s in sents:
         parsed = parse_sentence(s["st"], lx)
         en = s["en"].lower()
         for subj, tk, i, forms in _clauses(s, lx, pron_i, pron_you, cases, rel):
             gs = [a["gloss"] for a in tk.affixes]
+            # D119: negation on a modal construction sits on the modal, not on its
+            # complement — 19 to 2, and both of the two were written an hour before
+            # acceptance test 7 and cost it two misses. Checked here rather than
+            # below, because the complement carries a subordinator and the skip on
+            # the next line is what hid this from the first version of the check.
+            if "negation" in gs and "subordinator" in gs and i + 1 < len(parsed.tokens):
+                nxt = parsed.tokens[i + 1]
+                if nxt.base and nxt.base["form"] in modal_roots and nxt.affixes:
+                    out.append(f"{s['id']}: negation sits on a modal's complement; it belongs "
+                               f"on the modal itself (D119)")
             if "subordinator" in gs:            # embedded clause or modal complement
                 continue
             # D88: a first-person intend predicate carries the future marker (train 20:1)
