@@ -2,6 +2,22 @@
 
 Current state of the language and the method, kept short on purpose. `decisions.md` is the append-only history with rationale; read the entries cited here when you need the why. When anything changes: append to `decisions.md`, then update this file and the spec it touches.
 
+## Objectives (D125) — what work is for
+
+Two, and they stand until the maintainer changes them. **Tag any proposed work to one of them before doing it.**
+
+**Goal 1 — can an LLM translate this language?** The acceptance test, bar set in D50: cold agents given the train split as `English ||| script` and nothing else, **100% meaning-correct** stone → English and **≥90% exact** English → stone. **Passed three times** — 97.5% (test 5), then 91.2% and 89.6% on fresh draws, the last two with **zero real model misses**. **Currently unmeasured**: 129 sentences and 18 roots have landed since test 7, so those numbers describe a corpus that no longer exists (D104).
+
+**Goal 2 — can a script translate this language?** `realize.py` and `compose.py`, deterministic, no model (D106–D108). On the corpus at 1424: stone → English **21.8% exact** (43.8% with near-matches, nothing unproduced); English → stone **37.3% exact**, **27.1% declined with a reason**, **35.6% wrong without saying so**. **No bar has ever been set for this goal** — D50 set one for goal 1 only.
+
+**Why goal 1 is nearly done and goal 2 sits at a third, and it is not effort.** An LLM reads context and guesses past an undetermined sentence plausibly; a script cannot. Every place the corpus leaves a split undecided is a hard stop for goal 2 and survivable for goal 1. **Work that makes the corpus more determined serves goal 2. Work that makes it larger or more expressive serves neither.**
+
+**Instruments, tagged.** *Goal 1*: the acceptance test (D3, D50, D75, D93), the composition audit as its pre-run step (D113), the drift test (D15, D74). *Goal 2*: `realize.py --score`, `compose.py --score`, the G34 undetermined-split report. *Both*: the regression test of the checks (D101) and mutation testing (D104) — they keep the checks honest and so protect every number above. *Neither*: the coverage test (D121) and the dictionary probe (D122), which measure expressivity. That is D1's goal of two people holding the language in their heads, and **an LLM can translate a language that cannot say Monday, and so can a script.** Both stay as instruments; neither drives work.
+
+**Stood down under these objectives, recorded rather than abandoned (D125).** The **recoining of the 17 roots from D123–D124**: the defect is real and measured — they sit in minimal-pair neighbourhoods averaging 11.88 against the lexicon's 5.79, because all 17 went into one second-syllable row, taking it from 21% to 30% and pushing *want*, *use* and *week* up six neighbours each — but a script reads exact tokens and so does an LLM, and neither mishears a vowel. It is worth nothing to either goal, and it gets harder every session, so it is the first thing to fix if D1 becomes current again. Also stood down: the **social register** (sorry, thank, welcome, bye), the remaining D122 expressivity gaps, and any coining not required to determine a sentence.
+
+**The next two pieces of work that serve an objective.** *Goal 2*: **categorise the 507 silently-wrong compositions** — the largest unexamined thing in the repo and the whole of goal 2's gap. How many are the 92 G34 splits, how many a rule the corpus never stated, how many ordinary parser shortfall. *Goal 1*: fresh held draw, composition audit, then spend a run.
+
 ## The language
 - Purpose: asking, code, discussion, engineering and science talk between two people; the corpus is its codex. (D1, D34)
 - Script: 74 syllable glyphs as Hangul blocks that spell their own sound (initial + vowel, no final), `spec/codepoints.json` from `scripts/compose_hangul.py`; sounds in `spec/phonology.md`. 1–3 tokens per glyph. Priors accepted in D52 and now tested four times: acceptance tests 3, 4 and 5 and the first drift test all found no Korean reading and no slide toward Korean. (D28, D37, D52, D86, D98)
