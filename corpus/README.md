@@ -41,4 +41,4 @@ Taken from the corpus itself. `scripts/validate.py` fails if this list or the to
 - **calendar**: weekday, part-of-day
 - **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
 
-Total: 93 distinct tags over 1424 sentences.
+Total: 93 distinct tags over 1434 sentences.

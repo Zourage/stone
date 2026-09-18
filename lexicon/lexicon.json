@@ -1656,7 +1656,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위파",
+  "form": "위사",
   "pos": "root",
   "gloss": "black",
   "sense_notes": "Basic colour term. The colour family sits on the look root, because a colour is a seen quality; members are told apart by the second syllable's vowel, in the order languages acquire basic colour terms. Covers the focal colour and its whole range; no separate light, dark or saturation terms exist and none should be coined (D123).",
@@ -1664,7 +1664,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위패",
+  "form": "위새",
   "pos": "root",
   "gloss": "white",
   "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
@@ -1672,7 +1672,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위페",
+  "form": "위세",
   "pos": "root",
   "gloss": "red",
   "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
@@ -1680,7 +1680,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위피",
+  "form": "위시",
   "pos": "root",
   "gloss": "green",
   "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
@@ -1688,7 +1688,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위포",
+  "form": "위소",
   "pos": "root",
   "gloss": "yellow",
   "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
@@ -1696,7 +1696,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "위푸",
+  "form": "위수",
   "pos": "root",
   "gloss": "blue",
   "sense_notes": "Basic colour term, the look family (D123). Focal colour and its range; see the black entry for the family's carve.",
@@ -1704,7 +1704,7 @@
   "added": "2026-09-15"
  },
  {
-  "form": "예파",
+  "form": "예나",
   "pos": "root",
   "gloss": "meet",
   "sense_notes": "Two or more people arranging to be in one place at one time. The person family (D124). Not the join root, which is things joining, and not the discuss root, which is the activity once met.",
@@ -1712,7 +1712,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "예패",
+  "form": "예내",
   "pos": "root",
   "gloss": "team",
   "sense_notes": "A group of people working on one thing. The person family (D124). Not the part or whole roots, which divide a thing rather than name a body of people.",
@@ -1720,7 +1720,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "예페",
+  "form": "예네",
   "pos": "root",
   "gloss": "eat",
   "sense_notes": "The person family (D124). Carved against drink by what is consumed, not by manner. Food needs no root: a root is neither noun nor verb (D29), so this root in argument position is already the food, and eat-thing says it explicitly.",
@@ -1728,7 +1728,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "예피",
+  "form": "예니",
   "pos": "root",
   "gloss": "drink",
   "sense_notes": "The person family (D124). Separate from eat because the distinction is one speakers of this language's domain actually use; see the eat entry for the carve.",
@@ -1736,7 +1736,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "예포",
+  "form": "예노",
   "pos": "root",
   "gloss": "sleep",
   "sense_notes": "The person family (D124). Not the stop or pause roots, which end or suspend a process; sleeping is a state a person is in, not an interruption of one.",
@@ -1744,7 +1744,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "예푸",
+  "form": "예누",
   "pos": "root",
   "gloss": "tired",
   "sense_notes": "The person family (D124). A state of a person, carved against the effort root, which is work as a quantity: effort is what was spent, tired is what the spender now is.",
@@ -1752,7 +1752,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "매파",
+  "form": "매후",
   "pos": "root",
   "gloss": "typical",
   "sense_notes": "Matching what usually is. The frequency family (D124), beside pattern, often and rare — typical is what the often-case looks like. **Carved against the right/correct root: correct is matching what a thing should be, typical is matching what it usually is**, and a language for science talk needs both separately. Anomalous is this root negated and gets no root of its own: unlike not-often against rare, not-typical leaves no room for a third case (D62, D124).",
@@ -1760,7 +1760,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "두파",
+  "form": "두채",
   "pos": "root",
   "gloss": "similar",
   "sense_notes": "Like, but not the same. The sameness family, on the same root's syllable (D124). Takes the with word for its standard, as the same root does. Not reachable by negating same, which gives different — the opposite, not the middle.",
@@ -1768,7 +1768,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "코파",
+  "form": "코체",
   "pos": "root",
   "gloss": "free, unbooked",
   "sense_notes": "A person or a machine with nothing claiming its time. The readiness family, beside ready (D124). Not the open root, which is a thing opened, and not the empty root, which is a container; this is availability, and it is the negative of the blocked/waiting-on root.",
@@ -1776,7 +1776,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "파패",
+  "form": "파치",
   "pos": "root",
   "gloss": "sudden",
   "sense_notes": "Beginning or changing with no lead-up. The speed family, beside fast and slow (D124) — but carved against fast: fast is how quickly a thing proceeds, sudden is how little warning its onset gave. Takes the with word for the manner adverb, like any quality (D67).",
@@ -1784,7 +1784,7 @@
   "added": "2026-09-18"
  },
  {
-  "form": "토파",
+  "form": "토추",
   "pos": "root",
   "gloss": "lose",
   "sense_notes": "To no longer have, whether a thing or a stretch of time. The having family, beside take, receive and hold (D124), of which it is the negative. Not the failure root, which is a run-time failure, and not the remove root, which is deliberate.",
