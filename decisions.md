@@ -690,3 +690,26 @@ This is stated rather than discovered, and the spec says so. Eight sentences add
 - **Goal 2 has no bar.** D50 set one for goal 1 and nothing has ever set one here. It needs the maintainer, not a number picked by whoever is looking.
 - **The 507 silently-wrong compositions are the largest unexamined thing in the repo** and they are exactly goal 2's gap. Categorising them is the next piece of work that serves an objective: how many are the 92 G34 splits, how many a rule the corpus never stated, how many ordinary parser shortfall.
 - **Goal 1 needs a run.** Fresh held draw, composition audit (D113), then spend it. Nothing else tells us where goal 1 stands.
+
+---
+
+**D126. Acceptance test 8, the first on models other than Claude: three of five families clear the bar, Claude comes third, and cross-model disagreement found two corpus defects seven Claude-only runs never surfaced. D125's stand-down of the recoining is partly reversed.** 2026-09-18. Full write-up in `tests/results/2026-09-18-h.md`. Serves goal 1 (D125).
+
+**Why it had to be run.** Tests 1–7 all used Claude subagents, so what they establish is *Claude can translate this language* while goal 1 says *an LLM*. The gap matters most on the dimension this project guards hardest: D52's worry is Hangul priors, and priors are model-specific.
+
+**Protocol, unchanged except where it got stricter.** The OpenRouter route `translate.py` already carries; the directions split across four stateless calls per model so none sees both sides of a held sentence (D75); context the train split as `English ||| script` and nothing else. **The held set is a fresh virtual draw** — 60 sentences whose script and English are both unique corpus-wide, so D93 holds by construction, held out of the context without modifying the corpus. That sidesteps test 7's set, which had ten corrected lines and was no longer clean, and it costs nothing, which makes it the cheap way to get a clean draw from now on. Eight of the 60 exercise the D123/D124 roots.
+
+**Scores, English → stone exact:** gemini-3.8-flash **96.7%**, grok-4.6 **93.3%**, claude-sonnet-4.5 **91.7%**, glm-5.3 **85.0%**, gpt-5.6-luna **78.3%**. All five essentially 100% meaning-correct stone → English on a hand-read; the mechanical screen's flags were almost all paraphrase. Claude's 91.7% sits between tests 6 and 7 (91.2%, 89.6%), so the control behaved and the draw is comparable.
+
+**What this settles and what it does not.** It settles that the result was never a Claude artifact — Claude is third of five and two other families beat it. It does **not** settle that every LLM clears the bar: two of five do not. Goal 1 should be read as *some current frontier models clear D50's bar on this corpus*, which is a weaker and truer claim than the one seven Claude runs appeared to support.
+
+**Cross-model disagreement is a corpus-defect detector, and that is the durable finding.** Five independent families rejecting a line the same way is evidence about the line, not five coincidences. It found two. **s0103** writes twenty-six as `네 푸 포 나`, five-plus-one, where the lexicon has `포나` as the root for six (D48); all five models wrote `포나`, and in the other direction Claude and Grok could not read the gold at all. **s0738** writes "which task has priority" without the possessor, while s0093 teaches having as possessor + hold root; all five inserted it, and Gemini's output is exactly what the corpus's own pattern gives. Both are corrections, not model misses. Separately, four of five fronted the since-clause in s0888 against the D102 subject rule — that rule is unanimous and checked, but D103 counted until/since at **0–2 train examples**, so it is a coverage floor problem.
+
+**D125's reasoning for standing down the recoining is wrong, and this run is the counterexample.** D125 said "a script reads exact tokens and so does an LLM, and neither mishears a vowel." Reading was never the risk. **A model writing selects from a neighbourhood, and a denser neighbourhood is more chances to select wrong.** Four of the 33 misses across the run are exactly that — `예피` *drink* for `예페` *eat* (both coined in D124, both in the person family, one vowel apart), `캐포` *minute* for `케포` *message*, and two on the 사해/사세/레세 cluster — **12% of all misses**. The density measured in the corpus check is not a learnability concern only; it costs goal 1 directly.
+
+### OPEN
+- **The recoining is back on the table and now has a goal behind it.** The 17 roots from D123–D124 sit at 11.88 minimal-pair neighbours against the lexicon's 5.79, all in one second-syllable row. Not done here — it is a change to 17 forms and 129 sentences and belongs to the maintainer — but D125's stated reason for skipping it no longer holds.
+- **s0103 and s0738 need correcting** through `correct_corpus.py`, with this run named as the `why`. Neither is done here.
+- **The until/since clause needs train sentences**, at 2 against D11's floor of 10.
+- **Goal 1's claim should be restated** in STATE as *some current frontier models*, not *an LLM*.
+- Worth re-running cross-model after any corpus change, as a defect detector rather than only as a score.
