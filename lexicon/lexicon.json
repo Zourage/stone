@@ -1790,5 +1790,53 @@
   "sense_notes": "To no longer have, whether a thing or a stretch of time. The having family, beside take, receive and hold (D124), of which it is the negative. Not the failure root, which is a run-time failure, and not the remove root, which is deliberate.",
   "id": "w0224",
   "added": "2026-09-18"
+ },
+ {
+  "form": "세쿠",
+  "pos": "root",
+  "gloss": "program",
+  "sense_notes": "A runnable artifact. **Lumped on purpose: script, program, application and tool are one root** — the distinction is about size and packaging and almost never changes what a speaker does next (D35, D130). Carved against the function root, which is a named piece *inside* a program, and against the machine root, which is what runs it. Verbal: to run as a program.",
+  "id": "w0225",
+  "added": "2026-09-19"
+ },
+ {
+  "form": "시새",
+  "pos": "root",
+  "gloss": "code",
+  "sense_notes": "The text a program is made of. Carved against the program root — code is the artifact as text, the program is the artifact as a thing that runs, and 'read the code' and 'run the program' are not the same act — and against the text root, which is text of any kind (D130).",
+  "id": "w0226",
+  "added": "2026-09-19"
+ },
+ {
+  "form": "다내",
+  "pos": "root",
+  "gloss": "command",
+  "sense_notes": "An instruction given to a machine. **Carved against the ask-for-action root, which is a request to a person** (D35's asking carve, side 2). A machine is commanded and a person is asked; the corpus must not blur them. Verbal: to command, to issue.",
+  "id": "w0227",
+  "added": "2026-09-19"
+ },
+ {
+  "form": "하레",
+  "pos": "root",
+  "gloss": "output",
+  "sense_notes": "What a process emits when it runs. **Paired with the input root rather than reached by negating it** (D62: not-input is not output), on the same principle as often/rare and more/less. Carved against the result root, which is how a thing turned out; output is the material produced.",
+  "id": "w0228",
+  "added": "2026-09-19"
+ },
+ {
+  "form": "히리",
+  "pos": "root",
+  "gloss": "network",
+  "sense_notes": "The link between machines, and the machines reachable over it. Compounds with the machine root to give a server (D130). No separate root for online, remote or connection: this root plus the existing location case covers them.",
+  "id": "w0229",
+  "added": "2026-09-19"
+ },
+ {
+  "form": "체데",
+  "pos": "root",
+  "gloss": "package",
+  "sense_notes": "A reusable piece brought in from elsewhere: a library, a dependency, a module. Carved against the part root, which is a piece *of* a thing already in hand. Compounds with the place root to give a container (D130).",
+  "id": "w0230",
+  "added": "2026-09-19"
  }
 ]

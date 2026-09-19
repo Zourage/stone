@@ -1432,3 +1432,38 @@
 {"id": "s1432", "en": "Because I lost the file, I waited.", "st": "아 왜 파 토추타코디 호 로헤타카", "features": ["because", "sub", "direct", "past", "obj"], "split": "train"}
 {"id": "s1433", "en": "Since we met, it has been clear.", "st": "우 아 에 하 예나타코디 호 해위카", "features": ["since", "sub", "direct", "past", "we", "with", "stative"], "split": "train"}
 {"id": "s1434", "en": "Because you did not sleep, the task is blocked.", "st": "사세 에 예노루타코디 호 수초카", "features": ["because", "sub", "direct", "neg", "past", "domain-work"], "split": "train"}
+{"id": "s1435", "en": "The program ran.", "st": "세쿠 다타카", "features": ["direct", "past", "domain-code"], "split": "train"}
+{"id": "s1436", "en": "I'll build the program.", "st": "아 세쿠 파 리투카마", "features": ["direct", "future", "intend", "obj", "domain-code"], "split": "train"}
+{"id": "s1437", "en": "This program failed, I'm told.", "st": "이 세쿠 누타케", "features": ["reported", "past", "det", "domain-code"], "split": "train"}
+{"id": "s1438", "en": "Run the program.", "st": "에 세쿠 파 다카마", "features": ["direct", "intend", "imperative", "obj", "domain-code"], "split": "train"}
+{"id": "s1439", "en": "The program runs on the machine.", "st": "세쿠 니포 페 다카", "features": ["direct", "loc", "domain-code"], "split": "train"}
+{"id": "s1440", "en": "Show me the code.", "st": "에 시새 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "domain-code"], "split": "train"}
+{"id": "s1441", "en": "The code is bad.", "st": "시새 래카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1442", "en": "I read the code.", "st": "아 시새 파 데타카", "features": ["direct", "past", "obj", "domain-code"], "split": "train"}
+{"id": "s1443", "en": "The program's code is big.", "st": "세쿠 피 시새 태카", "features": ["direct", "stative", "poss", "domain-code"], "split": "train"}
+{"id": "s1444", "en": "I'll fix the code.", "st": "아 시새 파 라투카마", "features": ["direct", "future", "intend", "obj", "domain-code"], "split": "train"}
+{"id": "s1445", "en": "I gave the command to the machine.", "st": "아 다내 파 니포 페 카푸타카", "features": ["direct", "past", "obj", "loc", "domain-code"], "split": "train"}
+{"id": "s1446", "en": "The command failed.", "st": "다내 누타카", "features": ["direct", "past", "domain-code"], "split": "train"}
+{"id": "s1447", "en": "Show me the command.", "st": "에 다내 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "domain-code"], "split": "train"}
+{"id": "s1448", "en": "This command is correct.", "st": "이 다내 얘하카", "features": ["direct", "stative", "det", "domain-code"], "split": "train"}
+{"id": "s1449", "en": "I do not remember the command.", "st": "아 다내 파 유호루카", "features": ["direct", "neg", "obj", "domain-code"], "split": "train"}
+{"id": "s1450", "en": "The output is empty.", "st": "하레 푸소카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1451", "en": "I looked at the output.", "st": "아 하레 파 위타카", "features": ["direct", "past", "obj", "domain-code"], "split": "train"}
+{"id": "s1452", "en": "The input is good but the output is bad.", "st": "페티 로카 채 하레 래카", "features": ["direct", "but", "stative", "domain-code"], "split": "train"}
+{"id": "s1453", "en": "What is the output?", "st": "하레 야 추", "features": ["question", "q-what", "domain-code"], "split": "train"}
+{"id": "s1454", "en": "The program showed the output.", "st": "세쿠 하레 파 페포타카", "features": ["direct", "past", "obj", "domain-code"], "split": "train"}
+{"id": "s1455", "en": "The network is slow.", "st": "히리 파수카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1456", "en": "The network failed, I'm told.", "st": "히리 누타케", "features": ["reported", "past", "domain-code"], "split": "train"}
+{"id": "s1457", "en": "I'll check the network.", "st": "아 히리 파 치투카마", "features": ["direct", "future", "intend", "obj", "domain-code"], "split": "train"}
+{"id": "s1458", "en": "The server is not ready.", "st": "히리 니포 코대루카", "features": ["direct", "neg", "stative", "compound", "domain-code"], "split": "train"}
+{"id": "s1459", "en": "Run the server.", "st": "에 히리 니포 파 다카마", "features": ["direct", "intend", "imperative", "obj", "compound", "domain-code"], "split": "train"}
+{"id": "s1460", "en": "I received the package.", "st": "아 체데 파 토소타카", "features": ["direct", "past", "obj", "domain-code"], "split": "train"}
+{"id": "s1461", "en": "This package is new.", "st": "이 체데 파캐카", "features": ["direct", "stative", "det", "domain-code"], "split": "train"}
+{"id": "s1462", "en": "What is the package's version?", "st": "체데 피 파테 야 추", "features": ["question", "q-what", "poss", "domain-code"], "split": "train"}
+{"id": "s1463", "en": "I'll set up the package.", "st": "아 체데 파 새루투카마", "features": ["direct", "future", "intend", "obj", "domain-code"], "split": "train"}
+{"id": "s1464", "en": "The package failed.", "st": "체데 누타카", "features": ["direct", "past", "domain-code"], "split": "train"}
+{"id": "s1465", "en": "The shell is open.", "st": "다내 후태 포하카", "features": ["direct", "stative", "compound", "domain-code"], "split": "train"}
+{"id": "s1466", "en": "I checked the database.", "st": "아 미네 키포 파 치타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
+{"id": "s1467", "en": "Show me the folder.", "st": "에 왜 후태 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "compound", "domain-code"], "split": "train"}
+{"id": "s1468", "en": "The user found a fault.", "st": "테파 예 노 파 웨타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
+{"id": "s1469", "en": "The container runs.", "st": "체데 후태 다카", "features": ["direct", "compound", "domain-code"], "split": "train"}
