@@ -14,6 +14,17 @@ Score exact match first, then read the near-misses. A miss caused by a word or c
 
 Record each run in `results/` as `YYYY-MM-DD.md` with the corpus and lexicon size, both scores, the rules the agent inferred, what it got wrong, and a verdict.
 
+## Conversation test (D129) — what translation tests cannot measure
+**Serves goal 1**, and it is the only test of **D27** (a model takes instructions in the language and writes code from them).
+
+Every other test scores isolated sentences. A conversation has anaphora, ellipsis, dropped subjects, turn-taking and repair, and the corpus teaches almost none of it *as dialogue*. **The coverage test and the dictionary probe both measure vocabulary and neither found the two gaps this found in twelve turns.**
+
+Three models. **A** and **B** converse, each briefed **privately in English** and never seeing the other's brief or a word of the other's English — each turn a model sees only the corpus, its own brief, and the script so far. **C** is a **cold reader** translating every line with no conversational context: A and B are not independent readers of their own exchange, so **C is the evidence**, and where C and a participant disagree the conversation was carrying the meaning rather than the language.
+
+Give A a concrete goal it must express, not a topic. End by asking B **in the script** to produce an artifact, then check whether the artifact meets the goal — that is the D27 probe, and it is the point. Do not gloss the conversation into English for that step.
+
+Score each turn OK / DRIFT (understood, something lost — say what) / BREAK (wrong reading, or a non-sequitur). Record as `results/YYYY-MM-DD-<letter>.md`. A conversation that deadlocks is a better finding than one that succeeds.
+
 ## Coverage test (D121) — what the acceptance test cannot measure
 **Serves neither current objective** (D125). It measures expressivity, which is D1's goal of two people holding the language in their heads. An LLM can translate a language that cannot say *Monday*, and so can a script. Kept as an instrument; it does not drive work.
 The acceptance test scores sentences drawn from the corpus, and every corpus sentence was written by someone with the lexicon open. A thing the language cannot say was never written down, so it is never scored. That test measures whether the corpus teaches the language; it cannot report a gap.

@@ -753,3 +753,26 @@ This is stated rather than discovered, and the spec says so. Eight sentences add
 - **Three pieces of corpus work are named and none is done**: teach "takes effort" (2 examples, 5/5 rejection); decide whether a factual complement keeps its own evidential (s0377, a language question for the maintainer); consider whether the compound needs teaching against the possessor (29 against 65, confusion evidenced both ways).
 - **Nothing was changed by this run, deliberately.** Today already moved 17 forms, 2 corrections and 12 sentences. The lesson of the run is that an intervention is worth less than the re-measurement after it, and stacking three more before re-measuring these would repeat the error D127 made.
 - Goal 2 is untouched: no bar, and the 507 silently-wrong compositions still uncategorised.
+
+---
+
+**D129. Conversation test 1: D27 is tested for the first time and holds. A requirement stated in the script survived twelve turns and produced working Python, and the code carries a diagnosis reached inside the conversation. Two absences are named that no audit found: the language cannot hand anything over, and cannot quote.** 2026-09-19. Write-up in `tests/results/2026-09-19-j.md`. Serves goal 1 (D125). Run at the maintainer's request and to the maintainer's brief — general code requests in ordinary conversation, for people who do not write code.
+
+**Why it is new.** Tests 1–9 score isolated sentences. None measures a conversation, which is what D1 asks for, and **none had ever tested D27** — *"once fluent from the corpus, a model takes instructions in stone and writes code from them; no formal grammar is needed"* — which has stood since the beginning on nothing at all.
+
+**Protocol.** Three models: **A** (`gemini-3.8-flash`) briefed privately in English as a non-programmer with a file of numbers wanting a count of rows over ten, who tried once and failed; **B** (`glm-5.3`) as the one who writes code; **C** (`grok-4.6`) as a **cold reader** translating each line with no conversational context and no brief. Neither A nor B ever saw English from the other or the other's brief. Twelve turns, then A says `에 우 파 리코디 티페카마` and B is asked for Python **with no English gloss of the conversation at all**.
+
+**D27 holds.** Both models produced correct Python from the script alone. GLM's runs and returns 4 on a file of `5, 12, 3, hello, 99, 10, 11, "", 7.5, 10.1`, which is right.
+
+**And the finding is bigger than D27's claim.** Both models independently wrote `except ValueError: continue`. **Nothing in the requirement asks for that.** It is turn 12's diagnosis — *this value is text, not a number* — carried into the artifact. The language did not merely transport a specification; **it transported a conclusion reached inside the conversation, and two models acted on it the same way.**
+
+**The requirement itself held precisely, and C is what proves it.** Turn 1 composed the comparison construction, a numeral and a relative clause in one sentence: *count the lines whose value is bigger than ten*. **C recovered that having seen nothing but the corpus and that one line**, which is what establishes the script carried the meaning rather than the conversation carrying it. A and B are not independent readers of their own exchange; C is.
+
+**What broke is specific and neither audit found it.** Turns 4–7 deadlock — *show me the message / I want to understand it / I can't understand it / explain it to me / I can't explain it* — five turns and no progress. Partly an artifact, since no real file exists to show. But it names a real absence: **there is no way to hand anything over.** No attachment, no *here it is*, no deixis onto an object present to both parties. Two people who can only describe, never show. **And nobody can quote**: A says the machine showed a message and cannot say what it said, because there is no construction for quoting a string — in a real request for help that is most of the information.
+
+**The method point.** The coverage test (D121) and the dictionary probe (D122) both measure **vocabulary**, and neither found either absence, because neither tests what a conversation has to *do*. A test that runs the language rather than auditing it found two gaps in twelve turns. **Conversation is a different instrument from translation and belongs in `tests/README.md` as one.**
+
+### OPEN
+- **Handing something over, and quoting a string.** Both are inside D34 and both are absent. Neither is coined or constructed here; both need a decision about whether they are vocabulary or grammar. Quoting looks like grammar.
+- One conversation, one topic, one model pair. It should be run again on a different task before its findings are leaned on.
+- The deadlock is partly the harness's — a rerun should give both parties something real to refer to, so "show me" can resolve.
