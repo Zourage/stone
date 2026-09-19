@@ -797,3 +797,23 @@ This is stated rather than discovered, and the spec says so. Eight sentences add
 - **Nothing here is measured.** 6 roots and 35 sentences changed the train split (D104). Re-run the conversation test on the same vague request, and cross-model after that.
 - **Quoting is still absent and is now the remaining half of the original finding** (D129): opaque literals — a filename, an error string — still cannot be carried, and that needs a decision on CLAUDE.md rule 3 before anything is coined.
 - The compounds are taught by one or two sentences each. If they do not survive a conversation test they need more, per D123's rule that a construction taught once is not taught.
+
+---
+
+**D132. D131 measured: it cleared the block it aimed at, the before-state was worse than predicted, and it created a new gap. G36 logged: two adjacent compounds flatten and the language cannot bracket.** 2026-09-19. Write-up in `tests/results/2026-09-19-k.md`, raw output in `tests/fixtures/d131_ab_2026-09-19.txt`. Serves goal 1 (D125).
+
+**The design, and D128's rule applied.** D131 was committed on a lexicon count and an argument, with no measurement — the same error D127 made and D128 named. This is the re-measure: one sentence, three models, **two corpora differing only by D131's 6 roots and 35 sentences**, `3e0e659` against the current head. Input was the maintainer's own failing sentence, *build me a script for a shell container*.
+
+**Before: `에 키포 헤 워 파 아 헤 리카마`, which a cold reader rendered "Build the code for the variable for me."** D131 predicted *build me a thing*. **It was wrong, and in the dangerous direction.** The translator did not drop the unsayable nouns, it **substituted** the nearest available ones — the variable root for *container*, the write root for *script* — producing a fluent, well-formed, **confidently incorrect** sentence naming concepts that were never in the request. The receiver then asked a precise and useless question about an object that does not exist. **Omission would have been safer: a sentence missing its nouns reads as underspecified, while a sentence with substituted nouns reads as complete.** This is the silent-loss failure in its sharpest form and D131 did not anticipate it.
+
+**After: `에 세쿠 파 다내 후태 체데 후태 헤 아 페 리카마`.** Both taught compounds were produced unprompted and recovered by a cold reader never told what they mean. The clarifying question moved from an invented object to a real missing parameter. **D131 cleared its block.**
+
+**And created another. G36: the language cannot bracket.** The after-string came back as *"the shell **and** the container"* — two places in a list, not one *shell container*. **Two adjacent compounds flatten.** The corpus has runs of three to five bare roots (76, 10 and 3 sentences) and **every one is flat** — determiner or numeral stacking before a single head, as in `니포 야 수포 메루 카유 페`. **No attested case of a two-root compound modifying another two-root compound exists, and the grammar says nothing about how one would be read.** This gap is *made by* D130 and D131: before them two-root compounds were rare enough that abutting ones never arose; those two rounds added twelve, so four-root strings are now easy to produce and undecidable to read. **A coining round can create a grammar gap, which nothing in the method anticipated.**
+
+**A correction about this run's own reporting.** An earlier report of the result quoted *"Build the program into a shell container for me"* as the cold read. That was **the receiver model's own gloss**, lifted from a truncated capture, not the independent reader's. The cold reader said *"in the shell and the container"* — which is the entire G36 finding, and it was nearly missed. **A model's description of what it understood is not a measurement of what it understood.** That is precisely what the cold reader exists to prevent, and the error was made anyway by reading the wrong line out of the output. Three runs of this measurement were also lost to harness faults (`tail` truncation, and two SIGTERMs) before one completed cleanly; a measurement that has to be repeated four times should be scripted to a file, not a pipe.
+
+### OPEN
+- **G36, uncounted:** two adjacent compounds have no bracketing and flatten into a list. Needs a decision — a bracketing marker, a rule that the rightmost root is the head of the whole run, or a ban on abutting compounds. Nothing is decided here.
+- **Quoting remains the binding constraint** on the use case that started this (D129, D131): the receiver can now ask for a name and still cannot be told one. Needs a CLAUDE.md rule 3 decision.
+- Sixteen of the twenty-eight code-request nouns are still uncoined.
+- One sentence, one run. It shows a block cleared, not a domain covered.

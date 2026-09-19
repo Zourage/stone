@@ -1,0 +1,12 @@
+============================================================
+BEFORE (pre-D131)
+  stone     : 에 키포 헤 워 파 아 헤 리카마
+  cold read : Build the code for the variable for me.
+  asks      : 키포 피 요 야 추
+  which is  : What is the variable's name?
+============================================================
+AFTER  (with D131)
+  stone     : 에 세쿠 파 다내 후태 체데 후태 헤 아 페 리카마
+  cold read : Build the program in the shell and the container for me.
+  asks      : 아 우 파 야 페 리코디 티페 추
+  which is  : Where should I build it?
