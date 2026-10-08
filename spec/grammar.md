@@ -115,6 +115,10 @@ I + you + the with word (inclusive); the third party replaces you for the exclus
 A numeral before the repeat root: three repeats = three times.
 
 ## Compounds (D64)
+
+**A compound is exactly two roots, and the cap is exceptionless** (G36, D133). The corpus has **234 two-root compounds and none of three**. Every longer run of bare roots is more than one constituent: a subject followed by a compound (`value | file-inside`, `machine | early-day`, 16 lines), a compound followed by a root (`use-person | fault`), or two compounds side by side (`red line | blue line`, s1310). Nothing marks the grouping, so a third juxtaposed root is not read as modifying the pair — it starts something new.
+
+**To modify a compound, use a marker, never a third root.** The possessor case for whose it is, the for word for what it serves, the location case or a region nominal for where it sits: *a container for the shell* is `container shell-for`, not `shell container`. This is why `command-place package-place` reads as two places in a list rather than one shell container (D132), and why it cannot be fixed by juxtaposition.
 A root directly before another root modifies it: time limit, failure message.
 
 ## Simultaneity (D64)

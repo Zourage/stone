@@ -817,3 +817,25 @@ This is stated rather than discovered, and the spec says so. Eight sentences add
 - **Quoting remains the binding constraint** on the use case that started this (D129, D131): the receiver can now ask for a name and still cannot be told one. Needs a CLAUDE.md rule 3 decision.
 - Sixteen of the twenty-eight code-request nouns are still uncoined.
 - One sentence, one run. It shows a block cleared, not a domain covered.
+
+---
+
+**D133. Quoting is out of scope and written down as such — D129 and D132 both overweighted it. G36 is closed: a compound is exactly two roots, 234 to 0, and a compound is modified by a marker, never by a third root.** 2026-10-08. Serves goal 1 (D125).
+
+**Quoting, and why the maintainer was right to push back.** D129 named it a gap, D132 called it "the binding constraint". Both overstated it, and the evidence against was already in D129's own result: **that conversation produced correct, running Python and never needed a literal.** The requirement — *count the lines whose value is bigger than ten* — is pure structure, and so is the diagnosis *this value is text, not a number*. **The deadlock the claim rested on was an artefact of the harness**, which gave the two parties no real file and no real message, so *show me the message* could never resolve whatever the language could do. A finding was generalised from a hole the test itself dug.
+
+**The architecture settles it.** In the wrapper this is built for — English → stone → model — **stone carries intent and literals are payload**. A filename does not travel inside the sentence; it rides alongside as a slot value, which is what every real system does, because nobody translates identifiers between human languages either. `report.csv` is the same string everywhere.
+
+**And the corpus had already decided, which nobody read as a decision.** s0188 is `왜 피 요 이카`, *the file's name is this* — deixis, pointing at a name rather than uttering it. It is a real strategy, already taught, and it composes with the ordinals for *the first file*, *the third line*. A slot convention on top of that costs **no roots, no grammar, no rule change**.
+
+**Against which quoting wanted:** an amendment to CLAUDE.md rule 3 (zero Latin characters across 1477 lines, perfectly held), two function words, exceptions to the D59 and D104 marker rules which both have checks behind them, four scripts changed, ~15 sentences — **and an amendment to D50's exact-match bar**, because quoted content is unpredictable by definition and therefore unscoreable. That is the most load-bearing rule in the repo, altered to carry strings that never needed carrying. **Out of scope, recorded, closed.**
+
+**G36 closed, and the counts say something better than a bracketing marker.** Every run of bare roots in the corpus was classified. **234 two-root compounds and zero of three.** Every longer run is more than one constituent: 16 are a subject plus a compound (`value | file-inside`, `machine | early-day`), 8 are the n-times phrase which itself splits `[what number repeat] + [day-LOC]`, one is a compound plus a root (`use-person | fault`), and the single run of four is two compounds side by side (`red line | blue line`, s1310). **The cap is two and it is exceptionless.**
+
+So `package-place` was already at the cap and `command-place package-place` was never ambiguous — it was **outside what the language does**, and no marker would have rescued it. **The rule: a compound is exactly two roots, and a compound is modified with a marker — the possessor, the for word, the location case or a region nominal — never with a third juxtaposed root.** *A container for the shell* is `container shell-for`. Eight sentences added (s1470–s1477) teaching the marked alternatives. **No new vocabulary, no new grammar machinery, and the fix was found by counting rather than by designing** — the D78/D102/D103 method, which also caught that my first instinct, a head-final whole-run rule, is contradicted by s1310.
+
+**Not enforceable by a check, and that is stated rather than hidden.** Whether a run of three is `subject + compound` or `compound + root` is exactly G34's undecidability one level up; both groupings occur and nothing in the script marks which. The rule is real and the corpus follows it; a static check cannot confirm it.
+
+### OPEN
+- The eight new sentences are unmeasured, like everything since test 9.
+- G34 is untouched and is the same undecidability that makes G36 uncheckable.

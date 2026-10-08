@@ -1467,3 +1467,11 @@
 {"id": "s1467", "en": "Show me the folder.", "st": "에 왜 후태 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "compound", "domain-code"], "split": "train"}
 {"id": "s1468", "en": "The user found a fault.", "st": "테파 예 노 파 웨타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
 {"id": "s1469", "en": "The container runs.", "st": "체데 후태 다카", "features": ["direct", "compound", "domain-code"], "split": "train"}
+{"id": "s1470", "en": "Build a container for the shell.", "st": "에 체데 후태 파 다내 후태 헤 리카마", "features": ["direct", "intend", "imperative", "obj", "for", "compound", "domain-code"], "split": "train"}
+{"id": "s1471", "en": "The container's program failed.", "st": "체데 후태 피 세쿠 누타카", "features": ["direct", "past", "poss", "compound", "domain-code"], "split": "train"}
+{"id": "s1472", "en": "The program in the container is slow.", "st": "세쿠 체데 후태 페 파수카", "features": ["direct", "stative", "loc", "compound", "domain-code"], "split": "train"}
+{"id": "s1473", "en": "I'll build a program for the network.", "st": "아 세쿠 파 히리 헤 리투카마", "features": ["direct", "future", "intend", "obj", "for", "domain-code"], "split": "train"}
+{"id": "s1474", "en": "Show me the shell's output.", "st": "에 다내 후태 피 하레 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "poss", "compound", "domain-code"], "split": "train"}
+{"id": "s1475", "en": "The package for the program is new.", "st": "체데 세쿠 헤 파캐카", "features": ["direct", "stative", "for", "domain-code"], "split": "train"}
+{"id": "s1476", "en": "The code in the file is bad.", "st": "시새 왜 페세 페 래카", "features": ["direct", "stative", "loc", "region", "compound", "domain-code"], "split": "train"}
+{"id": "s1477", "en": "I'll run the program in the container.", "st": "아 세쿠 파 체데 후태 페 다투카마", "features": ["direct", "future", "intend", "obj", "loc", "compound", "domain-code"], "split": "train"}
