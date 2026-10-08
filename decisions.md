@@ -839,3 +839,24 @@ So `package-place` was already at the cap and `command-place package-place` was 
 ### OPEN
 - The eight new sentences are unmeasured, like everything since test 9.
 - G34 is untouched and is the same undecidability that makes G36 uncheckable.
+
+---
+
+**D134. Test 10 looked like a regression and was not: a paired A/B puts this week's additions at +1.3 points. The real finding is that D50's bar has been adjudicated from single draws too small to adjudicate it, for eight runs. And taught compounds buy naming at the cost of structural ambiguity, which nobody priced.** 2026-10-08. Write-up in `tests/results/2026-10-08-l.md`. Serves goals 1 and 2 (D125).
+
+**The scare.** Test 10, a fresh 120-item draw: gemini 94.2%, grok 89.2%, claude 88.3%, luna 78.3%. One of four over the bar against three of five in test 9, and every model but Claude down. Controlled to the same four models on pre-D123 material only, **88.9% → 85.9%**.
+
+**It was the draw.** The misses did not sit where the blame would: by band, pre-D123 material missed at 14.1%, D123–D129 at 1.9% and **this week's at 6.2%** — the newest material was the least missed. Held composition was near identical (108 pre-D123 against 103). So a **paired A/B**: the same 116 held sentences present in both corpora, the same four models, train splits differing only by the 43 lines added this week. **All four: 85.1% → 86.4%, +1.3, no model worse, 15 items gained against 9 lost.** The additions are exonerated and the 3-point drop is noise.
+
+**And that is the finding worth more than the coining.** At 120 held items and p≈0.9, one standard error is **2.7 points** and the 95% interval is **±5.4**. **A 120-item draw cannot separate 87% from 93%.** Every run from test 3 on has reported a pass or a miss against D50's 90% from a single draw of 107–125 items, and tests 7 (89.6%), 8, 9 and 10 all sit inside the band where passing and failing are the same result. **Test 9 said three of five models clear the bar; test 10 said one of four — same corpus, same models, different verdict from the draw alone.** This does not overturn test 5's 97.5%, which is more than two standard errors clear. It does mean **those four runs measured the corpus and did not adjudicate it**, and that D126's and D128's hedging about *which* models clear the bar was right for a reason neither stated. **Report an interval, treat any unpaired cross-draw difference under about five points as noise, and prefer the paired design — it costs one extra arm and removes the variance entirely, because every held item is its own control.**
+
+**Second finding, from auditing my own week.** This week's sentences are **14.0% G34-undecidable against the corpus's 6.6%**, and the mechanism is definitional rather than accidental: **a two-root taught compound followed by a case marker *is* the `[root][root][marker]` shape G34 names.** Worse, the ambiguous lines include s1470, s1471 and s1477 — **the very sentences written to teach D133's G36 repair.** D133 says modify a compound with a marker rather than a third root, and you cannot do that without producing G34's string. **G34 and G36 are one problem seen from two sides; D133 relocated it rather than resolving it.**
+
+**The trade that was never priced.** D123 and D131 preferred taught compounds to roots to save syllable budget. **A root is structurally unambiguous; a taught compound is not.** Six compounds saved six forms out of **seventy entries of headroom** and bought a doubled ambiguity rate. Under D125 that trade is backwards: goal 1 tolerates undecidability because a model guesses past it from context, while **goal 2 cannot — every G34 line is a hard stop for a deterministic parser**, and goal 2 is the objective furthest behind. D123's "construction beats compound" was measured on **constructions**, which are unambiguous; extending it to compounds was never checked. **When the budget allows, coin a root rather than teach a compound.**
+
+**Two corrections.** D133's "234 two-root compounds and none of three" conflates runs with compounds: a two-root run may be a compound or two constituents, which is precisely G34. Accurate: **240 runs of two bare roots, 27 of three, 1 of four, none of the latter a single compound.** The cap claim stands; the wording overstated what was counted. And **the GLM null-content bug recurred** — test 9's runner was copied instead of the corrected one — so the fix belongs in the protocol, not in one script.
+
+### OPEN
+- **G34 is now the load-bearing gap**, at 99 sentences and growing with every taught compound. It blocks goal 2 directly.
+- Whether to re-coin the six D131 compounds as roots. Not decided; it would cost six forms and remove six sources of ambiguity.
+- D50's bar needs restating as an interval. Not done here — it amends the repo's central instrument and belongs to the maintainer.

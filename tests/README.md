@@ -8,6 +8,12 @@ Protocol: fresh agents with no access to this repo, context = the corpus **train
 
 **A held sentence may not be a copy of a train sentence** (D93). If its script is already in the train split the English → stone item is answered for the agent, and if its English is already there the other direction is; either way the item scores for free and measures nothing. Test 4 scored two such items before this was caught, and discounting them moved the run from just over the bar to just under it. `scripts/validate.py` now fails on any held line whose `st` or `en` is verbatim in train, so the held set is valid by construction.
 
+**A single draw of ~120 items cannot adjudicate the bar** (D134). At p≈0.9 one standard error is 2.7 points and the 95% interval is ±5.4, so a 120-item run cannot separate 87% from 93%. Test 9 said three of five models clear it and test 10 said one of four — same corpus, same models, different verdict from the draw alone. **Report an interval with the point estimate. Treat any unpaired cross-draw difference under about five points as noise.**
+
+**To ask whether a corpus change helped, pair it** (D134): hold the same sentences out of both corpora, run the same models on both, and compare item by item. Every held item is then its own control and the draw variance disappears. One extra arm; it is the only design that answers the question.
+
+**Never score a field the model did not offer as its answer** (D128), and **do not copy a previous run's script without the fix** — the GLM null-content bug recurred in test 10 for exactly that reason. A reasoning model's scratchpad is not output, and a zero from a model that scored well last run is a harness bug until proven otherwise.
+
 The bar that counts as done: **stone → English 100% meaning-correct, English → stone ≥90% exact**, with every miss read by hand and judged grammatical. A miss that is ungrammatical or changes meaning fails the run.
 
 Score exact match first, then read the near-misses. A miss caused by a word or construction that has no train sentence is a corpus gap, not a model failure; fix the corpus and say so in the result file. A miss caused by the corpus contradicting itself, or by a point the spec never decided, is neither — log it as a grammar gap and say so.
