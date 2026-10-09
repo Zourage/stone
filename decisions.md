@@ -860,3 +860,27 @@ So `package-place` was already at the cap and `command-place package-place` was 
 - **G34 is now the load-bearing gap**, at 99 sentences and growing with every taught compound. It blocks goal 2 directly.
 - Whether to re-coin the six D131 compounds as roots. Not decided; it would cost six forms and remove six sources of ambiguity.
 - D50's bar needs restating as an interval. Not done here — it amends the repo's central instrument and belongs to the maintainer.
+
+---
+
+**D135. The maintainer's live test failed where the repo's tests pass, and the maintainer is right. Three independent adversarial reviews converge: the acceptance test measures corpus self-consistency, and the cue rule is the mechanism that makes it so. Five specific claims checked, all five true. D133 is reversed.** 2026-10-09. Write-up in `tests/results/2026-10-09-m.md`; raw review and round trip in `tests/fixtures/`.
+
+**The prompt that produced this.** The maintainer ran a live two-model conversation and reported total failure, against the repo's ~90%, and said to stop coining and check whether it works at all. Two instruments: a free-text round trip of 20 ordinary sentences none of which are in the corpus, and three models given the whole corpus and told to attack it.
+
+**The language is not broken, and the live failure was probably the harness.** Round trip: 9 faithful, 6 acceptable, 3 degraded, 2 broken — **15 of 20 usable**. A Custom Gem adding instructions, an attachment retrieved rather than read, and a model drifting from interpreting into conversing are each sufficient to produce what was seen.
+
+**But the tests have been measuring the wrong thing, and all three reviewers say so independently.** gemini: "isolated template matching against a synthetic corpus… a combinatorial permutation grid." grok: "template fill on i.i.d. clones of this corpus. That is retrieval." glm: "corpus self-consistency. A test drawn from the corpus cannot detect what the corpus cannot say."
+
+**And all three independently name the mechanism, which is ours.** **The cue rule puts the answer in the question.** D79, D84, D91, D94 and D105 require every marked evidential and stance to carry an English cue, and `validate.py` enforces it: *I'm told* → `케`, *everyone knows that* → `코`, *I insist* → `무`. grok: "The model is translating glosses, not meaning. Strip those crutches, as a user does, and the mapping is underdetermined — which is exactly when use fails." **The rule was added to stop English → stone being undetermined, and it succeeded by deleting the task.** D134 showed those runs cannot adjudicate their own bar; this shows they were not measuring communication in the first place.
+
+**Five claims checked, all true.** (1) **Three byte-identical duplicate pairs** — s0855/s0953, s0938/s1160, s0942/s1055; the D83 check looks for one English with two scripts and is blind to a full duplicate, though all six are `train` so nothing leaked. (2) **The corpus asks six questions it cannot answer**, including **s0069 "Name the file", an imperative the language cannot obey**. (3) **70 of 1477 sentences put the direct evidential on an unwitnessed future** — "I'll fix it, witnessed". (4) **D117 is contradicted 56 to 0**: it says a subordinate restates a shared subject, and on modals, where the subject is necessarily shared, 56 drop it and none restate it; D117 was decided on "2 to 1" and says of itself that it is unchecked. (5) **No dialogue mechanics at all** — 1477 standalone lines, and because the evidential is obligatory a polar question cannot be answered without rebuilding the clause and choosing an epistemic source.
+
+**A sixth, from the round trip, that no previous instrument found: focus particles.** *only, else, other, just, even, instead* — **none has a root.** "It only happens when I open the big one" came back as "It fails when I open the big thing": the word carrying the whole diagnosis vanishes silently. D122 filed *even* and *especially* under quantitative hedging beside *almost*. Wrong bucket — these do not scale a quantity, they **select among alternatives**, which is the core move of debugging talk.
+
+**D133 is reversed.** It declared quoting out of scope yesterday, on the argument that literals are payload and the corpus had settled for deixis. Claim 2 kills it: **the corpus contains six lines that require a name and one imperative it cannot obey.** The language already asks the question and cannot answer itself. That is not an unclaimed register.
+
+### OPEN
+- **The acceptance test needs a companion that is not drawn from the corpus.** The free-text round trip is the candidate and should be formalised; the cue rule means the existing test cannot be repaired by sampling differently.
+- Four concrete defects: the three duplicate pairs, the 70 future/direct lines, D117, and the focus particles.
+- Quoting is back in scope and still needs the rule 3 decision.
+- Nothing here is fixed. This entry is findings only, deliberately — the maintainer stopped the coining to ask whether it works, and the answer should land before more changes do.

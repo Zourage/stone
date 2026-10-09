@@ -1,0 +1,122 @@
+[
+ {
+  "n": 1,
+  "sent": "Can you take a look at this when you get a chance?",
+  "st": "에 코체코디 유 페 이 파 위코디 티캐 추",
+  "back": "Can you look at this when you are free?"
+ },
+ {
+  "n": 2,
+  "sent": "It worked yesterday and now it doesn't.",
+  "st": "우 니로 카유 페 다타카 채 우 이 유 페 다루카",
+  "back": "It ran on the previous day, but it does not run now."
+ },
+ {
+  "n": 3,
+  "sent": "I tried restarting it twice and nothing changed.",
+  "st": "아 네 메루 우 파 메루타카 채 소 토 레타카",
+  "back": "I repeated it two times, but nothing changed."
+ },
+ {
+  "n": 4,
+  "sent": "Do you want me to send you what I did?",
+  "st": "에 아 아 파로타카디 토 파 에 페 카푸코디 티파 추",
+  "back": "Do you want me to give you the thing I did?"
+ },
+ {
+  "n": 5,
+  "sent": "It's not urgent, just annoying.",
+  "st": "우 피 소패 태루카 채 래카",
+  "back": "Its priority is not big, but it is bad."
+ },
+ {
+  "n": 6,
+  "sent": "I think the problem started after the update.",
+  "st": "노 레 후 쿠태타키",
+  "back": "The fault began after the change, I gather."
+ },
+ {
+  "n": 7,
+  "sent": "How long do you reckon it'll take?",
+  "st": "우 야 수포 유 소히투 추",
+  "back": "How much time will it take?"
+ },
+ {
+  "n": 8,
+  "sent": "Let me know if you need anything else from me.",
+  "st": "에 아 호 마소 토 파 테패코 해 에 아 페 워야카마",
+  "back": "If you need more from me, tell me."
+ },
+ {
+  "n": 9,
+  "sent": "I don't understand what it's asking me to do.",
+  "st": "아 우 아 페 차코디 토 파 데하루카",
+  "back": "I don't understand what was asked of me."
+ },
+ {
+  "n": 10,
+  "sent": "Is there a way to do this without breaking the other thing?",
+  "st": "우 토 누루코 해 이 파 파로코디 티캐 추",
+  "back": "If that does not fail, can this be done?"
+ },
+ {
+  "n": 11,
+  "sent": "That fixed it, thanks.",
+  "st": "우 우 파 라타카 에 호하타코디 로카",
+  "back": "It was fixed; that you helped is good."
+ },
+ {
+  "n": 12,
+  "sent": "Sorry, I'm not following.",
+  "st": "아 내타카 아 우 파 데하루카",
+  "back": "I made a mistake; I don't understand it."
+ },
+ {
+  "n": 13,
+  "sent": "Can we go over this tomorrow instead?",
+  "st": "아 에 하 이 파 니래 카유 페 코피코디 티캐 추",
+  "back": "Can we review this tomorrow?"
+ },
+ {
+  "n": 14,
+  "sent": "It only happens when I open the big one.",
+  "st": "우 아 태 토 파 포하코디 유 페 누카",
+  "back": "It fails when I open the big thing."
+ },
+ {
+  "n": 15,
+  "sent": "I'd rather not change anything until we know why.",
+  "st": "아 에 하 대유 파 사코디 유 히 아 토 파 레코디 티파루카",
+  "back": "I don't want to alter it before we know the reason."
+ },
+ {
+  "n": 16,
+  "sent": "Who else has seen this?",
+  "st": "야 예 이 파 위타 추",
+  "back": "Who looked at this?"
+ },
+ {
+  "n": 17,
+  "sent": "Everything else seems fine.",
+  "st": "새 토 로키",
+  "back": "Everything is good, I gather."
+ },
+ {
+  "n": 18,
+  "sent": "I'll be out Friday so let's aim for Thursday.",
+  "st": "아 캐파 카유 포 페 코체루투카 소차 캐파 카유 패카메",
+  "back": "I will not be free on Friday. The goal is Thursday, just a proposal."
+ },
+ {
+  "n": 19,
+  "sent": "Can you explain that more simply?",
+  "st": "에 우 파 타로 하 헤도코디 티캐 추",
+  "back": "Can you explain it easily?"
+ },
+ {
+  "n": 20,
+  "sent": "It's doing the same thing again.",
+  "st": "우 두 토 파 메루카",
+  "back": "It repeats the same thing."
+ }
+]
