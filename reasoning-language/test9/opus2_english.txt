@@ -1,0 +1,12 @@
+11. [it follows from 1, 2, 3, 4, 5, 6; answering 7] Only task B and task C can be done at the same time.
+12. [it follows from 2, 3, 4; answering 8] The 1st worker does task A.
+13. [it follows from 2, 3, 6; next after 12] The 1st worker does task B while the 2nd worker does task C.
+14. [it follows from 4; next after 13] Task D is done after that task B and task C have been done.
+15. [plan; answering 10] I wait for the next message of you.
+16. [it follows from 1, 2, 3; answering 4] Step 12 and step 14 are still true.
+17. [it follows from 2, 6; answering 4] Step 11 and step 13 are currently wrong because only 1 worker exists.
+18. [it follows from 2, 6; answering 5] Any 2 tasks cannot be done at the same time.
+19. [it follows from 18] Least time that the whole set of works need is equal to the total of the time that all tasks need.
+20. [it follows from 1, 3] The total of the time that all tasks need is equal to add(add(3, 2), add(1, 1)).
+21. [it follows from 19, 20; answering 5] Least time that the whole set of works need is equal to 7 hours.
+22. [it follows from 2, 3, 4, 18] The same worker does task A, and then the same worker does task B, and then the same worker does task C, and then the same worker does task D.

@@ -1,0 +1,16 @@
+11. [it follows from 2, 3, 5, 6; answering 7] Only task B and task C can be done at the same time.
+12. [it follows from 2, 3, 4; adding to 11] Task A must be done before all other tasks, and task D must be done after all other tasks.
+13. [it follows from 2, 3, 4, 11; answering 8] Task A is done at the 1st step, and then 2 workers do task B and task C at the same time, and then task D is done.
+14. [plan] I do not compute the least time now.
+15. [plan] I wait for the next message of you.
+16. [told] Only 1 worker exists, and task C needs 1 hour.
+17. [it follows from 16; answering 4] Step 12 is still true.
+18. [it follows from 16; answering 4] Step 11 and step 13 are currently wrong because 1 worker cannot do 2 tasks at the same time.
+19. [plan; retracting 14] I currently compute least time that the whole set of works need.
+20. [it follows from 16] Any 2 tasks cannot be done at the same time.
+21. [it follows from 20] Least time that the whole set of works need is equal to the sum of the time of all tasks.
+22. [given] Task A needs 3 hours, and task B needs 2 hours, and task C needs 1 hour, and task D needs 1 hour.
+23. [it follows from 22] Add(3, 2) is equal to 5, and add(5, 1) is equal to 6, and add(6, 1) is equal to 7.
+24. [it follows from 21, 23; answering 5] Least time that the whole set of works need is equal to 7 hours.
+25. [it follows from 12, 20] Task A is done, and then task B is done, and then task C is done, and then task D is done.
+26. [claim; adding to 25] Task C can be done before task B, and the least time does not change.

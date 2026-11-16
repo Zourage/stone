@@ -1,0 +1,13 @@
+11. [it follows from 2, 3, 4; answering 7] Only task B and task C can be done at the same time.
+12. [claim; answering 8] The worker (call it E) does task A.
+13. [claim; next after 12] Worker E does task B while another worker (call it F) does task C.
+14. [claim; next after 13] Worker E does task D.
+15. [claim] Step 12 and step 14 are still true.
+16. [claim] Step 11 and step 13 are currently wrong.
+17. [apparently; explaining 16] Worker E cannot do 2 tasks at the same time because only 1 worker exists.
+18. [claim] Worker E does task A for 3 hours.
+19. [claim; next after 18] Worker E does task B for 2 hours.
+20. [claim; next after 19] Worker E does task C for 1 hour.
+21. [claim; next after 20] Worker E does task D for 1 hour.
+22. [it follows from 17, 18, 19, 20, 21] Least time that the whole set of works need is equal to 7 hours.
+23. [apparently; explaining 22] 7 is equal to add(3, 2, 1, 1) because worker E can do only 1 task at the same time.
