@@ -126,8 +126,7 @@ class Decoder:
     def hname(self, h):
         if F.parts(h[0]) is None: return h
         if h not in self.hletter:
-            a = [x for x in 'ABCDEFGHJKLMNPQRSTUVWXYZ' if x not in self.hletter.values()]
-            self.hletter[h] = a[0] if a else 'H' + str(len(self.hletter))
+            self.hletter[h] = L.handle_letter(h, self.hletter)
         return self.hletter[h]
 
     def rinfo(self, t):

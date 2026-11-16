@@ -42,11 +42,11 @@ The order of the participants is free and means nothing.
     1: GIVEN fail THEME test KIND ~login .
     = 1. [given] The login test fails.
 
-2: 가 해 느참 사 애 새 포점엄 차 각 .
+2: 가 해 느참 사 애 새 포점엄 차 국 .
     2: GIVEN PAST change AGENT YOU THEME configure.made NAMED S .
     = 2. [given] You changed the setting (call it S).
 
-3: 거 쟈 스청 사 마 다롯 라 챠보터 새 각 .
+3: 거 쟈 스청 사 마 다롯 라 챠보터 새 국 .
     3: RECALLED HABIT read AGENT ALL test KIND ~login THEME S .
     = 3. [recalled] All login tests usually read setting S.
 
@@ -54,11 +54,11 @@ The order of the participants is free and means nothing.
     4: DERIVED 1 2 3 LIKELY cause AGENT STEP 2 THEME STEP 1 .
     = 4. [it follows from 1, 2, 3; likely] Step 2 causes step 1.
 
-5: 구 해 느참 사 애 새 파 각 .
+5: 구 해 느참 사 애 새 파 국 .
     5: ASK PAST change AGENT YOU THEME ONLY S .
     = 5. [question] You changed only setting S?
 
-6: 기 깨춘안 새 각 .
+6: 기 깨춘안 새 국 .
     6: PLAN do.opp THEME S .
     = 6. [plan] I undo setting S.
 ```
@@ -78,7 +78,7 @@ There is no word for "is". A quality, a thing or a relation can be the predicate
     GIVEN inside REL box THEME key .
     = [given] The key is inside the box.
 
-가 ( 체낫 라 하 까름 ) 새 각 .
+가 ( 체낫 라 하 까름 ) 새 박 .
     GIVEN ( error KIND NOT expect ) THEME E .
     = [given] E is an error that is not expected.
 
@@ -97,7 +97,7 @@ There is no word for "is". A quality, a thing or a relation can be the predicate
 - **BY** before the label says whose words the sentence is (dialogue turns, quotations).
 
 ```
-7: 가 다 5 하 해 느참 사 처 우투 새 각 .
+7: 가 다 5 하 해 느참 사 처 우투 새 국 .
     7: GIVEN CONTRAST 5 NOT PAST change AGENT name«Ana» THEME S .
     = 7. [given; in contrast to 5] Ana did not change S.
 
@@ -105,15 +105,15 @@ There is no word for "is". A quality, a thing or a relation can be the predicate
     8: CLAIM CONCEDE 7 EXPLAIN 1 POSSIBLE SURPRISE new.opp THEME data .
     = 8. [claim; even though 7; explaining 1; possible; surprised] The data is old.
 
-채 낙 9: 구 뺘 챠 처 키터 재 페튼 새 두깁 라 체증 .
+채 각 9: 구 뺘 챠 처 키터 재 페튼 새 두깁 라 체증 .
     BY A 9: ASK POLITE CALL name«Ben» DONE publish THEME version KIND new .
     = 9. A: [question; polite; to Ben] The new version has been published?
 
-채 닥 10: 가 때 9 푸 .
+채 낙 10: 가 때 9 푸 .
     BY B 10: GIVEN ANSWER 9 NO .
     = 10. B: [given; answering 9] No.
 
-채 낙 11: 깨 푸펍 .
+채 각 11: 깨 푸펍 .
     BY A 11: SOCIAL thank .
     = 11. A: [social act] Thank.
 ```
@@ -297,7 +297,7 @@ may follow them. Mixing different joiners at one level needs brackets.
     CLAIM IF { MORE big THEME file } { MORE fast.opp THEME load } .
     = [claim] If the file is bigger, then the load is slower.
 
-겨 뒤 각 돠 마 사툭 라 치팟 { 헤즌 새 메 사툭 차 낙 라 { 티 새 각 슈 ( 서합 와 2 워 낙 ) } } .
+겨 뒤 숙 돠 마 사툭 라 치팟 { 헤즌 새 메 사툭 차 죽 라 { 티 새 숙 슈 ( 서합 와 2 워 죽 ) } } .
     CLAIM EACH X IN ALL number KIND even { exist THEME SOME number NAMED Y KIND { EQUAL THEME X THAN ( multiply FIRST 2 SECOND Y ) } } .
     = [claim] For each X in all even numbers: some number such that X is equal to multiply(2, Y) (call it Y) exists.
 ```
@@ -342,7 +342,7 @@ the conclusion outside lists the labels it rests on.
     1: ASSUMED infinite.opp THEME number.group KIND prime .
     = 1. [suppose] The prime set of numbers is finite.
 
-2: 갸 1 따 1 헤즌 새 사툭 차 각 라 히깃 라 ( 튜 떠못 ) .
+2: 갸 1 따 1 헤즌 새 사툭 차 속 라 히깃 라 ( 튜 떠못 ) .
     2: DERIVED 1 UNDER 1 exist THEME number NAMED P KIND prime KIND ( MOST big ) .
     = 2. [it follows from 1; under the supposition of 1] The prime biggest number (call it P) exists.
 
@@ -769,7 +769,7 @@ IF { condition } { then } { else }   EACH h IN expression { ... }   WHILE { cond
     CODE «python» .
     = [code language] Python.
 
-휘 «math» 차 각 .
+휘 «math» 차 목 .
     IMPORT «math» NAMED M .
     = [import library] Math (call it M).
 
@@ -777,7 +777,7 @@ IF { condition } { then } { else }   EACH h IN expression { ... }   WHILE { cond
     DEFINE ( long.ness KIND line ) BE «hyp» .
     = [definition] “linear length” means hyp.
 
-화 ( 써룹음 라 애컨 ) 와 낙 워 닥 회 ( «sqrt» 래 각 와 ( 리랄 와 ( 서합 와 낙 워 낙 ) 워 ( 서합 와 닥 워 닥 ) ) ) .
+화 ( 써룹음 라 애컨 ) 와 각 워 낙 회 ( «sqrt» 래 목 와 ( 리랄 와 ( 서합 와 각 워 각 ) 워 ( 서합 와 낙 워 낙 ) ) ) .
     DEFINE ( long.ness KIND line ) FIRST A SECOND B BE ( «sqrt» OF M FIRST ( add FIRST ( multiply FIRST A SECOND A ) SECOND ( multiply FIRST B SECOND B ) ) ) .
     = [definition] Linear length(A, B) is defined as: M.sqrt(add(multiply(A, A), multiply(B, B))).
 ```
@@ -787,7 +787,7 @@ IF { condition } { then } { else }   EACH h IN expression { ... }   WHILE { cond
     DEFINE ( add.made KIND even ) BE «sum_even» .
     = [definition] “even sum” means sum_even.
 
-화 ( 리랄엄 라 치팟 ) 와 각 회 { 화 낙 회 0 . 뒤 닥 돠 각 { 되 { 티 와 ( 자칵 와 닥 워 2 ) 워 0 } { 화 낙 회 ( 리랄 와 낙 워 닥 ) } } . 희 낙 } .
+화 ( 리랄엄 라 치팟 ) 와 독 회 { 화 눅 회 0 . 뒤 숙 돠 독 { 되 { 티 와 ( 자칵 와 숙 워 2 ) 워 0 } { 화 눅 회 ( 리랄 와 눅 워 숙 ) } } . 희 눅 } .
     DEFINE ( add.made KIND even ) FIRST L BE { DEFINE T BE 0 . EACH X IN L { IF { EQUAL FIRST ( remainder FIRST X SECOND 2 ) SECOND 0 } { DEFINE T BE ( add FIRST T SECOND X ) } } . RETURN T } .
     = [definition] Even sum(L) is defined as: let T be 0; for each X in L: if remainder(X, 2) is equal to 0, then let T be add(T, X); return T.
 ```
@@ -801,7 +801,7 @@ More logic conventions:
 - Statements inside a block are separated by ` . `; none is needed before the closing brace.
 
 ```
-화 ( 째즛 라 아룬 ) 와 각 회 { 화 낙 회 ( 쿠깅 와 ( 세필 와 각 ) 워 2 ) . 되 { 하 툐 와 낙 워 0 } { 희 퓨 } . 희 ( 째즛 와 각 워 낙 ) } .
+화 ( 째즛 라 아룬 ) 와 독 회 { 화 복 회 ( 쿠깅 와 ( 세필 와 독 ) 워 2 ) . 되 { 하 툐 와 복 워 0 } { 희 퓨 } . 희 ( 째즛 와 독 워 복 ) } .
     DEFINE ( item KIND middle ) FIRST L BE { DEFINE N BE ( quotient FIRST ( count FIRST L ) SECOND 2 ) . IF { NOT MORE FIRST N SECOND 0 } { RETURN EMPTY } . RETURN ( item FIRST L SECOND N ) } .
     = [definition] Central item(L) is defined as: let N be quotient(count(L), 2); if N is not more than 0, then return nothing; return item(L, N).
 ```
@@ -818,11 +818,11 @@ Mathematics:
 - **Proof steps.** Open each step with the evidence particle (GIVEN, ASSUMED, DERIVED with labels) and cite the labels. State what is being supposed with ASSUMED and discharge it with a DERIVED IF sentence.
 
 ```
-거 뒤 각 돠 마 비톳 라 히혼 { 티 새 ( 너 각 사툭 라 치팟안 ) 슈 ( 리랄안 와 ( 서합 와 2 워 각 ) 워 1 ) } .
+거 뒤 낙 돠 마 비톳 라 히혼 { 티 새 ( 너 낙 사툭 라 치팟안 ) 슈 ( 리랄안 와 ( 서합 와 2 워 낙 ) 워 1 ) } .
     RECALLED EACH B IN ALL integer KIND positive { EQUAL THEME ( ORD B number KIND even.opp ) THAN ( add.opp FIRST ( multiply FIRST 2 SECOND B ) SECOND 1 ) } .
     = [recalled] For each B in all positive integers: the B-th odd number is equal to subtract(multiply(2, B), 1).
 
-거 되 { 애룽 새 구굴엄 차 낙 스 1 류 뒤 각 돠 마 비톳 라 히혼 { 되 { 애룽 새 낙 스 각 } { 애룽 새 낙 스 ( 리랄 와 각 워 1 ) } } } { 애룽 새 낙 스 마 비톳 라 히혼 } .
+거 되 { 애룽 새 구굴엄 차 각 스 1 류 뒤 낙 돠 마 비톳 라 히혼 { 되 { 애룽 새 각 스 낙 } { 애룽 새 각 스 ( 리랄 와 낙 워 1 ) } } } { 애룽 새 각 스 마 비톳 라 히혼 } .
     RECALLED IF { true THEME say.made NAMED A ABOUT 1 ANDC EACH B IN ALL integer KIND positive { IF { true THEME A ABOUT B } { true THEME A ABOUT ( add FIRST B SECOND 1 ) } } } { true THEME A ABOUT ALL integer KIND positive } .
     = [recalled] If the statement (call it A) is true about 1, and for each B in all positive integers: if statement A is true about B, then statement A is true about add(B, 1), then statement A is true about all positive integers.
 

@@ -15,6 +15,7 @@ Given a language model and a set of instructions, can the model write and reason
 | `OVERVIEW.md` | Two-page description of the language and where it stands |
 | `lang/SPEC.md` | The rule sheet given to models (generated) |
 | `lang/WORDS.md` | The word list given to models (generated) |
+| `HANDOFF.md` | State, settled decisions and open questions, for whoever continues the work |
 | `NOTES.md` | Running work log: every design decision and test result, in order |
 
 ## The tools (`lang/`)
@@ -56,6 +57,7 @@ Each writer was a fresh model instance given only the rule sheet, the word list 
 | `test6` | Science and computing | 20 writers, 746 sentences |
 | `test7` | Heavy chemistry, neuroscience and mixed science, under the "no English outside code" rule | 14 files, 573 sentences |
 | `test8` | Three checks: round trip of loan-heavy passages, scope ambiguity, tone labels (`test8/results.json`) | 52 agents |
+| `test9` | A task and a correction given only in the language, across an interrupted two-turn exchange, two models | 4 writers |
 | `runs/` | The batch scripts and each writer's returned notes (`*.journal.jsonl`) |
 | `scratch/` | Small hand-written test sentences used while fixing the parser |
 

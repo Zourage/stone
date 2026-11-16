@@ -61,8 +61,10 @@ def tokens_native(text, lex=None):
             out.append(tok(s, s)); continue
         if s == '.':
             out.append(tok('.', '.')); continue
-        if re.fullmatch(r'\d+:', s):
+        if re.fullmatch(r'\d+[A-Za-z]?:', s):
             out.append(tok('LABEL', s[:-1])); continue
+        if re.fullmatch(r'\d+[A-Za-z]', s):                          # a reference to a lettered label: 3A
+            out.append(tok('D', s)); continue
         if re.fullmatch(r'-?\d+(\.\d+)?', s):
             out.append(tok('D', s)); continue
         if s.endswith('.') and len(s) > 1:      # full stop glued to a word
@@ -132,8 +134,10 @@ def tokens_gloss(text, lex=None):
             else:
                 out.append(tok('N', nm))
             continue
-        if re.fullmatch(r'\d+:', s):
+        if re.fullmatch(r'\d+[A-Za-z]?:', s):
             out.append(tok('LABEL', s[:-1])); continue
+        if re.fullmatch(r'\d+[A-Za-z]', s):                          # a reference to a lettered label: 3A
+            out.append(tok('D', s)); continue
         if re.fullmatch(r'-?\d+(\.\d+)?', s):
             out.append(tok('D', s)); continue
         if s.endswith('.') and len(s) > 1 and not re.fullmatch(r'[a-z]+(\.[a-z]+)+', s):
@@ -166,6 +170,18 @@ def tokens_gloss(text, lex=None):
     return out, errs
 
 
+HLET = 'ABCDEFGHJKLMNPQRSTUVWXYZ'
+
+
+def handle_letter(h, taken):
+    """The letter shown for a handle. The first 24 suggested handles always get the same letter, in any text."""
+    if h in F.HANDLE_FORMS[:24] and HLET[F.HANDLE_FORMS.index(h)] not in taken.values():
+        return HLET[F.HANDLE_FORMS.index(h)]
+    n = 1
+    while 'H' + str(n) in taken.values(): n += 1
+    return 'H' + str(n)
+
+
 def to_native(toks, lex=None, hmap=None):
     """tokens -> native text. Handles get suggested blocks in order of appearance."""
     lex = lex or LEX
@@ -182,7 +198,9 @@ def to_native(toks, lex=None, hmap=None):
         elif k == 'H':
             if F.parts(v[0]) is not None: out.append(v)
             else:
-                if v not in hmap: hmap[v] = F.HANDLE_FORMS[len(hmap)]
+                if v not in hmap:
+                    fixed = F.HANDLE_FORMS[HLET.index(v)] if v in HLET else None
+                    hmap[v] = fixed if fixed and fixed not in hmap.values() else [x for x in F.HANDLE_FORMS[24:] + F.HANDLE_FORMS[:24] if x not in hmap.values()][0]
                 out.append(hmap[v])
         elif k == 'L': out.append(F.loan_enc(v))
         elif k == 'N': out.append('«' + v + '»')
@@ -210,8 +228,7 @@ def to_gloss(toks):
         elif k == 'H':
             if F.parts(v[0]) is None: out.append(v)
             else:
-                if v not in hmap:
-                    n = len(hmap); hmap[v] = letters[n % 24] + (str(n // 24) if n >= 24 else '')
+                if v not in hmap: hmap[v] = handle_letter(v, hmap)
                 out.append(hmap[v])
         elif k == 'L': out.append('~' + v)
         elif k == 'N': out.append('«' + v + '»')
@@ -393,7 +410,7 @@ class Parser:
             return self.chain()
         if self.isp(('YES', 'NO')) and self.peek(1)['t'] in ('.', '}'):
             return {'k': 'frag', 'phrase': self.phrase()}
-        if self.starts_clause() or self.scope_start():
+        if self.starts_clause() or self.scope_start() or self.block_then_conj():
             return self.chain()
         return {'k': 'frag', 'phrase': self.phrase()}
 
@@ -403,9 +420,22 @@ class Parser:
         while self.isp('NOT', k=j) or self.isp(cls=('modal', 'strength', 'attitude'), k=j): j += 1
         return j > 0 and self.peek(j)['t'] == '{'
 
+    def block_then_conj(self):
+        """A bare { } block that a clause joiner follows: one side of a joined pair of blocks."""
+        if self.peek()['t'] != '{': return False
+        d = 0; j = 0
+        while True:
+            t = self.peek(j)['t']
+            if t == 'EOF': return False
+            if t == '{': d += 1
+            if t == '}':
+                d -= 1
+                if d == 0: return self.isp(CLAUSE_CONJ, k=j + 1)
+            j += 1
+
     def conjunct(self):
         if self.isp(('IF', 'EACH', 'WHILE')): return self.body(nochain=True)
-        if self.scope_start():                                      # scope by nesting: the word covers exactly its block
+        if self.scope_start() or self.peek()['t'] == '{':                                      # scope by nesting: the word covers exactly its block
             ops = []
             while self.peek()['t'] != '{': ops.append(self.take()['v'])
             return {'k': 'scoped', 'ops': ops, 'block': self.block()}

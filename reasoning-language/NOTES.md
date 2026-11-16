@@ -258,3 +258,13 @@ User rule: outside code, no English at all; loanwords must be used. Implemented:
 **Parser fixes from test8.** A number written in `« »` may stand before its unit (`«8×10^-3» «s^-1»`). Group abbreviations (Ph, Me, Et, Bu, Bn, Cp, Ts, Tf, Ac) count as part of a chemical formula.
 
 **Open, from the 147 writer notes.** Sense collisions between roots and technical terms (base, complex, add, share, return); whether a term may mix a root and a loan; no word for "usually" of a state or "first" as "before anything else"; whether Pd(0) and C-Br are formulas or loans (writers guessed both ways); a relation after ANDC inside a block is refused (P5, sentence 4); sentence labels such as "1A" are not accepted.
+
+## UPDATE 13: test9, three parser fixes, handoff
+
+**test9.** A scheduling task and a correction, both written only in the language, sent across an interrupted two-turn exchange to four writers (two per model). All four answered in the language, held off computing when asked, took the correction by pointing at their own numbered sentences, and gave the right total. Every sentence parsed. No loans were involved, and the word list was in context.
+
+**Fixes.** Handles keep the same display letter in every file. Two bare blocks may be joined by a clause joiner. Labels may carry a letter (`1A:`).
+
+**Not done, by decision.** The seven test7 tasks stopped by the provider's safety systems were not rerun in the test9 format. See `HANDOFF.md`.
+
+**Handoff.** `HANDOFF.md` holds the state, settled decisions, open questions and the lines drawn.
