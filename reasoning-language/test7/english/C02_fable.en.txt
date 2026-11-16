@@ -1,0 +1,46 @@
+[heading] Catalytic loop of the Suzuki Miyaura cross coupling.
+1. [recalled] Akira Suzuki and Norio Miyaura published the reaction that is a cross coupling (call it A) in year 1979.
+2. [recalled] Reaction A joins 2 carbons of kind sp2 with bond C-C, and reaction A uses the palladium as the catalyst.
+3. [recalled; as an example of 2] 4 Bromotoluene (call it B) and the phenylboronic acid (call it C) react to 4 Methylbiphenyl (call it D).
+4. [recalled; detailing 3] The reaction of step 3 uses the amount that is 1–5 mol% of Pd(PPh3)4, and the base such as K2CO3 (call it E), and the solvent that is a water and a toluene at the temperature that is about 80 °C.
+5. [recalled] Reaction A uses PPh3 (namely triphenylphosphine) as the ligand of the palladium.
+6. [recalled] For each F in all ligands PPh3: F gives 2 electrons to the palladium.
+7. [recalled] The rule that is 18 electrons says that the complex of the metal that has 18 valence electrons is very stable.
+8. [recalled] Pd(PPh3)4 has 18 electrons because Pd(0) has 10 electrons of kind d, and 4 ligands give 8 electrons.
+9. [it follows from 7, 8] Pd(PPh3)4 is stable, but Pd(PPh3)4 is not active as the catalyst.
+10. [recalled] Pd(PPh3)4 loses 2 ligands before the loop, and so Pd(PPh3)2 with 14 electrons (call it G) appears.
+11. [recalled] G is active because the empty place exists at G.
+[heading] Step 1 (namely oxidative addition).
+12. [recalled] G enters bond C-Br of B, and so the complex (namely Ar-Pd(II)-Br) (call it H) appears.
+13. [recalled] Ar means the 4 Tolyl group.
+14. [recalled] The oxidation state of the palladium changes from 0 to 2 because the palladium gives 2 electrons to 2 new bonds.
+15. [recalled; adding to 14] The tally of the electron changes from 14 to 16.
+16. [recalled] Step 1 is often a slowest step.
+17. [recalled; adding to 16] Step 1 is faster about bond C-I than about bond C-Br, and step 1 is faster about bond C-Br than about bond C-Cl.
+18. [recalled; explaining 17] The energy of bond C-Br of the aryl bromide is equal to about 335 kJ/mol, and the energy of bond C-Cl is equal to about 400 kJ/mol.
+[heading] Step 2 (namely transmetalation).
+19. [recalled] Step 2 moves the phenyl group from the boron to the palladium, and the phenyl group enters complex H in place of the bromide.
+20. [claim] Many students believe that base E only deletes the acid that the reaction makes, and step 2 does not need base E.
+21. [recalled; rebutting 20; emphatic] The believe product of step 20 is wrong.
+22. [recalled; explaining 21] Step 2 does not happen almost unless base E exists because acid C is too weak as the giver of the group.
+23. [recalled] Ion OH- from base E binds the boron of acid C, and so the boronate ion (namely PhB(OH)3-) (call it J) appears.
+24. [recalled] The boron of ion J has 4 bonds and the negative charge, and so that the phenyl group moves to the palladium is easier.
+25. [claim; adding to 24] Another way exists.
+26. [recalled; detailing 25] Ion OH- enters complex H at the other way in place of the bromide, and then complex Ar-Pd-OH and acid C react.
+27. [claim] The scientist does not agree about whether [question] which way is more important? yet.
+28. [recalled; as a result of 19] The complex (namely Ar-Pd(II)-Ph) (call it K) appears, and B(OH)3 and ion Br- leave from the loop.
+[heading] Step 3 (namely reductive elimination).
+29. [recalled] 2 groups of complex K must cis before step 3.
+30. [recalled] If 2 groups of complex K trans, then the form of complex K must change to the cis before step 3.
+31. [recalled] Step 3 joins 2 groups with new bond C-C, and so D appears, and the palladium returns to G.
+32. [recalled; adding to 31] The oxidation state of the palladium changes from 2 to 0.
+33. [it follows from 31] G can again enter the loop, and so reaction A needs only the small amount of the palladium.
+34. [recalled] If the ligand is bigger, then step 3 is faster.
+35. [recalled] If the ligand gives the electron more to the palladium, then step 1 is faster.
+[heading] Side reaction (namely beta hydride elimination).
+36. [recalled] If the palladium binds the alkyl group (call it L), and the beta carbon of group L has the hydrogen, and the empty place exists at the palladium, then the beta hydride elimination can happen.
+37. [recalled; detailing 36] The hydrogen moves from the beta carbon to the palladium, and so the alkene and complex Pd-H appear in place of the product that is wanted.
+38. [it follows from 36] The side reaction is not important at the reaction of step 3 because the side reaction would make the benzyne from the aryl group, and the benzyne is very unstable.
+39. [recalled; in contrast to 38] The side reaction is important when the scientists use the alkyl reagent.
+40. [claim; restating the previous sentence] The loop contains 3 steps (namely oxidative addition, and transmetalation, and reductive elimination), and the palladium varies between Pd(0) and Pd(II).
+41. [recalled; aside] Akira Suzuki got the Nobel prize about the chemistry in year 2010 because of reaction A.

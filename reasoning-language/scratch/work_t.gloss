@@ -1,0 +1,5 @@
+1: CLAIM EQUAL THEME ~hba 1 «c» OF A THAN 48 «mmol/mol» .
+2: CLAIM use AGENT WE THEME virus KIND ~aav 5 ~ef 1 «a» ~dio ~enphr 3.0 .
+3: CLAIM bind AGENT ~ser 195 THEME NAME ( 11 ~cis ~retinal ) ANDC exist THEME «Pd(0)» ANDC exist THEME receptor KIND 5 ~ht 1 «A» .
+4: CLAIM write AGENT NAME ( ~okafor ~lindqvist ) TO NAME ( ~jean ~baptiste ~tanaka ) ABOUT «GW» 170817 .
+5: CLAIM EQUAL THEME «kH/kD» THAN 7 ANDC exist THEME «5'-NGG-3'» ANDC exist THEME «[4+2]» .

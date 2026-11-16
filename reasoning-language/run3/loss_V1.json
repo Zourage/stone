@@ -1,0 +1,780 @@
+[
+ {
+  "passage": "H01",
+  "source": "A FAMISHED FOX saw ... (the whole narration)",
+  "lost": "No opener marks storytelling: GIVEN claims the events are in the context or observed, so fiction decodes as reported fact.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "speech act / opener",
+  "fix": "opener NARRATE (told as story, not vouched for)"
+ },
+ {
+  "passage": "H01",
+  "source": "A ... fox / The Grapes",
+  "lost": "First-mention indefinite versus already-known definite is not marked; a bare root is ambiguous between a, the, generic and plural, and only NAMED handles track identity.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "definiteness",
+  "fix": "rule: bare root without handle = new/indefinite; handle = definite (state it in the spec)"
+ },
+ {
+  "passage": "H01",
+  "source": "clusters, grapes, tricks",
+  "lost": "Singular versus plural is unmarked, and SOME does not say whether one or several.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "number",
+  "fix": "quantifier slot: add MANY (plural) beside the numerals"
+ },
+ {
+  "passage": "H01",
+  "source": "saw",
+  "lost": "The perceiver has to be coded AGENT (who acts) though seeing is not an action; there is no experiencer role.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "role inventory",
+  "fix": "state that AGENT covers experiencers, or add role EXPERIENCER"
+ },
+ {
+  "passage": "H01",
+  "source": "she could not reach them",
+  "lost": "Ability (can/could) has no construct; I used a root 'able' with a FOR block, which is close to smuggling a modal in as a content word.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality",
+  "fix": "modal slot after aspect: CAN, MUST, MAY"
+ },
+ {
+  "passage": "H01",
+  "source": "for she could not reach them",
+  "lost": "There is no sentence relation for 'the reason is'; RESULT only runs the other way, so the reason had to be embedded as a CAUSE block.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse relation (reason)",
+  "fix": "relation REASON (inverse of RESULT)"
+ },
+ {
+  "passage": "H01",
+  "source": "At last",
+  "lost": "The sense that the event comes finally, after long effort and delay, is lost; SEQUENCE plus 'WHEN end' gives only order.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "phase / culmination",
+  "fix": "phase particles in the aspect slot: STILL, ALREADY, FINALLY"
+ },
+ {
+  "passage": "H01",
+  "source": "turned away, hiding her disappointment and saying",
+  "lost": "Simultaneity of three actions is not expressible between sentences (only SEQUENCE); hiding was pushed into a WITH manner block and saying became a separate ADD sentence with no time link.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "time relation between events",
+  "fix": "relation MEANWHILE (same time as target sentence)"
+ },
+ {
+  "passage": "H01",
+  "source": "saying: \"The Grapes are sour, and not ripe as I thought.\"",
+  "lost": "Direct speech cannot be given in the language: a block holds one clause, so the quote became three separate 'say' sentences, and the speaker's 'I' had to be replaced by the handle F because ME always means the writer.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "reported speech",
+  "fix": "quote block that may hold several sentences and inside which ME/YOU shift to the quoted speaker"
+ },
+ {
+  "passage": "H01",
+  "source": "hanging / are sour / as I thought",
+  "lost": "The spec does not say whether unmarked or PAST time inside a block is counted from the writer's now or from the containing clause, so 'the grapes are sour (then)' and 'I thought (earlier than saying)' are ambiguous.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "embedded tense",
+  "fix": "rule: time inside a block is relative to the containing clause"
+ },
+ {
+  "passage": "H01",
+  "source": "FAMISHED FOX / The Grapes (capitals)",
+  "lost": "Typographic capitals of the fable style are dropped.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "typography",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "H02",
+  "source": "A recipient MUST interpret",
+  "lost": "The normative keyword MUST (as against SHOULD or MAY) has no particle; a root 'oblige' carries it only by lexical choice.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality (deontic)",
+  "fix": "modal slot: MUST, SHOULD, MAY"
+ },
+ {
+  "passage": "H02",
+  "source": "A recipient ... a received protocol element ... for it ... the sender",
+  "lost": "A rule about any arbitrary recipient, element and sender cannot bind its variables in one sentence; I had to stage an ASSUMED scenario sentence to create handles R, E, S, which reads as one particular case.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "genericity / bound variables",
+  "fix": "quantifier ANY whose NAMED handle is a variable scoped over the following sentences until rebound"
+ },
+ {
+  "passage": "H02",
+  "source": "unless the recipient has determined",
+  "lost": "Exception to a default rule is flattened to IF NOT, losing the rule-plus-exception structure.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "exception",
+  "fix": "body connective UNLESS block block"
+ },
+ {
+  "passage": "H02",
+  "source": "this specification",
+  "lost": "There is no demonstrative or self-reference to the present document; 'this' became an ordinary new handle D.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "deixis",
+  "fix": "head THIS (the present text/document or the thing pointed at)"
+ },
+ {
+  "passage": "H02",
+  "source": "including extensions to this specification",
+  "lost": "The scope-widening aside 'including X' had to become a separate ADD sentence repeating the predicate, and it no longer attaches to the noun it clarifies.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "inclusion / apposition",
+  "fix": "linker INCLUDING after a head"
+ },
+ {
+  "passage": "H02",
+  "source": "(through experience or configuration)",
+  "lost": "OR joins only whole clauses, so a two-word alternative needed an extra sentence with two full blocks, and its parenthetical status is lost.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "allow AND / OR between phrases under one role"
+ },
+ {
+  "passage": "H02",
+  "source": "might disregard",
+  "lost": "'Might' here licenses the server's behaviour and scopes over the consequent only; POSSIBLE is the writer's confidence over the whole IF sentence, so the decoded text reads as a guess about what happens.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "modality scope",
+  "fix": "modal MAY in the clause-level modal slot, usable inside blocks"
+ },
+ {
+  "passage": "H02",
+  "source": "a specific implementation version ... certain content codings",
+  "lost": "Specific-but-unnamed reference ('certain') collapses into SOME, which also means any-some.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "specificity",
+  "fix": "quantifier PARTICULAR"
+ },
+ {
+  "passage": "H02",
+  "source": "a specific implementation version that is known to fail on receipt of",
+  "lost": "A relative clause containing further clauses cannot use SELF unambiguously, and the handle is bound only after the modifiers, so the restrictive condition was moved to a BACKGROUND sentence and no longer restricts.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "relative clause nesting",
+  "fix": "rule: SELF = head of the nearest enclosing KIND block; allow NAMED directly after the head"
+ },
+ {
+  "passage": "H02",
+  "source": "what is implied by those semantics",
+  "lost": "A headless relative needs a dummy root 'thing' as head.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "headless relative",
+  "fix": "allow a block alone after KIND-less WHAT-free head, e.g. head THAT"
+ },
+ {
+  "passage": "H03",
+  "source": "their reliability ... and ... how complex bonding affects predictions ... remain unclear",
+  "lost": "Two coordinated subjects cannot share one predicate; the sentence is split and the predicate repeated.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "AND between phrases under one role"
+ },
+ {
+  "passage": "H03",
+  "source": "more importantly",
+  "lost": "Ranking one conjunct above the other needs an extra sentence comparing STEP labels.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse ranking",
+  "fix": "none needed beyond AND; or relation ADD with EMPHASIS documented as 'more important'"
+ },
+ {
+  "passage": "H03",
+  "source": "remain unclear",
+  "lost": "Persistence of a state up to now (still) is not marked; ONGOING says only that it holds.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "phase / persistence",
+  "fix": "aspect slot: STILL"
+ },
+ {
+  "passage": "H03",
+  "source": "DFT-level accuracy",
+  "lost": "Equal-degree comparison has no construct (THAN gives only 'more'); I used a KIND 'level OF «DFT»' compound.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "comparison (equative)",
+  "fix": "role AS for the standard of equality"
+ },
+ {
+  "passage": "H03",
+  "source": "Among materials with competing bonding regimes",
+  "lost": "The partitive frame 'within this class' is stretched onto AT (place).",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "frame / partitive",
+  "fix": "role AMONG"
+ },
+ {
+  "passage": "H03",
+  "source": "including defective and curved graphitic regions, amorphous regions, and closed/open pores",
+  "lost": "A five-item non-exhaustive list takes five EXAMPLE sentences, each repeating the predicate.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "lists",
+  "fix": "AND between phrases; linker INCLUDING for non-exhaustive members"
+ },
+ {
+  "passage": "H03",
+  "source": "defective and curved graphitic regions",
+  "lost": "The source is vague between regions that are both and two kinds of region; stacked KIND forces 'both', separate sentences force 'two kinds'.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "coordination of modifiers",
+  "fix": "AND between modifiers versus AND between phrases"
+ },
+ {
+  "passage": "H03",
+  "source": "we systematically evaluate / We find",
+  "lost": "Authorial 'we' (several authors, excluding the reader) is reduced to singular ME.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "person / number",
+  "fix": "head US (writer plus others); separate inclusive form optional"
+ },
+ {
+  "passage": "H03",
+  "source": "in hard carbon / on graphene",
+  "lost": "AT is the only place role, so 'inside' versus 'on the surface of' (a real physical difference here) needs relational nouns: AT inside OF, AT surface OF.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "spatial relation",
+  "fix": "document the pattern AT (relational-root OF x); no particle needed"
+ },
+ {
+  "passage": "H03",
+  "source": "fail to accurately capture",
+  "lost": "NOT negates a whole clause; negating only the manner (captures, but not accurately) needs an extra wrapping block.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "negation scope",
+  "fix": "allow NOT before a role phrase or modifier"
+ },
+ {
+  "passage": "H03",
+  "source": "across different local Na/C motifs",
+  "lost": "Distribution over a range of cases ('across') is flattened to AT.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "distributive range",
+  "fix": "role AMONG (same particle as the partitive)"
+ },
+ {
+  "passage": "H03",
+  "source": "their reliability ... how complex bonding affects ... remain unclear",
+  "lost": "Embedded questions rely on WHAT inside a non-ASK block, which the spec does not define, and 'how reliable' (a question of degree) has no slot for WHAT at all.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "embedded question",
+  "fix": "rule: a block containing WHAT is an indirect question; particle WHETHER for embedded yes/no"
+ },
+ {
+  "passage": "H04",
+  "source": "(the whole passage: asserted philosophical claims)",
+  "lost": "No opener fits a claim the writer simply asserts on their own authority or argument: it is not in context, not derived from labelled steps, not background recall, and not merely supposed.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "speech act / opener",
+  "fix": "opener CLAIM (writer asserts as own position)"
+ },
+ {
+  "passage": "H04",
+  "source": "which are the second objects of human reason",
+  "lost": "A non-restrictive aside cannot attach to its noun (KIND narrows); it became a separate BACKGROUND sentence.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "parenthetical / apposition",
+  "fix": "linker ASIDE for a non-narrowing modifier"
+ },
+ {
+  "passage": "H04",
+  "source": "are the second objects of human reason",
+  "lost": "The predicate slot takes a bare root, so 'X is a (modified noun phrase)' has no direct form; I used 'equal THEME x TO (phrase)', which claims identity rather than class membership.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "copula / classification",
+  "fix": "allow BE phrase as a predicate outside DEFINE"
+ },
+ {
+  "passage": "H04",
+  "source": "second",
+  "lost": "Ordinals have no construct; I used a root 'second' as a KIND modifier.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "ordinal",
+  "fix": "linker NTH + number"
+ },
+ {
+  "passage": "H04",
+  "source": "in the same manner ... of a like nature ... the same facility",
+  "lost": "Sameness and likeness comparisons are forced through roots 'same/similar' with THAN or TO, though THAN is defined only as 'more than'.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "comparison (equative)",
+  "fix": "role AS for the standard of equality/similarity"
+ },
+ {
+  "passage": "H04",
+  "source": "the foregoing",
+  "lost": "Reference back to earlier discourse as an entity works only if that text was labelled or handled; an invented context sentence was needed.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse deixis",
+  "fix": "head ABOVE (what was just discussed), or none: excerpt artefact"
+ },
+ {
+  "passage": "H04",
+  "source": "however great",
+  "lost": "The 'no matter how great' concessive is lost; a plain IF {great} suggests the difference holds only when the evidence is great.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "concessive conditional",
+  "fix": "allow focus EVEN before IF (EVEN IF), with WHAT allowed as a degree"
+ },
+ {
+  "passage": "H04",
+  "source": "our evidence",
+  "lost": "Inclusive generic 'we' (people in general, writer and reader included) has no head; replaced by root 'human'.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "person / number",
+  "fix": "head US"
+ },
+ {
+  "passage": "H04",
+  "source": "is still possible",
+  "lost": "Logical possibility as the thing asserted cannot use POSSIBLE (which is the writer's confidence); a root 'possible' is needed and a careless encoder would turn the thesis into a hedge.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality (alethic)",
+  "fix": "modal slot: CAN usable in any clause"
+ },
+ {
+  "passage": "H04",
+  "source": "still",
+  "lost": "Concessive 'still' (possible even though false) is dropped.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "phase / persistence",
+  "fix": "aspect slot: STILL"
+ },
+ {
+  "passage": "H04",
+  "source": "can never imply",
+  "lost": "Impossibility plus 'never' needs a wrapped 'NOT possible THEME { ... WHEN SOME time }'; there is no temporal quantifier of the event itself.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "temporal quantification",
+  "fix": "document WHEN ALL/NO/SOME time as the frequency pattern"
+ },
+ {
+  "passage": "H04",
+  "source": "because it can never imply ..., and is conceived by the mind",
+  "lost": "Two coordinated reasons: one fits in a CAUSE block, the other two sentences can only be tied back with BACKGROUND, so their status as reasons is weakened.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "discourse relation (reason)",
+  "fix": "relation REASON"
+ },
+ {
+  "passage": "H04",
+  "source": "as if ever so conformable to reality",
+  "lost": "The counterfactual comparison (as easily as it would be were it true) is replaced by a comparison with things that do conform; no marking that the standard is contrary to fact.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "counterfactual",
+  "fix": "time-slot particle UNREAL for a clause held contrary to fact"
+ },
+ {
+  "passage": "H04",
+  "source": "ever so",
+  "lost": "Degree intensification has no slot.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "degree",
+  "fix": "degree slot before a root: VERY, SLIGHTLY, TOO, ENOUGH"
+ },
+ {
+  "passage": "H04",
+  "source": "Matters of fact ... are not ascertained / is conceived by the mind",
+  "lost": "Passives keep the topic first; role order is declared meaningless and no topic marker exists, so what the sentence is about is not recoverable.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "information structure",
+  "fix": "rule: first role phrase is the topic"
+ },
+ {
+  "passage": "H05",
+  "source": "let me be very clear ... YOU ARE WRONG",
+  "lost": "Two layers of force (announced bluntness, then shouting capitals on the conclusion only) collapse into one sentence-level EMPHASIS with no degree and no way to aim it at the consequent.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "emphasis",
+  "fix": "allow attitude at the start of a block; focus particle usable on the predicate"
+ },
+ {
+  "passage": "H05",
+  "source": "you as a maintainer",
+  "lost": "Acting 'in the capacity of' has no role; a restrictive KIND clause on YOU is used, which reads oddly as 'the you who maintains'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "capacity / role",
+  "fix": "role AS (shared with the equative proposal)"
+ },
+ {
+  "passage": "H05",
+  "source": "who or what can use your code",
+  "lost": "Permission 'can' needs a root 'permit' and an extra block; who/what (person or machine) merges into one WHAT.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality",
+  "fix": "modal slot: MAY"
+ },
+ {
+  "passage": "H05",
+  "source": "I respect you technically",
+  "lost": "The limiting 'in technical respects' (with its hint: not necessarily otherwise) is forced onto AT with a dummy noun.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "respect / domain",
+  "fix": "role ABOUT (topic or respect)"
+ },
+ {
+  "passage": "H05",
+  "source": "working with you",
+  "lost": "Accompaniment has no role: WITH is defined as means or manner, so 'work WITH YOU' decodes as 'work by means of you'.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "role inventory (comitative)",
+  "fix": "extend WITH to company, or add role ALONG"
+ },
+ {
+  "passage": "H05",
+  "source": "And no,",
+  "lost": "Rejecting a conclusion the reader is presumed to draw has no form; NO answers only an actual ASK, so plain NOT loses the 'contrary to what you may think'.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "denial of presumed claim",
+  "fix": "relation CORRECT (rejects an assumed or implied claim)"
+ },
+ {
+  "passage": "H05",
+  "source": "YOU ARE WRONG / I like working with you / my bullshit",
+  "lost": "Anger, warmth, vulgar register and self-mockery have no attitude; only EMPHASIS, POLITE, REGRET, SURPRISE exist.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "tone / register",
+  "fix": "attitude list: add ANGER, WARM, BLUNT"
+ },
+ {
+  "passage": "H05",
+  "source": "at times",
+  "lost": "Occasional frequency is reachable only as 'WHEN SOME time'; HABIT would overstate it.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "frequency",
+  "fix": "document WHEN SOME time; or aspect SOMETIMES"
+ },
+ {
+  "passage": "H05",
+  "source": "I say some stupid things at times",
+  "lost": "Its role as the justification for the preceding sentence can only be tagged BACKGROUND.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse relation (reason)",
+  "fix": "relation REASON"
+ },
+ {
+  "passage": "H05",
+  "source": "if you as a maintainer",
+  "lost": "The 'you' addresses one person and, generically, any maintainer; YOU has no number or generic reading.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "person / number",
+  "fix": "allow quantifier before YOU (ALL YOU)"
+ },
+ {
+  "passage": "H05",
+  "source": "yes-men",
+  "lost": "The idiom is unpacked into a relative clause.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "idiom",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "H06",
+  "source": "SOCRATES: ... BOY: ...",
+  "lost": "There is no speaker field: each turn needs a frame sentence 'say AGENT x THEME STEP n', doubling the text, and it stays unclear whether the framed ASK/REQUEST is also the writer's own act.",
+  "kind": "WORKAROUND",
+  "severity": 3,
+  "category": "speaker attribution",
+  "fix": "optional speaker handle before the opener (S/ ASK ...)"
+ },
+ {
+  "passage": "H06",
+  "source": "might there not be",
+  "lost": "A negative leading question that expects 'yes' is reduced to a neutral ASK with POSSIBLE.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "question bias",
+  "fix": "attitude EXPECT (speaker expects agreement)"
+ },
+ {
+  "passage": "H06",
+  "source": "another square",
+  "lost": "'Another/other' needs a relative clause 'NOT same THEME SELF THAN Q'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "otherness",
+  "fix": "focus particle OTHER before a phrase"
+ },
+ {
+  "passage": "H06",
+  "source": "twice as large as this / double",
+  "lost": "A comparison with a multiple has no place for the factor; I borrowed the logic notation (multiply FIRST 2 SECOND size OF Q), which the phrase grammar does not clearly admit as a head.",
+  "kind": "WORKAROUND",
+  "severity": 3,
+  "category": "comparison (measure of difference)",
+  "fix": "role BY for the amount or factor of a comparison"
+ },
+ {
+  "passage": "H06",
+  "source": "this ... that double square ... this is two feet ... that",
+  "lost": "Pointing words contrast the drawn figure with the imagined one; handles need an invented sentence to bind them and lose the near/far pointing.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "deixis",
+  "fix": "heads THIS and THAT"
+ },
+ {
+  "passage": "H06",
+  "source": "having like this the lines equal",
+  "lost": "Reciprocal 'equal to one another' is only implied by ALL line, and 'like this one' is squeezed into ALSO SELF.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "reciprocal",
+  "fix": "head EACH-OTHER (reciprocal counterpart of SELF)"
+ },
+ {
+  "passage": "H06",
+  "source": "of how many feet",
+  "lost": "A quantity question cannot put WHAT in the quantifier slot; '(WHAT KIND foot)' against the answer '8 foot' do not match in form.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "quantity question / measure",
+  "fix": "allow WHAT in the quantifier slot; define measure phrase as number + unit"
+ },
+ {
+  "passage": "H06",
+  "source": "will that be / it will be double",
+  "lost": "'Will' here is the consequence within a hypothetical (the square does not exist), not future time; FUTURE misreports it.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "irrealis / hypothetical",
+  "fix": "time-slot particle UNREAL (shared with counterfactuals)"
+ },
+ {
+  "passage": "H06",
+  "source": "Clearly, Socrates,",
+  "lost": "Address by name has no form except the TO phrase of the frame sentence.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "vocative",
+  "fix": "none: covered if a speaker/addressee field is added"
+ },
+ {
+  "passage": "H06",
+  "source": "this is two feet",
+  "lost": "Stating a measurement uses the same 'equal ... TO' workaround as other nominal predicates.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "copula / measure",
+  "fix": "BE phrase as predicate"
+ },
+ {
+  "passage": "H07",
+  "source": "hardly concerns us more than",
+  "lost": "'Hardly' (almost not) becomes flat NOT.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "approximation",
+  "fix": "degree slot: BARELY, ALMOST"
+ },
+ {
+  "passage": "H07",
+  "source": "concerns us more than how life itself first originated",
+  "lost": "With free role order, THAN does not say which argument is compared (concerns us more than it concerns X, or more than X concerns us).",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "comparison scope",
+  "fix": "rule: THAN contrasts with the phrase marked by a focus particle, default THEME"
+ },
+ {
+  "passage": "H07",
+  "source": "a nerve ... any sensitive nerve",
+  "lost": "Generic 'a nerve' (nerves as a kind) and free-choice 'any' are not distinguished from one particular nerve (bare root) or from ALL.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "genericity",
+  "fix": "quantifier ANY; rule for bare root = kind"
+ },
+ {
+  "passage": "H07",
+  "source": "life itself",
+  "lost": "Intensive 'itself' is approximated by EVEN, which adds an unwanted scalar 'even'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "emphasis",
+  "fix": "none: accept EVEN, or attitude scoped to a phrase"
+ },
+ {
+  "passage": "H07",
+  "source": "first originated",
+  "lost": "'First' (the initial occurrence) is dropped.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "ordinal",
+  "fix": "linker NTH + number, usable on events"
+ },
+ {
+  "passage": "H07",
+  "source": "several facts",
+  "lost": "'Several' (more than a couple, not many) collapses into SOME.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "quantity",
+  "fix": "quantifier slot: FEW, SEVERAL, MANY, MOST"
+ },
+ {
+  "passage": "H07",
+  "source": "may be rendered sensitive",
+  "lost": "Potentiality inside a triply embedded clause cannot use POSSIBLE (sentence level only); a root 'possible' adds a fourth nesting level.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality",
+  "fix": "modal slot: CAN, usable inside blocks"
+ },
+ {
+  "passage": "H07",
+  "source": "and likewise to those coarser vibrations",
+  "lost": "Coordinating a second TO phrase forces the whole four-level frame (I say that facts make me suspect that it is possible that...) to be repeated in a new sentence.",
+  "kind": "WORKAROUND",
+  "severity": 3,
+  "category": "coordination",
+  "fix": "AND between phrases under one role"
+ },
+ {
+  "passage": "H07",
+  "source": "coarser vibrations",
+  "lost": "A comparative with no stated standard cannot be told from the plain adjective; I had to supply 'THAN light', which the source leaves implicit.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "comparison (implicit standard)",
+  "fix": "degree slot: MORE / LESS, usable without THAN"
+ },
+ {
+  "passage": "H07",
+  "source": "(the single long periodic sentence)",
+  "lost": "The balance of one sentence built on a semicolon is broken into three.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "rhythm",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "H08",
+  "source": "the Committee will ...",
+  "lost": "PLAN is defined as committing the writer; an institution committing itself in the third person relies on reading AGENT committee as the writer.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "speech act (commissive)",
+  "fix": "define PLAN as committing the AGENT named in the clause"
+ },
+ {
+  "passage": "H08",
+  "source": "incoming data, the evolving outlook, and the balance of risks / Treasury securities and agency debt and agency mortgage-backed securities",
+  "lost": "Each three-item list becomes three full sentences repeating predicate, agent and (in the first) a long WHEN clause.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "lists",
+  "fix": "AND between phrases under one role"
+ },
+ {
+  "passage": "H08",
+  "source": "will continue reducing",
+  "lost": "Continuation of something already under way is carried only by a root 'continue' with a block; no phase marking.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "phase / persistence",
+  "fix": "aspect slot: STILL"
+ },
+ {
+  "passage": "H08",
+  "source": "strongly committed",
+  "lost": "Degree of commitment has no slot; pushed into a manner phrase WITH strong.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "degree",
+  "fix": "degree slot before a root: VERY ..."
+ },
+ {
+  "passage": "H08",
+  "source": "maximum employment",
+  "lost": "Superlative has no construct; a root 'maximum' stands in (otherwise THAN ALL ...).",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "superlative",
+  "fix": "degree slot: MOST"
+ },
+ {
+  "passage": "H08",
+  "source": "adjustments to the target range for the federal funds rate",
+  "lost": "Every noun-to-noun relation (to, for, of, about; also 'evidence of their truth' in H04) must be OF or KIND, so the kind of relation is underspecified unless a full clause is built.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "nominal relations",
+  "fix": "allow role particles inside a parenthesised phrase (adjustment (TO range))"
+ },
+ {
+  "passage": "H08",
+  "source": "its 2 percent objective",
+  "lost": "A number with a unit has no defined form; '2 «%»' as a KIND modifier is a guess.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "quantity question / measure",
+  "fix": "define measure phrase as number + unit root or « » unit"
+ },
+ {
+  "passage": "ALL",
+  "summary": "The largest single cost was missing phrase-level coordination: every list or paired phrase (H02, H03, H04, H07, H08) became several sentences repeating the whole frame, sometimes four levels deep. The second pattern is that everything modal or graded lives only at sentence level as the writer's stance (strength, attitude): can/must/may, degree (very, hardly, strongly, coarser), phase (still, at last, continue) and hypothetical or counterfactual status had to be faked with content roots such as able, oblige, possible, continue, or were lost. Third, reference is thin: no demonstratives, no we, no generic/any, no speaker field, and handles for arbitrary individuals need a staged ASSUMED scenario; dialogue and quotation double in length. Fourth, the openers fit an assistant reporting on a task but not narration or plain authorial claims, and the relation list lacks 'reason'. Most used: KIND with SELF blocks, NAMED handles, blocks as role heads, ADD, CAUSE/WITH/AT, PAST, NOT, STEP references. Least used: the Logic section (only borrowed for 'twice'), SURPRISE and REGRET, INSTEAD, NO, CONCEDE, LIKELY, and DERIVED with cites."
+ }
+]

@@ -1,0 +1,50 @@
+[heading] Hodgkin Huxley model.
+1. [recalled] Hodgkin and Huxley published the model (call it A) about the squid giant axon in year 1952.
+2. [recalled] Model A describes the membrane of the axon (call it B) as the electric circuit.
+3. [recalled] Membrane B behaves like the capacitor, and the capacitance of membrane B is equal to 1 uF/cm2.
+4. [recalled; explaining 3] Membrane B separates the ion that is inside the axon from the ion that is outside the axon, and so membrane B stores the charge.
+5. [recalled] The ion passes through the channel of membrane B, and the conductance is equal to the easeness of this passing.
+6. [recalled] Model A has 3 conductances (namely gNa for the sodium, and gK for the potassium, and gL for the leak).
+7. [recalled] The maximum of gNa is equal to 120 mS/cm2, and the maximum of gK is equal to 36 mS/cm2, and gL is equal to 0.3 mS/cm2.
+8. [recalled] GL constants, but gNa and gK are depending on the time and the voltage of membrane B (call it C).
+9. [recalled] The Nernst equation computes the nernst potential of a certain ion from 2 concentrationnesses of the ion (namely concentrationness that is inside the axon and concentrationness that is outside the axon).
+10. [recalled] If voltage C is equal to the nernst potential of the ion (call it D), then the current of ion D is equal to 0.
+11. [recalled] ENa (namely nernst potential of the sodium) is equal to 50 mV because the sodium is more concentrated outside the axon, and EK (namely nernst potential of the potassium) is equal to -77 mV because the potassium is more concentrated inside the axon.
+12. [recalled] Model A uses the equation (namely C*dV/dt = I - gNa*m^3*h*(V - ENa) - gK*n^4*(V - EK) - gL*(V - EL)) (call it E).
+13. [recalled; detailing 12] V is representing voltage C, and C is representing the capacitance of membrane B, and I is representing the input current.
+14. [recalled] 3 gating variablenesses (namely m, and h, and n) are a number that is between 0 and 1, and all gating variablenesses are representing the chance such that 1 door of the channel is open.
+15. [recalled] The sodium channel has 3 doors m and 1 door h, and the potassium channel has 4 doors n.
+16. [recalled; as a result of 15] GNa*m^3*h is equal to the conductance of the sodium, and gK*n^4 is equal to the conductance of the potassium.
+17. [recalled] All gating variablenesses follow the equation (namely dx/dt = (x_inf(V) - x)/tau_x(V)).
+18. [recalled] If voltage C rises, then m increases in a fast way, and n increases in a slow way, and h decreases in a slow way.
+[heading] Action potential and refractory period.
+19. [recalled] Voltage C is equal to about -65 mV at the rest state because m is very small.
+20. [recalled] If the input current raises voltage C to above the threshold (namely -55 mV), then m increases in a fast way, and so the sodium enters the axon, and so voltage C rises more.
+21. [recalled; detailing 20] This process is a positive loop because the rise of voltage C increases m, and the increase of m raises voltage C.
+22. [recalled; as a result of the previous sentence] Voltage C rises to about 40 mV for fewer than 1 ms, but voltage C does not reach ENa.
+23. [recalled; next after the previous sentence] H decreases, and n increases, and so the sodium stops entering the axon, and the potassium leaves from the axon, and so voltage C descends.
+24. [recalled; next after the previous sentence] Voltage C descends to below the rest value, and voltage C is near EK because n is still big.
+⟨could not parse: 25: RECALLED THIS WHOLE process THEME ~action ~potential ANDC ~spike THEME name KIND OTHER REL ~action ~potential .⟩
+26. [recalled; next after 24] The refractory period (call it F) exists for 2–5 ms.
+27. [recalled; detailing 26] The new action potential cannot exist at the 1st part of period F because h is still small, and so most sodium channels are inactive.
+28. [recalled; detailing 26] The threshold is higher at the 2nd part of period F because n is still big, and h does not return fully to the rest value yet, and so the new spike needs the stronger current.
+29. [recalled; as a result of 26] Period F blocks the very high frequency of the spike, and period F causes that the action potential moves through the axon to only 1 direction.
+30. [told] Many students say that the pump tool that is a sodium and a potassium descends voltage C at the end of all spikes.
+31. [recalled; rebutting 30] The increase of n and the decreasing of h descend voltage C, and this descending does not need the pump tool.
+32. [recalled; adding to 31] 1 spike changes only the very small part of the ion that is inside the axon, and so the concentrationness, and ENa, and EK constant almost.
+33. [recalled; adding to 31] The pump tool that is a sodium and a potassium maintains the gradient of the concentrationness for the long time.
+34. [claim; restating the previous sentence] The interaction of voltage C and 3 gating variablenesses causes the action potential and the refractory period.
+[heading] Code that is a leaky integrate and fire neuron.
+35. [claim] The leaky integrate and fire model (call it G) is simpler than model A, and model G does not have the gating variableness.
+36. [recalled] The neuron of model G has only 1 leak conductance, and the voltage of this neuron follows the equation (namely tau*dV/dt = (V0 - V) + R*I).
+37. [recalled] Tau (namely time constanting) is equal to 10 ms, and V0 (namely rest value) is equal to -65 mV.
+38. [recalled] If the voltage reaches the threshold (namely -50 mV), then model G counts 1 spike, and the voltage returns to the restart value (namely -65 mV).
+⟨could not parse: 39: CLAIM take AGENT function CODE «count_spikes» THEME list OF ( current KIND input ) ANDC give AGENT THIS function THEME number OF ~spike .⟩
+40. [claim; detailing 39] All items of the list are representing the product of the current and the resistance of the membrane with unit mV, and the step of the time is equal to 1 ms, and so the change of the voltage per the step is equal to divide((V0 - V) + R*I, 10).
+[code language] Python.
+[definition] “peak count” means count_spikes.
+[definition] Peak count(H) is defined as: let J be -65; let K be 0; for each L in H: let J be add(J, divide(add(subtract(-65, J), L), 10)); if J is not less than -50, then let K be add(K, 1); let J be -65; return K.
+41. [claim; as an example of the previous sentence] If all items of the list are equal to 10, then the voltage converges to -55 mV, and so the voltage never reaches the threshold, and so the output of the function is equal to 0.
+42. [claim; as an example of the previous sentence] If all items of the list are equal to 20, then the voltage rises to the threshold, and so the neuron repeats the regular spike.
+!! sentence 27: expected full stop; at: 25: RECALLED THIS WHOLE process  >>> THEME ~action ~potential ANDC
+!! sentence 42: expected full stop; at: 39: CLAIM take AGENT function  >>> CODE «count_spikes» THEME list

@@ -1,0 +1,771 @@
+[
+ {
+  "passage": "D03",
+  "source": "A HARE one day ridiculed ...",
+  "lost": "The story is fiction, but every sentence must take an opener that claims a source of knowledge (GIVEN), so narrated or imagined status is not marked.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "speech act / text status",
+  "fix": "Add an opener TOLD for narrated or fictional content."
+ },
+ {
+  "passage": "D03",
+  "source": "A HARE ... the Tortoise",
+  "lost": "The difference between a newly introduced participant and one treated as already known is not marked; only the presence of NAMED hints at first mention.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "definiteness",
+  "fix": "Add a phrase-initial particle KNOWN (already identifiable) contrasting with unmarked new."
+ },
+ {
+  "passage": "D03",
+  "source": "the short feet and slow pace",
+  "lost": "Two things joined as one object cannot be said in one phrase; the sentence must be repeated once per item.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Add a phrase joiner AND between phrases under one role."
+ },
+ {
+  "passage": "D03",
+  "source": "who replied, laughing: \"...\"",
+  "lost": "Inside a quoted block it is not defined that ME and YOU mean the quoted speaker and hearer rather than the writer and reader.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "reported speech",
+  "fix": "Add a QUOTE block form whose ME/YOU are bound to the AGENT and TO of the speech predicate; plain blocks keep the writer's ME/YOU."
+ },
+ {
+  "passage": "D03",
+  "source": "I will beat you in a race",
+  "lost": "A block has no opener, so the quoted sentence's own force (a boast and challenge, a commitment) is reduced to a bare future statement.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "speech act",
+  "fix": "Allow an optional opener as the first element of a QUOTE block."
+ },
+ {
+  "passage": "D03",
+  "source": "Though you be swift as the wind",
+  "lost": "Concession ('even if') inside an embedded clause is impossible because CONCEDE only links whole sentences; it decodes as a plain condition.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "concession",
+  "fix": "Allow relation particles inside IF: IF CONCEDE {..} {..} = even if."
+ },
+ {
+  "passage": "D03",
+  "source": "swift as the wind",
+  "lost": "Equal-degree comparison has no construct; THAN only gives 'more than'.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "comparison",
+  "fix": "Add role AS (standard of equal degree) beside THAN."
+ },
+ {
+  "passage": "D03",
+  "source": "simply impossible",
+  "lost": "The intensifier on the believed content is lost; EMPHASIS is the writer's sentence-level attitude and cannot sit inside the belief.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "degree",
+  "fix": "Add a degree slot before a predicate or modifier: VERY, SLIGHT, FULL."
+ },
+ {
+  "passage": "D03",
+  "source": "they agreed / the two started together",
+  "lost": "There is no way to refer to two named things jointly; a pair had to be defined in its own sentence.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Phrase joiner AND, with NAMED allowed on the joined phrase (H AND T NAMED P)."
+ },
+ {
+  "passage": "D03",
+  "source": "that the Fox should choose the course",
+  "lost": "The arranged, obligation-like sense of 'should' inside the agreement is reduced to a plain future.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "modality",
+  "fix": "Add a modal slot after aspect: MUST, MAY, CAN, SHOULD."
+ },
+ {
+  "passage": "D03",
+  "source": "had reached the goal / should choose",
+  "lost": "Whether PAST or FUTURE inside a block is counted from the main clause's time or from the writing time is not defined.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "relative time",
+  "fix": "State in the spec that time in a block is relative to the enclosing clause."
+ },
+ {
+  "passage": "D03",
+  "source": "went on",
+  "lost": "Continuing an activity already under way is only approximated by ONGOING, which says in progress but not 'kept on'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "aspect / phase",
+  "fix": "Add phase particles to the aspect slot: BEGIN, CONTINUE, STOP."
+ },
+ {
+  "passage": "D03",
+  "source": "a slow but steady pace / Slow but steady",
+  "lost": "Contrast between two modifiers of one head cannot be marked; they decode as 'slow and steady', losing the point of the moral.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "contrast inside phrase",
+  "fix": "Allow CONTRAST as a linker between modifiers: pace KIND slow CONTRAST steady."
+ },
+ {
+  "passage": "D03",
+  "source": "fell fast asleep",
+  "lost": "Entering a state has no aspect marker; it needs a 'begin' predicate over a block.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "aspect / phase",
+  "fix": "BEGIN in the aspect slot."
+ },
+ {
+  "passage": "D03",
+  "source": "At last waking up",
+  "lost": "That the event came after a long wait, later than expected, is lost.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "expectation / phase",
+  "fix": "Add focus or aspect particles LATE (finally) and EARLY (already)."
+ },
+ {
+  "passage": "D03",
+  "source": "as fast as he could",
+  "lost": "Highest degree within ability needs a clumsy 'greatest speed that he is able' clause; there is no superlative and no ability marker.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "degree / superlative",
+  "fix": "Add degree particle MOST and modal CAN."
+ },
+ {
+  "passage": "D03",
+  "source": "dozing after her fatigue",
+  "lost": "WHEN gives a time but not before or after; I replaced 'after' with CAUSE, which changes the claim.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "time relation",
+  "fix": "Add roles BEFORE and AFTER (or split WHEN into three)."
+ },
+ {
+  "passage": "D03",
+  "source": "Slow but steady wins the race",
+  "lost": "A statement about a kind in general and one about a particular individual and race look the same.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "genericity",
+  "fix": "Add a quantifier ANY (generic or free choice) before the head."
+ },
+ {
+  "passage": "D03",
+  "source": "her assertion / he could",
+  "lost": "The sex of the two characters is not carried once they are handles.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "gender",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "D03",
+  "source": "On the day appointed for the race the two started",
+  "lost": "Role order is free and meaningless, so what a sentence is set against or about (fronted time, topic) cannot be shown.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "topic",
+  "fix": "Add a focus-slot particle TOPIC before the phrase the sentence is about."
+ },
+ {
+  "passage": "D07",
+  "source": "One skilled in circumvention of the law",
+  "lost": "The whole entry is ironic, but DEFINE presents it as a sincere definition; a reader of the decoded text takes it literally.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "tone / irony",
+  "fix": "Add attitude IRONY (writer does not mean it straight) or JEST."
+ },
+ {
+  "passage": "D07",
+  "source": "skilled in circumvention",
+  "lost": "The field in which a property holds has no role; FOR or AT must be bent to fit.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "respect / domain",
+  "fix": "Add role ABOUT (topic, field, respect)."
+ },
+ {
+  "passage": "D07",
+  "source": "when you wish him to listen",
+  "lost": "Generic 'you' meaning anyone becomes YOU, the actual addressee.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "impersonal reference",
+  "fix": "Add head ONE (any person, generic) beside ME and YOU."
+ },
+ {
+  "passage": "D07",
+  "source": "A person who talks when you wish him to listen",
+  "lost": "SELF in a clause nested inside a modifying clause does not say which head it stands for.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "reference in nested clauses",
+  "fix": "Let NAMED be written directly after the head (person NAMED P KIND {...P...}) and say SELF always means the nearest head."
+ },
+ {
+  "passage": "D07",
+  "source": "those that are not good to eat, as well as those that are",
+  "lost": "The 'B as well as A' framing, which presents the inedible ones as the surprising main case, is flattened to two additive sentences.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "coordination",
+  "fix": "Phrase joiner AND plus existing ALSO on the surprising member."
+ },
+ {
+  "passage": "D07",
+  "source": "deals largely with",
+  "lost": "'Mostly' has no quantifier or degree; a 'large part' manner phrase is needed.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "proportion",
+  "fix": "Add quantifiers MOST and FEW."
+ },
+ {
+  "passage": "D07",
+  "source": "commonly badly designed",
+  "lost": "'Commonly' as 'in most cases' is forced into HABIT, which is about repeated events, not about most members of a class.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "proportion / frequency",
+  "fix": "Quantifier MOST on the head, or frequency values in the aspect slot (OFTEN, RARE)."
+ },
+ {
+  "passage": "D07",
+  "source": "commonly ... inartistic in color",
+  "lost": "With NOT fixed before the aspect, 'commonly not artistic' and 'not commonly artistic' cannot be told apart.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "negation scope",
+  "fix": "Allow NOT directly before any phrase or modifier, not only clause-initially."
+ },
+ {
+  "passage": "D07",
+  "source": "their flowers, which are commonly badly designed",
+  "lost": "A side comment on a noun cannot be attached to it because KIND clauses always narrow; it must become separate sentences.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "non-restrictive modification",
+  "fix": "Add linker NOTE for a clause that comments without narrowing."
+ },
+ {
+  "passage": "D07",
+  "source": "badly designed, inartistic in color, and ill-smelling",
+  "lost": "A list of three predicates of one subject needs three full sentences.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Allow AND between blocks at body level, parallel to OR."
+ },
+ {
+  "passage": "D11",
+  "source": "mean that there may exist ..., but the full implications must be understood",
+  "lost": "A definition with two contrasting halves cannot fit in one DEFINE block, so the 'but' half falls outside the definition and is no longer formally part of what the word means.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "scope of definition",
+  "fix": "Allow a block to hold several clauses joined by AND or a relation particle: { A CONTRAST B }."
+ },
+ {
+  "passage": "D11",
+  "source": "there may exist valid reasons",
+  "lost": "Possibility inside an embedded clause cannot use POSSIBLE, which is sentence-level only; a 'possible' predicate over a nested block is needed.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality",
+  "fix": "Allow strength particles at the start of any block."
+ },
+ {
+  "passage": "D11",
+  "source": "must be understood",
+  "lost": "Obligation has no particle; 'require' as a predicate over a block is the only route, in a text whose whole subject is degrees of obligation.",
+  "kind": "WORKAROUND",
+  "severity": 3,
+  "category": "modality",
+  "fix": "Modal slot: MUST, SHOULD, MAY, with NOT allowed after it."
+ },
+ {
+  "passage": "D11",
+  "source": "must be understood ... / should be understood ...",
+  "lost": "The deliberate difference between 'must' in item 3 and 'should' in item 4 survives only as a choice between two content roots.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "modality",
+  "fix": "Modal slot MUST vs SHOULD."
+ },
+ {
+  "passage": "D11",
+  "source": "before choosing a different course",
+  "lost": "'Before' has no role; I wrote 'when not yet chosen', which is longer and weaker.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "time relation",
+  "fix": "Add roles BEFORE and AFTER."
+ },
+ {
+  "passage": "D11",
+  "source": "carefully weighed before choosing ... / understood and carefully weighed",
+  "lost": "Two required actions sharing one object and one time clause must each repeat everything.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "AND between blocks or between predicates."
+ },
+ {
+  "passage": "D11",
+  "source": "acceptable or even useful",
+  "lost": "EVEN can only stand before a phrase, so it cannot mark a predicate; the step up from acceptable to useful is lost.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "focus on predicate",
+  "fix": "Allow focus particles before the predicate as well."
+ },
+ {
+  "passage": "D11",
+  "source": "acceptable or even useful",
+  "lost": "OR joins only whole clause blocks, so two alternative properties need two full clauses.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "coordination",
+  "fix": "Allow OR between phrases and predicates."
+ },
+ {
+  "passage": "D11",
+  "source": "in particular circumstances / a particular item",
+  "lost": "'Certain specific ones, not just any' is reduced to SOME or to nothing.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "specificity",
+  "fix": "Add quantifier CERTAIN-ONE, e.g. SPECIFIC, beside SOME."
+ },
+ {
+  "passage": "D11",
+  "source": "any behavior described with this label",
+  "lost": "Free-choice 'any' is rendered ALL, which is close here but not the same in general.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "genericity",
+  "fix": "Quantifier ANY."
+ },
+ {
+  "passage": "D11",
+  "source": "truly optional",
+  "lost": "The intensifier inside the definition has no slot; I used a manner phrase 'with true'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "degree",
+  "fix": "Degree slot FULL / VERY before a predicate."
+ },
+ {
+  "passage": "D11",
+  "source": "One vendor may choose ... another vendor may omit",
+  "lost": "POSSIBLE means the writer thinks it may be so; the source means the vendor is free to do it. Permission and guess are merged.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "modality",
+  "fix": "Modal MAY (permitted) distinct from strength POSSIBLE."
+ },
+ {
+  "passage": "D11",
+  "source": "because a particular marketplace requires it or because the vendor feels",
+  "lost": "Two alternative reasons need the whole main clause written twice inside OR.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Allow OR between phrases under one role."
+ },
+ {
+  "passage": "D11",
+  "source": "This word, or the adjective \"RECOMMENDED\", mean",
+  "lost": "Two terms defined together as equals need a second DEFINE that makes one depend on the other.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "coordination",
+  "fix": "Allow DEFINE term OR term BE ..."
+ },
+ {
+  "passage": "D15",
+  "source": "We prove",
+  "lost": "There is no first person plural; ME cannot say whether one author or several, or whether the reader is included.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "person / number",
+  "fix": "Add head US, with optional US ALSO YOU for inclusive."
+ },
+ {
+  "passage": "D15",
+  "source": "We prove a conjecture",
+  "lost": "Announcing what this paper does is not one of the openers; GIVEN makes it look like something found in the context.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "speech act",
+  "fix": "Add opener CLAIM for the writer's own assertion not resting on context or recall."
+ },
+ {
+  "passage": "D15",
+  "source": "every finite multiple zeta value ... is a Q-linear combination",
+  "lost": "Role order carries no meaning, so with ALL and SOME in one clause it is undefined which is inside the other ('for each there is one' or 'one for all').",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "quantifier scope",
+  "fix": "Rule: when two quantified phrases occur, the earlier one has wider scope."
+ },
+ {
+  "passage": "D15",
+  "source": "combination of ζ_A(k_1,...,k_r,2,1)",
+  "lost": "Nothing marks that a whole family of values is meant, not one; number is unmarked.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "number / plural",
+  "fix": "Add quantifier MANY, or a plural marker SET before the head."
+ },
+ {
+  "passage": "D15",
+  "source": "nonempty index",
+  "lost": "NOT only negates clauses, so a negated modifier needs a full clause with SELF.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "negation scope",
+  "fix": "Allow NOT before a modifier: index KIND NOT empty."
+ },
+ {
+  "passage": "D15",
+  "source": "space of formal multiple zeta values",
+  "lost": "Linkers offer only 'kind' and 'owner/whole'; 'made up of' or 'containing' has to be squeezed into KIND.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "relation between nouns",
+  "fix": "Add linker HOLD (made of, contains), the reverse of OF."
+ },
+ {
+  "passage": "D15",
+  "source": "This approach",
+  "lost": "Pointing back to something just said, when it is neither a named thing nor a whole sentence, has no demonstrative; I wrote 'approach OF STEP 3'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "reference",
+  "fix": "Add head THAT for the last mentioned thing or block."
+ },
+ {
+  "passage": "D15",
+  "source": "(apart from compatibility with the depth filtration)",
+  "lost": "There is no exception marker; the limit on the claim must be a separate negative sentence, and the main sentence alone overstates the result.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "exception",
+  "fix": "Add role EXCEPT."
+ },
+ {
+  "passage": "D15",
+  "source": "(apart from ...)",
+  "lost": "That the remark is an aside inside the sentence is lost.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "parenthetical",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "D15",
+  "source": "for ordinary and finite multiple zeta values",
+  "lost": "Two coordinated modifiers needed the whole phrase written twice under a repeated role whose meaning the spec does not define.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Phrase joiner AND; say what a repeated role means."
+ },
+ {
+  "passage": "D15",
+  "source": "linear independence conjectures",
+  "lost": "Whether one or several conjectures is unmarked; SOME does not say more than one.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "number / plural",
+  "fix": "Quantifier MANY or plural marker."
+ },
+ {
+  "passage": "D19",
+  "source": "has continued to expand",
+  "lost": "Perfect plus continuation needs two aspect values but the slot holds one; I kept ONGOING and lost 'has kept on up to now'.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "aspect / phase",
+  "fix": "Allow two aspect particles, and add CONTINUE."
+ },
+ {
+  "passage": "D19",
+  "source": "Recent indicators suggest",
+  "lost": "The hedge is carried by a verb with a source as agent; strength and source cannot be combined in the designed slots because [cites] only takes labels.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "attribution / evidence",
+  "fix": "Let the cites slot take a phrase: GIVEN FROM indicator LIKELY ..."
+ },
+ {
+  "passage": "D19",
+  "source": "but remains low / but remains somewhat elevated",
+  "lost": "'Still, as before' is not expressible; ONGOING says only that it holds now.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "aspect / phase",
+  "fix": "Aspect or focus particle STILL (and its partner ALREADY)."
+ },
+ {
+  "passage": "D19",
+  "source": "somewhat elevated",
+  "lost": "The downtoner is lost; the encoding says inflation is high, which is a stronger claim than the source makes.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "degree",
+  "fix": "Degree slot: SLIGHT, VERY, FULL before a predicate or modifier."
+ },
+ {
+  "passage": "D19",
+  "source": "further progress",
+  "lost": "'More of the same on top of earlier' is given only by a manner phrase 'additional amount'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "degree / increment",
+  "fix": "Degree particle MORE usable without THAN."
+ },
+ {
+  "passage": "D19",
+  "source": "greater confidence / the longer run",
+  "lost": "Comparative with no stated standard cannot be formed, since comparison exists only through a THAN phrase; I recast it as 'confidence increased' and plain 'long'.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "comparison",
+  "fix": "Degree particle MORE usable without THAN."
+ },
+ {
+  "passage": "D19",
+  "source": "maximum employment and inflation at the rate of 2 percent",
+  "lost": "Two goals joined under one verb and one time phrase need two sentences that repeat both.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "coordination",
+  "fix": "Phrase or block joiner AND."
+ },
+ {
+  "passage": "D19",
+  "source": "over the longer run",
+  "lost": "WHEN does not separate a point in time from a span or horizon.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "time relation",
+  "fix": "Add role DURING (span) beside WHEN."
+ },
+ {
+  "passage": "D19",
+  "source": "roughly in balance",
+  "lost": "Approximation is lost; the encoding says the risks balance.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "approximation",
+  "fix": "Add focus-slot particle ABOUT (approximately) before a phrase, number or predicate."
+ },
+ {
+  "passage": "D19",
+  "source": "both sides of its dual mandate",
+  "lost": "'Both' needs ALL plus a number, but the quantifier slot takes one item.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "quantity",
+  "fix": "Allow ALL followed by a number."
+ },
+ {
+  "passage": "D19",
+  "source": "by 1/2 percentage point",
+  "lost": "The size of a change has no role; a manner phrase 'with amount' is used.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "measure",
+  "fix": "Add role BY (amount of difference), also usable with THAN."
+ },
+ {
+  "passage": "D19",
+  "source": "to 4-3/4 to 5 percent",
+  "lost": "A numeric range needs a 'span' clause with its own FROM and TO, nested inside the TO of the lowering.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "quantity / range",
+  "fix": "Allow number RANGE number as a head."
+ },
+ {
+  "passage": "D19",
+  "source": "In light of the progress on inflation and the balance of risks",
+  "lost": "'Taking into account' is weaker than cause; CAUSE overstates how the decision follows.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse relation",
+  "fix": "Add role GIVEN-THAT, e.g. BASIS (ground considered, not cause)."
+ },
+ {
+  "passage": "D23",
+  "source": "A: ... B: ...",
+  "lost": "Nothing in a sentence says who utters it, so in a dialogue ME and YOU flip unseen; wrapping each line in 'say' would strip its opener.",
+  "kind": "GRAMMAR",
+  "severity": 3,
+  "category": "speaker / turn",
+  "fix": "Allow a speaker handle before the label: A 1: ASK ..."
+ },
+ {
+  "passage": "D23",
+  "source": "hey,",
+  "lost": "Greeting or call for attention is not a speech act the openers cover.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "speech act",
+  "fix": "Add opener GREET (also covers thanks, acknowledgement) taking a bare phrase."
+ },
+ {
+  "passage": "D23",
+  "source": "nope / nah / lol / ugh",
+  "lost": "The casual register of the whole exchange is lost; it decodes as neutral prose.",
+  "kind": "STYLE",
+  "severity": 1,
+  "category": "register",
+  "fix": "none: out of scope"
+ },
+ {
+  "passage": "D23",
+  "source": "still stuck on the migration",
+  "lost": "'Still' is lost; ONGOING does not say the state was expected to have ended.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "aspect / phase",
+  "fix": "Particle STILL."
+ },
+ {
+  "passage": "D23",
+  "source": "ugh.",
+  "lost": "Annoyance has no attitude value; SURPRISE and REGRET are the only emotions.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "emotion",
+  "fix": "Add attitude ANNOYED, or a general BAD / GOOD feeling pair."
+ },
+ {
+  "passage": "D23",
+  "source": "again??",
+  "lost": "Repetition has no marker and needs a 'repeat' predicate over the previous sentence; only one attitude fits, so surprise and annoyance cannot both be marked.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "aspect / repetition",
+  "fix": "Aspect particle AGAIN; allow two attitudes."
+ },
+ {
+  "passage": "D23",
+  "source": "thought we fixed that",
+  "lost": "That the past belief is now seen to be wrong is carried only by CONTRAST and inference.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "counter-expectation",
+  "fix": "Use existing SURPRISE inside blocks, or add a marker for a belief no longer held."
+ },
+ {
+  "passage": "D23",
+  "source": "we fixed",
+  "lost": "Inclusive 'we' has no pronoun; I wrote AGENT ME WITH YOU, misusing the means role.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "person / number",
+  "fix": "Head US, or phrase joiner AND (ME AND YOU)."
+ },
+ {
+  "passage": "D23",
+  "source": "we fixed *a* migration",
+  "lost": "The stressed 'a' (some migration, not the one in question) rests on an article contrast the language lacks; it needs a 'not the same as M' clause.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "definiteness / emphasis",
+  "fix": "Allow INSTEAD or a new focus OTHER on the phrase; a KNOWN marker would give the contrast directly."
+ },
+ {
+  "passage": "D23",
+  "source": "lol",
+  "lost": "The marker that the correction is meant lightly, not as a rebuke, is lost.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "tone",
+  "fix": "Attitude JEST."
+ },
+ {
+  "passage": "D23",
+  "source": "ok. / cool,",
+  "lost": "Acknowledging receipt and approving are rendered as YES answers to questions that were never asked.",
+  "kind": "GRAMMAR",
+  "severity": 1,
+  "category": "speech act",
+  "fix": "Opener ACK, or allow a bare YES answer to non-questions by rule."
+ },
+ {
+  "passage": "D23",
+  "source": "need a hand or should I leave you to it",
+  "lost": "An offer (I will do it if you want) is neither ASK nor PLAN; as a plain alternative question the offer is only implied.",
+  "kind": "WORKAROUND",
+  "severity": 2,
+  "category": "speech act",
+  "fix": "Opener OFFER, or PLAN IF { want AGENT YOU } by convention."
+ },
+ {
+  "passage": "D23",
+  "source": "should I leave you",
+  "lost": "Asking what the hearer wants the speaker to do (deontic question) becomes a question about what will happen.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "modality",
+  "fix": "Modal SHOULD in the clause."
+ },
+ {
+  "passage": "D23",
+  "source": "like 20 min",
+  "lost": "Approximation is lost; it decodes as exactly 20 minutes.",
+  "kind": "GRAMMAR",
+  "severity": 2,
+  "category": "approximation",
+  "fix": "Focus particle ABOUT before a number."
+ },
+ {
+  "passage": "D23",
+  "source": "thanks.",
+  "lost": "Thanking is done by asserting 'I thank you' under GIVEN, an opener that means 'found in the context'.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "speech act",
+  "fix": "Opener GREET / social-act opener."
+ },
+ {
+  "passage": "D23",
+  "source": "no rush btw",
+  "lost": "The marker that this is an afterthought off the main line is only roughly ADD.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "discourse relation",
+  "fix": "Add relation ASIDE."
+ },
+ {
+  "passage": "D23",
+  "source": "no rush",
+  "lost": "It is meant as releasing the hearer from time pressure (permission), but decodes as a flat statement that hurry is not needed.",
+  "kind": "WORKAROUND",
+  "severity": 1,
+  "category": "modality",
+  "fix": "Modal MAY / NOT MUST."
+ },
+ {
+  "passage": "ALL",
+  "summary": "The largest single gap is joining: with no AND for phrases, predicates or clauses, and OR only between whole blocks, almost every source sentence had to be split or have material repeated, and definitions with two halves fell out of their DEFINE. Second is everything inside a block: strength, attitude, relations (though, but) and speech-act force exist only at sentence level, so reported speech, embedded possibility and concession are all flattened, and ME/YOU and time inside a block are undefined. Third, there are no deontic or ability modals, no degree or approximation words, no before/after, and no phase words (still, again, finally, begin, continue), which hurt the standard, the bank statement and the chat most. Dialogue cannot mark who speaks, and tone (irony, annoyance, joking) has no slot, so the satire decodes as sincere. Used most: GIVEN, the roles AGENT/THEME/WITH/WHEN, KIND and KIND-clauses with SELF, NAMED handles, CONTRAST/ADD/SEQUENCE, DONE/ONGOING, and DEFINE. Used least or never: RECALLED, ASSUMED, CERTAIN, LIKELY, REGRET, INSTEAD, ONLY, WHAT, and the whole logic layer (EACH, WHILE, RETURN, numbered slots)."
+ }
+]

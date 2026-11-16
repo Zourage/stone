@@ -1,0 +1,49 @@
+T3 (math and code)
+
+(a) Proof by induction that the sum of the first n odd numbers equals n squared.
+
+1. [definition] Let S(n) be the sum of the first n odd numbers, that is S(n) = 1 + 3 + ... + (2n - 1), for every whole number n >= 1.
+2. [given] The k-th odd number is 2k - 1, so the first odd number is 1.
+3. [given] By the definition in 1, S(n + 1) = S(n) + (2(n + 1) - 1) = S(n) + 2n + 1 for every n >= 1.
+4. [derived from 1, 2] S(1) = 1.
+5. [given] 1 squared is 1.
+6. [derived from 4, 5] S(1) = 1 squared, so the claim holds for n = 1 (base case).
+7. [assumed] Suppose that for some whole number k >= 1, S(k) = k squared (induction hypothesis).
+8. [derived from 3; under the supposition of 7] S(k + 1) = S(k) + 2k + 1.
+9. [derived from 7, 8; under the supposition of 7] S(k + 1) = k squared + 2k + 1.
+10. [given] (k + 1) squared = k squared + 2k + 1.
+11. [derived from 9, 10; under the supposition of 7] S(k + 1) = (k + 1) squared.
+12. [derived from 7, 11] For every k >= 1: if S(k) = k squared, then S(k + 1) = (k + 1) squared (induction step; the supposition in 7 is discharged).
+13. [given] Principle of induction: if a statement holds for 1, and holding for k always implies holding for k + 1, then it holds for every whole number n >= 1.
+14. [derived from 6, 12, 13] For every whole number n >= 1, S(n) = n squared.
+
+(b) A function that merges two sorted lists into one sorted list.
+
+15. [definition] merge(A, B) is defined as:
+
+    function merge(A, B):
+        R = empty list
+        i = 0
+        j = 0
+        while i < count(A) and j < count(B):
+            if B[j] < A[i]:
+                append B[j] to R
+                j = j + 1
+            else:
+                append A[i] to R
+                i = i + 1
+        while i < count(A):
+            append A[i] to R
+            i = i + 1
+        while j < count(B):
+            append B[j] to R
+            j = j + 1
+        return R
+
+16. [given] The inputs A and B are each sorted in ascending order; positions count from 0.
+
+(c) Why the result is sorted.
+
+17. [claim] At every pass of the first loop, the item appended is the smallest of all items not yet taken, because each list is sorted (16), so its smallest untaken item is the one at its current position, and the function takes the smaller of those two.
+18. [derived from 17] Therefore every item appended is at least as large as every item already in R, so R is in ascending order at all times.
+19. [derived from 16, 18] When one list runs out, the rest of the other list is already sorted and all of its items are at least as large as the last item of R, so appending it in order keeps R sorted; R then holds every item of A and B, sorted.

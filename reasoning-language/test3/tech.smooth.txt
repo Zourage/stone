@@ -1,0 +1,70 @@
+[heading] Task 1.
+1. [given] There is a counter variable shared by 2 threads (call it the counter).
+2. [given] There are two threads, B and C.
+3. [given] Each of threads B and C executes the code `tmp = counter; counter = tmp + 1` 1000 times without a lock.
+4. [given] At the end of the execution, the counter's value is sometimes less than 2000.
+5. [claim; explaining 4] The code consists of 3 steps (a read, an addition and a write), and another thread can run between the read and the write.
+6. [given] Thread B has its own local tmp variable (call it E), and thread C has its own local tmp variable (call it F).
+7. [narration; as an example of 5] The counter's value is 5.
+8. [narration; next after the previous sentence] Thread B reads the counter, so E = 5.
+9. [narration; next after the previous sentence] Thread C reads the counter when thread B has not yet written to it, so F is also 5.
+10. [narration; next after the previous sentence] Thread B writes E + 1 to the counter, so the counter's value is 6.
+11. [narration; next after the previous sentence] Thread C writes F + 1 to the counter, so the counter's value is still 6.
+12. [follows from 8, 9, 10 and 11] The code was executed twice, but the counter's value went up by only 1.
+13. [follows from 12] 1 update was lost.
+14. [follows from 13] Every lost update reduces the counter's value by 1, and so the counter's value is sometimes less than 2000.
+15. [claim; adding to the previous sentence] The order of the steps depends on the system's scheduling, and so this defect does not always happen.
+16. [proposal] Let us use a lock (call it G) to fix this defect.
+17. [rule; detailing 16] Every thread must acquire lock G before the read, and the same thread must release lock G after the write.
+18. [follows from 17] Only 1 thread can be at work between the locking and the unlocking, and so step 9 cannot happen.
+19. [follows from 18] At the end of the execution, the counter's value is always 2000.
+20. [claim; adding to the previous sentence] There is an alternative: an atomic operation that does the read, the addition and the write as 1 splittable step.
+21. [claim] This solution has a cost.
+22. [claim; detailing 21] Locking and unlocking take time, and another thread must wait while 1 thread holds lock G, and so the program is slower.
+23. [claim; adding to the previous sentence] Thread B and thread C cannot execute the code at the same moment, and so the benefit of having 2 threads is smaller.
+24. [claim; adding to the previous sentence] If the program uses several locks, then 2 threads can wait for each other forever.
+25. [claim; in contrast to 22] The atomic operation is cheaper than the lock because the thread does not wait.
+[heading] Task 2.
+26. [recalled] A hash table (call it H) stores key–value pairs in a list of many buckets (call it J).
+27. [recalled] A hash function (call it K) computes the bucket's index from the key.
+28. [claim] To find a key, the hash table computes the index with K, then goes directly to the bucket with that index, then compares only the few keys that are inside that bucket.
+29. [claim] The hash table does not search any other bucket, and so the search time does not depend on the total number of keys.
+30. [claim; explaining 29] If K spreads the keys uniformly over all the buckets, then 1 bucket holds only a few keys on average.
+31. [claim; adding to the previous sentence] The hash table increases the number of buckets when it becomes full, and so the number of keys per bucket stays small.
+32. [follows from 30 and 31] The search time is constant on average, namely O(1).
+33. [claim; in contrast to 32] If K gives the same index to many keys, then the search is slow.
+34. [claim; detailing 33] A cause of this case is a bad function K, or keys that an attacker chooses so that all keys have the same index.
+35. [follows from 33] 1 bucket contains almost all the keys, and so the hash table must compare the key being searched for with all the keys of that bucket. [unclear: the literal has "compare the search product key like all keys of the bucket"; "search product key" is taken as the key being looked up and "like" as "with/against", but neither is certain]
+36. [follows from 35] If the number of keys is bigger, then the search time is longer, namely O(n).
+37. [claim; restating 35] The hash table behaves like a simple list.
+38. [claim; adding to the previous sentence] A single store operation is also slow when the hash table increases the number of buckets, because the table must put all the keys in again.
+[heading] Task 3.
+39. [definition] "W1" means a greatest factor that 2 integers share.
+40. [definition] W1(L, M) is defined as: while M > 0, let N = L mod M, then let L = M, then let M = N; after the loop, return L.
+41. [rule; as background to 40] L and M are positive integers.
+42. [recalled] L mod M is always less than M, and it is never negative.
+43. [follows from 40 and 42] M gets smaller on every repetition of the loop, but M is never negative.
+44. [follows from 43] M becomes 0 after a finite number of repetitions, and so the loop stops, and then W1 returns L.
+45. [recalled; aside] W1(L, M) = W1(M, L mod M), and so W1's result is right.
+
+Translator notes
+- Throughout: "variableness A" is rendered as "the counter"; "table H" as "the hash table"; "tally" as "number"; "less big than" as "less than"; remainder(L, M) as "L mod M". The literal's articles and singular/plural are not reliable ("the key", "the bucket", "the step"); number was chosen from context in 15, 26, 27, 28, 30, 31, 34, 36.
+- 1, 2, 6, 16, 26, 27: "The X (call it Y) exists" rendered as "There is an X".
+- 7: tagged as narration given as an example; kept as a plain statement rather than "suppose".
+- 9: "when thread B does not write to A yet" read as "at a time when B has not yet written to it".
+- 14: "All losses of the update" read as "every lost update".
+- 18: "between the lock and the unlocking" read as between acquiring and releasing the lock; "step 9" is kept as written and taken to mean sentence 9.
+- 20: the literal says "1 splitable step". Kept as "splittable" even though "unsplittable" might be expected; not corrected.
+- 21: "this solution" is kept as is; the literal does not say whether it means the lock or the atomic operation (22 goes on to talk about the lock).
+- 26: "the pair of the key and the value at the list with many buckets" read as key–value pairs stored in a list of buckets.
+- 28: "so that the key is found" read as the purpose of the whole procedure ("to find a key").
+- 30, 32: "about the average" read as "on average".
+- 32: "constants" read as a verb, "is constant"; "(namely O(1))" attached to the search time.
+- 34: "so that all keys have the same index" is attached to the attacker's choice of keys only, not to the bad function.
+- 35: marked unclear (see line).
+- 38: "1 storage" read as one store/insert operation; "must again put all keys" read as re-inserting all keys.
+- 39: "a biggest factor that 2 integers share" kept close to literal; the indefinite article is the literal's.
+- 40: the literal begins "that while M is more than 0" (stray "that" dropped). The literal's semicolons do not show where the loop ends; the three assignments are taken as the loop body and "return L" as coming after the loop.
+- 41: "integers in a positive way" read as "positive integers".
+- 43: "all repetitions of the loop" read as "on every repetition".
+- 44: "the W1 gives L" read as "W1 returns L".

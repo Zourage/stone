@@ -1,0 +1,41 @@
+[heading] Standard model (namely physics) of the particle.
+1. [recalled] The standard model (call it A) describes all particles that do not have the part and 3 forces.
+2. [recalled; detailing 1] Model A contains 3 forces (namely electromagnetic force, and strong force, and weak force), but model A does not contain the gravity.
+3. [recalled] The gauge symmetry (namely SU(3)xSU(2)xU(1)) is a basis of model A.
+4. [recalled] All particles of the material are a fermion with spin 1/2.
+5. [recalled; detailing 4] 6 quarks (namely up, and down, and charm, and strange, and top, and bottom) exist.
+6. [recalled; detailing 4] 6 leptons (namely electron, and muon, and tau, and 3 neutrinos) exist.
+7. [recalled] The quark and the lepton are organised to 3 groups, and the particle of group 3 is heavier than the particle of group 1.
+8. [recalled] The charge of the up quark is equal to +2/3 e, and the charge of the down quark is equal to -1/3 e.
+9. [recalled] The mass of the up quark is equal to about 2.2 MeV, and the mass of the top quark is equal to about 173 GeV.
+10. [recalled] The gauge boson with spin 1 carries the force.
+11. [recalled; detailing 10] The photon carries the electromagnetic force, and 8 gluons carry the strong force, and boson W+, and boson W-, and the boson Z0 carry the weak force.
+12. [recalled] The photon and the gluon do not have the mass.
+13. [recalled; in contrast to 12] The mass of boson W+ is equal to about 80.4 GeV, and the mass of the boson Z0 is equal to about 91.2 GeV.
+14. [recalled; as a result of 13] The range of the weak force is very short.
+15. [recalled] The Higgs field (call it B) gives the mass to boson W+, and boson W-, and the boson Z0, and the quark, and the lepton with charge because field B breaks the electroweak symmetry.
+16. [recalled] The Higgs boson with spin 0 (call it C) is an excitement of field B.
+17. [recalled] The Atlas experiment and the Cms experiment detected boson C at Lhc in year 2012, and the mass of boson C is equal to about 125 GeV.
+18. [told] Field B often gives the whole set of masses of all materials.
+19. [claim; rebutting 18] Step 18 is false.
+20. [recalled; explaining 19] The mass of the proton is equal to about 938 MeV, but the mass of the whole set of 3 quarks of the proton is equal to about 9 MeV.
+21. [it follows from 20] The energy of the strong force is a source of about 99 percent of the mass of the proton, and field B is not a source of this 99 percent.
+22. [recalled] The qcd theory describes the strong force.
+23. [recalled] All quarks and all gluons have the coloured charge, and 3 kind of the coloured charges exist.
+24. [recalled] The colour confinement means that the quark or the gluon is never alone, and the experiment observes only the hadron that is neutral about the coloured charge.
+25. [recalled; explaining 24] If the distance of 2 quarks is bigger, then the energy of the field of the gluon is bigger.
+26. [recalled; as a result of 25] If 2 quarks try to be separated, then the energy makes the new pair of the quark and the antiquark.
+27. [recalled; in contrast to 25] The strong force is weak at the very small distance, and the asymptotic freedom is a name of this property.
+28. [recalled] Boson W+ or boson W- can change the quark from any group to another group.
+29. [recalled] The ckm matrix (call it D) describes the strength of this change, and matrix D has 3 rows and 3 columns.
+30. [recalled] Matrix D contains 3 angles and 1 complex phase.
+31. [recalled] This phase is a cause of the cp violation, and the cp violation means that the behaviour of the particle is different the behaviour of the antiparticle.
+32. [recalled; adding to 31] This phase needs at least 3 groups, and Kobayashi and Maskawa predicted the 3rd group in year 1973.
+33. [recalled] Cronin and Fitch observed the cp violation at the kaon in year 1964 for the 1st time.
+34. [claim] The cp violation is too small at model A so that that the universe contains more materials like the antimatter is explained.
+35. [recalled] Model A assumes that the neutrino does not have the mass.
+36. [recalled] The neutrino oscillation means that the kind of the neutrino changes while this neutrino travels.
+37. [recalled] The Super Kamiokande experiment observed the neutrino oscillation about the atmospheric neutrino in year 1998.
+38. [recalled] That the mass of 3 kind of the neutrinos is an unequal is a condition of the neutrino oscillation.
+39. [it follows from 35, 37, 38] The neutrino oscillation is an evidence about the physics that is outside model A.
+40. [claim] The scientist does not know that [question] which mechanism gives the mass to the neutrino? yet.

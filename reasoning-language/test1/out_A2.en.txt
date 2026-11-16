@@ -1,0 +1,50 @@
+[heading] The 1st task.
+1. [given] The box with apple label (call it A) exists.
+2. [given] The box with citrus label (call it B) exists.
+3. [given] The box with mixture label (call it C) exists.
+4. [given] All labels are wrong.
+5. [given] Exactly 1 box contains only the apple, and exactly 1 box contains only the citrus, and exactly 1 box contains the apple and the citrus.
+6. [rule] I may take exactly 1 fruit from exactly 1 box, but I may not look the content of any box.
+7. [plan] I take 1 fruit from box C.
+8. [it follows from 3, 4] The content of box C is not a mixture.
+9. [it follows from 5, 8] Box C contains only the apple, or box C contains only the citrus.
+10. [suppose] The fruit that I took from box C is an apple.
+11. [it follows from 9, 10; under the supposition of 10] Box C contains only the apple.
+12. [it follows from 2, 4; under the supposition of 10] Box B does not contain only the citrus.
+13. [it follows from 5, 11, 12; under the supposition of 10] Box B contains the apple and the citrus.
+14. [it follows from 5, 11, 13; under the supposition of 10] Box A contains only the citrus.
+15. [suppose] The fruit that I took from box C is a citrus.
+16. [it follows from 9, 15; under the supposition of 15] Box C contains only the citrus.
+17. [it follows from 1, 4; under the supposition of 15] Box A does not contain only the apple.
+18. [it follows from 5, 16, 17; under the supposition of 15] Box A contains the apple and the citrus.
+19. [it follows from 5, 16, 18; under the supposition of 15] Box B contains only the apple.
+20. [it follows from 9, 10, 14, 15, 19] I can know the content of all boxes.
+21. [claim; restating the previous sentence] You should take 1 fruit from the box with mixture label.
+22. [claim; restating the previous sentence] If the fruit is an apple, then box C contains only the apple, and box B contains the apple and the citrus, and box A contains only the citrus; otherwise box C contains only the citrus, and box A contains the apple and the citrus, and box B contains only the apple.
+[heading] The 2nd task.
+1. [social act; to Maria] Greet.
+2. [given] You asked that [question] I can evaluate the report of you before the end of Friday?
+3. [claim; answering 2; with regret] I cannot evaluate the report before the end of Friday.
+4. [claim; explaining 3] I will travel at Thursday and Friday.
+5. [social act] Apologise.
+6. [proposal] I evaluate the report in instead the morning of Monday.
+7. [question; polite] The morning of Monday would be too late for you?
+8. [social act] Thank.
+[heading] The 3rd task.
+1. [definition] “W1” means an algorithm that finds the value at the list that has been sorted.
+2. [story] You have the list that has been sorted (call it D), and you want to find the value (call it E) at list D.
+3. [claim] The range of the search (call it F) is equal to the whole set of list D at the beginning.
+4. [claim] You compare value E and the item that is at the middle of range of the search F (call it G) per the step.
+5. [claim] If value E is equal to item G, then you have found value E, and you stop searching.
+6. [claim] If value E is less big than item G, then range of the search F becomes equal to the half of range of the search F that is before item G.
+7. [claim] If value E is bigger than item G, then range of the search F becomes equal to the half of range of the search F that is after item G.
+8. [claim] You repeat step 4 to 7 when range of the search F is not empty.
+9. [claim] If range of the search F becomes empty, then value E does not exist at list D.
+10. [question] List D must have been sorted because of what?
+11. [claim; answering 10] If list D has been sorted, and value E is less big than item G, then value E certainly does not exist at the half that is after item G.
+12. [claim; as a result of 11] You can omit the half of range of the search F per the step with only 1 comparison.
+13. [claim; in contrast to 12] If list D has not been sorted, then value E possibly exists at any place, and you must check all items.
+14. [recalled] 2^10 is equal to 1024.
+15. [claim] The size of range of the search F decreases to about half per the step.
+16. [it follows from 14, 15] The W1 needs about 10 steps for the list with 1000 items.
+17. [definition] Half search(D, E, H) is defined as: let J be 0; let K be subtract(H, 1); while J is not more than K: let L be add(J, K); let M be divide(subtract(L, remainder(L, 2)), 2); let N be getitem(list D, M); if N is equal to value E, then return M; otherwise if N is less than value E, then let J be add(M, 1); otherwise let K be subtract(M, 1); return nothing.

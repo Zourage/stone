@@ -1,0 +1,12 @@
+1. [heading] Message from the buyer.
+2. A: [social act] Greet.
+3. A: [given] I got the package this morning.
+4. A: [given; annoyed] The package contains 6 blue cups, but 2 cups have broken.
+5. A: [question; polite] You can send 2 new cups to me?
+6. A: [claim] I need the cup before Saturday because 4 guests will visit me.
+7. B: [social act] Regret.
+8. B: [plan] I send 2 new cups to you this day.
+9. B: [claim; likely] The cup will arrive 2 days from now.
+10. B: [request] Do not send the cup that has broken to us.
+11. B: [plan] We also give 10 percent of the price to you.
+12. A: [social act; glad] Thank.

@@ -1,0 +1,6 @@
+1: RULE NOT { use AGENT YOU THEME water KIND hot CAUSE { kill AGENT water KIND hot THEME A } } .
+2: CLAIM IF { increase THEME price } { LIKELY { search AGENT ME THEME house KIND OTHER } } { stay AGENT ME } .
+3: CLAIM EACH A IN ALL student { exist THEME SOME book NAMED B KIND { PAST read AGENT A THEME SELF } } .
+4: CLAIM NOT CAN { go AGENT ME ANDC return AGENT ME } .
+5: CLAIM go AGENT ME BUT IRONY { glad AGENT ME } .
+6: CLAIM NOT go AGENT ME CAUSE { rain } .

@@ -1,0 +1,333 @@
+thing	T	0				generic	any object or entity
+place	T	0		local		generic	location, position
+time	T	0				generic	time in general; a point or stretch of it
+way	T	0				generic	manner or method of doing something
+amount	T	0				generic	how much there is of something
+number	T	0		numeric		generic	a count or numeral
+kind	R	0			kind of	generic	type, sort, category
+part	R	0		partial	part of	generic	a portion or component of a whole
+piece	R	0			piece of	generic	a separate bit broken or cut from something
+group	R	0			group of	generic	several things or people taken together
+pair	R	0			pair of	generic	two things that go together
+unit	T	0				generic	one standard item or measure used for counting
+shape	T	0				generic	outer form of a thing
+state	T	0				generic	condition something is in
+feature	R	0			feature of	generic	a property or characteristic of something
+material	T	0				generic	stuff a thing is made of; substance
+happen	E	0	event			generic	take place, occur
+exist	E	0	existence	existing		generic	be real, be there
+do	A	1	action			generic	perform an act
+change	E	1		changing		generic	become different
+continue	E	1	continuation	continuing		generic	go on, last, keep happening
+stay	A	0				generic	remain in the same place or state
+remain	E	0	remainder	remaining		generic	be left over when the rest is gone
+source	R	0			source of	generic	where something comes from; origin
+target	R	0			target of	generic	what something is aimed at; destination
+make	A	1	making			action	bring into being, produce, create
+work	A	0				action	do effortful activity to get something done
+task	T	0				action	a piece of work to be done; job
+use	A	1				action	employ for a purpose
+put	A	1	placement			action	place something somewhere
+take	A	1	taking			action	get hold of and remove or bring to oneself
+hold	A	1				action	have in the hand or grip; grasp
+cut	A	1				action	divide with a sharp edge; slice, chop, carve
+split	E	1				action	come apart along a line; crack
+tear	E	1		torn		action	pull apart cloth, paper and the like; rip
+break	E	1	breakage	broken		action	come into pieces or stop working
+damage	E	1		damaged		action	be harmed so as to be worse or less useful
+destroy	A	1	destruction			action	ruin completely so it no longer exists
+join	A	1	connection	joined		action	connect, attach, put together
+tie	A	1		tied		action	fasten with rope or string
+build	A	1	construction			action	put together a structure
+fix	A	1	repair			action	repair, make work again
+open	Q	0	opening			action	not shut; allowing passage or access
+cover	A	1		covered		action	put something over or on top of
+hide	A	1	hiding	hidden		action	put or keep out of sight
+wrap	A	1	wrapping	wrapped		action	fold or wind a covering around
+fold	A	1		folded		action	bend a flat thing over on itself
+bend	E	1		bent		action	become curved or angled
+twist	A	1		twisted		action	turn the two ends in opposite ways; wring
+stretch	E	1		stretched		action	become longer or wider by pulling
+spread	E	1				action	extend over a wider area
+press	A	1	pressure			action	push steadily on a surface
+squeeze	A	1				action	press from two or more sides
+crush	A	1		crushed		action	press or pound until broken small; grind
+rub	A	1	rubbing			action	move something back and forth on a surface; wipe
+wash	A	1	washing			action	clean with water
+strike	A	1	blow			action	hit, beat, knock
+push	A	1				action	press to move something away
+throw	A	1				action	send through the air with the hand
+catch	A	1				action	stop and take hold of something moving
+shake	E	1	shaking			action	move quickly back and forth
+hang	E	1	hanging			action	be held from above with the lower part free
+gather	A	1	collection			action	bring together into one place; collect
+mix	A	1	mixture	mixed		action	combine so the parts are spread through each other
+dig	A	1	digging			action	break up and remove earth
+pierce	A	1	piercing			action	make a hole through; bore, drill, stab
+weave	A	1	weaving	woven		action	make by interlacing threads or strips; plait
+paint	T	0				action	coloured liquid spread on a surface
+copy	A	1				action	make another one just like it
+replace	A	1	replacement			action	put one thing in the place of another; swap
+store	A	1	storage	stored		action	put away and keep for later use
+control	A	1				action	direct how something behaves or works; operate
+support	A	1				action	hold up, bear the weight of
+block	A	1	obstruction	blocked		action	be in the way of; obstruct
+aim	A	1				action	point or direct at a target
+lock	A	1		locked		action	fasten so it cannot be opened without a key
+waste	A	1		wasted		action	use up uselessly
+tool	T	0				technology	a thing made to do a job with
+machine	T	0		mechanical		technology	device with moving parts that does work
+engine	T	0				technology	machine that turns fuel or power into motion; motor
+wheel	T	0				technology	
+rope	T	0				technology	thick cord; also string and thread when small
+chain	T	0				technology	line of linked rings
+knot	T	0				technology	fastening made by tying
+nail	T	0				technology	metal pin driven in to fasten things
+hook	T	0				technology	curved piece for catching or hanging
+handle	T	0				technology	the part a thing is held by
+net	T	0				technology	open mesh of cord
+container	T	0				technology	anything made to hold things inside; vessel
+bag	T	0				technology	soft container; sack
+box	T	0				technology	stiff container with flat sides
+basket	T	0				technology	woven container
+pipe	T	0				technology	hollow tube that things flow through
+wire	T	0				technology	thin metal thread
+pole	T	0				technology	long thin rigid piece; rod, stick, post
+board	T	0				technology	flat stiff piece; plank, plate, panel
+sheet	T	0				technology	thin flat flexible piece
+layer	T	0		layered		technology	one thickness lying over or under another
+load	T	0				technology	what is carried; burden, cargo
+metal	T	0		metallic		technology	
+iron	T	0				technology	the metal
+gold	T	0		golden		technology	the metal
+silver	T	0				technology	the metal
+copper	T	0				technology	the metal
+glass	T	0				technology	the hard clear material
+plastic	T	0				technology	the man-made material
+clay	T	0				technology	soft earth shaped and baked into pots
+adhere	E	1	adhesion	sticky		technology	stick fast to a surface
+road	T	0				technology	prepared way for travel; street, path
+bridge	T	0				technology	structure carrying a road over a gap
+vehicle	T	0				technology	wheeled thing that carries people or loads; cart, car
+boat	T	0				technology	vessel for travel on water; ship when big
+go	A	0	going			motion	move away from here or along a way
+come	A	0	coming			motion	move toward here
+move	E	1	movement	moving		motion	change place or position
+turn	E	1	rotation			motion	go round on an axis; change direction
+return	A	0				motion	go or come back to where one was
+arrive	A	0	arrival			motion	reach the place one was going to
+enter	A	1	entry			motion	go into
+rise	E	1		rising		motion	move upward
+fall	E	1		falling		motion	drop down without control
+climb	A	1				motion	go up using hands and feet
+walk	A	0				motion	go on foot at ordinary pace
+run	A	0		running		motion	go fast on foot
+jump	A	0				motion	push oneself off the ground
+crawl	A	0				motion	move on hands and knees or on the belly
+swim	A	0				motion	move through water by body movements
+fly	A	0	flight	flying		motion	move through the air
+float	E	1		floating		motion	stay on the surface of a liquid or in the air
+flow	E	1		flowing		motion	move along steadily as a liquid does
+slide	E	1		sliding		motion	move smoothly along a surface; slip
+roll	E	1		rolling		motion	move by turning over and over
+blow	A	1				motion	push air out or along
+carry	A	1	carrying			motion	hold and take along while moving
+send	A	1	sending			motion	cause to go to another place or person
+follow	A	1	following			motion	go or come after
+chase	A	1				motion	run after in order to catch; pursue
+escape	A	1				motion	get away from; flee
+pass	A	1	passing			motion	go by or beyond something
+travel	A	0				motion	make a journey
+drive	A	1	driving			motion	steer and operate a vehicle
+ride	A	1				motion	sit on or in and be carried by
+sit	A	0	sitting	sitting		motion	rest on the buttocks
+stand	A	0	standing	standing		motion	be upright on the feet
+recline	A	0	lying	lying		motion	lie flat on a surface
+reach	A	1				motion	stretch or get as far as
+appear	E	0	appearance			motion	come into view or existence
+have	A	1	possession			possession	possess, own
+give	A	1	giving			possession	hand over to another
+get	A	1	receipt			possession	come to have; receive, obtain
+keep	A	1	keeping			possession	go on having, not give up
+lose	A	1	loss	lost		possession	no longer have or be unable to find
+find	A	1	finding	found		possession	come upon, discover where it is
+search	A	1				possession	look for
+buy	A	1	purchase	bought		possession	get in exchange for money
+pay	A	1	payment	paid		possession	give money that is due
+owe	A	1	debt	owed		possession	be bound to pay or give back
+cost	E	1	price			possession	have as its price
+value	T	0				possession	what something is worth
+money	T	0		financial		possession	
+rich	Q	0	wealth			possession	having much money or property
+lend	A	1	loan	lent		possession	give for a time, to be given back
+trade	A	1				possession	exchange goods; do business
+share	A	1	sharing	shared		possession	let others have or use part of
+earn	A	1	earning	earned		possession	get in return for work
+hire	A	1		hired		possession	pay for the use or work of; rent, employ
+tax	T	0				possession	money that must be paid to the government
+profit	T	0				possession	gain left after costs
+steal	A	1	theft	stolen		possession	take what belongs to another without right
+rescue	A	1				possession	save from danger or loss
+lack	A	1		lacking		possession	be without something needed
+contain	A	1	containing			possession	have inside itself or as a part; include
+before	R	0			before	space	earlier than in time or order
+front	R	0			in front of	space	the forward-facing side; ahead of
+inside	R	0		inner	inside	space	within the bounds of
+above	R	0		upper	above	space	higher than; over, up from
+on	R	0			on	space	touching and resting on the surface of
+near	R	0		nearby	near	space	at a short distance from
+between	R	0			between	space	in the space or time separating two things
+among	R	0			among	space	surrounded by, in the midst of several
+around	R	0		surrounding	around	space	on all sides of
+across	R	0		opposite	across	space	on or to the other side of; facing
+along	R	0			along	space	following the length of
+side	R	0		lateral	beside	space	the left or right surface; next to
+top	R	0			top of	space	highest part
+edge	R	0			edge of	space	the line where a thing ends; border, rim
+end	R	0		final	end of	space	last point in space or time
+middle	R	0		central	middle of	space	the point equally far from the ends or edges; centre
+corner	R	0			corner of	space	where two edges or sides meet
+surface	R	0			surface of	space	outside face of a thing
+next	R	0			next after	space	immediately following in space, time or order
+similar	R	0	similarity		similar to	space	alike but not the same
+equal	R	0	equality		equal to	quantity	the same in amount, size or value
+rightside	R	0		right	right of	space	the right-hand direction
+north	R	0		northern	north of	space	
+east	R	0		eastern	east of	space	
+direction	T	0				space	line along which something points or moves
+space	T	0		spatial		space	room; the empty extent things can be in
+region	T	0		regional		space	a stretch of land or surface; area, zone
+gap	T	0				space	empty space between two things
+hole	T	0				space	opening into or through something
+slope	T	0		sloping		space	surface that is higher at one end
+fit	E	1		fitting		space	be the right size and shape for
+big	Q	0	size			property	of great size
+long	Q	0	length			property	of great extent end to end, in space or time
+high	Q	0	height			property	far up from the ground; tall
+wide	Q	0	width			property	of great extent side to side
+thick	Q	0	thickness			property	of great extent through; also dense in consistency
+deep	Q	0	depth			property	going far down or far in
+heavy	Q	0	weight			property	of great weight
+hot	Q	0	heat			property	of high temperature
+fast	Q	0	speed			property	moving or happening at high speed
+hard	Q	0	hardness			property	firm to the touch, not yielding
+sharp	Q	0	sharpness			property	having a fine edge or point
+smooth	Q	0	smoothness			property	even to the touch
+strong	Q	0	strength			property	having much force; not easily broken
+tight	Q	0	tightness			property	firmly stretched or fastened
+wet	Q	0	wetness			property	covered or soaked with liquid
+clean	Q	0	cleanness			property	free from dirt
+full	Q	0	fullness			property	holding as much as it can
+hollow	Q	0	hollowness			property	having an empty space inside
+straight	Q	0	straightness			shape	without bend or curve
+flat	Q	0	flatness			shape	level and without bumps
+vertical	Q	0				shape	upright, at a right angle to the ground
+round	Q	0	circle			shape	shaped like a circle
+ball	T	0		spherical		shape	round solid; sphere
+ring	T	0				shape	circular band with an empty middle; loop
+square	T	0				shape	shape with four equal sides
+triangle	T	0		triangular		shape	shape with three sides
+line	T	0		linear		shape	long thin mark or row
+point	T	0				shape	dot; exact spot; sharp tip
+cross	T	0				shape	two lines crossing each other
+angle	T	0				shape	opening between two meeting lines
+pattern	T	0				shape	regular repeated arrangement
+mark	T	0				shape	visible trace or sign left on a surface
+neat	Q	0	order			property	arranged in order, tidy
+steady	Q	0	stability			property	firm, not shaking or changing; stable
+whole	Q	0				quantity	entire, with no part missing
+alone	Q	0	solitude			quantity	by itself, without others
+half	R	0			half of	quantity	one of two equal parts
+count	A	1				quantity	find the number of
+measure	A	1	measurement			quantity	find the size or amount of
+add	A	1	addition	added		quantity	put with others to make more; plus
+multiply	A	1	multiplication			quantity	take a number so many times
+divide	A	1	division			quantity	split into equal shares
+increase	E	1				quantity	become more or bigger
+limit	R	0			limit of	quantity	the point that cannot or may not be passed
+level	T	0				quantity	position on a scale; degree, grade
+sequence	T	0		sequential		quantity	things one after another in a fixed order
+occasion	T	0				quantity	one time something happens; instance
+stage	T	0				quantity	one step or phase of a process
+exact	Q	0	precision			quantity	precisely right, not approximate
+common	Q	0	frequency			quantity	found or happening often; ordinary
+main	Q	0				quantity	chief, most important of several
+day	T	0		daily		time	period of 24 hours; also the light part
+night	T	0		nightly		time	the dark part of the day
+morning	T	0				time	
+evening	T	0				time	
+hour	T	0		hourly		time	
+minute	T	0				time	sixtieth of an hour
+second	T	0				time	sixtieth of a minute
+week	T	0		weekly		time	
+month	T	0		monthly		time	
+year	T	0		yearly		time	
+season	T	0		seasonal		time	one of the divisions of the year
+spring	T	0				time	the season after winter
+summer	T	0				time	
+autumn	T	0				time	
+winter	T	0				time	
+date	T	0				time	day named by the calendar
+moment	T	0		momentary		time	a very short time; instant
+period	T	0		periodic		time	a stretch of time with a beginning and end
+future	T	0				time	the time yet to come
+new	Q	0	newness			time	recently made or begun
+young	Q	0	youth			time	having lived a short time
+early	Q	0	earliness			time	before the usual or expected time
+ready	Q	0	readiness			time	prepared, fit to start or be used
+sudden	Q	0	suddenness			time	happening quickly and without warning
+permanent	Q	0	permanence			time	lasting without end
+regular	Q	0	regularity			time	recurring at even intervals
+wait	A	0				time	stay until something happens
+hurry	A	0		hurried		time	act or move with haste
+delay	E	1		delayed		time	be made to happen later
+see	A	1	sight	seen		perception	perceive with the eyes
+look	A	1				perception	direct the eyes at; watch
+hear	A	1	hearing	heard		perception	perceive with the ears
+listen	A	1	listening			perception	give attention with the ears
+smell	A	1				perception	perceive with the nose; also the odour itself
+taste	A	1				perception	perceive with the tongue; also the flavour itself
+touch	A	1				perception	be or come in contact with; feel with the hand
+sense	A	1	sensation	sensory		perception	feel by the body: warmth, pressure, pain
+notice	A	1				perception	become aware of by the senses
+show	A	1		shown		perception	let be seen
+seem	E	0	appearance	apparent		perception	give the impression of being
+sound	T	0				perception	what is heard
+shine	E	0	light	shining		perception	give out or reflect light
+color	T	0		coloured		perception	
+picture	T	0				perception	visual image of something
+bright	Q	0	brightness			perception	giving or having much light
+clear	Q	0	clarity			perception	easy to see through or to make out
+loud	Q	0	loudness			perception	strong in sound
+sweet	Q	0	sweetness			perception	tasting like sugar
+sour	Q	0	sourness			perception	tasting like lemon or vinegar
+bitter	Q	0	bitterness			perception	tasting sharp like strong coffee
+salty	Q	0	saltiness			perception	tasting of salt
+stink	E	0	stench	stinking		perception	smell bad
+white	Q	0	whiteness			colour	
+black	Q	0	blackness			colour	
+red	Q	0	redness			colour	
+yellow	Q	0				colour	
+green	Q	0				colour	
+blue	Q	0				colour	
+brown	Q	0				colour	
+grey	Q	0				colour	
+pile	R	0			pile of	action	things lying one on another; heap, stack
+lump	T	0				technology	compact solid mass; block, chunk
+powder	T	0		powdered		technology	fine dry grains
+button	T	0				technology	small part pressed to work a device; switch
+screw	T	0				technology	threaded pin turned in to fasten
+fuel	T	0				technology	material burned or used up to give power
+lean	E	1		leaning		motion	rest at a slant against something
+step	A	0				motion	lift and set down one foot
+swing	E	1		swinging		motion	move to and fro while hanging or pivoting
+extra	Q	0	surplus			quantity	beyond what is needed or usual; spare
+total	R	0			total of	quantity	the whole amount when all is added
+rate	R	0			rate of	quantity	amount of one thing per unit of another
+range	R	0			range of	quantity	the span between the lowest and highest
+expensive	Q	0	expensiveness			possession	costing much
+offer	A	1		offered		possession	hold out for someone to take or refuse
+calendar	T	0				time	system or table of days, weeks and months
+noon	T	0				time	middle of the day
+map	T	0				space	drawing that shows where places are
+mirror	T	0				perception	surface that shows a reflected image

@@ -1,0 +1,48 @@
+[heading] Section 1.
+[definition] “W1” means a program that shows the website for the user.
+[definition] “W2” means a storage that keeps the new answer product for the short period.
+[definition] “W3” means a server that searches the address for the client.
+[definition] “W4” means a final part of the name (namely TLD) such as .org.
+[definition] “W5” means a period (namely TTL) such that the W2 may keep the answer product for itself.
+1. [story] The user wants to access the website with name (call it A) with the W1 (call it B).
+2. [recalled] W1 B needs the numeric address of the website (call it C) because W1 B cannot connect to the server with only name A.
+3. [recalled] The DNS system translates the name to the address.
+4. [recalled; next after the previous sentence] W1 B searches address C at the W2 of W1 B.
+5. [recalled] If the W2 of W1 B contains address C, then W1 B uses address C, and W1 B stops searching.
+6. [recalled] If the W2 of W1 B does not contain address C, then W1 B asks to the system of the computer (call it D) about name A, and then system D searches address C at the W2 of system D.
+7. [recalled] If the W2 of system D also does not contain address C, then system D sends the question about name A to the W3 (call it E).
+8. [recalled; aside] The internet supplier usually maintains W3 E.
+9. [recalled] W3 E also has the W2.
+10. [recalled] If the W2 of W3 E contains address C, then W3 E answers to system D with address C.
+11. [recalled] If the W2 of W3 E does not contain address C, then W3 E asks to the root server (call it F) about name A.
+12. [recalled] Server F does not know address C, but server F knows the address of the server that manages the W4 of name A (call it G).
+13. [recalled; next after the previous sentence] Server F answers to W3 E with the address of server G.
+14. [recalled; next after the previous sentence] W3 E asks to server G about name A.
+15. [recalled] Server G also does not know address C, but server G knows the address of the server with authority about name A (call it H).
+16. [recalled; next after the previous sentence] Server G answers to W3 E with the address of server H.
+17. [recalled; next after the previous sentence] W3 E asks to server H about name A.
+18. [recalled] Server H has the official record product about name A, and so server H answers to W3 E with address C and the W5 (call it J).
+19. [recalled; next after the previous sentence] W3 E stores address C at the W2 of W3 E for W5 J, and then W3 E sends address C to system D.
+20. [recalled; next after the previous sentence] System D gives address C to W1 B, and system D and W1 B also store address C at the W2 of itself for W5 J.
+21. [recalled; next after the previous sentence] W1 B connects to the server of the website with address C.
+22. [recalled] All W2S delete address C at the end of W5 J, and so W3 E again asks to server H when W1 B again asks about name A.
+23. [recalled] If W5 J is longer, then the question to server H is less common, and the new spread of address C is later.
+[heading] Section 2.
+24. [told] The program (call it K) serves at the internet.
+25. [told] The memory that program K uses (call it L) still increases.
+26. [told] The system kills program K per several hours because memory L reaches the limit.
+27. [claim] 3 possible cause of step 25s exist.
+28. [claim; detailing 27; possible] Program K keeps the object that program K no longer needs, and program K never deletes the object.
+29. [claim; as an example of 28; possible] Program K puts the item to the global list per all request products, and program K never deletes the item.
+30. [plan] I record the tally of the object per the kind at several moments so that step 28 is tested, and then I compare all record products.
+31. [claim] If the tally of the object of kind the same kind still increases although the tally of the request product does not increase, then step 28 is true.
+32. [claim; detailing 27; possible] Program K has the W2 such that the limit of the size of itself does not exist, and so program K never deletes the old item.
+33. [plan] The W2 of program K is inactive at the test environment so that step 32 is tested, and then I send many request products to program K.
+34. [claim] If memory L stops increasing, then step 32 is true.
+35. [claim; detailing 27; possible] Program K opens the connect product or the file per all request products, and program K does not make the connect product or the file closed after the use, and all open things keep the part of memory L.
+36. [plan] I count all open things of program K per the hour so that step 35 is tested.
+37. [claim] If the tally still increases, then step 35 is true.
+38. [plan] I check step 35 before step 28 and step 32.
+39. [claim; explaining 38] The test of step 35 (call it M) is easiest because test M does not need the change of program K, and I can do test M for few minutes at program K that is working.
+40. [plan] If step 35 is false, then I check step 28, and then I check step 32.
+41. [recalled; explaining 40] The cause that is similar to step 28 is very common.

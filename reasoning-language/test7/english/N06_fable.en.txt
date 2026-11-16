@@ -1,0 +1,41 @@
+[heading] Sleep and clock.
+1. [recalled] The Borbely scientist suggested the model that is 2 processes (call it A) in year 1982.
+2. [recalled; detailing 1] The time of the sleep is depending on process S (call it B) and process C (call it C).
+3. [recalled] Process S B is a sleeping homeostatic necessity.
+4. [recalled] Process S B increases for the waking, and process S B decreases for the sleep.
+5. [recalled] Process C C is a circadian loop, and process C C is independent process S B, and the period of process C C is equal to about 24 hours.
+6. [recalled] The person begins to sleep when process S B reaches the high threshold, and the person begins to wake when process S B reaches the low threshold.
+7. [recalled; adding to 6] Process C C changes the 2 thresholds with the circadian loop.
+8. [claim; likely] The adenosine (call it D) is a main molecule of process S B.
+9. [recalled; explaining 8] Adenosine D is made when the neuron uses the atp for the energy, and so the amount of adenosine D increases at the brain for the waking.
+10. [recalled] Adenosine D binds the A 1 receptor (call it E) and the A 2 A receptor (call it F).
+11. [recalled] Receptor E inhibits the neuron that causes the waking at the basal forebrain.
+12. [recalled] Receptor F activates the neuron that causes the sleep at the nucleus accumbens.
+13. [it follows from 9, 11, 12] If the waking is longer, then the person is more tired.
+14. [recalled] The caffeine (call it G) is an antagonist of receptor E and receptor F.
+15. [recalled; detailing 14] Caffeine G binds receptor E and receptor F, but caffeine G does not activate receptor E and receptor F.
+16. [it follows from 15] Caffeine G blocks that adenosine D binds receptor E and receptor F.
+17. [claim; emphatic] The common thought such that caffeine G gives the energy, or caffeine G deletes adenosine D is false.
+18. [claim; explaining 17] The amount of adenosine D still increases while caffeine G blocks receptor E and receptor F, and so the strong tirednessness returns when caffeine G leaves from the brain.
+19. [recalled] The amount of caffeine G decreases at the blood of the adult to the half for about 5 hours.
+20. [recalled] The suprachiasmatic nucleus (namely scn) (call it H) is a main clock of the body, and suprachiasmatic nucleus H exists at the hypothalamus.
+21. [recalled] The cell of the eye with melanopsin sends the light signal to suprachiasmatic nucleus H, and so the light adjusts process C C to the day with 24 hours.
+22. [recalled] All neurons of suprachiasmatic nucleus H have the molecular clock (call it J).
+23. [recalled; detailing 22] Clock J contains 4 main proteins (namely Clock, and Bmal 1, and Per, and Cry).
+24. [recalled] Clock and Bmal 1 join each other to the pair (call it K).
+25. [recalled; next after 24] Pair K binds the E Box region of the gene of Per and Cry, and pair K activates the transcription of the gene.
+26. [recalled; next after 25] The amount of Per and Cry increases at the cell for the day.
+27. [recalled; next after 26] Per and Cry enter the nucleus of the cell, and Per and Cry inhibit pair K.
+28. [it follows from 25, 27] The transcription of the gene decreases, and then Per and Cry are destroyed in a gradual way.
+29. [it follows from 28] Pair K stops being inhibited, and pair K again becomes active.
+30. [claim; restating 25, 27, 29] Clock J is a feedback negative loop, and the period of clock J is equal to about 24 hours because the step such as making of the protein, and entry, and destruction is slow.
+31. [recalled] Suprachiasmatic nucleus H controls the pineal gland (call it L).
+32. [recalled; detailing 31] Gland L emits the melatonin hormone (call it M) to the blood at the night, and the light inhibits the emission.
+33. [recalled] Hormone M binds the mt 1 receptor and the mt 2 receptor at suprachiasmatic nucleus H, and hormone M tells that the night exists to the body.
+34. [recalled] About 70000 neurons of the hypothalamus make the orexin (namely hypocretin) (call it N).
+35. [recalled] Orexin N activates the neuron that causes the waking, and so the waking state is stable.
+36. [recalled] More than 90 percent of the neuron that makes orexin N die at the disease that is a narcolepsy type 1 (call it P).
+37. [considering, not committed] The attack of the immune system causes the death.
+38. [it follows from 35, 36] The waking state is unstable, and the person with disease P sleeps in a sudden way on the day.
+39. [recalled] The person with disease P loses the strength of the muscle in a sudden way at the cataplexy symptom (call it Q) because of the strong feeling such as laughter.
+40. [recalled; as evidence for 36] The amount of the hypocretin 1 is less big than 110 pg/mL at the csf liquid about the person with disease P.

@@ -1,0 +1,43 @@
+[heading] Rate of the reaction (namely Arrhenius equation and Eyring equation).
+1. [recalled] The Arrhenius equation describes that the rate constanting (namely k) is depending on the temperature.
+2. [recalled; detailing 1] K is equal to A*exp(-Ea/(R*T)).
+3. [recalled; detailing 2] Ea is an activation energy, and A is a pre exponential factor, and R is a gaseous constanting, and T is a temperature.
+4. [recalled] Ea is a minimum energy that the reagent needs so that the reagent reaches the transition state.
+5. [recalled] The experimenter gets Ea from the slope of the line that shows ln k about 1/T, and the slope is equal to -Ea/R.
+6. [recalled] The transition state is highest about the energy than all other points of the way such that the reaction goes through itself from the reagent to the product.
+7. [recalled; in contrast to 2] The Eyring equation gets k from the theory that is a transition state.
+8. [recalled; detailing 7] K is equal to (kB*T/h)*exp(-ΔG‡/(R*T)).
+9. [recalled; detailing 8] ΔG‡ is a Gibbs activation energy, and kB is a Boltzmann constanting, and h is a Planck constanting.
+10. [recalled; adding to 9] ΔG‡ is equal to ΔH‡ - T*ΔS‡, and ΔH‡ is an activation enthalpy, and ΔS‡ is an activation entropy.
+11. [recalled; explaining 8] The theory assumes that the equilibrium exists between the reagent and the transition state.
+12. [claim; rebutting the previous sentence] The mistake such that that Ea is equal to ΔG‡ is believed is common.
+13. [claim; detailing 12; emphatic] Ea is not equal to ΔG‡.
+14. [recalled] The scientist defines Ea with equation Ea = R*T^2*d(ln k)/dT.
+15. [it follows from 8, 10, 14] Ea is equal to ΔH‡ + R*T about the reaction that happens at the liquid.
+16. [it follows from 8, 10, 15] A is equal to (e*kB*T/h)*exp(ΔS‡/R).
+17. [it follows from 15, 16] ΔG‡ contains the activation entropy, but Ea does not contain the activation entropy.
+18. [it follows from 15; as an example of 15] If Ea is equal to 50 kJ/mol, and T is equal to 298 K, then R*T is equal to 2.48 kJ/mol, and ΔH‡ is equal to 47.52 kJ/mol.
+[heading] Numeric example.
+19. [given] Ea is equal to 50 kJ/mol, and T1 is equal to 298 K, and T2 is equal to 308 K, and R is equal to 8.314 J/(mol*K).
+20. [claim] K1 is equal to k at T1, and k2 is equal to k at T2.
+21. [suppose] A constants between T1 and T2.
+22. [it follows from 2, 20, 21; under the supposition of 21] Ln(k2/k1) is equal to (Ea/R)*(1/T1 - 1/T2).
+23. [it follows from 19] Ea/R is equal to 6014 K, and 1/T1 - 1/T2 is equal to 1.0895*10^-4 K^-1.
+24. [it follows from 22, 23; under the supposition of 21] Ln(k2/k1) is equal to 0.655, and so k2/k1 is equal to 1.93.
+25. [it follows from 24; under the supposition of 21] K2 is roughly 2 times as big as k1, and (restate) the reaction is roughly 2 times as fast at 308 K than at 298 K.
+[heading] Kinetic isotope effect.
+26. [recalled] Ratio kH/kD is a kinetic isotope effect, and kH is a rate constanting of the reagent with hydrogen, and kD is a rate constanting of the reagent with deuterium.
+27. [recalled] The mass of the deuterium is roughly 2 times as big as the mass of the hydrogen.
+28. [recalled; as a result of 27] The shake frequency of bond C-H is equal to about 2900 cm-1, and the shake frequency of bond C-D is equal to about 2100 cm-1.
+29. [it follows from 28] The zero point energy of bond C-D is lower than the zero point energy of bond C-H for about 4.8 kJ/mol.
+30. [recalled] If the bond with hydrogen breaks at the transition state, then the shaking of the bond disappears, and so Ea of bond C-D is bigger than Ea of bond C-H for about 4.8 kJ/mol.
+31. [it follows from 2, 30] KH/kD is equal to exp(4800/(8.314*298)), and so kH/kD is equal to about 6.9 when T is equal to 298 K.
+32. [it follows from 31] If the experimenter measures kH/kD that is near 7, then probably [bond C-H breaks at the slowest step of the reaction].
+33. [claim; in contrast to 32] If kH/kD is near 1, then probably [bond C-H does not break at the slowest step].
+[heading] Hammond postulate.
+34. [recalled] The Hammond postulate says that if 2 states that are next after each other at the way of the reaction are near each other about the energy, then the 2 states are similar to each other about the structure.
+35. [it follows from 34] If the step exothermics, then the transition state is near the reagent about the energy, and so the transition state is similar to the reagent about the structure.
+36. [it follows from 34; in contrast to 35] If the step endothermics, then the transition state is near the product about the energy, and so the transition state is similar to the product about the structure.
+37. [claim; as a result of 36] If the step endothermics, and the factor (call it A) decreases the energy of the product, then factor A also decreases ΔG‡, and so k increases.
+38. [claim; adding to 32, 34] KH/kD is biggest when the transition state is symmetric, and the hydrogen exists at the middle of the giver atom and the recipient atom.
+39. [claim; restating the previous sentence] Ea shows depending on T of k, and ΔG‡ shows the value of k, and kH/kD shows that [question] which bond breaks at the slowest step?, and the Hammond postulate shows the structure of the transition state.

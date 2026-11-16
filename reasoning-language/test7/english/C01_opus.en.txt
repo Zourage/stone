@@ -1,0 +1,41 @@
+[heading] Task C01 (namely pericyclic reaction).
+1. [recalled] The Diels Alder pericyclic reaction (call it A) is a cycloaddition of kind [4+2].
+2. [recalled] Diels and Alder found reaction A in year 1928 long ago.
+3. [recalled; detailing 1] The diene with 4 atoms (call it B) and the dienophile with 2 atoms (call it C) are joined to the ring with 6 atoms.
+4. [recalled; detailing 3] 2 new bonds appear at 2 end of diene BS while 6 electrons move through the ring.
+5. [recalled] Reaction A concerteds, and the intermediate does not exist at reaction A.
+6. [recalled] Woodward and Hoffmann wrote the Woodward Hoffmann rule (call it D) in year 1965 long ago.
+7. [recalled; detailing 6] Rule D says that the symmetry of the orbital must not change for the pericyclic reaction.
+8. [recalled; detailing 6] If the tally of the electron is equal to 4n+2, then the suprafacial cycloaddition may happen with the temperature; otherwise if the tally of the electron is equal to 4n, then the suprafacial cycloaddition may not happen with the temperature, but the suprafacial cycloaddition may happen with the light.
+9. [it follows from 3, 4, 8] Reaction A may happen with the temperature because the tally of the electron of reaction A is equal to 6, and 6 is equal to 4*1+2.
+10. [definition] “suprafacial” means that 2 new bonds appear at the same surface of the part of the reaction.
+11. [definition] “antarafacial” means that the 1st new bond appears at the 1st surface of the part of the reaction, and the 2nd new bond appears at the 2nd surface of the part of the reaction.
+12. [recalled] Diene B and dienophile C suprafacial at reaction A, and so if 2 substituents of dienophile C cis, then 2 substituents of the product of reaction A cis.
+13. [definition] “homo” means an orbital that has the electron that is most high about the energy.
+14. [definition] “lumo” means an orbital that does not have the electron that is least high about the energy.
+15. [recalled] The homo of diene B and the lumo of dienophile C mainly interact each other at reaction A.
+16. [recalled] If the energetic gap that is between the homo of diene B and the lumo of dienophile C is less big, then reaction A is faster.
+17. [recalled; as an example of 1] The cyclopentadiene (call it E) and the maleic anhydride (call it F) react very fast when the temperature is equal to about 20 °C.
+18. [recalled; detailing 17] Cyclopentadiene E dienes, and maleic anhydride F dienophiles.
+19. [recalled] 2 carbonyls of maleic anhydride F decrease the energy of the lumo of maleic anhydride F because the carbonyl pulls the electron.
+20. [recalled] Cyclopentadiene E always has the s Cis form because cyclopentadiene E is a ring.
+21. [it follows from 16, 19, 20; explaining 17] The reaction of cyclopentadiene E and maleic anhydride F is very fast.
+22. [recalled; in contrast to 9] The suprafacial cycloaddition of kind [2+2] may not happen with the temperature.
+23. [it follows from 8; explaining 22] The tally of the electron of the cycloaddition of kind [2+2] is equal to 4.
+24. [recalled; detailing 22] The homo of the ethene (call it G) and the lumo of another ethene (call it H) interact each other.
+25. [recalled; detailing 24] The phase of homo G is matching the phase of lumo H at the 1st end of the ethene, but the phase of homo G is mismatch the phase of lumo H at the 2nd end of the ethene.
+26. [it follows from 25] 2 new bonds cannot appear suprafacial with the temperature.
+27. [recalled; adding to 26] The cycloaddition of kind [2+2] may happen antarafacial, but the ethene is too short for the twist.
+28. [recalled; in contrast to 26] The light moves 1 electron from homo G to the lumo of the same ethene (call it J), and so lumo J begins to homo.
+29. [it follows from 28] The phase of lumo J is matching the phase of lumo H at all end of the ethenes.
+30. [it follows from 8, 23, 29] The suprafacial cycloaddition of kind [2+2] may happen with the light.
+31. [definition] “endo” means that the substituent of dienophile C is below diene B at the transition state.
+32. [definition] “exo” means that the substituent of dienophile C is far diene B at the transition state.
+33. [recalled] The endo rule (call it K) says that the making of the endo product is faster than the making of the exo product.
+34. [recalled; as an example of 33] Almost all products of the reaction of cyclopentadiene E and maleic anhydride F endo.
+35. [recalled; explaining 33] The secondary orbital overlap (call it L) decreases the energy of the endo transition state.
+36. [recalled; detailing 35] The orbital of 2 carbonyls of maleic anhydride F overlaps together with the orbital of 2 central atoms of cyclopentadiene E, and the new bond does not appear at secondary orbital overlap L.
+37. [recalled] Many students believe that the endo product appears because the endo product is stabler than the exo product.
+38. [recalled; rebutting 37] The exo product is often stabler than the endo product, and the endo product is a kinetic product, and the exo product is a thermodynamic product.
+39. [recalled] If the endo product is hot for the long time, then the amount of the exo product increases.
+40. [claim; adding to 35] Some researcher doubts that only secondary orbital overlap L explains rule K.

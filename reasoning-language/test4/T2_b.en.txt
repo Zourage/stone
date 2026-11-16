@@ -1,0 +1,40 @@
+[heading] Search of the address 1.
+1. [definition] “W1” means a program that shows the website.
+2. [definition] “W2” means a storage that keeps the answer product for the short period.
+3. [definition] “W3” means a server that searches the address for the client.
+4. [definition] “W4” means a final part of the name such as com.
+5. [definition] “W5” means a period such that the W2 may keep the answer product for itself.
+6. [recalled] The W1 (call it A) needs the numeric address of the website with name (call it B) (call it C).
+7. [recalled; next after the previous sentence] W1 A checks the W2 of W1 A so that W1 A finds address C.
+8. [recalled] If the W2 of W1 A contains address C, then W1 A uses address C, and the search stops continuing.
+9. [recalled] If the W2 of W1 A does not contain address C, then the computer sends the question about name B to the W3 (call it D).
+10. [recalled; aside] The company that supplies the internet often has W3 D.
+11. [recalled; next after 9] W3 D checks the W2 of W3 D.
+12. [recalled] If the W2 of W3 D contains address C, then W3 D sends address C to W1 A.
+13. [recalled] If the W2 of W3 D does not contain address C, then W3 D asks to the root server (call it E) about name B.
+14. [recalled; next after the previous sentence] Server E does not know address C, but server E knows the address of the server that manages the W4 of name B (call it F).
+15. [recalled; next after the previous sentence] Server E sends the address of server F to W3 D.
+16. [recalled; next after the previous sentence] W3 D asks to server F about name B.
+17. [recalled; next after the previous sentence] Server F sends the address of the server that has the authority about name B (call it G) to W3 D.
+18. [recalled; next after the previous sentence] W3 D asks to server G about name B.
+19. [recalled; next after the previous sentence] Server G sends the answer product that contains address C and the W5 (call it H) (call it J) to W3 D.
+20. [recalled; next after the previous sentence] W3 D stores answer product J at the W2 of W3 D, and W3 D sends address C to W1 A.
+21. [recalled; next after the previous sentence] W1 A also stores address C at the W2 of W1 A, and W1 A connects to the server of the website with address C.
+22. [recalled; detailing 19] W5 H is measured with the second.
+23. [recalled] All W2S must delete answer product J after the end of W5 H, and so W3 D must again ask.
+24. [claim; adding to the previous sentence] If the W5 is longer, then the spread of the change of the address is slower.
+[heading] Memory problem 2.
+25. [told] The amount of the memory that the internet service (call it K) uses always increases.
+26. [told; next after the previous sentence] The system kills service K per several hours because the amount is too big.
+27. [claim] 3 possible causes exist.
+28. [claim; detailing 27; possible] Service K keeps the object that service K no longer needs, and service K never deletes the object.
+29. [plan] I record the state of the memory of service K so that I test step 28 twice, and then I compare the tally of the object per the category.
+30. [claim] If the tally of the object of 1 category always increases, then step 28 is true.
+31. [claim; adding to 28; possible] The limit of the size does not exist about the W2 or the queue at service K.
+32. [plan] I record the tally of the item at the W2 and the queue per the minute so that I test step 31, and I also put the small limit, and then I observe the memory.
+33. [claim; adding to 31; possible] Service K opens the connect product or the file per the request, and service K never makes the thing closed.
+34. [plan] I count the open connect product and the open file per the minute so that I test step 33.
+35. [claim] If the tally increases, and the tally of the request does not increase, then step 33 is true.
+36. [plan] I check step 31 before step 28 and step 33.
+37. [claim; explaining 36] The test about step 31 is easiest, and step 31 is commonest.
+38. [claim; adding to 37] The test about step 31 needs only the simple tally, but the test about step 28 needs the very big record product.

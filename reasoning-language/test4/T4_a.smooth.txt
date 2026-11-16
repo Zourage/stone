@@ -1,0 +1,43 @@
+[heading] Section 1 (a proof).
+1. [plan] I will prove that for every positive integer A, the sum of the 1st to the A-th positive integers is A(A + 1)/2.
+2. [given] The sum of the 1st to the 1st positive integers is 1.
+3. [given] 1(1 + 1)/2 = 1.
+4. [follows from 2 and 3] The sum of the 1st to the 1st positive integers is 1(1 + 1)/2.
+5. [suppose] Let B be a positive integer.
+6. [suppose] The sum of the 1st to the B-th positive integers is B(B + 1)/2.
+7. [recalled; assuming 5] The sum of the 1st to the (B + 1)-th positive integers is (the sum of the 1st to the B-th positive integers) + (B + 1).
+8. [follows from 6 and 7; assuming 5 and 6] The sum of the 1st to the (B + 1)-th positive integers is B(B + 1)/2 + (B + 1).
+9. [recalled] B(B + 1)/2 + (B + 1) = (B + 1)((B + 1) + 1)/2.
+10. [follows from 8 and 9; assuming 5 and 6] The sum of the 1st to the (B + 1)-th positive integers is (B + 1)((B + 1) + 1)/2.
+11. [follows from 5, 6 and 10] For every positive integer B: if the sum of the 1st to the B-th positive integers is B(B + 1)/2, then the sum of the 1st to the (B + 1)-th positive integers is (B + 1)((B + 1) + 1)/2.
+12. [recalled] If a statement C is true of 1, and for every positive integer B, if C is true of B then C is true of B + 1, then C is true of all positive integers.
+13. [follows from 4, 11 and 12] For every positive integer A, the sum of the 1st to the A-th positive integers is A(A + 1)/2.
+[heading] Section 2 (a proof).
+14. [suppose] There is a biggest prime number (call it D).
+15. [follows from 14; assuming 14] The set of prime numbers is finite.
+16. [follows from 15; assuming 14] There is a number E equal to (the product of all prime numbers) + 1.
+17. [follows from 16; assuming 14] For every prime number F, E mod F = 1.
+18. [follows from 17; assuming 14] E has no prime factor.
+19. [recalled] Every integer G bigger than 1 has a prime factor.
+20. [follows from 16; assuming 14] E is bigger than 1.
+21. [follows from 19 and 20; assuming 14] E has a prime factor.
+22. [follows from 18 and 21; assuming 14] Step 18 contradicts step 21.
+23. [follows from 14 and 22] There is no biggest prime number.
+[heading] Section 3 (functions).
+24. [definition] Biggest item(A) is defined as: let H = A[0]; for each B in A, if B > H then let H = B; after the loop, return H.
+25. [definition] Put order(A) is defined as: let H = []; for each B in A, do the following: let D = [] and E = 0; while E < count of H and H[E] ≤ B, append H[E] to D and let E = E + 1; then append B to D; then while E < count of H, append H[E] to D and let E = E + 1; then let H = D; after the for-each loop, return H.
+[heading] Section 4.
+26. [claim] Before any step of the loop, H contains exactly those items of A that have already been read, and H is sorted.
+
+Translator notes
+- Throughout: "the sum of the 1st to the A-th positive integers" is kept in words rather than rewritten as 1 + 2 + … + A; "(addition number B 1)-th" is rendered "(B + 1)-th"; "number B", "number D", "number E" are written B, D, E; remainder(E, F) is written "E mod F"; "under the supposition of" is rendered "assuming".
+- 5: "The number (call it B) is a positive integer" under the tag "suppose" rendered as "Let B be a positive integer".
+- 12: the nesting of the two "if ... then" clauses follows the literal's commas: the inner "if C is true of B then C is true of B + 1" is inside the "for every B", and both conditions together lead to the final "then".
+- 14, 23: "the prime biggest number" read as "the biggest prime number".
+- 15: "the prime set of numbers" read as "the set of prime numbers".
+- 16: "add(prime product of all numbers, 1)" read as (the product of all prime numbers) + 1, with "prime" modifying "numbers" as in 14 and 15.
+- 18, 19, 21: "the prime factor of X exists / does not exist" read as "X has a / has no prime factor".
+- 22: "Step 18 is contradict step 21" read as "contradicts"; "step" is taken to mean the numbered sentences.
+- 24, 25: the function names "Biggest item" and "Put order" are kept as the literal gives them. The literal's semicolons do not show where loops and conditionals end; the nesting written out here (in 24, only the assignment is inside the "if", and "return" is after the loop; in 25, the two inner while-loops each contain an append and an increment, "append B to D" sits between them, "let H = D" ends each pass of the for-each, and "return H" is after it) is my reading.
+- 25: "is not more than" written as ≤; count(H) written as "count of H"; "let D be append(D, x)" written as "append x to D".
+- 26: "only all items" read as "exactly those items". "at before any step of the loop" is attached to the whole claim (it holds before any step), not to "were already read". The literal does not say which loop or which function's H is meant (H is used in both 24 and 25); left as "the loop" and "H". "Has been sorted" rendered as "is sorted".

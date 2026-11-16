@@ -1,0 +1,36 @@
+T2 (a) How a browser looks up the address for a website name (DNS)
+
+1. A website name is easy for people to read, but computers connect to each other by numeric addresses, so the browser must first find the address that belongs to the name.
+2. The browser first looks in its own cache, which is a store of answers it received earlier.
+3. If the browser's cache has no answer, the operating system looks in its own cache and in its local hosts file.
+4. If an answer is found in a cache and it has not yet expired, that answer is used at once and nothing further is sent.
+5. If no cached answer exists, the computer sends the question to a resolver, which is a server that does the search on the computer's behalf and is usually run by the internet provider or a public DNS service.
+6. The resolver also has a cache, and if the answer is stored there, the resolver returns it immediately.
+7. Otherwise the resolver asks a root server.
+8. The root server does not know the address of the website, but it knows which servers are responsible for each top-level domain, such as "com" or "org", and it replies with the addresses of those servers.
+9. The resolver then asks a server for the top-level domain.
+10. That server also does not know the final address, but it knows which authoritative servers hold the records for the particular name, and it replies with their addresses.
+11. The resolver then asks one of the authoritative servers.
+12. The authoritative server holds the actual record for the name and replies with the address.
+13. The resolver stores this answer in its cache and sends it back to the computer.
+14. The operating system and the browser store the answer too, and the browser then connects to the address.
+15. Every answer carries a number called the time-to-live, which says for how many seconds the answer may be kept in a cache.
+16. When the time-to-live runs out, the cached answer is deleted, and the next lookup must ask the servers again.
+17. A short time-to-live means that changes to the address spread quickly but more questions are sent; a long time-to-live means fewer questions but slower spreading of changes.
+
+T2 (b) A web service uses more and more memory until it is killed every few hours
+
+18. The observed facts are: the memory use of the service rises steadily, and the system kills the service every few hours when the memory limit is reached.
+19. The first possible cause is a memory leak in the code: objects are created for each request and something keeps a reference to them, for example a global list, a registered listener that is never removed, or a closure, so they are never freed.
+20. To test the first cause, I would take a snapshot of the heap soon after the start and another one an hour later, and compare which kinds of objects have grown in number.
+21. If one kind of object keeps growing in proportion to the number of requests handled, and the snapshot shows what holds the references to it, the first cause is confirmed.
+22. The second possible cause is a cache with no limit: the service stores results in memory to be faster, but entries are never removed and there is no maximum size, so the cache grows with every new key.
+23. To test the second cause, I would read the code and the configuration for caches, record the number of entries in each cache over time, and then set a maximum size or an expiry time and see whether the memory use stops rising.
+24. The third possible cause is resources that are opened and never closed, such as database connections, file handles, sockets, or background threads and tasks that are started and never finish; each one holds memory, often outside the managed heap.
+25. To test the third cause, I would count the open connections, the open file handles, and the threads of the process over time, and check whether these counts rise together with the memory.
+26. If the heap stays about the same size while the total memory of the process rises, that points to the third cause or to a leak in native code, not to ordinary objects.
+27. I would check the unbounded cache first.
+28. The reason is that it is the cheapest to check: reading the configuration and logging the size of each cache takes minutes and needs no special tools, and it carries no risk for the running service.
+29. It is also a very common cause, and steady growth over hours until a kill fits a store that gains one entry for each new key.
+30. If the caches are bounded, I would next compare heap snapshots, because that test separates the first cause from the third: growth inside the heap means leaked objects, and growth outside the heap means unclosed resources or native memory.
+31. In all three cases I would also plot memory use against the number of requests handled, because growth that follows traffic points to something done per request, while growth that follows only time points to a background task.

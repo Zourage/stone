@@ -1,0 +1,19 @@
+[heading] Story.
+1. [story] Ana (call it A) and Ben (call it B) dwell at the same home.
+2. [story] The letter (call it C) arrived from the electric company.
+3. [story] Letter C said that the electric price (call it D) is not paid yet.
+4. [story; as a result of 3] A becomes angry.
+5. A: [question; annoyed; to B] Which person forgot that price D is paid?
+6. B: [claim; answering 5; ironic] A never forgets any thing.
+7. B: [claim; certain] That price D is paid this month is a task of A.
+8. A: [claim; rebutting 7] I sent the money to the electric company 2 weeks ago.
+9. [story; next after the previous sentence] A and B check the account of A at the bank.
+10. [story] A and B see that the bank sent the money to another company.
+11. [story; as a result of 10] A and B begin to know that the bank did the mistake.
+12. [story] A shames, and B laughs.
+13. A: [social act; to B] Apologise.
+14. B: [social act; to A] Forgive.
+15. A: [plan] I call the bank on the next day so that the bank fixes the mistake.
+16. B: [proposal] We (you and I) eat the evening meal on Friday at the home.
+17. A: [plan; glad] I cook the noodle on Friday.
+18. [story] A and B are finally happy.

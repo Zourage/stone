@@ -1,0 +1,6 @@
+1: RECALLED make AGENT cell KIND ~t THEME ~il 4 ANDC cause AGENT ~il 4 THEME ~class ~switching .
+2: RECALLED PAST fly AGENT NAME ( ~winston ~churchill ) WITH NAME ( ~vickers ~vimy ) .
+3: CLAIM fail THEME CODE «for i in range(len(xs) + 1):» CAUSE CODE «IndexError» .
+4: CLAIM EQUAL THEME ~hba 1 ~c OF A THAN 48 «mmol/mol» .
+5: CLAIM exist THEME «affinity maturation» .
+6: CLAIM EQUAL THEME «v» THAN «v0 - g*t» .

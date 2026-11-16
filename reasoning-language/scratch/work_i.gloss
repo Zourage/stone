@@ -1,0 +1,8 @@
+CODE «python» .
+IMPORT «math» NAMED M .
+IMPORT «statistics» NAMED S .
+DEFINE ( long.ness KIND line ) BE «hyp» .
+DEFINE ( long.ness KIND line ) FIRST A SECOND B BE ( «sqrt» OF M FIRST ( add FIRST ( multiply FIRST A SECOND A ) SECOND ( multiply FIRST B SECOND B ) ) ) .
+DEFINE ( number KIND middle ) BE «mid» .
+DEFINE ( number KIND middle ) FIRST L BE { DEFINE T BE ( «median» OF S FIRST L ) . RETURN T } .
+DEFINE bad FIRST A BE ( «math.floor» FIRST A ) .

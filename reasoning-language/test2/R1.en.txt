@@ -1,0 +1,14 @@
+1. [heading] Report about the failure of the server.
+2. [given] The server (call it A) crashed this night 4 times.
+3. [given] The log of server A shows that the memory was almost full before all crashes.
+4. [told by D] The team (call it B) deployed the new version of the program (call it C) 2 days ago.
+5. [recalled] Version C stores all requests at the cache (call it E).
+6. [given] Cache E does not have the limit of the size.
+7. [it follows from 3, 5, 6; likely] Cache E causes all 4 crashes.
+8. [claim; even though 7] I do not measure the size of cache E yet.
+9. [plan] I measure the size of cache E, and then I report to team B.
+10. [proposal] Team B undoes the deployment of version C before this night so that server A not again crashes.
+11. [definition] “W1” means a biggest count of the request that the cache may store.
+12. [proposal; adding to 10] Team B will configure the W1 of cache E as 5000.
+13. D: [question] I must restart server A now?
+14. [claim; answering 13] You do not have to restart server A because server A always restarts itself after the crash.

@@ -1,0 +1,27 @@
+## kinship
+the person, the man, the woman, male(1), female(1), the boy, the young man, the girl, the young woman, the child(1), the baby, the husband, the wife, to marry, the wedding, the divorce, the father, the mother, the parents, the married man, the married woman, the son, the daughter, the child(2), the brother, the older brother, the younger brother, the sister, the older sister, the younger sister, the sibling, the twins, the grandfather, the old man, the grandmother, the old woman, the grandson, the granddaughter, the uncle, the mother's brother, the father's brother, the aunt, the mother's sister, the father's sister, the nephew, the niece, the cousin, the ancestors, the descendants, the father-in-law (of a man), the father-in-law (of a woman), the mother-in-law (of a man), the mother-in-law (of a woman), the son-in-law (of a man), the son-in-law (of a woman), the daughter-in-law (of a man), the daughter-in-law (of a woman), the stepfather, the stepmother, the stepson, the stepdaughter, the orphan, the widow, the widower, the relatives, the family, I, you (singular), he/she/it, we, we (inclusive), we (exclusive), you (plural), they, the older sibling, the younger sibling, the grandparents, the grandchild, the sibling’s child, the parents-in-law, the child-in-law, the sibling-in-law, he, she, it
+
+## emotions and values
+the soul or spirit, surprised or astonished, the good luck, the bad luck, happy, to laugh, to smile, to play, to love, to kiss, to embrace, the pain, the grief, the anxiety, to regret or be sorry, the pity, to cry, the tear, to groan, to hate, the anger, the envy or jealousy, the shame, proud, to dare, brave, the fear, the danger, to want, to choose, to hope, faithful, true, to lie(2), the deceit, to forgive, good, bad, right(2), wrong, the fault, the mistake, the blame, the praise, beautiful, ugly, greedy, clever
+
+## cognition
+the mind, to think(1), to think(2), to believe, to understand, to know, to guess, to imitate, to seem, the idea, wise, stupid, mad, to learn, to study, to teach, the pupil, the teacher, the school, to remember, to forget, clear, obscure, secret, certain, to explain, the intention, the cause, the doubt, to suspect, to betray, the need or necessity, easy, difficult, to try, the manner, and, because, if, or, yes, no, how?, how many?, how much?, what?, when?, where?, which?, who?, why?
+
+## speech and language
+the voice, to sing, to shout, to whisper, to mumble, to whistle, to shriek, to howl, to speak or talk, to stutter or stammer, to say, to tell, the speech, to be silent, the language, the word, the name, to ask(1), to answer, to admit, to deny, to ask(2), to promise, to refuse, to forbid, to scold, to call(1), to call(2), to announce, to threaten, to boast, to write, to read, the paper, the pen, the book, the poet, the flute, the drum, the horn or trumpet, the rattle
+
+## social and political relations
+the country, the native country, the town, the village, the boundary, the people, the clan, the chieftain, the walking stick, to rule or govern, the king, the queen, the noble, the citizen, the master, the slave, the servant, the freeman, to command or order, to obey, to permit, the friend, the enemy, the neighbour, the stranger, the guest, the host, to help, to prevent, the custom, the quarrel, the plot, to meet, the prostitute, to liberate, to invite
+
+## warfare and hunting
+to fight, the war or battle, the peace, the army, the soldier, the weapons, the club, the battle-axe, the sling, the bow, the arrow, the spear, the sword, the gun, the armour, the helmet, the shield, the fortress, the tower, the victory, the defeat, the attack, to defend, to retreat, to surrender, the captive or prisoner, the guard, the booty, the ambush, the fisherman, the fishhook, the fishing line, the fishnet, the fish trap, the bait, to hunt, to shoot, to miss, the trap, to trap
+
+## law
+the law, the court, to adjudicate, the judgment, the judge, the plaintiff, the defendant, the witness, to swear, the oath, to accuse, to condemn, to convict, to acquit, guilty, innocent, the penalty or punishment, the fine, the prison, the murder, the adultery, the rape, the arson, the perjury, to steal, the thief
+
+## religion and belief
+the religion, the god, the temple, the altar, the sacrifice, to worship, to pray, the priest, holy, to preach, to bless, to curse, to fast, the heaven, the hell, the demon, the idol, the magic, the sorcerer or witch, the fairy or elf, the ghost, the omen, the circumcision, the initiation ceremony, the church, the mosque
+
+## modern world
+the radio, the television, the telephone, the motorcycle, the car, the bus, the airplane, the electricity, the battery, the hospital, the nurse, the pill or tablet, the injection, the tap/faucet, the sink, the toilet, the mattress, the government, the president, the minister, the police, the driver's license, the crime, the election, the post/mail, the postage stamp, the letter, the bank, the tin/can, the screw, the screwdriver, the bottle, the candy/sweets, the spectacles/glasses, the plastic, the bomb, the workshop, the cigarette, the calendar, the film/movie, the music, the song, the newspaper, the address, the number, the train, the birth certificate, to brake, the petroleum, the motor, the machine, the bicycle, the street, the license plate, the postcard, the tea, the coffee
+

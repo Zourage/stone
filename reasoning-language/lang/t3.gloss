@@ -1,0 +1,2 @@
+DEFINE ( add.made KIND even ) BE «sum_even» .
+DEFINE ( add.made KIND even ) FIRST L BE { DEFINE T BE 0 . EACH X IN L { IF { EQUAL FIRST ( remainder FIRST X SECOND 2 ) SECOND 0 } { DEFINE T BE ( add FIRST T SECOND X ) } } . RETURN T } .

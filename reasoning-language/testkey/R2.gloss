@@ -1,0 +1,12 @@
+1: HEAD message FROM buy.doer .
+BY A 2: SOCIAL greet .
+BY A 3: GIVEN PAST get AGENT ME THEME package WHEN THIS morning .
+BY A 4: GIVEN ANNOYED contain AGENT package THEME 6 cup KIND blue BUT DONE break THEME 2 cup .
+BY A 5: ASK POLITE CAN send AGENT YOU TO ME THEME 2 cup KIND new .
+BY A 6: CLAIM need AGENT ME THEME cup WHEN before REL name«Saturday» CAUSE { FUTURE visit AGENT 4 guest THEME ME } .
+BY B 7: SOCIAL regret .
+BY B 8: PLAN send THEME 2 cup KIND new TO YOU WHEN THIS day .
+BY B 9: CLAIM LIKELY FUTURE arrive AGENT THAT cup WHEN ago.opp REL 2 day .
+BY B 10: REQUEST NOT send THEME cup KIND { DONE break THEME SELF } TO US .
+BY B 11: PLAN ALSO give AGENT US TO YOU THEME 10 percent OF price .
+BY A 12: SOCIAL GLAD thank .

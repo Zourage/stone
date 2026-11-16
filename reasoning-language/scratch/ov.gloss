@@ -1,0 +1,9 @@
+CLAIM see AGENT ME THEME dog .
+CLAIM see THEME dog AGENT ME .
+ASK YES see AGENT YOU THEME dog .
+1: GIVEN big THEME dog NAMED A .
+2: GIVEN fear AGENT ALL cat THEME ALL dog KIND big .
+3: DERIVED 1 2 fear AGENT ALL cat THEME A .
+CLAIM read AGENT write.doer THEME write.made KIND big.opp .
+DEFINE ( number KIND big ) FIRST A SECOND B BE { IF { MORE FIRST A SECOND B } { RETURN A } . RETURN B } .
+CLAIM use AGENT ME THEME ~kubernetes .

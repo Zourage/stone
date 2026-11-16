@@ -1,0 +1,424 @@
+{
+ "items": [
+  {
+   "source": "Turkish",
+   "category": "negative accompanying clause (without doing)",
+   "what": "A dedicated converb (-meden) says an event happens without another event accompanying it.",
+   "example": "'He left without saying goodbye'; Finnish has the same as a case/infinitive form (lukematta 'without reading', talotta 'without a house').",
+   "status": "UNDECIDED",
+   "how_now": "Several candidates: STORY PAST leave AGENT A WITH NOT { say ... } / ... AND NOT say ... / ALONG NOT x / DESPITE; for things: coffee KIND (NOT sweet) vs ALONG NOT sugar.",
+   "suggestion": "Rule: 'without X' is NOT directly before the role phrase: NOT ALONG x (thing absent), NOT WITH { clause } (accompanying act absent). State that NOT may precede a role particle and negates only that role.",
+   "priority": 3
+  },
+  {
+   "source": "Turkish",
+   "category": "inferential evidence without stated premises",
+   "what": "The mis-past marks a fact as not witnessed: inferred from its traces or reported, and stacks on any tense ('It seems I am coming', 'They say I must come').",
+   "example": "Hastaymis 'apparently/reportedly he is ill'; newspapers avoid it because the di-past is authoritative.",
+   "status": "UNDECIDED",
+   "how_now": "DERIVED needs labels; with no premise written the writer must choose between DERIVED (no labels), CLAIM LIKELY, or GIVEN seem ... - three writers, three forms.",
+   "suggestion": "Rule: DERIVED with no labels = inferred from unstated evidence ('apparently'); keep strength separate. See the Quechua item for the reported half.",
+   "priority": 3
+  },
+  {
+   "source": "Turkish",
+   "category": "event vs fact nominalisation",
+   "what": "Turkish distinguishes a clause nominalised as an action (-me/-mek, 'his coming') from one nominalised as a fact (-dik, 'that he came').",
+   "example": "'I saw him fall' (perceived the event) vs 'I saw that he had fallen' (learned the fact); 'his leaving was slow' vs 'his leaving is certain'.",
+   "status": "UNDECIDED",
+   "how_now": "Both are a bare block: see AGENT ME THEME { fall AGENT A }. The spec says a bare block is 'a proposition', so event readings (slow, lasted an hour, I watched it) have no agreed form.",
+   "suggestion": "Rule: a bare block is neutral; when it matters write event KIND { } vs fact KIND { }. One line in Clarifications is enough.",
+   "priority": 2
+  },
+  {
+   "source": "Japanese",
+   "category": "omitted arguments",
+   "what": "Japanese freely omits arguments that the discourse supplies, so an absent argument means 'the one we are talking about', not 'someone or other'.",
+   "example": "Nihon ni ikimashita '(he/I/they) went to Japan' - who went is fixed by context. Finnish passive is the opposite: the missing agent is 'unspecified people'.",
+   "status": "UNDECIDED",
+   "how_now": "PAST send THEME release: is the sender unknown/irrelevant ('the release was sent') or the agent of the previous sentence? The spec's own examples use both readings (REQUEST bake THEME ham = addressee; fail THEME test = no agent).",
+   "suggestion": "Rule: an omitted role is never anaphoric; it means unspecified or irrelevant. To continue a referent use a handle or THAT. Exceptions stated once: REQUEST (AGENT = addressee), PLAN (AGENT = ME).",
+   "priority": 3
+  },
+  {
+   "source": "Japanese",
+   "category": "long-distance reflexive / logophor",
+   "what": "jibun can refer back to the subject of a higher clause (the person whose speech or thought is reported), not only to the local subject.",
+   "example": "'Taro said that Hanako blamed jibun' - jibun = Taro or Hanako.",
+   "status": "UNDECIDED",
+   "how_now": "say AGENT A THEME { blame AGENT B THEME SELF }: spec defines SELF for main clauses (AGENT) and for modifier clauses (the head), but not inside a complement block, and SELF-as-head collides with SELF-as-reflexive inside a relative clause.",
+   "suggestion": "Rule: SELF = AGENT of the nearest enclosing clause, always; in a modifier clause SELF = the head and reflexive must use a handle. Reported speaker is referred to by handle (or ME inside a BY block).",
+   "priority": 3
+  },
+  {
+   "source": "Japanese",
+   "category": "non-exhaustive listing",
+   "what": "Japanese has two 'and's: to for a complete list and ya for a list of examples ('A, B and the like').",
+   "example": "hon ya zasshi 'books, magazines and such' vs hon to zasshi 'books and magazines (that is all)'.",
+   "status": "GAP",
+   "how_now": "AND only (silent on completeness). EXAMPLE is a sentence relation; NOTE ( A AND B ) reads as 'namely' = exhaustive. 'such as', 'e.g.', 'etc.' inside a phrase cannot be marked.",
+   "suggestion": "Allow EXAMPLE as a linker parallel to NOTE: substance EXAMPLE ( glucose AND starch ) = 'substances such as'; NOTE stays exhaustive. Alternatively a list-closing particle ETC.",
+   "priority": 3
+  },
+  {
+   "source": "Japanese",
+   "category": "shared-knowledge marking (sentence-final ne / yo)",
+   "what": "Final particles mark whether the content is assumed shared with the hearer (ne, seeking agreement) or new to the hearer (yo, 'I am telling you').",
+   "example": "Samui ne 'cold, isn't it' vs Samui yo 'it IS cold (you may not realise)'. Basque dakigunez 'as we know'.",
+   "status": "CLUMSY",
+   "how_now": "ne-as-question = ASK YES; yo = EMPHASIS or REBUT. But 'as you know' (asserted, flagged as not news) has no marker: RECALLED is the writer's knowledge only; BACKGROUND is a relation to another sentence.",
+   "suggestion": "Add one attitude KNOWN ('you already know this; said as a reminder'). Useful in exposition to separate reminders from new claims. Do not add a 'new to you' particle; that is the default.",
+   "priority": 2
+  },
+  {
+   "source": "Japanese",
+   "category": "contrastive topic and stacked focus",
+   "what": "wa marks a topic and, contrastively, 'X at least (others may differ)'; it combines with other focus particles (ni-wa, dake-wa, -mo).",
+   "example": "'As for the people I know, none came' vs '(people came but) none of the ones I know'. Also 'only X also', 'even only'.",
+   "status": "UNDECIDED",
+   "how_now": "The focus slot holds one particle: TOPIC or FOCUS or ONLY. Contrastive topic (TOPIC + FOCUS) and ALSO ONLY x cannot be written per the grammar, though degrees 'may stack'.",
+   "suggestion": "Change [focus] to {focus} in clause and unit (stacking, leftmost has widest scope). Contrastive topic = TOPIC FOCUS x.",
+   "priority": 2
+  },
+  {
+   "source": "Japanese",
+   "category": "associative plural",
+   "what": "-tachi/-ra on a name means 'X and the people with X', not several X.",
+   "example": "Taro-tachi 'Taro and his group'.",
+   "status": "CLUMSY",
+   "how_now": "name«Taro» AND group OF name«Taro», or name«Taro» AND OTHER person (no link to Taro).",
+   "suggestion": "Leave out as grammar; note the idiom (X AND group OF X) in the spec so writers converge.",
+   "priority": 1
+  },
+  {
+   "source": "Chinese",
+   "category": "measure phrases and individuation",
+   "what": "Counting needs a classifier or measure word that says what the unit is: a container, a portion, a kind, or an individual.",
+   "example": "san bei shui 'three cups of water', yi qun yang 'a flock of sheep', liang zhong jiu 'two kinds of wine'.",
+   "status": "UNDECIDED",
+   "how_now": "Three candidate shapes: 3 cup KIND water (KIND = content, per the grape example), 3 cup water ('a unit root may follow a number'), water SPAN 3 cup. With « » units: 3 «kg» rice vs 3 «kg» KIND rice.",
+   "suggestion": "Rule: number + unit + substance with NO linker when the unit is a measure (3 cup water, 3 «kg» rice, 2 kind wine); KIND only when the head is a real object (cup KIND water = a cup that holds water).",
+   "priority": 3
+  },
+  {
+   "source": "Chinese",
+   "category": "experiential aspect (guo)",
+   "what": "guo says the subject has the experience of the event at least once, with no claim that its result still holds, in contrast to le.",
+   "example": "Ta qu-guo Zhongguo 'he has been to China (and is back)' vs Ta qu-le Zhongguo 'he has gone to China'. 'Have you ever seen this error?'",
+   "status": "UNDECIDED",
+   "how_now": "DONE is defined as 'finished, result holds', which is the opposite. Candidates: PAST go, PAST SOMETIMES go, ATLEAST 1 ... - unsettled; in ASK it is 'ever'.",
+   "suggestion": "Rule: PAST SOMETIMES = 'has at some time' (experiential, 'ever' under ASK); NEVER is already its negation. No new particle.",
+   "priority": 2
+  },
+  {
+   "source": "Chinese",
+   "category": "change of state (sentence-final le; Swahili inchoative verbs)",
+   "what": "Final le presents a situation as newly arisen; many languages build 'become X' regularly from the state word.",
+   "example": "Xia yu le 'it has started raining / it is raining now'; Ta gao le 'he has got tall'. Swahili kuchoka 'become tired'.",
+   "status": "UNDECIDED",
+   "how_now": "'The solution turned blue': BEGIN blue THEME solution? or a root: become THEME solution TO blue? The spec lists BEGIN but never says it applies to states.",
+   "suggestion": "Rule: BEGIN + state = enter the state (become); STOP + state = cease to be. Forbid a root 'become' with a state complement. Very frequent in scientific description.",
+   "priority": 3
+  },
+  {
+   "source": "Chinese",
+   "category": "resultative complement / result state in the clause",
+   "what": "A second predicate fused to the verb names the state the action produces; a potential form says whether the result can be reached.",
+   "example": "da-po 'hit-broken', xie-wan 'write-finished', ca-ganjing 'wipe clean', chi-bu-wan 'cannot eat it all up'. Finnish translative: maalataan punaiseksi 'is painted (into) red'.",
+   "status": "UNDECIDED",
+   "how_now": "RESULT exists only as a sentence relation. In the clause: paint THEME wall TO red? WITH red? two sentences with RESULT? cause THEME { red THEME wall }? None is licensed.",
+   "suggestion": "Rule: TO + state phrase or block = the resulting state (paint THEME wall TO red; hit THEME cup TO { break THEME SELF... }). Extends 'end point' naturally; no new particle.",
+   "priority": 3
+  },
+  {
+   "source": "Chinese",
+   "category": "proportional correlative (yue ... yue ...)",
+   "what": "A paired marker states that two quantities vary together: the more A, the more B.",
+   "example": "Yue kuai yue hao 'the faster the better'. 'The higher the temperature, the faster the reaction.'",
+   "status": "GAP",
+   "how_now": "No construct. Paraphrase with roots: increase THEME speed WHEN { increase THEME temperature } (loses 'in proportion', and inverse relations are awkward), or « » notation.",
+   "suggestion": "Construction: a MORE/LESS clause with a WITH block that also carries MORE/LESS = covariation: MORE fast THEME reaction WITH { MORE high THEME temperature }. State it as a rule; essential for scientific exposition.",
+   "priority": 3
+  },
+  {
+   "source": "Chinese",
+   "category": "truncated follow-up question (X ne?)",
+   "what": "A bare phrase plus a particle asks the previous question again about a new item.",
+   "example": "Wo hen hao. Ni ne? 'I am fine. And you?' Likewise 'Why?', 'Since when?'",
+   "status": "UNDECIDED",
+   "how_now": "Fragments are licensed only after SOCIAL, HEAD or as an answer; ASK ABOUT YOU . / ASK CAUSE WHAT . are not in the grammar, so writers must repeat the whole clause.",
+   "suggestion": "License fragments under ASK: ASK role phrase . = the target sentence (default previous) re-asked with that role replaced or questioned: ASK AGENT YOU . / ASK CAUSE WHAT .",
+   "priority": 2
+  },
+  {
+   "source": "Chinese",
+   "category": "hanging topic (double-subject sentence)",
+   "what": "The topic need not be an argument of the predicate at all; the comment is a full clause about it.",
+   "example": "Na ke shu, yezi da 'that tree, (its) leaves are big'; Japanese zo wa hana ga nagai 'the elephant, its nose is long'.",
+   "status": "UNDECIDED",
+   "how_now": "TOPIC stands before a phrase that already has a role, so a role-less topic must be ABOUT x. Then are TOPIC AGENT x and ABOUT x different? Nothing says.",
+   "suggestion": "Rule: TOPIC marks an argument as what the sentence is about; a topic that is not an argument is ABOUT x. A discourse-level topic uses HEAD.",
+   "priority": 1
+  },
+  {
+   "source": "Swahili",
+   "category": "consecutive (narrative) clause chaining",
+   "what": "After the first verb, the -ka- form means 'and then', so a chain of events needs no connectives; with a command it means 'go and then do'.",
+   "example": "Alikwenda sokoni akanunua ndizi 'he went to market and (then) bought bananas'. Turkish -ip and Japanese -te chain the same way.",
+   "status": "CLUMSY",
+   "how_now": "AND says nothing about order. Sequence needs a new sentence with SEQUENCE, or nested WHEN after REL { } - heavy for a four-step chain inside one sentence. Relations can attach only to sentences.",
+   "suggestion": "IDEA taken from the converb: let a relation follow a clause conjunction: clause AND SEQUENCE clause, AND RESULT clause, BUT CONCEDE clause. Same particles, one new slot; removes most needs for one-clause sentences.",
+   "priority": 3
+  },
+  {
+   "source": "Swahili",
+   "category": "ornative 'having' (-enye)",
+   "what": "A linker that is the inverse of the genitive: it describes a head by what it has.",
+   "example": "mtu mwenye kofia 'a person having a hat'; nyumba yenye milango miwili 'a house with two doors'. Quechua -yuq is the same.",
+   "status": "CLUMSY",
+   "how_now": "OF runs only part->whole. 'A function with two arguments' = function KIND { have AGENT SELF THEME 2 argument }, or the unlicensed function ALONG 2 argument.",
+   "suggestion": "Add a linker HAVING (inverse of OF): function HAVING 2 argument; NOT HAVING = without. Very frequent in technical description.",
+   "priority": 3
+  },
+  {
+   "source": "Swahili",
+   "category": "causative of a state word",
+   "what": "A regular suffix turns any state or adjective into 'make it so'.",
+   "example": "-fupi 'short' -> -fupisha 'shorten'; imara 'strong' -> -imarisha 'strengthen'; -jaa 'be full' -> -jaza 'fill'.",
+   "status": "UNDECIDED",
+   "how_now": "'A shortens the list': short AGENT A THEME list? cause AGENT A THEME { BEGIN short THEME list }? a separate root shorten? All three are defensible under 'position decides use'.",
+   "suggestion": "Rule: adding AGENT to a state root makes it causative (short AGENT A THEME list = A shortens the list); with BEGIN for the inchoative this gives state/become/make from one root and keeps the lexicon small.",
+   "priority": 3
+  },
+  {
+   "source": "Swahili",
+   "category": "spontaneous vs agentive event (mediopassive -ik- vs passive -w-)",
+   "what": "The passive implies an agent who is left unnamed; the mediopassive/stative says it happened of itself or is in that state, and can mean 'is V-able'.",
+   "example": "-vunjwa 'be broken (by someone)' vs -vunjika 'break, get broken, be breakable'. Finnish passive likewise always implies a human agent.",
+   "status": "UNDECIDED",
+   "how_now": "PAST break THEME cup covers both. No way to say 'no agent was involved' short of AGENT NONE (which reads 'nobody broke it').",
+   "suggestion": "Rule with the omitted-role rule: omission = unspecified. For 'of itself' write CAUSE SELF or AGENT SELF on the THEME; for 'by someone' AGENT SOME person. 'V-able' = CAN + no AGENT.",
+   "priority": 2
+  },
+  {
+   "source": "Swahili",
+   "category": "reversive derivation",
+   "what": "A suffix derives the undoing of an action from the action.",
+   "example": "-funga 'close, tie' -> -fungua 'open, untie'; Navajo has a reversative aspect.",
+   "status": "IDEA",
+   "how_now": "Separate roots (untie, unlock, uninstall, unmount...) or the root undo with a block.",
+   "suggestion": "Construction rather than particle: ( undo KIND x ) is the reversal of x, usable as a predicate: ( undo KIND install ) THEME package. NOT must never be read as reversal. Saves many technical roots.",
+   "priority": 2
+  },
+  {
+   "source": "Navajo",
+   "category": "number of occurrences (semelfactive / repetitive / seriative)",
+   "what": "The verb marks whether an act occurs once, repeatedly in one episode, or as a series of distinct acts - separately from habit.",
+   "example": "'He knocked once' vs 'he was knocking' vs 'he usually knocks'. In exposition: 'run the test three times', 'twice a day'.",
+   "status": "GAP",
+   "how_now": "AGAIN = once more; OFTEN/HABIT = across occasions. A count of occurrences has no slot: SPAN 3 time? 3 before the predicate would be read as a factor (as in 2 EQUAL big).",
+   "suggestion": "Add TIMES to the aspect slot after a number or quantifier: 3 TIMES run, MANY TIMES, WHAT TIMES (how often), 1 TIMES = semelfactive. Rate: 2 TIMES ... SPAN day is ambiguous, so define 'per' as REL: 2 TIMES ... WHEN ALL day.",
+   "priority": 3
+  },
+  {
+   "source": "Navajo",
+   "category": "distributive vs collective plural",
+   "what": "A distributive prefix (da-) says each of several participants acts or is affected separately, as opposed to jointly.",
+   "example": "'They each lifted a box' vs 'they lifted a box together'. Tagalog distributive verbs do the same.",
+   "status": "UNDECIDED",
+   "how_now": "WHOLE marks 'the set taken together', but an unmarked plural or A AND B is undefined, and the distributive needs the heavy EACH X IN ... { } block.",
+   "suggestion": "Rule: unmarked plural and AND are distributive by default (matches 'AND inside a modifier means both hold of each'); WHOLE before the phrase = jointly. Then EACH is needed only for dependent quantifiers.",
+   "priority": 2
+  },
+  {
+   "source": "Navajo",
+   "category": "restitutive vs repetitive 'again' (reversionary vs semeliterative)",
+   "what": "Navajo separates returning to a previous state or place from doing the act one more time.",
+   "example": "'The door is open again' (it was open before, never opened before by anyone) vs 'he opened the door again' (second act of opening). 'Put it back', 'the service is up again'.",
+   "status": "UNDECIDED",
+   "how_now": "AGAIN for both; 'back' has no particle (root return, or TO place KIND before).",
+   "suggestion": "Rule: AGAIN before an event = repeated act; AGAIN before DONE or a state = restored state (AGAIN DONE open, AGAIN up). No new particle.",
+   "priority": 2
+  },
+  {
+   "source": "Southern Quechua",
+   "category": "evidential source: direct vs reported",
+   "what": "Every statement is marked as known by direct experience (-mi), by report (-si) or by conjecture (-cha), independently of how sure the speaker is.",
+   "example": "'It rained-mi' (I saw it) / 'it rained-si' (I was told) / 'it rained-cha' (I suppose). Tagalog daw, Georgian perfect and Turkish -mis mark the reported/unwitnessed side.",
+   "status": "CLUMSY",
+   "how_now": "GIVEN merges 'I observed it' with 'a document, tool or other party shows it' - the one evidential split these languages never merge. Workaround: GIVEN say AGENT A THEME { } (and the content then carries no opener of its own).",
+   "suggestion": "Split GIVEN: keep GIVEN for the writer's own observation (incl. own tool output) and add TOLD [source handle] for content asserted by another party or document, which the writer passes on without vouching. For a model, user-says vs I-checked is the most consequential source distinction.",
+   "priority": 3
+  },
+  {
+   "source": "Southern Quechua",
+   "category": "clusivity",
+   "what": "'We' is two words: with the addressee (nuqanchik) and without (nuqayku).",
+   "example": "'We (you and I) should fix this' vs 'we (my side) have fixed this'. Tagalog tayo/kami.",
+   "status": "CLUMSY",
+   "how_now": "US is explicitly neutral; inclusive = ME AND YOU (only two people); exclusive cannot be said short of US KIND NOT ... .",
+   "suggestion": "Rule, no particle: US = writer's group without the addressee; inclusive = US AND YOU. A neutral 'we' is rarely what a writer means.",
+   "priority": 2
+  },
+  {
+   "source": "Southern Quechua",
+   "category": "evidential in the focus slot",
+   "what": "Quechua evidential enclitics attach to the focused constituent, so source and focus are marked together and the evidence can be scoped to one part.",
+   "example": "'Pedro-mi came' = it is Pedro (I saw) who came.",
+   "status": "IDEA",
+   "how_now": "Strength and attitude may stand in the focus slot before one phrase; openers may not, so 'A (reportedly) and B (as I saw) were there' needs two sentences or blocks.",
+   "suggestion": "If TOLD is added, allow it in the focus slot like strength (TOLD AGENT A). Otherwise leave out; nested { } with headers already covers it.",
+   "priority": 1
+  },
+  {
+   "source": "Tagalog",
+   "category": "deliberative question (kaya)",
+   "what": "A particle turns a question into wondering aloud: no answer is demanded of the hearer.",
+   "example": "Ito lang kaya...? 'I wonder, is this all...?' Basque ote marks the same tentative questions.",
+   "status": "UNDECIDED",
+   "how_now": "ASK for both. In a reasoning trace most questions are the writer's own open questions, not requests to the reader; CALL only names an addressee when there is one.",
+   "suggestion": "Rule: ASK with CALL (or in a BY turn) is put to the addressee; add ASK SELF for an open question the writer poses to itself (SELF directly after the opener, like ASK YES).",
+   "priority": 3
+  },
+  {
+   "source": "Tagalog",
+   "category": "sudden realisation / self-correction (pala)",
+   "what": "pala marks that the speaker has just realised something, typically replacing what they believed a moment ago.",
+   "example": "Dumating na pala ang lola mo 'oh - your grandmother has arrived after all'.",
+   "status": "GAP",
+   "how_now": "SURPRISE gives the feeling, but no relation says 'this withdraws or replaces sentence N': REBUT is about the addressee's belief, CONTRAST does not retract.",
+   "suggestion": "Add relation RETRACT [labels]: 'the target no longer stands; this sentence replaces it'. A reasoning medium needs an explicit way to cancel an earlier step that DERIVED sentences may rest on.",
+   "priority": 3
+  },
+  {
+   "source": "Georgian",
+   "category": "role of the single participant (active alignment)",
+   "what": "Intransitives split into those whose subject controls the event (marked like an agent) and those whose subject undergoes it (marked like a patient).",
+   "example": "'swim, cry, work' pattern with agents; 'die, happen, fall, blush' with patients.",
+   "status": "UNDECIDED",
+   "how_now": "Spec examples already split silently (fail THEME test, arrive AGENT A, exist THEME x) and experiencers are AGENT, but no rule: die, fall, sleep, grow, sneeze, depend will be written both ways.",
+   "suggestion": "Rule: with one participant use AGENT only if it does or controls the event (incl. experiencers, per the existing rule); otherwise THEME. Add a ten-verb table of boundary cases to the spec.",
+   "priority": 3
+  },
+  {
+   "source": "Georgian",
+   "category": "affected party (objective version)",
+   "what": "A version vowel adds a participant for whom or to whose cost or benefit the event happens, often the possessor of the object.",
+   "example": "v-u-ts'er 'I write it for/to him'; 'the child fell ill on him'; Swahili applicative ('urinate on', 'forgive someone for someone').",
+   "status": "CLUMSY",
+   "how_now": "FOR = 'purpose or beneficiary' only; the adversely affected party ('the build broke on me', 'they cancelled it to our cost') has no role; TO is recipient.",
+   "suggestion": "Widen FOR's definition to 'purpose, or the party the event is good or bad for'; the attitude (REGRET/GLAD) or a root supplies the direction. No new role.",
+   "priority": 2
+  },
+  {
+   "source": "Georgian",
+   "category": "optative: wishes and exhortations",
+   "what": "One verb form (optative, perfect subjunctive) covers 'let's verb', 'may s/he verb' and negative commands.",
+   "example": "'May she arrive safely!'; 'Let's go'. Navajo optative: 'I hope it doesn't rain'.",
+   "status": "UNDECIDED",
+   "how_now": "A wish is neither CLAIM nor REQUEST: CLAIM hope AGENT ME THEME { } reports a mental state; SOCIAL takes only a bare phrase.",
+   "suggestion": "Allow SOCIAL to take a block: SOCIAL wish THEME { arrive AGENT A WITH safe } - the wish as an act. For 'let's' see the Finnish item.",
+   "priority": 2
+  },
+  {
+   "source": "Basque",
+   "category": "direction vs end point vs limit",
+   "what": "Three local cases: allative -ra 'to', directional -rantz 'towards', terminative -raino 'as far as'.",
+   "example": "etxera 'to the house', etxerantz 'towards the house', etxeraino 'as far as the house'.",
+   "status": "UNDECIDED",
+   "how_now": "TO = 'recipient or end point'. 'Towards' (no arrival implied) is unsettled: TO direction REL house? VIA? 'As far as' = TO until REL house? (until REL is given only for time).",
+   "suggestion": "Rule: TO x = arrival; TO side REL x / the relational root toward REL x = direction only; until REL works for space as well as time. In reasoning 'converges towards' vs 'reaches' matters.",
+   "priority": 2
+  },
+  {
+   "source": "Basque",
+   "category": "polarity (verum) focus (ba-)",
+   "what": "A prefix puts the truth of the verb in focus, distinct from focusing any constituent.",
+   "example": "Badaki 'he DOES know' vs Berak daki 'HE knows'.",
+   "status": "UNDECIDED",
+   "how_now": "FOCUS before the predicate: is the contrast lexical (know, not guess) or polar (does, not doesn't)? EMPHASIS and REBUT are alternatives for the second.",
+   "suggestion": "Rule: FOCUS before the predicate = lexical contrast; polar insistence = EMPHASIS in the header (plus REBUT when denying the reader's assumption).",
+   "priority": 1
+  },
+  {
+   "source": "Finnish",
+   "category": "answers to negative questions",
+   "what": "Finnish answers by echoing the verb in positive or negative form, so the answer's polarity is never in doubt; 'kylla' alone is not simply 'yes'.",
+   "example": "Etko tule? 'Aren't you coming?' - Tulen 'I come' / En tule 'I don't'. Japanese hai confirms the negative ('yes, I am not').",
+   "status": "UNDECIDED",
+   "how_now": "ASK NOT DONE send ... / ANSWER YES : 'yes, it was sent' or 'yes, correct, not sent'? ASK YES/NO expectations make it worse.",
+   "suggestion": "Rule: YES/NO as an answer affirm or deny the body exactly as written, including its NOT; recommend the echo answer after any question containing NOT (GIVEN ANSWER 1 NOT DONE send).",
+   "priority": 3
+  },
+  {
+   "source": "Finnish",
+   "category": "first-plural and third-person imperatives",
+   "what": "Imperative forms exist for 'let us' and 'let him/them', beside the second person.",
+   "example": "Menkaamme / Mennaan 'let's go'; Tulkoon 'let him come'. Turkish optative gidelim 'let's go'.",
+   "status": "UNDECIDED",
+   "how_now": "'Let's X': REQUEST x AGENT US? PLAN x AGENT US ('the writer speaks for that agent')? PLAN IF { want AGENT YOU }? 'Let him come': REQUEST with a non-addressee AGENT, or MAY.",
+   "suggestion": "Rule: REQUEST with AGENT (US AND YOU) = proposal 'let's'; REQUEST with a third-party AGENT = 'see to it that / let them'; PLAN ... AGENT US stays a commitment. Proposals are constant in collaborative work.",
+   "priority": 3
+  },
+  {
+   "source": "Finnish",
+   "category": "state of a participant during the event (essive)",
+   "what": "The essive case gives a temporary state or capacity in which a participant takes part; the translative gives the state it ends in.",
+   "example": "lapsena 'as a child'; 'he came home tired'; 'eat it raw'.",
+   "status": "UNDECIDED",
+   "how_now": "AS = 'capacity, role or viewpoint' might stretch to states; rivals: WITH tired (manner of acting?), WHEN { tired THEME A }, A KIND tired (narrows the referent, wrong).",
+   "suggestion": "Rule: AS + state = the state of the AGENT (or of the THEME when no AGENT) while the event holds; WITH stays manner of the action. Pairs with TO + state for the end state.",
+   "priority": 2
+  },
+  {
+   "source": "Arabic",
+   "category": "definiteness: unique vs already mentioned",
+   "what": "The article al- marks a noun as definite whether it was mentioned before or is simply unique or identifiable; indefiniteness is marked too.",
+   "example": "al-fatatu 'the girl'; 'the sun', 'the solution of the equation' (definite by uniqueness, never mentioned).",
+   "status": "UNDECIDED",
+   "how_now": "THAT = 'the one already identified' (anaphoric). 'The solution' asserting uniqueness vs 'a solution': bare head is neutral, SOME solution is existential, EXACT 1 solution asserts a count rather than refers.",
+   "suggestion": "Rule: THAT = identifiable to the reader by any means, incl. uniqueness; SOME = not identifiable/new; for mathematical uniqueness write EXACT 1 as the quantifier. One Clarifications line.",
+   "priority": 2
+  },
+  {
+   "source": "Arabic",
+   "category": "fractions and proportions",
+   "what": "Arabic has a regular pattern for fraction words (thulth 'a third', rub' 'a quarter') beside cardinals and ordinals.",
+   "example": "thuluth al-tullab 'a third of the students'; 'half', 'two thirds', '40 percent of'.",
+   "status": "UNDECIDED",
+   "how_now": "number = digits only. «2/3» OF test? 2 OF 3 test? root half? MAJOR/FEW are the only proportional quantifiers; decimals and percent are also unstated.",
+   "suggestion": "Extend number: digits may contain '.' and '/', and a number may be followed by OF phrase as a proportion of that set (2/3 OF test, 0.4 OF user). Percent stays in « ».",
+   "priority": 2
+  },
+  {
+   "source": "Hindustani",
+   "category": "volitionality and inanimate causers",
+   "what": "Verb sets and case marking separate deliberate acts from involitional ones, and a 'reduced agentivity' construction marks the doer with the instrumental.",
+   "example": "Intransitive/passive forms 'convey unintentional action': 'the glass got broken by me' vs 'I broke the glass'. Also wind, a bug, a timeout as doer.",
+   "status": "UNDECIDED",
+   "how_now": "break AGENT wind THEME window vs break THEME window CAUSE wind; accidental acts have no marker (root accident? WITH NOT intent?). 'Who acts' leaves both open.",
+   "suggestion": "Rule: AGENT = the immediate doer, animate or not, intent not implied; CAUSE = a reason or a prior event, never the doer. Deliberate/accidental by WITH intent / NOT WITH intent (using the NOT-role rule).",
+   "priority": 3
+  },
+  {
+   "source": "Hindustani",
+   "category": "process vs resulting state",
+   "what": "Hindustani keeps progressive (in the process) apart from continuous (in the resulting state).",
+   "example": "main shirt pahan raha hun 'I am putting on a shirt' vs 'I am wearing a shirt'. Japanese -te iru: 'is closing' vs 'is closed'.",
+   "status": "UNDECIDED",
+   "how_now": "ONGOING wear could be either; DONE close THEME door = 'is closed', but nothing says ONGOING is restricted to the process.",
+   "suggestion": "Rule: ONGOING = process under way only; the resulting state is DONE (+ STILL if it persists). ONGOING close = closing; DONE close = closed.",
+   "priority": 2
+  },
+  {
+   "source": "Hindustani",
+   "category": "kinds of possession",
+   "what": "Different markers for inherent possession (kin, body parts), ownable things, things merely on one's person, and abstract 'possessions' (pain, problems).",
+   "example": "uska bhai 'his brother' (ka) vs uske paas gaadi hai 'he has a car' (ke paas) vs 'has the key on him' vs 'has a fever'.",
+   "status": "UNDECIDED",
+   "how_now": "OF = owner or whole, REL = relational roots (friend REL A); so brother REL A but car OF A; custody and abstract states are unstated (have AGENT A THEME fever? feel?).",
+   "suggestion": "Rule: REL for kin and other relational roots, OF for ownership and parts, AT/ALONG for mere custody; states one 'has' are plain predicates (sick THEME A), never have.",
+   "priority": 1
+  }
+ ]
+}

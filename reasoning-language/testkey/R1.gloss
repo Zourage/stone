@@ -1,0 +1,14 @@
+1: HEAD report ABOUT fail OF serve.tool .
+2: GIVEN PAST 4 TIMES ~crash THEME serve.tool NAMED S WHEN THIS night .
+3: GIVEN show AGENT ~log OF S THEME { PAST ALMOST full THEME remember.ness WHEN before REL ALL ~crash } .
+4: TOLD U PAST deploy AGENT team NAMED T THEME version NAMED V KIND new OF program WHEN ago REL 2 day .
+5: RECALLED store AGENT V THEME ALL request AT ~cache NAMED C .
+6: GIVEN NOT have AGENT C THEME limit REL big .
+7: DERIVED 3 5 6 LIKELY cause AGENT C THEME ALL 4 ~crash .
+8: CLAIM CONCEDE 7 NOT ALREADY measure AGENT ME THEME big OF C .
+9: PLAN measure THEME big OF C ANDC SEQUENCE report AGENT ME TO T .
+10: PROPOSE do.opp AGENT T THEME deploy OF V WHEN before REL THIS night FOR { NOT AGAIN ~crash THEME S } .
+11: DEFINE SPARE1 BE count KIND ( MOST big ) OF request KIND { MAY store AGENT ~cache THEME SELF } .
+12: PROPOSE ADD 10 FUTURE configure AGENT T THEME SPARE1 OF C AS 5000 .
+BY U 13: ASK MUST ~restart AGENT ME THEME S WHEN NOW .
+14: CLAIM ANSWER 13 NOT MUST ~restart AGENT YOU THEME S CAUSE { ALWAYS ~restart AGENT S THEME SELF WHEN before.opp REL ~crash } .

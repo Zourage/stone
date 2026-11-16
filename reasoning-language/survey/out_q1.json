@@ -1,0 +1,366 @@
+{
+  "counts": {"NA": 127, "COVERED": 150, "CLUMSY": 8, "GAP": 1, "UNDECIDED": 25, "IDEA": 2},
+  "counting_note": "313 leaf questions in section 1 (lines 16-563); the 1.6.5 antecedent/reflexive table is counted by printed row (56), and 1.7 and 1.9 ('repeat the questions') as one each. Each listed item is charged to one primary question; NA = questions purely about form, order, movement, case or affixes; COVERED = the rest. Section 1.1.2 (subordination) is not present in the file and was not audited.",
+  "items": [
+    {
+      "source": "1.16.1 / 1.16.3 / 1.16.4 word classes; 1.2.1.1.1 nominal predicate",
+      "category": "root as predicate",
+      "what": "A classless root used as predicate can mean 'is an X' or 'undergoes X-ing', and the spec gives no rule for which.",
+      "example": "'x is a test' vs 'x is being tested'; 'E is a cause' vs 'E is caused'",
+      "status": "UNDECIDED",
+      "how_now": "GIVEN test THEME x .  (both readings; the spec itself uses fail THEME test as an event and (exception KIND NOT handled) THEME E as class membership)",
+      "suggestion": "Rule: every root carries one base type in the lexicon (thing / property / event). A thing root as predicate means 'THEME is one'; an event root means 'it happens to THEME'. The other sense is built, never implied: the event as a block { test THEME x }, the doer as person KIND { test AGENT SELF }. One root never carries both senses.",
+      "priority": 3
+    },
+    {
+      "source": "1.5.1.1 anaphora by deletion; 1.2.1.2.1-2 verbs without subject/object",
+      "category": "omitted role",
+      "what": "It is not stated whether a left-out role means 'unspecified' or 'the one we were just talking about'.",
+      "example": "'The test fails. Ana fixed (it).'",
+      "status": "UNDECIDED",
+      "how_now": "1: GIVEN fail THEME test . 2: GIVEN PAST fix AGENT name«Ana» .  (fixed it, or fixed something?)",
+      "suggestion": "Rule: an omitted role is unspecified, never anaphoric; refer back with THAT, a handle or STEP. Two stated defaults only: the missing AGENT of a REQUEST is the addressee, the missing AGENT of a PLAN is ME.",
+      "priority": 3
+    },
+    {
+      "source": "1.2.1.1.3 copular sentence with adverbial complement; 1.9 likeness",
+      "category": "predication of place, time or a role phrase",
+      "what": "There is no 'is', so there is no settled way to predicate a location, a time, or a role phrase (for, from, about, like) of something.",
+      "example": "'The file is in the folder.' 'This gift is for Ana.' 'x is like y.'",
+      "status": "UNDECIDED",
+      "how_now": "GIVEN (inside REL folder) THEME file .  or  GIVEN exist THEME file AT inside REL folder .  or a root (locate, belong); for 'is for Ana' no form at all without inventing a root",
+      "suggestion": "Reuse the existing particle BE (already in DEFINE) as an empty predicate that only carries role phrases: GIVEN BE THEME file AT inside REL folder . GIVEN BE THEME gift FOR name«Ana» . GIVEN BE THEME x THAN y .",
+      "priority": 3
+    },
+    {
+      "source": "1.1.1.2.4.2.1.2 yes/no in reply to negative and leading questions",
+      "category": "answer polarity",
+      "what": "After a negated question, YES and NO can each be read as confirming the negation or as asserting the positive.",
+      "example": "'Didn't you send it?' - 'No.'",
+      "status": "UNDECIDED",
+      "how_now": "BY A 1: ASK NOT DONE send AGENT YOU THEME release . BY B 2: GIVEN ANSWER 1 NO .  (sent or not sent?)",
+      "suggestion": "Rule: YES / NO always judge the question body exactly as written, including its NOT (YES to 'NOT sent' = it was not sent). ASK YES / ASK NO expectations do not change this.",
+      "priority": 3
+    },
+    {
+      "source": "1.1.1.2.2.1.3 questioning constituents of noun phrases",
+      "category": "question word as quantifier",
+      "what": "WHAT in the quantifier slot is glossed 'how many / which', two different questions in one form.",
+      "example": "'Which tests failed?' vs 'How many tests failed?'",
+      "status": "UNDECIDED",
+      "how_now": "ASK PAST fail THEME WHAT test .  (either)",
+      "suggestion": "Rule: WHAT before a head = which; WHAT MANY = how many (WHAT in degree position before the quantifier MANY). Keep test KIND WHAT for 'what kind of'.",
+      "priority": 3
+    },
+    {
+      "source": "1.1.1.2.1.3 alternative questions",
+      "category": "alternative vs yes-no question",
+      "what": "OR 'directly under ASK' makes a which-one question, so a yes/no question about a disjunction has no form, and it is unclear whether an OR between two role fillers counts as 'directly under'.",
+      "example": "'Is either A or B failing?' (yes) vs 'Is A failing, or B?' (A)",
+      "status": "UNDECIDED",
+      "how_now": "ASK fail THEME (A OR B) .  (reading not fixed)",
+      "suggestion": "Rule: only an OR that joins whole clauses of the ASK body, or follows the focus particle FOCUS, asks 'which one'; any other OR under ASK is an ordinary disjunction answered YES / NO. ASK fail THEME FOCUS (A OR B) = which of them.",
+      "priority": 2
+    },
+    {
+      "source": "1.3.1.1.3 or-coordination",
+      "category": "inclusive vs exclusive or",
+      "what": "The spec never says whether OR allows both to hold.",
+      "example": "'The bug is in the parser or in the lexer (or both / but not both).'",
+      "status": "UNDECIDED",
+      "how_now": "CLAIM exist THEME bug AT (parser OR lexer) .",
+      "suggestion": "Rule: OR is inclusive everywhere outside ASK. Exclusive choice is written with a count over the options: EXACT 1 OF (parser AND lexer).",
+      "priority": 3
+    },
+    {
+      "source": "1.3.1.1.2 but-coordination",
+      "category": "contrast and concession, overlapping means",
+      "what": "BUT is in the grammar but never defined, and it overlaps with the CONTRAST and CONCEDE relations and the DESPITE role.",
+      "example": "'It is slow but correct.' 'Although it is slow, it is correct.'",
+      "status": "UNDECIDED",
+      "how_now": "CLAIM slow THEME X BUT correct THEME X .  or two sentences with CONTRAST / CONCEDE  or  correct THEME X DESPITE { slow THEME X }",
+      "suggestion": "Rule: BUT = plain contrast inside one sentence (same meaning as CONTRAST between sentences); 'although' is always DESPITE inside a sentence and CONCEDE between sentences. BUT never means concession.",
+      "priority": 2
+    },
+    {
+      "source": "1.8.2-1.8.4 what is omitted in the comparative clause",
+      "category": "what the standard is compared with",
+      "what": "A bare THAN phrase does not say which participant it is being compared with.",
+      "example": "'Ana trusts the test more than Ben' (than Ben does / than she trusts Ben); 'bigger than before'",
+      "status": "UNDECIDED",
+      "how_now": "CLAIM MORE trust AGENT name«Ana» THEME test THAN name«Ben» .",
+      "suggestion": "Let THAN be followed by a role particle naming the slot the standard fills: THAN AGENT name«Ben» / THAN THEME name«Ben» / THAN WHEN before. Bare THAN x is allowed only when the clause has one other role phrase, and compares with that one.",
+      "priority": 3
+    },
+    {
+      "source": "1.8.6 correlative comparison",
+      "category": "the more ... the more",
+      "what": "No stated way to say that one quantity rises or falls with another.",
+      "example": "'The hotter the gas, the higher the pressure.'",
+      "status": "UNDECIDED",
+      "how_now": "RECALLED IF { MORE hot THEME gas } { MORE high THEME pressure } .  (plausible, not licensed; or with roots such as rise / depend)",
+      "suggestion": "Rule: IF with MORE or LESS and no THAN in both blocks is the correlative reading; add one example. A factor before the degree states the rate (IF { 2 MORE ... } { 4 MORE ... }).",
+      "priority": 3
+    },
+    {
+      "source": "1.8.1 comparison; 1.2.5.2.6 quantifiers; 1.2.5.2.9 comparative structures in the noun phrase",
+      "category": "comparing and grading quantities",
+      "what": "Degree particles may only stand before a predicate or a modifier, so amounts cannot be compared or graded directly.",
+      "example": "'more tests than last week', 'too many errors', 'enough data', 'almost all users', 'as many as B'",
+      "status": "CLUMSY",
+      "how_now": "GIVEN MORE big THEME count OF test THAN count OF (test KIND { PAST run THEME SELF WHEN week KIND last }) .",
+      "suggestion": "Allow a degree particle in the quantifier slot or before a quantifier: MORE test, TOO MANY error, ENOUGH data, ALMOST ALL user, EQUAL MANY; the standard goes in the clause's THAN phrase, the purpose in FOR.",
+      "priority": 3
+    },
+    {
+      "source": "1.8 comparison (superlative); 1.2.5.2.9",
+      "category": "set over which a superlative ranges",
+      "what": "MOST and LEAST have no slot for the group being compared.",
+      "example": "'the largest of the three files', 'the fastest method known'",
+      "status": "UNDECIDED",
+      "how_now": "GIVEN MOST big THEME F .  plus an improvised OF, AT or EXCEPT phrase for the set",
+      "suggestion": "Rule: with MOST / LEAST the THAN phrase names the comparison set (MOST big THEME F THAN 3 file), parallel to MORE. Also state EQUAL fast THAN { CAN } as the form for 'as fast as possible'.",
+      "priority": 2
+    },
+    {
+      "source": "1.2.3.2 modifiers of adverbials; 1.2.1.3.1.1 adverbs; 1.8 comparison of manner",
+      "category": "degree on a manner expression",
+      "what": "A manner word filling a role cannot take a degree or a standard under the grammar as written, because the degree slot exists only on predicates and modifiers.",
+      "example": "'runs very fast', 'converges faster than B', 'fast enough to finish'",
+      "status": "UNDECIDED",
+      "how_now": "run AGENT A WITH (VERY fast)  (not derivable: a head in ( ) is a phrase and has no degree slot)  or  MORE fast THEME { run AGENT A } THAN { run AGENT B }",
+      "suggestion": "Extend head with the form already allowed for modifiers: \"(\" {degree} root {role phrase} \")\". Then: run AGENT A WITH (MORE fast THAN B).",
+      "priority": 3
+    },
+    {
+      "source": "1.2.4.3 what can modify an adposition",
+      "category": "measured place and time relations",
+      "what": "No example shows how to attach a distance or interval to a relational root, and a clause-level SPAN would be read as the duration of the event.",
+      "example": "'two days before the release', '3 km south of the city', 'just after', 'exactly at noon'",
+      "status": "UNDECIDED",
+      "how_now": "WHEN before REL release SPAN 2 day  (reads as 'for two days')  or  WHEN (before REL release SPAN 2 day)  (legal under the 'role phrases inside ( )' clarification, never shown)",
+      "suggestion": "Rule plus example: the measure of a relational root is a SPAN phrase inside its parentheses, WHEN (before REL release SPAN 2 day). Degrees ALMOST, AROUND, EXACT, BARELY may precede a relational root in the same parentheses.",
+      "priority": 3
+    },
+    {
+      "source": "1.2.1.3.1.1 adverbs (frequency and count)",
+      "category": "number of occurrences and rate",
+      "what": "Aspect gives only vague frequency (OFTEN, RARE), with no slot for a counted number of occurrences or a rate.",
+      "example": "'We ran the test five times.' 'Sample twice a day.' 'one in ten runs'",
+      "status": "CLUMSY",
+      "how_now": "GIVEN PAST run AGENT US THEME test SPAN 5 occasion .  (SPAN stretched; easily read as a duration)  or  «5x»",
+      "suggestion": "Add one role particle TIMES taking a number, with an optional unit for the rate: PAST run THEME test TIMES 5 . REQUEST sample TIMES 2 SPAN day .",
+      "priority": 3
+    },
+    {
+      "source": "1.10.1 possession; 1.2.5.2.3 possessive modifier",
+      "category": "OF versus REL",
+      "what": "For property, measure and dependency nouns the choice between OF (owner or whole) and REL (landmark of a relational root) is not decided.",
+      "example": "'the cause of the error', 'the length of the file', 'the value of x', 'the author of the paper'",
+      "status": "UNDECIDED",
+      "how_now": "cause OF error  or  cause REL error  (the spec has count OF prime but friend REL name«Ana»)",
+      "suggestion": "Rule with a test: REL when the head is identified by its position or relation to the other thing (place, time, kin, cause, author, result); OF when the head is a part, possession, property or measure of it (length, count, price, value). Mark each relational root in the lexicon.",
+      "priority": 3
+    },
+    {
+      "source": "1.2.5.2.6 quantifiers",
+      "category": "part of a set, proportion",
+      "what": "No stated form for a number or share taken out of a definite set.",
+      "example": "'three of the tests', '30% of users', 'half of the samples', 'one of the reasons'",
+      "status": "UNDECIDED",
+      "how_now": "3 OF THAT test  or  3 THAT test  or  30 «%» user  or  half OF sample",
+      "suggestion": "Rule: a part of a set is always quantity-as-head plus OF: 3 OF (THAT test), 30 «%» OF user, half OF sample. A number directly before a head only counts.",
+      "priority": 3
+    },
+    {
+      "source": "1.2.5.2.10 other noun modifiers; 1.3.1.1.4 other coordination types",
+      "category": "open list of examples inside a phrase",
+      "what": "NOTE with a phrase means 'namely' (the full list), and EXAMPLE works only between sentences, so 'such as / e.g. / including' has no short form.",
+      "example": "'substances such as glucose and starch', 'errors, e.g. timeouts'",
+      "status": "CLUMSY",
+      "how_now": "substance NOTE { include AGENT SELF THEME (glucose AND starch) }",
+      "suggestion": "Let EXAMPLE also serve as a linker: substance EXAMPLE (glucose AND starch) = some members, list not complete.",
+      "priority": 3
+    },
+    {
+      "source": "1.3.2.1 omission under identity in coordination",
+      "category": "shared predicate, paired lists",
+      "what": "Every coordinated clause must repeat its predicate and pre-predicate particles, and paired lists ('respectively') need full clauses.",
+      "example": "'A scored 3 and B 5.' 'Runs 1 and 2 took 4 s and 9 s respectively.'",
+      "status": "CLUMSY",
+      "how_now": "GIVEN PAST score AGENT A THEME 3 AND PAST score AGENT B THEME 5 .",
+      "suggestion": "Rule: after AND / OR / BUT, a conjunct that starts with a role particle reuses the predicate and all pre-predicate particles of the clause before it: PAST score AGENT A THEME 3 AND AGENT B THEME 5 . (Unambiguous: a role particle cannot start a unit.)",
+      "priority": 2
+    },
+    {
+      "source": "1.4.2 constituent negation",
+      "category": "what a negated phrase asserts",
+      "what": "NOT before one phrase does not say whether the event is still claimed to have happened with some other filler.",
+      "example": "'Not Ana changed the setting' = someone else did / it is false that Ana did",
+      "status": "UNDECIDED",
+      "how_now": "GIVEN PAST change AGENT NOT name«Ana» THEME S .",
+      "suggestion": "Rule: NOT on a phrase denies the clause for that filler and asserts nothing about others; to assert that another did it, add the filler (AGENT OTHER person) or use INSTEAD.",
+      "priority": 2
+    },
+    {
+      "source": "1.6.2, 1.6.5 (rows 2, 13, 17), 1.6.7, 1.7 reflexive and reciprocal scope",
+      "category": "SELF and MUTUAL outside the simple case",
+      "what": "SELF is defined for a main-clause role (= AGENT) and for a modifying clause (= head); its value in a complement block, in a clause with no AGENT, and as an owner inside a phrase is not given, and MUTUAL has the same holes.",
+      "example": "'A says B hurt himself.' 'x equals itself.' 'A lost her own file.' 'They read each other's code.'",
+      "status": "UNDECIDED",
+      "how_now": "say AGENT A THEME { PAST hurt AGENT B THEME SELF }  (B or A?);  EQUAL THEME x THAN SELF  (no AGENT);  lose AGENT A THEME file OF SELF",
+      "suggestion": "Rule: SELF = the AGENT of the clause it stands in, or its THEME if there is no AGENT, at any depth and also inside a modifier of a role phrase; only directly in a KIND / NOTE clause does it mean the head. Anything longer-range uses a handle. MUTUAL follows the same rule.",
+      "priority": 2
+    },
+    {
+      "source": "1.1.1.2.3.1-1.1.1.2.3.7 echo questions",
+      "category": "asking to confirm or repeat what was said",
+      "what": "A question about what the other party said or meant, as opposed to whether it is true, needs a full speech-report frame.",
+      "example": "'To the harbour?' 'You changed what?' 'Do you mean the login test?'",
+      "status": "CLUMSY",
+      "how_now": "BY B 2: ASK PAST say AGENT YOU THEME { go AGENT YOU TO harbour } .",
+      "suggestion": "Rule, no new particle: ASK RESTATE n = 'is this what sentence n says?', and its body may be a fragment: BY B 2: ASK RESTATE 1 TO harbour . / ASK RESTATE 1 THEME WHAT .",
+      "priority": 3
+    },
+    {
+      "source": "1.1.1.2.4.2 incomplete sentences as answers; 1.15.1 minor sentence types",
+      "category": "where fragments are allowed",
+      "what": "Fragments are licensed only after SOCIAL, HEAD or as an answer, so short follow-up questions and list entries have no licensed form.",
+      "example": "'Why?' 'And Ana?' 'Since when?'; list entries such as 'Input: a file'",
+      "status": "UNDECIDED",
+      "how_now": "ASK CAUSE WHAT .  (not licensed; the full clause must be repeated)",
+      "suggestion": "Rule: a fragment body is allowed under any opener when the sentence carries a relation to a target; it reuses the target's predicate and other roles. ASK DETAIL 3 CAUSE WHAT . GIVEN ADD 3 AGENT name«Ana» .",
+      "priority": 2
+    },
+    {
+      "source": "1.1.1.3.1.2 / 1.1.1.3.2.2 degrees of imperative",
+      "category": "how binding a request is",
+      "what": "Whether a modal may follow REQUEST, and what it then means, is not stated, so mandatory, recommended and optional steps cannot be reliably told apart.",
+      "example": "'You must back up first.' 'Consider adding a test.' 'You may skip this step.'",
+      "status": "UNDECIDED",
+      "how_now": "REQUEST MUST save ...  or  CLAIM SHOULD add AGENT YOU ...  or  RULE MAY skip ...",
+      "suggestion": "Rule: a modal after REQUEST grades it: REQUEST MUST = mandatory, REQUEST SHOULD = recommended, REQUEST MAY = optional or permitted, bare = plain request; REQUEST NOT = do not, REQUEST MAY NOT ... = need not.",
+      "priority": 2
+    },
+    {
+      "source": "1.1.1.3.1.1 imperative: person-number combinations",
+      "category": "let's, let them",
+      "what": "A proposal for joint action and an instruction aimed at a third party have no decided form.",
+      "example": "'Let's rerun it.' 'Have the reviewer sign off.'",
+      "status": "UNDECIDED",
+      "how_now": "REQUEST run AGENT (ME AND YOU) AGAIN THEME test .  or  PLAN ... AGENT US .  or  ASK SHOULD ...",
+      "suggestion": "Rule: REQUEST with AGENT (ME AND YOU) is a proposal; REQUEST with a third-party AGENT asks that this agent act; CALL names who is being told, when different from the AGENT.",
+      "priority": 2
+    },
+    {
+      "source": "1.1.1.5 sentence types used in other functions",
+      "category": "question not addressed to the reader",
+      "what": "A question the writer puts to itself or raises for exposition is not distinguished from one that expects a reply.",
+      "example": "'Why does the cache miss here?' (I will work it out) vs the same asked of the user",
+      "status": "UNDECIDED",
+      "how_now": "ASK miss AGENT cache CAUSE WHAT .  (both)",
+      "suggestion": "Rule, existing particles: ASK CALL ME = a question the writer sets itself (no reply expected); a bare ASK is addressed to the reader. Rhetorical questions are written as ASK NO CERTAIN / ASK YES CERTAIN.",
+      "priority": 2
+    },
+    {
+      "source": "1.2.1.1.6.4 other copulas ('become')",
+      "category": "change of state",
+      "what": "Two unranked ways to say that something comes to be in a state or class.",
+      "example": "'The solution turns red.' 'She became a judge.'",
+      "status": "UNDECIDED",
+      "how_now": "GIVEN BEGIN red THEME solution .  or  GIVEN become THEME solution TO red .",
+      "suggestion": "Rule: change of state is always BEGIN + predicate (and STOP for leaving it); no root 'become'.",
+      "priority": 2
+    },
+    {
+      "source": "1.11.2.2.1.3 emphasis on the verb and its categories",
+      "category": "contrast on time, modal or frequency",
+      "what": "The focus slot stands only before a phrase or the predicate, so contrast on a particle cannot be marked.",
+      "example": "'It CAN fail (I do not say it will).' 'It WAS stable (not any more).'",
+      "status": "GAP",
+      "how_now": "cannot in one clause; two sentences: CLAIM CAN fail THEME X . CLAIM CONTRAST NOT FUTURE fail THEME X .",
+      "suggestion": "Rule: FOCUS written directly before a time, aspect, modal or strength particle marks that particle as the contrasted item (PAST change = neutral; FOCUS PAST change = it did then, as opposed to now).",
+      "priority": 2
+    },
+    {
+      "source": "1.11.1.2 contradictory emphasis; 1.11.2.1 contrastive constituent emphasis",
+      "category": "X, not Y",
+      "what": "Naming the rejected alternative beside the right one needs a second clause or an odd coordination.",
+      "example": "'Ana, not Ben, changed it.' 'Use the staging key instead of the live one.'",
+      "status": "CLUMSY",
+      "how_now": "PAST change AGENT name«Ana» THEME S BUT NOT PAST change AGENT name«Ben» THEME S .  or  AGENT (FOCUS name«Ana» AND NOT name«Ben»)",
+      "suggestion": "Allow BUT NOT between two units of a phrase: AGENT name«Ana» BUT NOT name«Ben»; THEME key KIND staging BUT NOT key KIND live.",
+      "priority": 2
+    },
+    {
+      "source": "1.11.1.2 contradictory sentence emphasis",
+      "category": "correction and retraction",
+      "what": "REBUT is limited to what the addressee is presumed to think; there is no relation for withdrawing or replacing an earlier sentence, the writer's own included.",
+      "example": "'Correction: step 4 is wrong, the cause is the cache.'",
+      "status": "IDEA",
+      "how_now": "8: DERIVED 6 7 CONTRAST 4 NOT true THEME STEP 4 .  then a new claim",
+      "suggestion": "Widen REBUT: with a target label it denies that sentence whoever wrote it, and a writer's REBUT of its own sentence withdraws it and puts this one in its place. With no label it keeps today's meaning.",
+      "priority": 3
+    },
+    {
+      "source": "1.2.1.3.1.1 adverbs (sentence adverbs)",
+      "category": "evaluative attitudes",
+      "what": "Attitudes cannot be negated and the list has no 'as expected', 'hopefully' or 'worryingly'.",
+      "example": "'As expected, the control shows no change.' 'Hopefully this fixes it.'",
+      "status": "IDEA",
+      "how_now": "GIVEN NOT change THEME control THAN { PAST expect AGENT ME } .  /  CLAIM hope AGENT ME THEME { ... } .",
+      "suggestion": "Allow NOT before an attitude (NOT SURPRISE = as expected) and add HOPE and WORRY to the attitude list.",
+      "priority": 2
+    },
+    {
+      "source": "1.1.1.2.2.1.1 which constituents of the main clause can be questioned",
+      "category": "questioning what a particle expresses",
+      "what": "WHAT can replace a head, a quantifier or a degree, but frequency, obligation and time-frame live in particles and can only be questioned through a root paraphrase.",
+      "example": "'How often does it fail?' 'Is this required or just advised?' 'What did she do?'",
+      "status": "CLUMSY",
+      "how_now": "ASK WHAT frequent THEME { fail THEME X } .  /  ASK (WHAT) AGENT A  or  ASK do AGENT A THEME WHAT  (neither stated)",
+      "suggestion": "Rules: WHAT OFTEN in the aspect slot = how often (with TIMES WHAT for a count); an OR between two particles in ( ) under ASK asks which: ASK (MUST OR SHOULD) save ... ; 'do what' is always do THEME WHAT.",
+      "priority": 2
+    },
+    {
+      "source": "1.5.1.6 other anaphoric means",
+      "category": "referring back to a kind or an action",
+      "what": "Handles name individuals; there is no short way to refer back to a kind or to a predicate.",
+      "example": "'a large file and a small one', 'Ben did so too'",
+      "status": "CLUMSY",
+      "how_now": "file KIND big AND file KIND small ;  PAST fix AGENT name«Ben» ALSO ... (predicate and roles repeated)",
+      "suggestion": "Leave out as a particle: repetition is cheap for a machine writer, and the shared-predicate rule proposed under 1.3.2.1 covers 'did so too' (... AND AGENT ALSO name«Ben»).",
+      "priority": 1
+    },
+    {
+      "source": "1.1.1.2.2.1.2 question words in subordinate clauses",
+      "category": "WHAT with no enclosing ASK",
+      "what": "WHAT is a question word only under the nearest ASK; its status with no ASK above it is not stated.",
+      "example": "'whatever he said', 'I know what he took'",
+      "status": "UNDECIDED",
+      "how_now": "know AGENT ME THEME { PAST take AGENT A THEME WHAT }  (headerless block, no ASK: undefined)",
+      "suggestion": "Rule: WHAT with no enclosing ASK is an error; 'whatever' is ANY thing KIND { ... SELF }, 'what he took' is thing KIND { ... } or a block with its own ASK.",
+      "priority": 1
+    },
+    {
+      "source": "1.12.1.1 / 1.12.2 topic particle and what can be topic",
+      "category": "topic that is not a participant",
+      "what": "TOPIC marks a phrase that already has a role; a topic outside the clause's participants has no stated place.",
+      "example": "'As for the tests, we need more machines.'",
+      "status": "UNDECIDED",
+      "how_now": "CLAIM need AGENT US THEME MORE machine ABOUT test .  or  ABOUT TOPIC test",
+      "suggestion": "Rule: a topic that is not a participant is ABOUT TOPIC x; plain ABOUT x stays 'in respect of x'.",
+      "priority": 2
+    },
+    {
+      "source": "1.3.1.3 coordinating major categories; 1.3.2.2 what cannot be omitted",
+      "category": "time and negation across coordinated clauses",
+      "what": "By the grammar each coordinated clause has its own pre-predicate particles, so a second clause without PAST is timeless, which writers will not expect.",
+      "example": "'She opened the file and read it.'",
+      "status": "UNDECIDED",
+      "how_now": "STORY PAST open AGENT A THEME file AND read AGENT A THEME file .  (second clause past or timeless?)",
+      "suggestion": "State the rule and show the grouped form: particles hold for one clause only; to share them write PAST ( open ... AND read ... ), as already allowed for NOT ( A AND B ).",
+      "priority": 2
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[heading] Task N01 (namely change of the synapse).
+⟨could not parse: 1: RECALLED PAST FAR publish AGENT ( NAME ~bliss AND NAME 챠료 ) THEME report WHEN year 1973 ABOUT ( ~long ~term 뾰찌터쪼우쪼요터 ) .⟩
+⟨could not parse: 2: RECALLED EQUAL THEME ~ltp THAN ( ~long ~term 뾰찌터쪼우쪼요터 ) .⟩
+⟨could not parse: 3: RECALLED DETAIL 1 PAST test AGENT ( NAME ~bliss AND NAME 챠료 ) THEME ~synapse AT ( ~dentate ~gyrus ) OF rabbit .⟩
+⟨could not parse: 4: RECALLED DETAIL 3 PAST excite AGENT ( NAME ~bliss AND NAME 챠료 ) THEME SOME neuron WITH signal HAVING ( frequency KIND high ) ANDC RESULT PAST increase THEME signal OF ( neuron KIND { get AGENT SELF THEME signal } ) SPAN MANY hour .⟩
+⟨could not parse: 5: RECALLED exist THEME ~synapse NAMED 각 KIND ( ~schaffer ~collateral ) AT 모뻐뾰누러뻬허 .⟩
+6. [recalled; detailing 5] The neuron that exists at CA 3 (call it A) sends the signal to the neuron that exists at CA 1 (call it B) through C.
+7. [recalled] Neuron A emits the glutamate to C.
+8. [recalled] The ampa receptor (call it D) exists at the membrane of neuron B.
+9. [recalled] The nmda receptor (call it E) also exists at the membrane of neuron B.
+10. [recalled] The glutamate binds receptor D and receptor E.
+11. [recalled] The glutamate opens receptor D, and so Na+ flows to inside neuron B.
+12. [recalled; as a result of 11] The voltage of the membrane of neuron B (call it F) increases.
+13. [recalled] Mg2+ blocks the channel of receptor E when voltage F is equal to about -70 mV.
+14. [recalled] If voltage F increases, then Mg2+ escapes from the channel of receptor E.
+15. [it follows from 13, 14] If the glutamate binds receptor E, and voltage F increases, then Ca2+ flows through receptor E to inside neuron B.
+⟨could not parse: 16: RECALLED RESTATE 15 EQUAL THEME ( work OF 박 ) THAN ( ~coincidence 시찌너쪼요터 ) .⟩
+17. [considering, not committed] Receptor E carries most fast currents of C.
+18. [recalled; rebutting 17] Receptor D carries most fast currents of C.
+⟨could not parse: 19: RECALLED ADD 18⟩
+!! sentence 0: not a valid loan spelling: 챠료
+!! sentence 0: not a valid loan spelling: 뾰찌터쪼우쪼요터
+!! sentence 0: not a valid loan spelling: 뾰찌터쪼우쪼요터
+!! sentence 0: not a valid loan spelling: 챠료
+!! sentence 0: not a valid loan spelling: 챠료
+!! sentence 0: not a valid loan spelling: 모뻐뾰누러뻬허
+!! sentence 0: not a valid loan spelling: 시찌너쪼요터
+!! sentence 2: NAME must be followed by a loan, a root or « »; at: AGENT ( NAME ~bliss AND NAME  >>> 챠료 ) THEME report
+!! sentence 3: expected ); at: THEME ~ltp THAN ( ~long ~term  >>> 뾰찌터쪼우쪼요터 ) .
+!! sentence 4: NAME must be followed by a loan, a root or « »; at: AGENT ( NAME ~bliss AND NAME  >>> 챠료 ) THEME ~synapse
+!! sentence 5: NAME must be followed by a loan, a root or « »; at: AGENT ( NAME ~bliss AND NAME  >>> 챠료 ) THEME SOME
+!! sentence 6: expected a head (root, handle, loan, « », number, block or bracket); at: KIND ( ~schaffer ~collateral ) AT  >>> 모뻐뾰누러뻬허 .
+!! sentence 17: expected ); at: OF 박 ) THAN ( ~coincidence  >>> 시찌너쪼요터 ) .
+!! sentence 20: sentence has no full stop
+!! sentence 20: expected a head (root, handle, loan, « », number, block or bracket); at: 19: RECALLED ADD 18  >>> .

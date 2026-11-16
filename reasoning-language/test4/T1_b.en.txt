@@ -1,0 +1,19 @@
+[heading] Electric payment.
+1. [story] Ana (call it A) and Ben (call it B) dwell at the same house.
+2. [story] The letter (call it C) arrived from the electric company on Monday.
+3. [story] Letter C said that any person did not pay the price of the electricity for the previous month.
+4. [story] A became angry.
+5. A: [question; annoyed; to B] Which person forgot the electric payment?
+6. B: [claim; answering 5; certain; ironic] The bird of the garden forgot the electric payment.
+7. B: [claim; frankly] I paid the price of the electricity at the beginning of the month.
+8. A: [claim] I doubt step 7, and I want to see the evidence.
+9. [story; next after the previous sentence] A and B checked the bank account of B.
+10. [story] A and B found that B paid, but the bank sent the money of B to the wrong account.
+11. [it follows from 10] The bank made the mistake, and B is not guilty.
+12. [story] A began to shame.
+13. A: [social act; to B] Apologise.
+14. B: [claim; joking] If you cook the evening meal, then I forgive you.
+15. [story] A and B laughed, and A and B are again a friend.
+16. A: [plan] I will cook the noodle for us (you and me) in the evening of Friday.
+17. B: [plan; adding to 16] I buy the wine, and I will call the bank on the next day.
+18. [story] The house is finally calm.

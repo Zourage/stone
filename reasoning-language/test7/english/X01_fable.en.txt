@@ -1,0 +1,41 @@
+[heading] Star nucleosynthesis.
+[definition] “W1” means a mass of the sun.
+1. [recalled] The stars make most elements that are more heavy than the helium with the fusion of the nucleus.
+2. [recalled] The pp chain changes 4 protons to 1 helium 4 nucleus.
+3. [recalled; detailing 2] The 1st step of the pp chain (call it A) joins 2 protons to the deuteron, and step A emits the positron and the neutrino.
+4. [recalled; explaining 3] Step A is very slow because step A needs the weak interaction.
+5. [it follows from 4; as a result of 4] The sun can shine for about 10000000000 years.
+6. [recalled] The pp chain emits the energy for about 26.7 MeV per the helium 4 nucleus.
+7. [recalled] The pp chain makes about 99 percent of the energy of the sun because the temperature of the centre of the sun is equal to about 15000000 K.
+8. [recalled; in contrast to 2] The cno cycle uses the nucleus of the carbon, and the nitrogen, and the oxygen as the catalyst, and the cno cycle also changes 4 protons to 1 helium 4 nucleus.
+9. [recalled] Hans Bethe described the cno cycle in year 1939.
+10. [recalled] The rate of the pp chain is roughly proportional like the temperature with exponent 4, but the rate of the cno cycle is roughly proportional like the temperature with exponent 17.
+11. [it follows from 10] The cno cycle is more important than the pp chain at the star that is more heavy than 1.3 W1S.
+12. [recalled] If the hydrogen stops existing at the centre of the star, then the gravity compresses the centre, and so the temperature of the centre increases to about 100000000 K.
+13. [recalled] The triple alpha process (call it B) joins 3 helium 4 nuclei to 1 carbon nucleus 12 at this temperature.
+14. [recalled; detailing 13] 2 helium 4 nuclei make the beryllium 8 nucleus (call it C), but nucleus C is very unstable, and nucleus C splits after 10^-16 seconds.
+15. [recalled] Fred Hoyle predicted that the state of carbon 12 such that the energy of itself is matching nucleus C and the helium 4 nucleus (call it D) exists in year 1953.
+16. [recalled; detailing 15] The energy of state D is bigger for 7.65 MeV than the energy of the ground state.
+17. [recalled; explaining 15] State D increases the rate of process B very much, and many carbons could not exist at the universe unless state D exists.
+18. [recalled] The experiment found state D after few months, and the Hoyle state is currently a name of state D.
+19. [recalled] The bound energy (call it E) per the nucleon increases while the mass of the nucleus increases to about 8.8 MeV at the iron nucleus 56, and then energy E decreases at the nucleus that is more heavy than iron 56.
+20. [it follows from 19] The fusion of the nucleus that is less heavy than iron 56 emits the energy, but the fusion of the nucleus that is more heavy than iron 56 absorbs the energy.
+21. [it follows from 20; as a result of 20] The fusion stops making the energy at the centre of the star when the centre has changed to iron 56.
+22. [claim] The common opinion such that the iron nucleus 56 cannot be joined is wrong.
+23. [claim; detailing 22] The iron nucleus 56 can be joined, but this connection absorbs the energy.
+24. [recalled] The Chandrasekhar limit (call it F) is equal to 1.44 W1S.
+25. [recalled; detailing 24] The pressure that is a degeneracy of the electron cannot block that the gravity compresses the white dwarf that is more heavy than limit F.
+26. [recalled] The type ia supernova happens when the white dwarf with carbon and oxygen (call it G) takes the material from the partner star, and the mass of white dwarf G becomes near limit F.
+27. [recalled; next after 26] The carbon of white dwarf G begins to burn, and this burning destroys white dwarf G fully, and any star does not remain.
+28. [recalled] The type ia supernova makes about 0.6 W1S of the nickel 56, and this nickel 56 changes to iron 56 with 2 beta decay.
+29. [recalled; in contrast to 26] The type ii supernova happens at the star that is more heavy than 8 W1S (call it H) when the centre of star H has changed to the iron, and the centre of star H becomes heavier than limit F.
+30. [recalled; next after 29] The gravity compresses the centre of star H in a sudden way to the neutron star, and many neutrinos push the outside layer of star H to the space.
+31. [recalled] The hydrogen is visible at the light of the type ii supernova, but the hydrogen is not visible at the light of the type ia supernova.
+32. [recalled] The nucleus absorbs many neutrons that is more fast than the beta decay at process r (call it J).
+33. [recalled] Process r J makes the half of the element that is more heavy than the iron such as gold and platinum.
+34. [claim] The common opinion such that only the type ii supernova makes all elements that are more heavy than the iron is wrong.
+35. [claim; likely] Most process r J happen at the connection of the neutron star.
+36. [recalled; as evidence for 35] Ligo detected the gravitational wave (call it K) from the connection of 2 neutron stars on the 17th day of the August month of year 2017, and the GW 170817 is a name of wave K.
+37. [recalled; next after 36] The satellite detected the gamma light after wave K for 1.7 seconds, and many observatories saw the light (call it L) from the same place for several days, and the kilonova is a name of light L.
+38. [recalled; as evidence for 35] The change of the color of light L showed that this connection made about 0.05 heavy W1S of the element with process r J.
+39. [claim; possible] Some process r J also happens at some rare supernova, and the researchers do not know the ratio yet.

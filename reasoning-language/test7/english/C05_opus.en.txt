@@ -1,0 +1,42 @@
+[heading] Battery that is a lithium ion.
+1. [recalled] The battery that is a lithium ion (call it A) contains the cathode (call it B), and the anode (call it C), and the electrolyte (call it D), and the separator (call it E).
+2. [recalled] LiCoO2 is a material of cathode B, and the graphite is a material of anode C.
+3. [recalled] The graphite and LiCoO2 are group of layerses, and ion Li+ exists at the gap that is between the layer.
+4. [recalled] The intercalation is a process such that the ion enters to the gap that is between the layer, and the structure of the group of layers does not change.
+⟨could not parse: 5: RECALLED WHEN { FULL enter AGENT ion «Li+» TO 낙 } BEGIN compound «LiC6» THEME 낙 .⟩
+6. [recalled; detailing 5] 6 carbon atoms exist per ion Li+ at LiC6, and the capacity of the graphite is equal to about 372 mAh/g.
+7. [recalled] Ion Li+ exits when battery A unstores the energy from anode C, and ion Li+ moves through electrolyte D, and ion Li+ enters to cathode B.
+8. [recalled; adding to 7] The electron moves from anode C to cathode B through the outside circuit.
+9. [recalled; in contrast to 7] The outside device moves ion Li+ and the electron when battery A stores the electric energy from cathode B to anode C.
+10. [claim] Many persons believe that battery A contains the lithium metal.
+11. [recalled; rebutting 10] The lithium metal (call it F) does not exist at battery A when the work of battery A is normal.
+12. [recalled; detailing 11] Only ion Li+ moves through electrolyte D, and the electron moves through only the outside circuit.
+13. [recalled] Electrolyte D is a mixture that is LiPF6 and an ethylene carbonate, and LiPF6 dissolves at the ethylene carbonate.
+14. [recalled] The voltage that is between anode C and metal F becomes less when battery A stores the energy for the 1st time than about 0.8 V.
+15. [recalled; as a result of 14] The ethylene carbonate gets the electron from anode C, and the ethylene carbonate reacts at the surface of anode C.
+16. [recalled; as a result of 15] The reaction creates the layer that is a solidity and a thinness (call it G) at the surface of anode C.
+17. [recalled] The solid electrolyte interphase and the sei are a name of layer G.
+18. [recalled] Layer G is thick for about 10–50 nm.
+19. [recalled] Layer G allows that ion Li+ passes through layer G, but layer G blocks the electron.
+20. [recalled; as a result of 19] Electrolyte D stops reacting at the surface of anode C.
+21. [recalled; adding to 16] The construction of layer G wastes some lithium, and so the capacity of battery A decreases for about 5–10 percent.
+22. [recalled] The voltage of any electrode is depending on the concentration of ion Li+ with the Nernst equation.
+23. [recalled; detailing 22] E is equal to E0 - (R*T/(n*F))*ln(a_ox/a_red).
+24. [recalled; detailing 23] T is a temperature, and F is a number in a constanting way Faraday, and n is equal to 1.
+25. [recalled] The Nernst equation describes only the voltage when the current does not flow.
+26. [recalled] The voltage that is between cathode B and metal F is equal to about 3.9 V, and the voltage that is between anode C and metal F is equal to about 0.2 V.
+27. [it follows from 26] The voltage of battery A is equal to subtract(3.9 V, 0.2 V), and the voltage of battery A is equal to about 3.7 V.
+28. [recalled; in contrast to 25] The speed of the reaction is depending on the overpotential when the current flows at the surface of the electrode.
+29. [recalled] The Butler Volmer model describes this dependency with formula i = i0*(exp(a*F*eta/(R*T)) - exp(-(1-a)*F*eta/(R*T))).
+30. [recalled] Eta overpotentials, and eta is equal to subtract(E, Eeq).
+31. [recalled] I0 is a current that flows per the direction at the equilibrium.
+32. [it follows from 29, 31] If battery A is less hot, or layer G is thicker, then i0 is less big, and battery A needs the bigger overpotential for the same current.
+33. [recalled] The voltage that is between anode C and metal F becomes less at the storage of battery A that is a speed or a coldness than 0 V.
+34. [it follows from 33] Ion Li+ does not enter to the graphite, but ion Li+ becomes a metal at the surface of anode C.
+35. [it follows from 34] The lithium dendrite that is a sharpness and a length (call it H) grows from the surface of anode C through electrolyte D.
+36. [recalled; possible] Lithium dendrite H pierces separator E, and lithium dendrite H connects cathode B and anode C.
+37. [it follows from 36] The very big current flows through lithium dendrite H, and the current increases the temperature of battery A.
+38. [recalled] Layer G begins to break when battery A is hotter than about 80 °C, and electrolyte D again reacts at the surface of anode C.
+39. [recalled] Separator E melts when battery A is hotter than about 130 °C, and cathode B emits the oxygen when battery A is hotter than about 200 °C, and electrolyte D burns.
+40. [recalled; restating 37, 38, 39] The thermal runaway is a name of the loop such that the temperature increases the speed of the reaction, and the reaction increases the temperature.
+!! sentence 6: expected full stop; at: «Li+» TO 낙 } BEGIN compound  >>> «LiC6» THEME 낙 .

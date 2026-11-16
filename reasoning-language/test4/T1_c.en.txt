@@ -1,0 +1,19 @@
+[heading] Electric price.
+1. [story] Ana (call it A) dwells at the house (call it B).
+2. [story] Also Ben (call it C) dwells at house B.
+3. [story] The letter (call it D) just arrived from the electric company.
+4. [story] Letter D says that the electric price is not paid yet.
+5. [story; as a result of 4] A becomes angry.
+6. [story] A says A: “[question] which person forgot that the electric price is paid?” to C.
+7. [story] C says C: “[claim; ironic] I always forget all things, and you never make the mistake” to A.
+8. [story] A says A: “[claim; frankly] I gave the money to you 2 weeks ago”.
+9. [story] C says C: “[claim] I sent the money to the electric company on the same day”.
+10. [story] A and C argue for 20 minutes.
+11. [story; next after the previous sentence] C checks the account of C at the bank.
+12. [story; surprised] C sees that the bank sent the money to another company.
+13. [story] Specifically the bank made the mistake, but A or C did not forget the payment.
+14. [story] A apologises to C, and C forgives A.
+15. [story] C says C: “[claim; joking] the bank should pay the meal of us (you and me)”.
+16. [story] A and C laugh, and A and C become happy.
+17. [story] A and C plan that C will cook the evening meal on Friday, and A will buy the wine.
+18. [story] A says A: “[plan] I will soon call the bank”.

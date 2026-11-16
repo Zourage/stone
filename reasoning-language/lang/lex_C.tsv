@@ -1,0 +1,303 @@
+parent	R	0			parent of	kin	father or mother
+child	R	0			child of	kin	son or daughter; also a young person
+sibling	R	0			sibling of	kin	brother or sister
+spouse	R	0			spouse of	kin	husband or wife
+relative	R	0			relative of	kin	person of the same family
+ancestor	R	0		ancestral	ancestor of	kin	forebear, any generation back
+male	Q	0				kin	of the male sex
+female	Q	0				kin	of the female sex
+baby	T	0				kin	very young child
+marry	A	1	marriage	married		kin	take as spouse
+family	T	0				kin	parents, children and relatives as a unit
+person	T	0		personal		person	a human individual
+adult	T	0				person	fully grown person
+friend	R	0		friendly	friend of	person	
+stranger	T	0				person	person one does not know
+guest	R	0			guest of	person	person received or invited
+neighbour	R	0		neighbouring	neighbour of	person	one who lives next to
+group	T	0				person	several people or things together; team
+crowd	T	0				person	large number of people gathered
+member	R	0			member of	person	one who belongs to a group
+people	T	0		ethnic		person	a nation or ethnic community
+citizen	R	0		civic	citizen of	person	legal member of a country
+partner	R	0			partner of	person	one who acts or lives together with another
+king	T	0		royal		person	hereditary ruler; monarch
+slave	T	0				person	person owned by another
+soldier	T	0		military		conflict	
+priest	T	0				religion	religious official of any faith
+doctor	T	0				health	physician
+police	T	0				law	force that keeps public order
+witness	T	0				law	one who saw an event and can report it
+feel	A	1	feeling	emotional		emotion	experience an emotion
+good	Q	0	goodness			value	
+happy	Q	0	happiness			emotion	glad, pleased
+love	A	1		loving		emotion	
+like	A	1	liking			emotion	find pleasant, enjoy
+fear	A	1		afraid		emotion	be afraid of
+angry	Q	0	anger			emotion	
+calm	Q	0	calm			emotion	not agitated; at ease
+worry	A	1		anxious		emotion	be anxious about
+proud	Q	0	pride			emotion	
+shame	A	0		ashamed		emotion	feel shame or embarrassment
+hope	A	1		hopeful		emotion	want and expect something good
+trust	A	1		trusting		emotion	rely on the honesty or ability of
+care	A	1		caring		emotion	be concerned about; look after
+want	A	1	wish			emotion	desire
+need	A	1		needy		emotion	require; cannot do without
+envy	A	1		jealous		emotion	envy or be jealous of
+pity	A	1				emotion	feel sorrow for another's trouble
+regret	A	1		sorry		emotion	be sorry about something done
+respect	A	1		respectful		emotion	hold in high regard
+disgust	A	1		disgusted		emotion	feel strong aversion to
+endure	A	1	endurance			emotion	bear, put up with
+surprise	E	0		surprised		emotion	be struck by the unexpected
+excite	E	0	excitement	excited		emotion	be stirred up, eager
+satisfy	E	0	satisfaction	satisfied		emotion	be content with what one has or got
+lonely	Q	0	loneliness			emotion	
+laugh	A	0	laughter			emotion	
+smile	A	0				emotion	
+cry	A	0				emotion	weep, shed tears
+kiss	A	1				emotion	
+hug	A	1				emotion	embrace
+important	Q	0	importance			value	
+valuable	Q	0	value			value	worth much
+easy	Q	0	ease			value	not hard to do
+safe	Q	0	safety			value	free from danger
+right	Q	0	rightness			value	right: correct, as it should be
+fair	Q	0	justice			value	fair: just, even-handed
+kindly	Q	0	kindness	kind		value	kind: warm and considerate to others
+brave	Q	0	courage			value	
+honest	Q	0	honesty			value	
+loyal	Q	0	loyalty			value	faithful
+generous	Q	0	generosity			value	
+polite	Q	0	politeness			value	
+patient	Q	0	patience			value	patient: able to wait or endure calmly
+serious	Q	0	seriousness			value	earnest, not joking
+strict	Q	0	strictness			value	
+lazy	Q	0	laziness			value	
+moral	Q	0	morality			value	concerning right and wrong conduct
+clever	Q	0	intelligence			mind	intelligent, quick to understand
+wise	Q	0	wisdom			mind	
+crazy	Q	0	madness			mind	mad, insane
+curious	Q	0	curiosity			mind	eager to know
+sure	Q	0	certainty			mind	certain: without doubt in one's mind
+beautiful	Q	0	beauty			value	
+funny	Q	0	humour			value	causing laughter
+interesting	Q	0	interest			value	holding the attention
+comfortable	Q	0	comfort			value	
+lucky	Q	0	luck			value	
+famous	Q	0	fame			value	
+popular	Q	0	popularity			value	liked by many people
+normal	Q	0	normality			value	usual, as expected
+busy	Q	0				value	busy: having much to do
+free	Q	0	freedom			society	free: not controlled or confined
+private	Q	0	privacy			society	belonging to one person or group only
+secret	Q	0	secret			society	kept from others' knowledge
+official	Q	0				society	done or issued by an authority
+foreign	Q	0				society	from another country
+guilty	Q	0	guilt			law	
+responsible	Q	0	responsibility			society	answerable for something
+violent	Q	0	violence			conflict	
+holy	Q	0	holiness			religion	sacred
+know	A	1	knowledge			mind	
+think	A	1	thought			mind	have in mind, turn over in the mind
+believe	A	1	belief			mind	hold to be true
+remember	A	1	memory			mind	
+learn	A	1	learning			mind	gain knowledge or skill; study
+understand	A	1	understanding			mind	
+guess	A	1				mind	
+decide	A	1	decision			mind	
+choose	A	1	choice			mind	
+plan	A	1				mind	
+intend	A	1	intention	intentional		mind	have as one's purpose
+try	A	1	attempt			mind	try: make an effort to do
+mean	A	1	meaning			mind	mean: signify, stand for
+notice	A	1				mind	become aware of
+focus	A	1	attention	attentive		mind	direct one's attention to
+expect	A	1	expectation			mind	
+doubt	A	1		doubtful		mind	
+suspect	A	1	suspicion	suspicious		mind	think likely or guilty without knowing
+imagine	A	1	imagination	imaginary		mind	
+dream	A	1				mind	
+recognise	A	1	recognition			mind	know again something met before
+experience	A	1		experienced		mind	live through, undergo
+pretend	A	1	pretence			mind	act as if something were so
+confuse	E	0	confusion	confused		mind	be mixed up in mind
+idea	T	0				mind	
+mind	T	0		mental		mind	the thinking and feeling part of a person
+opinion	T	0				mind	what one thinks about a matter
+skill	T	0		skilled		mind	learned ability to do something well
+habit	T	0		habitual		mind	
+teach	A	1	teaching			mind	
+say	A	1	statement			speech	utter particular words or content
+speak	A	0	speech	spoken		speech	use language aloud; talk
+tell	A	1	telling			speech	inform someone of; narrate to
+ask	A	1	question			speech	ask: put a question
+request	A	1				speech	ask for something
+answer	A	1				speech	
+call	A	1				speech	call: summon or address by voice or phone
+name	R	0			name of	speech	
+word	T	0		verbal		speech	
+sentence	T	0				speech	sentence: grammatical unit of words
+language	T	0		linguistic		speech	
+grammar	T	0		grammatical		speech	
+write	A	1	writing	written		speech	
+read	A	1	reading			speech	
+translate	A	1	translation			speech	
+letter	T	0				speech	letter: written message sent to someone
+message	T	0				speech	
+story	T	0				speech	
+poem	T	0		poetic		speech	
+news	T	0				speech	
+page	T	0				speech	
+book	T	0				speech	
+paper	T	0				speech	material for writing on
+sign	T	0				speech	mark, gesture or symbol carrying a meaning
+voice	T	0		vocal		speech	
+promise	A	1				speech	
+thank	A	1	thanks	grateful		speech	
+greet	A	1	greeting			speech	
+agree	A	0	agreement			speech	have or state the same opinion
+apologise	A	0	apology			speech	
+accept	A	1	acceptance			speech	take or say yes to what is offered
+admit	A	1	admission			speech	say that something is so; confess
+joke	A	0				speech	
+lie	A	0		lying		speech	lie: say what one knows is false
+deceive	A	1	deceit			speech	make believe something false; cheat, trick
+explain	A	1	explanation			speech	
+describe	A	1	description			speech	
+discuss	A	1	discussion			speech	
+argue	A	0	quarrel			speech	argue: dispute in words, quarrel
+suggest	A	1	suggestion			speech	
+persuade	A	1	persuasion			speech	bring to believe or do; convince
+warn	A	1	warning			speech	
+advise	A	1	advice			speech	
+complain	A	0	complaint			speech	
+praise	A	1				speech	
+blame	A	1				speech	hold responsible for a fault
+insult	A	1				speech	
+threaten	A	1	threat			speech	
+encourage	A	1	encouragement			speech	give confidence or support to
+announce	A	1	announcement			speech	make known publicly
+report	A	1				speech	give an account of
+introduce	A	1	introduction			speech	make persons known to each other
+command	A	1				speech	order someone to do
+invite	A	1	invitation			speech	
+shout	A	0				speech	
+sing	A	1	singing			culture	
+rule	T	0				society	rule: stated norm of conduct
+law	T	0		legal		law	
+entitlement	T	0	right			law	right: what one may justly claim or do
+duty	T	0				society	what one is obliged to do
+power	T	0		powerful		society	power: ability to control people or events
+govern	A	1	rule	governing		society	rule, exercise authority over
+politics	T	0		political		society	
+society	T	0		social		society	people living together in an ordered community
+country	T	0		national		society	land with its own government; state
+city	T	0		urban		society	city or town
+village	T	0		rural		society	
+border	T	0				society	line dividing two countries or regions
+flag	T	0				society	
+rank	T	0				society	position in a hierarchy; status
+role	T	0				society	part or function someone has
+custom	T	0		traditional		culture	established practice; tradition
+culture	T	0		cultural		culture	
+history	T	0		historical		culture	
+ceremony	T	0		ceremonial		culture	formal rite
+holiday	T	0				culture	day of rest or festival
+celebrate	A	1	celebration	festive		culture	
+behave	A	0	behaviour			society	conduct oneself
+obey	A	1	obedience	obedient		society	
+allow	A	1	permission			society	permit
+help	A	1		helpful		society	
+serve	A	1	service			society	work for or wait on
+lead	A	1	leadership	leading		society	lead: guide, be in charge of
+meet	A	1	meeting			society	come together with
+visit	A	1				society	
+share	A	1	sharing	shared		society	use or have jointly; give part of
+own	A	1	ownership			society	have as property
+forgive	A	1	forgiveness			society	
+betray	A	1	betrayal			society	
+compete	A	0	competition	competitive		society	
+protest	A	0				society	show public objection
+vote	A	0				society	
+work	A	0		working		economy	do a task or job; labour
+job	T	0				economy	paid position; employment
+employ	A	1	employment			economy	give paid work to; hire
+pay	A	1	payment			economy	
+trade	A	1		commercial		economy	exchange goods; do business
+rent	A	1		rented		economy	pay for temporary use of
+price	T	0				economy	price or cost
+tax	T	0				economy	
+bank	T	0				economy	bank: institution keeping and lending money
+company	T	0		corporate		economy	company: business firm
+industry	T	0		industrial		economy	large-scale production of goods
+contract	T	0		contractual		law	binding written agreement
+advertise	A	1	advertisement			economy	
+fight	A	1				conflict	
+war	T	0				conflict	
+win	A	1	victory	winning		conflict	
+attack	A	1				conflict	
+defend	A	1	defence	defensive		conflict	protect against attack or harm
+guard	A	1				conflict	watch over to keep safe or confined
+capture	A	1		captive		conflict	take prisoner; arrest
+surrender	A	0				conflict	
+harm	A	1		harmful		conflict	hurt, damage
+hunt	A	1				conflict	
+shoot	A	1	shot			conflict	fire a weapon at
+weapon	T	0		armed		conflict	
+gun	T	0				conflict	
+bomb	T	0				conflict	
+steal	A	1	theft	stolen		law	
+punish	A	1	punishment			law	
+judge	A	1	judgment			law	decide a case; form a verdict on
+accuse	A	1	accusation			law	
+court	T	0		judicial		law	court: place and body that tries cases
+crime	T	0		criminal		law	
+prison	T	0				law	
+religion	T	0		religious		religion	
+god	T	0		divine		religion	
+spirit	T	0		spiritual		religion	bodiless being; ghost
+soul	T	0				religion	immaterial self of a person
+pray	A	0	prayer			religion	
+bless	A	1	blessing	blessed		religion	
+magic	T	0		magical		religion	
+heaven	T	0		heavenly		religion	abode of the blessed after death
+game	T	0				culture	
+play	A	0		playful		culture	play: take part in a game or fun
+sport	T	0		sporting		culture	
+music	T	0		musical		culture	
+dance	A	0				culture	
+art	T	0		artistic		culture	
+draw	A	1	drawing	drawn		culture	draw: make a picture of; also paint
+picture	T	0				culture	image, photograph
+film	T	0				media	film: moving picture, video
+perform	A	1	performance			culture	act, play or present before an audience
+car	T	0				transport	
+bus	T	0				transport	
+bicycle	T	0				transport	
+train	T	0				transport	train: railway vehicle
+plane	T	0				transport	aircraft
+road	T	0				transport	road or street
+station	T	0				transport	stopping place for trains or buses
+ticket	T	0				transport	
+mail	T	0		postal		media	post: letters and parcels sent
+address	T	0				media	where a person lives or can be reached
+document	T	0		documentary		media	official or formal paper
+phone	T	0				media	
+radio	T	0				media	
+television	T	0				media	
+camera	T	0				media	
+machine	T	0		mechanical		modern	
+engine	T	0				modern	motor
+electricity	T	0		electric		modern	
+battery	T	0				modern	
+hospital	T	0				health	
+medicine	T	0		medical		health	drug or remedy; the practice of healing
+hotel	T	0				modern	
+hero	T	0		heroic		person	person admired for brave deeds
+nurse	T	0				health	one trained to care for the sick
+mistake	T	0		mistaken		mind	wrong act or judgment made unintentionally
+sin	T	0		sinful		religion	act against religious or moral law
+prize	T	0				culture	thing given to a winner
+honour	T	0		honourable		value	high public esteem; good name

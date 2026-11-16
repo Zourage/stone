@@ -1,0 +1,39 @@
+[heading] Chymotrypsin (namely mechanism).
+1. [recalled] The chymotrypsin (call it A) is a serine protease.
+2. [recalled] Chymotrypsin A cuts the peptide bond that is next after the amino aromatic acid such as phe, and tyr, and trp at the carboxyl side.
+3. [recalled] The catalytic triad (namely ser 195 (call it B), and his 57 (call it C), and asp 102 (call it D)) exists at the active place of chymotrypsin A.
+4. [recalled] Specificity pocket S1 (call it E) binds the lateral chain of the amino aromatic acid.
+5. [recalled; explaining 4] Pocket S1 E hydrophobics, and pocket S1 E is big enough so that the aromatic ring enters pocket S1 E.
+6. [recalled] The hydrogen bond exists between his 57 C and ser 195 B, and the hydrogen bond exists between his 57 C and asp 102 D.
+7. [recalled] Chymotrypsin A binds the substrate (call it F) at the 1st step, and the join product of chymotrypsin A and substrate F begins to exist.
+8. [recalled; next after the previous sentence] His 57 C takes the proton as the general base from the hydroxyl of ser 195 B.
+9. [recalled; as a result of the previous sentence] The oxygen of ser 195 B becomes a strong nucleophile, and the oxygen of ser 195 B attacks the carbonyl carbon of the peptide bond of substrate F.
+10. [recalled; as a result of the previous sentence] The tetrahedral intermediate (call it G) begins to exist, and this carbon has 4 bonds, and the carbonyl oxygen of tetrahedral intermediate G has the negative charge, and this oxygen oxyanions.
+11. [recalled] The oxyanion hole (call it H) gives 2 hydrogen bonds to this oxygen from group NH of the main chain of the gly 193 and ser 195 B.
+12. [recalled; as a result of the previous sentence] Hole H makes tetrahedral intermediate G and the transition state stable, and so the activation energy decreases.
+13. [recalled; next after the previous sentence] His 57 C gives the proton as the general acid to the nitrogen of the peptide bond, and so the peptide bond breaks, and the 1st product (namely amine) leaves.
+14. [recalled; as a result of the previous sentence] The acyl enzyme such that the acyl group of substrate F is joined at itself to the oxygen of ser 195 B with the ester bond (call it J) remains.
+15. [recalled; as evidence for 14] Hartley and Kilby observed that the appearance of the 1st product is very fast at the beginning for about 1 mol per 1 mol of chymotrypsin A with the p Nitrophenyl Acetate substrate, and then the appearance is slow in year 1954.
+16. [it follows from 15] The making of acyl enzyme J is fast, but the breakage of acyl enzyme J is slow about this substrate.
+17. [recalled; next after 14] The water enters the active place, and his 57 C takes the proton from the water, and the oxygen of the water attacks the carbonyl carbon of acyl enzyme J.
+18. [recalled; next after the previous sentence] The 2nd tetrahedral intermediate begins to exist, and hole H again makes the negative charge stable.
+19. [recalled; next after the previous sentence] His 57 C gives the proton to the oxygen of ser 195 B, and so the ester bond breaks, and the 2nd product (namely carboxyl acid) leaves, and chymotrypsin A is again free.
+20. [told] Asp 102 D takes the proton from his 57 C.
+21. [claim; rebutting 20] Step 20 is common, but step 20 is wrong.
+22. [recalled; explaining 21] Asp 102 D still has the negative charge, and asp 102 D keeps his 57 C at the right direction, and asp 102 D makes the positive charge of his 57 C stable, and so his 57 C is stronger as the base.
+[heading] Kinetics of Michaelis Menten.
+23. [definition] “[S]” means a concentration of substrate F.
+24. [recalled] Speed v of the reaction is equal to divide(multiply(vmax, [S]), add(km, [S])) about the model of Michaelis Menten.
+25. [definition] “vmax” means a maximal speed that exists when all molecules of chymotrypsin A bind substrate F.
+26. [recalled] The vmax is equal to multiply(kcat, total concentration of chymotrypsin A).
+27. [definition] “kcat” means a maximal tally of the molecule of substrate F that 1 active place changes to the product for 1 second.
+28. [definition] “km” means a concentration of substrate F such that v is equal to the half of the vmax at itself.
+29. [claim] If the making of the product is very slower than the unbinding of substrate F, then the km is equal to the dissociation constanting of the join product of chymotrypsin A and substrate F; otherwise the km is not equal to this constanting.
+30. [recalled] The kcat is equal to about 190 s-1 about the N Acetyl L Tyrosine Ethyl Ester substrate, and the km is equal to about 0.7 mmol/L.
+31. [it follows from 30] Divide(kcat, km) is equal to about 2.7*10^5 L/(mol*s).
+32. [recalled] Divide(kcat, km) is representing the efficiencyness of the enzyme when [S] is very less big than the km, and the rate of the diffusion (namely 10^9 L/(mol*s)) is a limit of divide(kcat, km).
+33. [recalled] The competitive inhibiter (call it K) binds the active place that substrate F also binds, and 1 molecule of chymotrypsin A cannot bind inhibiter K and substrate F at the same moment.
+34. [recalled; as a result of the previous sentence] Inhibiter K changes the apparent km to multiply(km, add(1, divide(concentration of inhibiter K, Ki))), but inhibiter K does not change the vmax.
+35. [definition] “Ki” means a dissociation constanting of the join product of chymotrypsin A and inhibiter K.
+36. [recalled; explaining 34] If [S] is very big, then almost all molecules of chymotrypsin A bind substrate F, and so v reaches the same vmax.
+37. [it follows from 34; as an example of 34] If the concentration of inhibiter K is equal to Ki, then the apparent km is equal to multiply(2, km).

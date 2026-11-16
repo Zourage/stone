@@ -1,0 +1,50 @@
+[heading] Task 1.
+1. [given] The box with apple label (call it A) exists.
+2. [given] The box with citrus label (call it B) exists.
+3. [given] The box with mixture label (call it C) exists.
+4. [given] All labels are wrong.
+5. [given] Exactly 1 box contains only the apple, and exactly 1 box contains only the citrus, and exactly 1 box contains the apple and the citrus.
+6. [rule] You may take exactly 1 fruit from exactly 1 box, and you may not look the content of any box.
+7. [question] You should take the fruit from which box?
+8. [it follows from 3, 4, 5] Box C contains either only the apple or only the citrus (not both).
+9. [claim; answering 7] You should take 1 fruit from box C.
+10. [suppose] The fruit is an apple.
+11. [it follows from 8, 10; under the supposition of 10] Box C contains only the apple.
+12. [it follows from 2, 4, 5, 11; under the supposition of 10] Box B does not contain only the citrus, and box B does not contain only the apple.
+13. [it follows from 5, 12; under the supposition of 10] Box B contains the apple and the citrus.
+14. [it follows from 5, 11, 13; under the supposition of 10] Box A contains only the citrus.
+15. [suppose] The fruit is a citrus.
+16. [it follows from 8, 15; under the supposition of 15] Box C contains only the citrus.
+17. [it follows from 1, 4, 5, 16; under the supposition of 15] Box A does not contain only the apple, and box A does not contain only the citrus.
+18. [it follows from 5, 17; under the supposition of 15] Box A contains the apple and the citrus.
+19. [it follows from 5, 16, 18; under the supposition of 15] Box B contains only the apple.
+20. [it follows from 8, 14, 19; certain] If you see 1 fruit from box C, then you can know the content of all boxes.
+21. [claim; restating the previous sentence] Box C contains only the kind of the fruit, and the box with label that is a kind of the fruit contains the apple and the citrus, and the box that remains contains only another kind of the fruit.
+[heading] Task 2.
+22. [social act; to Maria] Greet.
+23. [given] You asked that [question] I can evaluate the report of you before the end of Friday?
+24. [claim; with regret] I cannot evaluate the report before the end of Friday.
+25. [claim; explaining 24] I will travel at Thursday and Friday.
+26. [social act] Apologise.
+27. [proposal] I can evaluate the report in instead the morning of Monday.
+28. [question; polite] The morning would be too late for you?
+[heading] Task 3.
+29. [definition] “W1” means an algorithm that searches the value at the list that has been sorted.
+30. [claim] The W1 searches the value (call it A) at the list (call it B).
+31. [claim; as background to the previous sentence] List B has been sorted from the smallest item to the biggest item.
+32. [claim] The W1 sees the item (call it D) at the middle of the part of list B that can still contain value A (call it C) per the step.
+33. [claim] If item D is equal to value A, then the W1 has found value A.
+34. [claim] If item D is less big than value A, then the W1 omits item D and all items that are before item D.
+35. [claim] If item D is bigger than value A, then the W1 omits item D and all items that are after item D.
+36. [claim; as a result of 34, 35] Only about half of part of list B C remains after all steps.
+37. [claim] The W1 repeats this step unless the W1 has found value A, or part of list B C is empty.
+38. [claim] If part of list B C is empty, then list B does not contain value A.
+39. [question] List B must have been sorted because of what?
+40. [claim; answering 39] If list B has been sorted, and item D is less big than value A, then all items that are before item D are also less big than value A.
+41. [claim; as a result of 40] The W1 can omit all items that are before item D with only 1 comparison.
+42. [claim; in contrast to 41] If list B has not been sorted, then value A can exist at any place of list B, and so the W1 cannot omit any part of list B.
+43. [recalled] 2^10 is equal to 1024.
+44. [it follows from 36, 43] The W1 needs about 10 steps for the list with 1000 items because at most 1 item remains after 10 steps.
+45. [definition] “index item” means item_at.
+46. [definition] W1(B, A) is defined as: let E be 0; let F be subtract(count(list B), 1); while E is not more than F: let G be add(E, F); let H be divide(subtract(G, remainder(G, 2)), 2); let J be index item(list B, H); if J is equal to value A, then return H; otherwise if J is less than value A, then let E be add(H, 1); otherwise let F be subtract(H, 1); return nothing.
+47. [claim; detailing 46] Nothing means that list B does not contain value A.

@@ -1,0 +1,3 @@
+5: RECALLED exist THEME fever WHEN after REL { inject AGENT A THEME vaccine } SPAN 5 UPTO 7 day .
+6: RECALLED rise THEME hot.ness WHEN until REL { EQUAL THEME A THAN 238 «W/m2» } .
+7: CLAIM REBUT 6 wrong THEME THAT idea ANDC BEGIN 2 EQUAL big THEME amount PER 8 second .

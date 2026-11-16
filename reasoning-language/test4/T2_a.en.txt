@@ -1,0 +1,48 @@
+[heading] Task 2.
+[heading] Part 1.
+[definition] “W1” means a program that shows the website.
+[definition] “W2” means a temporary storage that keeps the answer product that was gotten.
+[definition] “W3” means a server that searches the address for the client.
+[definition] “W4” means an end of the name such as .org.
+[definition] “W5” means a period such that the W2 may keep the answer product for itself (namely TTL).
+1. [recalled] The user (call it A) wants to access the website with name (call it B) (call it C).
+2. [recalled; adding to the previous sentence] The W1 needs the numeric address of the server of website C (call it D) because the computer can connect with only the numeric address.
+3. [recalled; next after the previous sentence] The W1 searches address D at the W2 of the W1.
+4. [recalled] If the W1 finds address D, then the W1 stops searching; otherwise the W1 searches address D at the W2 of the computer.
+5. [recalled; next after the previous sentence] If the W1 does not find address D at any W2, then the computer of user A sends the question (call it E) about name B to the W3 (call it F).
+6. [recalled; detailing the previous sentence] The internet company usually maintains W3 F.
+7. [recalled; next after 5] W3 F searches address D at the W2 of W3 F.
+8. [recalled] If W3 F does not find address D, then W3 F asks question E to some root server (call it G).
+9. [recalled; next after the previous sentence] Server G does not know address D, but server G knows the address of the server of the W4 of name B (call it H) (call it J).
+10. [recalled; next after the previous sentence] Server G gives address J to W3 F.
+11. [recalled; next after the previous sentence] W3 F asks question E to server H.
+12. [recalled; next after the previous sentence] Server H also does not know address D, but server H gives the address of the server with authority about name B (call it K) to W3 F.
+13. [recalled; next after the previous sentence] W3 F asks question E to server K.
+14. [recalled; next after the previous sentence] Server K gives the answer product with address D and W5 (call it L) to W3 F.
+15. [recalled; explaining 14] Server K keeps the originaling record product about name B.
+16. [recalled; next after 14] W3 F stores answer product L at the W2 of W3 F for the W5, and W3 F sends answer product L to the computer of user A.
+17. [recalled; next after the previous sentence] The computer and the W1 store address D at the W2 for the W5, and then the W1 connects to the server of website C with address D.
+18. [recalled; detailing 14] The owner of name B decides the length of the W5.
+19. [recalled] The W2 deletes answer product L after the W5, and so address D must again be searched.
+20. [recalled] If the W5 is longer, then the search is faster, but the spread of the change of address D is slower.
+[heading] Part 2.
+[definition] “W6” means a storage of the computer that the program uses while the program is executed (namely RAM).
+21. [told] The W6 that the serve program (call it M) uses still increases.
+22. [told; next after the previous sentence] The main system of the computer (call it N) usually kills program M per few hours because the W6 of program M reaches the limit.
+23. [claim; possible] The defect of the code (call it P) causes step 21.
+24. [claim; detailing the previous sentence] Program M keeps the object that program M no longer needs.
+25. [claim; as an example of the previous sentence] Program M puts 1 item to the list per the request, and program M never deletes any item.
+26. [claim] I would test step 23 by having it that I record the tally of the object per the category at 2 moments, and I compare the 2 record products.
+27. [claim] If the tally of 1 category always increases, then step 23 is probably true.
+28. [claim; adding to 23; possible] The connect product that program M opens but program M does not make closed (call it Q) causes step 21.
+29. [claim; explaining the previous sentence] All open connect products keep the piece of the W6.
+30. [claim] I would test step 28 by having it that I count the open connect product of program M for several hours.
+31. [claim] If the tally increases while the amount of the request constants, then step 28 is probably true.
+32. [claim; adding to 28; possible] The wrong setting causes step 21, and the defect does not exist at the code.
+33. [claim; detailing the previous sentence] Program M may use the amount of the W6 (call it R) because of the setting, but amount R is bigger than the limit that system N allows (call it S).
+34. [claim; as a result of the previous sentence] Program M does not make the W6 clean when the W6 of program M reaches limit S yet.
+35. [claim] I would test step 32 by having it that I compare amount R and limit S, and then I decrease amount R, and then I observe that [question] system N still kills program M?
+36. [claim] I would check step 32 before step 23 and step 28.
+37. [claim; explaining the previous sentence] The check of step 32 is fastest, and the check of step 32 is cheapest because I only need the reading of 2 numbers, and I do not need the change of the code.
+38. [claim; adding to the previous sentence] If the setting is right, then I know that the defect exists at the code, and so the slower test is valuable.
+39. [claim; next after the previous sentence] I would check defect P before connect product Q because defect P is commoner than connect product Q.

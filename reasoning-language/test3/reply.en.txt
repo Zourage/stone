@@ -1,0 +1,15 @@
+[heading] Task 1.
+1. [social act; to reader] Greet.
+2. [claim] That I choose the role of all things of the clause is most difficult.
+3. [claim; explaining 2] The role that is not said never means the thing that was said.
+4. [claim; as a result of 3] I must again say the name of all things per the sentence.
+[heading] Task 2.
+5. [told] The railway (call it A) leaves at 3.
+6. [told] Railway A travels for 2 hours.
+7. [told; adding to the previous sentence] Railway A stops moving for 30 minutes while railway A travels.
+8. [suppose] The period of step 6 does not contain the period of step 7.
+9. [it follows from 6, 7, 8; under the supposition of 8] The whole period is equal to 2 hours and 30 minutes.
+10. [it follows from 5, 9; under the supposition of 8] Railway A arrives at 5:30.
+11. [it follows from 8, 10] If step 8 is true, then railway A arrives at 5:30.
+[heading] Task 3.
+12. [question; polite; to reader] You prefer which language so that you think?

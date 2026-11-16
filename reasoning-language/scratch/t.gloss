@@ -1,0 +1,4 @@
+CLAIM exist THEME step KIND ( NOT split.able ) .
+CLAIM exist THEME step KIND NOT split.able .
+CLAIM see AGENT ME THEME NOT dog .
+CLAIM big THEME ( NOT dog ) .

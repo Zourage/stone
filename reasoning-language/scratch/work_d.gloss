@@ -1,0 +1,6 @@
+CLAIM right.opp THEME B CAUSE { MUST depend REL ONLY ( C AND D ) THEME { EQUAL THEME C THAN D } } .
+CLAIM MUST depend REL ONLY ( C AND D ) THEME B .
+CLAIM MUST depend REL C THEME B .
+CLAIM prove AGENT ANY person THEME B .
+CLAIM depend REL ONLY remember.made THEME identity OF person .
+CLAIM IF { UNREAL prove AGENT B THEME C } { UNREAL accept AGENT ME THEME A BUT UNREAL STILL accept.opp AGENT ME THEME B } .

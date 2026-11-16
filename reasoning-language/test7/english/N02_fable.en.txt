@@ -1,0 +1,41 @@
+[heading] Basal ganglia.
+1. [recalled] The basal ganglia is a nucleus group inside the brain.
+2. [recalled] The basal ganglia chooses the movement together with the cortex.
+3. [definition] “gpe” means an outside part of the globus pallidus.
+4. [definition] “gpi” means an inner part of the globus pallidus.
+5. [definition] “stn” means a subthalamic nucleus.
+6. [definition] “snc” means a substantia nigra pars compacta.
+7. [recalled] The cortex excites the striatum with the glutamate transmitter.
+8. [recalled] About 95 percent of the neuron of the striatum are a medium spiny neuron.
+9. [recalled] The medium spiny neurons release the gaba transmitter, and so the gaba inhibits the neuron that gets the gaba.
+10. [recalled] The neurons of the gpi send about 70 signals when the body rests per the second.
+11. [recalled; as a result of 10] The gpi inhibits the thalamus in a continuous way with the gaba.
+12. [recalled] The thalamus excites the cortex with the glutamate.
+13. [it follows from 11, 12] If the gpi is very active, then the cortex excites less, and the movement is blocked.
+14. [recalled] The neuron of the striatum with D 1 receptor inhibits the gpi at the direct channel with the gaba.
+15. [it follows from 11, 14] If the direct channel is active, then the gpi is less active, and the thalamus is uninhibited, and the movement is helped.
+16. [recalled] The neuron of the striatum with D 2 receptor inhibits the gpe at the indirect channel with the gaba.
+17. [recalled] The gpe inhibits the stn with the gaba.
+18. [recalled] The stn excites the gpi with the glutamate.
+19. [it follows from 16, 17, 18] If the indirect channel is active, then the gpe is less active, and the stn is uninhibited, and the gpi is activer, and the thalamus is inhibited more, and the movement is blocked.
+20. [recalled] The neuron of the snc releases the dopamine at the striatum.
+21. [recalled] If the dopamine binds the D 1 receptor, then the camp increases inside the neuron, and this neuron is more exciteable.
+22. [recalled; in contrast to 21] If the dopamine binds the D 2 receptor, then the camp decreases, and the neuron that has this receptor is less exciteable.
+23. [it follows from 15, 19, 21, 22] The dopamine activates the direct channel more, and the dopamine activates the indirect channel less, and so the dopamine helps the movement with 2 ways.
+24. [recalled] The neuron of the snc that releases the dopamine dies at the Parkinson disease.
+25. [recalled] The symptom about the movement appears when about 60 percent of this neuron have died, and the striatum has lost about 80 percent of the dopamine.
+26. [it follows from 23, 24] If the striatum lacks the dopamine, then the direct channel is less active, and the indirect channel is activer.
+27. [it follows from 15, 19, 26] The stn and the gpi are too active, and so the thalamus is inhibited too, and so the cortex excites less.
+28. [definition] “bradykinesia” means a very slow movement.
+29. [it follows from 27] 3 symptoms (namely bradykinesia, and shaking when the body rests, and hardnessness of the muscle) exist.
+30. [claim] The model of 2 channels explains the bradykinesia, but the same model does not explain the shaking enough.
+31. [recalled; adding to the previous sentence] The strong beta oscillation with frequency that is 13–30 Hz exists about the Parkinson disease at the stn and the gpi.
+32. [recalled] The dopamine cannot enter the brain from the blood, but L Dopa can enter the brain from the blood.
+33. [recalled] The enzyme changes L Dopa at the brain to the dopamine.
+34. [it follows from 23, 33] The striatum again gets the dopamine, and so 2 channels again balance, and the movement is faster.
+35. [claim] Many persons believe that L Dopa cures the Parkinson disease.
+36. [claim; rebutting 35; emphatic] L Dopa does not cure this disease.
+37. [recalled; explaining 36] The neuron of the snc still dies, and L Dopa only replaces the missing dopamine.
+38. [recalled; adding to the previous sentence] L Dopa often causes the dyskinesia (namely movement that the person does not want) after several years of the treatment.
+39. [recalled] The doctor puts the electrode with the deep brain stimulation of the stn to the stn, and this electrode sends the electric signal with frequency that is about 130 Hz with voltage that is 2–4 V.
+40. [claim; likely] This signal breaks the abnormal pattern of the output of the stn, and so the movement is blocked less.

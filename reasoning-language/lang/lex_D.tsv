@@ -1,0 +1,386 @@
+prove	A	1	proof			reasoning	show by argument that something must be true
+infer	A	1	inference			reasoning	derive a conclusion from what is known
+conclude	A	1	conclusion			reasoning	reach a final judgement after reasoning
+imply	R	0	implication		implying	reasoning	if this holds then the other must hold
+assume	A	1	assumption			reasoning	take as true for the sake of argument
+evidence	T	0				reasoning	facts that support or oppose a claim
+reason	R	0			reason for	reasoning	ground that justifies a belief or act
+cause	R	0		causal	cause of	reasoning	what makes something happen
+result	R	0		resulting	result of	reasoning	what follows from a cause; outcome
+affect	A	1	effect			reasoning	have an influence on
+condition	R	0		conditional	condition of	reasoning	what must hold for something else to hold
+case	T	0				reasoning	one situation or instance being considered
+example	R	0			example of	reasoning	
+exception	R	0		exceptional	exception to	reasoning	
+fact	T	0		factual		reasoning	
+claim	A	1				reasoning	assert that something is true
+problem	T	0		problematic		reasoning	matter that needs solving; issue
+solve	A	1	solution			reasoning	find the answer to a problem
+true	Q	0	truth			reasoning	in accord with fact
+possible	Q	0	possibility			reasoning	able to be or happen
+probable	Q	0	probability			reasoning	likely; head use names the degree of likelihood
+risk	T	0		risky		reasoning	chance of harm or loss
+consistent	R	0	consistency		consistent with	reasoning	not contradicting
+valid	Q	0	validity			reasoning	well formed or logically sound
+general	Q	0	generality			reasoning	applying to all or most cases
+simple	Q	0	simplicity			reasoning	having few parts; not complex
+relevant	R	0	relevance		relevant to	reasoning	
+depend	R	0	dependence	dependent	depending on	reasoning	be determined by or need
+relate	R	0	relation	related	related to	reasoning	have a connection with
+compare	A	1	comparison	comparative		reasoning	
+contain	R	0	content		containing	reasoning	have inside or include as a member
+belong	R	0	membership		belonging to	reasoning	be a member or part of
+omit	A	1	omission			reasoning	leave out, exclude, skip
+ignore	A	1				reasoning	deliberately pay no attention to
+define	A	1	definition			reasoning	state exactly what a term means
+specify	A	1	specification			reasoning	state exactly what is required
+check	A	1				reasoning	examine whether something is correct; verify
+test	A	1				reasoning	try something out to see how it performs
+evaluate	A	1	evaluation			reasoning	judge the quality or worth of; assess, review
+estimate	A	1		estimated		reasoning	judge an amount roughly
+predict	A	1	prediction	predictive		reasoning	
+observe	A	1	observation			reasoning	watch carefully and note what happens
+analyse	A	1	analysis	analytic		reasoning	examine by separating into parts
+classify	A	1	classification			reasoning	put into categories
+summarise	A	1	summary			reasoning	
+identify	A	1	identification			reasoning	recognise which one something is
+research	A	1				reasoning	investigate systematically
+error	T	0		erroneous		reasoning	wrong result, wrong action or fault condition
+defect	T	0		defective		reasoning	flaw that makes a thing work wrongly; bug
+repair	A	1				reasoning	make work correctly again; fix
+goal	T	0				reasoning	desired end; aim, purpose, objective
+target	T	0				reasoning	thing aimed at or acted on; destination
+method	T	0		methodical		reasoning	systematic way of doing something; technique
+step	T	0				reasoning	one stage in a process
+process	T	0				reasoning	series of steps or changes leading to a result
+plan	A	1		planned		reasoning	decide in advance how to do
+rule	T	0				reasoning	statement of what must or may be done
+principle	T	0				reasoning	basic general truth that other rules rest on
+theory	T	0		theoretical		reasoning	system of ideas that explains something
+model	T	0				reasoning	simplified representation used to explain or predict
+logic	T	0		logical		reasoning	
+property	R	0			property of	reasoning	attribute or feature that a thing has
+structure	T	0		structural		reasoning	how the parts of a whole are arranged
+system	T	0		systematic		reasoning	set of parts working together
+pattern	T	0				reasoning	regular arrangement that recurs
+sequence	T	0		sequential		reasoning	ordered series, one after another
+sort	A	1	order	sorted		reasoning	arrange in order; head use: the ordering
+level	T	0				reasoning	position on a scale; layer of a hierarchy; degree
+scale	T	0				reasoning	graded series of values used for measuring
+range	T	0				reasoning	span between lowest and highest values
+limit	T	0				reasoning	point that may not or cannot be passed
+rate	T	0				reasoning	amount of one thing per unit of another
+ratio	T	0				reasoning	how many times one amount contains another
+average	T	0		average		reasoning	mean of several values
+increase	E	0		increasing		reasoning	become more in amount or number
+vary	E	0	variation	varying		reasoning	take different values; not stay the same
+state	T	0				reasoning	condition something is in at a given time; status
+version	T	0				reasoning	one form of a thing that exists in several forms
+default	T	0		default		reasoning	value or choice used when none is given
+standard	T	0		standard		reasoning	agreed norm used for comparison
+normal	Q	0	normality			reasoning	usual, as expected, ordinary
+source	R	0			source of	reasoning	where something comes from; origin
+input	T	0				reasoning	what is fed into a process
+context	T	0		contextual		reasoning	surroundings that give something its meaning
+detail	T	0		detailed		reasoning	small particular point
+topic	T	0				reasoning	what a text or talk is about; subject
+equal	R	0	equality		equal to	reasoning	same in value or amount
+match	R	0			matching	reasoning	correspond to or fit
+represent	R	0	representation		representing	reasoning	stand for
+replace	A	1	replacement			reasoning	put one thing in place of another; substitute
+apply	A	1	application	applied		reasoning	bring a rule or method to bear on something
+control	A	1				reasoning	direct or regulate the behaviour of
+behave	A	0	behaviour	behavioural		reasoning	act or function in a certain way
+use	A	1				reasoning	employ for a purpose
+fail	E	0	failure	failing		reasoning	not achieve what was intended
+exact	Q	0	precision			reasoning	precise, accurate
+important	Q	0	importance			reasoning	
+base	R	0	basis	basic	basis of	reasoning	what something rests on; foundation
+direct	Q	0	directness			reasoning	with nothing in between
+explicit	Q	0	explicitness			reasoning	stated openly, not left to be inferred
+abstract	Q	0	abstraction			reasoning	not tied to particular things
+formal	Q	0	formality			reasoning	following fixed explicit rules or forms
+complete	Q	0	completeness			reasoning	having all its parts
+stable	Q	0	stability			reasoning	not easily changed or upset; steady
+active	Q	0	activity			reasoning	in operation, doing something
+available	Q	0	availability			reasoning	ready to be obtained or used
+efficient	Q	0	efficiency			reasoning	achieving much with little waste
+real	Q	0	reality			reasoning	actually existing, not imagined or simulated
+natural	Q	0	nature			reasoning	not made by people
+public	Q	0	publicity			reasoning	open to or concerning everyone
+local	Q	0	locality			reasoning	limited to one place or part
+positive	Q	0	positivity			reasoning	greater than zero; affirming
+automatic	Q	0	automation			reasoning	working by itself without a person
+urgent	Q	0	urgency			reasoning	
+responsible	R	0	responsibility		responsible for	reasoning	answerable for
+information	T	0		informative		knowledge	what is learned or told about something
+data	T	0				knowledge	recorded facts or values before interpretation
+science	T	0		scientific		knowledge	
+experiment	T	0		experimental		knowledge	controlled test of a hypothesis
+sample	T	0				knowledge	small part taken to represent the whole
+statistics	T	0		statistical		knowledge	
+bias	T	0		biased		knowledge	systematic leaning away from the true value
+correlate	R	0	correlation	correlated	correlated with	knowledge	vary together with
+factor	T	0				knowledge	one of several things contributing to a result; divisor
+score	T	0				knowledge	number given as the result of an evaluation
+skill	T	0		skilled		knowledge	learned ability to do something well
+experience	A	1				knowledge	live through or undergo
+focus	A	1	attention	focused		knowledge	concentrate attention on
+design	A	1				knowledge	work out the form of something before making it
+develop	E	0	development	developing		knowledge	grow into a more advanced form
+progress	E	0				knowledge	move forward toward completion
+adapt	E	0	adaptation	adaptive		knowledge	change so as to fit new conditions
+organise	A	1	organisation	organised		knowledge	arrange into an ordered structure
+manage	A	1	management			knowledge	be in charge of; handle
+maintain	A	1	maintenance			knowledge	keep in working condition
+assign	A	1	assignment			knowledge	give a task, role or value to
+approve	A	1	approval			knowledge	officially accept as satisfactory
+warn	A	1	warning			knowledge	tell of a possible danger or problem
+task	T	0				knowledge	piece of work to be done
+project	T	0				knowledge	planned undertaking with a goal
+role	T	0				knowledge	part played by a person or thing; function served
+resource	T	0				knowledge	supply that can be drawn on
+capacity	T	0				knowledge	maximum amount that can be held or done
+benefit	T	0		beneficial		knowledge	advantage gained
+technology	T	0		technical		knowledge	
+domain	T	0				knowledge	field of knowledge or activity
+agent	T	0				knowledge	one that acts on its own or for another
+document	T	0				writing	
+report	A	1				writing	give an account of findings
+record	A	1		recorded		writing	set down information for later use
+note	T	0				writing	short written remark or comment
+title	T	0				writing	name of a text or its heading
+section	T	0				writing	division of a document; chapter
+paragraph	T	0				writing	
+sentence	T	0				writing	grammatical sentence
+grammar	T	0		grammatical		writing	
+symbol	T	0		symbolic		writing	written mark or character that stands for something
+sign	R	0			sign of	writing	thing that indicates something else
+label	T	0				writing	short name or tag attached to a thing
+item	T	0				writing	single entry in a list; element of a set
+list	T	0				writing	
+grid	T	0	table	tabular		writing	table: data arranged in rows and columns
+row	T	0				writing	horizontal line of entries
+column	T	0				writing	vertical line of entries
+diagram	T	0				writing	drawing that explains; figure, chart
+image	T	0				writing	picture
+page	T	0				writing	one side of a sheet; one document on the web
+refer	A	1	reference			writing	point to or cite
+quote	A	1	quotation	quoted		writing	repeat the exact words of
+copy	A	1		copied		writing	make another identical to
+edit	A	1		edited		writing	change a text to improve it
+draft	T	0		draft		writing	preliminary version
+publish	A	1	publication	published		writing	make available to the public; release
+translate	A	1	translation			writing	
+index	T	0				writing	position number; ordered list for looking things up
+format	T	0				writing	arrangement in which data or text is laid out
+expression	T	0				writing	combination of symbols that has a value or meaning
+compute	A	1	computation	computational		mathematics	calculate
+add	A	1	addition	additive		mathematics	add numbers or amounts
+multiply	A	1	multiplication			mathematics	
+remainder	T	0				mathematics	what is left after dividing or taking away
+exponent	T	0		exponential		mathematics	power to which a number is raised
+integer	T	0				mathematics	whole number
+fraction	T	0		fractional		mathematics	
+digit	T	0				mathematics	
+prime	Q	0	primality			mathematics	divisible only by one and itself
+even	Q	0	parity			mathematics	divisible by two
+percent	T	0	percentage			mathematics	one part in a hundred
+set	T	0				mathematics	collection of distinct items
+function	T	0		functional		mathematics	rule giving one output for each input
+map	A	1	mapping			mathematics	associate each item of one set with one of another
+value	T	0				mathematics	quantity or content a variable holds; worth
+formula	T	0				mathematics	rule or composition written in symbols
+theorem	T	0				mathematics	
+mathematics	T	0		mathematical		mathematics	
+point	T	0				mathematics	position with no size
+angle	T	0		angular		mathematics	
+triangle	T	0		triangular		mathematics	
+shape	T	0				mathematics	outer form
+area	T	0				mathematics	size of a surface
+volume	T	0				mathematics	amount of space a thing occupies
+surface	T	0				mathematics	outer face or boundary of a thing
+space	T	0		spatial		mathematics	extent in which things have position
+direction	T	0		directional		mathematics	
+dimension	T	0		dimensional		mathematics	
+curve	T	0		curved		mathematics	
+axis	T	0				mathematics	reference line of rotation or measurement
+parallel	R	0			parallel to	mathematics	
+symmetric	Q	0	symmetry			mathematics	
+graph	T	0				mathematics	nodes joined by edges
+node	T	0				mathematics	point where lines of a network meet
+matrix	T	0				mathematics	rectangular array of numbers
+vector	T	0				mathematics	quantity with size and direction
+random	Q	0	randomness			mathematics	
+infinite	Q	0	infinity			mathematics	
+maximum	T	0		maximal		mathematics	greatest value
+program	T	0				computing	set of instructions for a computer
+code	T	0				computing	program text; system of symbols for encoding
+algorithm	T	0		algorithmic		computing	
+file	T	0				computing	named unit of stored data
+folder	T	0				computing	container for files; directory
+store	A	1	storage	stored		computing	keep for later use; save
+load	A	1				computing	bring data or a program into working state
+execute	A	1	execution			computing	carry out instructions or a plan; run a program
+install	A	1	installation			computing	set up for use
+deploy	A	1	deployment			computing	put into operation where it will be used
+update	A	1		updated		computing	bring to the newest state
+delete	A	1	deletion	deleted		computing	remove permanently; erase
+filter	A	1		filtered		computing	let through only what meets a condition
+parse	A	1	parsing	parsed		computing	analyse text into its grammatical structure
+encode	A	1	encoding	encoded		computing	put into a code or format
+compress	A	1	compression	compressed		computing	make take up less space
+encrypt	A	1	encryption	encrypted		computing	encode so that only key holders can read
+access	A	1				computing	reach and be able to use
+connect	A	1	connection	connected		computing	make a link between
+serve	A	1	service			computing	provide what is asked for to another
+client	T	0				computing	one that receives a service
+account	T	0				computing	registered record of a user or of money
+network	T	0				computing	things connected to each other
+interface	T	0				computing	boundary through which two systems interact
+module	T	0		modular		computing	self-contained component of a larger system
+package	T	0				computing	things bundled together as one unit
+loop	T	0		cyclic		computing	sequence that returns to its start; cycle
+repeat	A	1	repetition	repeated		computing	do or say again
+queue	T	0				computing	line of items waiting their turn
+token	T	0				computing	smallest unit of text; object standing for a right
+parameter	T	0				computing	adjustable value that sets how a system behaves
+configure	A	1	configuration			computing	set the options of a system
+train	A	1	training	trained		computing	improve ability by practice or examples
+device	T	0				computing	piece of equipment, especially electronic
+screen	T	0				computing	surface on which images are displayed
+video	T	0				computing	
+signal	T	0				computing	variation that carries information
+noise	T	0		noisy		computing	unwanted random disturbance in a signal
+bit	T	0				computing	binary digit
+digital	Q	0				computing	represented in discrete digits
+layer	T	0		layered		computing	one of several sheets or levels stacked together
+frame	T	0				computing	rigid border or structure; single image of a video
+robot	T	0		robotic		computing	
+energy	T	0		energetic		science	
+force	T	0				science	push or pull on a body
+mass	T	0				science	amount of matter
+pressure	T	0				science	force per area
+dense	Q	0	density			science	much mass or many items in little space
+particle	T	0				science	very small piece of matter
+atom	T	0		atomic		science	
+molecule	T	0		molecular		science	
+nucleus	T	0		nuclear		science	central core of an atom or cell
+element	T	0		elemental		science	chemical element
+chemistry	T	0		chemical		science	
+physics	T	0		physical		science	
+material	T	0				science	matter of which things are made; substance
+react	E	0	reaction	reactive		science	undergo chemical change; respond to a stimulus
+absorb	A	1	absorption			science	take in
+emit	A	1	emission			science	send out light, heat, gas or particles
+dissolve	E	0	dissolution	dissolved		science	become mixed into a liquid
+acid	T	0		acidic		science	
+gas	T	0		gaseous		science	
+liquid	T	0		liquid		science	
+solid	Q	0	solidity			science	firm, keeping its shape
+metal	T	0		metallic		science	
+oxygen	T	0				science	
+carbon	T	0				science	
+hydrogen	T	0				science	
+charge	T	0		charged		science	electric charge
+magnet	T	0		magnetic		science	
+gravity	T	0		gravitational		science	
+radiation	T	0				science	energy travelling as waves or particles
+fuel	T	0				science	
+planet	T	0		planetary		science	
+universe	T	0		universal		science	
+climate	T	0		climatic		science	
+environment	T	0		environmental		science	surroundings in which something lives or operates
+cell	T	0		cellular		science	smallest living unit
+gene	T	0		genetic		science	
+protein	T	0				science	
+species	T	0				science	
+evolve	E	0	evolution	evolutionary		science	change over generations
+inherit	A	1	inheritance	inherited		science	receive from a parent or predecessor
+bacterium	T	0		bacterial		science	
+virus	T	0		viral		science	
+infect	A	1	infection	infected		science	
+immune	Q	0	immunity			science	protected against a disease
+dose	T	0				science	measured amount taken at one time
+population	T	0				science	all individuals of a kind in an area
+unit	T	0				measurement	fixed amount used for measuring
+metre	T	0				measurement	unit of length
+gram	T	0				measurement	unit of mass
+second	T	0				measurement	unit of time
+litre	T	0				measurement	unit of volume
+degree	T	0				measurement	unit of temperature or angle
+budget	T	0				work	plan of money to be spent
+profit	T	0		profitable		work	money gained after costs
+invest	A	1	investment			work	put money or effort in for later gain
+insure	A	1	insurance	insured		work	
+fund	T	0				work	money set aside for a purpose
+finance	T	0		financial		work	management of money
+economy	T	0		economic		work	
+industry	T	0		industrial		work	
+company	T	0				work	business organisation
+contract	T	0		contractual		work	binding written agreement
+schedule	T	0		scheduled		work	plan of times at which things happen
+team	T	0				work	group working together
+policy	T	0				work	adopted course or rule of an organisation
+compete	A	0	competition	competitive		work	
+question	T	0				reasoning	something asked or still to be settled
+hypothesis	T	0		hypothetical		reasoning	proposed explanation not yet tested; conjecture
+alternative	T	0		alternative		reasoning	another available possibility; option
+exist	E	0	existence	existing		reasoning	be real or present
+event	T	0				reasoning	something that happens at a time and place
+accept	A	1	acceptance	accepted		reasoning	take as satisfactory or true
+prefer	A	1	preference	preferred		reasoning	like or choose one above another
+support	A	1		supporting		reasoning	back up; hold up; be compatible with
+arbitrary	Q	0	arbitrariness			reasoning	chosen without a reason
+ambiguous	Q	0	ambiguity			reasoning	having more than one possible meaning
+strict	Q	0	strictness			reasoning	allowing no deviation
+continuous	Q	0	continuity			reasoning	without breaks or jumps
+uniform	Q	0	uniformity			reasoning	the same throughout
+neutral	Q	0	neutrality			reasoning	favouring no side; neither positive nor negative
+permanent	Q	0	permanence			reasoning	lasting without end
+extend	A	1	extension	extended		reasoning	make cover more; lengthen or widen in scope
+extract	A	1	extraction	extracted		reasoning	take out from a larger whole
+adjust	A	1	adjustment	adjusted		reasoning	change slightly to fit better
+balance	E	0		balanced		reasoning	be in equilibrium, with opposing sides equal
+interact	A	0	interaction	interactive		reasoning	act on each other
+detect	A	1	detection			reasoning	discover the presence of
+cancel	A	1	cancellation	cancelled		reasoning	call off; make void
+scope	T	0				reasoning	extent that something covers or applies to
+mechanism	T	0		mechanical		reasoning	how parts work together to produce an effect
+channel	T	0				reasoning	path along which signals, goods or liquid pass
+trend	T	0				reasoning	general direction of change over time
+opportunity	T	0				reasoning	favourable chance to do something
+effort	T	0				knowledge	exertion of work or energy
+authority	T	0		authoritative		knowledge	recognised right to decide or command
+identity	T	0				knowledge	what makes a person or thing that one and no other
+history	T	0		historical		knowledge	
+survey	A	1				knowledge	gather data by asking many or looking over broadly
+article	T	0				writing	piece of writing in a journal or newspaper
+term	T	0				writing	word with a defined meaning; one part of an expression
+prompt	T	0				computing	text given to a model or user to elicit a response
+partner	R	0	partnership		partner of	work	
+stock	T	0				work	supply kept on hand; share in a company
+supply	A	1				work	provide what is needed
+radius	T	0		radial		mathematics	
+slope	T	0		sloping		mathematics	steepness of a line or surface
+coordinate	T	0				mathematics	number giving position along an axis
+operation	T	0		operational		mathematics	defined action performed on values or by a system
+axiom	T	0		axiomatic		mathematics	statement accepted without proof as a starting point
+distribution	T	0				mathematics	how values are spread over a range
+converge	E	0	convergence	convergent		mathematics	approach a limit or a common point
+internet	T	0				computing	
+camera	T	0				computing	
+circuit	T	0				computing	closed path for electric current
+wire	T	0		wired		computing	
+chip	T	0				computing	small piece of semiconductor holding circuits
+protocol	T	0				computing	agreed rules for exchanging data
+cluster	T	0		clustered		computing	group of similar things close together
+neuron	T	0		neural		science	nerve cell or unit of a neural network
+frequency	T	0				science	number of repetitions per unit time
+orbit	A	1		orbital		science	move around another body in a closed path
+electron	T	0		electronic		science	
+satellite	T	0				science	
+tissue	T	0				science	group of similar cells in a body
+organ	T	0				science	body part with a particular function
+symptom	T	0		symptomatic		science	sign of a disease felt or seen
+cancer	T	0		cancerous		science	

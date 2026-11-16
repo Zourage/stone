@@ -1,0 +1,48 @@
+[heading] Task 1.
+1. [given] The counter variableness that 2 threads share (call it A) exists.
+2. [given] The thread (call it B) and the thread (call it C) exist.
+3. [given] For each D in thread B and thread C: D executes the code (namely tmp = counter ; counter = tmp + 1) with no lock 1000 times.
+4. [given] The value of variableness A is sometimes less big than 2000 at the end of the execution.
+5. [claim; explaining 4] The code contains 3 steps (namely reading, and addition, and writing), and another thread can work between the reading and the writing.
+6. [given] Thread B has the local tmp variableness (call it E), and thread C has the local tmp variableness (call it F).
+7. [story; as an example of 5] The value of variableness A is equal to 5.
+8. [story; next after the previous sentence] Thread B reads variableness A, and so variableness E is equal to 5.
+9. [story; next after the previous sentence] Thread C reads variableness A when thread B does not write to variableness A yet, and so variableness F is also equal to 5.
+10. [story; next after the previous sentence] Thread B writes add(variableness E, 1) to variableness A, and so the value of variableness A is equal to 6.
+11. [story; next after the previous sentence] Thread C writes add(variableness F, 1) to variableness A, and so the value of variableness A is still equal to 6.
+12. [it follows from 8, 9, 10, 11] The code was executed twice, but the value of variableness A increased for only 1.
+13. [it follows from 12] 1 update was lost.
+14. [it follows from 13] All losses of the update decrease the value of variableness A for 1, and so the value of variableness A is sometimes less big than 2000.
+15. [claim; adding to the previous sentence] The sequence of the step is depending on the schedule of the system, and so this defect not always happens.
+16. [proposal] We use the lock (call it G) so that this defect is fixed.
+17. [rule; detailing 16] All threads must lock lock G before the reading, and the same thread must unlock lock G after the writing.
+18. [it follows from 17] Only 1 thread can work between the lock and the unlocking, and so step 9 cannot happen.
+19. [it follows from 18] The value of variableness A is always equal to 2000 at the end of the execution.
+20. [claim; adding to the previous sentence] The alternative (namely atomic operation that does the reading, and the addition, and the writing as 1 splitable step) exists.
+21. [claim] The price of this solution exists.
+22. [claim; detailing 21] The lock and the unlocking need the time, and another thread must wait when 1 thread has lock G, and so the program is slower.
+23. [claim; adding to the previous sentence] Thread B and thread C cannot execute the code at the same moment, and so the benefit of 2 threads is less big.
+24. [claim; adding to the previous sentence] If the program uses several locks, then 2 threads can wait each other for the infinite time.
+25. [claim; in contrast to 22] The atomic operation is less expensive than the lock because the thread does not wait.
+[heading] Task 2.
+26. [recalled] The hash table (call it H) stores the pair of the key and the value at the list with many buckets (call it J).
+27. [recalled] The hash function (call it K) computes the index of the bucket from the key.
+28. [claim] Table H computes the index with function K so that the key is found, and then table H goes in a direct way to the bucket with the index, and then table H compares only few keys that are inside the bucket.
+29. [claim] Table H does not search another bucket, and so the time of the search is not depending on the tally of all keys.
+30. [claim; explaining 29] If function K spreads the key in a uniform way to all buckets, then 1 bucket has only few keys about the average.
+31. [claim; adding to the previous sentence] Table H increases the tally of the bucket when table H becomes full, and so the tally of the key per the bucket is still small.
+32. [it follows from 30, 31] The time of the search (namely O(1)) constants about the average.
+33. [claim; in contrast to 32] If function K gives the same index to many keys, then the search is slow.
+34. [claim; detailing 33] Bad function K or the key that the attacker chooses so that all keys have the same index is a cause of this case.
+35. [it follows from 33] 1 bucket contains almost all keys, and so table H must compare the search product key like all keys of the bucket.
+36. [it follows from 35] If the tally of the key is bigger, then the time of the search (namely O(n)) is longer.
+37. [claim; restating 35] Table H behaves like the simple list.
+38. [claim; adding to the previous sentence] 1 storage is also slow when table H increases the tally of the bucket because table H must again put all keys.
+[heading] Task 3.
+39. [definition] “W1” means a biggest factor that 2 integers share.
+40. [definition] W1(L, M) is defined as: that while M is more than 0: let N be remainder(L, M); let L be M; let M be N; return L.
+41. [rule; as background to 40] L and M are integers in a positive way.
+42. [recalled] Remainder(L, M) is always less big than M, and the same remainder is never negative.
+43. [it follows from 40, 42] M becomes less big all repetitions of the loop, but M is never negative.
+44. [it follows from 43] M becomes equal to 0 after the finite tally of the repetition, and so the loop stops continuing, and then the W1 gives L.
+45. [recalled; aside] W1(L, M) is equal to W1(M, remainder(L, M)), and so the result of the W1 is right.

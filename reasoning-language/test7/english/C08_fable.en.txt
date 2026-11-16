@@ -1,0 +1,41 @@
+[heading] Theory that is a crystal field.
+1. [recalled] Hans Bethe made the theory that is a crystal field in year 1929.
+2. [recalled] This theory describes the ligands as the point with negative charge.
+3. [recalled] 6 ligands are around the metallic ion at the octahedral complex, and this 6 ligands are at axis x, and axis y, and axis z.
+4. [recalled] 5 orbitals of kind d have the same energy at the alone ion.
+5. [recalled] Orbital dz2 and orbital dx2-y2 aim to the ligand through the axis, but orbital dxy, and orbital dxz, and orbital dyz aim to the place that is between the axis.
+6. [it follows from 2, 5] The ligand repels the electron of orbital dz2 and orbital dx2-y2 more than the electron of another 3 orbitals.
+7. [it follows from 6] 5 orbitals of kind d split to 2 sets (namely t 2 g set (call it A) and eg set (call it B)).
+8. [claim; restating 7] The octahedral split is a name of step 7.
+9. [recalled] Set A contains 3 orbitals (namely dxy, and dxz, and dyz), and set B contains 2 orbitals (namely dz2 and dx2-y2).
+10. [claim] Split energy Δ is equal to subtract(energy of set B, energy of set A).
+11. [recalled] The energy of set B is higher than the average for 0.6 Δ, and the energy of set A is lower than the average for 0.4 Δ.
+12. [recalled] That the electron enters the orbital that already contains 1 electron needs pair energy P because 2 electrons repel each other.
+13. [claim] If Δ is less big than P, then the electron obeys the rule of Hund, and the electron enters all 5 orbitals as the alone electron.
+14. [claim] The high spin is a name of the case of step 13.
+15. [claim; in contrast to 13] If Δ is bigger than P, then the electron is a pair at set A, and set B is still empty.
+16. [claim] The low spin is a name of the case of step 15.
+17. [recalled] Ion Fe2+ has 6 electrons of kind d, and so ion Fe2+ is a d 6 ion.
+18. [recalled] Δ is equal to about 10400 cm-1 at complex [Fe(H2O)6]2+ (call it C), and P is equal to about 17600 cm-1.
+19. [it follows from 13, 18] Complex [Fe(H2O)6]2+ C is a high spin, and set A contains 4 electrons, and set B contains 2 electrons, and so complex [Fe(H2O)6]2+ C paramagnetics because of 4 alone electrons.
+20. [recalled] Δ is equal to about 33000 cm-1 at complex [Fe(CN)6]4- (call it D) because CN- is a ligand that is a strong field.
+21. [it follows from 15, 20] Complex [Fe(CN)6]4- D is a low spin, and set A contains 6 electrons, and set B contains 0 electrons, and so complex [Fe(CN)6]4- D diamagnetics.
+22. [recalled] The spectrochemical series sorts the ligands with the size of energy Δ that the ligand causes.
+23. [recalled; as an example of 22] I- < Br- < Cl- < F- < H2O < NH3 < CN- < CO is a part of the spectrochemical series.
+24. [recalled] Many students believe that only the charge of the ligand causes the size of Δ.
+25. [claim; rebutting 24] The believe product is wrong.
+26. [claim; as evidence for 25] The ligand CO with no charge causes very big energy Δ, but ligand F- with negative charge causes small energy Δ.
+27. [claim; as a result of 26] The explanation of the spectrochemical series needs the theory that is a ligand field (this theory describes the bond that is between the metal and the ligand).
+28. [recalled] The ligand such as CN- and CO increases Δ because the ligand gets the electron from set A through the bond of kind π.
+29. [definition] “cfse” means an energy that is a crystal field stabilisation.
+30. [recalled] The cfse is equal to (-0.4 a + 0.6 b) Δ + c P.
+31. [claim; detailing 30] A is a tally of the electron of set A, and b is a tally of the electron of set B, and c is a tally of the pair that does not exist at the alone ion.
+32. [it follows from 18, 19, 30] The cfse is equal to (4 × -0.4 + 2 × 0.6) Δ = -0.4 Δ at complex [Fe(H2O)6]2+ C because c is equal to 0, and the cfse of complex [Fe(H2O)6]2+ C is equal to about -4160 cm-1.
+33. [it follows from 21, 30] The cfse is equal to (6 × -0.4) Δ + 2 P = -2.4 Δ + 2 P at complex [Fe(CN)6]4- D because c is equal to 2.
+34. [it follows from 20, 33] The cfse of complex [Fe(CN)6]4- D is equal to about -44000 cm-1 (namely -2.4 × 33000 + 2 × 17600 = -44000) because energy P of complex [Fe(CN)6]4- D is roughly equal to energy P of complex [Fe(H2O)6]2+ C.
+35. [recalled] The theorem of Jahn Teller says that if the molecule that is not straight has several electronic states with the same energy, then the shape of the molecule changes, and so this state splits, and the whole energy is lower.
+36. [recalled] Ion Cu2+ is a d 9 ion, and set A contains 6 electrons at the octahedral complex, and set B contains 3 electrons.
+37. [it follows from 36] 2 ways with the same energy exist so that 3 electrons are put to set B.
+38. [it follows from 35, 37] The Jahn Teller distortion happens at the complexes of ion Cu2+.
+39. [recalled; as an example of 38] The length of 4 bonds at axis x and axis y is equal to about 196 pm at complex [Cu(H2O)6]2+, and the length of 2 bonds at axis z is equal to about 238 pm.
+40. [claim; explaining 39] The energy of orbital dz2 is lower because 2 ligands of axis z are more a far, and so orbital dz2 contains 2 electrons, and orbital dx2-y2 contains only 1 electron.

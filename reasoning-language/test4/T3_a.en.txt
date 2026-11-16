@@ -1,0 +1,28 @@
+[heading] Part 1.
+1. [definition] W1(A) is defined as: that if A is equal to 0, then return 0; return add(W1(subtract(A, 1)), subtract(multiply(2, A), 1)).
+2. [claim; restating 1] For each A in all integers that is not negative: W1(A) is equal to the odd positive sum of all numbers that is not more than multiply(2, A).
+[heading] Theorem.
+3. [claim] For each A in all integers that is not negative: W1(A) is equal to multiply(A, A).
+[heading] Proof.
+4. [it follows from 1] W1(0) is equal to 0.
+5. [recalled] Multiply(0, 0) is equal to 0.
+6. [it follows from 4, 5] W1(0) is equal to multiply(0, 0).
+7. [suppose] B is an integer that is not negative, and W1(B) is equal to multiply(B, B).
+8. [it follows from 1, 7; under the supposition of 7] W1(add(B, 1)) is equal to add(W1(B), subtract(multiply(2, add(B, 1)), 1)).
+9. [recalled] Subtract(multiply(2, add(B, 1)), 1) is equal to add(multiply(2, B), 1).
+10. [it follows from 7, 8, 9; under the supposition of 7] W1(add(B, 1)) is equal to add(multiply(B, B), add(multiply(2, B), 1)).
+11. [recalled] Multiply(add(B, 1), add(B, 1)) is equal to add(multiply(B, B), add(multiply(2, B), 1)).
+12. [it follows from 10, 11; under the supposition of 7] W1(add(B, 1)) is equal to multiply(add(B, 1), add(B, 1)).
+13. [it follows from 7, 12] For each B in all integers that is not negative: if W1(B) is equal to multiply(B, B), then W1(add(B, 1)) is equal to multiply(add(B, 1), add(B, 1)).
+14. [recalled] If the statement is true about 0, and for each B in all integers that is not negative: if the statement is true about B, then the statement is true about add(B, 1), then for each A in all integers that is not negative: the statement is true about A.
+15. [claim; as an aside to 14] The Induction principle is a name of step 14.
+16. [it follows from 6, 13, 14; certain] For each A in all integers that is not negative: W1(A) is equal to multiply(A, A).
+[heading] Part 2.
+17. [definition] “sorted connection” means merge.
+18. [definition] “[]” means an empty list.
+19. [definition] “append(C, D)” means a list that contains all items of C and then contains D at the end of itself.
+20. [definition] Sorted connection(E, F) is defined as: let G be []; let H be 0; let J be 0; while H is less than count(E), and J is less than count(F): if item(E, H) is not more than item(F, J), then let G be append(G, item(E, H)); let H be add(H, 1); otherwise let G be append(G, item(F, J)); let J be add(J, 1); while H is less than count(E): let G be append(G, item(E, H)); let H be add(H, 1); while J is less than count(F): let G be append(G, item(F, J)); let J be add(J, 1); return G.
+[heading] Part 3.
+21. [claim] Item(E, H) is equal to the minimum of all items of E that G does not contain yet all steps of the 1st loop because E has been sorted, and the same statement is true about F and J.
+22. [it follows from 20, 21] The item that is joined to G is equal to the minimum of all items that G does not contain yet all steps of the 1st loop, and so the item is not less than any item of G.
+23. [it follows from 20, 22] G has been sorted at the end of the 1st loop, and G still has been sorted after all loops because the remain product has been sorted, and all items of the remain product are not less than any item of G.

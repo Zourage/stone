@@ -1,0 +1,31 @@
+[heading] Story.
+1. [narration] Ana and Ben live in the same home.
+2. [narration] A letter arrived from the electric company.
+3. [narration] The letter said that the electricity bill has not been paid yet.
+4. [narration; as a result of 3] Ana gets angry.
+5. Ana: [question; annoyed; to Ben] Who forgot to pay the electricity bill?
+6. Ben: [claim; answering 5; ironic] Ana never forgets anything.
+7. Ben: [claim; certain] Paying the electricity bill this month is Ana's job.
+8. Ana: [claim; rebutting 7] I sent the money to the electric company 2 weeks ago.
+9. [narration; next after the previous sentence] Ana and Ben check Ana's account at the bank.
+10. [narration] Ana and Ben see that the bank sent the money to another company.
+11. [narration; as a result of 10] Ana and Ben come to realise that the bank made the mistake.
+12. [narration] Ana is ashamed, and Ben laughs.
+13. Ana: [social act; to Ben] I'm sorry.
+14. Ben: [social act; to Ana] I forgive you.
+15. Ana: [plan] I'll call the bank the next day so that the bank fixes the mistake.
+16. Ben: [proposal] Let's (you and I) have dinner at home on Friday.
+17. Ana: [plan; glad] I'll cook noodles on Friday.
+18. [narration] Ana and Ben are finally happy.
+
+Translator notes
+- Throughout: the letter names A, B, C, D are replaced by "Ana", "Ben", "the letter", "the electricity bill". The literal has no articles or tense beyond what is shown; "a/the" and narrative tense follow the literal as closely as English allows.
+- 3, 5, 7: "the electric price" is rendered as "the electricity bill" (the amount owed to the electric company).
+- 5: literal is "Which person forgot that price D is paid?". Read as "forgot to pay the bill" (forgot that the bill is to be paid), not "forgot that the bill has already been paid".
+- 6, 7: Ben refers to Ana by name in the literal although line 6 answers her; kept in the third person rather than changed to "you".
+- 11: "begin to know" rendered as "come to realise".
+- 12: "A shames" read as "Ana is ashamed" (she feels shame), not "Ana shames someone".
+- 13, 14: the literal gives only the bare acts "Apologise" and "Forgive" with speaker and addressee; read as the speaker performing the act ("I'm sorry", "I forgive you"), not as commands to the other person.
+- 15: "on the next day" kept as "the next day" (presumably tomorrow from the moment of speaking).
+- 16: "We (you and I) eat the evening meal" under the tag "proposal" rendered as "Let's ... have dinner".
+- 17: "the noodle" rendered as plural "noodles"; the literal does not settle number.

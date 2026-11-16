@@ -1,0 +1,40 @@
+[heading] Section (namely proof) 1.
+1. [claim] For each A in all positive integers: the sum of the 1st to the A-th positive integers is equal to divide(multiply(A, add(A, 1)), 2).
+2. [plan] I prove step 1.
+3. [given] The sum of the 1st to the 1st positive integers is equal to 1.
+4. [given] Divide(multiply(1, add(1, 1)), 2) is equal to 1.
+5. [it follows from 3, 4] The sum of the 1st to the 1st positive integers is equal to divide(multiply(1, add(1, 1)), 2).
+6. [suppose] The integer (call it B) is positive, and the sum of the 1st to the B-th positive integers is equal to divide(multiply(integer B, add(integer B, 1)), 2).
+7. [definition] Let C be add(integer B, 1).
+8. [given; under the supposition of 6] The sum of the 1st to the C-th positive integers is equal to add(sum of the 1st to the B-th positive integers, C).
+9. [it follows from 6, 7, 8; under the supposition of 6] The sum of the 1st to the C-th positive integers is equal to add(divide(multiply(integer B, C), 2), C).
+10. [given] Add(divide(multiply(integer B, C), 2), C) is equal to divide(multiply(C, add(integer B, 2)), 2).
+11. [it follows from 7] Add(integer B, 2) is equal to add(C, 1).
+12. [it follows from 9, 10, 11; under the supposition of 6] The sum of the 1st to the C-th positive integers is equal to divide(multiply(C, add(C, 1)), 2).
+13. [it follows from 6, 12] For each B in all positive integers: let C be add(integer B, 1); if the sum of the 1st to the B-th positive integers is equal to divide(multiply(integer B, add(integer B, 1)), 2), then the sum of the 1st to the C-th positive integers is equal to divide(multiply(C, add(C, 1)), 2).
+14. [it follows from 5, 13] For each A in all positive integers: the sum of the 1st to the A-th positive integers is equal to divide(multiply(A, add(A, 1)), 2).
+15. [it follows from 14] I have proved step 1.
+[heading] Section (namely proof) 2.
+16. [suppose] The prime biggest number (call it D) exists.
+17. [it follows from 16; under the supposition of 16] The prime set of numbers (namely all prime numbers) (call it E) is finite.
+18. [definition] Let F be add(product of all member of set of numbers ES, 1).
+19. [it follows from 18; under the supposition of 16] F is bigger than 1.
+20. [recalled] For each G in all integers that are bigger than 1: some prime factor of G exists.
+21. [it follows from 19, 20; under the supposition of 16] The prime factor of F (call it H) exists.
+22. [it follows from 17, 21; under the supposition of 16] Factor H is a member of set of numbers E.
+23. [it follows from 18, 22; under the supposition of 16] Remainder(subtract(F, 1), factor H) is equal to 0.
+24. [it follows from 21; under the supposition of 16] Remainder(F, factor H) is equal to 0.
+25. [it follows from 23, 24; under the supposition of 16] Remainder(1, factor H) is equal to 0.
+26. [it follows from 21; under the supposition of 16] Factor H is bigger than 1.
+27. [it follows from 26; under the supposition of 16] Remainder(1, factor H) is not equal to 0.
+28. [it follows from 25, 27; under the supposition of 16] Step 25 is contradict step 27.
+29. [it follows from 16, 28] The prime biggest number does not exist.
+[heading] Section (namely function) 3.
+[definition] “maximal item” means max_item.
+[definition] Maximal item(J) is defined as: let K be item(J, 0); for each L in J: if L is more than K, then let K be L; return K.
+[definition] “sorted placement” means insert_sorted.
+[definition] Sorted placement(M, N) is defined as: let P be []; let Q be 0; for each R in M: if Q is equal to 0, and R is more than N, then let P be append(P, N); let Q be 1; let P be append(P, R); if Q is equal to 0, then let P be append(P, N); return P.
+[definition] “put order” means insertion_sort.
+[definition] Put order(S) is defined as: let T be []; for each U in S: let T be sorted placement(T, U); return T.
+[heading] Section 4.
+30. [claim] T always has been sorted at the beginning of any step of the loop of the put order, and T always contains only all items of S that the loop already reads.

@@ -1,0 +1,31 @@
+[heading] Section (namely proof) 1.
+1. [definition] W1(A) is defined as: that if A is equal to 0, then return 0; return add(W1(subtract(A, 1)), subtract(multiply(2, A), 1)).
+2. [recalled] For each B in all positive integers: the B-th odd number is equal to subtract(multiply(2, B), 1).
+3. [it follows from 1, 2] For each B in all positive integers: W1(B) is equal to the sum of the 1st to the B-th odd numbers.
+4. [claim] For each B in all positive integers: W1(B) is equal to multiply(B, B).
+5. [plan] I prove step 4 with the induction method.
+6. [it follows from 1] W1(1) is equal to 1.
+7. [recalled] Multiply(1, 1) is equal to 1.
+8. [it follows from 6, 7] W1(1) is equal to multiply(1, 1).
+9. [suppose] Any integer (call it C) is positive.
+10. [suppose; under the supposition of 9] W1(integer C) is equal to multiply(integer C, integer C).
+11. [it follows from 1, 9; under the supposition of 9] W1(add(integer C, 1)) is equal to add(W1(integer C), subtract(multiply(2, add(integer C, 1)), 1)).
+12. [it follows from 9; under the supposition of 9] Subtract(multiply(2, add(integer C, 1)), 1) is equal to add(multiply(2, integer C), 1).
+13. [it follows from 10, 11, 12; under the supposition of 9, 10] W1(add(integer C, 1)) is equal to add(multiply(integer C, integer C), add(multiply(2, integer C), 1)).
+14. [recalled; under the supposition of 9] Multiply(add(integer C, 1), add(integer C, 1)) is equal to add(multiply(integer C, integer C), add(multiply(2, integer C), 1)).
+15. [it follows from 13, 14; under the supposition of 9, 10] W1(add(integer C, 1)) is equal to multiply(add(integer C, 1), add(integer C, 1)).
+16. [it follows from 9, 10, 15] For each D in all positive integers: if W1(D) is equal to multiply(D, D), then W1(add(D, 1)) is equal to multiply(add(D, 1), add(D, 1)).
+17. [recalled] The induction method is valid about all positive integers.
+18. [it follows from 8, 16, 17; certain] For each B in all positive integers: W1(B) is equal to multiply(B, B).
+19. [it follows from 3, 18; restating 18] For each B in all positive integers: the sum of the 1st to the B-th odd numbers is equal to multiply(B, B).
+[heading] Section (namely function) 2.
+20. [definition] “[]” means an empty list.
+21. [definition] “append” means a function that puts the item to the end of the list.
+22. [suppose] The list (call it E) and the list (call it F) have been sorted from the smallness to the size.
+23. [definition] “sorted connection” means merge_sorted.
+24. [definition] Sorted connection(E, F) is defined as: let G be []; let H be 0; let J be 0; while H is less than count(list E), and J is less than count(list F): if item(list E, H) is not more than item(list F, J), then let G be append(G, item(list E, H)); let H be add(H, 1); otherwise let G be append(G, item(list F, J)); let J be add(J, 1); while H is less than count(list E): let G be append(G, item(list E, H)); let H be add(H, 1); while J is less than count(list F): let G be append(G, item(list F, J)); let J be add(J, 1); return G.
+[heading] Section (namely reason) 3.
+25. [it follows from 22] Item(list E, H) is smallest than all items of list E that are not taken yet, and item(list F, J) is smallest than all items of list F that are not taken yet.
+26. [it follows from 24, 25] The function puts the item that is smallest than all items that are not taken yet to the end of G all steps.
+27. [it follows from 26; as a result of 26] Any item (call it K) is not bigger at G than the item that is next after item K, and (restate) G has been sorted from the smallness to the size.
+28. [it follows from 22, 24, 26; adding to 27] All items that remain have been sorted when all items of some list have been taken, and any item that remains is not smaller than any item of G, and so G contains all items of list E and list F at the end.

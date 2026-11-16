@@ -1,0 +1,116 @@
+light	opp	dark	absence of light
+burn	+agent	ignite	set on fire
+burn	opp	extinguish	put out a fire
+burn	able	flammable	
+burn	made	ember	
+freeze	opp	melt	
+freeze	tool	freezer	
+fire	place	fireplace	
+tree	group	forest	woods
+mountain	group	mountain range	
+island	group	archipelago	
+star	group	constellation	
+plant	group	vegetation	
+leaf	group	foliage	
+flower	group	bouquet	
+bone	group	skeleton	
+stair	group	staircase	
+animal	group	herd	
+bird	group	flock	
+bee	place	beehive	
+horse	place	stable	
+horse	doer	rider	
+sheep	doer	shepherd	
+fish	doer	fisherman	
+wild	opp	tame	domesticated
+sleep	opp	wake	
+sleep	place	bedroom	
+alive	opp	dead	
+alive	ness	life	
+die	+agent	kill	
+die	able	mortal	
+born	+agent	bear	give birth to
+born	place	birthplace	
+bury	place	grave	
+strong	opp	weak	
+strong	ness	strength	
+healthy	opp	sick	ill
+healthy	ness	health	
+heal	+agent	cure	
+heal	doer	doctor	
+heal	tool	medicine	
+heal	place	hospital	
+heal	able	curable	
+drunk	opp	sober	
+grow	+agent	raise	grow crops, rear animals or children
+grow	opp	shrink	
+tooth	doer	dentist	
+wash	place	bathroom	
+wash	able	washable	
+urinate	made	urine	
+defecate	made	feces	
+spit	made	saliva	
+breathe	made	breath	
+vomit	made	vomit	
+scratch	made	scratch	
+swell	made	lump	
+eat	made	food	
+eat	able	edible	
+eat	place	dining room	
+drink	made	beverage	a drink
+drink	able	drinkable	
+hungry	opp	full	having eaten enough
+hungry	ness	hunger	
+cook	doer	cook	person who cooks
+cook	place	kitchen	
+cook	made	dish	prepared food
+raw	opp	cooked	
+ripe	opp	unripe	
+fresh	opp	stale	
+rot	able	perishable	
+boil	+agent	boil	
+boil	tool	kettle	
+bake	doer	baker	
+bake	place	bakery	
+bake	tool	oven	
+grind	made	flour	
+grind	tool	mill	
+mix	made	mixture	
+mix	tool	mixer	
+peel	made	peel	
+meat	doer	butcher	
+meal	place	restaurant	
+coffee	place	cafe	
+grape	place	vineyard	
+fruit	place	orchard	
+wear	made	clothes	clothing, garment
+wear	opp	undress	take off
+sew	doer	tailor	
+weave	tool	loom	
+shave	tool	razor	
+shave	doer	barber	
+shoe	doer	shoemaker	
+jewel	doer	jeweler	
+clean	opp	dirty	
+clean	doer	cleaner	
+clean	ness	cleanliness	
+sweep	tool	broom	
+garbage	place	dump	
+dwell	place	home	
+dwell	doer	resident	
+dwell	able	habitable	
+lock	opp	unlock	
+lock	tool	lock	the device
+brick	doer	mason	
+wood	doer	carpenter	
+metal	doer	smith	
+farm	doer	farmer	
+farm	place	farm	
+farm	made	crop	
+farm	ness	agriculture	
+garden	doer	gardener	
+dig	tool	shovel	spade
+dig	made	hole	pit
+plow	tool	plow	
+harvest	made	yield	the harvested crop
+grass	place	meadow	lawn, pasture

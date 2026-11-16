@@ -1,0 +1,20 @@
+[code language] Python.
+[import library] Math (call it M).
+[import library] Statistics (call it S).
+[definition] “linear length” means hyp.
+[definition] Linear length(A, B) is defined as: sqrt(add(multiply(A, A), multiply(B, B))).
+[definition] “central number” means mid.
+[definition] Central number(L) is defined as: let T be median(L); return T.
+[definition] Bad(A) is defined as: math.floor(A).
+!! sentence 0: unknown root: bad
+!! sentence 8: library member «math.floor» written with a dot: IMPORT the library NAMED a handle, then write «member» OF that handle
+# --- python ---
+import math as m
+import statistics as s
+def hyp(a, b):
+    return m.sqrt(((a * a) + (b * b)))
+def mid(l):
+    t = s.median(l)
+    return t
+def bad(a):
+    return math.floor(a)

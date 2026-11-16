@@ -1,0 +1,334 @@
+world	T	0				nature	the earth and all on it
+land	T	0				nature	ground, dry land, territory
+soil	T	0				nature	earth as material in which plants grow
+dust	T	0		dusty		nature	
+mud	T	0		muddy		nature	
+sand	T	0		sandy		nature	
+mountain	T	0				nature	mountain or hill
+valley	T	0				nature	
+island	T	0				nature	
+shore	T	0				nature	coast, beach, bank: land beside water
+cave	T	0				nature	
+water	T	0				nature	
+sea	T	0		marine		nature	sea or ocean
+lake	T	0				nature	lake or pond
+river	T	0				nature	river or stream
+wave	T	0				nature	moving ridge on water
+stone	T	0				nature	stone or rock, piece or material
+sky	T	0				nature	
+sun	T	0		solar		nature	
+moon	T	0		lunar		nature	
+star	T	0				nature	
+lightning	T	0				nature	
+thunder	T	0				nature	
+storm	T	0		stormy		nature	
+light	T	0				nature	illumination, what makes things visible
+shadow	T	0				nature	shadow or shade
+air	T	0				nature	
+wind	T	0		windy		nature	
+cloud	T	0		cloudy		nature	
+fog	T	0		foggy		nature	fog or mist
+rain	T	0		rainy		nature	
+snow	T	0		snowy		nature	
+ice	T	0		icy		nature	
+weather	T	0				nature	
+fire	T	0				nature	
+smoke	T	0		smoky		nature	smoke from burning
+ash	T	0				nature	
+steam	T	0				nature	steam or vapour
+burn	E	1	burning	burning		nature	be on fire, be consumed by fire
+freeze	E	1	freezing	frozen		nature	turn to ice or solid from cold
+blow	E	0	blowing			nature	of air or wind: move as a current
+flood	T	0				nature	overflow of water onto land
+desert	T	0				nature	dry barren region
+nature	T	0		natural		nature	the non-human-made world
+metal	T	0		metallic		nature	
+iron	T	0				nature	iron or steel
+gold	T	0		golden		nature	
+silver	T	0				nature	the metal
+glass	T	0				nature	the material
+plastic	T	0				nature	the material
+wood	T	0		wooden		nature	the material of trees
+coal	T	0				nature	coal or charcoal
+oil	T	0		oily		nature	oil, for food, fuel or lubrication
+fuel	T	0				nature	what is burned for heat or power
+salt	T	0		salty		nature	
+animal	T	0				animal	
+male	Q	0				animal	
+female	Q	0				animal	
+wild	Q	0	wildness			animal	not tamed or cultivated
+cow	T	0				animal	bovine of either sex
+sheep	T	0				animal	
+pig	T	0				animal	
+goat	T	0				animal	
+horse	T	0				animal	
+chicken	T	0				animal	
+duck	T	0				animal	the water bird
+bird	T	0				animal	
+nest	T	0				animal	
+dog	T	0				animal	
+cat	T	0				animal	
+rabbit	T	0				animal	rabbit or hare
+mouse	T	0				animal	mouse or rat
+fish	T	0				animal	
+shell	T	0				animal	hard outer covering of animal, egg or nut
+whale	T	0				animal	
+wolf	T	0				animal	
+lion	T	0				animal	
+tiger	T	0				animal	
+bear	T	0				animal	the animal
+fox	T	0				animal	
+deer	T	0				animal	
+monkey	T	0				animal	monkey or ape
+elephant	T	0				animal	
+insect	T	0				animal	insect or similar small crawling creature
+ant	T	0				animal	
+spider	T	0				animal	
+bee	T	0				animal	bee or wasp
+housefly	T	0				animal	fly: the insect
+mosquito	T	0				animal	
+worm	T	0				animal	
+snake	T	0				animal	
+butterfly	T	0				animal	butterfly or moth
+frog	T	0				animal	
+turtle	T	0				animal	turtle or tortoise
+body	T	0		bodily		body	body of a person or animal
+skin	T	0				body	skin, hide, or peel-like outer layer
+hair	T	0		hairy		body	hair or fur
+beard	T	0				body	
+blood	T	0		bloody		body	
+bone	T	0				body	
+muscle	T	0		muscular		body	
+joint	T	0				body	place where two bones meet
+horn	T	0				body	horn of an animal
+tail	T	0				body	
+wing	T	0				body	
+feather	T	0				body	
+back	T	0				body	rear of the trunk of the body
+head	T	0				body	the body part
+brain	T	0				body	
+face	T	0		facial		body	front of the head
+cheek	T	0				body	
+chin	T	0				body	chin or jaw
+eye	T	0				body	
+ear	T	0				body	
+nose	T	0		nasal		body	
+mouth	T	0		oral		body	
+lip	T	0				body	
+tongue	T	0				body	the organ in the mouth
+tooth	T	0		dental		body	
+neck	T	0				body	
+throat	T	0				body	
+shoulder	T	0				body	
+arm	T	0				body	upper limb
+elbow	T	0				body	
+hand	T	0		manual		body	
+finger	T	0				body	
+nail	T	0				body	fingernail, toenail or claw
+leg	T	0				body	lower limb
+knee	T	0				body	
+foot	T	0				body	the body part
+toe	T	0				body	
+chest	T	0				body	front of the upper trunk
+breast	T	0				body	
+heart	T	0		cardiac		body	the organ
+lung	T	0				body	
+liver	T	0				body	
+stomach	T	0				body	the digestive organ
+belly	T	0				body	abdomen, front of the lower trunk
+gut	T	0		intestinal		body	intestines
+hip	T	0				body	hip or waist
+buttock	T	0				body	
+womb	T	0				body	
+penis	T	0				body	
+vagina	T	0				body	
+tear	T	0				body	drop of liquid from the eye
+fat	T	0				body	fat or grease, in bodies or food
+breathe	A	0	breathing			body	
+cough	A	0				body	
+sneeze	A	0				body	
+sweat	A	0		sweaty		body	
+spit	A	0	spitting			body	
+vomit	A	1	vomiting			body	
+urinate	A	0	urination			body	
+defecate	A	0	defecation			body	
+bite	A	1				body	
+lick	A	1				body	
+chew	A	1	chewing			body	
+swallow	A	1	swallowing			body	take down the throat
+suck	A	1	sucking			body	
+scratch	A	1				body	rub or mark with nails or something sharp
+sleep	A	0		sleeping		body	
+dream	A	1				body	have a dream while asleep
+rest	A	0				body	stop activity in order to recover
+sex	A	0		sexual		body	have sexual intercourse
+born	E	0	birth			body	come out of the womb, begin life
+pregnant	Q	0	pregnancy			body	
+grow	E	1	growth	growing		body	of living things: develop, get bigger
+alive	Q	0	life	living		body	
+die	E	1	death	dying		body	
+bury	A	1	burial			body	put a dead body or object under the ground
+strong	Q	0	strength			body	having bodily or physical power
+healthy	Q	0	health			body	
+disease	T	0				body	a particular illness
+fever	T	0				body	
+wound	T	0				body	injury to the body
+swell	E	0	swelling	swollen		body	
+itch	E	0		itchy		body	
+heal	E	1	healing			body	become healthy or whole again
+poison	T	0		poisonous		body	
+tired	Q	0	tiredness			body	
+drunk	Q	0	drunkenness			body	affected by alcohol
+naked	Q	0	nakedness			body	
+wash	A	1	washing			body	clean with water; bathe
+eat	A	1	eating			food	
+drink	A	1	drinking			food	
+hungry	Q	0	hunger			food	
+thirsty	Q	0	thirst			food	
+cook	A	1	cooking	cooking		food	prepare food, especially with heat
+raw	Q	0	rawness			food	not cooked or processed
+ripe	Q	0	ripeness			food	
+fresh	Q	0	freshness			food	of food: recently made or picked, not spoiled
+rot	E	0		rotten		food	decay, spoil
+boil	E	1	boiling	boiling		food	of liquid: bubble from heat; be cooked in it
+fry	A	1	frying			food	cook in hot oil or fat
+bake	A	1	baking			food	cook by dry heat: bake, roast, grill
+peel	A	1	peeling			food	remove the skin or outer layer
+mix	A	1	mixing			food	combine or stir together
+grind	A	1	grinding			food	crush to powder or small bits
+meal	T	0				food	occasion of eating; the food served at it
+pot	T	0				food	deep vessel for cooking or storing
+pan	T	0				food	shallow cooking vessel
+plate	T	0				food	flat dish to eat from
+bowl	T	0				food	
+cup	T	0				food	cup, mug or drinking glass
+bottle	T	0				food	
+spoon	T	0				food	
+fork	T	0				food	eating fork, or pronged tool
+bread	T	0				food	
+meat	T	0				food	flesh, especially as food
+soup	T	0				food	
+sauce	T	0				food	
+vegetable	T	0				food	
+fruit	T	0				food	
+grain	T	0				food	cereal seed; cereals
+rice	T	0				food	
+wheat	T	0				food	
+corn	T	0				food	maize
+noodle	T	0				food	noodles or pasta
+bean	T	0				food	bean, pea or lentil
+potato	T	0				food	
+tomato	T	0				food	
+onion	T	0				food	
+garlic	T	0				food	
+apple	T	0				food	
+banana	T	0				food	
+citrus	T	0				food	orange, lemon and similar fruit
+grape	T	0				food	
+nut	T	0				food	edible hard-shelled seed
+egg	T	0				food	
+milk	T	0				food	
+cheese	T	0				food	
+butter	T	0				food	
+honey	T	0				food	
+sugar	T	0				food	
+pepper	T	0				food	the pungent spice; also chili
+spice	T	0				food	flavouring from plants, spice or herb
+cake	T	0				food	sweet baked food
+chocolate	T	0				food	
+juice	T	0				food	liquid pressed from fruit or plants
+tea	T	0				food	
+coffee	T	0				food	
+alcohol	T	0		alcoholic		food	
+wine	T	0				food	
+beer	T	0				food	
+tobacco	T	0				food	
+wear	A	1	wearing			clothing	have or put on the body as clothing
+cloth	T	0				clothing	woven material, fabric
+wool	T	0		woolen		clothing	
+cotton	T	0				clothing	
+leather	T	0				clothing	
+weave	A	1	weaving			clothing	make cloth from threads; also knit
+sew	A	1	sewing			clothing	
+needle	T	0				clothing	
+thread	T	0				clothing	thin strand for sewing; string
+coat	T	0				clothing	outer garment: coat or jacket
+dress	T	0				clothing	one-piece garment with a skirt
+shirt	T	0				clothing	garment for the upper body
+skirt	T	0				clothing	
+trousers	T	0				clothing	
+sock	T	0				clothing	
+shoe	T	0				clothing	shoe or boot
+hat	T	0				clothing	hat or cap
+belt	T	0				clothing	
+glove	T	0				clothing	
+pocket	T	0				clothing	
+button	T	0				clothing	fastener on clothing; also press-button
+jewel	T	0				clothing	ornament worn on the body; jewelry
+ring	T	0				clothing	band worn on a finger; ring-shaped object
+towel	T	0				clothing	
+comb	T	0				clothing	
+brush	T	0				clothing	
+shave	A	1	shaving			clothing	
+soap	T	0				clothing	
+mirror	T	0				clothing	
+clean	Q	0	cleanliness			clothing	free of dirt
+dwell	A	0	residence	residential		house	live in a place, have one's home there
+house	T	0				house	
+tent	T	0				house	
+yard	T	0				house	enclosed ground beside a house; courtyard
+room	T	0				house	walled part of a building
+door	T	0				house	door or gate
+lock	A	1	locking			house	fasten so that only a key opens it
+key	T	0				house	thing that opens a lock
+window	T	0				house	
+floor	T	0				house	bottom surface of a room; storey
+wall	T	0				house	
+roof	T	0				house	
+stair	T	0				house	step, stairs
+ladder	T	0				house	
+stove	T	0				house	device giving heat for cooking or warmth
+bed	T	0				house	
+pillow	T	0				house	pillow or cushion
+blanket	T	0				house	
+chair	T	0				house	seat: chair, bench, stool
+table	T	0				house	the piece of furniture
+shelf	T	0				house	shelf; cupboard
+furniture	T	0				house	
+lamp	T	0				house	lamp, torch, light fixture
+candle	T	0				house	
+carpet	T	0				house	carpet, rug or mat
+curtain	T	0				house	
+toilet	T	0				house	
+tube	T	0		tubular		house	pipe, tube, hose
+pole	T	0				house	post, pole, pillar, beam
+board	T	0				house	flat piece of wood: plank, panel
+brick	T	0				house	
+bucket	T	0				house	
+box	T	0				house	
+bag	T	0				house	bag or sack
+basket	T	0				house	
+sweep	A	1	sweeping			house	clean a floor with a broom
+garbage	T	0				house	rubbish, waste thrown away
+farm	A	1	farming	agricultural		farming	cultivate land, raise crops or animals
+field	T	0				farming	piece of open farmland
+garden	T	0				farming	
+fence	T	0				farming	
+plow	A	1	plowing			farming	
+dig	A	1	digging			farming	
+sow	A	1	sowing			farming	put seeds or young plants in the ground
+harvest	A	1				farming	gather a crop: reap, mow, pick
+plant	T	0				farming	living vegetable organism
+seed	T	0				farming	
+tree	T	0				farming	
+bush	T	0				farming	shrub
+grass	T	0		grassy		farming	
+weed	T	0				farming	unwanted plant
+root	T	0				farming	underground part of a plant
+stem	T	0				farming	stem, stalk or trunk of a plant
+branch	T	0				farming	
+stick	T	0				farming	thin detached piece of wood
+leaf	T	0				farming	
+flower	T	0		floral		farming	
+thorn	T	0				farming	
+mushroom	T	0				farming	mushroom or fungus

@@ -1,0 +1,41 @@
+[heading] Physics of the climate.
+1. [definition] “radiative forcing” means a change of the balance of the energy at the top of the air that some factor causes.
+2. [recalled] The earth absorbs the light of the sun, and the earth emits the infrared radiation to the space.
+3. [recalled] The gas such as CO2 and water steam absorbs the part of the radiation, and so the surface of the earth (call it A) is hotter.
+4. [recalled] If the concentration of CO2 becomes 2 times as big as the concentration that is before the industry (namely 280 ppm), then the radiative forcing (call it B) is equal to about 3.7 W/m2.
+5. [recalled; explaining 4] Radiative forcing B is equal to 5.35*ln(C/C0), and C is representing the concentration of CO2, and C0 is representing the concentration in a beginning way.
+6. [it follows from 5] 5.35*ln(2) is equal to about 3.7, and radiative forcing B is proportional like the logarithm of the concentration, but radiative forcing B is not proportional like the concentration.
+7. [claim] Many persons usually say that the absorption of CO2 is already complete, and so extra CO2 does not change the temperature of surface of the earth A.
+8. [claim; rebutting 7] The statement is false.
+9. [recalled; explaining 8] The absorption is almost complete at the middle of the band that is near 15 um, but the absorption is not complete at the edge of the band, and the absorption increases at the edge when the concentration of CO2 increases.
+10. [recalled; adding to 9] If the concentration of CO2 increases, then the layer of the air that emits the radiation to the space is higher, and the layer is colder, and so the layer emits the energy less.
+11. [it follows from 10] The energy that the earth emits is less big than the energy that the earth absorbs, and so the temperature of surface of the earth A increases until the energy again balances.
+12. [definition] “climatic equilibrium sensitivity” means an increase of the average of the temperature of surface of the earth A that that the concentration of CO2 becomes 2 times as big causes when the energy again balances.
+13. [recalled; likely] The climatic equilibrium sensitivity (call it C) is equal to 2.5–4.0 K, and the best estimate product is equal to 3 K.
+14. [definition] “feedback” means a process such that the result of itself affects the cause of itself.
+15. [recalled] The hotter air can contain more water steam for about 7 percent per 1 K.
+16. [it follows from 3, 15] If the temperature of surface of the earth A increases, then the water steam increases at the air, and so the air absorbs the infrared radiation more, and so the temperature of surface of the earth A again increases.
+17. [claim] Step 16 is a positive strongest feedback that is a water steam.
+18. [definition] “albedo” means a fraction of the light of the sun that the surface does not absorb.
+19. [recalled] The albedo of the ice is equal to about 0.6, but the albedo of the sea is equal to about 0.06.
+20. [it follows from 19] If the ice melts because the temperature increases, then the albedo of surface of the earth A decreases, and so surface of the earth A absorbs the light of the sun more, and so the ice melts more.
+21. [claim] Step 20 is a positive feedback that is an albedo of the ice.
+22. [recalled] The low cloud decreases the light of the sun that reaches surface of the earth A, but the high cloud absorbs the infrared radiation.
+23. [claim; likely] The cloudy feedback (call it D) is positive, but the size of feedback D is unsurest, and so the range of sensitivity C is wide.
+24. [it follows from 17, 21, 23] The whole set of feedbacks increase sensitivity C from about 1.1 K to about 3 K.
+25. [definition] “Milankovitch loop” means a regular change of the orbit of the earth.
+26. [recalled; detailing 25] 3 parts (namely eccentricity with period that is about 100000 years, and obliquity with period that is 41000 years, and precession with period that is about 23000 years) exist.
+27. [recalled] The loop changes the distribution of the light of the sun about the season and the latitude, but the loop changes the total of the light barely.
+28. [recalled] The loop causes that the icy period is repeated, and CO2 and the feedback that is an albedo of the ice increase the change.
+29. [claim] The loop cannot explain the increase that currently happens of the temperature of surface of the earth A because the loop is too slow.
+30. [recalled] The atlantic meridional overturning circulation (namely amoc) (call it E) is a flowing system of the sea.
+31. [recalled] Atlantic meridional overturning circulation E carries the hot salty water to the north at the Atlantic surface of the sea.
+32. [recalled; next after 31] The water becomes cold at the north, and so the water becomes denser, and so the water sinks, and then the water flows to the south at the depth.
+33. [recalled] The flow of atlantic meridional overturning circulation E is equal to about 17 Sv, and 1 Sv is equal to 1000000 m3/s, and atlantic meridional overturning circulation E makes the Europe region hot more.
+34. [recalled] If the ice of Greenland melts, then the water that is not salty enters the sea, and so the water is less dense at the surface of the sea, and so the water sinks less, and so atlantic meridional overturning circulation E becomes weaker.
+35. [claim; likely] Atlantic meridional overturning circulation E will become weaker before year 2100, but that atlantic meridional overturning circulation E will stop flowing before year 2100 is unlikely.
+36. [recalled] The Ssp scenario describes the development of the society and the emission of CO2 to year 2100.
+37. [recalled] The 1st number is representing the way of the society at the name of the scenario, and the 2nd number is representing radiative forcing B in year 2100.
+38. [recalled] The emission of CO2 decreases at the Ssp 1 2.6 scenario (call it F) to 0 at near year 2075, and radiative forcing B is equal to 2.6 W/m2 in year 2100, and the increase of the temperature of surface of the earth A is equal to about 1.8 K.
+39. [recalled; in contrast to 38] The society still uses many fossil fuels at the Ssp 5 8.5 scenario (call it G), and the emission of CO2 becomes 2 times as big as the emission of year 2015 at near year 2050, and radiative forcing B is equal to 8.5 W/m2 in year 2100, and the increase of the temperature of surface of the earth A is equal to about 4.4 K.
+40. [claim; restating 38, 39] The same physics exists at scenario F and scenario G, but the emission of CO2 is very bigger at scenario G than at scenario F, and so the climate of the future is mainly depending on the choice of the society.

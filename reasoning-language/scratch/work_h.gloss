@@ -1,0 +1,7 @@
+HEAD code KIND «javascript» .
+DEFINE ( add.made KIND even ) BE «sum_even» .
+DEFINE ( add.made KIND even ) FIRST L BE { DEFINE T BE 0 . EACH X IN L { IF { EQUAL FIRST ( remainder FIRST X SECOND 2 ) SECOND 0 } { DEFINE T BE ( add FIRST T SECOND X ) } { DEFINE T BE T } } . RETURN T } .
+HEAD code KIND «python» .
+DEFINE half FIRST N BE ( quotient FIRST N SECOND 2 ) .
+HEAD code KIND «rust» .
+DEFINE twice FIRST N BE ( multiply FIRST N SECOND 2 ) .

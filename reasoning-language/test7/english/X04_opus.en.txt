@@ -1,0 +1,50 @@
+[heading] Task X04 (namely pharmacokinetics).
+1. [recalled] The model with exactly 1 compart describes the body as the uniform container.
+2. [recalled; detailing 1] If the drug enters to the blood, then the drug spreads almost fully to the whole set of containers at the same moment.
+3. [recalled; adding to 2] The rate of the elimination is proportional like the concentration of the drug.
+4. [recalled] The distribution volume (namely vd) is equal to divide(amount of the drug at the body, concentration of the drug at the plasma).
+5. [claim; even though 4] The vd is not a volume of the real container.
+6. [recalled] The clearance (namely cl) is equal to the plasma volume such that the drug is deleted from itself per the unit of the time.
+7. [recalled] The elimination rate constant (namely k) is equal to divide(cl, vd).
+8. [recalled] The half life (namely t1/2) is equal to the time such that the concentration of the drug decreases to the half of the concentration at the beginning for itself.
+9. [it follows from 3, 7, 8] T1/2 is equal to divide(0.693, k).
+10. [claim] Tau is equal to the period that is between 2 doses.
+11. [recalled] The steady state means the state such that the amount of the drug that enters is equal to the amount of the drug that is deleted per tau.
+12. [recalled] The gap of the concentration of the drug and the level of the steady state decreases per all half lives for 50 %.
+13. [it follows from 12] The concentration of the drug is equal to about 97 % of the level of the steady state (namely 1 - 0.5^5 = 0.969) at after 5*t1/2.
+14. [recalled; restating 13] The concentration of the drug reaches the steady state at after about 5 half lives.
+15. [recalled] Many persons believe that if the dose is bigger, then the time such that the concentration of the drug reaches the steady state for itself (call it A) is less long.
+16. [claim; rebutting 15] Time A is not depending on the dose and tau, but time A is depending on only the half life.
+17. [claim; adding to 16] The dose and tau change only the level of the steady state.
+18. [recalled] The loading dose is equal to multiply(concentration that we want (call it B), vd).
+19. [recalled; detailing 18] The concentration of the drug reaches concentration B at after the loading dose.
+20. [claim; even though 19] The loading dose does not change k and the half life.
+[heading] Case.
+21. [given] The vd of the drug (call it C) is equal to 40 L, and the cl of drug C is equal to 4 L/h.
+22. [given] The dose of drug C is usually given per 8 h, and the dose (namely D) is equal to 500 mg, and tau is equal to 8 h.
+23. [it follows from 7, 21] K is equal to divide(4, 40), and k is equal to 0.1 1/h.
+24. [it follows from 9, 23] T1/2 is equal to divide(0.693, 0.1), and t1/2 is equal to 6.93 h.
+25. [it follows from 14, 24] The concentration of drug C reaches the steady state at after 35 h.
+26. [it follows from 22] The rate of the giving is equal to divide(500, 8), and the rate is equal to 62.5 mg/h.
+27. [it follows from 6, 11, 21, 26] The average of the concentration of drug C at the steady state is equal to divide(62.5, 4), and the average is equal to 15.6 mg/L.
+28. [it follows from 4, 21, 22] The concentration of drug C (call it D) at after the 1st dose is equal to divide(500, 40), and concentration D is equal to 12.5 mg/L.
+29. [recalled] The accumulation factor (namely R) is equal to 1/(1 - exp(-k*tau)).
+30. [it follows from 22, 23, 29] R is equal to 1/(1 - exp(-0.8)), and R is equal to 1.82.
+31. [it follows from 28, 30] The maximum of the concentration of drug C at the steady state is equal to 12.5 * 1.82 = 22.7 mg/L, and the minimum of the concentration of drug C at the steady state is equal to 22.7 * 0.449 = 10.2 mg/L.
+32. [it follows from 18, 21, 27] The loading dose so that the concentration of drug C reaches the average is equal to 15.6 mg/L * 40 L = 625 mg.
+33. [it follows from 28, 30; adding to 32] The loading dose so that the concentration of drug C reaches the maximum of the steady state is equal to 500 mg * 1.82 = 908 mg.
+34. [proposal; as a result of 33] We give about 900 mg of drug C at the beginning, and then we usually give 500 mg of drug C per 8 h.
+[heading] Code.
+⟨could not parse: 35: PLAN write THEME ( function KIND { compute AGENT SELF THEME ( concentrate OF 각 AT ~plasma ) WHEN ( before REL ( ORD «n» dose ) SPAN «t» ) } ) .⟩
+36. [claim; adding to 35] The function uses the exponential function of the library (namely math) (namely exp).
+37. [recalled] C(n,t) is equal to (D/Vd) * exp(-k*t) * (1 - exp(-n*k*tau)) / (1 - exp(-k*tau)).
+38. [claim; writer's note about this text] The function uses only n and t as the input, but I put the value of this case to the code.
+[code language] Python.
+[import library] Math (call it E).
+[definition] Let F be 500.
+[definition] Let G be 40.
+[definition] Let H be 4.
+[definition] Let J be 8.
+[definition] “plasma concentration” means plasma_conc.
+[definition] Plasma concentration(K, L) is defined as: that if K is less than 1, then return 0; let M be divide(H, G); let N be E.exp(multiply(-1, multiply(M, J))); let P be E.exp(multiply(-1, multiply(multiply(K, M), J))); let Q be divide(subtract(1, P), subtract(1, N)); return multiply(multiply(divide(F, G), Q), E.exp(multiply(-1, multiply(M, L)))).
+!! sentence 38: expected a number, a handle or a bracket after ORD; at: WHEN ( before REL ( ORD  >>> «n» dose ) SPAN

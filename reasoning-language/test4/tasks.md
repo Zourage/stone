@@ -1,0 +1,7 @@
+T1 (everyday): Write a short story of 12-18 sentences: two flatmates argue about who forgot to pay the electricity bill; one of them is sarcastic; they find out the bank made the mistake; they make up and plan dinner for Friday. Include at least two lines of direct speech, one feeling, one past event, and one plan for the future.
+
+T2 (technical): (a) Explain step by step what happens when a browser looks up the address for a website name (DNS): cache, resolver, root server, the server for the top-level domain, the authoritative server, the answer, time-to-live. (b) A web service uses more and more memory until it is killed every few hours. Give three possible causes, say how you would test each, and which one you would check first and why.
+
+T3 (math and code): (a) Prove by induction that the sum of the first n odd numbers equals n squared. Mark every step as given, assumed or derived, and cite the steps it follows from. (b) In the logic notation, define a function that merges two sorted lists into one sorted list. (c) Say in two or three sentences why the result is sorted.
+
+T4 (math and code, second set): (a) Prove by induction that 1 + 2 + ... + n equals n(n+1)/2. Mark every step as given, assumed or derived, and cite the steps it follows from. (b) Prove that there is no largest prime number (Euclid's argument), in numbered steps. (c) In the logic notation, define a function that returns the largest item of a non-empty list, and a function that sorts a list by insertion. (d) State the loop invariant of the insertion sort in one sentence.
