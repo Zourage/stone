@@ -1,0 +1,14 @@
+You are taking part in a test of a constructed language. Read the rule sheet /home/user/stone/reasoning-language/lang/SPEC.md completely and use the word list /home/user/stone/reasoning-language/lang/WORDS.md. Read no other file, write no file and run no program.
+
+The message below is written in that language. Work out what it says and do what it asks. Your whole reply must be in that language only (native script, numbered sentences in the form the rule sheet shows): no English, no translation, no commentary. Later messages to you will also be in that language; answer them the same way.
+
+1: 가 헤즌 새 4 드론 류 노함 사 드론 차 각 새 3 끄먹 류 노함 사 드론 차 낙 새 2 끄먹 류 노함 사 드론 차 닥 새 4 끄먹 류 노함 사 드론 차 막 새 1 끄먹 .
+2: 교 카 하 저 깨춘 새 낙 셔 노축 랴 { 재 깨춘 새 각 } .
+3: 교 카 하 저 깨춘 새 닥 셔 노축 랴 { 재 깨춘 새 각 } .
+4: 교 카 하 저 깨춘 새 막 셔 노축 랴 { 재 깨춘 새 낙 류 재 깨춘 새 닥 } .
+5: 가 헤즌 새 2 메훌일 .
+6: 교 커 깨춘 사 1 메훌일 새 파 1 드론 셔 내 고걱 .
+7: 규 챠 애 오덕 사 애 새 { 구 커 깨춘 새 여 드론 셔 내 고걱 } .
+8: 규 오덕 사 애 새 태섯 래 드론 .
+9: 규 하 쏘벌 사 애 셔 허 새 트 고걱 라 { 노함 사 뮤 메훌 새 어 } .
+10: 규 스국 사 애 수 페뭄 라 세홋 래 아 .
