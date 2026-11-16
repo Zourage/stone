@@ -1,0 +1,5 @@
+1: RECALLED make AGENT cell KIND ~T THEME ~IL-4 ANDC bind AGENT ~5-HT1A THEME ~β-catenin .
+2: RECALLED PAST write AGENT NAME ( ~Okafor-Lindqvist ) TO NAME ( ~Jean-Baptiste ~Tanaka ) ABOUT virus KIND ~AAV5-EF1a-DIO-eNpHR3.0 .
+3: CLAIM EQUAL THEME ~HbA1c OF A THAN 48 «mmol/mol» ANDC exist THEME 3 ~NMDA receptor AT ~CA1 .
+4: CLAIM cause AGENT rule KIND NAME ~Hückel THEME ~ΔG KIND ~pi ANDC exist THEME «DNA» .
+5: CLAIM exist THEME ~2,4-dinitrophenol ANDC exist THEME ~Type ~Ia ~supernova ANDC exist THEME disease KIND ~Parkinson's .

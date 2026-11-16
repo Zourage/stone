@@ -152,6 +152,12 @@ def build_spec():
     T = T.replace('{{loantable}}', 'Consonant letters: ' + ', '.join(f'{k}={v}' for k, v in F.LC.items()) +
                   '\n\nVowel-class letters (a e i o u and also w y x): ' + ', '.join(f'{k}={v}' for k, v in F.LV.items() if k) +
                   f"\n\nNo vowel-class letter follows the consonant: vowel {F.LV['']}. No consonant before the vowel: initial ㅇ.")
+    T = T.replace('{{loanextra}}', 'Digits: ' + ', '.join(f'{k}={v}' for k, v in F.L_DIGIT.items()) +
+                  '\n\nSigns: ' + ', '.join(f'`{k}`={v}' for k, v in F.L_SYM.items()) +
+                  '\n\nAccents (after the letter): ' + ', '.join(f'{F.ACC_NAMES[k]}={v}' for k, v in F.L_ACC.items()) +
+                  f'\n\nMarks: capital={F.L_CAP}, capitals on/off={F.L_LOCK}, Greek={F.L_GREEK}, filler={F.L_PAD}')
+    T = T.replace('{{capblk}}', F.L_CAP).replace('{{lockblk}}', F.L_LOCK).replace('{{greekblk}}', F.L_GREEK).replace('{{padblk}}', F.L_PAD)
+    T = T.replace('{{greekmap}}', ' '.join(f'{k}={v}' for k, v in F.GREEK.items()))
     T = T.replace('{{handles}}', ' '.join(F.HANDLE_FORMS[:24]))
     T = T.replace('{{spares}}', ' '.join(lex['spares'][:40]))
     open(L.HERE + '/SPEC.md', 'w', encoding='utf-8').write(T)

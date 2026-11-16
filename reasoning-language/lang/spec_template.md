@@ -249,23 +249,33 @@ a vowel-class letter with no consonant before it takes the empty initial. Loans 
 Examples: python = {{n:~python}}, test = {{n:~test}}, stack = {{n:~stack}}, linux = {{n:~linux}}, why = {{n:~why}}.
 Two vowel-class letters in a row: the second gets its own block with the empty initial: nation = {{n:~nation}}, huxley = {{n:~huxley}}. Check each vowel against the table; do not guess its shape.
 
-- A loan must have at least two blocks. A one-letter symbol goes in `« »`.
-- NAME before a loan or root makes it a proper name: {{n:name«Darwin»}} = Darwin. A name of several words is `NAME ( ... )` with
-  each word a loan and digits as digits: `NAME ( ~winston ~churchill )`, `NAME ( ~apollo 11 )`.
+- NAME before a loan or root makes it a proper name: {{n:NAME ~Darwin}} = Darwin. A name of several words is
+  `NAME ( ... )` with each word a loan: `NAME ( ~Winston ~Churchill )`.
 - Prefer roots, suffixes and compounds for ordinary meanings. **For a technical term, an abbreviation or a name that
   no root covers, use a loan. This is the normal, expected way; do not avoid it.**
-- **A term of several words** is written as loans side by side; they form one term: `~affinity ~maturation`,
-  `~long ~term ~potentiation`. Digits inside a term are written as digits between or after the loans, and hyphens,
-  commas and capitals are dropped: IL-4 = `~il 4`, CD4 = `~cd 4`, propan-2-ol = `~propan 2 ~ol`.
-  Greek letters are spelled out: `~beta ~catenin`, `~alpha ~helix`. Abbreviations are spelled as their letters: `~dna`, `~nmda`, `~gaba`.
-- A loan needs two blocks. A piece too short for that (one letter, or letters that fall into one block such as "gw")
-  is written in `« »` inside the term: HbA1c = `~hba 1 «c»`, 5-HT1A = `NAME ( 5 ~ht 1 «A» )`, GW170817 = `«GW» 170817`.
-- A term that begins with a digit or a one-letter symbol goes inside `NAME ( ... )`: `NAME ( 2 4 ~dinitrophenol )`,
-  `NAME ( «R» 2 ~butanol )`.
+- **Everything written without a space is one loan word, spelled character by character**, with its capitals,
+  digits, hyphens and other signs kept, using the extra blocks below. So IL-4, 5-HT1A, 2,4-dinitrophenol, HbA1c, Hückel
+  and β-catenin are each one word.
+- **A term of several words** is loans side by side; they form one term: `~affinity ~maturation`,
+  `~long-term ~potentiation`, `~Type ~Ia ~supernova`.
+
+Extra blocks inside a loan:
+
+{{loanextra}}
+
+Examples: IL-4 = {{n:~IL-4}}, NMDA = {{n:~NMDA}}, 5-HT1A = {{n:~5-HT1A}}, Hückel = {{n:~Hückel}}, β-catenin = {{n:~β-catenin}},
+ΔG = {{n:~ΔG}}, pi = {{n:~pi}}, Okafor-Lindqvist = {{n:~Okafor-Lindqvist}}, CaMKII = {{n:~CaMKII}}.
+
+- **Capitals.** {{capblk}} before a block makes its first letter a capital. {{lockblk}} switches capitals on, and a second
+  {{lockblk}} switches them off again (not needed at the end of the word). A consonant and a following vowel-class letter
+  share a block only when the vowel-class letter is lower case, or both are inside a capitals stretch.
+- **Greek.** {{greekblk}} before a letter makes it Greek: {{greekmap}}. For a capital Greek letter put {{greekblk}} then {{capblk}}.
+- **Accents** follow the letter they sit on.
+- A loan needs two blocks. If the word would be a single block (pi, c), put {{padblk}} in front of it.
 - **No English outside code.** `« »` is not a way to write a word. Outside code it holds only: a chemical formula
-  (`«H2SO4»`, `«Ca2+»`), a unit after a number (`30 «km/h»`, `48 «mmol/mol»`), a mathematical expression or variable
-  (`«v0 - g*t»`, `«x»`), a clock time (`«16:12»`), a label code (`task «K01»`). The checker refuses a Latin-letter word
-  of four or more letters in `« »` outside code. Abbreviations of three letters or fewer are also loans (`~dna`, not `«DNA»`).
+  (`«H2SO4»`, `«Ca2+»`), a unit after a number (`30 «km/h»`, `48 «mmol/mol»`), a mathematical expression or a
+  one-letter variable (`«v0 - g*t»`, `«x»`), a clock time (`«16:12»`). The checker refuses a word or an abbreviation
+  in `« »` outside code: write `~DNA`, `~Km`, `~IL-4`, never `«DNA»`.
 - Text of a program mentioned in prose (an identifier, a file name, an error name) is marked with the code word
   before it: `CODE «IndexError»`, `CODE «config.yaml»`.
 

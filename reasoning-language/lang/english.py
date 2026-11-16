@@ -27,6 +27,7 @@ def infl(w, tag):
 
 def plural(n):
     ws = n.split(' ')
+    if not ws[-1].isalpha() or not ws[-1].islower(): return n      # IL-4, DNA, A2A: no plural ending
     if getInflection:
         r = getInflection(ws[-1], tag='NNS')
         if r: ws[-1] = r[0]
@@ -187,7 +188,7 @@ class Decoder:
             ws = []
             for x in h['parts']:
                 w = x['v'] if x['t'] != 'R' else self.rinfo(x)['noun']
-                ws.append(w if x['t'] == 'N' else w.capitalize())
+                ws.append(w if x['t'] == 'N' or not w.islower() else w.capitalize())
             return ' '.join(ws), 'other'
         if k == 'step':
             return 'step ' + h['a'] + (' to ' + h['b'] if h['b'] else ''), 'other'
@@ -746,7 +747,7 @@ class Decoder:
             for m in u['mods']:
                 if m['link'] == 'KIND' and m['unit']['head'].get('t') == 'R': parts_.append(m['unit']['head']['v'])
             return '_'.join(parts_)
-        if k == 'L': return h['v'].replace(' ', '_')
+        if k == 'L': return re.sub(r'\W+', '_', h['v'])
         if k == 'P': return self.T['consts'].get(h['v'], h['v'])
         if k == 'paren':
             if len(h['phrase']['units']) == 1: return self.py_name(h['phrase']['units'][0])

@@ -428,23 +428,39 @@ No vowel-class letter follows the consonant: vowel ㅓ. No consonant before the 
 Examples: python = 빠쩌먀터, test = 찌허쩌, stack = 허쭈너더, linux = 초테애, why = 으마.
 Two vowel-class letters in a row: the second gets its own block with the empty initial: nation = 투쪼야터, huxley = 메애치아. Check each vowel against the table; do not guess its shape.
 
-- A loan must have at least two blocks. A one-letter symbol goes in `« »`.
-- NAME before a loan or root makes it a proper name: 처 수그오터 = Darwin. A name of several words is `NAME ( ... )` with
-  each word a loan and digits as digits: `NAME ( ~winston ~churchill )`, `NAME ( ~apollo 11 )`.
+- NAME before a loan or root makes it a proper name: 처 여수그오터 = Darwin. A name of several words is
+  `NAME ( ... )` with each word a loan: `NAME ( ~Winston ~Churchill )`.
 - Prefer roots, suffixes and compounds for ordinary meanings. **For a technical term, an abbreviation or a name that
   no root covers, use a loan. This is the normal, expected way; do not avoid it.**
-- **A term of several words** is written as loans side by side; they form one term: `~affinity ~maturation`,
-  `~long ~term ~potentiation`. Digits inside a term are written as digits between or after the loans, and hyphens,
-  commas and capitals are dropped: IL-4 = `~il 4`, CD4 = `~cd 4`, propan-2-ol = `~propan 2 ~ol`.
-  Greek letters are spelled out: `~beta ~catenin`, `~alpha ~helix`. Abbreviations are spelled as their letters: `~dna`, `~nmda`, `~gaba`.
-- A loan needs two blocks. A piece too short for that (one letter, or letters that fall into one block such as "gw")
-  is written in `« »` inside the term: HbA1c = `~hba 1 «c»`, 5-HT1A = `NAME ( 5 ~ht 1 «A» )`, GW170817 = `«GW» 170817`.
-- A term that begins with a digit or a one-letter symbol goes inside `NAME ( ... )`: `NAME ( 2 4 ~dinitrophenol )`,
-  `NAME ( «R» 2 ~butanol )`.
+- **Everything written without a space is one loan word, spelled character by character**, with its capitals,
+  digits, hyphens and other signs kept, using the extra blocks below. So IL-4, 5-HT1A, 2,4-dinitrophenol, HbA1c, Hückel
+  and β-catenin are each one word.
+- **A term of several words** is loans side by side; they form one term: `~affinity ~maturation`,
+  `~long-term ~potentiation`, `~Type ~Ia ~supernova`.
+
+Extra blocks inside a loan:
+
+Digits: 0=걔, 1=냬, 2=댸, 3=럐, 4=먜, 5=뱨, 6=섀, 7=쟤, 8=챼, 9=컈
+
+Signs: `-`=예, `'`=계, `.`=녜, `,`=뎨, `/`=례, `+`=몌, `(`=볘, `)`=셰, `:`=졔, `*`=쳬, `°`=켸, `%`=톄, `&`=폐, `_`=혜, `=`=꼐, `#`=뗴, `@`=뼤, `!`=쎼
+
+Accents (after the letter): umlaut=교, acute=뇨, grave=됴, circumflex=료, tilde=묘, cedilla=뵤, ring=쇼, caron=죠, stroke=쵸
+
+Marks: capital=여, capitals on/off=유, Greek=얘, filler=요
+
+Examples: IL-4 = 여오여처예먜, NMDA = 유터러수, 5-HT1A = 뱨예유머쩌냬우, Hückel = 여메교너디처, β-catenin = 얘커예누찌토터,
+ΔG = 얘여서여버, pi = 요뽀, Okafor-Lindqvist = 여야두퍄거예여초터서꺼또허쩌, CaMKII = 여누유러도오.
+
+- **Capitals.** 여 before a block makes its first letter a capital. 유 switches capitals on, and a second
+  유 switches them off again (not needed at the end of the word). A consonant and a following vowel-class letter
+  share a block only when the vowel-class letter is lower case, or both are inside a capitals stretch.
+- **Greek.** 얘 before a letter makes it Greek: a=α b=β g=γ d=δ e=ε z=ζ h=η q=θ i=ι k=κ l=λ m=μ n=ν c=ξ o=ο p=π r=ρ s=σ t=τ u=υ f=φ x=χ y=ψ w=ω. For a capital Greek letter put 얘 then 여.
+- **Accents** follow the letter they sit on.
+- A loan needs two blocks. If the word would be a single block (pi, c), put 요 in front of it.
 - **No English outside code.** `« »` is not a way to write a word. Outside code it holds only: a chemical formula
-  (`«H2SO4»`, `«Ca2+»`), a unit after a number (`30 «km/h»`, `48 «mmol/mol»`), a mathematical expression or variable
-  (`«v0 - g*t»`, `«x»`), a clock time (`«16:12»`), a label code (`task «K01»`). The checker refuses a Latin-letter word
-  of four or more letters in `« »` outside code. Abbreviations of three letters or fewer are also loans (`~dna`, not `«DNA»`).
+  (`«H2SO4»`, `«Ca2+»`), a unit after a number (`30 «km/h»`, `48 «mmol/mol»`), a mathematical expression or a
+  one-letter variable (`«v0 - g*t»`, `«x»`), a clock time (`«16:12»`). The checker refuses a word or an abbreviation
+  in `« »` outside code: write `~DNA`, `~Km`, `~IL-4`, never `«DNA»`.
 - Text of a program mentioned in prose (an identifier, a file name, an error name) is marked with the code word
   before it: `CODE «IndexError»`, `CODE «config.yaml»`.
 

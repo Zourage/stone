@@ -145,9 +145,10 @@ def tokens_gloss(text, lex=None):
             out.append(tok('R', 'spare:' + f, suf=[], form=f, spare=True)); continue
         if re.fullmatch(r'[A-Z]\d?', s):
             out.append(tok('H', s)); continue
-        if s.startswith('~') and re.fullmatch(r'[a-z]+', s[1:]):
-            if len(F.loan_enc(s[1:])) < 2: errs.append(f'loan {s} is only one block: write it in « »')
-            out.append(tok('L', s[1:])); continue
+        if s.startswith('~') and len(s) > 1:
+            try: F.loan_enc(s[1:]); out.append(tok('L', s[1:]))
+            except ValueError as e: errs.append(str(e)); out.append(tok('BAD', s))
+            continue
         m = re.fullmatch(r'([a-z]+)((\.[a-z]+)*)', s)
         if m:
             sufs = [x for x in m.group(2).split('.') if x]
@@ -705,7 +706,7 @@ def parse(text, mode='native', lex=None):
         # no English outside code: « » may hold symbols, formulas and units, but a word in Latin letters only in code
         incode = any(t['t'] == 'P' and t['v'] in ('DEFINE', 'IMPORT', 'CODE') for t in chunk[:4])
         for i, t in enumerate(chunk):
-            if t['t'] == 'N' and not incode and re.search(r'[A-Za-z]{4,}', t['v']) and not is_formula(t['v']) and \
+            if t['t'] == 'N' and not incode and (re.search(r'[A-Za-z]{4,}', t['v']) or re.fullmatch(r'[A-Za-z]{2,}\d*', t['v'])) and not is_formula(t['v']) and \
                     not (i and chunk[i - 1]['t'] == 'D') and \
                     not (i and chunk[i - 1]['t'] == 'P' and chunk[i - 1]['v'] == 'CODE'):
                 res['errors'].append((n, f"Latin-letter word in «{t['v'][:40]}» outside code: spell the term as a loan (or use roots); mark real code text with CODE before the « »"))

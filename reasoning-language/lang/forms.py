@@ -124,30 +124,109 @@ LC = dict(zip(_cons, _ci)); LV = dict(zip(_vows + [''], _vi))
 LCi = {v: k for k, v in LC.items()}; LVi = {v: k for k, v in LV.items()}
 
 
+# Beyond a-z: marks, digits, symbols, Greek, accents. They use vowels the letter table leaves free (ㅕ ㅠ ㅛ ㅒ ㅖ).
+L_CAP = blk('ㅇ', 'ㅕ')      # the next letter is a capital
+L_LOCK = blk('ㅇ', 'ㅠ')     # capitals on / off
+L_PAD = blk('ㅇ', 'ㅛ')      # nothing: fills a word that would otherwise be one block
+L_GREEK = blk('ㅇ', 'ㅒ')    # the next letter is Greek
+L_DIGIT = {str(d): blk(c, 'ㅒ') for d, c in enumerate('ㄱㄴㄷㄹㅁㅂㅅㅈㅊㅋ')}
+L_SYM = {ch: blk(c, 'ㅖ') for ch, c in zip("-'.,/+():*°%&_=#@!", 'ㅇㄱㄴㄷㄹㅁㅂㅅㅈㅊㅋㅌㅍㅎㄲㄸㅃㅆ')}
+_ACC = [('̈', 'umlaut'), ('́', 'acute'), ('̀', 'grave'), ('̂', 'circumflex'), ('̃', 'tilde'),
+        ('̧', 'cedilla'), ('̊', 'ring'), ('̌', 'caron'), ('̸', 'stroke')]
+L_ACC = {a: blk(c, 'ㅛ') for (a, _), c in zip(_ACC, 'ㄱㄴㄷㄹㅁㅂㅅㅈㅊ')}
+ACC_NAMES = {a: n for a, n in _ACC}
+GREEK = dict(zip('abgdezhqiklmncoprstufxyw', 'αβγδεζηθικλμνξοπρστυφχψω'))
+GREEKi = {v: k for k, v in GREEK.items()}
+_DIGi = {v: k for k, v in L_DIGIT.items()}; _SYMi = {v: k for k, v in L_SYM.items()}; _ACCi = {v: k for k, v in L_ACC.items()}
+_STROKE = {'ø': 'o', 'Ø': 'O', 'ł': 'l', 'Ł': 'L', 'đ': 'd', 'Đ': 'D'}
+
+
+def _units(w):
+    """Word -> list of (kind, base letter, is capital, is Greek, accents) or ('x', block)."""
+    import unicodedata
+    out = []
+    for ch in w:
+        if ch in _STROKE: out.append(['l', _STROKE[ch].lower(), _STROKE[ch].isupper(), False, ['̸']]); continue
+        if ch == 'ς': ch = 'σ'
+        if ch.lower() in GREEKi: out.append(['l', GREEKi[ch.lower()], ch != ch.lower(), True, []]); continue
+        d = unicodedata.normalize('NFD', ch)
+        if d[0].lower() in LC or d[0].lower() in LV:
+            if any(a not in L_ACC for a in d[1:]): raise ValueError('loan cannot carry this character: ' + ch)
+            out.append(['l', d[0].lower(), d[0].isupper(), False, list(d[1:])]); continue
+        if ch in L_DIGIT: out.append(['x', L_DIGIT[ch]]); continue
+        if ch in L_SYM or ch in '‐‑–−': out.append(['x', L_SYM.get(ch, L_SYM['-'])]); continue
+        raise ValueError('loan cannot carry this character: ' + ch)
+    return out
+
+
 def loan_enc(w):
-    w = w.lower(); out = []; k = 0
-    while k < len(w):
-        a = w[k]
+    us = _units(w); out = []; k = 0; lock = False
+    def caps_run(k):                       # how many letters from k on are capitals (digits and symbols do not break the run)
+        n = 0; j = k
+        while j < len(us) and (us[j][0] == 'x' or (us[j][2] and not us[j][3])):
+            n += us[j][0] == 'l'; j += 1
+        while j > k and us[j - 1][0] == 'x': j -= 1
+        return n, j
+    end = -1
+    while k < len(us):
+        u = us[k]
+        if lock and k == end: out.append(L_LOCK); lock = False
+        if u[0] == 'x': out.append(u[1]); k += 1; continue
+        _, a, cap, greek, acc = u
+        if not lock and cap and not greek:
+            n, j = caps_run(k)
+            if n >= 3 or (n == 2 and j == len(us)): out.append(L_LOCK); lock = True; end = j
+        nxt = us[k + 1] if k + 1 < len(us) else None
+        pair = (a in LC and not greek and not acc and nxt and nxt[0] == 'l' and nxt[1] in LV and not nxt[3]
+                and (nxt[2] == cap if lock else not nxt[2]) and not (lock and k + 1 >= end))
+        if greek: out.append(L_GREEK)
+        if cap and not lock: out.append(L_CAP)
         if a in LC:
-            if k + 1 < len(w) and w[k + 1] in LV:
-                out.append(blk(LC[a], LV[w[k + 1]])); k += 2
-            else:
-                out.append(blk(LC[a], LV[''])); k += 1
-        elif a in LV:
-            out.append(blk('ㅇ', LV[a])); k += 1
+            out.append(blk(LC[a], LV[nxt[1]] if pair else LV['']))
         else:
-            raise ValueError('loan letters must be a-z: ' + w)
-    return ''.join(out)
+            out.append(blk('ㅇ', LV[a]))
+        out += [L_ACC[x] for x in acc]
+        if pair:
+            out += [L_ACC[x] for x in nxt[4]]; k += 2
+        else:
+            k += 1
+    s = ''.join(out)
+    if lock and end < len(us): s += L_LOCK
+    if len(s) < 2: s = L_PAD + s
+    return s
 
 
 def loan_dec(s):
-    o = ''
+    import unicodedata
+    o = []; cap = lock = greek = False
     for ch in s:
+        if ch == L_CAP: cap = True; continue
+        if ch == L_LOCK: lock = not lock; continue
+        if ch == L_PAD: continue
+        if ch == L_GREEK: greek = True; continue
+        if ch in _DIGi: o.append(_DIGi[ch]); continue
+        if ch in _SYMi: o.append(_SYMi[ch]); continue
+        if ch in _ACCi:
+            if not o: raise ValueError('accent with no letter: ' + ch)
+            a = _ACCi[ch]
+            if a == '̸': o[-1] = {v: k for k, v in _STROKE.items()}.get(o[-1], o[-1])
+            else: o[-1] = unicodedata.normalize('NFC', o[-1] + a)
+            continue
         i, v, f = parts(ch)
         if f or v not in LVi or (i != 'ㅇ' and i not in LCi):
             raise ValueError('not a loan block: ' + ch)
-        o += (LCi[i] if i != 'ㅇ' else '') + LVi[v]
-    return o
+        letters = (LCi[i] if i != 'ㅇ' else '') + LVi[v]
+        for n, c in enumerate(letters):
+            if greek and n == 0: c = GREEK[c]
+            if lock or (cap and n == 0): c = c.upper()
+            o.append(c)
+        cap = greek = False
+    return ''.join(o)
+
+
+def is_loan_block(ch):
+    i, v, f = parts(ch)
+    return not f and (v in LVi or v in 'ㅕㅠㅛㅒㅖ')
 
 
 if __name__ == '__main__':
