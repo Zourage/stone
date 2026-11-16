@@ -244,3 +244,17 @@ User rule: outside code, no English at all; loanwords must be used. Implemented:
 - After test7: added roots after/until/wrong/vaccine (1306 roots, 29 spares); "Patterns that writers often ask for" section in the spec; vowel-sequence loan example; ORD «n»; root + CODE «name» tag.
 - Everything copied to the repo folder reasoning-language/ (raw third-party downloads left out) and committed on the user's request.
 - Not done: tone set; reader test on loan-heavy texts; ambiguity test with/without scope blocks.
+
+
+## UPDATE 12: loans keep every character; test8 (round trip, scope, tone)
+
+**Loan spelling, version 2.** Decision: a loan must give back the exact written form. Added marks, all on vowels unused by the letter table and by code keywords: capital-next, capitals on/off, a filler for one-block words, Greek-next; a block for each digit and for 18 signs; accents after their letter. Old loans decode unchanged. Round trip checked on 41 hand cases and 20,000 random strings with no failure. `« »` outside code now also refuses a bare word or abbreviation of two or more letters.
+
+**test8** (52 agents, none stopped). Results are in `test8/results.json`.
+- Round trip, 7 passages: machine-English arm 92 intact, 7 weakened, 3 wrong, 0 lost; native arm 96, 3, 1, 0. Terms: 128 of 147 and 133 of 156 exact, none missing, the rest reformatted. No loan misspelled or misread.
+- Scope, 12 two-reading items: 96 of 96 with the scope paragraph and 96 of 96 without. No measurable effect; ceiling.
+- Tone, 27 labels, 108 messages, 3 annotators: full agreement on all. Ceiling. Added 15 tone particles in the unused blocks of the strength and modal rows; no earlier form moved. DOUBT not added.
+
+**Parser fixes from test8.** A number written in `« »` may stand before its unit (`«8×10^-3» «s^-1»`). Group abbreviations (Ph, Me, Et, Bu, Bn, Cp, Ts, Tf, Ac) count as part of a chemical formula.
+
+**Open, from the 147 writer notes.** Sense collisions between roots and technical terms (base, complex, add, share, return); whether a term may mix a root and a loan; no word for "usually" of a state or "first" as "before anything else"; whether Pd(0) and C-Br are formulas or loans (writers guessed both ways); a relation after ANDC inside a block is refused (P5, sentence 4); sentence labels such as "1A" are not accepted.

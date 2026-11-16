@@ -47,7 +47,10 @@ REL = {'CONTRAST': 'in contrast to', 'CONCEDE': 'even though', 'RESULT': 'as a r
        'UNDER': 'under the supposition of', 'ANSWER': 'answering', 'REBUT': 'rebutting', 'RETRACT': 'retracting'}
 STRENGTH = {'CERTAIN': 'certainly', 'LIKELY': 'probably', 'POSSIBLE': 'possibly'}
 ATT = {'SURPRISE': 'surprised', 'EMPHASIS': 'emphatic', 'POLITE': 'polite', 'REGRET': 'with regret', 'GLAD': 'glad',
-       'ANNOYED': 'annoyed', 'JEST': 'joking', 'IRONY': 'ironic', 'FRANK': 'frankly', 'HOPE': 'hoping', 'FEAR': 'fearing', 'META': "writer's note about this text"}
+       'ANNOYED': 'annoyed', 'JEST': 'joking', 'IRONY': 'ironic', 'FRANK': 'frankly', 'HOPE': 'hoping', 'FEAR': 'fearing', 'META': "writer's note about this text",
+       'SERIOUS': 'in earnest', 'WARM': 'warmly', 'SAD': 'sadly', 'GRATEFUL': 'gratefully', 'RHETORICAL': 'rhetorically', 'HINT': 'hinting',
+       'WARNING': 'as a warning', 'RELUCTANT': 'reluctantly', 'PROUD': 'proudly', 'CURIOUS': 'curious', 'EXCITED': 'excited',
+       'RESIGNED': 'resigned', 'DISGUST': 'disgusted', 'EMBARRASSED': 'embarrassed', 'COMFORT': 'comforting'}
 DEG = {'VERY': 'very', 'SLIGHT': 'slightly', 'FULL': 'fully', 'BARELY': 'barely', 'ALMOST': 'almost', 'AROUND': 'roughly',
        'ENOUGH': 'enough', 'TOO': 'too', 'MORE': 'more', 'LESS': 'less', 'MOST': 'most', 'LEAST': 'least',
        'EQUAL': 'equally', 'WHAT': 'how'}

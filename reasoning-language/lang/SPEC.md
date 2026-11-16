@@ -536,6 +536,21 @@ The consonant of a particle shows its slot.
 | 쀼 | HOPE | I hope that |
 | 쁘 | FEAR | I fear that |
 | 삐 | META | a note about this text itself, not about its subject (the writer stepping outside) |
+| 버 | SERIOUS | in earnest: not a joke, take this at face value |
+| 베 | WARM | with affection toward the reader |
+| 벼 | SAD | with sorrow |
+| 보 | GRATEFUL | thankfully |
+| 뵤 | RHETORICAL | a question asked to make a point; no answer wanted |
+| 부 | HINT | I mean more than I say here |
+| 뷰 | WARNING | take care: there is a danger here |
+| 브 | RELUCTANT | said or done unwillingly |
+| 비 | PROUD | with pride |
+| 코 | CURIOUS | I would like to know more |
+| 쿄 | EXCITED | eagerly |
+| 쿠 | RESIGNED | accepting something unwelcome as unavoidable |
+| 큐 | DISGUST | I find this repellent |
+| 크 | EMBARRASSED | with awkwardness or shame |
+| 키 | COMFORT | meant to soothe or reassure the reader |
 
 ### Negation and time
 

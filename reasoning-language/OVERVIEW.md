@@ -19,7 +19,7 @@ Words are written in Korean (Hangul) syllable blocks, used only as shapes. No Ko
 | one closed block | short name for a thing ("A", "B") | 각 |
 | open block + closed block | root word, from a fixed list of about 1,300 | 코롤 (dog) |
 | root + ending | derived word, from 8 endings | 오덕 (write) → 오덕일 (writer), 오덕엄 (text) |
-| several open blocks | borrowed word, spelled by a letter table | 데키거티찌허 (kubernetes) |
+| several open blocks | borrowed word, spelled character by character from a table (capitals, hyphens and digits are kept) | 데키거티찌허 (kubernetes) |
 | open block with a w-vowel | one of 13 code keywords | 화 (define) |
 
 **2. Every participant is tagged, so order carries no meaning.**

@@ -543,6 +543,8 @@ class Parser:
                 break
             if t['t'] == 'N' and self.peek(1)['t'] in ('R', 'L') and not any(q[0] == 'NUM' for q in u['q']) and not self.fronting and not re.search(r'[A-Za-z]{3,}', t['v']):
                 u['q'].append(('NUM', self.take()['v'])); continue          # a symbolic count: «n» steps, «2^30» copies
+            if t['t'] == 'N' and self.peek(1)['t'] == 'N' and not any(q[0] == 'NUM' for q in u['q']) and is_numeric(t['v']):
+                u['q'].append(('NUM', self.take()['v'])); continue          # a written-out number before its unit: «8×10^-3» «s^-1»
             if t['t'] == 'H' and self.peek(1)['t'] in ('R', 'L') and not u['q'] and not self.fronting and (not simple or getattr(self, 'lk', False)):
                 u['q'].append(('NUM', self.take())); continue          # a handle as a count: "n odd numbers"
             if t['t'] == 'D':
@@ -679,10 +681,18 @@ Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm 
 Fr Ra Ac Th Pa U Np Pu Am Cm""".split())
 
 
+GROUPS = set('Ph Me Et Bu Bn Cp Ts Tf Ac'.split())     # group abbreviations chemists write inside formulas
+
+
+def is_numeric(s):
+    """A number written in symbols: has a digit and no run of two letters."""
+    return bool(re.search(r'\d', s)) and not re.search(r'[A-Za-z]{2,}', s)
+
+
 def is_formula(s):
     """True for a chemical formula: element symbols, counts, brackets and charges only."""
     parts = re.findall(r'[A-Z][a-z]?|\d+|[()\[\]+\-·.=#]', s)
-    return ''.join(parts) == s and all(p in ELEMENTS for p in parts if p[0].isalpha())
+    return ''.join(parts) == s and all(p in ELEMENTS or p in GROUPS for p in parts if p[0].isalpha())
 
 
 def parse(text, mode='native', lex=None):
@@ -707,7 +717,7 @@ def parse(text, mode='native', lex=None):
         incode = any(t['t'] == 'P' and t['v'] in ('DEFINE', 'IMPORT', 'CODE') for t in chunk[:4])
         for i, t in enumerate(chunk):
             if t['t'] == 'N' and not incode and (re.search(r'[A-Za-z]{4,}', t['v']) or re.fullmatch(r'[A-Za-z]{2,}\d*', t['v'])) and not is_formula(t['v']) and \
-                    not (i and chunk[i - 1]['t'] == 'D') and \
+                    not (i and (chunk[i - 1]['t'] == 'D' or chunk[i - 1]['t'] == 'N' and is_numeric(chunk[i - 1]['v']))) and \
                     not (i and chunk[i - 1]['t'] == 'P' and chunk[i - 1]['v'] == 'CODE'):
                 res['errors'].append((n, f"Latin-letter word in «{t['v'][:40]}» outside code: spell the term as a loan (or use roots); mark real code text with CODE before the « »"))
         # in code, a library is used only through the short name its IMPORT gave it

@@ -21,7 +21,7 @@ Given a language model and a set of instructions, can the model write and reason
 
 | File | Job |
 |---|---|
-| `forms.py` | Word shapes: particles, code keywords, the loan letter table |
+| `forms.py` | Word shapes: particles, code keywords, the loan letter table and its marks for capitals, digits and signs |
 | `build_lexicon.py` | Builds `lexicon.json` (1,306 roots, 29 spares) from the `lex_*.tsv` lists |
 | `lang.py` | Tokeniser, parser and checker |
 | `english.py` | Rule-based translator to literal English, and the code converter (Python, JavaScript) |
@@ -55,6 +55,7 @@ Each writer was a fresh model instance given only the rule sheet, the word list 
 | `test5` | Wide scatter: stories, dialogue, proofs, code, medicine, law | 24 writers, 763 sentences |
 | `test6` | Science and computing | 20 writers, 746 sentences |
 | `test7` | Heavy chemistry, neuroscience and mixed science, under the "no English outside code" rule | 14 files, 573 sentences |
+| `test8` | Three checks: round trip of loan-heavy passages, scope ambiguity, tone labels (`test8/results.json`) | 52 agents |
 | `runs/` | The batch scripts and each writer's returned notes (`*.journal.jsonl`) |
 | `scratch/` | Small hand-written test sentences used while fixing the parser |
 
@@ -72,7 +73,22 @@ Before the rule, writers put technical terms and names in `« »` as plain Engli
 
 In test7 the 885 loans are 338 distinct terms (for example "substantia nigra pars compacta", "beta hydride elimination", "ser 195", "ssp 5 8.5", "akira suzuki"). In 13 files, 195 of 202 terms named in the tasks can be found again in the machine-made English; the other 7 were expressed with native words instead. One file (N01) has four misspelled loans, all from misreading one vowel in the letter table.
 
-Known costs: capitals and hyphens are lost (IL-4 reads back as "il 4"), and pieces too short for a loan (one letter, or "pi", "ca", "gw") still have to go in `« »`.
+After test7 the loan spelling was extended so that every character survives: capitals, hyphens, digits, signs, accents and Greek letters, plus a filler block for one-block words. IL-4, 5-HT1A, Hückel, β-catenin and "pi" now come back exactly. Texts from test5 to test7 were written under the earlier sheets, so the current checker refuses some of their short `« »` pieces.
+
+### test8: three checks after the loan change
+
+**Round trip.** Seven dense English passages (palladium chemistry, kinetics, the action potential, the Higgs boson, climate sensitivity, Unix history, a neutron-star merger) were translated by fresh writers, then turned back into English by two kinds of reader, and each result was compared with the source by a judge.
+
+| Reader works from | Units intact | Weakened | Wrong | Lost | Terms exact | Terms altered |
+|---|---|---|---|---|---|---|
+| Machine English only | 92 | 7 | 3 | 0 | 128 | 19 |
+| Native text and rule sheet | 96 | 3 | 1 | 0 | 133 | 23 |
+
+No term was missing. Nearly all "altered" terms are a change of form by the reader or translator ("two" to "2", "100 s" to "100 seconds", "gNa = 120" to "gNa is 120 mS/cm²"), and no loan was misspelled or misread. The four wrong units are grammar slips, not loan errors: "north-western Europe" became a region north-west of Europe, "called it just a hobby" became "called himself a hobbyist", a "does not follow" lost its target, and a "may" was dropped. Of 42 sentences, one was refused by the checker.
+
+**Scope.** Twelve English sentences with two readings each (for example "I did not leave because of the rain"). Two writers had the full rule sheet and two had it with the paragraph on scope by nesting cut out. Readers picked the intended reading 96 times out of 96 in each arm. So the test found no difference: writers without the paragraph still separated the readings with clause blocks and brackets, which the rest of the sheet teaches. The paragraph is not shown to be needed; the items may also be too easy, since readers chose between two given readings.
+
+**Tone words.** 27 candidate tone labels (the 11 existing ones and 16 new). Two generators wrote 108 short English messages, four per label; three annotators gave each message one label. All three agreed with the intended label on 108 of 108. This shows the labels are distinct ideas when a writer aims at one. It does not show which are needed, because the messages were written to be recognisable. Fifteen were added as particles (SERIOUS, WARM, SAD, GRATEFUL, RHETORICAL, HINT, WARNING, RELUCTANT, PROUD, CURIOUS, EXCITED, RESIGNED, DISGUST, EMBARRASSED, COMFORT); DOUBT was left out because the strength words already express it.
 
 ### What is missing from test7
 
@@ -83,7 +99,8 @@ Seven of the 21 writers produced nothing: C03, C07, N03, N05, N07, X02 and X06. 
 - Not shown: that a model *thinks* in the language. Only its written output has been tested.
 - Tested on two strong models of one family only.
 - Text is about 1.5 times as long as English in tokens.
-- Readers have not yet been tested on the loan-heavy texts; the term check above is a string match on the machine translation.
+- The round-trip readers and judges are the same model family as the writers, and readers may fill gaps from their own knowledge of well-known science even when told not to.
+- The scope and tone tests both hit the ceiling, so they rule out a large problem but measure nothing finer.
 
 ## Left out of this folder
 

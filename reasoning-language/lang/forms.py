@@ -60,6 +60,8 @@ CLASSES = [
     ('nummod', 'ㄴ', 'AROUND EXACT ATLEAST ATMOST ABOVE BELOW'),
     ('head', 'ㅇ', 'ME YOU US SELF MUTUAL WHAT FIRST SECOND THIRD FOURTH WE'),
     ('opener', 'ㄲ', 'IMPORT CODE CONSIDER'),
+    # tone words added later: they take the unused blocks of the strength and modal rows, so no earlier form moves
+    ('attitude', 'ㅂㅋ', 'SERIOUS WARM SAD GRATEFUL RHETORICAL HINT WARNING RELUCTANT PROUD CURIOUS EXCITED RESIGNED DISGUST EMBARRASSED COMFORT'),
 ]
 
 # Code keywords have a shape of their own: an open block whose vowel is one of the seven "w" vowels below.
