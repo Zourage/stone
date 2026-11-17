@@ -1,0 +1,85 @@
+# SEALED test set for scripts/roundtrip_test.py (D136). Written 2026-11-17 by
+# deepseek/deepseek-v3.2, a model family never otherwise used on this project, from a
+# one-paragraph domain description and nothing else: it never saw the lexicon, grammar
+# or corpus. DO NOT READ while changing the language. Report aggregates only; read
+# individual items after the change being measured is committed.
+The latest build crashes when I open the results tab.
+Can you try running it again after pulling the changes?
+It worked this time, but the plot looked blank.
+I think the axis label is missing because the export failed.
+Sorry, I meant the PDF export, not the PNG one.
+Are you free for ten minutes to look at this?
+I can do after lunch if that helps.
+The experiment finished, but the log file is empty.
+Did you check whether the path was set before the run?
+Yes, I set it in the config file this morning.
+Maybe it's using the old path from yesterday.
+I'll restart the service and see if that fixes it.
+Please don't delete the data folder before I check it.
+I won't, I just moved it to the archive.
+Can you confirm which version you're using?
+It says 2.4.1 in the title bar.
+That's the one with the timing bug.
+Is there a workaround for today?
+You can disable auto-refresh in the settings.
+That seems to have stopped the freeze.
+The results still don't match what I expected.
+Did you run the same control sample?
+Yes, same batch and same temperature.
+Maybe the units are off again.
+I'll compare the raw output with the last good run.
+Send me the file when you have a chance.
+It's in the shared folder now.
+Thanks, I'll take a look after this meeting.
+The button is greyed out for some users.
+Does it happen on the web app too?
+No, only on the desktop version.
+That points to a permissions issue.
+I can ask IT to reset the profile.
+Please do, but keep a copy of the settings first.
+I backed them up to the network drive.
+The export took almost ten minutes.
+That's longer than usual.
+Maybe the server is overloaded.
+I'll try a smaller range and see.
+That should be enough to test it.
+Can you add a progress bar?
+It's on my list, but not until next week.
+Next week is too late for this report.
+What if I make a temporary script for you?
+That would help, as long as it's documented.
+I'll add a short README.
+The script needs Python, right?
+Yes, and the data package from the internal repo.
+I don't have access to that repo.
+I'll request it for you now.
+Did you get the confirmation email?
+Not yet, maybe it went to spam.
+Check the shared drive instead.
+Found it, thanks.
+The numbers changed after I reran it.
+That shouldn't happen unless the seed changed.
+I didn't touch the seed.
+Maybe the input file was updated.
+I'll check the file timestamp.
+It was modified this morning.
+Who changed it?
+Not me, maybe the automated pipeline.
+We need to freeze the inputs before analysis.
+Agreed, I'll add a checksum step.
+Can you test the new installer?
+Sure, I'll run it on the test machine.
+It installed, but the shortcut is broken.
+I'll fix the path in the next build.
+Is there a way to undo the last import?
+Not safely, I'm afraid.
+That's unfortunate.
+We should add a dry-run option.
+Good idea, I'll put it in the backlog.
+The chart is too small on my screen.
+You can resize the window or use full screen.
+Full screen works, but the labels overlap.
+I'll adjust the layout for smaller displays.
+Please test it on the lab monitor too.
+That one has a different resolution.
+Yes, and it's connected through the dock.

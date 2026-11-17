@@ -1,0 +1,23 @@
+# Dev set for scripts/roundtrip_test.py (D136). Written 2026-10-09 by the assistant without
+# consulting the lexicon. It has been read and hand-scored, so it is NOT a held-out test:
+# use it to debug the harness and calibrate the judges, never to claim an improvement.
+Can you take a look at this when you get a chance?
+It worked yesterday and now it doesn't.
+I tried restarting it twice and nothing changed.
+Do you want me to send you what I did?
+It's not urgent, just annoying.
+I think the problem started after the update.
+How long do you reckon it'll take?
+Let me know if you need anything else from me.
+I don't understand what it's asking me to do.
+Is there a way to do this without breaking the other thing?
+That fixed it, thanks.
+Sorry, I'm not following.
+Can we go over this tomorrow instead?
+It only happens when I open the big one.
+I'd rather not change anything until we know why.
+Who else has seen this?
+Everything else seems fine.
+I'll be out Friday so let's aim for Thursday.
+Can you explain that more simply?
+It's doing the same thing again.
