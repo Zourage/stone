@@ -139,12 +139,12 @@ def commit():
                           capture_output=True, text=True).stdout.strip()
 
 
-def item_scores(res):
-    """Per (pair, item): share of judges calling it usable."""
+def item_scores(res, ok=USABLE):
+    """Per (pair, item): share of judges giving a label in `ok` (default: usable)."""
     sc = {}
     for pname, p in res["pairs"].items():
         for n in range(1, len(res["sentences"]) + 1):
-            v = [res["judges"][j][pname].get(str(n)) in USABLE for j in res["judges"]]
+            v = [res["judges"][j][pname].get(str(n)) in ok for j in res["judges"]]
             sc[(pname, n)] = sum(v) / len(v)
     return sc
 
@@ -264,6 +264,14 @@ def cmd_compare(a, b):
           % (100 * sum(sa[k] for k in keys) / len(keys), 100 * sum(sb[k] for k in keys) / len(keys),
              100 * sum(diffs) / len(diffs), 100 * lo, 100 * hi))
     print("  items improved %d, worsened %d, unchanged %d" % (up, down, len(keys) - up - down))
+    # Usable counts LOSS with FAITHFUL, and judges often grade a dropped "only" as LOSS,
+    # so a change that restores a restriction can move FAITHFUL and leave usable flat (D138).
+    fa, fb = item_scores(A, {"FAITHFUL"}), item_scores(B, {"FAITHFUL"})
+    fd = [fb[k] - fa[k] for k in keys]
+    lo, hi = boot(fd)
+    print("  faithful %.1f%% -> %.1f%%   delta %+.1f points (95%% CI %+.1f to %+.1f)"
+          % (100 * sum(fa[k] for k in keys) / len(keys), 100 * sum(fb[k] for k in keys) / len(keys),
+             100 * sum(fd) / len(fd), 100 * lo, 100 * hi))
 
 
 if __name__ == "__main__":

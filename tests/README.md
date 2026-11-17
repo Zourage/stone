@@ -10,7 +10,9 @@
 2. **Pair every comparison.** Use `compare A.json B.json` on the same set. A single run's interval is about ±5 points (D134).
 3. **The test set is sealed.** Do not read `tests/fixtures/roundtrip_test.txt` or the per-item results while changing the language. Read a failure only after the change being measured is committed.
 4. **The dev set is for debugging and `calibrate` only.** It is D135's 20 sentences, already read, and it never supports a claim.
-5. **Judge agreement is the harness alarm.** The judges agreed 16–17 of 20 with hand labels. If they disagree far beyond that, check alignment before reading the score.
+5. **Judge agreement is the harness alarm.** Valid general runs agree about 80%, and the void run agreed 49%. Below 75%, check alignment by eye before reading the score. Targeted sets legitimately run near 70%, because judges split LOSS from DEGRADED on dropped restrictions (D138).
+6. **Report FAITHFUL beside usable.** `compare` prints both. Usable counts LOSS with FAITHFUL, so restoring an *only* moves FAITHFUL and can leave usable flat.
+7. **A change aimed at a small share of sentences needs a targeted sealed set.** Write it with the domain description plus the target words, after the change is committed and before anyone reads it (`roundtrip_focusset.txt` is the example). Run it against the old corpus from a worktree and the new one. The general set cannot see such a change: D137 moved it −1.9 ± 6 while moving the targeted set's FAITHFUL by +33.
 
 ## Acceptance test (D3, bar set in D50, directions split in D75)
 **Serves goal 1** (can an LLM translate this language). This is goal 1's whole measurement and the only one with a bar. (D125)

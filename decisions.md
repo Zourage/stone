@@ -932,3 +932,41 @@ Both are stricter than the hand labels, so absolute rates read low. Paired delta
 **Teaching.** 19 sentences, s1478–s1496, two held. They include the minimal pairs *only you / even you* and *only the small test / even the small test*, and one reported and one inferred line, so the new words also appear in sentences that need a marked evidential.
 
 **Effect: measured by the paired round trip on the sealed set. Recorded in the next entry, whatever it shows.**
+
+**D138. The focus words work where they are needed and change nothing elsewhere. A general test set cannot see a change that targets a small share of sentences, and "usable" cannot see a restored restriction.** 2026-11-17. Results in `tests/results/roundtrip/`. Serves goal 1 (D125).
+
+**Targeted set.** 40 sentences, each needing a focus word, written by deepseek-v3.2 after D137 was committed and sealed before any run. Each was run through the corpus before D137 (1477 lines, from a worktree) and after it (1496), with the same models and judges, compared item by item:
+
+| Measure | Before | After | Change (95% interval) |
+|---|---|---|---|
+| **FAITHFUL** | 15.6% | 48.8% | **+33.1 points (+21.2 to +45.0)** |
+| Usable | 52.5% | 60.6% | +8.1 (−2.5 to +19.4) |
+| BROKEN | | | −4.4 (−10.6 to +1.9) |
+
+Examples, before → after:
+- "Only the first run failed, the rest were fine": *the first run failed, but that run was good* → *only the first run failed; all the other runs were good*.
+- "Nothing else is blocking the run": *else* dropped → kept.
+
+**General set.** The 80 sealed sentences, before against after:
+
+| Measure | Change (95% interval) |
+|---|---|
+| Usable | −1.9 (−8.1 to +4.4) |
+| FAITHFUL | +0.0 (−6.2 to +6.2) |
+
+No gain and no collateral damage. Only 7 of its 80 lines contain a focus word, and two of those mean *too* as excess. So at most 10 of 160 scored pairs could move, and the set's run-to-run noise is larger than that. Elsewhere, 24 items went up and 30 down with nothing relevant changed.
+
+**Three method findings.**
+1. **A targeted change needs a targeted sealed set, written after the change is committed and before it is read.** The general set measures whether the language works and stays the standing number. It cannot adjudicate a change that touches a few percent of sentences, and the targeted set costs cents.
+2. **Report FAITHFUL beside usable.** The judges graded a dropped *only* as LOSS about as often as DEGRADED, despite the prompt naming *only* as a DEGRADED case. So the gain moved from LOSS to FAITHFUL, and "usable" never saw it. `compare` now prints both.
+3. **D136's 75% agreement alarm is amended.** Agreement below it means *check alignment by eye before reading the score*, not *the run is void*. The targeted runs agreed only 54/80 and 57/80. They were aligned (checked item by item), and the disagreement was the judges splitting LOSS from DEGRADED on exactly the dropped restrictions. The valid general baselines agreed 81% and 78%. The void run agreed 49%.
+
+**What the targeted run showed is still wrong.**
+- **Scope.** "The team wants the results *too*" came back as *the team also wants*: the also word went on the subject. English *too* floats, and a sender has to decide what it attaches to. That is the point of D137's slot, and the price.
+- **Merely-*just*.** "It's just a formatting issue" came back as *only that type is faulty*: the restriction carried and the noun did not.
+- **Excess-*too*** ("too late", "too small") has no word and no construction. It is a degree, *more than fits*, not focus. Not coined.
+
+**Read so far.** 7 general-set items and 5 targeted items have been read. Both sets stay usable for paired runs, but a change aimed at anything in those 12 lines must be measured on a fresh set.
+
+### OPEN
+- **What makes 53% of ordinary work chat unusable is unknown.** Every read item failed on missing or substituted nouns (archive, web app, desktop, shared drive, monitor, chart, formatting), as D132 predicted. Finding out means reading the general set, which retires it. A fresh set costs cents, so the trade is cheap, but it is the maintainer's call.

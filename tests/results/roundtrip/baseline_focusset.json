@@ -1,0 +1,628 @@
+{
+ "tag": "baseline",
+ "set": "focusset",
+ "commit": "fd2bf69",
+ "corpus_lines": 1477,
+ "sentences": [
+  "Only the first run failed, the rest were fine.",
+  "I only changed one line, so it should be safe.",
+  "Only the test data is missing now.",
+  "We only need one more result before I can check it.",
+  "Only the export button is not working for me.",
+  "Just send the log when you get a chance.",
+  "I just need the raw output, not the summary.",
+  "Just try the older version for now.",
+  "It's just a formatting issue.",
+  "Just click the refresh button and see if it loads.",
+  "I also saw the same error on my machine.",
+  "The second script also needs a small fix.",
+  "I can also run the experiment later today.",
+  "The new file also has the old headers.",
+  "We also need to check the output format.",
+  "I'll look at the log too after you send it.",
+  "The team wants the results too.",
+  "Can you check the second file too?",
+  "I'll add a note to the report too.",
+  "That shortcut works too if the menu is missing.",
+  "The new version works as well, but it is slower.",
+  "I can review the results as well before we submit them.",
+  "The backup file should be saved as well.",
+  "We need the raw data as well as the summary.",
+  "The test folder needs to be cleaned as well.",
+  "Even the basic case is failing now.",
+  "I even tried restarting the service, but no luck.",
+  "The output is even missing the header row.",
+  "Even with the fix, the run still stops early.",
+  "I can even add a quick check for that.",
+  "Is there anything else in the log before the crash?",
+  "If it fails again, let me know what else changed.",
+  "Nothing else is blocking the run, so we can proceed.",
+  "Is there anything else I should check before the run?",
+  "If the menu is gone, what else can I use?",
+  "The other machine gives a different error.",
+  "I can use the other dataset for now.",
+  "The other file seems to be corrupted.",
+  "We should compare the other result with this one.",
+  "The other script needs the same fix."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "쿠태 다 누타카 채 우 다 로타카",
+    "back": "The first run failed, but that run was good."
+   },
+   {
+    "n": 2,
+    "st": "아 나 피토 파 레타카 소 두차 얘키",
+    "back": "I altered one line. There is no danger, I gather."
+   },
+   {
+    "n": 3,
+    "st": "와 미네 이 유 페 얘루카",
+    "back": "There is no test data now."
+   },
+   {
+    "n": 4,
+    "st": "아 우 파 치코디 티캐코디 히 아 에 하 나 도 파 테패카",
+    "back": "Before I can check it, we need one result."
+   },
+   {
+    "n": 5,
+    "st": "하레 다내 아 페 다루카",
+    "back": "The output command does not run to me."
+   },
+   {
+    "n": 6,
+    "st": "에 코체코디 유 페 미노 파 아 페 카푸카메",
+    "back": "Give me the record while you are free. Just a proposal."
+   },
+   {
+    "n": 7,
+    "st": "아 하레 파 테패카 모메 파 테패루카",
+    "back": "I need the output; I do not need the average."
+   },
+   {
+    "n": 8,
+    "st": "에 이 유 페 니로 파테 파 테파카메",
+    "back": "Use the previous version now. Just a proposal."
+   },
+   {
+    "n": 9,
+    "st": "우 티패 노카메",
+    "back": "That is a text fault. Just a proposal."
+   },
+   {
+    "n": 10,
+    "st": "에 메루 다내 파 다카메 우 다코디 치카메",
+    "back": "Run the command again. Check that it is running. Just a proposal."
+   },
+   {
+    "n": 11,
+    "st": "아 아 피 니포 페 두 노 파 웨타카",
+    "back": "I found the same fault in my machine."
+   },
+   {
+    "n": 12,
+    "st": "세쿠 네 테 라 파 테패카",
+    "back": "The program needs two small fixes."
+   },
+   {
+    "n": 13,
+    "st": "아 노대 카유 페 와 파 다코디 티캐카",
+    "back": "I can run the test in the afternoon."
+   },
+   {
+    "n": 14,
+    "st": "파캐 왜 니로 쿠태 피토 얘카",
+    "back": "The new file has the previous first line."
+   },
+   {
+    "n": 15,
+    "st": "아 에 하 하레 피 캐토 파 치코디 테패카",
+    "back": "We need to check the output's type."
+   },
+   {
+    "n": 16,
+    "st": "에 우 파 카푸코디 후 아 미노 파 위투카마",
+    "back": "After you pass it, I will look at the record."
+   },
+   {
+    "n": 17,
+    "st": "예내 도 파 티파카",
+    "back": "The team wants the result."
+   },
+   {
+    "n": 18,
+    "st": "에 왜 네 파 치코디 티캐 추",
+    "back": "Can you check the two files?"
+   },
+   {
+    "n": 19,
+    "st": "아 도해 페 도차 파 워투카마",
+    "back": "I will write a note to the report."
+   },
+   {
+    "n": 20,
+    "st": "티포 얘루코 해 우 파시 다내 다카",
+    "back": "If there is no list, the fast command runs."
+   },
+   {
+    "n": 21,
+    "st": "파캐 파테 다카 채 우 우 호 파수카",
+    "back": "The new version runs, but it is slower than that one."
+   },
+   {
+    "n": 22,
+    "st": "아 에 하 우 파 카푸코디 히 아 도 파 코피코디 티캐카",
+    "back": "Before we pass it, I can review the result."
+   },
+   {
+    "n": 23,
+    "st": "코푸 왜 파 키포코디 티페카",
+    "back": "The copy of the file should be stored."
+   },
+   {
+    "n": 24,
+    "st": "아 에 하 미네 하 모메 파 테패카",
+    "back": "We need the data and the average."
+   },
+   {
+    "n": 25,
+    "st": "와 왜 후태 파 푸소코디 테패카",
+    "back": "The test folder needs to be empty."
+   },
+   {
+    "n": 26,
+    "st": "타로 와 이 유 페 누카",
+    "back": "The easy test fails now."
+   },
+   {
+    "n": 27,
+    "st": "아 히리 니포 파 메루 다타카 채 누타카",
+    "back": "I ran the server again, but it failed."
+   },
+   {
+    "n": 28,
+    "st": "하레 피 쿠태 피토 얘루카",
+    "back": "The output has no first line."
+   },
+   {
+    "n": 29,
+    "st": "라 후 채 다 나대 쿠테코디 쿠로카",
+    "back": "After the fix, the run still stops early."
+   },
+   {
+    "n": 30,
+    "st": "아 우 헤 파시 치 파 리코디 티캐카",
+    "back": "I can build a fast check for it."
+   },
+   {
+    "n": 31,
+    "st": "누 히 미노 페 토 얘 추",
+    "back": "Is there something in the record before the failure?"
+   },
+   {
+    "n": 32,
+    "st": "우 메루 누코 해 야 레타카디 아 페 워야카마",
+    "back": "If it fails again, tell me what was altered."
+   },
+   {
+    "n": 33,
+    "st": "소 토 다 파 수초카 아 에 하 쿠로코디 티캐카",
+    "back": "Nothing is blocking the run. We can continue."
+   },
+   {
+    "n": 34,
+    "st": "다 히 아 치코디 티페코디 토 얘 추",
+    "back": "Is there something I should check before the run?"
+   },
+   {
+    "n": 35,
+    "st": "티포 얘루코 해 아 야 파 테파코디 티캐 추",
+    "back": "If there is no list, what can I use?"
+   },
+   {
+    "n": 36,
+    "st": "우 니포 두루 노 파 페포카",
+    "back": "That machine shows a different fault."
+   },
+   {
+    "n": 37,
+    "st": "아 이 유 페 우 미네 파 테파코디 티캐카",
+    "back": "I can use that data now."
+   },
+   {
+    "n": 38,
+    "st": "우 왜 노키",
+    "back": "That file must be faulty."
+   },
+   {
+    "n": 39,
+    "st": "아 에 하 우 도 파 이 하 티왜코디 티페카",
+    "back": "We should compare that result with this one."
+   },
+   {
+    "n": 40,
+    "st": "우 세쿠 두 라 파 테패카",
+    "back": "That program needs the same fix."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "쿠태 다 누타카 채 니래 다 로타카",
+    "back": "The first run failed, but the next run was good."
+   },
+   {
+    "n": 2,
+    "st": "아 나 피토 파 레타카 우 로코디 티페카",
+    "back": "I altered one line; it should be good."
+   },
+   {
+    "n": 3,
+    "st": "와 미네 이 유 페 얘루카",
+    "back": "There is no test data now."
+   },
+   {
+    "n": 4,
+    "st": "아 우 파 치코디 티캐 히 아 에 하 나 도 파 테패카",
+    "back": "Before I can check it, we need one result."
+   },
+   {
+    "n": 5,
+    "st": "카푸 토 다루카",
+    "back": "The passed thing does not run."
+   },
+   {
+    "n": 6,
+    "st": "에 코체코디 유 페 미노 파 아 페 카푸카마",
+    "back": "When you are free, give the record to me."
+   },
+   {
+    "n": 7,
+    "st": "아 하레 파 테패카 채 아 헤도 파 테패루카",
+    "back": "I need the output, but I do not need the explanation."
+   },
+   {
+    "n": 8,
+    "st": "에 니로 파테 파 이 유 페 다카마",
+    "back": "Run the previous version now."
+   },
+   {
+    "n": 9,
+    "st": "우 티패 노카메",
+    "back": "That text is faulty. Just a proposal."
+   },
+   {
+    "n": 10,
+    "st": "에 메루 토 파 파로카마 채 에 우 다코디 치카마",
+    "back": "Do the repeated thing, but check whether it runs."
+   },
+   {
+    "n": 11,
+    "st": "아 두 누 파 아 피 니포 페 위타카",
+    "back": "I saw the same failure on my machine."
+   },
+   {
+    "n": 12,
+    "st": "세쿠 네 테 라 파 테패카",
+    "back": "The program needs two small fixes."
+   },
+   {
+    "n": 13,
+    "st": "아 와 파 노대 카유 페 다코디 티캐카",
+    "back": "I can run the test in the afternoon."
+   },
+   {
+    "n": 14,
+    "st": "파캐 왜 피 니로 쿠태 피토 얘카",
+    "back": "The new file has the previous first line."
+   },
+   {
+    "n": 15,
+    "st": "아 에 하 하레 피 캐토 파 치코디 테패카",
+    "back": "We need to check the output's type."
+   },
+   {
+    "n": 16,
+    "st": "아 에 우 파 카푸코디 후 미노 파 위투카마",
+    "back": "After you pass it, I'll look at the record."
+   },
+   {
+    "n": 17,
+    "st": "예내 도 파 티파카",
+    "back": "The team wants the result."
+   },
+   {
+    "n": 18,
+    "st": "에 왜 네 파 치코디 티캐 추",
+    "back": "Can you check file two?"
+   },
+   {
+    "n": 19,
+    "st": "아 도차 파 도해 페 워투카마",
+    "back": "I'll write a note in the report."
+   },
+   {
+    "n": 20,
+    "st": "우 토 티포 얘루코 해 다카",
+    "back": "If that list of items does not exist, it runs."
+   },
+   {
+    "n": 21,
+    "st": "파캐 파테 다카 채 우 니로 파테 호 파수카",
+    "back": "The new version runs, but it is slower than the previous version."
+   },
+   {
+    "n": 22,
+    "st": "아 에 하 도 파 카푸코디 히 아 도 파 코피코디 티캐카",
+    "back": "Before we pass the result, I can review the result."
+   },
+   {
+    "n": 23,
+    "st": "코푸 왜 파 미노코디 티페카",
+    "back": "The copy file should be recorded."
+   },
+   {
+    "n": 24,
+    "st": "아 에 하 미네 파 테패카 아 에 하 헤도 파 테패카",
+    "back": "We need the data; we need the explanation."
+   },
+   {
+    "n": 25,
+    "st": "와 왜 후태 파 푸소코디 테패카",
+    "back": "The test folder needs to be empty."
+   },
+   {
+    "n": 26,
+    "st": "타로 테페 이 유 페 누카",
+    "back": "The easy example fails now."
+   },
+   {
+    "n": 27,
+    "st": "아 히리 니포 파 쿠테 후 쿠태타카 채 우 로루타카",
+    "back": "I started the server after stopping it, but it was not good."
+   },
+   {
+    "n": 28,
+    "st": "하레 피 쿠태 피토 얘루카",
+    "back": "The output has no first line."
+   },
+   {
+    "n": 29,
+    "st": "다 라 하 나대 쿠테코디 쿠로카",
+    "back": "The run with the fix is still stopping early."
+   },
+   {
+    "n": 30,
+    "st": "아 파시 치 파 우 헤 워코디 티캐카",
+    "back": "I can write a fast check for it."
+   },
+   {
+    "n": 31,
+    "st": "누타코디 히 미노 페 야 토 얘 추",
+    "back": "What was in the record before it failed?"
+   },
+   {
+    "n": 32,
+    "st": "우 메루 누코 해 에 레타카디 토 파 아 페 워야카마",
+    "back": "If it fails again, tell me the thing you altered."
+   },
+   {
+    "n": 33,
+    "st": "다 수초루카 아 에 하 쿠로코디 티캐카",
+    "back": "The run is not blocked; we can continue."
+   },
+   {
+    "n": 34,
+    "st": "다 히 아 야 토 파 치코디 티페 추",
+    "back": "Before the run, what should I check?"
+   },
+   {
+    "n": 35,
+    "st": "티포 얘루코 해 아 야 파 테파코디 티캐 추",
+    "back": "If there is no list, what can I use?"
+   },
+   {
+    "n": 36,
+    "st": "우 니포 두루 케포 파 페포카",
+    "back": "That machine shows a different message."
+   },
+   {
+    "n": 37,
+    "st": "아 우 미네 파 이 유 페 테파코디 티캐카",
+    "back": "I can use that data now."
+   },
+   {
+    "n": 38,
+    "st": "우 왜 노키",
+    "back": "That file is faulty, I gather."
+   },
+   {
+    "n": 39,
+    "st": "아 에 하 우 도 파 이 하 티왜코디 티페카",
+    "back": "We should compare that result with this one."
+   },
+   {
+    "n": 40,
+    "st": "우 세쿠 두 라 파 테패카",
+    "back": "That program needs the same fix."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "BROKEN",
+    "2": "FAITHFUL",
+    "3": "BROKEN",
+    "4": "DEGRADED",
+    "5": "FAITHFUL",
+    "6": "DEGRADED",
+    "7": "DEGRADED",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "FAITHFUL",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "FAITHFUL",
+    "15": "FAITHFUL",
+    "16": "LOSS",
+    "17": "LOSS",
+    "18": "BROKEN",
+    "19": "LOSS",
+    "20": "FAITHFUL",
+    "21": "LOSS",
+    "22": "LOSS",
+    "23": "LOSS",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "LOSS",
+    "28": "LOSS",
+    "29": "LOSS",
+    "30": "LOSS",
+    "31": "LOSS",
+    "32": "LOSS",
+    "33": "LOSS",
+    "34": "LOSS",
+    "35": "LOSS",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "FAITHFUL",
+    "39": "FAITHFUL",
+    "40": "FAITHFUL"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "DEGRADED",
+    "5": "BROKEN",
+    "6": "FAITHFUL",
+    "7": "FAITHFUL",
+    "8": "LOSS",
+    "9": "BROKEN",
+    "10": "BROKEN",
+    "11": "LOSS",
+    "12": "BROKEN",
+    "13": "DEGRADED",
+    "14": "LOSS",
+    "15": "LOSS",
+    "16": "LOSS",
+    "17": "LOSS",
+    "18": "FAITHFUL",
+    "19": "LOSS",
+    "20": "BROKEN",
+    "21": "FAITHFUL",
+    "22": "LOSS",
+    "23": "LOSS",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "FAITHFUL",
+    "28": "LOSS",
+    "29": "LOSS",
+    "30": "LOSS",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "FAITHFUL",
+    "34": "DEGRADED",
+    "35": "DEGRADED",
+    "36": "LOSS",
+    "37": "LOSS",
+    "38": "FAITHFUL",
+    "39": "FAITHFUL",
+    "40": "FAITHFUL"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "BROKEN",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "DEGRADED",
+    "5": "DEGRADED",
+    "6": "LOSS",
+    "7": "DEGRADED",
+    "8": "LOSS",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "FAITHFUL",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "LOSS",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "LOSS",
+    "20": "LOSS",
+    "21": "LOSS",
+    "22": "DEGRADED",
+    "23": "LOSS",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "LOSS",
+    "28": "LOSS",
+    "29": "LOSS",
+    "30": "LOSS",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "DEGRADED",
+    "35": "DEGRADED",
+    "36": "DEGRADED",
+    "37": "DEGRADED",
+    "38": "DEGRADED",
+    "39": "FAITHFUL",
+    "40": "FAITHFUL"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "DEGRADED",
+    "5": "BROKEN",
+    "6": "FAITHFUL",
+    "7": "DEGRADED",
+    "8": "DEGRADED",
+    "9": "BROKEN",
+    "10": "BROKEN",
+    "11": "LOSS",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "LOSS",
+    "17": "DEGRADED",
+    "18": "LOSS",
+    "19": "LOSS",
+    "20": "DEGRADED",
+    "21": "FAITHFUL",
+    "22": "LOSS",
+    "23": "LOSS",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "LOSS",
+    "28": "LOSS",
+    "29": "LOSS",
+    "30": "LOSS",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "DEGRADED",
+    "35": "DEGRADED",
+    "36": "DEGRADED",
+    "37": "DEGRADED",
+    "38": "DEGRADED",
+    "39": "DEGRADED",
+    "40": "DEGRADED"
+   }
+  }
+ }
+}
