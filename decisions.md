@@ -970,3 +970,34 @@ No gain and no collateral damage. Only 7 of its 80 lines contain a focus word, a
 
 ### OPEN
 - **What makes 53% of ordinary work chat unusable is unknown.** Every read item failed on missing or substituted nouns (archive, web app, desktop, shared drive, monitor, chart, formatting), as D132 predicted. Finding out means reading the general set, which retires it. A fresh set costs cents, so the trade is cheap, but it is the maintainer's call.
+
+**D139. The first sealed set is retired and read. A fresh one replaces it, with a baseline on the D137 corpus of 53.8% usable. Missing words are the dominant failure, and one existing root is a substitution sink.** 2026-11-17. Analysis in `tests/results/2026-11-17-n.md`. Serves goal 1 (D125).
+
+**What was retired.** On the maintainer's instruction, the first general set was retired. It moved to `tests/fixtures/roundtrip_test_2026-11-17.txt`, and its runs moved to `tests/results/roundtrip/retired-2026-11-17/`. All 80 items were then read.
+
+**The fresh set.** It was written before the reading began: 79 lines by deepseek-v3.2 from the same domain description. Exact duplicates of the corpus, the dev set, the focus set and the retired set were removed, and so was one line within word-overlap 0.6 of the retired set. The rest overlap the retired set at a mean of 0.26.
+- Baseline on the corpus at 1496: **53.8% usable (interval 45.6–62.0), 42.4% FAITHFUL**.
+- The judges agree on 120 of 158.
+- This is the number the next change pairs against.
+
+**Findings from reading the retired set**, filed by primary cause over the 55 items that were not clearly fine:
+
+| Cause | Items |
+|---|---|
+| **No word for the thing** | **38** |
+| A missing construction | 11 |
+| A literal or name | 3 |
+| Hedge rendering | 2 |
+| Short answer | 1 |
+
+The sender substitutes the nearest root rather than dropping the noun, so the output reads as complete (D132).
+
+**The variable/store root is a carve defect.** It took every storage location (archive, shared drive, network drive, repo) in 5 of 5 cases, and the receiver read all of them as *variable*. Its gloss lumps a program's slot with a place where data is kept.
+- **Place** absorbed 12 nouns; *path* failed 3 of 3.
+- **Quoting:** both senders improvised it. One wrote Latin `PDF` inside a stone line and scored FAITHFUL. The other spelled *Python* in Hangul outside the 74 syllables.
+
+### OPEN
+- **Split *store* from *variable*.** This is a carve fix and needs no new concept. The candidate is a storage-location root, or the existing compound route (data + store), for drive, repo and archive.
+- **Path** is the highest-value missing noun in the code-request domain after *file*.
+- **The ten missing constructions:** duration *for N minutes*, an object relative clause, *the one with*, *enough*, *not until*, excess *too*, *what if*, *as long as*, a beneficiary against a recipient, *unless*.
+- **Decisions 2 (short answers) and 3 (quoting) now have direct evidence**, and they remain the maintainer's.
