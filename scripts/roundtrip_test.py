@@ -13,6 +13,7 @@ Usage:
   roundtrip_test.py run dev|test TAG      writes tests/results/roundtrip/TAG_SET.json
   roundtrip_test.py calibrate             judges D135's outputs against its hand labels
   roundtrip_test.py compare A.json B.json paired comparison, item by item
+  roundtrip_test.py selftest              offline: an echo model must come back aligned
 
 Labels: FAITHFUL (same meaning), LOSS (core meaning intact, a nuance gone),
 DEGRADED (something that changes what a listener would do is gone), BROKEN
@@ -92,7 +93,7 @@ def translate(model, ctx, items, instruction):
         listing = "\n".join("%d. %s" % (i + 1, s) for i, s in enumerate(chunk))
         got = numbered(call(model, ctx + "\n\n" + instruction + "\n\n" + listing), len(chunk))
         for i, s in got.items():
-            out[start + i] = s
+            out[start + i - 1] = s  # numbered() is 1-based; callers index from 0
     return out
 
 
@@ -174,11 +175,8 @@ def summarise(res):
     print("  USABLE %.1f%%  (95%% CI %.1f-%.1f, bootstrap over sentences)" % (100 * sum(per_item) / n, 100 * lo, 100 * hi))
 
 
-def cmd_run(setname, tag):
-    sents = load_set(setname)
-    ctx, nlines = context()
-    res = {"tag": tag, "set": setname, "commit": commit(), "corpus_lines": nlines,
-           "sentences": sents, "pairs": {}, "judges": {}}
+def run_pairs(sents, ctx):
+    pairs = {}
 
     def one_pair(pair):
         out_m, back_m = pair
@@ -194,7 +192,15 @@ def cmd_run(setname, tag):
 
     with ThreadPoolExecutor(len(PAIRS)) as ex:
         for name, items in ex.map(one_pair, PAIRS):
-            res["pairs"][name] = items
+            pairs[name] = items
+    return pairs
+
+
+def cmd_run(setname, tag):
+    sents = load_set(setname)
+    ctx, nlines = context()
+    res = {"tag": tag, "set": setname, "commit": commit(), "corpus_lines": nlines,
+           "sentences": sents, "pairs": run_pairs(sents, ctx), "judges": {}}
 
     def one_judge(j):
         return j, {p: {str(k): v for k, v in judge(j, [(sents[it["n"] - 1], it["back"]) for it in items]).items()}
@@ -206,6 +212,27 @@ def cmd_run(setname, tag):
     out.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
     summarise(res)
     print("  written", out.relative_to(ROOT))
+
+
+def cmd_selftest():
+    """Offline check that every returned line is scored against its own original.
+    The first baseline was void because translate() stored 1-based keys as 0-based,
+    so each back-translation was judged against the next sentence; one judge called
+    nearly everything broken, correctly, and the other did not notice."""
+    global call, load_set
+    def echo(model, prompt):
+        if prompt.startswith(JUDGE_PROMPT):
+            k = len(re.findall(r"^\d+\. ORIGINAL", prompt, re.M))
+            return "\n".join("%d. FAITHFUL" % i for i in range(1, k + 1))
+        return "\n".join(l for l in prompt.splitlines() if re.match(r"\d+\. ", l))
+    sents = ["sentence %d" % i for i in range(2 * CHUNK + 5)]
+    call, load_set = echo, (lambda name: sents)
+    res = {}
+    for pname, items in run_pairs(sents, "selftest").items():
+        res[pname] = [it["n"] for it in items if it["back"] != sents[it["n"] - 1]]
+    bad = sum(len(v) for v in res.values())
+    print("selftest: %d of %d returned lines misaligned" % (bad, 2 * len(sents)))
+    sys.exit(1 if bad else 0)
 
 
 def cmd_calibrate():
@@ -243,6 +270,8 @@ if __name__ == "__main__":
     a = sys.argv[1:]
     if a[:1] == ["run"] and len(a) == 3:
         cmd_run(a[1], a[2])
+    elif a[:1] == ["selftest"]:
+        cmd_selftest()
     elif a[:1] == ["calibrate"]:
         cmd_calibrate()
     elif a[:1] == ["compare"] and len(a) == 3:
