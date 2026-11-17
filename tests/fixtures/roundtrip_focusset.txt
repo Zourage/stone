@@ -1,0 +1,44 @@
+# SEALED targeted set for scripts/roundtrip_test.py (D138): every line needs a focus word
+# (only, also, even, other and their English variants). Written 2026-11-17 by
+# deepseek/deepseek-v3.2 from a domain description and the word list alone, after D137
+# was committed and before anyone read it. DO NOT READ while changing the language.
+Only the first run failed, the rest were fine.
+I only changed one line, so it should be safe.
+Only the test data is missing now.
+We only need one more result before I can check it.
+Only the export button is not working for me.
+Just send the log when you get a chance.
+I just need the raw output, not the summary.
+Just try the older version for now.
+It's just a formatting issue.
+Just click the refresh button and see if it loads.
+I also saw the same error on my machine.
+The second script also needs a small fix.
+I can also run the experiment later today.
+The new file also has the old headers.
+We also need to check the output format.
+I'll look at the log too after you send it.
+The team wants the results too.
+Can you check the second file too?
+I'll add a note to the report too.
+That shortcut works too if the menu is missing.
+The new version works as well, but it is slower.
+I can review the results as well before we submit them.
+The backup file should be saved as well.
+We need the raw data as well as the summary.
+The test folder needs to be cleaned as well.
+Even the basic case is failing now.
+I even tried restarting the service, but no luck.
+The output is even missing the header row.
+Even with the fix, the run still stops early.
+I can even add a quick check for that.
+Is there anything else in the log before the crash?
+If it fails again, let me know what else changed.
+Nothing else is blocking the run, so we can proceed.
+Is there anything else I should check before the run?
+If the menu is gone, what else can I use?
+The other machine gives a different error.
+I can use the other dataset for now.
+The other file seems to be corrupted.
+We should compare the other result with this one.
+The other script needs the same fix.
