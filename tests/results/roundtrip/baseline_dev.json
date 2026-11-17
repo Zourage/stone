@@ -1,0 +1,328 @@
+{
+ "tag": "baseline",
+ "set": "dev",
+ "commit": "fd2bf69",
+ "corpus_lines": 1477,
+ "sentences": [
+  "Can you take a look at this when you get a chance?",
+  "It worked yesterday and now it doesn't.",
+  "I tried restarting it twice and nothing changed.",
+  "Do you want me to send you what I did?",
+  "It's not urgent, just annoying.",
+  "I think the problem started after the update.",
+  "How long do you reckon it'll take?",
+  "Let me know if you need anything else from me.",
+  "I don't understand what it's asking me to do.",
+  "Is there a way to do this without breaking the other thing?",
+  "That fixed it, thanks.",
+  "Sorry, I'm not following.",
+  "Can we go over this tomorrow instead?",
+  "It only happens when I open the big one.",
+  "I'd rather not change anything until we know why.",
+  "Who else has seen this?",
+  "Everything else seems fine.",
+  "I'll be out Friday so let's aim for Thursday.",
+  "Can you explain that more simply?",
+  "It's doing the same thing again."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "에 코체코디 유 페 이 파 위코디 티캐 추",
+    "back": "Can you look at this while you are free?"
+   },
+   {
+    "n": 2,
+    "st": "우 니로 카유 페 다타카 채 우 이 유 페 다루카",
+    "back": "It ran on the previous day, but it does not run now."
+   },
+   {
+    "n": 3,
+    "st": "아 네 메루 다 파 메루타카 채 소 토 레타카",
+    "back": "I repeated the run twice, but nothing changed."
+   },
+   {
+    "n": 4,
+    "st": "에 아 아 파로타카디 토 파 에 페 카푸코디 티파 추",
+    "back": "Do you want me to give you what I did?"
+   },
+   {
+    "n": 5,
+    "st": "우 소패 태루카 채 타리카",
+    "back": "The priority is not high, but it is difficult."
+   },
+   {
+    "n": 6,
+    "st": "노 레 후 쿠태타키",
+    "back": "The fault began after the change, I gather."
+   },
+   {
+    "n": 7,
+    "st": "우 야 수포 유 소히투 추",
+    "back": "How much time will it take?"
+   },
+   {
+    "n": 8,
+    "st": "에 아 호 마소 토 파 테패코 해 에 아 페 워야카마",
+    "back": "If you need more from me, tell me."
+   },
+   {
+    "n": 9,
+    "st": "아 우 아 페 차코디 토 파 데하루카",
+    "back": "I don't understand what was asked of me."
+   },
+   {
+    "n": 10,
+    "st": "우 토 누루코디 이 파 파로코디 티캐 추",
+    "back": "Can this be done without failing?"
+   },
+   {
+    "n": 11,
+    "st": "우 우 파 라타카 에 호하타코디 로카",
+    "back": "It's good that you helped fix it."
+   },
+   {
+    "n": 12,
+    "st": "아 내타카 아 우 파 데하루카",
+    "back": "I made a mistake; I don't understand it."
+   },
+   {
+    "n": 13,
+    "st": "아 에 하 이 파 니래 카유 페 코피코디 티캐 추",
+    "back": "Can we review this tomorrow?"
+   },
+   {
+    "n": 14,
+    "st": "우 아 태 토 파 포하코디 유 페 누카",
+    "back": "It fails while I open the big one."
+   },
+   {
+    "n": 15,
+    "st": "아 에 하 대유 파 사코디 유 히 아 소 토 파 레코디 티파카",
+    "back": "I want to change nothing until we know the reason."
+   },
+   {
+    "n": 16,
+    "st": "야 예 이 파 위타 추",
+    "back": "Who looked at this?"
+   },
+   {
+    "n": 17,
+    "st": "새 토 로키",
+    "back": "Everything seems good."
+   },
+   {
+    "n": 18,
+    "st": "아 캐파 카유 포 페 코체루카 소차 캐파 카유 패카메",
+    "back": "I'm not free on Friday; the goal is Thursday, just a proposal."
+   },
+   {
+    "n": 19,
+    "st": "에 우 파 타로 하 헤도코디 티캐 추",
+    "back": "Can you explain it easily?"
+   },
+   {
+    "n": 20,
+    "st": "우 두 토 파 메루카",
+    "back": "It repeats the same thing."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "에 이 파 코체코디 유 페 위코디 티캐 추",
+    "back": "Can you look at this when you are free?"
+   },
+   {
+    "n": 2,
+    "st": "우 니로 카유 페 로타카 채 우 이 유 페 로루카",
+    "back": "It was good on the previous day, but it is not good now."
+   },
+   {
+    "n": 3,
+    "st": "아 우 파 네 메루 다타카 채 소 토 레루타카",
+    "back": "I ran it two times, but nothing changed."
+   },
+   {
+    "n": 4,
+    "st": "에 아 아 파로타카디 토 파 에 페 카푸코디 티파 추",
+    "back": "Do you want me to give you what I did?"
+   },
+   {
+    "n": 5,
+    "st": "우 테패루카 채 우 래카",
+    "back": "It is not needed, but it is bad."
+   },
+   {
+    "n": 6,
+    "st": "아 노 파 레 후 쿠태타키",
+    "back": "I started the fault after the change, I gather."
+   },
+   {
+    "n": 7,
+    "st": "에 우 야 수포 유 유투키매 추",
+    "back": "How much time do you expect it will take?"
+   },
+   {
+    "n": 8,
+    "st": "에 토 파 아 호 테패코 해 에 아 페 워야카마",
+    "back": "If you need anything from me, tell me."
+   },
+   {
+    "n": 9,
+    "st": "아 우 아 페 체카디 토 파 데하루카",
+    "back": "I do not understand what that one asked me for."
+   },
+   {
+    "n": 10,
+    "st": "이 파 우 토 누루 하 파로코디 얘 추",
+    "back": "Is it true that that thing does this without failing?"
+   },
+   {
+    "n": 11,
+    "st": "우 우 파 라타카",
+    "back": "That one fixed it."
+   },
+   {
+    "n": 12,
+    "st": "아 우 파 데하루카",
+    "back": "I do not understand that."
+   },
+   {
+    "n": 13,
+    "st": "아 에 하 이 파 니래 카유 페 코피코디 티캐 추",
+    "back": "Can we review this on the next day?"
+   },
+   {
+    "n": 14,
+    "st": "우 아 태 토 파 포하코 해 누코",
+    "back": "If I open the big thing, it fails. That's just how it is."
+   },
+   {
+    "n": 15,
+    "st": "아 에 하 야 헤 사코디 유 히 아 토 파 레코디 티파루카",
+    "back": "Until we know why, I do not want to alter the thing."
+   },
+   {
+    "n": 16,
+    "st": "야 예 이 파 위타 추",
+    "back": "Who looked at this?"
+   },
+   {
+    "n": 17,
+    "st": "새 토 로키",
+    "back": "Everything is good, I gather."
+   },
+   {
+    "n": 18,
+    "st": "아 캐파 카유 포 페 코체루투카마 아 에 하 캐파 카유 패 페 쿠태투카마",
+    "back": "I will not be free on Friday; we will begin on Thursday."
+   },
+   {
+    "n": 19,
+    "st": "에 우 파 타로 하 헤도코디 티캐 추",
+    "back": "Can you explain it easily?"
+   },
+   {
+    "n": 20,
+    "st": "우 두 토 파 메루카",
+    "back": "It repeats the same thing."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "DEGRADED",
+    "6": "LOSS",
+    "7": "LOSS",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "LOSS",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "DEGRADED",
+    "15": "FAITHFUL",
+    "16": "DEGRADED",
+    "17": "LOSS",
+    "18": "LOSS",
+    "19": "FAITHFUL",
+    "20": "DEGRADED"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "LOSS",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "DEGRADED",
+    "6": "BROKEN",
+    "7": "FAITHFUL",
+    "8": "FAITHFUL",
+    "9": "LOSS",
+    "10": "BROKEN",
+    "11": "LOSS",
+    "12": "LOSS",
+    "13": "FAITHFUL",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "LOSS",
+    "18": "DEGRADED",
+    "19": "FAITHFUL",
+    "20": "FAITHFUL"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "FAITHFUL",
+    "5": "DEGRADED",
+    "6": "FAITHFUL",
+    "7": "LOSS",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "BROKEN",
+    "12": "BROKEN",
+    "13": "DEGRADED",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "DEGRADED",
+    "18": "FAITHFUL",
+    "19": "DEGRADED",
+    "20": "FAITHFUL"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "BROKEN",
+    "6": "BROKEN",
+    "7": "FAITHFUL",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "BROKEN",
+    "11": "LOSS",
+    "12": "LOSS",
+    "13": "LOSS",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "LOSS",
+    "20": "FAITHFUL"
+   }
+  }
+ }
+}
