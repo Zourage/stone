@@ -3,6 +3,7 @@
 # one-paragraph domain description and nothing else: it never saw the lexicon, grammar
 # or corpus. DO NOT READ while changing the language. Report aggregates only; read
 # individual items after the change being measured is committed.
+# Lines within word-overlap 0.6 of the retired first set were dropped (1).
 The batch stalled at 40% again, and I don't see any error in the log.
 Can you rerun the small set before I push the fix?
 I think the timeout is too aggressive for the larger images.
@@ -53,7 +54,6 @@ Can you make the report shorter?
 I'd rather not change the schema today.
 The color scale is misleading.
 I'll add a note about the missing samples.
-The button is greyed out for me.
 Did the merge touch the experiment config?
 I'm seeing duplicate rows now.
 I'll run it overnight and check in the morning.
