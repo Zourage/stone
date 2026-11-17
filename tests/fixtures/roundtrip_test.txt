@@ -1,85 +1,85 @@
-# SEALED test set for scripts/roundtrip_test.py (D136). Written 2026-11-17 by
+# SEALED test set for scripts/roundtrip_test.py (D136). Written 2026-11-17 (second set, D139) by
 # deepseek/deepseek-v3.2, a model family never otherwise used on this project, from a
 # one-paragraph domain description and nothing else: it never saw the lexicon, grammar
 # or corpus. DO NOT READ while changing the language. Report aggregates only; read
 # individual items after the change being measured is committed.
-The latest build crashes when I open the results tab.
-Can you try running it again after pulling the changes?
-It worked this time, but the plot looked blank.
-I think the axis label is missing because the export failed.
-Sorry, I meant the PDF export, not the PNG one.
-Are you free for ten minutes to look at this?
-I can do after lunch if that helps.
-The experiment finished, but the log file is empty.
-Did you check whether the path was set before the run?
-Yes, I set it in the config file this morning.
-Maybe it's using the old path from yesterday.
-I'll restart the service and see if that fixes it.
-Please don't delete the data folder before I check it.
-I won't, I just moved it to the archive.
-Can you confirm which version you're using?
-It says 2.4.1 in the title bar.
-That's the one with the timing bug.
-Is there a workaround for today?
-You can disable auto-refresh in the settings.
-That seems to have stopped the freeze.
-The results still don't match what I expected.
-Did you run the same control sample?
-Yes, same batch and same temperature.
-Maybe the units are off again.
-I'll compare the raw output with the last good run.
-Send me the file when you have a chance.
-It's in the shared folder now.
-Thanks, I'll take a look after this meeting.
-The button is greyed out for some users.
-Does it happen on the web app too?
-No, only on the desktop version.
-That points to a permissions issue.
-I can ask IT to reset the profile.
-Please do, but keep a copy of the settings first.
-I backed them up to the network drive.
-The export took almost ten minutes.
-That's longer than usual.
-Maybe the server is overloaded.
-I'll try a smaller range and see.
-That should be enough to test it.
-Can you add a progress bar?
-It's on my list, but not until next week.
-Next week is too late for this report.
-What if I make a temporary script for you?
-That would help, as long as it's documented.
-I'll add a short README.
-The script needs Python, right?
-Yes, and the data package from the internal repo.
-I don't have access to that repo.
-I'll request it for you now.
-Did you get the confirmation email?
-Not yet, maybe it went to spam.
-Check the shared drive instead.
-Found it, thanks.
-The numbers changed after I reran it.
-That shouldn't happen unless the seed changed.
-I didn't touch the seed.
-Maybe the input file was updated.
-I'll check the file timestamp.
-It was modified this morning.
-Who changed it?
-Not me, maybe the automated pipeline.
-We need to freeze the inputs before analysis.
-Agreed, I'll add a checksum step.
-Can you test the new installer?
-Sure, I'll run it on the test machine.
-It installed, but the shortcut is broken.
-I'll fix the path in the next build.
-Is there a way to undo the last import?
-Not safely, I'm afraid.
-That's unfortunate.
-We should add a dry-run option.
-Good idea, I'll put it in the backlog.
-The chart is too small on my screen.
-You can resize the window or use full screen.
-Full screen works, but the labels overlap.
-I'll adjust the layout for smaller displays.
-Please test it on the lab monitor too.
-That one has a different resolution.
-Yes, and it's connected through the dock.
+The batch stalled at 40% again, and I don't see any error in the log.
+Can you rerun the small set before I push the fix?
+I think the timeout is too aggressive for the larger images.
+It finished, but the second column looks shifted.
+Did you update the path after moving the files?
+I'll try a clean run tomorrow morning.
+The plot labels are tiny on my screen.
+Maybe we should cache the parsed config.
+I'm seeing a different checksum than last week.
+Can you send the exact command you used?
+It worked once, then failed twice in a row.
+The help text still says the old flag.
+I don't want to overwrite the raw results.
+Should I archive the old run first?
+The queue is empty now, so I can start.
+My laptop fan is doing its best, but the job is slow.
+The error message is unhelpful.
+I added a guard for empty inputs.
+Can you check whether the sample count is right?
+I'll be heads down until three.
+The output folder is missing the summary.
+It looks like the seed didn't propagate.
+I prefer the simpler version, even if it's slower.
+Do you want the CSV or the spreadsheet?
+The test passed, but the timing jumped.
+I'm going to pause the experiment and rerun it.
+The new build broke the export button for me.
+Can you confirm the units in the third column?
+I'll update the readme after the meeting.
+The log says "done" but nothing was written.
+I think the file watcher is missing events.
+It might be a permissions thing.
+I'll leave the first run as a control.
+Can you retry with the smaller crop?
+The numbers are close enough for me.
+I'm not convinced the fix addressed the cause.
+The session expired again.
+I'll send the draft when it's ready.
+The default setting is too high for the lab machine.
+Can you paste the last ten lines?
+I'll keep the old version around for comparison.
+The run is on, but the progress bar is lying.
+I think we should warn before deleting.
+The export is slower than the analysis.
+I'll check the logs when I get back.
+It failed on the second file, not the first.
+Can you make the report shorter?
+I'd rather not change the schema today.
+The color scale is misleading.
+I'll add a note about the missing samples.
+The button is greyed out for me.
+Did the merge touch the experiment config?
+I'm seeing duplicate rows now.
+I'll run it overnight and check in the morning.
+The fix seems stable so far.
+Can you tell me which version you're on?
+The plot title overlaps the legend.
+I'll hold off until the data is cleaned.
+The command worked in the terminal but not in the app.
+I think the cache is stale.
+Can you double-check the baseline?
+The results are noisy, but the trend is there.
+I'll document the workaround.
+The file is too large to open here.
+It started fine, then stopped without a message.
+I'll split the run into chunks.
+Can you add a timestamp to the output?
+The settings reset after I closed the window.
+I'm not seeing the new option.
+The summary is missing the failed count.
+I'll try again after the update.
+The image looks blurry in the report.
+Can you confirm the date range?
+I'll keep the temporary files until we're sure.
+The progress is slower than expected.
+It seems to hang on the first dataset.
+I'll make a backup before touching anything.
+Can you try the previous release?
+The log is too quiet to diagnose.
+I'll rerun the controls today.
