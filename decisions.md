@@ -884,3 +884,51 @@ So `package-place` was already at the cap and `command-place package-place` was 
 - Four concrete defects: the three duplicate pairs, the 70 future/direct lines, D117, and the focus particles.
 - Quoting is back in scope and still needs the rule 3 decision.
 - Nothing here is fixed. This entry is findings only, deliberately — the maintainer stopped the coining to ask whether it works, and the answer should land before more changes do.
+
+**D136. The free-text round trip is the standing test of goal 1, and its first baseline was void because of an off-by-one that one judge caught and the other did not.** 2026-11-17. `scripts/roundtrip_test.py`. Serves goal 1 (D125).
+
+**Instrument.** Sentences that were never in the corpus go out into the language through one model and come back into English through another. The two pairs are gemini-3.8-flash → grok-4.6 and the reverse. Two judges from other families, claude-sonnet-4.5 and gpt-5.6-luna, label each FAITHFUL / LOSS / DEGRADED / BROKEN. **Usable = FAITHFUL or LOSS**, reported with a bootstrap interval over sentences. Every comparison is paired: same sentences, same models, item by item (D134).
+
+**Two sets.** The **dev set** is D135's 20 sentences. They have been read, and they are used for calibration and debugging, never to claim a gain. The **test set** is 80 sentences written by deepseek-v3.2 from a domain description alone (two coworkers in work chat, one a programmer), deduplicated against the corpus. **It is sealed**: nobody reads it while the language is changing, and individual items are read only after the change being measured is committed.
+
+**Judge calibration.** Both judges were scored against D135's hand labels on the same 20 outputs:
+
+| Judge | Exact label | Usable or not |
+|---|---|---|
+| claude-sonnet-4.5 | 13/20 | 16/20 |
+| gpt-5.6-luna | 16/20 | 17/20 |
+
+Both are stricter than the hand labels, so absolute rates read low. Paired deltas cancel that.
+
+**The cue-stripped acceptance test proposed after D135 is dropped as tautological.** With the cues removed, the rule says the unmarked slot is direct, so every marked slot becomes wrong by construction. That run would have measured the rule, not the language. The static figure says what it would have shown:
+
+| Set | Evidential or stance fixed only by an English cue |
+|---|---|
+| Corpus | 533 of 1477 (36%) |
+| Held set | 46 of 125 (37%) |
+
+**D122's stop list hid the focus particles.** *only, just, also, too* were stop-listed as "handled by construction". No construction handles them: the corpus had zero lines with *only, also, too, even, else* or *instead*. So no probe ever reported them as gaps. *still* and *yet* were stop-listed correctly. That is how D135's round trip found what D121 and D122 could not.
+
+**The first baseline was void.** `translate()` stored `numbered()`'s 1-based keys as 0-based, so every back-translation was judged against the next sentence's original. gpt-5.6-luna labelled 153 of 160 items BROKEN, which was correct. claude-sonnet-4.5 called half of them usable. **A judge that agrees with a misaligned harness is worse than useless, and judge agreement is the cheapest alarm.** It read 79 of 160 against calibration's 16–17 of 20. The fix ships with `roundtrip_test.py selftest`: it runs the real pipeline with an echo model and fails if any line comes back misaligned. With the bug reintroduced it fails on 170 of 170. The void results were deleted unread; the sealed set's items were never displayed.
+
+### OPEN
+- Run `selftest` before every round trip. **Treat judge agreement under 75% as a harness fault until shown otherwise.**
+
+**D137. Four focus words — only, also, even, other — coined as one family in the determiner slot.** 2026-11-17. Serves goal 1 (D125); found by D135's round trip.
+
+**The gap.** D135's round trip lost the word that carried the whole diagnosis: "It only happens when I open the big one" came back without *only*. The corpus had no way to say any of these. A debugging conversation is largely selection among alternatives — only this, also that, even the small one, something else — so this gap sits in the language's purpose domain (D34, D36).
+
+**Four words, not six.** *just* in the sense of merely is *only*; *just* inside a stance cue ("just a proposal") is not, and the corpus never needed it. *too* and *as well* are *also*. *else* and *another* are *other*. *Instead* is not coined: *in X's place* (possessor, the place root, location case) covers it. Coin it only if a round trip shows that construction failing.
+
+**Slot.** Determiner, immediately before the phrase focused, beside every/all, no/none and approximately (D62, D123). English floats *only* and *too* across the clause; here the word sits on its phrase, so the attachment is stated.
+- With a relative clause, the word goes after the clause and before its head: *only when X* is X-subordinate, only, time, location.
+- *Other* stacks after the interrogative and the quantifiers: who else, everything else, nothing else.
+- As function words, these four add nothing to G34.
+
+**Forms.** One family per D42, members told apart by the second syllable. The two single syllables that looked unassigned are already the first syllables of the modal family and of the time units, so neither was free as a prefix. Of the roots with no family of their own, three tied at one cross-family minimal-pair neighbour per member on this row: test, file and find. The prefix is the find root, the one with fewest corpus tokens (21, against 105 and 94).
+- Second syllables avoid every verb-ending piece, so no member can parse as root plus affix.
+- Second syllables avoid the pronoun row, so no member reads as root plus pronoun.
+
+**Teaching.** 19 sentences, s1478–s1496, two held. They include the minimal pairs *only you / even you* and *only the small test / even the small test*, and one reported and one inferred line, so the new words also appear in sentences that need a marked evidential.
+
+**Effect: measured by the paired round trip on the sealed set. Recorded in the next entry, whatever it shows.**

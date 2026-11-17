@@ -1475,3 +1475,22 @@
 {"id": "s1475", "en": "The package for the program is new.", "st": "체데 세쿠 헤 파캐카", "features": ["direct", "stative", "for", "domain-code"], "split": "train"}
 {"id": "s1476", "en": "The code in the file is bad.", "st": "시새 왜 페세 페 래카", "features": ["direct", "stative", "loc", "region", "compound", "domain-code"], "split": "train"}
 {"id": "s1477", "en": "I'll run the program in the container.", "st": "아 세쿠 파 체데 후태 페 다투카마", "features": ["direct", "future", "intend", "obj", "loc", "compound", "domain-code"], "split": "train"}
+{"id": "s1478", "en": "Only the small test failed.", "st": "웨채 테 와 누타카", "features": ["focus", "det", "past", "direct"], "split": "train"}
+{"id": "s1479", "en": "I read only two files.", "st": "아 웨채 네 왜 파 데타카", "features": ["focus", "numeral", "det", "past", "direct", "obj"], "split": "train"}
+{"id": "s1480", "en": "Only you can fix it.", "st": "웨채 에 우 파 라코디 티캐카", "features": ["focus", "able", "sub", "direct", "obj"], "split": "train"}
+{"id": "s1481", "en": "I told only you.", "st": "아 웨채 에 페 워야타카", "features": ["focus", "loc", "past", "direct"], "split": "train"}
+{"id": "s1482", "en": "Run the test only when the machine is ready.", "st": "에 와 파 니포 코대코디 웨채 유 페 다카마", "features": ["focus", "while", "sub", "loc", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s1483", "en": "The new version also failed.", "st": "웨체 파캐 파테 누타카", "features": ["focus", "det", "past", "direct"], "split": "train"}
+{"id": "s1484", "en": "Test the new version too.", "st": "에 웨체 파캐 파테 파 와카마", "features": ["focus", "det", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s1485", "en": "You also made a mistake, it seems.", "st": "웨체 에 내타키", "features": ["focus", "past", "inferred"], "split": "train"}
+{"id": "s1486", "en": "Read the message as well.", "st": "에 웨체 케포 파 데카마", "features": ["focus", "direct", "intend", "imperative", "obj"], "split": "train"}
+{"id": "s1487", "en": "Even the small test failed.", "st": "웨초 테 와 누타카", "features": ["focus", "det", "past", "direct"], "split": "train"}
+{"id": "s1488", "en": "Even you can fix it.", "st": "웨초 에 우 파 라코디 티캐카", "features": ["focus", "able", "sub", "direct", "obj"], "split": "held"}
+{"id": "s1489", "en": "It failed even at night.", "st": "우 웨초 카요 페 누타카", "features": ["focus", "loc", "past", "direct", "nominal-root", "domain-time"], "split": "train"}
+{"id": "s1490", "en": "Even the new version is slow.", "st": "웨초 파캐 파테 파수카", "features": ["focus", "det", "direct", "stative"], "split": "train"}
+{"id": "s1491", "en": "Who else read it?", "st": "야 웨치 예 우 파 데타 추", "features": ["focus", "question", "q-who", "det", "past", "obj"], "split": "train"}
+{"id": "s1492", "en": "Everything else is done.", "st": "새 웨치 토 초카", "features": ["focus", "quantifier", "all", "det", "direct", "stative"], "split": "train"}
+{"id": "s1493", "en": "Use another machine.", "st": "에 웨치 니포 파 테파카마", "features": ["focus", "det", "direct", "intend", "imperative", "obj"], "split": "held"}
+{"id": "s1494", "en": "Someone else made a mistake, I'm told.", "st": "웨치 예 내타케", "features": ["focus", "det", "past", "reported"], "split": "train"}
+{"id": "s1495", "en": "What else failed?", "st": "야 웨치 토 누타 추", "features": ["focus", "question", "q-what", "det", "past"], "split": "train"}
+{"id": "s1496", "en": "Nothing else changed.", "st": "소 웨치 토 레타카", "features": ["focus", "quantifier", "none", "det", "past", "direct"], "split": "train"}

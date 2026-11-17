@@ -1838,5 +1838,37 @@
   "sense_notes": "A reusable piece brought in from elsewhere: a library, a dependency, a module. Carved against the part root, which is a piece *of* a thing already in hand. Compounds with the place root to give a container (D130).",
   "id": "w0230",
   "added": "2026-09-19"
+ },
+ {
+  "form": "웨채",
+  "pos": "func",
+  "gloss": "only, just (merely)",
+  "sense_notes": "Focus family, side 1 of 4: restrictive. Stands immediately before the phrase it restricts, in the determiner slot where every/all, no/none and approximately stand: before a pronoun, a numeral, an adjective or a root (only you, only two files, only the small test). With a clause before the time root it goes after the clause and before the time root: only when X. English 'just' in the sense of merely is this word; 'just' in a stance cue is not (D137).",
+  "id": "w0231",
+  "added": "2026-11-17"
+ },
+ {
+  "form": "웨체",
+  "pos": "func",
+  "gloss": "also, too, as well",
+  "sense_notes": "Focus family, side 2 of 4: additive. Something besides what was already said holds too. Same slot as the other members, before the phrase it adds. English 'too' and 'as well' at the end of a clause are this word before the phrase they attach to. Not 'and', which has no word (D59).",
+  "id": "w0232",
+  "added": "2026-11-17"
+ },
+ {
+  "form": "웨초",
+  "pos": "func",
+  "gloss": "even",
+  "sense_notes": "Focus family, side 3 of 4: scalar additive. Like also, but the phrase it marks is the least expected one to hold. Same slot as the other members. Not 'even' with numbers, which the language has no use for.",
+  "id": "w0233",
+  "added": "2026-11-17"
+ },
+ {
+  "form": "웨치",
+  "pos": "func",
+  "gloss": "other, else, another",
+  "sense_notes": "Focus family, side 4 of 4: alternative. A member of the set that is not the one already in view. Stands before the root like the other members; after the interrogative, every/all or no/none it stacks: which-other-person = who else, every-other-thing = everything else, no-other-thing = nothing else. A bare person root after it is someone else. Not the reciprocal 'each other', which is expressed with the with word (D59).",
+  "id": "w0234",
+  "added": "2026-11-17"
  }
 ]

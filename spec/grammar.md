@@ -44,6 +44,13 @@ Every/all and no/none stand before the root, like numerals. With the thing and p
 ## Approximation (D123)
 One determiner word, in the same slot as every/all and no/none and on the same consonant, standing before a numeral or before a root: about five files, almost done. It hedges **an amount or a degree, never a claim**. Hedging a claim is what the stance slot is for — risk and propose (D34) — and the two must not be run together: "about five" is a quantity the speaker has not pinned down, "five, I suspect" is a number the speaker is offering for testing. The language had four obligatory evidentials for epistemic precision and nothing at all for quantitative approximation until this was coined.
 
+## Focus (D137)
+Four words in the determiner slot, a family on one first syllable: **only** (restrictive; also English *just* meaning merely), **also** (additive; also *too*, *as well*), **even** (additive, and the marked phrase is the least expected one), **other** (alternative; also *else*, *another*). Each stands immediately before the phrase it focuses — a pronoun, a numeral, an adjective or a root — where every/all, no/none and approximately stand: only you, only two files, even the small test, another machine. English moves *only* and *too* around the clause and leaves the hearer to guess what they attach to; here the word sits on the phrase, so the attachment is said, not guessed.
+
+Two placements to know. **After a relative clause** the focus word comes after the clause and before its head: *only when X* is X-subordinate, only, time, location — the word restricts the time, not the clause's subject. **After the interrogative or a quantifier** *other* stacks: which-other-person is *who else*, every-other-thing *everything else*, no-other-thing *nothing else*; other before the bare person root is *someone else*. The reciprocal *each other* is not this word; it is the with construction (D64, D69).
+
+*Instead* is not coined. *Y instead of X* is *in X's place*: X, possessor, the place root, location case. Coin it only if the round trip shows that construction failing.
+
 ## Number (D48, D62)
 Bare arguments are number-neutral: no plural marking exists or is needed.
 

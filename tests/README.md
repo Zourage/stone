@@ -1,5 +1,17 @@
 # Tests
 
+## Round trip (D136) — goal 1, the standing test
+`scripts/roundtrip_test.py run test TAG` writes `tests/results/roundtrip/TAG_test.json`.
+
+**What it does.** Ordinary sentences that were never in the corpus go out into the language through one model and come back through another, with the corpus as context. Two judges from other families label each item, and usable = FAITHFUL or LOSS. The acceptance test cannot be this: its held lines come from the corpus that supplies the prompt, and the cue rule puts the evidential in the English (D135).
+
+**Discipline.**
+1. **Run `selftest` first.** It is offline and checks that every returned line is scored against its own original.
+2. **Pair every comparison.** Use `compare A.json B.json` on the same set. A single run's interval is about ±5 points (D134).
+3. **The test set is sealed.** Do not read `tests/fixtures/roundtrip_test.txt` or the per-item results while changing the language. Read a failure only after the change being measured is committed.
+4. **The dev set is for debugging and `calibrate` only.** It is D135's 20 sentences, already read, and it never supports a claim.
+5. **Judge agreement is the harness alarm.** The judges agreed 16–17 of 20 with hand labels. If they disagree far beyond that, check alignment before reading the score.
+
 ## Acceptance test (D3, bar set in D50, directions split in D75)
 **Serves goal 1** (can an LLM translate this language). This is goal 1's whole measurement and the only one with a bar. (D125)
 Protocol: fresh agents with no access to this repo, context = the corpus **train** split only, as `English ||| stone` pairs. No spec, no lexicon, no grammar. Ask for every `held` sentence in both directions, for the rules inferred, and whether the language is a known one.
