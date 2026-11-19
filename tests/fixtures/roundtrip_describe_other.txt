@@ -1,0 +1,38 @@
+# SEALED targeted set for scripts/roundtrip_test.py (D141): Every message must name at least one concrete technical thing: a part of a screen or app, a tool, a file format, a kind of storage or connection, a me
+# Written 2026-11-19 by deepseek/deepseek-v3.2 after D140 was committed, from a domain
+# description and the requirement above only. DO NOT READ while changing the language.
+Can you check the output in the CSV file from this morning's run?
+The new dropdown menu in the UI is missing the third option.
+I think the JSON config is overriding the environment variable.
+The sensor calibration data looks off in column G of the spreadsheet.
+Let's sync on the API endpoint changes after the standup.
+My connection to the database keeps timing out.
+The log file shows a permissions error on the cache folder.
+Did you update the threshold in the settings panel?
+The preview window is just displaying a blank white screen.
+I need write access to the shared network folder for the results.
+The script crashed because the PNG file was corrupted.
+We should use a higher sampling rate for the next test.
+The error is popping up in a modal dialog every time I click Save.
+Can you send me the latest SQL query you used?
+The firmware update is stuck at 75% on my device.
+The data in the table doesn't match the graph on the dashboard.
+I’ll push the fix to the staging server by noon.
+The upload is failing for files larger than 10MB.
+Check the toggle switch for "advanced mode" in the sidebar.
+The validation script flagged half the entries in the XML feed.
+The battery level readings are fluctuating wildly on the monitor.
+Let's move the meeting to 3 PM so I can finish this regression test.
+The font in the header is rendering incorrectly on mobile.
+I exported the figures as SVG files and put them in the project folder.
+The API key field in the form is not masked.
+We need to adjust the timeout setting in the proxy configuration.
+The histogram is skewed because of that one outlier value.
+The compiler is throwing a type error on line 142.
+Can you reload the page and see if the button is still grayed out?
+The sensor is sending null values to the message queue.
+I updated the formula in the spreadsheet, so the totals should be correct now.
+Let's use a local cache instead of querying the remote server each time.
+The build failed because of a missing dependency in the package file.
+The audio stream is choppy over the VPN.
+The filter on the admin panel isn't applying to the user list.

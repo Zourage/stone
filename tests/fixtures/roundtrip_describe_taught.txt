@@ -1,0 +1,38 @@
+# SEALED targeted set for scripts/roundtrip_test.py (D141): Every message must mention at least one of these, spread about evenly: a drive, a disk, a repo or repository, an archive, a backup, a file path, a cha
+# Written 2026-11-19 by deepseek/deepseek-v3.2 after D140 was committed, from a domain
+# description and the requirement above only. DO NOT READ while changing the language.
+The drive is full again, so I can't save today's results.
+Is the disk nearly full? My last run stopped halfway.
+Can you pull the repo? I fixed the path issue.
+The repository still has the old config, so it won't run.
+Did you unpack the archive? It looked empty.
+I made a backup before changing anything, just in case.
+Send me the file path again; I can't find the folder.
+This chart looks odd, maybe the units are wrong.
+What random seed did you use? I can't match your numbers.
+The checksum doesn't match, so the download may be bad.
+The installer failed at the last step, so I restarted it.
+I moved the data to the external drive, so the laptop is faster.
+The drive disconnected while it was copying, so I'm not sure what finished.
+Can you check the drive? It says read-only when I try to save.
+The drive is almost empty now, so we can keep the new results.
+The disk is slow today, so the run took forever.
+Is the disk busy? I can't write the output.
+I cleaned up the disk, so there's room for another run.
+The disk error came back, so I'm stopping the experiment.
+Push your changes to the repo when you can, so I can test them.
+The repository is missing the new script, so the job failed.
+I updated the repo, but you may need to reload the program.
+The archive is too big to email, so I put it on the shared folder.
+Did the archive finish downloading? It looked incomplete.
+I'll keep the archive for a week, then delete it if you don't need it.
+The archive wouldn't open, so I tried another one.
+The backup ran overnight, so the old files are safe.
+Can you make a backup before I change the settings?
+I restored from the backup, but the recent edits are gone.
+Use this file path instead: data/results/2024.
+The file path has a space, so the script broke.
+Send me the file path for the new results.
+I'll add a chart tomorrow so it's easier to compare.
+The chart is missing labels, so I can't read it.
+That chart makes sense now, thanks.
