@@ -6,7 +6,7 @@ Implemented now (spec/codepoints.json exists, D28):
   - no duplicate forms, no duplicate glosses
   - form length 1-3 syllables (D37)
   - pos is one of the schema enum (D29, D33)
-  - no Latin letters anywhere in `form` or `st` (CLAUDE.md rule 3)
+  - no Latin letters anywhere in `form` or `st` (CLAUDE.md rule 3), except name tokens in `st` (D142)
   - no form of 2+ syllables is a Korean word (data/ko_frequency.json; D13, D55)
   - no multi-syllable form splits into a shorter root plus a valid run of
     affixes, which would make the word ambiguous with an inflected shorter one

@@ -1048,3 +1048,22 @@ Judge agreement was 48–54 of 70 on the targeted sets. Alignment was checked by
 - **Decision 3 (quoting) is now the largest lever on goal 1 that is measured and not taken.** It is the maintainer's call. It costs CLAUDE.md rule 3 in its current wording, and per D133 two function words, marker exceptions and an amendment to D50's exact-match bar.
 - **Domain predicates:** count them the way D139 counted nouns before coining any. A read of the general sets would do it; the untaught set's nine is a lower bound.
 - The taught, untaught and focus sets are now read. Measure the next change on fresh ones.
+
+**D142. A TRIAL: names are carried in their own spelling, after the root that says what they are. Revertible; the procedure is in `REVERT_D142.md`.** 2026-11-19. Serves goal 1 (D125). Adopted on the maintainer's instruction: "let's try it but keep a note if we want to revert this change". Decision 3 is taken, provisionally.
+
+**What.** A name is not a word of the language: a file name, format, tool, command, version or error code. It is written as printable-ASCII tokens directly after a root that says what it is: file CSV, program Python, version 2.4.1, command npm install. Consecutive name tokens are one name, and the phrase takes markers normally.
+- **No quote words.** The change of script is the boundary. D133 priced quoting at two function words plus marker exceptions. This design needs neither, because the parser can tell a name token from a word by its characters.
+- **CLAUDE.md rule 3 gains one sentence.** A stone word is still never written in Latin, and a foreign name is never respelled in Hangul. The parser rejects *파이선* as before.
+- **The parser requires the root**, D140's head rule applied to names. A reader who does not know "CSV" still learns it is a file.
+- **D50's exact-match bar is untouched.** Names are copied verbatim, so they match or they do not.
+
+**Why.** D141 found names in 11 of 35 noun-dense technical lines, at ~20% usable. Description reaches the category and never the sibling. D139 found both senders already improvising quoting, and the one that wrote `PDF` in Latin came back FAITHFUL.
+
+**Changed.**
+- `stonelib.py`: name tokens are parsed and exempt from the script check, and a name with no root before it is an error.
+- `realize.py`: renders *the CSV file*. It also has a fix not tied to names: *who* + object no longer glues, which had broken s1506.
+- 18 teaching lines, s1518–s1535, two held.
+
+**Goal 2.** Undecidable splits stay at 99. realize.py exact goes 333 → 336. compose.py declines 17 of the 18 new lines with a reason, and one is silently wrong (515 → 516): the English → stone script does not copy names yet.
+
+**Effect:** to be measured on a sealed set written after this commit, of noun-dense technical chat like D141's untaught set, before against after. Recorded next, whatever it shows. **If it does not help, revert per `REVERT_D142.md`.**

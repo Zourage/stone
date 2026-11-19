@@ -16,6 +16,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LATIN = re.compile(r"[A-Za-z]")
+# A name (D142, a trial): a token of printable ASCII and nothing else -- a file
+# name, format, tool, command, version or error code, carried in its own
+# spelling. It is not a word of the language. It follows the root that says what
+# it is, consecutive name tokens are one name, and it takes markers like any
+# phrase. Never a stone word written in Latin. To revert, see REVERT_D142.md.
+NAME = re.compile(r"^[\x21-\x7e]+$")
+
+
+def is_name(tok):
+    return bool(NAME.match(tok))
 
 SLOT_NAMES = ["negation", "tense", "evidential", "stance", "subordinator"]
 EVIDENTIAL_SLOT = 2
@@ -45,6 +55,8 @@ def slot_of(entry):
 
 
 def label(entry):
+    if entry.get("pos") == "name":
+        return '"%s"' % entry["form"]
     g = entry["gloss"]
     if g in LABEL:
         return LABEL[g]
@@ -138,16 +150,21 @@ class Sentence:
 def check_script(s, lx):
     """Errors about characters: Latin letters, or codepoints outside the 74."""
     out = []
-    if LATIN.search(s):
-        out.append("Latin letters in a script field")
-    for ch in s:
-        if ch != " " and ord(ch) not in lx.codepoints:
-            out.append(f"U+{ord(ch):04X} is not one of the 74 syllables")
+    words = [w for w in s.split() if not is_name(w)]      # names are exempt (D142)
+    if any(LATIN.search(w) for w in words):
+        out.append("Latin letters in a script field (outside a name token)")
+    for w in words:
+        for ch in w:
+            if ord(ch) not in lx.codepoints:
+                out.append(f"U+{ord(ch):04X} is not one of the 74 syllables")
     return out
 
 
 def parse_token(surface, lx, is_question=False):
     t = Token(surface)
+    if is_name(surface):
+        t.base = {"form": surface, "pos": "name", "gloss": "name", "id": "name"}
+        return t
     if surface in lx.by_form and surface not in lx.bases:
         t.base = lx.by_form[surface]          # a bare function word
         return t
@@ -187,6 +204,13 @@ def parse_sentence(text, lx):
     for i, sf in enumerate(surfaces):
         if sf in lx.markers and (i == 0 or surfaces[i - 1] in lx.markers):
             errors.append(f"{sf!r} has nothing to mark: a marker follows the word it marks")
+    # A name follows the root that says what it is, or another name token (D142):
+    # *file CSV*, *version 2.4.1*, *command npm install*.
+    for i, sf in enumerate(surfaces):
+        if is_name(sf):
+            prev = surfaces[i - 1] if i else None
+            if prev is None or not (is_name(prev) or prev in lx.bases and prev not in lx.markers):
+                errors.append(f"name {sf!r} has no root before it saying what it is")
     tokens = []
     for s in surfaces:
         t = parse_token(s, lx, is_question)

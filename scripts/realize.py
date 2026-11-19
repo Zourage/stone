@@ -38,7 +38,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from stonelib import ROOT, Lexicon, parse_sentence  # noqa: E402
+from stonelib import ROOT, Lexicon, is_name, parse_sentence  # noqa: E402
 
 # Irregular English verbs, and the few roots whose gloss does not inflect as a
 # verb. Everything else is derived from the lexicon: the gloss is the noun and
@@ -192,6 +192,13 @@ class Realizer:
     def np(self, idx, toks, forms, case=None):
         """Render a bare argument phrase: determiners, numerals, compounds, head."""
         heads = [forms[i] for i in idx]
+        if len(heads) > 1 and is_name(heads[-1]):         # root + name: the CSV file (D142)
+            k = next(j for j, f in enumerate(heads) if is_name(f))
+            name = " ".join(heads[k:])
+            head = self.np(idx[:k], toks, forms, case)
+            if head.startswith("the "):
+                return "the " + name + " " + head[4:]
+            return name + " " + head
         if len(heads) > 1 and heads[0] in self.FOCUS:      # only / also / even X (D137)
             return self.FOCUS[heads[0]] + " " + self.np(idx[1:], toks, forms, case)
         if self.OTHER in heads[:-1]:                       # stacked other (D137)
@@ -381,12 +388,14 @@ class Realizer:
         while k < len(idx):
             start = k
             while (k + 1 < len(idx) and forms[idx[k + 1]] not in self.markers
-                   and (forms[idx[k + 1]] in self.HEADS
+                   and (forms[idx[k + 1]] in self.HEADS or is_name(forms[idx[k + 1]])
                         or (forms[idx[k + 1]] == self.OTHER and forms[idx[k]] in (self.WHAT, self.EVERY, self.NONE))
                         or (forms[idx[k]] in self.FOCUS and forms[idx[k + 1]] in self.pron))
                    and forms[idx[k]] not in (self.I, self.YOU)
+                   and not (forms[idx[k]] == self.PERSON and k > start
+                            and forms[idx[k - 1]] == self.WHAT)          # "who" is whole (D45)
                    and not (forms[idx[k]] in self.ROOTS and not have_subject and k == start
-                            and k + 2 < len(idx) and forms[idx[k + 2]] in self.markers)):
+                            and self.marker_after(idx, forms, k + 2))):
                 k += 1
             group, mark = idx[start:k + 1], None
             if k + 1 < len(idx) and forms[idx[k + 1]] in self.markers:
@@ -397,6 +406,12 @@ class Realizer:
             out.append((group, mark))
             k += 1
         return out
+
+    def marker_after(self, idx, forms, j):
+        """Is position j a marker, once any name tokens there are skipped (D142)?"""
+        while j < len(idx) and is_name(forms[idx[j]]):
+            j += 1
+        return j < len(idx) and forms[idx[j]] in self.markers
 
     def insert_modal(self, clause, modal):
         """Put the modal before the inner clause's verb, which is the word after

@@ -1515,3 +1515,21 @@
 {"id": "s1515", "en": "The installer failed.", "st": "새루 피 세쿠 누타카", "features": ["describe", "poss", "past", "direct"], "split": "train"}
 {"id": "s1516", "en": "The archive is almost empty.", "st": "미노 피 왜얘 수 푸소카", "features": ["describe", "poss", "approx", "direct", "stative"], "split": "train"}
 {"id": "s1517", "en": "Who can fix the path?", "st": "야 예 후태 피 요 파 라코디 티캐 추", "features": ["describe", "poss", "question", "q-who", "able", "sub", "obj"], "split": "train"}
+{"id": "s1518", "en": "Open the CSV file.", "st": "에 왜 CSV 파 포하카마", "features": ["name", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1519", "en": "The JSON file is empty.", "st": "왜 JSON 푸소카", "features": ["name", "direct", "stative"], "split": "train"}
+{"id": "s1520", "en": "Did you read the README?", "st": "에 왜 README 파 데타 추", "features": ["name", "obj", "past", "question"], "split": "train"}
+{"id": "s1521", "en": "Who changed main.py?", "st": "야 예 왜 main.py 파 레타 추", "features": ["name", "obj", "past", "question", "q-who"], "split": "train"}
+{"id": "s1522", "en": "The settings are in config.yaml.", "st": "새루 왜 config.yaml 페 후태카", "features": ["name", "loc", "direct", "stative"], "split": "train"}
+{"id": "s1523", "en": "Write the chart to a PNG file.", "st": "에 수포 피 페포 파 왜 PNG 페 워카마", "features": ["name", "describe", "poss", "obj", "loc", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1524", "en": "You need Python.", "st": "에 세쿠 Python 파 테패카", "features": ["name", "obj", "direct"], "split": "train"}
+{"id": "s1525", "en": "I am using version 2.4.1.", "st": "아 파테 2.4.1 파 테파카", "features": ["name", "obj", "direct"], "split": "train"}
+{"id": "s1526", "en": "The fault is on line 142.", "st": "노 피토 142 페 후태카", "features": ["name", "loc", "direct", "stative"], "split": "train"}
+{"id": "s1527", "en": "Run npm install.", "st": "에 다내 npm install 파 다카마", "features": ["name", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1528", "en": "I gave you the SQL command.", "st": "아 다내 SQL 파 에 페 카푸타카", "features": ["name", "obj", "loc", "past", "direct"], "split": "train"}
+{"id": "s1529", "en": "I see error 404.", "st": "아 노 404 파 위카", "features": ["name", "obj", "direct"], "split": "train"}
+{"id": "s1530", "en": "The API is slow today.", "st": "타푸 API 이 카유 페 파수카", "features": ["name", "loc", "direct", "stative"], "split": "train"}
+{"id": "s1531", "en": "Connect to the VPN.", "st": "에 히리 VPN 페 투두카마", "features": ["name", "loc", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1532", "en": "Choose advanced mode in the settings.", "st": "에 카티 advanced mode 파 새루 페 야헤카마", "features": ["name", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1533", "en": "The test fails on Mac, I'm told.", "st": "와 니포 Mac 페 누케", "features": ["name", "loc", "reported"], "split": "train"}
+{"id": "s1534", "en": "Is the XML file new?", "st": "왜 XML 파캐 추", "features": ["name", "question", "stative"], "split": "held"}
+{"id": "s1535", "en": "Did the PDF export fail?", "st": "하레 PDF 누타 추", "features": ["name", "past", "question"], "split": "held"}

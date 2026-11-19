@@ -78,6 +78,16 @@ The possessor is chosen over a bare second root because *root root marker* is G3
 
 The taught compounds of D130 (server, database, folder, …) stay as they are. They are fixed names for recurring kinds; this section is for naming on the fly. Coin a root only when no description reaches the thing. *Freeze*, *spam*, *dock* and *permissions* are the current examples, and none is coined yet.
 
+## Names (D142, a trial)
+A name is not a word of the language, so it is not translated, described or respelled. A file name, format, tool, command, version or error code is carried **in its own spelling**: tokens of printable ASCII, directly after the root that says what it is. Examples: file CSV, program Python, version 2.4.1, command npm install, fault 404, line 142.
+- Consecutive name tokens are one name.
+- The phrase takes markers like any other: `file config.yaml LOC`.
+- The change of script is the boundary, so no quote word is needed.
+- A name never stands without its root, which is D140's head rule: the root tells a reader who does not know the name what kind of thing it is.
+- Quantities still use the numerals. A number is a name only when it identifies (line 142, error 404) rather than counts.
+
+Why: D141 found a name in a third of noun-dense technical lines. Those lines scored ~20% usable, because a description reaches the category (*a data file*) and never the sibling (CSV, not JSON). Senders were already improvising this: one wrote `PDF` inside a stone line, and that pair came back FAITHFUL. **This is a trial; `REVERT_D142.md` says how to undo it.**
+
 ## Number (D48, D62)
 Bare arguments are number-neutral: no plural marking exists or is needed.
 
