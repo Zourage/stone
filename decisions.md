@@ -1067,3 +1067,24 @@ Judge agreement was 48–54 of 70 on the targeted sets. Alignment was checked by
 **Goal 2.** Undecidable splits stay at 99. realize.py exact goes 333 → 336. compose.py declines 17 of the 18 new lines with a reason, and one is silently wrong (515 → 516): the English → stone script does not copy names yet.
 
 **Effect:** to be measured on a sealed set written after this commit, of noun-dense technical chat like D141's untaught set, before against after. Recorded next, whatever it shows. **If it does not help, revert per `REVERT_D142.md`.**
+
+**D143. D142 measured: names help, and the senders also used the mechanism to borrow ordinary English nouns. Most of the gain is borrowing, which D142 did not permit. The trial stays in place pending the maintainer's choice.** 2026-11-19. Pre-registered in `tests/fixtures/d143_preregistration.txt` before the runs returned. Results in `tests/results/roundtrip/{baseline,d142}_names.json` and `d142_test.json`. Serves goal 1 (D125).
+
+Each set was compared item by item between the corpus before D142 (44c7a9a, from a worktree) and after it:
+
+| Set | Usable | FAITHFUL |
+|---|---|---|
+| **Primary, pre-registered:** the 10 of 45 lines with a name | 25.0% → 50.0%, **+25.0 (+5.0 to +45.0)** | +12.5 (−5.0 to +32.5) |
+| All 45 lines | 37.8% → 52.8%, **+15.0 (+5.6 to +24.4)** | +8.9 (+0.6 to +17.8) |
+| General set | 56.6% → 56.0%, −0.6 (−6.6 to +5.4) | +4.1 |
+
+Judge agreement was 64/90 before and 75/90 after. Alignment was checked by eye on all 45 items and is correct.
+
+**What the gain is made of.** In the noun-dense set, 65 of 90 stone outputs carry a Latin token. **55 of those 90 tokens (61%) are plain English words, not names**: firewall, compiler, browser, cache, branch, battery, microphone, firmware, webhook, prototype, login, calibration, grinding. Some displace words the language has: *error* for the fault root, *lab*, *memory*. That borrowing is what lifted the 35 lines with no regex-matched name. In the general set only 5 of 158 outputs carry a Latin token, all of them genuine names. **Senders borrow only where technical nouns are dense, and there they borrow heavily.**
+
+**Part of this is self-inflicted.** Two of D142's 18 teaching lines carried lowercase English as names (*npm install*, *advanced mode*). They taught that any ASCII phrase is a name. The parser cannot tell the difference either: CSV and firewall are both printable ASCII.
+
+**The choice, which is the maintainer's** (it is what rule 3 is for):
+- **A. Names only.** Keep D142 as written. Tighten the teaching with contrast pairs: a name for CSV, a description for battery. Add a corpus check that a name token has an identifier shape (a capital, a digit, or `. _ / - :`), with commands like *npm* or *git* listed explicitly. Expected effect: the pre-registered +25 on name lines largely survives, the borrowing gain does not, and senders may still borrow, because nothing in a round trip enforces the corpus's rule. **Recommended.** The language stays a language.
+- **B. Allow technical loanwords.** Accept what the senders did and say so in rule 3. Technical chat gains the most. In exchange the language becomes stone grammar around English nouns in that domain, and *error* beside the fault root shows it will displace native words too.
+- **C. Revert** per `REVERT_D142.md`.

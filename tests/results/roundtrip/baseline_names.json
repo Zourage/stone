@@ -1,0 +1,703 @@
+{
+ "tag": "baseline",
+ "set": "names",
+ "commit": "44c7a9a",
+ "corpus_lines": 1517,
+ "sentences": [
+  "Can you check the output in the CSV file from the last run?",
+  "The new dataset is in the shared folder on the server.",
+  "I think the script is hanging on the data validation step.",
+  "The API key needs to be added to the config file.",
+  "Let's restart the Docker container for the database.",
+  "The log shows a memory error during the batch process.",
+  "The UI keeps freezing on the settings panel.",
+  "I updated the query in the SQL file you're using.",
+  "The sensor calibration is off in the latest readings.",
+  "We need to update the firmware on the test rig.",
+  "The export failed because the PNG files are too large.",
+  "The password for the staging server expired.",
+  "The compiler is throwing a type error on line 47.",
+  "The Wi-Fi in the lab is down again.",
+  "Can you send me the raw JSON from that API call?",
+  "The build is failing on the continuous integration pipeline.",
+  "The cache needs to be cleared in the web browser.",
+  "I added comments to your Python script.",
+  "The firewall is blocking the data port.",
+  "The simulation crashed due to a null pointer.",
+  "Let's schedule the deployment for after 5 PM.",
+  "The voltage reading on channel three is spiking.",
+  "I pushed a fix to the main branch.",
+  "The dropdown menu isn't populating with the new options.",
+  "The database migration script has a syntax error.",
+  "We're hitting the rate limit on the cloud API.",
+  "The sensor data is saving to the wrong spreadsheet.",
+  "Can you toggle the debug flag in the admin console?",
+  "The prototype overheated and shut down.",
+  "The unit test for the login module is failing.",
+  "The audio feed is full of static.",
+  "The render is stuck at 95% in the 3D software.",
+  "We need a new license key for the CAD tool.",
+  "The sample rate on the microphone is too low.",
+  "The firmware update bricked the device.",
+  "I'll rerun the analysis with the corrected threshold.",
+  "The mobile app is crashing on the splash screen.",
+  "The query is timing out on the production database.",
+  "The battery in the remote sensor is dead.",
+  "Let's add a progress bar to the upload dialog.",
+  "The thermal printer is out of paper.",
+  "The GPS coordinates are drifting by about ten meters.",
+  "I'm getting a 404 error from the webhook.",
+  "The fan on the server rack is making a grinding noise.",
+  "The calibration curve needs to be regenerated."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "에 니로 다 피 하레 파 미네 왜 페 치코디 티캐 추",
+    "back": "Can you check the previous run's output in the data file?"
+   },
+   {
+    "n": 2,
+    "st": "파캐 미네 히리 니포 피 레포 왜 후태 페 후태카",
+    "back": "The new data is in the server's shared folder."
+   },
+   {
+    "n": 3,
+    "st": "세쿠 미네 치 캐다 페 수초키",
+    "back": "The program is blocked at the data-check step, I gather."
+   },
+   {
+    "n": 4,
+    "st": "히리 키토 파 새루 왜 페 후태코디 티페카",
+    "back": "The network value should be in the setup file."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 미네 왜얘 헤 체데 후태 파 메루 다투카마",
+    "back": "We'll rerun the container for the database."
+   },
+   {
+    "n": 6,
+    "st": "미노 다 유 페 왜얘 노 파 페포카",
+    "back": "The log shows a storage fault at runtime."
+   },
+   {
+    "n": 7,
+    "st": "페포 새루 페 수초코디 쿠로카",
+    "back": "The display setup is still blocked."
+   },
+   {
+    "n": 8,
+    "st": "아 에 테파코디 미네 왜 페 차 파 레타카",
+    "back": "I altered the query in the data file that you use."
+   },
+   {
+    "n": 9,
+    "st": "소히 니포 피 새루 파캐 소히 페 얘하루카",
+    "back": "The new measurement in the machine's setup is not correct."
+   },
+   {
+    "n": 10,
+    "st": "아 에 하 와 니포 피 세쿠 파 레코디 티페카",
+    "back": "We should change the test machine's program."
+   },
+   {
+    "n": 11,
+    "st": "페포 왜 태코디 호 하레 누타카",
+    "back": "The output failed because the display file is big."
+   },
+   {
+    "n": 12,
+    "st": "와 히리 니포 피 요 유 무네 초타카",
+    "back": "The server-name test reached the time limit."
+   },
+   {
+    "n": 13,
+    "st": "리 세쿠 피토 패 푸 포네 페 캐토 노 파 페포카",
+    "back": "Line 47 of the built program shows a type fault."
+   },
+   {
+    "n": 14,
+    "st": "와 후태 피 히리 누 파 메루타카",
+    "back": "The test location's network failed again."
+   },
+   {
+    "n": 15,
+    "st": "에 우 히리 다내 피 미네 파 아 페 카푸코디 티캐 추",
+    "back": "Can you pass me the data from that network command?"
+   },
+   {
+    "n": 16,
+    "st": "쿠로 투두 캐도 페 리 누카",
+    "back": "The build fails at the continue-join stage."
+   },
+   {
+    "n": 17,
+    "st": "히리 세쿠 피 왜얘 파 푸소코디 티페카",
+    "back": "The network program's storage should be empty."
+   },
+   {
+    "n": 18,
+    "st": "아 도차 파 에 피 세쿠 페 워타카",
+    "back": "I wrote a note in your program."
+   },
+   {
+    "n": 19,
+    "st": "히리 니포 미네 후태 파 수초카",
+    "back": "The server is blocked at the data location."
+   },
+   {
+    "n": 20,
+    "st": "세쿠 키토 푸소코디 호 누타카",
+    "back": "The program failed because the value is empty."
+   },
+   {
+    "n": 21,
+    "st": "아 에 하 노대 카유 포 캐피 후 소테 파 초해투카마",
+    "back": "We'll decide the plan after 5 in the afternoon."
+   },
+   {
+    "n": 22,
+    "st": "네쿠 니 피 소히 파치 하 무소카",
+    "back": "The measurement of the three parts increases suddenly."
+   },
+   {
+    "n": 23,
+    "st": "아 라 파 태 시새 피 왜얘 페 카푸타카",
+    "back": "I submitted the large fix to the repo."
+   },
+   {
+    "n": 24,
+    "st": "티포 파캐 토 호 푸세루카",
+    "back": "The list of new things is not full."
+   },
+   {
+    "n": 25,
+    "st": "미네 왜얘 투도 세쿠 피 시새 노 얘카",
+    "back": "There is a fault in the code of the program that moves the database."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 히리 타푸 피 유 무네 페 후태카",
+    "back": "We are at the time limit of the network function."
+   },
+   {
+    "n": 27,
+    "st": "소히 니포 피 미네 얘하루카디 미네 왜 페 키포카",
+    "back": "The incorrect measurement data from the machine is stored in the data file."
+   },
+   {
+    "n": 28,
+    "st": "에 다내 후태 페 카티 파 레코디 티캐 추",
+    "back": "Can you change the condition in the shell?"
+   },
+   {
+    "n": 29,
+    "st": "쿠태 니포 테해코디 쿠태타카 채 쿠테타카",
+    "back": "The machine started while hot but then stopped."
+   },
+   {
+    "n": 30,
+    "st": "테파 예 네쿠 피 테 와 누카",
+    "back": "The user's small-part test is failing."
+   },
+   {
+    "n": 31,
+    "st": "미네 노 호 푸세카",
+    "back": "The data is full of faults."
+   },
+   {
+    "n": 32,
+    "st": "세쿠 세쿠 페 수초카",
+    "back": "The program is blocked inside the program."
+   },
+   {
+    "n": 33,
+    "st": "아 에 하 세쿠 헤 파캐 키토 파 테패카",
+    "back": "We need a new value for the program."
+   },
+   {
+    "n": 34,
+    "st": "소네 수포 테카",
+    "back": "The sample count is small."
+   },
+   {
+    "n": 35,
+    "st": "세쿠 레 니포 누 파 대타카",
+    "back": "The program change caused the machine failure."
+   },
+   {
+    "n": 36,
+    "st": "아 라타카디 무네 하 와 파 메루 다투카마",
+    "back": "I'll rerun the test with the limit I fixed."
+   },
+   {
+    "n": 37,
+    "st": "세쿠 쿠태 페포 페 누카",
+    "back": "The program fails at the start display."
+   },
+   {
+    "n": 38,
+    "st": "차 미네 왜얘 페 유 무네 페 후태카",
+    "back": "The database query is at the time limit."
+   },
+   {
+    "n": 39,
+    "st": "패누 소히 니포 푸소카",
+    "back": "The remote measuring machine is empty."
+   },
+   {
+    "n": 40,
+    "st": "아 에 하 페티 페포 페 수네 피 페포 파 후태투카마",
+    "back": "We'll put the input display in the progress display."
+   },
+   {
+    "n": 41,
+    "st": "테해 워 니포 푸소카",
+    "back": "The hot writer is empty."
+   },
+   {
+    "n": 42,
+    "st": "히리 후태 피 수포 수 푸 수미 파수 하 투도카",
+    "back": "About ten units of network location numbers are moving slowly."
+   },
+   {
+    "n": 43,
+    "st": "아 웨루코디 누 케포 파 히리 타푸 호 토소카",
+    "back": "I received the not-found error message from the network function."
+   },
+   {
+    "n": 44,
+    "st": "히리 니포 후태 피 테호 네쿠 노카",
+    "back": "The server location's cooling part is faulty."
+   },
+   {
+    "n": 45,
+    "st": "새루 피 수포 피 페포 파 메루코디 테패카",
+    "back": "The setup chart needs to be repeated."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "에 니로 다 호 미네 왜 페세 페 하레 파 치코디 티캐 추",
+    "back": "Can you check the output inside the data file from the previous run?"
+   },
+   {
+    "n": 2,
+    "st": "파캐 미네 히리 니포 페 레포 왜 후태 페 후태카",
+    "back": "The new data is in the shared folder on the server."
+   },
+   {
+    "n": 3,
+    "st": "아 세쿠 미네 치 캐다 페 수초키",
+    "back": "I am blocked at the program data check step, I gather."
+   },
+   {
+    "n": 4,
+    "st": "히리 키토 새루 왜 페 후태코디 테패카",
+    "back": "The network value needs to be put in the setup file."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 미네 왜얘 헤 체데 후태 파 메루 다투카마",
+    "back": "We will run the container for the database again."
+   },
+   {
+    "n": 6,
+    "st": "미노 메루 다 코디 유 페 노 파 페포카",
+    "back": "The log shows the fault while running again."
+   },
+   {
+    "n": 7,
+    "st": "페포 새루 페 쿠테코디 쿠로카",
+    "back": "The display is still stopped in the setup."
+   },
+   {
+    "n": 8,
+    "st": "아 에 테파코디 왜 페세 페 다내 파 레타카",
+    "back": "I altered the command inside the file you use."
+   },
+   {
+    "n": 9,
+    "st": "소히 새루 쿠테 소히 페 노카",
+    "back": "The measurement setup is faulty in the final measurement."
+   },
+   {
+    "n": 10,
+    "st": "아 에 하 와 니포 페 세쿠 파 레코디 테패카",
+    "back": "We need to alter the program on the test machine."
+   },
+   {
+    "n": 11,
+    "st": "왜 태코디 호 하레 누타카",
+    "back": "Because the file is big, the output failed."
+   },
+   {
+    "n": 12,
+    "st": "와 히리 니포 헤 요 초타카",
+    "back": "The name for the test server is done."
+   },
+   {
+    "n": 13,
+    "st": "세쿠 피토 패푸포네 페 캐토 노 파 페포카",
+    "back": "The program shows a type fault on line 47."
+   },
+   {
+    "n": 14,
+    "st": "히리 와 후태 페 메루 쿠테카",
+    "back": "The network stops repeatedly in the test location."
+   },
+   {
+    "n": 15,
+    "st": "에 우 히리 다내 호 미네 파 아 페 카푸코디 티캐 추",
+    "back": "Can you give me the data from that network command?"
+   },
+   {
+    "n": 16,
+    "st": "리 메루 캐다 페 누카",
+    "back": "The build fails at the repeat step."
+   },
+   {
+    "n": 17,
+    "st": "키포 히리 페포 페 푸소코디 테패카",
+    "back": "The variable needs to be empty in the network display."
+   },
+   {
+    "n": 18,
+    "st": "아 에 피 세쿠 페 도차 파 워타카",
+    "back": "I wrote a note in your program."
+   },
+   {
+    "n": 19,
+    "st": "히리 쿠테 미네 후태 파 수초카",
+    "back": "The network stoppage blocks the data folder."
+   },
+   {
+    "n": 20,
+    "st": "세쿠 푸소 키포 호 파치 쿠테타카",
+    "back": "The program stopped suddenly because of the empty variable."
+   },
+   {
+    "n": 21,
+    "st": "아 에 하 노대 카유 포 캐피 후 세쿠 파 후태투카마",
+    "back": "We will place the program after five hours in the afternoon."
+   },
+   {
+    "n": 22,
+    "st": "소히 네쿠 니 페 파치 무소카",
+    "back": "The measurement suddenly increased in part three."
+   },
+   {
+    "n": 23,
+    "st": "아 라 파 시새 피 왜얘 페 후태타카",
+    "back": "I put the fix in the repo."
+   },
+   {
+    "n": 24,
+    "st": "야헤 티포 파캐 캐토 하 푸세루카",
+    "back": "The selection list is not full with the new type."
+   },
+   {
+    "n": 25,
+    "st": "미네 왜얘 레 세쿠 티패 노 얘카",
+    "back": "There is a text fault in the database change program."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 히리 다내 페 매수 무네 페 후태카",
+    "back": "We are at the frequency limit in the network command."
+   },
+   {
+    "n": 27,
+    "st": "소히 미네 얘하루 티포 왜 페 미노카",
+    "back": "The measurement data is recorded in the wrong list file."
+   },
+   {
+    "n": 28,
+    "st": "에 새루 후태 페 치 키토 파 레코디 티캐 추",
+    "back": "Can you alter the check value in the setup folder?"
+   },
+   {
+    "n": 29,
+    "st": "파캐 니포 테해타카 채 쿠테타카",
+    "back": "The new machine was hot, but it stopped."
+   },
+   {
+    "n": 30,
+    "st": "테파 타푸 헤 수미 와 누카",
+    "back": "The unit test for the user function fails."
+   },
+   {
+    "n": 31,
+    "st": "하레 노 푸세카",
+    "back": "The output is full of faults."
+   },
+   {
+    "n": 32,
+    "st": "페포 세쿠 페 포패푸포 페 수초카",
+    "back": "It is blocked at 95 in the display program."
+   },
+   {
+    "n": 33,
+    "st": "아 에 하 리 세쿠 헤 파캐 키토 파 테패카",
+    "back": "We need a new value for the build program."
+   },
+   {
+    "n": 34,
+    "st": "소히 니포 페 소네 매수 테카",
+    "back": "On the measurement machine, the sample is frequently small."
+   },
+   {
+    "n": 35,
+    "st": "니포 피 세쿠 레 니포 파 누타카",
+    "back": "The machine's program failed the altered machine."
+   },
+   {
+    "n": 36,
+    "st": "아 라 무네 하 소히 파 메루 다투카마",
+    "back": "I will run the measurement again with the fix limit."
+   },
+   {
+    "n": 37,
+    "st": "테 세쿠 쿠태 페포 페 누카",
+    "back": "The small program fails in the startup display."
+   },
+   {
+    "n": 38,
+    "st": "다내 투와 미네 왜얘 페 유 무네 페 쿠테카",
+    "back": "The command stops at the time limit in the whole database."
+   },
+   {
+    "n": 39,
+    "st": "패누 소히 니포 쿠테카",
+    "back": "The remote measurement machine stopped."
+   },
+   {
+    "n": 40,
+    "st": "아 에 하 페티 후태 페 수네 피토 파 후태투카마",
+    "back": "We will put the progress line in the input folder."
+   },
+   {
+    "n": 41,
+    "st": "테해 워 니포 푸소카",
+    "back": "The thermal printer is empty."
+   },
+   {
+    "n": 42,
+    "st": "후태 피 수포 수 푸 수미 호 투도카",
+    "back": "The position moved by about ten units."
+   },
+   {
+    "n": 43,
+    "st": "아 히리 케포 호 웨루 케포 파 토소카",
+    "back": "I received a not found message from the network message."
+   },
+   {
+    "n": 44,
+    "st": "히리 니포 피 후태 피 네쿠 래 하 워야카",
+    "back": "The part of the server's location speaks badly."
+   },
+   {
+    "n": 45,
+    "st": "소히 피 수포 피 페포 파 메루코디 테패카",
+    "back": "The measurement chart needs to be repeated."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "LOSS",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "DEGRADED",
+    "5": "LOSS",
+    "6": "DEGRADED",
+    "7": "DEGRADED",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "LOSS",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "DEGRADED",
+    "14": "LOSS",
+    "15": "LOSS",
+    "16": "BROKEN",
+    "17": "DEGRADED",
+    "18": "FAITHFUL",
+    "19": "BROKEN",
+    "20": "FAITHFUL",
+    "21": "DEGRADED",
+    "22": "DEGRADED",
+    "23": "DEGRADED",
+    "24": "DEGRADED",
+    "25": "FAITHFUL",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "BROKEN",
+    "30": "DEGRADED",
+    "31": "DEGRADED",
+    "32": "BROKEN",
+    "33": "DEGRADED",
+    "34": "DEGRADED",
+    "35": "FAITHFUL",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "LOSS",
+    "39": "DEGRADED",
+    "40": "BROKEN",
+    "41": "LOSS",
+    "42": "DEGRADED",
+    "43": "FAITHFUL",
+    "44": "DEGRADED",
+    "45": "LOSS"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "LOSS",
+    "2": "FAITHFUL",
+    "3": "DEGRADED",
+    "4": "DEGRADED",
+    "5": "FAITHFUL",
+    "6": "DEGRADED",
+    "7": "DEGRADED",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "FAITHFUL",
+    "14": "LOSS",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "BROKEN",
+    "18": "LOSS",
+    "19": "BROKEN",
+    "20": "FAITHFUL",
+    "21": "FAITHFUL",
+    "22": "LOSS",
+    "23": "LOSS",
+    "24": "LOSS",
+    "25": "FAITHFUL",
+    "26": "FAITHFUL",
+    "27": "LOSS",
+    "28": "DEGRADED",
+    "29": "BROKEN",
+    "30": "LOSS",
+    "31": "DEGRADED",
+    "32": "LOSS",
+    "33": "DEGRADED",
+    "34": "BROKEN",
+    "35": "BROKEN",
+    "36": "FAITHFUL",
+    "37": "LOSS",
+    "38": "LOSS",
+    "39": "DEGRADED",
+    "40": "BROKEN",
+    "41": "LOSS",
+    "42": "DEGRADED",
+    "43": "LOSS",
+    "44": "BROKEN",
+    "45": "LOSS"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "DEGRADED",
+    "2": "FAITHFUL",
+    "3": "LOSS",
+    "4": "DEGRADED",
+    "5": "DEGRADED",
+    "6": "BROKEN",
+    "7": "LOSS",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "LOSS",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "DEGRADED",
+    "14": "FAITHFUL",
+    "15": "DEGRADED",
+    "16": "DEGRADED",
+    "17": "DEGRADED",
+    "18": "FAITHFUL",
+    "19": "BROKEN",
+    "20": "LOSS",
+    "21": "FAITHFUL",
+    "22": "DEGRADED",
+    "23": "DEGRADED",
+    "24": "LOSS",
+    "25": "DEGRADED",
+    "26": "BROKEN",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "BROKEN",
+    "30": "DEGRADED",
+    "31": "BROKEN",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "BROKEN",
+    "35": "LOSS",
+    "36": "LOSS",
+    "37": "LOSS",
+    "38": "LOSS",
+    "39": "DEGRADED",
+    "40": "BROKEN",
+    "41": "FAITHFUL",
+    "42": "DEGRADED",
+    "43": "DEGRADED",
+    "44": "DEGRADED",
+    "45": "DEGRADED"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "DEGRADED",
+    "5": "LOSS",
+    "6": "DEGRADED",
+    "7": "FAITHFUL",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "FAITHFUL",
+    "14": "FAITHFUL",
+    "15": "DEGRADED",
+    "16": "DEGRADED",
+    "17": "BROKEN",
+    "18": "FAITHFUL",
+    "19": "BROKEN",
+    "20": "DEGRADED",
+    "21": "DEGRADED",
+    "22": "DEGRADED",
+    "23": "DEGRADED",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "FAITHFUL",
+    "28": "BROKEN",
+    "29": "FAITHFUL",
+    "30": "DEGRADED",
+    "31": "DEGRADED",
+    "32": "FAITHFUL",
+    "33": "BROKEN",
+    "34": "DEGRADED",
+    "35": "DEGRADED",
+    "36": "DEGRADED",
+    "37": "FAITHFUL",
+    "38": "DEGRADED",
+    "39": "DEGRADED",
+    "40": "BROKEN",
+    "41": "FAITHFUL",
+    "42": "DEGRADED",
+    "43": "DEGRADED",
+    "44": "BROKEN",
+    "45": "DEGRADED"
+   }
+  }
+ }
+}

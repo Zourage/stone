@@ -26,7 +26,10 @@ Two, and they stand until the maintainer changes them. **Tag any proposed work t
     - **untaught technical nouns flat at 33%**: teaching 21 descriptions taught those, not the method;
     - **names** (CSV, JSON, API …) are in a third of noun-dense lines and score ~20%: that is **quoting**, decision 3, now the largest measured lever not taken;
     - **domain predicates** (time out, crash, flag, grayed out) are the next uncounted gap.
-- **Names are a TRIAL** (D142): a name keeps its own spelling after the root that says what it is (file CSV, version 2.4.1). CLAUDE.md rule 3 has a matching exception. **Revert procedure: `REVERT_D142.md`.** Effect pending.
+- **Names are a TRIAL** (D142): a name keeps its own spelling after the root that says what it is (file CSV, version 2.4.1). CLAUDE.md rule 3 has a matching exception. **Revert procedure: `REVERT_D142.md`.** Measured in D143:
+  - +25 points usable on lines with a name, +15 on noun-dense technical chat, no change on the general set;
+  - but **61% of the Latin tokens senders wrote were ordinary English nouns** (firewall, battery, error), not names;
+  - the choice is with the maintainer: names only (recommended), allow loanwords, or revert.
 
 **Goal 1 — can an LLM translate this language?** The acceptance test, bar set in D50: cold agents given the train split as `English ||| script` and nothing else, **100% meaning-correct** stone → English and **≥90% exact** English → stone. **The honest claim is *some current frontier models clear the bar*, not *an LLM*** (D126), and **which** three is unstable across draws (D128). Test 9, 120 held on the corpus at 1434: gemini-3.8-flash **96.7%**, glm-5.3 **94.2%**, grok-4.6 **91.7%**, claude-sonnet-4.5 87.5%, gpt-5.6-luna 81.7%. Test 8 on a 60-sentence draw had the same count clearing but not the same three — GLM 85.0 → 94.2, Claude 91.7 → 87.5 — with three corpus changes in between, so neither movement is attributable and the larger draw is the better number. Tests 1–7 were Claude-only and read as more than they were.
 

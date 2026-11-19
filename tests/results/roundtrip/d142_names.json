@@ -1,0 +1,703 @@
+{
+ "tag": "d142",
+ "set": "names",
+ "commit": "588741d",
+ "corpus_lines": 1535,
+ "sentences": [
+  "Can you check the output in the CSV file from the last run?",
+  "The new dataset is in the shared folder on the server.",
+  "I think the script is hanging on the data validation step.",
+  "The API key needs to be added to the config file.",
+  "Let's restart the Docker container for the database.",
+  "The log shows a memory error during the batch process.",
+  "The UI keeps freezing on the settings panel.",
+  "I updated the query in the SQL file you're using.",
+  "The sensor calibration is off in the latest readings.",
+  "We need to update the firmware on the test rig.",
+  "The export failed because the PNG files are too large.",
+  "The password for the staging server expired.",
+  "The compiler is throwing a type error on line 47.",
+  "The Wi-Fi in the lab is down again.",
+  "Can you send me the raw JSON from that API call?",
+  "The build is failing on the continuous integration pipeline.",
+  "The cache needs to be cleared in the web browser.",
+  "I added comments to your Python script.",
+  "The firewall is blocking the data port.",
+  "The simulation crashed due to a null pointer.",
+  "Let's schedule the deployment for after 5 PM.",
+  "The voltage reading on channel three is spiking.",
+  "I pushed a fix to the main branch.",
+  "The dropdown menu isn't populating with the new options.",
+  "The database migration script has a syntax error.",
+  "We're hitting the rate limit on the cloud API.",
+  "The sensor data is saving to the wrong spreadsheet.",
+  "Can you toggle the debug flag in the admin console?",
+  "The prototype overheated and shut down.",
+  "The unit test for the login module is failing.",
+  "The audio feed is full of static.",
+  "The render is stuck at 95% in the 3D software.",
+  "We need a new license key for the CAD tool.",
+  "The sample rate on the microphone is too low.",
+  "The firmware update bricked the device.",
+  "I'll rerun the analysis with the corrected threshold.",
+  "The mobile app is crashing on the splash screen.",
+  "The query is timing out on the production database.",
+  "The battery in the remote sensor is dead.",
+  "Let's add a progress bar to the upload dialog.",
+  "The thermal printer is out of paper.",
+  "The GPS coordinates are drifting by about ten meters.",
+  "I'm getting a 404 error from the webhook.",
+  "The fan on the server rack is making a grinding noise.",
+  "The calibration curve needs to be regenerated."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "에 니로 다 호 왜 CSV 피 하레 파 치코디 티캐 추",
+    "back": "Can you check the CSV file's output from the previous run?"
+   },
+   {
+    "n": 2,
+    "st": "파캐 미네 히리 니포 피 레포코디 왜 후태 페 후태카",
+    "back": "The new data is in the server's shared folder."
+   },
+   {
+    "n": 3,
+    "st": "세쿠 미네 치 캐다 페 수초키",
+    "back": "The program is blocked at the data-check step, I gather."
+   },
+   {
+    "n": 4,
+    "st": "타푸 API 피 키토 파 새루 왜 페 워코디 티페카",
+    "back": "The API value should be written in the config file."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 미네 왜얘 헤 체데 후태 Docker 파 메루투카마",
+    "back": "We will rerun the Docker container for the database."
+   },
+   {
+    "n": 6,
+    "st": "미노 다 batch 유 페 유호 노 파 페포카",
+    "back": "The batch-run log shows a remembered fault."
+   },
+   {
+    "n": 7,
+    "st": "페포 UI 새루 페 수초코디 쿠로카",
+    "back": "The UI is still blocked in the settings."
+   },
+   {
+    "n": 8,
+    "st": "아 에 테파코디 왜 SQL 페 다내 파 레타카",
+    "back": "I altered the command in the SQL file we use."
+   },
+   {
+    "n": 9,
+    "st": "소히 니포 피 새루 파캐 소히 페 얘하루카",
+    "back": "The new measurement in the measuring machine's setup is not valid."
+   },
+   {
+    "n": 10,
+    "st": "아 에 하 와 니포 피 세쿠 파 레코디 테패카",
+    "back": "We need to change the test machine's program."
+   },
+   {
+    "n": 11,
+    "st": "왜 PNG 태코디 호 하레 누타카",
+    "back": "The output failed because the PNG file is big."
+   },
+   {
+    "n": 12,
+    "st": "히리 니포 staging 피 테피 유 초타카",
+    "back": "The staging server's scheduled time has finished."
+   },
+   {
+    "n": 13,
+    "st": "세쿠 compiler 피토 47 페 캐토 노 파 페포카",
+    "back": "The compiler shows a type error on line 47."
+   },
+   {
+    "n": 14,
+    "st": "와 후태 피 히리 Wi-Fi 누 파 메루타카",
+    "back": "The Wi-Fi failure at the test site repeated."
+   },
+   {
+    "n": 15,
+    "st": "에 우 타푸 API 다 호 왜 JSON 파 아 페 카푸코디 티캐 추",
+    "back": "Can you give me the JSON file from that API run?"
+   },
+   {
+    "n": 16,
+    "st": "리 캐도 CI 페 누카",
+    "back": "The CI build stage fails."
+   },
+   {
+    "n": 17,
+    "st": "세쿠 browser 페 왜얘 cache 파 쿠피코디 티페카",
+    "back": "The browser cache should be cleared."
+   },
+   {
+    "n": 18,
+    "st": "아 에 피 세쿠 Python 페 도차 파 워타카",
+    "back": "I wrote a note in your Python program."
+   },
+   {
+    "n": 19,
+    "st": "세쿠 firewall 미네 후태 파 수초카",
+    "back": "The firewall is blocking the data location."
+   },
+   {
+    "n": 20,
+    "st": "세쿠 simulation 푸소 pointer 호 누타카",
+    "back": "The simulation failed due to a null pointer."
+   },
+   {
+    "n": 21,
+    "st": "아 에 하 deployment 파 노대 카유 포 캐피 후 초해투카마",
+    "back": "We will decide the deployment after five hours in the afternoon."
+   },
+   {
+    "n": 22,
+    "st": "channel 니 피 소히 파치 하 무소카",
+    "back": "The channel's three measurements increased suddenly."
+   },
+   {
+    "n": 23,
+    "st": "아 라 파 branch main 페 후태타카",
+    "back": "I put the fix on the main branch."
+   },
+   {
+    "n": 24,
+    "st": "티포 피 파캐 야헤 토 얘루카",
+    "back": "There is no newly chosen item in the list."
+   },
+   {
+    "n": 25,
+    "st": "미네 왜얘 투도 세쿠 피 시새 노 얘카",
+    "back": "There is a fault in the database-migration program's code."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 히리 타푸 API 피 무네 페 후태카",
+    "back": "We are at the network API's limit."
+   },
+   {
+    "n": 27,
+    "st": "소히 니포 피 미네 얘하루코디 왜 페 키포카",
+    "back": "The measuring machine's invalid data is stored in the file."
+   },
+   {
+    "n": 28,
+    "st": "에 다내 후태 페 카티 debug 파 레코디 티캐 추",
+    "back": "Can you change the debug condition in the shell?"
+   },
+   {
+    "n": 29,
+    "st": "prototype 테해코디 쿠태타카 우 쿠테타카",
+    "back": "The prototype began overheating and then stopped."
+   },
+   {
+    "n": 30,
+    "st": "네쿠 login 헤 테 와 누카",
+    "back": "The small login-part test fails."
+   },
+   {
+    "n": 31,
+    "st": "미네 audio 노 페 푸세카",
+    "back": "The audio data is full of faults."
+   },
+   {
+    "n": 32,
+    "st": "사세 render 세쿠 3D 페 수포 95 페 수초카",
+    "back": "The 3D rendering task is blocked at 95 in the program."
+   },
+   {
+    "n": 33,
+    "st": "아 에 하 세쿠 CAD 헤 파캐 키토 파 테패카",
+    "back": "We need a new value for the CAD program."
+   },
+   {
+    "n": 34,
+    "st": "니포 microphone 피 소네 수포 테카",
+    "back": "The microphone's sample count is small."
+   },
+   {
+    "n": 35,
+    "st": "세쿠 firmware 피 레 니포 피 누 파 대타카",
+    "back": "The firmware change caused the machine's failure."
+   },
+   {
+    "n": 36,
+    "st": "아 라타카디 무네 하 코피 파 메루투카마",
+    "back": "I will review it again with the limit I fixed."
+   },
+   {
+    "n": 37,
+    "st": "세쿠 mobile 쿠태 페포 페 누카",
+    "back": "The mobile program fails at the start screen."
+   },
+   {
+    "n": 38,
+    "st": "다내 미네 왜얘 페 유 무네 호 쿠테카",
+    "back": "The database command stopped due to the time limit."
+   },
+   {
+    "n": 39,
+    "st": "패누 소히 니포 피 battery 푸소카",
+    "back": "The remote measuring machine's battery is empty."
+   },
+   {
+    "n": 40,
+    "st": "아 에 하 수네 피토 파 페티 케포 페 투두투카마",
+    "back": "We will join the progress line to the input message."
+   },
+   {
+    "n": 41,
+    "st": "테해 워 니포 푸소카",
+    "back": "The thermal printer is empty."
+   },
+   {
+    "n": 42,
+    "st": "후태 피 수포 GPS 수 푸 수미 투도카",
+    "back": "The GPS coordinates have moved about ten units."
+   },
+   {
+    "n": 43,
+    "st": "아 노 404 파 타푸 webhook 호 토소카",
+    "back": "I received a 404 from the webhook."
+   },
+   {
+    "n": 44,
+    "st": "히리 니포 후태 피 테호 네쿠 노카",
+    "back": "The server room's cooling unit is faulty."
+   },
+   {
+    "n": 45,
+    "st": "새루 피 수포 피 페포 파 메루코디 테패카",
+    "back": "The configuration chart needs to be repeated."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "에 니로 다 피 왜 CSV 피 하레 파 치코디 티캐 추",
+    "back": "Can you check the output of the previous run's CSV file?"
+   },
+   {
+    "n": 2,
+    "st": "파캐 미네 히리 니포 페 레포 왜 후태 페 후태카",
+    "back": "The new data is in the shared folder on the server."
+   },
+   {
+    "n": 3,
+    "st": "아 세쿠 미네 치 캐다 페 수초키",
+    "back": "I am blocked at the program data check step, I gather."
+   },
+   {
+    "n": 4,
+    "st": "타푸 API key 왜 config 페 후태코디 테패카",
+    "back": "The API key needs to be in the config file."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 Docker 체데 후태 파 미네 왜얘 헤 메루 다카마",
+    "back": "Let's run the Docker container again for the database."
+   },
+   {
+    "n": 6,
+    "st": "미노 memory error 파 새 다 유 페 페포카",
+    "back": "The log shows a memory error during every run."
+   },
+   {
+    "n": 7,
+    "st": "UI 새루 페 쿠테 쿠로카",
+    "back": "The UI keeps stopping in the settings."
+   },
+   {
+    "n": 8,
+    "st": "아 왜 SQL 피 다내 파 에 테파카디 레타카",
+    "back": "I altered the SQL file's command that you used."
+   },
+   {
+    "n": 9,
+    "st": "sensor 새루 니로 소히 페 얘루카",
+    "back": "The sensor setup was not in the previous measurement."
+   },
+   {
+    "n": 10,
+    "st": "아 에 하 firmware 파 와 니포 페 레코디 테패카",
+    "back": "We need to change the firmware on the test machine."
+   },
+   {
+    "n": 11,
+    "st": "왜 PNG 태코디 호 하레 누타카",
+    "back": "Because the PNG file was big, the export failed."
+   },
+   {
+    "n": 12,
+    "st": "password 새루 히리 니포 헤 유 초타카",
+    "back": "The password setup for the server timed out."
+   },
+   {
+    "n": 13,
+    "st": "compiler 캐토 노 파 피토 47 페 페포카",
+    "back": "The compiler shows a type error on line 47."
+   },
+   {
+    "n": 14,
+    "st": "Wi-Fi lab 페 누 메루카",
+    "back": "Wi-Fi repeatedly fails in the lab."
+   },
+   {
+    "n": 15,
+    "st": "에 우 타푸 API 다 피 JSON 파 아 페 카푸코디 티캐 추",
+    "back": "Can you pass me the JSON of that API run?"
+   },
+   {
+    "n": 16,
+    "st": "리 메루 새루 페 누카",
+    "back": "Rebuilding fails in the setup."
+   },
+   {
+    "n": 17,
+    "st": "cache 페포 세쿠 페 쿠피코디 테패카",
+    "back": "The cache needs to be removed in the display program."
+   },
+   {
+    "n": 18,
+    "st": "아 도차 파 에 피 세쿠 Python 페 워타카",
+    "back": "I wrote a note in your Python program."
+   },
+   {
+    "n": 19,
+    "st": "firewall 미네 후태 파 수초카",
+    "back": "The firewall blocks the data folder."
+   },
+   {
+    "n": 20,
+    "st": "simulation 소 키토 호 누타카",
+    "back": "The simulation failed because of a missing value."
+   },
+   {
+    "n": 21,
+    "st": "아 에 하 파테 파 노대 카유 포 후 레차카마",
+    "back": "Let's hand over the version after Friday afternoon."
+   },
+   {
+    "n": 22,
+    "st": "소히 channel 니 페 파치 무소카",
+    "back": "The measurement on channel 3 suddenly increased."
+   },
+   {
+    "n": 23,
+    "st": "아 라 파 쿠태 파테 페 후태타카",
+    "back": "I put the fix in the initial version."
+   },
+   {
+    "n": 24,
+    "st": "티포 파캐 네쿠 하 푸세루카",
+    "back": "The list is not full with the new part."
+   },
+   {
+    "n": 25,
+    "st": "미네 왜얘 레 세쿠 피 캐토 노 얘카",
+    "back": "There is a type error in the database migration program."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 히리 타푸 API 피 무네 페 후태카",
+    "back": "We are at the limit of the network API."
+   },
+   {
+    "n": 27,
+    "st": "sensor 미네 얘하루 왜 페 미노카",
+    "back": "The sensor data is recorded in the wrong file."
+   },
+   {
+    "n": 28,
+    "st": "에 debug 키포 파 새루 다내 페 레코디 티캐 추",
+    "back": "Can you change the debug variable in the setup command?"
+   },
+   {
+    "n": 29,
+    "st": "테 니포 테해타카 채 쿠테타카",
+    "back": "The small machine was hot, but it stopped."
+   },
+   {
+    "n": 30,
+    "st": "수미 와 login 네쿠 헤 누카",
+    "back": "The unit test for the login component fails."
+   },
+   {
+    "n": 31,
+    "st": "audio 미네 래 푸세카",
+    "back": "The audio data is bad and full."
+   },
+   {
+    "n": 32,
+    "st": "render 3D 세쿠 페 95 페 수초카",
+    "back": "The render is blocked at 95 in the 3D program."
+   },
+   {
+    "n": 33,
+    "st": "아 에 하 파캐 license 키토 파 CAD 세쿠 헤 테패카",
+    "back": "We need a new license value for the CAD program."
+   },
+   {
+    "n": 34,
+    "st": "소네 매수 microphone 페 마수카",
+    "back": "The sample rate on the microphone is low."
+   },
+   {
+    "n": 35,
+    "st": "firmware 레 니포 파 노타카",
+    "back": "The firmware update made the machine faulty."
+   },
+   {
+    "n": 36,
+    "st": "아 소히 파 라 무네 하 메루 다투카마",
+    "back": "I will rerun the measurement up to the retry limit."
+   },
+   {
+    "n": 37,
+    "st": "세쿠 쿠태 페포 페 누카",
+    "back": "The program fails on the startup screen."
+   },
+   {
+    "n": 38,
+    "st": "다내 리 미네 왜얘 페 유 무네 페 쿠테카",
+    "back": "The build command timed out on the database."
+   },
+   {
+    "n": 39,
+    "st": "패누 sensor 피 유 쿠테카",
+    "back": "The remote sensor's timer stopped."
+   },
+   {
+    "n": 40,
+    "st": "아 에 하 수네 피토 파 왜 카푸 페포 페 후태카마",
+    "back": "Let's put a progress line on the file transfer display."
+   },
+   {
+    "n": 41,
+    "st": "thermal printer 피 paper 얘루카",
+    "back": "The thermal printer has no paper."
+   },
+   {
+    "n": 42,
+    "st": "GPS coordinates 수 푸 meter 호 투도카",
+    "back": "The GPS coordinates moved by about ten meters."
+   },
+   {
+    "n": 43,
+    "st": "아 노 404 파 webhook 호 토소카",
+    "back": "I receive error 404 from the webhook."
+   },
+   {
+    "n": 44,
+    "st": "fan 히리 니포 후태 페 grinding noise 파 파로카",
+    "back": "The fan in the server room is making a grinding noise."
+   },
+   {
+    "n": 45,
+    "st": "calibration curve 파 파캐 리코디 테패카",
+    "back": "The calibration curve needs to be rebuilt."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "FAITHFUL",
+    "2": "LOSS",
+    "3": "LOSS",
+    "4": "DEGRADED",
+    "5": "DEGRADED",
+    "6": "BROKEN",
+    "7": "DEGRADED",
+    "8": "DEGRADED",
+    "9": "BROKEN",
+    "10": "LOSS",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "FAITHFUL",
+    "15": "LOSS",
+    "16": "FAITHFUL",
+    "17": "FAITHFUL",
+    "18": "LOSS",
+    "19": "DEGRADED",
+    "20": "FAITHFUL",
+    "21": "DEGRADED",
+    "22": "DEGRADED",
+    "23": "FAITHFUL",
+    "24": "BROKEN",
+    "25": "FAITHFUL",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "LOSS",
+    "30": "FAITHFUL",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "DEGRADED",
+    "35": "LOSS",
+    "36": "DEGRADED",
+    "37": "FAITHFUL",
+    "38": "DEGRADED",
+    "39": "FAITHFUL",
+    "40": "DEGRADED",
+    "41": "LOSS",
+    "42": "DEGRADED",
+    "43": "FAITHFUL",
+    "44": "DEGRADED",
+    "45": "DEGRADED"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "LOSS",
+    "3": "DEGRADED",
+    "4": "LOSS",
+    "5": "FAITHFUL",
+    "6": "DEGRADED",
+    "7": "LOSS",
+    "8": "LOSS",
+    "9": "BROKEN",
+    "10": "LOSS",
+    "11": "DEGRADED",
+    "12": "DEGRADED",
+    "13": "LOSS",
+    "14": "LOSS",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "DEGRADED",
+    "18": "LOSS",
+    "19": "DEGRADED",
+    "20": "LOSS",
+    "21": "BROKEN",
+    "22": "LOSS",
+    "23": "DEGRADED",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "LOSS",
+    "28": "LOSS",
+    "29": "BROKEN",
+    "30": "FAITHFUL",
+    "31": "BROKEN",
+    "32": "LOSS",
+    "33": "LOSS",
+    "34": "LOSS",
+    "35": "LOSS",
+    "36": "BROKEN",
+    "37": "LOSS",
+    "38": "DEGRADED",
+    "39": "BROKEN",
+    "40": "FAITHFUL",
+    "41": "FAITHFUL",
+    "42": "DEGRADED",
+    "43": "FAITHFUL",
+    "44": "DEGRADED",
+    "45": "FAITHFUL"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "DEGRADED",
+    "5": "LOSS",
+    "6": "BROKEN",
+    "7": "DEGRADED",
+    "8": "FAITHFUL",
+    "9": "BROKEN",
+    "10": "LOSS",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "FAITHFUL",
+    "14": "FAITHFUL",
+    "15": "LOSS",
+    "16": "FAITHFUL",
+    "17": "LOSS",
+    "18": "FAITHFUL",
+    "19": "BROKEN",
+    "20": "LOSS",
+    "21": "BROKEN",
+    "22": "DEGRADED",
+    "23": "FAITHFUL",
+    "24": "BROKEN",
+    "25": "LOSS",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "FAITHFUL",
+    "30": "FAITHFUL",
+    "31": "LOSS",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "BROKEN",
+    "35": "LOSS",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "DEGRADED",
+    "39": "FAITHFUL",
+    "40": "DEGRADED",
+    "41": "FAITHFUL",
+    "42": "DEGRADED",
+    "43": "FAITHFUL",
+    "44": "DEGRADED",
+    "45": "BROKEN"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "LOSS",
+    "3": "FAITHFUL",
+    "4": "FAITHFUL",
+    "5": "DEGRADED",
+    "6": "DEGRADED",
+    "7": "FAITHFUL",
+    "8": "FAITHFUL",
+    "9": "BROKEN",
+    "10": "FAITHFUL",
+    "11": "DEGRADED",
+    "12": "BROKEN",
+    "13": "FAITHFUL",
+    "14": "FAITHFUL",
+    "15": "LOSS",
+    "16": "DEGRADED",
+    "17": "BROKEN",
+    "18": "LOSS",
+    "19": "BROKEN",
+    "20": "DEGRADED",
+    "21": "BROKEN",
+    "22": "LOSS",
+    "23": "DEGRADED",
+    "24": "LOSS",
+    "25": "DEGRADED",
+    "26": "LOSS",
+    "27": "DEGRADED",
+    "28": "DEGRADED",
+    "29": "FAITHFUL",
+    "30": "FAITHFUL",
+    "31": "LOSS",
+    "32": "FAITHFUL",
+    "33": "FAITHFUL",
+    "34": "DEGRADED",
+    "35": "DEGRADED",
+    "36": "BROKEN",
+    "37": "LOSS",
+    "38": "BROKEN",
+    "39": "BROKEN",
+    "40": "FAITHFUL",
+    "41": "FAITHFUL",
+    "42": "LOSS",
+    "43": "FAITHFUL",
+    "44": "DEGRADED",
+    "45": "FAITHFUL"
+   }
+  }
+ }
+}
