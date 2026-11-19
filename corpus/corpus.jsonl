@@ -1533,3 +1533,59 @@
 {"id": "s1533", "en": "The test fails on Mac, I'm told.", "st": "와 니포 Mac 페 누케", "features": ["name", "loc", "reported"], "split": "train"}
 {"id": "s1534", "en": "Is the XML file new?", "st": "왜 XML 파캐 추", "features": ["name", "question", "stative"], "split": "held"}
 {"id": "s1535", "en": "Did the PDF export fail?", "st": "하레 PDF 누타 추", "features": ["name", "past", "question"], "split": "held"}
+{"id": "s1536", "en": "The button does nothing.", "st": "다웨 소 토 파 파로카", "features": ["quantifier", "none", "det", "obj", "direct", "domain-code"], "split": "train"}
+{"id": "s1537", "en": "Where is the button?", "st": "다웨 야 페 후태 추", "features": ["question", "q-where", "loc", "domain-code"], "split": "train"}
+{"id": "s1538", "en": "The button is blocked.", "st": "다웨 수초카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1539", "en": "Use the other button.", "st": "에 웨치 다웨 파 테파카마", "features": ["focus", "det", "obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1540", "en": "The screen is empty.", "st": "대다 푸소카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1541", "en": "Look at the screen.", "st": "에 대다 파 위카마", "features": ["obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1542", "en": "My screen is small.", "st": "아 피 대다 테카", "features": ["poss", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1543", "en": "It is on my screen.", "st": "우 아 피 대다 페 후태카", "features": ["poss", "loc", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1544", "en": "Open another window.", "st": "에 웨치 라두 파 포하카마", "features": ["focus", "det", "obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1545", "en": "The window is closed.", "st": "라두 포해카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1546", "en": "The window is big.", "st": "라두 태카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1547", "en": "Open another tab.", "st": "에 웨치 로얘 파 포하카마", "features": ["focus", "det", "obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1548", "en": "The data is in this tab.", "st": "미네 이 로얘 페 후태카", "features": ["det", "loc", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1549", "en": "That tab is closed.", "st": "우 로얘 포해카", "features": ["det", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1550", "en": "I sent you an email.", "st": "아 리예 파 에 페 카푸타카", "features": ["obj", "loc", "past", "direct", "domain-code"], "split": "train"}
+{"id": "s1551", "en": "Email me the file.", "st": "에 왜 파 아 페 리예카마", "features": ["obj", "loc", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1552", "en": "Did you read my email?", "st": "에 아 피 리예 파 데타 추", "features": ["poss", "obj", "past", "question", "domain-code"], "split": "train"}
+{"id": "s1553", "en": "The email is empty.", "st": "리예 푸소카", "features": ["direct", "stative", "domain-code"], "split": "held"}
+{"id": "s1554", "en": "What is the password?", "st": "세와 야 추", "features": ["question", "q-what", "equative", "domain-code"], "split": "train"}
+{"id": "s1555", "en": "The password is wrong.", "st": "세와 얘하루카", "features": ["neg", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1556", "en": "Change your password.", "st": "에 에 피 세와 파 레카마", "features": ["poss", "obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1557", "en": "I can't log in.", "st": "아 시왜코디 티캐루카", "features": ["able", "sub", "neg", "direct", "domain-code"], "split": "train"}
+{"id": "s1558", "en": "Log in.", "st": "에 시왜카마", "features": ["imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1559", "en": "The login failed.", "st": "시왜 누타카", "features": ["past", "direct", "domain-code"], "split": "train"}
+{"id": "s1560", "en": "Did you log in?", "st": "에 시왜타 추", "features": ["past", "question", "domain-code"], "split": "held"}
+{"id": "s1561", "en": "Open it in the browser.", "st": "에 우 파 얘요 페 포하카마", "features": ["obj", "loc", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1562", "en": "Which browser do you use?", "st": "에 야 얘요 파 테파 추", "features": ["question", "q-which", "det", "obj", "domain-code"], "split": "train"}
+{"id": "s1563", "en": "The browser is slow.", "st": "얘요 파수카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1564", "en": "The numbers are in this spreadsheet.", "st": "수포 이 왜워 페 후태카", "features": ["det", "loc", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1565", "en": "Send me the spreadsheet.", "st": "에 왜워 파 아 페 카푸카마", "features": ["obj", "loc", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1566", "en": "I changed the spreadsheet.", "st": "아 왜워 파 레타카", "features": ["obj", "past", "direct", "domain-code"], "split": "train"}
+{"id": "s1567", "en": "The battery is empty.", "st": "요웨 푸소카", "features": ["direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1568", "en": "My battery is almost empty.", "st": "아 피 요웨 수 푸소카", "features": ["poss", "approx", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1569", "en": "Change the battery.", "st": "에 요웨 파 레카마", "features": ["obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1570", "en": "The compiler failed.", "st": "워위 누타카", "features": ["past", "direct", "domain-code"], "split": "train"}
+{"id": "s1571", "en": "Compile the code.", "st": "에 시새 파 워위카마", "features": ["obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1572", "en": "The compiler is not new.", "st": "워위 파캐루카", "features": ["neg", "direct", "stative", "domain-code"], "split": "train"}
+{"id": "s1573", "en": "The firewall stopped it.", "st": "유추 우 파 쿠테타카", "features": ["obj", "past", "direct", "domain-code"], "split": "train"}
+{"id": "s1574", "en": "Check the firewall.", "st": "에 유추 파 치카마", "features": ["obj", "imperative", "intend", "direct", "domain-code"], "split": "train"}
+{"id": "s1575", "en": "Does the firewall allow it?", "st": "유추 우 파 티피 추", "features": ["obj", "question", "modal", "allow", "domain-code"], "split": "held"}
+{"id": "s1576", "en": "The firewall is new, I'm told.", "st": "유추 파캐케", "features": ["reported", "stative", "domain-code"], "split": "train"}
+{"id": "s1577", "en": "The branch is ready.", "st": "파테 피 피토 코대카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1578", "en": "It is in the queue.", "st": "우 로헤 피 티포 페 후태카", "features": ["describe", "poss", "loc", "direct", "stative"], "split": "train"}
+{"id": "s1579", "en": "Check the permissions.", "st": "에 티피 피 새루 파 치카마", "features": ["describe", "poss", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1580", "en": "Choose it in the dropdown.", "st": "에 우 파 야헤 피 티포 페 야헤카마", "features": ["describe", "poss", "obj", "loc", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1581", "en": "Change the timeout.", "st": "에 유 피 쿠테 파 레카마", "features": ["describe", "poss", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1582", "en": "A dependency is missing.", "st": "테패 피 체데 얘루카", "features": ["describe", "poss", "neg", "hold-exist", "direct"], "split": "train"}
+{"id": "s1583", "en": "The query is slow.", "st": "미네 피 차 파수카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1584", "en": "Remove the cache.", "st": "에 파시 피 왜얘 파 쿠피카마", "features": ["describe", "poss", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1585", "en": "The threshold is big.", "st": "카티 피 무네 태카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1586", "en": "I changed the layout.", "st": "아 페포 피 매노 파 레타카", "features": ["describe", "poss", "obj", "past", "direct"], "split": "train"}
+{"id": "s1587", "en": "The export failed.", "st": "왜 피 하레 누타카", "features": ["describe", "poss", "past", "direct"], "split": "train"}
+{"id": "s1588", "en": "The import is done.", "st": "왜 피 페티 초카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1589", "en": "The service stopped.", "st": "쿠로 피 세쿠 쿠테타카", "features": ["describe", "poss", "past", "direct"], "split": "train"}
+{"id": "s1590", "en": "The query is slow, I'm told.", "st": "미네 피 차 파수케", "features": ["describe", "poss", "reported", "stative"], "split": "train"}
+{"id": "s1591", "en": "The sensor is faulty, I'm told.", "st": "소히 피 니포 노케", "features": ["describe", "poss", "reported", "stative"], "split": "held"}

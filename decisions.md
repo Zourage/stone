@@ -1128,3 +1128,32 @@ The held-out gap is the result that matters: selection found decodability that t
 ### OPEN
 - **Adopt the 17 descriptions at ≥1/3**, the 4 bare-compound ones reworded and re-tested, as taught lines. Then measure on a fresh sealed set.
 - **The 24 that no description reaches are where D143's A/B choice actually bites**: coin roots for the frequent ones (button, screen, window, email, password, login, browser …), as D130 did successfully for program and code; or allow technical loanwords (D143 B). This is the maintainer's call. The D143 choice is still open.
+
+**D145. Twelve opaque nouns coined as roots; fourteen descriptions adopted by measured decodability.** 2026-11-19. Serves goal 1 (D125). The maintainer chose this: "Do 1 and coin the dozen roots".
+
+**The roots.** Button, screen, window, tab, email, password, login, browser, spreadsheet, battery, compiler and firewall. D144 found no description that reaches any of them (all 0%), and they are where the senders borrowed English in D143.
+- **Forms are scattered**, picked greedily for the fewest one-syllable-off neighbours (1–2 each).
+- **Excluded from both positions:** the interrogative syllable, because the form for "which file" nearly won; the verb-ending pieces and the pronouns.
+- **Excluded from first position:** the error carve, the function words, and the family prefixes (modal, time unit, focus, test).
+- **No family for the four screen words.** They divide one field, but the only free family-anchor syllable is the test root's, the corpus's most frequent, and the screen words should not read as test-something.
+- **Verbal senses:** email, login and compiler carry one each.
+
+**The descriptions.** The 14 of D144's 17 that decoded at ≥1/3:
+- screen and monitor are now covered by the screen root;
+- queue and cache were reworded from bare two-root shapes to possessor forms the pilot had already scored (67% and 33%);
+- shortcut was dropped, because only its bare form decoded.
+
+**Teaching.** 56 lines, s1536–s1591, four held. Three lines were corrected before commit: two were ambiguous in the language itself ("that one" before a root also reads as the determiner), and one made the undecidable shape.
+
+**Goal 2.**
+
+| Measure | Before | After |
+|---|---|---|
+| realize.py exact | 336 | **362** |
+| Undecidable splits | 99 | 100 (*Where is the button?*, the corpus's own pattern) |
+| compose.py exact | 551 | 568 |
+| compose.py silently wrong | 516 | 526 |
+
+The realizer gain includes a fix for one-syllable verbs: *stopped*, *logged in*, not *stoped*. The 10 new silent errors are new lines the English → stone script mis-composes.
+
+**Effect:** to be measured on a sealed set written after this commit, naming these 26 concepts, before against after, plus the general set. Recorded next, whatever it shows.

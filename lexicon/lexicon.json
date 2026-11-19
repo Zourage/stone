@@ -1878,5 +1878,101 @@
   "sense_notes": "A place where files or data are kept for later: a disk, a drive, a repository, an archive, a backup location. Built on the file and hold syllables: where files are held. The head for describing any of these (D140): the network's storage is a network drive, the code's storage a repository, the records' storage an archive, the machine's storage a disk. Not the variable root, which is a named slot inside a program holding one value; not the place root, which is any location at all. Database is the taught compound data plus storage (D130, re-headed in D140).",
   "id": "w0235",
   "added": "2026-11-19"
+ },
+ {
+  "form": "다웨",
+  "pos": "root",
+  "gloss": "button",
+  "sense_notes": "A control on a screen that you press or click to make something happen (D145). Not the part root, which is any piece of a thing, and not the command root, which is the instruction a button may send.",
+  "id": "w0236",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "대다",
+  "pos": "root",
+  "gloss": "screen",
+  "sense_notes": "The display surface of a computer or phone; also a separate monitor (D145). Not the show root, which is the act of displaying; a screen is the thing shown on.",
+  "id": "w0237",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "라두",
+  "pos": "root",
+  "gloss": "window",
+  "sense_notes": "A framed area on a screen showing one program or document (D145). Not the screen root (the whole display) and not the tab root (a page inside a window).",
+  "id": "w0238",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "로얘",
+  "pos": "root",
+  "gloss": "tab",
+  "sense_notes": "One of several pages inside a window, switched to by its label (D145). Not the window root, which holds the tabs.",
+  "id": "w0239",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "리예",
+  "pos": "root",
+  "gloss": "email",
+  "sense_notes": "A message sent to someone's address over the network (D145). Verbal: to email, to send by email. Not the message root, which is any message in any medium; an email is one kind.",
+  "id": "w0240",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "세와",
+  "pos": "root",
+  "gloss": "password",
+  "sense_notes": "A secret word or phrase typed to prove who you are (D145). Not the word root.",
+  "id": "w0241",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "시왜",
+  "pos": "root",
+  "gloss": "login",
+  "sense_notes": "Signing in to an account; the sign-in itself (D145). Verbal: to log in, to sign in.",
+  "id": "w0242",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "얘요",
+  "pos": "root",
+  "gloss": "browser",
+  "sense_notes": "The program used to view web pages (D145). A kind of program, named because it is the one nearly every non-programmer uses daily.",
+  "id": "w0243",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "왜워",
+  "pos": "root",
+  "gloss": "spreadsheet",
+  "sense_notes": "A grid of cells holding numbers and text, with formulas (D145). Not the list root, and not the file root: a spreadsheet is usually stored in a file, but is the grid, not the file.",
+  "id": "w0244",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "요웨",
+  "pos": "root",
+  "gloss": "battery",
+  "sense_notes": "The part of a device that stores power to run it (D145).",
+  "id": "w0245",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "워위",
+  "pos": "root",
+  "gloss": "compiler",
+  "sense_notes": "A program that turns code into a program that can run (D145). Verbal: to compile.",
+  "id": "w0246",
+  "added": "2026-11-19"
+ },
+ {
+  "form": "유추",
+  "pos": "root",
+  "gloss": "firewall",
+  "sense_notes": "A security system that blocks unwanted network traffic (D145). Not the blocked root, which is a state of anything.",
+  "id": "w0247",
+  "added": "2026-11-19"
  }
 ]

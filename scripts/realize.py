@@ -138,6 +138,8 @@ class English:
             p = first + "d"
         elif re.search(r"[^aeiou]y$", first):
             p = first[:-1] + "ied"
+        elif re.fullmatch(r"[^aeiou]*[aeiou][bdglmnprt]", first):
+            p = first + first[-1] + "ed"      # one-syllable CVC doubles: stop, log, plan
         else:
             p = first + "ed"
         return (p + " " + rest).strip()

@@ -22,5 +22,31 @@ The language could describe work and could not name the things work is done on: 
 ## Storage (D140)
 **Storage** is coined as a root on the file and hold syllables: where files are held, with no one-syllable-off neighbour in the lexicon. It splits the noun sense *a store* out of the variable root. The round trip found that sense pulling every drive, repository and archive into *variable* (5 of 5, D139). The variable root keeps the slot sense and the verb *store a value*. The database compound is now data plus storage.
 
+## Twelve opaque nouns (D145)
+**Coined as roots:** button, screen (also a monitor), window, tab, email (also the verb), password, login (also the verb), browser, spreadsheet, battery, compiler (also the verb to compile), firewall. They are scattered for the fewest one-syllable-off neighbours, as D130 did for the software nouns. The four screen words divide one field, but the only root syllable still free to anchor a family is the test root's, the most frequent in the corpus.
+
+These are the concepts D144's selection could not reach by description: every candidate decoded at 0%. They are also the ones the senders borrowed in English in D143.
+
+**Adopted as descriptions, by measured decodability (D144):**
+
+| Concept | Description |
+|---|---|
+| branch | the version's line |
+| queue | the wait's list |
+| permissions | the allow's setup |
+| dropdown | the choice's list |
+| timeout | the time's stop |
+| dependency | the need's package |
+| query | the data's request |
+| cache | the fast one's storage |
+| threshold | the condition's limit |
+| layout | the display's pattern |
+| export | the file's output |
+| import | the file's input |
+| service | the continuing one's program |
+| sensor | the measuring one's machine |
+
+**Shortcut** was dropped: only its bare two-root form decoded. The remaining 15 pilot concepts (microphone, firmware, dashboard, spam, upload, sidebar, …) are neither coined nor described.
+
 ## Not coined on purpose
 Constructions cover these, so no root exists and none should be added: always and never (the every and none determiners before the time root), always-check `spec/grammar.md` before coining anything that looks grammatical. Also soon, already, still, first, last, duration, deadline, fast-as-little-time, both, together, nothing, nobody, everything, everyone, and the ordinals. **Six more from D130, all taught compounds rather than roots**: server (network + machine), shell or terminal (command + place), database (data + store), folder or directory (file + place), user (use + person), container (package + place). **And four that are already covered and must not be re-coined**: a *log* is the record root, whose notes already say 'a log entry'; a *config* is the set-up root, whose notes already say 'the configuration'; *install* is also the set-up root; a *function* is the function root, which is a named piece inside a program. And, since D123: **fractions** (numeral + possessor + the part root), **weekdays** (the week-day compound plus an ordinal, Monday being day one) and **parts of day** (early-day is morning, late-day afternoon). Those three cover twelve concepts between them and cost no roots at all, which is the pattern to reach for first — the dictionary probe found this language solves by construction and almost never by compound (D122). And, since D137, **instead**: *in X's place*, the possessor and the place root with location case. And since D140, **path** (the place's name), **repository**, **archive**, **drive** and **disk** (the code's, the records', the network's and the machine's storage), **chart**, **seed**, **checksum** and **installer**: descriptions by the possessor, per the grammar's describing section.
