@@ -1,0 +1,48 @@
+# SEALED targeted set for scripts/roundtrip_test.py (D146): Every message must mention at least one of these, spread about evenly: a button, a screen or monitor, a window, a tab, an email, a password, logging i
+# Written 2026-11-19 by deepseek/deepseek-v3.2 after D145 was committed, from a domain
+# description and the requirement above only. DO NOT READ while changing the language.
+Can you check if the button works now? I clicked it and nothing happened.
+The screen is blank after logging in, can you look?
+I need permissions for the new folder, can you grant them?
+The export failed again, it says file locked.
+Browser keeps crashing when I open that tab.
+Compiler warning is back, but build still passes.
+Queue is stuck, no jobs moving for ten minutes.
+Email didn't arrive, maybe firewall blocked it.
+Password reset link expired, can you send another?
+Window won't resize, keeps snapping back.
+Dropdown menu is empty, no options loading.
+Spreadsheet formulas broke after the import.
+Battery is draining fast, laptop shuts down by noon.
+Dependency update broke the service, rolling back now.
+Query returns nothing, but data exists in cache.
+Threshold alert fired twice, seems too low.
+Layout shifted on the monitor, everything overlaps.
+Sensor stopped reporting, maybe connection dropped.
+Branch needs review before I can merge it.
+Timeout happens when I click save, can you check logs?
+Logging in works in browser, but not in app.
+Cache cleared, but page still shows old values.
+Permissions changed, now user can't open file.
+Export is huge, takes forever to download.
+Tab crashed, lost the draft I was typing.
+Email thread has the correct password, I think.
+Compiler is slow today, maybe memory issue.
+Queue backlog cleared, jobs are running again.
+Screen flickers when monitor wakes from sleep.
+Button label says cancel, but it saves.
+Dropdown menu covers the submit button.
+Spreadsheet needs a new column for results.
+Battery warning popped up, can't find charger.
+Service is down, firewall rule changed yesterday.
+Query takes too long, can we add an index?
+Threshold needs raising, too many false alerts.
+Layout looks wrong on smaller monitor.
+Sensor data is noisy, needs filtering.
+Branch is behind main, should I rebase?
+Timeout settings are too short for big imports.
+Logging in loops back to password screen.
+Cache is stale, refresh doesn't help.
+Permissions are missing for the shared drive.
+Export format changed, spreadsheet won't open it.
+Tab count is too high, browser windows get sluggish.

@@ -1,0 +1,1 @@
+PRE-REGISTERED 2026-11-19T07:45:24Z: D146 primary = paired usable on all lines of roundtrip_d145.txt, corpus c781f67 (before D145) vs e4a5592; secondary = paired FAITHFUL on the same; tertiary = general set d142_test -> d145_test.
