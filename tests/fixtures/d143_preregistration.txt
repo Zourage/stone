@@ -1,0 +1,1 @@
+PRE-REGISTERED 2026-11-19T04:46:27Z: D143 primary = paired usable on the lines of roundtrip_names.txt matching \b[A-Z]{2,}\b|\w+\.\w{2,4}\b|\bv?\d+\.\d+ (10 of 45); secondary = all 45; tertiary = general set d140_test -> d142_test.
