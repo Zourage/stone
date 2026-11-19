@@ -1,0 +1,48 @@
+# SEALED targeted set for scripts/roundtrip_test.py (D143): Every message must name at least one concrete technical thing: a part of a screen or app, a tool, a file format, a kind of storage or connection, a me
+# Written 2026-11-19 by deepseek/deepseek-v3.2 after D142 was committed, from a domain
+# description and the requirement above only. DO NOT READ while changing the language.
+Can you check the output in the CSV file from the last run?
+The new dataset is in the shared folder on the server.
+I think the script is hanging on the data validation step.
+The API key needs to be added to the config file.
+Let's restart the Docker container for the database.
+The log shows a memory error during the batch process.
+The UI keeps freezing on the settings panel.
+I updated the query in the SQL file you're using.
+The sensor calibration is off in the latest readings.
+We need to update the firmware on the test rig.
+The export failed because the PNG files are too large.
+The password for the staging server expired.
+The compiler is throwing a type error on line 47.
+The Wi-Fi in the lab is down again.
+Can you send me the raw JSON from that API call?
+The build is failing on the continuous integration pipeline.
+The cache needs to be cleared in the web browser.
+I added comments to your Python script.
+The firewall is blocking the data port.
+The simulation crashed due to a null pointer.
+Let's schedule the deployment for after 5 PM.
+The voltage reading on channel three is spiking.
+I pushed a fix to the main branch.
+The dropdown menu isn't populating with the new options.
+The database migration script has a syntax error.
+We're hitting the rate limit on the cloud API.
+The sensor data is saving to the wrong spreadsheet.
+Can you toggle the debug flag in the admin console?
+The prototype overheated and shut down.
+The unit test for the login module is failing.
+The audio feed is full of static.
+The render is stuck at 95% in the 3D software.
+We need a new license key for the CAD tool.
+The sample rate on the microphone is too low.
+The firmware update bricked the device.
+I'll rerun the analysis with the corrected threshold.
+The mobile app is crashing on the splash screen.
+The query is timing out on the production database.
+The battery in the remote sensor is dead.
+Let's add a progress bar to the upload dialog.
+The thermal printer is out of paper.
+The GPS coordinates are drifting by about ten meters.
+I'm getting a 404 error from the webhook.
+The fan on the server rack is making a grinding noise.
+The calibration curve needs to be regenerated.
