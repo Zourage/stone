@@ -1,0 +1,6554 @@
+{
+ "concepts": [
+  {
+   "en": "tab",
+   "def": "a page inside an app window that you switch to by clicking its label"
+  },
+  {
+   "en": "button",
+   "def": "a thing on the screen you click to make something happen"
+  },
+  {
+   "en": "window",
+   "def": "a framed area on the screen showing one program"
+  },
+  {
+   "en": "screen",
+   "def": "the display surface of a computer or phone"
+  },
+  {
+   "en": "layout",
+   "def": "how things are arranged on a page or screen"
+  },
+  {
+   "en": "shortcut",
+   "def": "a quick way to open something or run a command, such as a key combination"
+  },
+  {
+   "en": "docking station",
+   "def": "a device a laptop plugs into to connect screens and other devices"
+  },
+  {
+   "en": "monitor",
+   "def": "a separate display screen connected to a computer"
+  },
+  {
+   "en": "export",
+   "def": "saving data out of a program into a file of another format"
+  },
+  {
+   "en": "import",
+   "def": "bringing data into a program from a file"
+  },
+  {
+   "en": "undo",
+   "def": "reversing the last change you made"
+  },
+  {
+   "en": "freeze",
+   "def": "a program stopping responding to anything"
+  },
+  {
+   "en": "reload",
+   "def": "loading a page or data again to see the latest version"
+  },
+  {
+   "en": "permissions",
+   "def": "the rights that say who may read, change or run something"
+  },
+  {
+   "en": "batch",
+   "def": "a group of items processed together in one go"
+  },
+  {
+   "en": "spam",
+   "def": "unwanted junk email"
+  },
+  {
+   "en": "email",
+   "def": "a message sent electronically to someone's address"
+  },
+  {
+   "en": "workaround",
+   "def": "a temporary way around a problem that is not a real fix"
+  },
+  {
+   "en": "service",
+   "def": "a program that runs in the background and answers other programs"
+  },
+  {
+   "en": "dropdown menu",
+   "def": "a list of choices that opens when you click it"
+  },
+  {
+   "en": "timeout",
+   "def": "giving up on something after waiting too long for it"
+  },
+  {
+   "en": "cache",
+   "def": "a stored copy of data kept nearby so things load faster"
+  },
+  {
+   "en": "firewall",
+   "def": "a security system that blocks unwanted network traffic"
+  },
+  {
+   "en": "compiler",
+   "def": "a program that turns source code into a program that can run"
+  },
+  {
+   "en": "browser",
+   "def": "the program used to view web pages"
+  },
+  {
+   "en": "branch",
+   "def": "a separate line of development of the code in version control"
+  },
+  {
+   "en": "battery",
+   "def": "the part of a device that stores power to run it"
+  },
+  {
+   "en": "microphone",
+   "def": "a device that picks up sound"
+  },
+  {
+   "en": "firmware",
+   "def": "software built into a device's hardware"
+  },
+  {
+   "en": "password",
+   "def": "a secret word you type to prove who you are"
+  },
+  {
+   "en": "login",
+   "def": "signing in to an account"
+  },
+  {
+   "en": "dependency",
+   "def": "a package that a program needs in order to run"
+  },
+  {
+   "en": "queue",
+   "def": "a line of items waiting to be processed in order"
+  },
+  {
+   "en": "spreadsheet",
+   "def": "a grid of cells holding numbers and text, with formulas"
+  },
+  {
+   "en": "dashboard",
+   "def": "a screen that shows the key numbers at a glance"
+  },
+  {
+   "en": "query",
+   "def": "a request for data from a database"
+  },
+  {
+   "en": "deployment",
+   "def": "putting a new version of software into real use"
+  },
+  {
+   "en": "sensor",
+   "def": "a device that measures something, such as temperature"
+  },
+  {
+   "en": "threshold",
+   "def": "the value at which something is triggered"
+  },
+  {
+   "en": "upload",
+   "def": "sending a file from your machine to a server"
+  },
+  {
+   "en": "sidebar",
+   "def": "a narrow panel along the side of a screen"
+  }
+ ],
+ "candidates": [
+  {
+   "concept": 0,
+   "st": "페포 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the display component.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the show’s part.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the display's part.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 0,
+   "st": "야헤 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the part of the choice.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the selection part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's choice.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 0,
+   "st": "세쿠 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the part of the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 1,
+   "st": "다내 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the command's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the command's part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the parts of the command.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the command's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the command's part.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 1,
+   "st": "야헤 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the chosen part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the chosen part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the choice's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 1,
+   "st": "쿠태 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the starting part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the beginning's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 2,
+   "st": "세쿠 피 페포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's display.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the display of the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's display.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the program display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the program display.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 2,
+   "st": "왜 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the file view.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file’s display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 2,
+   "st": "다내 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the command display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output of the command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "니포 피 페포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the machine's display.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the machine's display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output of the machine.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the machine's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the machine's display.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 3,
+   "st": "위 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the view display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output's view.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "새메 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the observation display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the observation's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 4,
+   "st": "페포 피 매노",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display's pattern.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the display's pattern",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the display's pattern.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's pattern.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the display's pattern.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 4,
+   "st": "페포 피 새루",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the display setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup’s display.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the display's setup.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 4,
+   "st": "후태 피 매노",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the place's pattern.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the location pattern.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the pattern’s location.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "쿠태 피 다내",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the starting command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the beginning's command.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the start command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the start command.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 5,
+   "st": "파시 피 다내",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast one's command.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the fast command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the command's speed.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "다 피 다내",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the run command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the command of the run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "투두 피 니포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the connection's machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the joining machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the joining's machine.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the connection's machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the connection's machine.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 6,
+   "st": "히리 피 니포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the network machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's network.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "투두 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the joining part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's joining.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 7,
+   "st": "페포 피 니포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the monitor.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output of the machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 7,
+   "st": "위 피 니포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the viewing machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the viewing machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the view of the machine.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the color machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the color machine.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 7,
+   "st": "새메 피 니포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the observation machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's observation.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 8,
+   "st": "미네 피 하레",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the data's output.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the data output.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data's output.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the data's output.",
+     "yes": true
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the data's output.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 8,
+   "st": "왜 피 하레",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the file's output.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the output of the file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's output.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the file's output.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the file's output.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 8,
+   "st": "세쿠 피 하레",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the output of the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's output.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 9,
+   "st": "미네 피 페티",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the data's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the data's input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the input's data.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the data's input.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the data's input.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 9,
+   "st": "왜 피 페티",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the file's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the file's input",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's input.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the file's input.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the file's input.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 9,
+   "st": "세쿠 피 페티",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the program's input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the input of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 피 라",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the previous fix.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the previous one's fix.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the previous fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the previous fix.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 10,
+   "st": "레 피 라",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the patch.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the change’s fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 피 다내",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the previous command",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the previous command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 11,
+   "st": "세쿠 피 쿠테",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's stop.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program's halt.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the stopping of the program.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the program's stop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the program's stop.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 11,
+   "st": "세쿠 피 쿠라",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's pause.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program pause.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the pause's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 11,
+   "st": "세쿠 피 누",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the program's failure.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program’s failures.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "페포 피 메루",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the display's loop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the repeat's display.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's loop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the display's loop.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 12,
+   "st": "미네 피 메루",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the data loop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data’s repetition.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "세쿠 피 메루",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the program's loop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the repetition of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 13,
+   "st": "티피 피 카티",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the permission condition.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the condition's permission.",
+     "yes": false
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 13,
+   "st": "테파 피 카티",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the usage condition.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the condition's user.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the usage condition.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the usage condition.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 13,
+   "st": "테파 피 티포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the usage list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the user's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "사세 피 티포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the task list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's task.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the task's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the task's list.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 14,
+   "st": "다 피 체데",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the run package.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the run's package.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "사세 피 체데",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the task's package",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the task's package.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "래 피 케포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the bad message.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the bad's message",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the bad message.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the bad message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the bad message.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 15,
+   "st": "소루 피 케포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the chance message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the message’s chance.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "두차 피 케포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the warning message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the danger’s message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 16,
+   "st": "히리 피 케포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's message.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network’s message.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the network message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the network message.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 16,
+   "st": "예 피 케포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the person's message.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the message of the person.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the person's message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 16,
+   "st": "왜얘 피 케포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the storage message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the storage’s message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "노 피 라",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the bugfix.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fault’s fix.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the fault's fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the fault's fix.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 17,
+   "st": "누 피 소테",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the failure's plan.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the plan's failure.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "노 피 소테",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the fault plan.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the plan's fault.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "호하 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the help's program",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's help.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the help's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the help's program.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 18,
+   "st": "채차 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the response program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program's response.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the answer of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "히리 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network's program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's network.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 19,
+   "st": "야헤 피 티포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the choice list.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the selection list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the choice list.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the choice list.",
+     "yes": true
+    }
+   },
+   "rate": 0.6666666666666666,
+   "held_out": {
+    "en": "Check the choice list.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 19,
+   "st": "포하 피 티포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of openings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the open list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's opening.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the opening's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the opening's list.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 19,
+   "st": "피라 피 티포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the below list",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check below the list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 20,
+   "st": "유 피 쿠테",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the timeout.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the timeout.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the stopping time.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the time stop.",
+     "yes": true
+    }
+   },
+   "rate": 0.6666666666666666,
+   "held_out": {
+    "en": "Check the time stop.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 20,
+   "st": "로헤 피 쿠테",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the wait's stop.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the wait's stop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the stop's waiting.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the waiting stop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the waiting stop.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 20,
+   "st": "로헤 피 무네",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the wait limit.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the timeout.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the waiting limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.6666666666666666
+  },
+  {
+   "concept": 21,
+   "st": "코푸 피 왜얘",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the copy storage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the disk’s copy.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the backup storage.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the backup storage.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 21,
+   "st": "파시 피 왜얘",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast storage.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the fast storage",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fast disk.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 21,
+   "st": "미네 피 코푸",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the copy of the data.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the data copy.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the copy's data.",
+     "yes": true
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 22,
+   "st": "히리 피 수초",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the network blockage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the blockage of the network.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the network's block.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the network's block.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 22,
+   "st": "두차 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the danger's program",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's danger.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 22,
+   "st": "히리 피 무네",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's limit.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network limit.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network’s limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 23,
+   "st": "시새 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the code program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the coded program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the code's program.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the code's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the code's program.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 23,
+   "st": "리 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the build program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the build program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the construction of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 23,
+   "st": "레 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the updater.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the change’s program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "히리 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the network's program",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network's program.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the network's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the network's program.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 24,
+   "st": "위 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the view's program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the viewer's program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's appearance.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "페포 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display's program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the display's program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 25,
+   "st": "시새 피 피토",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the line of code.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the source line.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the code’s line.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the code line.",
+     "yes": true
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the code line.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 25,
+   "st": "파테 피 피토",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the version's line.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the version's line",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the version's line.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the version line.",
+     "yes": true
+    }
+   },
+   "rate": 1.0,
+   "held_out": {
+    "en": "Check the version line.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 25,
+   "st": "시새 피 파테",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the code's version.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the version's code.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 26,
+   "st": "다 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the run's part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the run’s parts.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the run part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the run part.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 26,
+   "st": "니포 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the machine's part",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 26,
+   "st": "사해 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the part of the effort.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the effort part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's effort.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "워야 피 페티",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the message's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the message's input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the input's message.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the statement's input.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the statement's input.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 27,
+   "st": "워야 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the saying's part",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the spoken part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "워야 피 니포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the message machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 28,
+   "st": "니포 피 시새",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the machine's code.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the machine's code.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s code.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the machine's code.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the machine's code.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 28,
+   "st": "니포 피 세쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the machine's program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the machine's program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 28,
+   "st": "니포 피 새루",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the setup of the machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "치 피 테피",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the check word.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the word’s checksum.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the check's word.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the check's word.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 29,
+   "st": "포하 피 테피",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the opening word.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the word's opening.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "예 피 테피",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the person's word.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the person's word",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the person's word.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "예 피 쿠태",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the person's start",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the person's beginning.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the person's start.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the person's start.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 30,
+   "st": "포하 피 캐다",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the opening step.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the opening of the step.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "치 피 캐다",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the verification step.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the step's checksum.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 31,
+   "st": "테패 피 체데",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the requirement package.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the required package.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the package's need.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the needed package.",
+     "yes": true
+    }
+   },
+   "rate": 0.6666666666666666,
+   "held_out": {
+    "en": "Check the needed package.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 31,
+   "st": "세쿠 피 체데",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's package.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the package of the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's package.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the program's package.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the program's package.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 31,
+   "st": "새루 피 체데",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the setup package.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup's package.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 32,
+   "st": "로헤 피 티포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the wait's list.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the waiting list.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list’s waiting.",
+     "yes": false
+    }
+   },
+   "rate": 0.6666666666666666
+  },
+  {
+   "concept": 32,
+   "st": "로헤 피 피토",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the wait's line.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the wait line.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the line’s waiting.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 32,
+   "st": "미예 피 티포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the turn's list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's turn.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the turn's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the turn's list.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 33,
+   "st": "수포 피 왜",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the number's file.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the number's file",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's number.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the number's file.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the number's file.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 33,
+   "st": "키토 피 왜",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the value file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value of the file.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "미네 피 왜",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the data file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's data.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "수포 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the chart.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the number’s display.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the chart.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the chart.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 34,
+   "st": "도해 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the report display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the report’s output.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "수네 피 페포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the progress display.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the progress bar.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the progress display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 35,
+   "st": "미네 피 다내",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the data's command.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the data's command",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data's command.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the data command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the data command.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 35,
+   "st": "미네 피 체",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the data's request",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data's package.",
+     "yes": false
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 35,
+   "st": "왜얘 피 다내",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the storage command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the storage of the command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 36,
+   "st": "파테 피 새루",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the version's settings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the version setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the version’s setup.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the version's setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the version's setup.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 36,
+   "st": "세쿠 피 레차",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the program handover.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's handover.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 36,
+   "st": "테파 피 쿠태",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the usage start.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the user's beginning.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 37,
+   "st": "소히 피 니포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the measurement's machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the measuring device.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s measurement.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the measurement's machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the measurement's machine.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 37,
+   "st": "새메 피 니포",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the observation's machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the observation machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s observation.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the observation's machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the observation's machine.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 37,
+   "st": "소히 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the measurement's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the measurement's part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's measurement.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 38,
+   "st": "무네 피 키토",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the limit's value.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the limit's value.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value's limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 38,
+   "st": "카티 피 키토",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the condition's value.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the condition's value.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the condition of the value.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the condition's value.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the condition's value.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 38,
+   "st": "카티 피 무네",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the condition's limit",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the condition's limit.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the condition's limit.",
+     "yes": true
+    }
+   },
+   "rate": 0.5,
+   "held_out": {
+    "en": "Check the condition's limit.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 39,
+   "st": "히리 피 카푸",
+   "by": [
+    "google/gemini-3.8-flash",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's pass.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network transfer.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the handover's network.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the network pass.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the network pass.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 39,
+   "st": "히리 피 레차",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the network handover.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network's handover.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 39,
+   "st": "왜 피 카푸",
+   "by": [
+    "google/gemini-3.8-flash",
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the file's transfer.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the pass of the file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's handover.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "페포 피 네쿠",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the display part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's output.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0,
+   "held_out": {
+    "en": "Check the display's part.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 40,
+   "st": "패노 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the local display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the nearby output.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "티포 피 페포",
+   "by": [
+    "google/gemini-3.8-flash"
+   ],
+   "decodes": {
+    "x-ai/grok-4.6": {
+     "en": "Check the display of the list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 0,
+   "st": "야헤 피 후태",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the choice's place.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the choice's place",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the chosen place.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 0,
+   "st": "세쿠 피 캐도",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's stage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the stage of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 1,
+   "st": "파로 피 네쿠",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the action's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the action's part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's action.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 2,
+   "st": "세쿠 피 후태",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's location.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program path.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program’s location.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 2,
+   "st": "포하 피 후태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the open place.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the opening of the place.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 2,
+   "st": "페포 피 후태",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display's location.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the display location.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the display’s location.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "위 피 후태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the place of the view.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the place's view.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "니포 피 위",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the machine's view.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's appearance.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 4,
+   "st": "네쿠 피 소테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the part's plan.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's plan.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "파시 다내",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fast command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "파시 후태 피 요",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast path.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fast path.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the fast path.",
+     "yes": false
+    }
+   },
+   "rate": 0.5,
+   "held_out": {
+    "en": "Check the fast path.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 5,
+   "st": "파시 캐다",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast step.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fast step.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "투두 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the connecting machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's connection.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "니포 헤 투두 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the connected machine for the machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine for joining the machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "페포 피 투두 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display's connected machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's output joining.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 7,
+   "st": "페포 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's display.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.5,
+   "held_out": {
+    "en": "Check the display machine.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 7,
+   "st": "위 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the view machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine visually.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 7,
+   "st": "웨치 페포 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check another display machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check another machine's display.",
+     "yes": true
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 8,
+   "st": "페소 미네",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the outside data.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 8,
+   "st": "세쿠 호 왜",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the file from the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program from the file.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 9,
+   "st": "페세 미네",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the internal data.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check inside the data.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 9,
+   "st": "왜 호 미네",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the data from the file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file from the data.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 레",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the previous change.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the previous change.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 캐다",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the previous step.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the previous step.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 파테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the previous version.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the previous version.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 11,
+   "st": "세쿠 피 수초",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's blockage.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program's blockage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the blockage of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "메루 쿠태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the loop start.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the loop's beginning.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "메루 페티",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the loop input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the input loop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "니래 미네",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the next data.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the data's next stage.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 13,
+   "st": "티피 피 티포",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the permission's list.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the permission list.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's permission.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 13,
+   "st": "레세 피 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the ownership list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the ownership's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 13,
+   "st": "예 피 카티",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the person's condition.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the person's condition.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "나 다 피 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of one run.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list of one run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "나 메루 피 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of one repeat.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list of one repetition.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "투와 소네",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the whole sample.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the whole sample.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "래 케포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the bad message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the bad message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "내 케포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the error message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the mistake's message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "소 테패 케포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the unneeded message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check whether nothing needs the message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 16,
+   "st": "히리 케포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "노 피 페소 캐다",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fault's outside step.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the faulty step’s outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "쿠라 소테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the pause plan.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the plan's pause.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "웨치 후태 피 요",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check another path.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the path of another place.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "페세 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the internal program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program inside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "채차 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the answer program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's answer.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "세쿠 피 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 19,
+   "st": "야헤 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the selection list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the selection list.",
+     "yes": true
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 19,
+   "st": "포하 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the open list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the open list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 19,
+   "st": "카티 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the condition list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the condition list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 20,
+   "st": "유 무네 피 쿠테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the time limit's stop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the stopping at the time limit.",
+     "yes": true
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 20,
+   "st": "무네 피 쿠테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the limit's stop.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the limit's stop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 21,
+   "st": "패노 코푸",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the local copy.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the nearby copy.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the nearby copy.",
+     "yes": true
+    }
+   },
+   "rate": 0.5,
+   "held_out": {
+    "en": "Check the nearby copy.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 21,
+   "st": "파시 코푸",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast copy.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the fast copy.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 22,
+   "st": "히리 피 쿠테 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's stopped machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s network stop.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 22,
+   "st": "두차 피 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the dangerous machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the danger of the machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 22,
+   "st": "히리 피 모나",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's control.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network control.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network's control.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 23,
+   "st": "워 피 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the writing program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the writing's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 23,
+   "st": "시새 피 새루 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the code installer.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the code of the setup program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "위 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the view program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "히리 위 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network monitor program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "페포 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 25,
+   "st": "웨치 파테",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check another version.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check another version.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 26,
+   "st": "사해 피 왜얘",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the workspace.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the work storage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the storage of the effort.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 26,
+   "st": "니포 피 사해 네쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the machine's effort part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's effort on the part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 26,
+   "st": "다 피 왜얘",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the run's storage.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the run's storage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the run's drive.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "케포 피 페티 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the input machine of the message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's input message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "새메 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the observation machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's observation.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "케포 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the message machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 28,
+   "st": "니포 페세 세쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program inside the machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program inside the machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "라태 테피",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the trust word.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the word’s trust.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "포해 테피",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the closed word.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the closed word.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "테파 피 쿠태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the start of the use.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the use's beginning.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "예 피 포하",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the person's opening.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the person's opening.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "라태 피 쿠태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the beginning of trust.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the trust's beginning.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 31,
+   "st": "테패 체데",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the required package.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the need for the package.",
+     "yes": false
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 31,
+   "st": "세쿠 헤 체데",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the package for the program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program for the package.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 32,
+   "st": "로헤 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the wait list.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the waiting list.",
+     "yes": true
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the waiting list.",
+     "yes": true
+    }
+   },
+   "rate": 1.0,
+   "held_out": {
+    "en": "Check the waiting list.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 32,
+   "st": "미예 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the turn list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list of turns.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 32,
+   "st": "다 히 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list before the run.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the run’s list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "수포 왜",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the count file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file count.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "수포 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the number list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the number's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "키토 왜",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the value file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value in the file.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "투와 도 피 페포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the total result's display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the display of the whole result.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "소패 피 페포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the priority's display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the display's priority.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 35,
+   "st": "미네 피 차",
+   "by": [
+    "x-ai/grok-4.6",
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the data query.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the data query.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the question about the data.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the data request.",
+     "yes": true
+    }
+   },
+   "rate": 0.6666666666666666,
+   "held_out": {
+    "en": "Check the data request.",
+    "yes": true
+   }
+  },
+  {
+   "concept": 35,
+   "st": "왜얘 피 차",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the storage query.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the storage's question.",
+     "yes": false
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 36,
+   "st": "파캐 파테 피 테파",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the new version's use.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the use of the new version.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 36,
+   "st": "파테 피 레차",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the version's handover.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the handover's version.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 36,
+   "st": "파캐 세쿠 피 후태",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the place of the new program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the place of the new program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 37,
+   "st": "소히 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the measurement machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine’s measurement.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 37,
+   "st": "새메 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the monitoring machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's observation.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 37,
+   "st": "키토 피 니포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the value's machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value's machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 38,
+   "st": "무네 키토",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the limit value.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.5
+  },
+  {
+   "concept": 38,
+   "st": "쿠태 피 수포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the seed.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the beginning's number.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 39,
+   "st": "히리 페 왜",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the file on the network.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's network.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 39,
+   "st": "니포 호 히리 왜",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network file from the machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine from the network drive.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "페소 네쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the outside part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "페포 피 페소 네쿠",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the outside part of the display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's output outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "패노 티포",
+   "by": [
+    "x-ai/grok-4.6"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the near list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the nearby list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 0,
+   "st": "투도 피 후태",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the move's place.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the move's place",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the movement's place.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 1,
+   "st": "카푸 피 네쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the passed part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the parameter.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the passing of the part.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "페포 피 네쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the display's part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 3,
+   "st": "페포 피 후태",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display area.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the screen.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output of the place.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the display's location.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the display's location.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 4,
+   "st": "후태 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the place's setup.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the place's setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup's location.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 4,
+   "st": "토 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the object's setup.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the item configuration.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the thing’s setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 4,
+   "st": "네쿠 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the part's setup.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the setup of the part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "파시 피 후태",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast place.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the speed location.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the place's speed.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 5,
+   "st": "테 피 다내",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the small one's command.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the small command.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the small command.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "투두 피 후태",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the connection's place.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the join's place.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the location of the joining.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 6,
+   "st": "투두 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the connection settings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the connection setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the connection of the setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 7,
+   "st": "데 피 니포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the reading machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the reading machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the reading's machine.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 8,
+   "st": "하레 피 왜",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the output file.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the output file.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the file's output.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 8,
+   "st": "페소 피 하레",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the external output.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the external output.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the output outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 9,
+   "st": "페세 피 페티",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the inside's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the internal input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check inside the input.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "레 피 쿠피",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the removal of the change.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the change removal.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the removal's change.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "쿠피 피 레",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the removal's change.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the removal's change.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the removal of the change.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 10,
+   "st": "니로 피 투도",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the previous move.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the previous move.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the movement of the previous one.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 11,
+   "st": "세쿠 피 토시",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's hold.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the program's hold",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's holding.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "메루 피 데",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the repeated reading.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the repeated reading.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the repetition's reading.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "메루 피 다",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the loop's run.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the loop run.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the repetition’s run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 12,
+   "st": "메루 피 위",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the loop's view.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the loop's view.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the repeat's appearance.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 13,
+   "st": "티피 피 무네",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the permission limit.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the permission limit.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the permission of the limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 13,
+   "st": "티피 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the permission settings.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the permission settings.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup's type.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the permission's setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.6666666666666666,
+   "held_out": {
+    "en": "Check the permission's setup.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 14,
+   "st": "다 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the run list.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the process list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list of the run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "파로 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the action list.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the action list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the action list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 14,
+   "st": "테파 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of uses.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the usage list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the user's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "매수 피 케포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the frequent message.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the frequent message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the frequency's message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 15,
+   "st": "치호 피 케포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the message of doubt.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the doubt message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the message's doubt.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 16,
+   "st": "히리 피 워야",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's statement.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network protocol.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network’s message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 16,
+   "st": "히리 피 도차",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the network's note.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the network's note",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the network's note.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "쿠라 피 라",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the pause's fix.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the fix of the pause.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the pause's fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "웨치 피 라",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the other fix.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the other fix.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check another one's fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 17,
+   "st": "투도 피 라",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the move's fix.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the move's fix",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the movement's fix.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 18,
+   "st": "쿠로 피 세쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the background program.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the continuation program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the continuation of the program.",
+     "yes": false
+    },
+    "deepseek/deepseek-v3.2": {
+     "en": "Check the continuation's program.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333,
+   "held_out": {
+    "en": "Check the continuation's program.",
+    "yes": false
+   }
+  },
+  {
+   "concept": 19,
+   "st": "차 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of questions.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the list of questions.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the question's list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 21,
+   "st": "파시 피 코푸",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the fast one's copy.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the fast copy.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the copy's speed.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 21,
+   "st": "패노 피 왜얘",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the local drive.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the local storage.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the nearby storage.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 22,
+   "st": "두차 피 모나",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the danger's control.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the danger's control",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the control's danger.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 23,
+   "st": "세쿠 피 세쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the program's program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the nested program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the copy of the program.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 24,
+   "st": "데 피 세쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the reader.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the reader.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's reading.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 25,
+   "st": "투데 피 파테",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the separated version.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the separated version.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the separation's version.",
+     "yes": false
+    }
+   },
+   "rate": 0.3333333333333333
+  },
+  {
+   "concept": 25,
+   "st": "투데 피 시새",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the separation's code.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the separator code.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the separation of the code.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 25,
+   "st": "투데 피 피토",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the separation's line.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the delimiter.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the separation of the line.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "워야 피 토소",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the message's reception.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the received message.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the receipt’s message.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 27,
+   "st": "토소 피 니포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the receiving machine.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the receiving machine.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the machine's receipt.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 28,
+   "st": "페세 피 세쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the inside program.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the internal program.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the program's inside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "세 피 테피",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the definition's word.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the definition word.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the definition's word.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "세 피 요",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the definition's name.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the definition's name",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the definition's name.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 29,
+   "st": "얘 피 요",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the true name.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the existing name.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the existence of the name.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "쿠태 피 페티",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the start's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the initial input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the beginning of the input.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "포하 피 페티",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the opening's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the open input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the input’s opening.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 30,
+   "st": "세 피 페티",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the definition's input.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the definition's input.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the run's input.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 31,
+   "st": "다 피 체데",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the run's package.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the run package.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the package's run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 32,
+   "st": "다 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of runs.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the run list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the list's run.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "수포 피 티포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the list of numbers.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the number list.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the number’s list.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 33,
+   "st": "수포 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the number settings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the number setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup of the number.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "도 피 페포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the result's display.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the result display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the result’s output.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 34,
+   "st": "새 피 페포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the display of all.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check every display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check everything's display.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 35,
+   "st": "차 피 다내",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the query command.",
+     "yes": true
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the query command.",
+     "yes": true
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the command’s question.",
+     "yes": false
+    }
+   },
+   "rate": 0.6666666666666666
+  },
+  {
+   "concept": 36,
+   "st": "파캐 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the new one's settings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the new setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the setup of the new one.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 36,
+   "st": "테파 피 새루",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the user's settings.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the usage setup.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the user’s setup.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 38,
+   "st": "쿠태 피 키토",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the initial value.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the initial value.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the value’s beginning.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 38,
+   "st": "무네 피 수포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the limit's number.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the limit number.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the number’s limit.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 39,
+   "st": "페소 피 카푸",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the outside pass.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the outside's pass",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the outside's handover.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "테 피 네쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the small one's part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the small part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part's smallness.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "페소 피 네쿠",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the outer part.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the external part.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the part outside.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  },
+  {
+   "concept": 40,
+   "st": "테 피 페포",
+   "by": [
+    "z-ai/glm-5.3"
+   ],
+   "decodes": {
+    "google/gemini-3.8-flash": {
+     "en": "Check the small one's display.",
+     "yes": false
+    },
+    "x-ai/grok-4.6": {
+     "en": "Check the small display.",
+     "yes": false
+    },
+    "openai/gpt-5.6-luna": {
+     "en": "Check the small output.",
+     "yes": false
+    }
+   },
+   "rate": 0.0
+  }
+ ],
+ "best": {
+  "0": 0,
+  "1": 3,
+  "2": 6,
+  "3": 224,
+  "4": 12,
+  "5": 133,
+  "6": 18,
+  "7": 138,
+  "8": 25,
+  "9": 28,
+  "10": 30,
+  "11": 33,
+  "12": 36,
+  "13": 244,
+  "14": 42,
+  "15": 45,
+  "16": 48,
+  "17": 51,
+  "18": 255,
+  "19": 57,
+  "20": 60,
+  "21": 173,
+  "22": 66,
+  "23": 69,
+  "24": 72,
+  "25": 76,
+  "26": 78,
+  "27": 81,
+  "28": 84,
+  "29": 87,
+  "30": 90,
+  "31": 93,
+  "32": 198,
+  "33": 99,
+  "34": 102,
+  "35": 206,
+  "36": 108,
+  "37": 111,
+  "38": 116,
+  "39": 117,
+  "40": 120
+ },
+ "worst": {
+  "0": 0,
+  "1": 3,
+  "2": 6,
+  "3": 9,
+  "4": 13,
+  "5": 15,
+  "6": 18,
+  "7": 22,
+  "8": 24,
+  "9": 27,
+  "10": 30,
+  "11": 33,
+  "12": 36,
+  "13": 40,
+  "14": 42,
+  "15": 45,
+  "16": 48,
+  "17": 51,
+  "18": 54,
+  "19": 58,
+  "20": 61,
+  "21": 63,
+  "22": 66,
+  "23": 69,
+  "24": 72,
+  "25": 75,
+  "26": 78,
+  "27": 81,
+  "28": 84,
+  "29": 87,
+  "30": 90,
+  "31": 94,
+  "32": 98,
+  "33": 99,
+  "34": 102,
+  "35": 105,
+  "36": 108,
+  "37": 112,
+  "38": 115,
+  "39": 117,
+  "40": 120
+ },
+ "generators": [
+  "google/gemini-3.8-flash",
+  "x-ai/grok-4.6",
+  "z-ai/glm-5.3"
+ ],
+ "decoders": [
+  "google/gemini-3.8-flash",
+  "x-ai/grok-4.6",
+  "openai/gpt-5.6-luna"
+ ],
+ "judge": "anthropic/claude-sonnet-4.5",
+ "held_out": "deepseek/deepseek-v3.2"
+}

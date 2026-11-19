@@ -1088,3 +1088,43 @@ Judge agreement was 64/90 before and 75/90 after. Alignment was checked by eye o
 - **A. Names only.** Keep D142 as written. Tighten the teaching with contrast pairs: a name for CSV, a description for battery. Add a corpus check that a name token has an identifier shape (a capital, a digit, or `. _ / - :`), with commands like *npm* or *git* listed explicitly. Expected effect: the pre-registered +25 on name lines largely survives, the borrowing gain does not, and senders may still borrow, because nothing in a round trip enforces the corpus's rule. **Recommended.** The language stays a language.
 - **B. Allow technical loanwords.** Accept what the senders did and say so in rule 3. Technical chat gains the most. In exchange the language becomes stone grammar around English nouns in that domain, and *error* beside the fault root shows it will displace native words too.
 - **C. Revert** per `REVERT_D142.md`.
+
+**D144. Selecting descriptions by measured decodability works, and it shows where description stops working: it reaches concepts English already names by composition, and almost never reaches opaque nouns.** 2026-11-19. `scripts/select_descriptions.py`; results in `tests/results/selection/pilot.json`. Serves goal 1 (D125). The maintainer chose this route ("try 1").
+
+**Method.** For 41 missing technical nouns (`tests/fixtures/selection_pilot_concepts.json`; D140's taught ones excluded):
+- three models (gemini, grok, glm) proposed three descriptions each, under D140's two rules;
+- 289 distinct valid candidates resulted;
+- each candidate went into a neutral carrier sentence (*Check the X*) and was translated blind by the decoding models that had not proposed it (gemini, grok, luna);
+- claude-sonnet-4.5 judged whether the English names the concept;
+- the best and worst candidate per concept were re-decoded by deepseek, which neither generated nor scored.
+
+A mocked run confirmed alignment through the shuffle, 369 of 369.
+
+**Results.**
+
+| Measure | Result |
+|---|---|
+| Average candidate | **6%** decoded |
+| Best per concept | 23% |
+| **Held-out deepseek** | **winners 8/17 (47%), losers 2/17 (12%)** |
+| Concepts won (≥2/3 of decoders) | 7 of 41 |
+| Weak (1/3–2/3) | 10 |
+| Nothing works | 24 |
+
+The held-out gap is the result that matters: selection found decodability that transfers to a model outside the loop, not one model's taste.
+
+**Where it works and where it does not.**
+- **Wins** are concepts English already names compositionally: queue (*wait list*), timeout (*time's stop*), dependency (*need's package*), query (*data's request*), dropdown (*choice's list*), threshold (*condition's limit*), cache (*near copy*), permissions (*allow's setup*).
+- **Zeros** are opaque nouns: button, tab, window, battery, microphone, browser, compiler, firewall, spreadsheet, password, login, email.
+  - A reasonable description of one comes back as the description, not the word. *Network's message* returns *network message*, never *email*.
+  - Toki pona leaves that gap to shared context. One-shot translation has none.
+- **This is the same population the senders borrowed from in D143**: firewall, compiler, browser, battery, microphone, login. Senders borrow exactly where description fails.
+
+**Caveats.**
+- The carrier gives no context, so real sentences will decode better than this. It is a strict test, chosen so the ranking means something.
+- The judge's strictness on this task is uncalibrated against hand labels. It accepted *version's line* for *branch*.
+- 4 winners use a bare two-root shape (*wait list*, *show machine*, *near copy*, *fast place's name*). That is G34's undecidable shape, so they must be reworded to the possessor and re-tested before adoption.
+
+### OPEN
+- **Adopt the 17 descriptions at ≥1/3**, the 4 bare-compound ones reworded and re-tested, as taught lines. Then measure on a fresh sealed set.
+- **The 24 that no description reaches are where D143's A/B choice actually bites**: coin roots for the frequent ones (button, screen, window, email, password, login, browser …), as D130 did successfully for program and code; or allow technical loanwords (D143 B). This is the maintainer's call. The D143 choice is still open.
