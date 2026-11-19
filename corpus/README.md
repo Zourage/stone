@@ -32,7 +32,7 @@ Taken from the corpus itself. `scripts/validate.py` fails if this list or the to
 - **stance**: intend, predict, propose, trust, risk, assert
 - **verb ending**: past, future, neg, sub
 - **clause type**: question, imperative, conditional, if, equative, agentless, clause-subject, clause-anaphora
-- **argument marking**: obj, loc, poss, with, for, from, det, compound, nominal-root, region
+- **argument marking**: obj, loc, poss, with, for, from, det, compound, nominal-root, region, describe
 - **quantity**: numeral, quantifier, all, none, both, ordinal, n-times, how-often, comparison, focus
 - **colour and approximation**: color, approx, fraction
 - **question words**: q-what, q-which, q-where, q-why, q-how, q-when, q-who
@@ -41,4 +41,4 @@ Taken from the corpus itself. `scripts/validate.py` fails if this list or the to
 - **calendar**: weekday, part-of-day
 - **domain and uncategorised**: after, before, domain-code, domain-discussion, domain-experiment, domain-physical, domain-time, domain-work, here, now, then, there
 
-Total: 94 distinct tags over 1496 sentences.
+Total: 95 distinct tags over 1517 sentences.

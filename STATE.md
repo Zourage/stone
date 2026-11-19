@@ -16,6 +16,12 @@ Two, and they stand until the maintainer changes them. **Tag any proposed work t
 - **General set:** no change either way.
 - **The first general set is retired and read** (D139). The fresh sealed set's baseline is **53.8% usable (interval 45.6–62.0), 42.4% FAITHFUL**; pair the next change against it.
 - **Why the other half fails:** missing words cause 38 of 55 weak items, and the sender substitutes the nearest root. **The variable/store root is a carve defect**: it absorbs every storage location. Path is the top missing noun. Ten constructions are missing (D139 OPEN).
+- **Missing words are now solved by description** (D140), toki pona's way:
+  - the head is the most specific root that says what the thing is;
+  - the modifier attaches with the possessor, so no undecidable split is added.
+  - **storage** is split out of the variable root;
+  - path is *the place's name*;
+  - the effect is pending measurement.
 
 **Goal 1 — can an LLM translate this language?** The acceptance test, bar set in D50: cold agents given the train split as `English ||| script` and nothing else, **100% meaning-correct** stone → English and **≥90% exact** English → stone. **The honest claim is *some current frontier models clear the bar*, not *an LLM*** (D126), and **which** three is unstable across draws (D128). Test 9, 120 held on the corpus at 1434: gemini-3.8-flash **96.7%**, glm-5.3 **94.2%**, grok-4.6 **91.7%**, claude-sonnet-4.5 87.5%, gpt-5.6-luna 81.7%. Test 8 on a 60-sentence draw had the same count clearing but not the same three — GLM 85.0 → 94.2, Claude 91.7 → 87.5 — with three corpus changes in between, so neither movement is attributable and the larger draw is the better number. Tests 1–7 were Claude-only and read as more than they were.
 

@@ -778,8 +778,8 @@
  {
   "form": "키포",
   "pos": "root",
-  "gloss": "variable, store",
-  "sense_notes": "A named slot that holds a value; a variable, a field, a store. Verbal: to store, to assign, to put a value into a slot. Same consonant family as value: variable is the container, value the content. Not name (the label of the slot; that is the name root) and not place (a location).",
+  "gloss": "variable, field",
+  "sense_notes": "A named slot inside a program that holds one value; a variable, a field. Verbal: to store, to assign: put one value into a slot (store the result in this variable). Same consonant family as value: variable is the container, value the content. Not name (the label of the slot; that is the name root), not place (a location), and since D140 not storage (a disk, drive, repository or archive where files and data are kept; that is the storage root). The round trip showed the old gloss 'variable, store' pulling every storage place here, where the reader took it as a variable.",
   "id": "w0098",
   "added": "2026-09-14"
  },
@@ -1870,5 +1870,13 @@
   "sense_notes": "Focus family, side 4 of 4: alternative. A member of the set that is not the one already in view. Stands before the root like the other members; after the interrogative, every/all or no/none it stacks: which-other-person = who else, every-other-thing = everything else, no-other-thing = nothing else. A bare person root after it is someone else. Not the reciprocal 'each other', which is expressed with the with word (D59).",
   "id": "w0234",
   "added": "2026-11-17"
+ },
+ {
+  "form": "왜얘",
+  "pos": "root",
+  "gloss": "storage",
+  "sense_notes": "A place where files or data are kept for later: a disk, a drive, a repository, an archive, a backup location. Built on the file and hold syllables: where files are held. The head for describing any of these (D140): the network's storage is a network drive, the code's storage a repository, the records' storage an archive, the machine's storage a disk. Not the variable root, which is a named slot inside a program holding one value; not the place root, which is any location at all. Database is the taught compound data plus storage (D130, re-headed in D140).",
+  "id": "w0235",
+  "added": "2026-11-19"
  }
 ]

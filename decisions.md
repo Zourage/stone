@@ -1001,3 +1001,26 @@ The sender substitutes the nearest root rather than dropping the noun, so the ou
 - **Path** is the highest-value missing noun in the code-request domain after *file*.
 - **The ten missing constructions:** duration *for N minutes*, an object relative clause, *the one with*, *enough*, *not until*, excess *too*, *what if*, *as long as*, a beneficiary against a recipient, *unless*.
 - **Decisions 2 (short answers) and 3 (quoting) now have direct evidence**, and they remain the maintainer's.
+
+**D140. Missing words are solved by description, toki pona's way, under one rule D139 earned: the head must be the most specific root that says what the thing is, and the modifier attaches with the possessor. The variable root's noun sense "a store" is split out as a new storage root.** 2026-11-19. Serves goal 1, at no cost to goal 2 (D125). Decided with the maintainer's go-ahead.
+
+**Why description, not coining.** D139's reading found 38 of 55 weak items failing on a missing word. It also found the senders already describing, unprompted. A specific head came back FAITHFUL: *starting number* for seed, *check-number step* for checksum, *setup program* for installer, *show-place* for screen. A sink head broke: *place* for path (3 of 3), *store/variable* for drive, repo and archive (5 of 5, read back as *variable*). So the method was never the problem; the heads were.
+
+**What changed.**
+- **The storage root is coined**, on the file and hold syllables, with no one-syllable-off neighbour in the lexicon. It is the head for disk, drive, repository and archive.
+- **The variable root is narrowed** through the new reviewed route `scripts/resense.py`. That is the first route for changing a gloss or sense note; before it, CLAUDE.md rule 4 left no way to narrow a word. The variable root keeps the slot and the verb *store a value*.
+- **Two lines migrate:** s0574 (*the store is full*, now storage) and s1466 (database, now data + storage). These are carve migrations, not defect corrections, so per D127 they get no regression fixtures.
+- **21 teaching lines** (s1497–s1517, two held) carry the descriptions: path as *the place's name*; network drive, repository, archive and disk as *X's storage*; chart, seed, checksum and installer. Two of the lines teach composition pairs the held lines rely on, per D97 and D113.
+
+**Why the possessor, not a bare second root.** *root root marker* is G34's undecidable shape. Built with the possessor, the 21 lines left the undecidable count at **99 before and after**. Toki pona's *pi* does the same job.
+
+**Goal 2, measured before and after.**
+- **realize.py exact: 324 → 333.** The new lines render literally (*network's storage*), which is the cost of description for a script. The gain came from fixing D137's omission: the realizer had never been taught the focus words. It now renders *only*, *also* and *even* before their phrase, and *who else*, *everything else*, *nothing else*, *someone else* and *another*.
+- **compose.py:** exact 550 → 551, silently wrong 515 → 515.
+- A first wording of the variable gloss broke the realizer's noun/verb split and was reworded before commit. The realizer reads the noun from the gloss up to the first comma and the verb from the first item of "Verbal:".
+
+**Not done.**
+- Freeze, spam, dock and permissions have no description in reach and stay uncoined.
+- The approximation word before a predicate (*it is almost ready*) still renders wrongly in the realizer; that predates this entry and dates from D123.
+
+**Effect:** to be measured as D138 measured D137. A targeted sealed set will be written after this commit, run against the corpus before and after, plus the fresh general set paired. Recorded next, whatever it shows.

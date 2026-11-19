@@ -571,7 +571,7 @@
 {"id": "s0571", "en": "It is not closed.", "st": "우 포해루카", "features": ["direct", "domain-physical", "neg", "stative"], "split": "train"}
 {"id": "s0572", "en": "If the machine is closed, you may not open it.", "st": "니포 포해코 해 에 우 파 포하코디 티피루카", "features": ["allow", "conditional", "direct", "domain-physical", "general", "if", "modal", "neg", "obj", "sub"], "split": "train"}
 {"id": "s0573", "en": "The file is full.", "st": "왜 푸세카", "features": ["direct", "domain-physical", "stative"], "split": "train"}
-{"id": "s0574", "en": "If the store is full, the run will fail, I expect.", "st": "키포 푸세코 해 다 누투키매", "features": ["conditional", "domain-physical", "future", "general", "if", "inferred", "predict"], "split": "train"}
+{"id": "s0574", "en": "If the storage is full, the run will fail, I expect.", "st": "왜얘 푸세코 해 다 누투키매", "features": ["conditional", "domain-physical", "future", "general", "if", "inferred", "predict"], "split": "train"}
 {"id": "s0575", "en": "The list is empty.", "st": "티포 푸소카", "features": ["direct", "domain-physical", "stative"], "split": "train"}
 {"id": "s0576", "en": "The variable is empty. That might break something.", "st": "키포 푸소카모", "features": ["direct", "domain-physical", "risk", "stative"], "split": "train"}
 {"id": "s0577", "en": "Is the file empty or full?", "st": "왜 푸소 쿠 푸세 추", "features": ["domain-physical", "or", "question", "stative"], "split": "train"}
@@ -1463,7 +1463,7 @@
 {"id": "s1463", "en": "I'll set up the package.", "st": "아 체데 파 새루투카마", "features": ["direct", "future", "intend", "obj", "domain-code"], "split": "train"}
 {"id": "s1464", "en": "The package failed.", "st": "체데 누타카", "features": ["direct", "past", "domain-code"], "split": "train"}
 {"id": "s1465", "en": "The shell is open.", "st": "다내 후태 포하카", "features": ["direct", "stative", "compound", "domain-code"], "split": "train"}
-{"id": "s1466", "en": "I checked the database.", "st": "아 미네 키포 파 치타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
+{"id": "s1466", "en": "I checked the database.", "st": "아 미네 왜얘 파 치타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
 {"id": "s1467", "en": "Show me the folder.", "st": "에 왜 후태 파 아 페 페포카마", "features": ["direct", "intend", "imperative", "obj", "loc", "compound", "domain-code"], "split": "train"}
 {"id": "s1468", "en": "The user found a fault.", "st": "테파 예 노 파 웨타카", "features": ["direct", "past", "obj", "compound", "domain-code"], "split": "train"}
 {"id": "s1469", "en": "The container runs.", "st": "체데 후태 다카", "features": ["direct", "compound", "domain-code"], "split": "train"}
@@ -1494,3 +1494,24 @@
 {"id": "s1494", "en": "Someone else made a mistake, I'm told.", "st": "웨치 예 내타케", "features": ["focus", "det", "past", "reported"], "split": "train"}
 {"id": "s1495", "en": "What else failed?", "st": "야 웨치 토 누타 추", "features": ["focus", "question", "q-what", "det", "past"], "split": "train"}
 {"id": "s1496", "en": "Nothing else changed.", "st": "소 웨치 토 레타카", "features": ["focus", "quantifier", "none", "det", "past", "direct"], "split": "train"}
+{"id": "s1497", "en": "The storage is full.", "st": "왜얘 푸세카", "features": ["describe", "direct", "stative"], "split": "train"}
+{"id": "s1498", "en": "The network drive is full.", "st": "히리 피 왜얘 푸세카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1499", "en": "Copy the files to the team drive.", "st": "에 왜 파 예내 피 왜얘 페 코푸카마", "features": ["describe", "poss", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1500", "en": "I put the code in the repo.", "st": "아 시새 파 시새 피 왜얘 페 후태타카", "features": ["describe", "poss", "loc", "obj", "past", "direct"], "split": "train"}
+{"id": "s1501", "en": "The repo has three versions.", "st": "시새 피 왜얘 피 니 파테 얘카", "features": ["describe", "poss", "numeral", "det", "hold-exist", "direct"], "split": "train"}
+{"id": "s1502", "en": "I moved it to the archive.", "st": "아 우 파 미노 피 왜얘 페 투도타카", "features": ["describe", "poss", "loc", "obj", "past", "direct"], "split": "train"}
+{"id": "s1503", "en": "Keep the logs in the archive.", "st": "에 미노 파 미노 피 왜얘 페 후태카마", "features": ["describe", "poss", "loc", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1504", "en": "The disk is almost full.", "st": "니포 피 왜얘 수 푸세카", "features": ["describe", "poss", "approx", "direct", "stative"], "split": "held"}
+{"id": "s1505", "en": "Back up the disk.", "st": "에 니포 피 왜얘 파 코푸카마", "features": ["describe", "poss", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1506", "en": "Who can see the repo?", "st": "야 예 시새 피 왜얘 파 위코디 티캐 추", "features": ["describe", "poss", "question", "q-who", "able", "sub", "obj"], "split": "held"}
+{"id": "s1507", "en": "What is the file's path?", "st": "왜 피 후태 피 요 야 추", "features": ["describe", "poss", "question", "q-what", "equative"], "split": "train"}
+{"id": "s1508", "en": "The path is wrong.", "st": "후태 피 요 얘하루카", "features": ["describe", "poss", "neg", "direct", "stative"], "split": "train"}
+{"id": "s1509", "en": "Fix the path in the settings.", "st": "에 후태 피 요 파 새루 페 라카마", "features": ["describe", "poss", "obj", "loc", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1510", "en": "It is using another path, it seems.", "st": "우 웨치 후태 피 요 파 테파키", "features": ["describe", "poss", "obj", "focus", "inferred"], "split": "train"}
+{"id": "s1511", "en": "Store the path in a variable.", "st": "에 후태 피 요 파 키포 페 키포카마", "features": ["describe", "poss", "obj", "loc", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1512", "en": "The chart is empty.", "st": "수포 피 페포 푸소카", "features": ["describe", "poss", "direct", "stative"], "split": "train"}
+{"id": "s1513", "en": "Change the seed.", "st": "에 쿠태 피 수포 파 레카마", "features": ["describe", "poss", "obj", "imperative", "intend", "direct"], "split": "train"}
+{"id": "s1514", "en": "The checksum is wrong.", "st": "치 피 수포 얘하루카", "features": ["describe", "poss", "neg", "direct", "stative"], "split": "train"}
+{"id": "s1515", "en": "The installer failed.", "st": "새루 피 세쿠 누타카", "features": ["describe", "poss", "past", "direct"], "split": "train"}
+{"id": "s1516", "en": "The archive is almost empty.", "st": "미노 피 왜얘 수 푸소카", "features": ["describe", "poss", "approx", "direct", "stative"], "split": "train"}
+{"id": "s1517", "en": "Who can fix the path?", "st": "야 예 후태 피 요 파 라코디 티캐 추", "features": ["describe", "poss", "question", "q-who", "able", "sub", "obj"], "split": "train"}

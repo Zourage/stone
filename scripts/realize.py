@@ -160,6 +160,10 @@ class Realizer:
         self.WHAT, self.TIME = g("what, which"), g("time")
         self.PERSON, self.THING = g("person"), g("thing")
         self.TRUE = g("true, hold")
+        # D137 focus words, in the determiner slot before the phrase they focus.
+        self.FOCUS = {g("only, just (merely)"): "only", g("also, too, as well"): "also",
+                      g("even"): "even"}
+        self.OTHER = g("other, else, another")
         self.MODALS = {g("be able, have the capacity"): "can", g("want"): "want to",
                        g("should, ought"): "should", g("allow, may"): "may"}
         self.markers = self.lx.markers | {self.IF}
@@ -188,6 +192,23 @@ class Realizer:
     def np(self, idx, toks, forms, case=None):
         """Render a bare argument phrase: determiners, numerals, compounds, head."""
         heads = [forms[i] for i in idx]
+        if len(heads) > 1 and heads[0] in self.FOCUS:      # only / also / even X (D137)
+            return self.FOCUS[heads[0]] + " " + self.np(idx[1:], toks, forms, case)
+        if self.OTHER in heads[:-1]:                       # stacked other (D137)
+            k = heads.index(self.OTHER)
+            pre, head = heads[:k], heads[k + 1:]
+            if head == [self.THING] or head == [self.PERSON]:
+                body = "thing" if head == [self.THING] else "one"
+                if pre == [self.WHAT]:
+                    return ("what" if body == "thing" else "who") + " else"
+                if pre == [self.EVERY]:
+                    return "every" + body + " else"
+                if pre == [self.NONE]:
+                    return ("nothing" if body == "thing" else "no one") + " else"
+                if not pre:
+                    return ("something" if body == "thing" else "someone") + " else"
+            if not pre:
+                return "another " + self.np(idx[k + 1:], toks, forms, case).removeprefix("the ")
         if len(heads) == 1 and heads[0] in self.pron:
             return self.pron[heads[0]][1 if case else 0]
         if len(heads) == 2 and heads[0] == self.WHAT and heads[1] == self.PERSON:
@@ -360,7 +381,9 @@ class Realizer:
         while k < len(idx):
             start = k
             while (k + 1 < len(idx) and forms[idx[k + 1]] not in self.markers
-                   and forms[idx[k + 1]] in self.HEADS
+                   and (forms[idx[k + 1]] in self.HEADS
+                        or (forms[idx[k + 1]] == self.OTHER and forms[idx[k]] in (self.WHAT, self.EVERY, self.NONE))
+                        or (forms[idx[k]] in self.FOCUS and forms[idx[k + 1]] in self.pron))
                    and forms[idx[k]] not in (self.I, self.YOU)
                    and not (forms[idx[k]] in self.ROOTS and not have_subject and k == start
                             and k + 2 < len(idx) and forms[idx[k + 2]] in self.markers)):
@@ -382,7 +405,10 @@ class Realizer:
         w = clause.split()
         if not w:
             return modal
-        i = 1 if w[0].lower() in ("i", "you", "it", "we", "they") else 0
+        i = 0
+        while i < len(w) and w[i].lower() in ("only", "also", "even"):   # D137 focus
+            i += 1
+        i += 1 if i < len(w) and w[i].lower() in ("i", "you", "it", "we", "they") else 0
         while i < len(w) and w[i] in ("the", "this", "that", "every", "no"):
             i += 2
         head = w[:i] or []

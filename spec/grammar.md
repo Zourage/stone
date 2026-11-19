@@ -51,6 +51,33 @@ Two placements to know. **After a relative clause** the focus word comes after t
 
 *Instead* is not coined. *Y instead of X* is *in X's place*: X, possessor, the place root, location case. Coin it only if the round trip shows that construction failing.
 
+## Describing what has no word (D140)
+Most things a speaker needs to name have no root. Name them the way toki pona does, by description, under two rules.
+
+**1. The head is the most specific root that says what the thing is.**
+- *Storage* for a drive, *number* for a seed, *program* for an installer, *name* for a path.
+- Never *place* or *thing* when a narrower root exists.
+
+The round trip shows why. A description with a specific head came back faithful: *starting number* for seed, *setup program* for installer. One headed by *place* came back as *somewhere*, and *path* failed 3 of 3.
+
+**2. The modifier attaches with the possessor**, the language's equivalent of toki pona's *pi*:
+
+| Thing | Written as |
+|---|---|
+| network drive | the network's storage |
+| repository | the code's storage |
+| archive | the records' storage |
+| disk | the machine's storage |
+| path | the place's name (a file's path is the file's place's name) |
+| chart | the numbers' display |
+| seed | the start's number |
+| checksum | the check's number |
+| installer | the setup's program |
+
+The possessor is chosen over a bare second root because *root root marker* is G34's undecidable shape. A description built with the possessor leaves a script nothing to guess: D140's 21 lines added none.
+
+The taught compounds of D130 (server, database, folder, …) stay as they are. They are fixed names for recurring kinds; this section is for naming on the fly. Coin a root only when no description reaches the thing. *Freeze*, *spam*, *dock* and *permissions* are the current examples, and none is coined yet.
+
 ## Number (D48, D62)
 Bare arguments are number-neutral: no plural marking exists or is needed.
 
