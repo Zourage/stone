@@ -21,7 +21,33 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from roundtrip_test import CHUNK, call, context, numbered  # noqa: E402
+import hashlib  # noqa: E402
+import threading  # noqa: E402
+import time  # noqa: E402
+
+import roundtrip_test  # noqa: E402
+from roundtrip_test import CHUNK, context, numbered  # noqa: E402
+
+# Every model call is cached on disk, keyed by model and prompt, so a run that dies
+# resumes where it stopped (the first pilot was killed at its time limit with
+# nothing saved and no way to tell which stage hung).
+_CACHE, _CACHE_PATH, _LOCK = {}, None, threading.Lock()
+
+
+def call(model, prompt):
+    key = hashlib.sha256((model + "\0" + prompt).encode()).hexdigest()
+    with _LOCK:
+        if key in _CACHE:
+            return _CACHE[key]
+    t0 = time.time()
+    out = roundtrip_test.call(model, prompt)
+    print("  call %-28s %5.0fs %s" % (model, time.time() - t0, "ERROR" if out.startswith("ERROR") else "ok"), flush=True)
+    if not out.startswith("ERROR"):
+        with _LOCK:
+            _CACHE[key] = out
+            if _CACHE_PATH:
+                _CACHE_PATH.write_text(json.dumps(_CACHE), encoding="utf-8")
+    return out
 from stonelib import ROOT, Lexicon, is_name, parse_sentence  # noqa: E402
 
 GENERATORS = ["google/gemini-3.8-flash", "x-ai/grok-4.6", "z-ai/glm-5.3"]
@@ -120,6 +146,11 @@ def score(cands, concepts, ctx, models, exclude_self=True):
 
 
 def cmd_run(cpath, opath):
+    global _CACHE, _CACHE_PATH
+    _CACHE_PATH = Path(opath + ".cache.json")
+    if _CACHE_PATH.exists():
+        _CACHE = json.loads(_CACHE_PATH.read_text(encoding="utf-8"))
+        print("resuming with %d cached calls" % len(_CACHE), flush=True)
     lx = Lexicon()
     concepts = json.load(open(cpath, encoding="utf-8"))
     ctx, _ = context()
@@ -141,7 +172,7 @@ def cmd_run(cpath, opath):
                 else:
                     seen[key] = len(cands)
                     cands.append({"concept": ci, "st": p, "by": [m]})
-    print("proposed %d, invalid %d, distinct valid %d" % (raw, bad, len(cands)))
+    print("proposed %d, invalid %d, distinct valid %d" % (raw, bad, len(cands)), flush=True)
     score(cands, concepts, ctx, DECODERS)
     for c in cands:
         v = [d["yes"] for d in c["decodes"].values() if d["yes"] is not None]
