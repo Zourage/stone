@@ -1,0 +1,553 @@
+{
+ "tag": "d140",
+ "set": "describe_other",
+ "commit": "ad12bff",
+ "corpus_lines": 1517,
+ "sentences": [
+  "Can you check the output in the CSV file from this morning's run?",
+  "The new dropdown menu in the UI is missing the third option.",
+  "I think the JSON config is overriding the environment variable.",
+  "The sensor calibration data looks off in column G of the spreadsheet.",
+  "Let's sync on the API endpoint changes after the standup.",
+  "My connection to the database keeps timing out.",
+  "The log file shows a permissions error on the cache folder.",
+  "Did you update the threshold in the settings panel?",
+  "The preview window is just displaying a blank white screen.",
+  "I need write access to the shared network folder for the results.",
+  "The script crashed because the PNG file was corrupted.",
+  "We should use a higher sampling rate for the next test.",
+  "The error is popping up in a modal dialog every time I click Save.",
+  "Can you send me the latest SQL query you used?",
+  "The firmware update is stuck at 75% on my device.",
+  "The data in the table doesn't match the graph on the dashboard.",
+  "I’ll push the fix to the staging server by noon.",
+  "The upload is failing for files larger than 10MB.",
+  "Check the toggle switch for \"advanced mode\" in the sidebar.",
+  "The validation script flagged half the entries in the XML feed.",
+  "The battery level readings are fluctuating wildly on the monitor.",
+  "Let's move the meeting to 3 PM so I can finish this regression test.",
+  "The font in the header is rendering incorrectly on mobile.",
+  "I exported the figures as SVG files and put them in the project folder.",
+  "The API key field in the form is not masked.",
+  "We need to adjust the timeout setting in the proxy configuration.",
+  "The histogram is skewed because of that one outlier value.",
+  "The compiler is throwing a type error on line 142.",
+  "Can you reload the page and see if the button is still grayed out?",
+  "The sensor is sending null values to the message queue.",
+  "I updated the formula in the spreadsheet, so the totals should be correct now.",
+  "Let's use a local cache instead of querying the remote server each time.",
+  "The build failed because of a missing dependency in the package file.",
+  "The audio stream is choppy over the VPN.",
+  "The filter on the admin panel isn't applying to the user list."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "에 이 나대 카유 피 다 피 미네 왜 페세 피 하레 파 치코디 티캐 추",
+    "back": "Can you check the output inside the data file of this morning's run?"
+   },
+   {
+    "n": 2,
+    "st": "페포 페 파캐 티포 피 니 야헤 얘루카",
+    "back": "There is no new list of three choices in the display."
+   },
+   {
+    "n": 3,
+    "st": "새루 키포 파 레키",
+    "back": "The setup variable was changed, I gather."
+   },
+   {
+    "n": 4,
+    "st": "포네 피토 페 새루 미네 노키",
+    "back": "Seven lines in the setup data are faulty, I gather."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 예나 후 히리 타푸 피 레 파 예차코디 티페카",
+    "back": "After we meet, we should discuss the change to the network function."
+   },
+   {
+    "n": 6,
+    "st": "아 피 미네 왜얘 페 투두 유 무네 호 쿠테코디 쿠로카",
+    "back": "The join in my database is still stopping later than the time limit."
+   },
+   {
+    "n": 7,
+    "st": "미노 왜 왜 후태 페 티피루 노 파 페포카",
+    "back": "The log file in the folder may not show the fault."
+   },
+   {
+    "n": 8,
+    "st": "에 무네 파 새루 페 레타 추",
+    "back": "Did you change the limit in the setup?"
+   },
+   {
+    "n": 9,
+    "st": "페포 웨채 위새 푸소 토 파 페포카",
+    "back": "Only the white empty thing is shown."
+   },
+   {
+    "n": 10,
+    "st": "아 도 헤 레포카디 히리 왜 후태 페 워코디 티피 파 테패카",
+    "back": "I need permission to write in the network folder for the shared result."
+   },
+   {
+    "n": 11,
+    "st": "왜 노타코디 호 세쿠 누타카",
+    "back": "The program failed because the file was faulty."
+   },
+   {
+    "n": 12,
+    "st": "아 에 하 니래 와 헤 마소 소네 파 테파코디 티페카",
+    "back": "We should use more samples for the next test."
+   },
+   {
+    "n": 13,
+    "st": "아 키포코디 새 유 페 노 케포 페 페포카",
+    "back": "I show the fault message every time I store."
+   },
+   {
+    "n": 14,
+    "st": "에 에 테파타카디 파캐 다내 파 아 페 카푸코디 티캐 추",
+    "back": "Can you give me the new command that you used?"
+   },
+   {
+    "n": 15,
+    "st": "아 피 니포 페 레 니 패 피 네쿠 페 수초카",
+    "back": "Three quarters of the change in my machine is blocked."
+   },
+   {
+    "n": 16,
+    "st": "티포 페 미네 수포 피 페포 하 두루카",
+    "back": "The list in the data is not the same as the chart."
+   },
+   {
+    "n": 17,
+    "st": "아 라 파 노대 카유 히 와 히리 니포 페 카푸투카마",
+    "back": "I'll give the fix to the server before the afternoon test."
+   },
+   {
+    "n": 18,
+    "st": "테포 푸 호 태카디 왜 피 카푸 누카",
+    "back": "The transfer of the file whose size is bigger than ten fails."
+   },
+   {
+    "n": 19,
+    "st": "에 패노 페 태 새루 피 카티 파 치카마",
+    "back": "Check the condition of the big setup nearby."
+   },
+   {
+    "n": 20,
+    "st": "치 세쿠 왜 페세 페 미네 피 네 피 네쿠 페 노 파 웨타카",
+    "back": "The check program found a fault in half of the data inside the file."
+   },
+   {
+    "n": 21,
+    "st": "페포 페 키토 파치 하 모누코디 쿠로카",
+    "back": "The value in the display is still varying suddenly."
+   },
+   {
+    "n": 22,
+    "st": "아 이 와 파 쿠테코디 티캐코디 헤 아 에 하 예나 파 노대 카유 니 캐피 페 투도코디 티페카",
+    "back": "We should move our meeting to three hours in the afternoon so that I can stop this test."
+   },
+   {
+    "n": 23,
+    "st": "테 니포 페 피레 피 티패 얘하루카",
+    "back": "The text above in the small machine is not correct."
+   },
+   {
+    "n": 24,
+    "st": "아 수포 피 페포 파 왜 헤 리타카 아 우 파 사세 왜 후태 페 후태타카",
+    "back": "I built the chart for the file and put it in the task folder."
+   },
+   {
+    "n": 25,
+    "st": "페티 페 테피 포하카",
+    "back": "The word in the input is open."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 히리 새루 페 유 무네 파 레코디 테패카",
+    "back": "We need to change the time limit in the network setup."
+   },
+   {
+    "n": 27,
+    "st": "우 나 매후루카디 키토 호 수포 피 페포 래카",
+    "back": "That atypical value is worse than the chart."
+   },
+   {
+    "n": 28,
+    "st": "피토 나 패 네 페 리 세쿠 캐토 노 파 페포카",
+    "back": "The type of the built program in line one four two shows the fault."
+   },
+   {
+    "n": 29,
+    "st": "에 페포 파 메루타 후 네쿠 코대루코디 쿠로코디 치코디 티캐 추",
+    "back": "Can you check if the part is still not ready after you repeated the display?"
+   },
+   {
+    "n": 30,
+    "st": "니포 푸소 키토 파 케포 티포 페 카푸카",
+    "back": "The machine passes the empty value to the message list."
+   },
+   {
+    "n": 31,
+    "st": "아 티포 페 타푸 파 레타카 이 유 페 도 얘하코디 티페카",
+    "back": "I changed the function in the list; now the result should be correct."
+   },
+   {
+    "n": 32,
+    "st": "아 에 하 패노 왜얘 파 테파코디 티페카 새 유 페 패누 히리 니포 파 치루코디 티페카",
+    "back": "We should use the local storage; we should not check the remote server every time."
+   },
+   {
+    "n": 33,
+    "st": "체데 왜 페세 페 테패카디 네쿠 얘루코디 호 리 누타카",
+    "back": "The build failed because there is no needed part inside the package file."
+   },
+   {
+    "n": 34,
+    "st": "히리 페 케포 쿠라 매수카",
+    "back": "Pauses in network messages are frequent."
+   },
+   {
+    "n": 35,
+    "st": "새루 페 카티 테파 예 피 티포 페 파로루카",
+    "back": "The user does not act in the list of conditions in the setup."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "에 이 나대 카유 피 다 호 왜 페 하레 파 치코디 티캐 추",
+    "back": "Can you check the output in the file from this morning's run?"
+   },
+   {
+    "n": 2,
+    "st": "파캐 티포 니 야헤 얘루카",
+    "back": "New list three has no choices."
+   },
+   {
+    "n": 3,
+    "st": "아 새루 키포 파 레키메",
+    "back": "I must change the settings variable. Just a proposal."
+   },
+   {
+    "n": 4,
+    "st": "미네 피토 페 매후루키",
+    "back": "The data in the line is not typical, I gather."
+   },
+   {
+    "n": 5,
+    "st": "아 에 하 예차 후 레 파 두하코디 티페카",
+    "back": "We should agree to the change after the discussion."
+   },
+   {
+    "n": 6,
+    "st": "아 피 히리 미네 왜얘 파 매수 쿠테카",
+    "back": "My network database is stopped often."
+   },
+   {
+    "n": 7,
+    "st": "미노 왜 왜 후태 페 내 파 페포카",
+    "back": "The log file in the folder shows the mistake."
+   },
+   {
+    "n": 8,
+    "st": "에 새루 페 무네 파 레타 추",
+    "back": "Did you change the limit in the settings?"
+   },
+   {
+    "n": 9,
+    "st": "페포 후태 위새카",
+    "back": "The screen is white."
+   },
+   {
+    "n": 10,
+    "st": "아 레포 히리 왜 후태 파 워코디 테패카",
+    "back": "I need to write to the shared network folder."
+   },
+   {
+    "n": 11,
+    "st": "세쿠 왜 래코디 호 누타카",
+    "back": "The program failed because the file is bad."
+   },
+   {
+    "n": 12,
+    "st": "아 에 하 니래 와 헤 태 소네 파 테파코디 티페카",
+    "back": "We should use a big sample for the next test."
+   },
+   {
+    "n": 13,
+    "st": "내 새 워 유 페 페포카",
+    "back": "A mistake shows at every write."
+   },
+   {
+    "n": 14,
+    "st": "에 테파타카디 파캐 다내 파 아 페 카푸코디 티캐 추",
+    "back": "Can you give me the new command that you used?"
+   },
+   {
+    "n": 15,
+    "st": "세쿠 레 니포 페 수초카",
+    "back": "The program change is blocked on the machine."
+   },
+   {
+    "n": 16,
+    "st": "미네 티포 페 수포 피 페포 하 두루카",
+    "back": "The data in the list is not the same as the chart."
+   },
+   {
+    "n": 17,
+    "st": "아 라 파 히리 니포 페 노대 카유 히 카푸투카마",
+    "back": "I'll pass the fix to the server by the afternoon."
+   },
+   {
+    "n": 18,
+    "st": "왜 푸 호 태 파 카푸 누카",
+    "back": "Passing a file bigger than ten fails."
+   },
+   {
+    "n": 19,
+    "st": "에 새루 페 카티 파 치카마",
+    "back": "Check the condition in the settings."
+   },
+   {
+    "n": 20,
+    "st": "세쿠 네 피 네쿠 미네 파 노타카",
+    "back": "The program corrupted half of the data."
+   },
+   {
+    "n": 21,
+    "st": "키토 매수 모누카",
+    "back": "The value varies often."
+   },
+   {
+    "n": 22,
+    "st": "아 에 하 예나 파 노대 카유 페 투도코디 티페카 해 아 와 파 초코디 티캐카",
+    "back": "If we move the meeting to the afternoon, I can finish the test."
+   },
+   {
+    "n": 23,
+    "st": "요 피레 페 얘하루카",
+    "back": "The name above is wrong."
+   },
+   {
+    "n": 24,
+    "st": "아 도 파 왜 페 워타카 아 우 파 사세 왜 후태 페 후태타카",
+    "back": "I wrote the result in the file. I put it in the task folder."
+   },
+   {
+    "n": 25,
+    "st": "키포 포하카",
+    "back": "The variable is open."
+   },
+   {
+    "n": 26,
+    "st": "아 에 하 새루 페 유 무네 파 레코디 테패카",
+    "back": "We need to change the time limit in the settings."
+   },
+   {
+    "n": 27,
+    "st": "수포 피 페포 우 키토 호 두루카",
+    "back": "The chart is not the same as that value."
+   },
+   {
+    "n": 28,
+    "st": "세쿠 피토 페 캐토 노 파 페포카",
+    "back": "The program shows a type fault in the line."
+   },
+   {
+    "n": 29,
+    "st": "에 페포 파 메루코디 티캐 추 야헤 쿠로 위사 추",
+    "back": "Can you show it again? Is the selection still black?"
+   },
+   {
+    "n": 30,
+    "st": "니포 푸소 키토 파 케포 페 카푸카",
+    "back": "The machine passes the empty value to the message."
+   },
+   {
+    "n": 31,
+    "st": "아 티포 페 수포 파 레타카 도 얘하코디 티페카",
+    "back": "I changed the number in the list. The result should be right."
+   },
+   {
+    "n": 32,
+    "st": "아 에 하 이 왜얘 파 테파코디 티페카 패누 히리 니포 파 차루카",
+    "back": "We should use this storage; do not ask the remote server."
+   },
+   {
+    "n": 33,
+    "st": "리 체데 왜 페 얘루 네쿠 호 누타카",
+    "back": "The build package failed because of a part that does not exist in the file."
+   },
+   {
+    "n": 34,
+    "st": "하레 히리 페 수래카",
+    "back": "The output is spread out on the network."
+   },
+   {
+    "n": 35,
+    "st": "모누 테파 예 티포 페 테파루카",
+    "back": "The factor user does not use in the list."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "LOSS",
+    "2": "BROKEN",
+    "3": "DEGRADED",
+    "4": "BROKEN",
+    "5": "FAITHFUL",
+    "6": "BROKEN",
+    "7": "BROKEN",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "DEGRADED",
+    "12": "LOSS",
+    "13": "DEGRADED",
+    "14": "LOSS",
+    "15": "LOSS",
+    "16": "LOSS",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "BROKEN",
+    "20": "FAITHFUL",
+    "21": "LOSS",
+    "22": "BROKEN",
+    "23": "LOSS",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "FAITHFUL",
+    "27": "BROKEN",
+    "28": "BROKEN",
+    "29": "FAITHFUL",
+    "30": "FAITHFUL",
+    "31": "FAITHFUL",
+    "32": "FAITHFUL",
+    "33": "FAITHFUL",
+    "34": "DEGRADED",
+    "35": "BROKEN"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "BROKEN",
+    "3": "BROKEN",
+    "4": "DEGRADED",
+    "5": "FAITHFUL",
+    "6": "LOSS",
+    "7": "DEGRADED",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "DEGRADED",
+    "11": "DEGRADED",
+    "12": "DEGRADED",
+    "13": "LOSS",
+    "14": "FAITHFUL",
+    "15": "DEGRADED",
+    "16": "FAITHFUL",
+    "17": "LOSS",
+    "18": "DEGRADED",
+    "19": "DEGRADED",
+    "20": "BROKEN",
+    "21": "DEGRADED",
+    "22": "DEGRADED",
+    "23": "BROKEN",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "FAITHFUL",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "DEGRADED",
+    "30": "FAITHFUL",
+    "31": "DEGRADED",
+    "32": "FAITHFUL",
+    "33": "FAITHFUL",
+    "34": "BROKEN",
+    "35": "BROKEN"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "LOSS",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "BROKEN",
+    "5": "DEGRADED",
+    "6": "BROKEN",
+    "7": "BROKEN",
+    "8": "FAITHFUL",
+    "9": "LOSS",
+    "10": "FAITHFUL",
+    "11": "LOSS",
+    "12": "DEGRADED",
+    "13": "BROKEN",
+    "14": "DEGRADED",
+    "15": "LOSS",
+    "16": "LOSS",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "BROKEN",
+    "20": "LOSS",
+    "21": "DEGRADED",
+    "22": "BROKEN",
+    "23": "DEGRADED",
+    "24": "BROKEN",
+    "25": "DEGRADED",
+    "26": "FAITHFUL",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "DEGRADED",
+    "30": "LOSS",
+    "31": "LOSS",
+    "32": "FAITHFUL",
+    "33": "LOSS",
+    "34": "DEGRADED",
+    "35": "BROKEN"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "BROKEN",
+    "3": "BROKEN",
+    "4": "DEGRADED",
+    "5": "DEGRADED",
+    "6": "BROKEN",
+    "7": "DEGRADED",
+    "8": "FAITHFUL",
+    "9": "LOSS",
+    "10": "LOSS",
+    "11": "LOSS",
+    "12": "BROKEN",
+    "13": "LOSS",
+    "14": "DEGRADED",
+    "15": "DEGRADED",
+    "16": "FAITHFUL",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "DEGRADED",
+    "20": "BROKEN",
+    "21": "DEGRADED",
+    "22": "DEGRADED",
+    "23": "DEGRADED",
+    "24": "DEGRADED",
+    "25": "DEGRADED",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "DEGRADED",
+    "29": "BROKEN",
+    "30": "DEGRADED",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "DEGRADED",
+    "35": "BROKEN"
+   }
+  }
+ }
+}

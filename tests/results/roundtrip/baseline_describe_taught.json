@@ -1,0 +1,553 @@
+{
+ "tag": "baseline",
+ "set": "describe_taught",
+ "commit": "922e2ff",
+ "corpus_lines": 1496,
+ "sentences": [
+  "The drive is full again, so I can't save today's results.",
+  "Is the disk nearly full? My last run stopped halfway.",
+  "Can you pull the repo? I fixed the path issue.",
+  "The repository still has the old config, so it won't run.",
+  "Did you unpack the archive? It looked empty.",
+  "I made a backup before changing anything, just in case.",
+  "Send me the file path again; I can't find the folder.",
+  "This chart looks odd, maybe the units are wrong.",
+  "What random seed did you use? I can't match your numbers.",
+  "The checksum doesn't match, so the download may be bad.",
+  "The installer failed at the last step, so I restarted it.",
+  "I moved the data to the external drive, so the laptop is faster.",
+  "The drive disconnected while it was copying, so I'm not sure what finished.",
+  "Can you check the drive? It says read-only when I try to save.",
+  "The drive is almost empty now, so we can keep the new results.",
+  "The disk is slow today, so the run took forever.",
+  "Is the disk busy? I can't write the output.",
+  "I cleaned up the disk, so there's room for another run.",
+  "The disk error came back, so I'm stopping the experiment.",
+  "Push your changes to the repo when you can, so I can test them.",
+  "The repository is missing the new script, so the job failed.",
+  "I updated the repo, but you may need to reload the program.",
+  "The archive is too big to email, so I put it on the shared folder.",
+  "Did the archive finish downloading? It looked incomplete.",
+  "I'll keep the archive for a week, then delete it if you don't need it.",
+  "The archive wouldn't open, so I tried another one.",
+  "The backup ran overnight, so the old files are safe.",
+  "Can you make a backup before I change the settings?",
+  "I restored from the backup, but the recent edits are gone.",
+  "Use this file path instead: data/results/2024.",
+  "The file path has a space, so the script broke.",
+  "Send me the file path for the new results.",
+  "I'll add a chart tomorrow so it's easier to compare.",
+  "The chart is missing labels, so I can't read it.",
+  "That chart makes sense now, thanks."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "키포 메루 푸세카 아 이 카유 피 도 파 키포코디 티캐루카",
+    "back": "The loop variable is full. I cannot store today's result."
+   },
+   {
+    "n": 2,
+    "st": "키포 수 푸세 추 아 피 니로 다 네 피 네쿠 페 쿠테타카",
+    "back": "Is the variable almost full? I stopped at half of my previous run."
+   },
+   {
+    "n": 3,
+    "st": "에 왜 후태 파 토사코디 티캐 추 아 후태 노 파 라타카",
+    "back": "Can you take the folder? I fixed the fault there."
+   },
+   {
+    "n": 4,
+    "st": "왜 후태 피 파캐루코디 새루 얘코디 쿠로카 우 다루투카",
+    "back": "The old folder's setup is still there. It will not run."
+   },
+   {
+    "n": 5,
+    "st": "에 체데 파 포하타 추 우 푸소키",
+    "back": "Did you open the package? It seems empty."
+   },
+   {
+    "n": 6,
+    "st": "아 토 파 레카디 히 코푸 파 리타카 두차 얘카모",
+    "back": "I built a copy before altering it. There might be a danger."
+   },
+   {
+    "n": 7,
+    "st": "에 왜 피 후태 파 메루 아 페 카푸카마 아 왜 후태 파 웨코디 티캐루카",
+    "back": "Give me your folder again. I cannot find the folder."
+   },
+   {
+    "n": 8,
+    "st": "이 매노 매후루키 수미 얘하루카모",
+    "back": "This pattern does not seem typical. The unit might not be correct."
+   },
+   {
+    "n": 9,
+    "st": "에 야 소루 수포 파 테파타 추 아 에 피 수포 하 두코디 티캐루카",
+    "back": "What random number did you use? I cannot match your number."
+   },
+   {
+    "n": 10,
+    "st": "치 수포 두루카 토소 체데 래카모",
+    "back": "The checksums do not match. The received package might be bad."
+   },
+   {
+    "n": 11,
+    "st": "새루 세쿠 쿠테 캐다 페 누타카 아 우 파 메루 쿠태타카",
+    "back": "The setup program failed at the stop step. I started it again."
+   },
+   {
+    "n": 12,
+    "st": "아 미네 파 페소 키포 페 투도타카 테 니포 파시코디 쿠태타카",
+    "back": "I moved the data to an external store. The small machine became fast."
+   },
+   {
+    "n": 13,
+    "st": "키포 코푸코디 유 페 투데타카 아 야 토 초타카디 파 사루카",
+    "back": "The variable was separated while being copied. I do not know what was done."
+   },
+   {
+    "n": 14,
+    "st": "에 키포 파 치코디 티캐 추 아 키포코디 티파코디 유 페 웨채 데 파 워야카",
+    "back": "Can you check the variable? I only say to read while I want to store."
+   },
+   {
+    "n": 15,
+    "st": "키포 이 유 페 수 푸소카 아 에 하 파캐 도 파 키포코디 티캐카",
+    "back": "The variable is almost empty now. I can store the new result with you."
+   },
+   {
+    "n": 16,
+    "st": "키포 이 카유 페 파수카 다 피 유 마소타카",
+    "back": "The variable is slow today. The run's time increased."
+   },
+   {
+    "n": 17,
+    "st": "키포 코체루 추 아 하레 파 워코디 티캐루카",
+    "back": "Is the variable not free? I cannot write the output."
+   },
+   {
+    "n": 18,
+    "st": "아 키포 파 푸소타카 웨치 다 헤 후태 얘카",
+    "back": "I emptied the variable. There is space for another run."
+   },
+   {
+    "n": 19,
+    "st": "키포 노 메루타카 아 와 파 쿠테카",
+    "back": "The variable's fault repeated. I am stopping the test."
+   },
+   {
+    "n": 20,
+    "st": "에 에 피 레 파 에 티캐코디 유 페 왜 후태 페 카푸카마 아 우 파 와코디 티캐카",
+    "back": "Give the folder while you can make your change. I can test it."
+   },
+   {
+    "n": 21,
+    "st": "왜 후태 피 파캐 세쿠 얘루카 사세 누타카",
+    "back": "The folder has no new program. The task failed."
+   },
+   {
+    "n": 22,
+    "st": "아 왜 후태 파 레타카 채 에 세쿠 파 메루 다코디 테패코디 티피카",
+    "back": "I altered the folder, but you may need to run the program again."
+   },
+   {
+    "n": 23,
+    "st": "체데 태카 아 우 파 카푸코디 티캐루카 아 우 파 레포 왜 후태 페 후태타카",
+    "back": "The package is big. I cannot give it. I put it in the shared folder."
+   },
+   {
+    "n": 24,
+    "st": "체데 토소코디 초타 추 우 초루키",
+    "back": "Is receiving the package done? It seems not."
+   },
+   {
+    "n": 25,
+    "st": "아 나 캐파 헤 체데 파 키포투카마 우 후 에 우 파 테패루코 해 아 우 파 쿠피투카마",
+    "back": "I will store the package for a week. After that, if you do not need it, I will remove it."
+   },
+   {
+    "n": 26,
+    "st": "체데 포하루타카 아 웨치 토 파 와타카",
+    "back": "The package was not opened. I tested something else."
+   },
+   {
+    "n": 27,
+    "st": "코푸 카요 페 다타카 파캐루코디 왜 두차 얘루카",
+    "back": "The copy ran at night. The old file has no danger."
+   },
+   {
+    "n": 28,
+    "st": "아 새루 파 레카디 히 에 코푸 파 리코디 티캐 추",
+    "back": "Can you build a copy before I alter the setup?"
+   },
+   {
+    "n": 29,
+    "st": "아 코푸 호 리타카 채 파캐 레 얘루카",
+    "back": "I built it from a copy, but there is no new change."
+   },
+   {
+    "n": 30,
+    "st": "에 이 왜 피 후태 파 테파카마 data/results/2024",
+    "back": "Use this folder data/results/2024"
+   },
+   {
+    "n": 31,
+    "st": "왜 피 후태 피 푸소 후태 얘카 세쿠 누타카",
+    "back": "There is an empty place in the folder. The program failed."
+   },
+   {
+    "n": 32,
+    "st": "에 파캐 도 헤 왜 피 후태 파 아 페 카푸카마",
+    "back": "Give me the folder for the new result."
+   },
+   {
+    "n": 33,
+    "st": "아 니래 카유 페 매노 파 리투카마 티왜코디 타로카",
+    "back": "I will build the pattern tomorrow. Comparing is easy."
+   },
+   {
+    "n": 34,
+    "st": "매노 피 요 얘루카 아 우 파 데코디 티캐루카",
+    "back": "The pattern has no name. I cannot read it."
+   },
+   {
+    "n": 35,
+    "st": "우 매노 피 요하 이 유 페 해위카 우 로카",
+    "back": "The pattern's meaning is clear now. It is good."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "왜 메루 푸세카 아 이 카유 도 파 미노코디 티캐루카",
+    "back": "The file is full again. I cannot record the result today."
+   },
+   {
+    "n": 2,
+    "st": "왜 수 푸세 추 아 니로 다 네 피 네쿠 페 쿠테타카",
+    "back": "Is the file almost full? I stopped at half of the previous run."
+   },
+   {
+    "n": 3,
+    "st": "에 왜 후태 파 토소코디 티캐 추 아 후태 노 파 라타카",
+    "back": "Can you receive the folder? I fixed the fault in the place."
+   },
+   {
+    "n": 4,
+    "st": "왜 후태 피 니로 새루 얘코디 쿠로카 우 다코디 티캐루카",
+    "back": "The folder still has the previous setup. It cannot run."
+   },
+   {
+    "n": 5,
+    "st": "에 체데 파 포하타 추 우 푸소키",
+    "back": "Did you open the package? It is empty, I gather."
+   },
+   {
+    "n": 6,
+    "st": "아 토 파 레카디 히 코푸 파 리타카모",
+    "back": "Before I alter the thing, I built a copy; that might go wrong."
+   },
+   {
+    "n": 7,
+    "st": "에 왜 후태 파 메루 아 페 카푸카마 아 왜 후태 파 웨코디 티캐루카",
+    "back": "Pass the folder to me again; I cannot find the folder."
+   },
+   {
+    "n": 8,
+    "st": "이 도 매후루카 수미 래키메",
+    "back": "This result is not typical. The unit seems bad. Just a hypothesis."
+   },
+   {
+    "n": 9,
+    "st": "에 야 소루 수포 파 테파타 추 아 에 피 수포 파 두코디 티캐루카",
+    "back": "Which random number did you use? I cannot match your number."
+   },
+   {
+    "n": 10,
+    "st": "수포 두루카 왜 토소 래카모",
+    "back": "The numbers are not the same. Receiving the file is bad; that might go wrong."
+   },
+   {
+    "n": 11,
+    "st": "새루 세쿠 쿠테 캐다 페 누타카 아 우 파 메루 다타카",
+    "back": "The setup program failed at the last step. I ran it again."
+   },
+   {
+    "n": 12,
+    "st": "아 미네 파 페소 왜 페 투도타카 테 니포 파시카",
+    "back": "I moved the data to an external file. The small machine is fast."
+   },
+   {
+    "n": 13,
+    "st": "왜 코푸코디 유 페 투데타카 아 야 초 파 사루카",
+    "back": "The file separated while copying; I do not know what is done."
+   },
+   {
+    "n": 14,
+    "st": "에 왜 파 치코디 티캐 추 우 아 키포코디 유 페 워코디 티피루 워야카",
+    "back": "Can you check the file? It says you may not write while I store it."
+   },
+   {
+    "n": 15,
+    "st": "왜 이 유 페 수 푸소카 아 에 하 파캐 도 파 키포코디 티캐카",
+    "back": "The file is almost empty now. We can store the new result."
+   },
+   {
+    "n": 16,
+    "st": "왜 이 카유 페 파수카 다 유 마소타카",
+    "back": "The file is slow today. The run time was more."
+   },
+   {
+    "n": 17,
+    "st": "왜 코체루 추 아 하레 파 워코디 티캐루카",
+    "back": "Is the file not free? I cannot write the output."
+   },
+   {
+    "n": 18,
+    "st": "아 왜 파 쿠피타카 웨치 다 헤 푸소 얘카",
+    "back": "I removed the file. There is space for another run."
+   },
+   {
+    "n": 19,
+    "st": "왜 노 메루타카 아 와 파 쿠테카",
+    "back": "The file fault repeated. I am stopping the test."
+   },
+   {
+    "n": 20,
+    "st": "에 에 피 레 파 왜 후태 페 에 티캐코디 유 페 카푸카마 아 우 파 와코디 티캐카",
+    "back": "Pass your change to the folder when you can; I can test it."
+   },
+   {
+    "n": 21,
+    "st": "왜 후태 피 파캐 시새 얘루카 사세 누타카",
+    "back": "The folder has no new code. The task failed."
+   },
+   {
+    "n": 22,
+    "st": "아 왜 후태 파 레타카 채 에 세쿠 파 메루 쿠태코디 티패카",
+    "back": "I altered the folder, but you need to start the program again."
+   },
+   {
+    "n": 23,
+    "st": "체데 케포 파 카푸코디 티캐루 태카 아 우 파 레포 왜 후태 페 후태타카",
+    "back": "The package is too big to pass the message. I put it in the shared folder."
+   },
+   {
+    "n": 24,
+    "st": "체데 파 토소 초타 추 우 초루키",
+    "back": "Did you finish receiving the package? It is not done yet, I gather."
+   },
+   {
+    "n": 25,
+    "st": "아 체데 파 나 캐파 헤 토시투카마 에 테패루코 해 아 우 파 쿠피투카마",
+    "back": "I'll hold the package for a week; if you don't need it, I'll remove it."
+   },
+   {
+    "n": 26,
+    "st": "체데 포하코디 티캐루타카 아 웨치 파 포하타카",
+    "back": "The package could not be opened; I opened another one."
+   },
+   {
+    "n": 27,
+    "st": "코푸 카요 페 다타카 니로 왜 두차 얘루카",
+    "back": "The copy ran at night. The previous file has no danger."
+   },
+   {
+    "n": 28,
+    "st": "에 코푸 파 아 새루 파 레카디 히 리코디 티캐 추",
+    "back": "Can you make a copy before I alter the setup?"
+   },
+   {
+    "n": 29,
+    "st": "아 코푸 호 토소타카 채 니래 레 얘루카",
+    "back": "I received from the copy, but there is no next change."
+   },
+   {
+    "n": 30,
+    "st": "에 이 왜 후태 파 테파카마",
+    "back": "Use this folder."
+   },
+   {
+    "n": 31,
+    "st": "왜 후태 피 니유 얘카 세쿠 누타카",
+    "back": "The folder has an interval. The program failed."
+   },
+   {
+    "n": 32,
+    "st": "에 파캐 도 헤 왜 후태 파 아 페 카푸카마",
+    "back": "Pass the folder to me for the new result."
+   },
+   {
+    "n": 33,
+    "st": "아 니래 카유 페 도 파 페포투카마 티왜 타로카",
+    "back": "I'll show the result on the next day. The comparison is easy."
+   },
+   {
+    "n": 34,
+    "st": "도 피 요 얘루카 아 우 파 데코디 티캐루카",
+    "back": "The result has no name. I cannot read it."
+   },
+   {
+    "n": 35,
+    "st": "우 도 이 유 페 해위카",
+    "back": "That result is clear now."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "DEGRADED",
+    "2": "BROKEN",
+    "3": "LOSS",
+    "4": "LOSS",
+    "5": "FAITHFUL",
+    "6": "LOSS",
+    "7": "BROKEN",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "LOSS",
+    "12": "FAITHFUL",
+    "13": "BROKEN",
+    "14": "BROKEN",
+    "15": "FAITHFUL",
+    "16": "FAITHFUL",
+    "17": "FAITHFUL",
+    "18": "FAITHFUL",
+    "19": "FAITHFUL",
+    "20": "BROKEN",
+    "21": "FAITHFUL",
+    "22": "FAITHFUL",
+    "23": "LOSS",
+    "24": "FAITHFUL",
+    "25": "FAITHFUL",
+    "26": "FAITHFUL",
+    "27": "FAITHFUL",
+    "28": "FAITHFUL",
+    "29": "LOSS",
+    "30": "FAITHFUL",
+    "31": "BROKEN",
+    "32": "FAITHFUL",
+    "33": "FAITHFUL",
+    "34": "FAITHFUL",
+    "35": "FAITHFUL"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "BROKEN",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "DEGRADED",
+    "6": "DEGRADED",
+    "7": "DEGRADED",
+    "8": "LOSS",
+    "9": "DEGRADED",
+    "10": "BROKEN",
+    "11": "FAITHFUL",
+    "12": "DEGRADED",
+    "13": "DEGRADED",
+    "14": "FAITHFUL",
+    "15": "FAITHFUL",
+    "16": "LOSS",
+    "17": "FAITHFUL",
+    "18": "BROKEN",
+    "19": "FAITHFUL",
+    "20": "LOSS",
+    "21": "FAITHFUL",
+    "22": "LOSS",
+    "23": "FAITHFUL",
+    "24": "DEGRADED",
+    "25": "FAITHFUL",
+    "26": "LOSS",
+    "27": "FAITHFUL",
+    "28": "FAITHFUL",
+    "29": "DEGRADED",
+    "30": "BROKEN",
+    "31": "DEGRADED",
+    "32": "DEGRADED",
+    "33": "LOSS",
+    "34": "DEGRADED",
+    "35": "FAITHFUL"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "DEGRADED",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "FAITHFUL",
+    "6": "FAITHFUL",
+    "7": "DEGRADED",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "FAITHFUL",
+    "12": "FAITHFUL",
+    "13": "DEGRADED",
+    "14": "DEGRADED",
+    "15": "DEGRADED",
+    "16": "DEGRADED",
+    "17": "DEGRADED",
+    "18": "DEGRADED",
+    "19": "DEGRADED",
+    "20": "BROKEN",
+    "21": "FAITHFUL",
+    "22": "FAITHFUL",
+    "23": "DEGRADED",
+    "24": "FAITHFUL",
+    "25": "FAITHFUL",
+    "26": "FAITHFUL",
+    "27": "FAITHFUL",
+    "28": "FAITHFUL",
+    "29": "DEGRADED",
+    "30": "DEGRADED",
+    "31": "FAITHFUL",
+    "32": "DEGRADED",
+    "33": "FAITHFUL",
+    "34": "FAITHFUL",
+    "35": "LOSS"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "DEGRADED",
+    "2": "DEGRADED",
+    "3": "DEGRADED",
+    "4": "FAITHFUL",
+    "5": "FAITHFUL",
+    "6": "LOSS",
+    "7": "DEGRADED",
+    "8": "FAITHFUL",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "FAITHFUL",
+    "12": "DEGRADED",
+    "13": "DEGRADED",
+    "14": "FAITHFUL",
+    "15": "DEGRADED",
+    "16": "DEGRADED",
+    "17": "FAITHFUL",
+    "18": "DEGRADED",
+    "19": "FAITHFUL",
+    "20": "FAITHFUL",
+    "21": "DEGRADED",
+    "22": "LOSS",
+    "23": "FAITHFUL",
+    "24": "FAITHFUL",
+    "25": "FAITHFUL",
+    "26": "LOSS",
+    "27": "DEGRADED",
+    "28": "FAITHFUL",
+    "29": "BROKEN",
+    "30": "DEGRADED",
+    "31": "FAITHFUL",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "FAITHFUL",
+    "35": "FAITHFUL"
+   }
+  }
+ }
+}

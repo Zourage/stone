@@ -1024,3 +1024,27 @@ The sender substitutes the nearest root rather than dropping the noun, so the ou
 - The approximation word before a predicate (*it is almost ready*) still renders wrongly in the realizer; that predates this entry and dates from D123.
 
 **Effect:** to be measured as D138 measured D137. A targeted sealed set will be written after this commit, run against the corpus before and after, plus the fresh general set paired. Recorded next, whatever it shows.
+
+**D141. D140 measured: the taught descriptions work, the pattern did not transfer, and the untaught failures are mostly not a vocabulary problem.** 2026-11-19. Results in `tests/results/roundtrip/` (`*_describe_taught`, `*_describe_other`, `d140_test`). Serves goal 1 (D125).
+
+Three sealed sets, each compared item by item between the corpus before D140 (922e2ff, from a worktree) and after it:
+
+| Set | Usable | FAITHFUL |
+|---|---|---|
+| **Taught** (35 lines naming drive, disk, repo, archive, backup, path, chart, seed, checksum, installer) | 58.6% → 72.9%, **+14.3 (+1.4 to +27.1)** | +12.1 (−1.4 to +25.7) |
+| **Untaught** (35 lines naming other concrete technical things, those ten words excluded) | 33.6% → 32.9%, **−0.7 (−10.0 to +8.6)** | −2.9 |
+| **General** (the fresh 79) | 53.8% → 56.6%, +2.8 (−3.8 to +9.5) | −2.2 |
+
+Judge agreement was 48–54 of 70 on the targeted sets. Alignment was checked by eye on all 35 untaught items and is correct; the split is LOSS against DEGRADED again (D138).
+
+**Teaching 21 descriptions taught 21 descriptions, not a method.** The senders do describe untaught nouns, and often well: *data file* for CSV, *network function* for API endpoint, *needed part* for dependency, *message list* for queue, *empty value* for null, *atypical value* for outlier. The rule-1 heads are right. But the untaught set stayed flat, for three reasons, read from all 35 items:
+1. **Names. 11 of 35 lines contain a format or acronym** (CSV, JSON, PNG, SQL, XML, SVG, API, VPN). They score ~20% usable, against ~40% for the rest. A description reaches the category (*a data file*) and cannot reach which sibling (CSV, not JSON), and the judges rightly call that DEGRADED. **This is quoting, not vocabulary**: decision 3, now with a measured cost. D139 found 4% of ordinary chat needs a literal; noun-dense technical chat needs one in a third of lines.
+2. **Domain predicates, not nouns.** *keeps timing out, is skewed, flagged, not masked, choppy, isn't applying, grayed out, popping up, overriding.* The senders dropped or flattened them. D121, D122 and D140 all looked for missing nouns, and none counted missing verbs and states.
+3. **Density.** These lines carry two or three technical nouns each, at a mean of 11 words. Each description keeps the category and loses the identity, so the losses compound in one line. That is the toki pona trade at its limit: it works for one unnamed thing in a sentence and degrades with three.
+
+**What stands.** Rule 1 (specific heads), the possessor (no undecidable splits added), and the storage split all stand: the taught set gained significantly and nothing regressed. **What does not stand is the expectation that description alone closes the gap.** For technical chat, the gap is names first, then domain predicates.
+
+### OPEN
+- **Decision 3 (quoting) is now the largest lever on goal 1 that is measured and not taken.** It is the maintainer's call. It costs CLAUDE.md rule 3 in its current wording, and per D133 two function words, marker exceptions and an amendment to D50's exact-match bar.
+- **Domain predicates:** count them the way D139 counted nouns before coining any. A read of the general sets would do it; the untaught set's nine is a lower bound.
+- The taught, untaught and focus sets are now read. Measure the next change on fresh ones.
