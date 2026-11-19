@@ -1157,3 +1157,32 @@ The held-out gap is the result that matters: selection found decodability that t
 The realizer gain includes a fix for one-syllable verbs: *stopped*, *logged in*, not *stoped*. The 10 new silent errors are new lines the English → stone script mis-composes.
 
 **Effect:** to be measured on a sealed set written after this commit, naming these 26 concepts, before against after, plus the general set. Recorded next, whatever it shows.
+
+**D146. D145 measured: +17.8 usable on sentences naming the 26 concepts, both roots and descriptions significant, and borrowing collapses from 67 English words to 1.** 2026-11-19. Pre-registered in `tests/fixtures/d146_preregistration.txt`. Results in `tests/results/roundtrip/{baseline,d145}_d145.json` and `d145_test.json`. Serves goal 1 (D125).
+
+The sealed set was 45 lines, each naming one of the 26 concepts, written after D145 was committed. It was compared item by item between the corpus before D145 (c781f67, from a worktree) and after it. Judge agreement was 76/90 before and 74/90 after.
+
+**Pre-registered results.**
+
+| | Usable | FAITHFUL |
+|---|---|---|
+| **Primary:** the D145 set | 44.4% → 62.2%, **+17.8 (+7.2 to +28.3)** | +7.2 (−3.9 to +18.3) |
+| General set | +1.9 (−3.8 to +7.9) | −1.6 |
+
+**Breakdown, not pre-registered** (by keyword):
+
+| Lines naming… | Usable | Change |
+|---|---|---|
+| a coined-root concept (24 lines) | 33% → 53% | **+19.8 (+5.2 to +34.4)** |
+| a described concept (27 lines) | 54% → 77% | **+23.1 (+9.3 to +37.0)** |
+
+Both routes work.
+
+**Borrowing.** Under D142's name rule, senders on the before-corpus wrote **67 plain English words** in Latin: battery, browser, button, email, layout, laptop, dependency … On the after-corpus they wrote **1** (*main*). **Senders borrow where the language has no word and stop when it has one.** That answers D143's question with data: loanwords are a symptom of missing vocabulary, not a register senders prefer. It strongly favours D143 A (names only), because the borrowing gain B would have legitimised is reached instead by words of the language. The choice stays the maintainer's.
+
+**Method, confirmed.** Selection by measured decodability (D144) picks descriptions that work. Its 0% list correctly picked out the concepts that needed roots.
+
+### OPEN
+- D143's A/B/C choice, now with this evidence.
+- Scale D144's loop to a few hundred concepts. The 15 pilot concepts still unhandled (microphone, firmware, dashboard, spam, upload, sidebar …) are the first batch.
+- Domain predicates (D141) are still uncounted.

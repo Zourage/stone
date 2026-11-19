@@ -1,0 +1,703 @@
+{
+ "tag": "d145",
+ "set": "d145",
+ "commit": "c5aa622",
+ "corpus_lines": 1591,
+ "sentences": [
+  "Can you check if the button works now? I clicked it and nothing happened.",
+  "The screen is blank after logging in, can you look?",
+  "I need permissions for the new folder, can you grant them?",
+  "The export failed again, it says file locked.",
+  "Browser keeps crashing when I open that tab.",
+  "Compiler warning is back, but build still passes.",
+  "Queue is stuck, no jobs moving for ten minutes.",
+  "Email didn't arrive, maybe firewall blocked it.",
+  "Password reset link expired, can you send another?",
+  "Window won't resize, keeps snapping back.",
+  "Dropdown menu is empty, no options loading.",
+  "Spreadsheet formulas broke after the import.",
+  "Battery is draining fast, laptop shuts down by noon.",
+  "Dependency update broke the service, rolling back now.",
+  "Query returns nothing, but data exists in cache.",
+  "Threshold alert fired twice, seems too low.",
+  "Layout shifted on the monitor, everything overlaps.",
+  "Sensor stopped reporting, maybe connection dropped.",
+  "Branch needs review before I can merge it.",
+  "Timeout happens when I click save, can you check logs?",
+  "Logging in works in browser, but not in app.",
+  "Cache cleared, but page still shows old values.",
+  "Permissions changed, now user can't open file.",
+  "Export is huge, takes forever to download.",
+  "Tab crashed, lost the draft I was typing.",
+  "Email thread has the correct password, I think.",
+  "Compiler is slow today, maybe memory issue.",
+  "Queue backlog cleared, jobs are running again.",
+  "Screen flickers when monitor wakes from sleep.",
+  "Button label says cancel, but it saves.",
+  "Dropdown menu covers the submit button.",
+  "Spreadsheet needs a new column for results.",
+  "Battery warning popped up, can't find charger.",
+  "Service is down, firewall rule changed yesterday.",
+  "Query takes too long, can we add an index?",
+  "Threshold needs raising, too many false alerts.",
+  "Layout looks wrong on smaller monitor.",
+  "Sensor data is noisy, needs filtering.",
+  "Branch is behind main, should I rebase?",
+  "Timeout settings are too short for big imports.",
+  "Logging in loops back to password screen.",
+  "Cache is stale, refresh doesn't help.",
+  "Permissions are missing for the shared drive.",
+  "Export format changed, spreadsheet won't open it.",
+  "Tab count is too high, browser windows get sluggish."
+ ],
+ "pairs": {
+  "gemini-3.8-flash->grok-4.6": [
+   {
+    "n": 1,
+    "st": "에 다웨 이 유 페 파로코디 치코디 티캐 추 아 우 파 테파타카 채 소 토 파로타카",
+    "back": "Can you check if the button works now? I used it but nothing happened."
+   },
+   {
+    "n": 2,
+    "st": "시왜 후 대다 푸소카 에 위코디 티캐 추",
+    "back": "After logging in, the screen is empty. Can you take a look?"
+   },
+   {
+    "n": 3,
+    "st": "아 파캐 왜 후태 헤 티피 피 새루 파 테패카 에 우 파 아 페 카푸코디 티캐 추",
+    "back": "I need permissions for the new folder. Can you give them to me?"
+   },
+   {
+    "n": 4,
+    "st": "왜 피 하레 누 파 메루타카 우 왜 포해코디 워야카",
+    "back": "The export failed again. It said the file is closed."
+   },
+   {
+    "n": 5,
+    "st": "아 우 로얘 파 포하코디 유 페 얘요 누코디 쿠로카",
+    "back": "The browser keeps failing while I try to open that tab."
+   },
+   {
+    "n": 6,
+    "st": "워위 피 두차 메루타카 채 리 누루코디 쿠로카",
+    "back": "The compiler warning repeated, but the build is still succeeding."
+   },
+   {
+    "n": 7,
+    "st": "로헤 피 티포 수초카 푸 캐포 소 사세 투도카",
+    "back": "The queue is blocked; no tasks have moved in ten minutes."
+   },
+   {
+    "n": 8,
+    "st": "아 리예 파 토소루타카 유추 우 파 쿠테타키메",
+    "back": "I didn't receive the email. The firewall must have blocked it."
+   },
+   {
+    "n": 9,
+    "st": "세와 레 피 후태 피 요 쿠테타카 에 웨치 토 파 아 페 카푸코디 티캐 추",
+    "back": "The password-reset path failed. Can you send me another one?"
+   },
+   {
+    "n": 10,
+    "st": "라두 피 테포 레코디 티캐루카 우 니로 테포 페 도코디 쿠로카",
+    "back": "I can't resize the window; it keeps reverting to the previous size."
+   },
+   {
+    "n": 11,
+    "st": "야헤 피 티포 푸소카 소 야헤 페티카",
+    "back": "The dropdown is empty; there are no options."
+   },
+   {
+    "n": 12,
+    "st": "왜 피 페티 후 왜워 피 타푸 누타카",
+    "back": "After the import, the spreadsheet function failed."
+   },
+   {
+    "n": 13,
+    "st": "요웨 파시 하 푸소코디 쿠태카 니포 노대 카유 히 쿠테카",
+    "back": "The battery started draining quickly. The machine will shut down before afternoon."
+   },
+   {
+    "n": 14,
+    "st": "테패 피 체데 레 후 쿠로 피 세쿠 누타카 아 이 유 페 니로 파테 페 도투카마",
+    "back": "After the dependency change the service failed. I'll revert to the previous version now."
+   },
+   {
+    "n": 15,
+    "st": "미네 피 차 소 토 파 도카 채 미네 파시 피 왜얘 페 얘카",
+    "back": "The query returns nothing, but the data is in the cache."
+   },
+   {
+    "n": 16,
+    "st": "카티 피 무네 피 두차 네 메루 도타카 우 테키",
+    "back": "The threshold warning appeared twice; it seems too low."
+   },
+   {
+    "n": 17,
+    "st": "페포 피 매노 대다 페 투도타카 새 토 나 후태 페 후태카",
+    "back": "The layout shifted on the screen; everything piled into one place."
+   },
+   {
+    "n": 18,
+    "st": "소히 피 니포 도해코디 쿠테타카 히리 누타키메",
+    "back": "The sensor stopped reporting. The network must have failed."
+   },
+   {
+    "n": 19,
+    "st": "아 우 파 투두코디 티캐코디 히 파테 피 피토 코피 파 테패카",
+    "back": "I need a review of the branch before I can merge it."
+   },
+   {
+    "n": 20,
+    "st": "아 파테코디 유 페 유 피 쿠테 도카 에 미노 파 치코디 티캐 추",
+    "back": "A timeout occurred while I was committing. Can you check the logs?"
+   },
+   {
+    "n": 21,
+    "st": "시왜 얘요 페 다카 채 세쿠 페 다루카",
+    "back": "Login works in the browser, but the program itself doesn't run."
+   },
+   {
+    "n": 22,
+    "st": "파시 피 왜얘 파 쿠피타카 채 대다 니로 키토 파 페포코디 쿠로카",
+    "back": "I cleared the cache, but the screen still shows the old value."
+   },
+   {
+    "n": 23,
+    "st": "티피 피 새루 레타카 이 유 페 테파 예 왜 파 포하코디 티캐루카",
+    "back": "Permissions were changed; now the user cannot open the file."
+   },
+   {
+    "n": 24,
+    "st": "왜 피 하레 태카 우 토소코디 마소 유 소히카",
+    "back": "The export is large, so receiving it takes extra time."
+   },
+   {
+    "n": 25,
+    "st": "로얘 누타카 아 아 워타카디 티패 파 토추타카",
+    "back": "The tab crashed; I lost the text I had written."
+   },
+   {
+    "n": 26,
+    "st": "리예 피 얘하 세와 얘키",
+    "back": "The email password seems to be correct."
+   },
+   {
+    "n": 27,
+    "st": "워위 이 카유 페 파수카 왜얘 피 노 얘키메",
+    "back": "The compiler is slow today; there may be a storage fault."
+   },
+   {
+    "n": 28,
+    "st": "로헤 피 티포 푸소카 사세 메루 다카",
+    "back": "The queue is empty; the task is looping."
+   },
+   {
+    "n": 29,
+    "st": "대다 예노 쿠테코디 유 페 대다 메루 레카",
+    "back": "While the screensaver stops, the display keeps changing."
+   },
+   {
+    "n": 30,
+    "st": "다웨 피 요 쿠테 워야카 채 우 파테카",
+    "back": "The button is labeled “stop,” but it actually versions."
+   },
+   {
+    "n": 31,
+    "st": "야헤 피 티포 카푸 다웨 피레 페 후태카",
+    "back": "The dropdown sits above the submit button."
+   },
+   {
+    "n": 32,
+    "st": "왜워 도 헤 파캐 피토 파 테패카",
+    "back": "I need a new row for the spreadsheet result."
+   },
+   {
+    "n": 33,
+    "st": "요웨 피 두차 도타카 아 요웨 푸세 니포 파 웨코디 티캐루카",
+    "back": "The battery warning appeared; I can't find a fully charged machine."
+   },
+   {
+    "n": 34,
+    "st": "쿠로 피 세쿠 쿠테타카 니로 카유 페 유추 피 새루 레타카",
+    "back": "The service stopped. Yesterday the firewall settings were changed."
+   },
+   {
+    "n": 35,
+    "st": "미네 피 차 파수카 아 에 하 파시 피 티포 파 리코디 티캐 추",
+    "back": "The query is slow. Can we build an index?"
+   },
+   {
+    "n": 36,
+    "st": "카티 피 무네 무소코디 테패카 마소 얘하루 두차 얘카",
+    "back": "I need to raise the threshold; there are too many false warnings."
+   },
+   {
+    "n": 37,
+    "st": "테 대다 페 페포 피 매노 얘하루카",
+    "back": "The layout is wrong on a small screen."
+   },
+   {
+    "n": 38,
+    "st": "소히 피 니포 피 미네 수래 태카 우 쿠피코디 테패카",
+    "back": "The sensor data has a large spread; I need to remove outliers."
+   },
+   {
+    "n": 39,
+    "st": "파테 피 피토 main 피라 페 후태카 아 우 파 투도코디 티페 추",
+    "back": "The branch is behind main. Should I move it?"
+   },
+   {
+    "n": 40,
+    "st": "태 왜 피 페티 헤 유 피 쿠테 피 새루 테카",
+    "back": "The timeout setting is too short for a large import."
+   },
+   {
+    "n": 41,
+    "st": "시왜 세와 대다 페 메루카",
+    "back": "The login password repeats on the screen."
+   },
+   {
+    "n": 42,
+    "st": "파시 피 왜얘 파캐루카 메루 호하루카",
+    "back": "The cache is not new. Repeating does not help."
+   },
+   {
+    "n": 43,
+    "st": "티피 피 새루 레포 피 왜얘 헤 얘루카",
+    "back": "There are no permissions for the shared storage."
+   },
+   {
+    "n": 44,
+    "st": "왜 피 하레 피 캐토 레타카 왜워 우 파 포하루투카",
+    "back": "The export type was changed. The spreadsheet will not open it."
+   },
+   {
+    "n": 45,
+    "st": "로얘 피 수포 마소카 얘요 피 라두 파수코디 쿠태카",
+    "back": "There are more tabs. The browser window is getting slow."
+   }
+  ],
+  "grok-4.6->gemini-3.8-flash": [
+   {
+    "n": 1,
+    "st": "에 다웨 이 유 페 파로코디 치코디 티캐 추 아 다웨 파 파로타카 채 소 토 파 파로타카",
+    "back": "Can you check whether the button works now? I pressed the button, but it did nothing."
+   },
+   {
+    "n": 2,
+    "st": "대다 시왜 후 푸소카 에 대다 파 위코디 티캐 추",
+    "back": "The screen is empty after login. Can you look at the screen?"
+   },
+   {
+    "n": 3,
+    "st": "아 파캐 왜 후태 헤 티피 피 새루 파 테패카 에 우 파 티피코디 티캐 추",
+    "back": "I need permissions for the new folder. Can you allow it?"
+   },
+   {
+    "n": 4,
+    "st": "왜 피 하레 메루 누타카 우 왜 수초코디 워야카",
+    "back": "The export failed again. It says that the file is blocked."
+   },
+   {
+    "n": 5,
+    "st": "얘요 아 우 로얘 파 포하코디 유 페 누 매수카",
+    "back": "The browser fails often while I open that tab."
+   },
+   {
+    "n": 6,
+    "st": "워위 케포 메루 얘카 채 리 로코디 쿠로카",
+    "back": "There is a compiler message again, but the build is still good."
+   },
+   {
+    "n": 7,
+    "st": "로헤 피 티포 수초카 소 사세 푸 캐포 페 투도루카",
+    "back": "The queue is blocked; no task has moved in ten minutes."
+   },
+   {
+    "n": 8,
+    "st": "리예 토소루타카 유추 우 파 수초타키",
+    "back": "The email was not received; the firewall must have blocked it."
+   },
+   {
+    "n": 9,
+    "st": "세와 레 피 후태 초타카 에 웨치 파 아 페 카푸코디 티캐 추",
+    "back": "The password reset page is finished. Can you send me another one?"
+   },
+   {
+    "n": 10,
+    "st": "라두 테포 파 레코디 티캐루카 우 메루 쿠태 페 후태카",
+    "back": "I cannot change the window size; it is at the beginning of the loop."
+   },
+   {
+    "n": 11,
+    "st": "야헤 피 티포 푸소카 소 야헤 토 다루카",
+    "back": "The dropdown is empty; no option runs."
+   },
+   {
+    "n": 12,
+    "st": "왜워 피 타푸 왜 피 페티 후 누타카",
+    "back": "The spreadsheet function failed after the file import."
+   },
+   {
+    "n": 13,
+    "st": "요웨 파시 하 마수카 니포 노대 카유 히 쿠테카",
+    "back": "The battery drains quickly; the machine will stop by the afternoon."
+   },
+   {
+    "n": 14,
+    "st": "테패 피 체데 파캐 쿠로 피 세쿠 파 누타카 아 니로 파테 파 이 유 페 레카",
+    "back": "The dependency failed the new service; I am changing to the previous version now."
+   },
+   {
+    "n": 15,
+    "st": "미네 피 차 소 토 파 도카 채 미네 파시 피 왜얘 페 얘카",
+    "back": "The query returns nothing, but the data is in the cache."
+   },
+   {
+    "n": 16,
+    "st": "카티 피 무네 케포 네 메루 페포타카 우 테키",
+    "back": "The threshold message was displayed twice; it must be small."
+   },
+   {
+    "n": 17,
+    "st": "페포 피 매노 대다 페 레타카 새 토 투두카",
+    "back": "The layout changed on the screen; everything is merged."
+   },
+   {
+    "n": 18,
+    "st": "소히 피 니포 도해 쿠테타카 히리 쿠테타키",
+    "back": "The sensor stopped reporting; the network must have stopped."
+   },
+   {
+    "n": 19,
+    "st": "파테 피 피토 코피 파 테패카 아 우 파 투두코디 티캐 히",
+    "back": "The branch needs a review before I can merge it."
+   },
+   {
+    "n": 20,
+    "st": "유 피 쿠테 아 키포 파 파로코디 유 페 얘카 에 미노 파 치코디 티캐 추",
+    "back": "There was a timeout while I was modifying the variable. Can you check the logs?"
+   },
+   {
+    "n": 21,
+    "st": "시왜 얘요 페 로카 채 세쿠 페 로루카",
+    "back": "Login works in the browser, but it does not work in the program."
+   },
+   {
+    "n": 22,
+    "st": "파시 피 왜얘 쿠피타카 채 대다 니로 키토 파 쿠로 페포카",
+    "back": "The cache was cleared, but the screen still shows the previous value."
+   },
+   {
+    "n": 23,
+    "st": "티피 피 새루 레타카 이 유 페 테파 예 왜 파 포하코디 티캐루카",
+    "back": "The permissions changed; now the user cannot open the file."
+   },
+   {
+    "n": 24,
+    "st": "왜 피 하레 태카 우 토소코디 유 마소카",
+    "back": "The export is big; it takes more time to receive it."
+   },
+   {
+    "n": 25,
+    "st": "로얘 누타카 아 워타코디 토 파 토추타카",
+    "back": "The tab crashed; I lost what I wrote."
+   },
+   {
+    "n": 26,
+    "st": "리예 피 티포 세와 얘하 얘키",
+    "back": "The email list's password is correct, I gather."
+   },
+   {
+    "n": 27,
+    "st": "워위 이 카유 페 파수카 왜얘 노키",
+    "back": "The compiler is slow today; the storage must be faulty."
+   },
+   {
+    "n": 28,
+    "st": "로헤 피 티포 푸소타카 사세 메루 다카",
+    "back": "The queue became empty; the task is running again."
+   },
+   {
+    "n": 29,
+    "st": "대다 예노 호 쿠태코디 유 페 메루 페포카",
+    "back": "When the screen wakes from sleep, it displays again."
+   },
+   {
+    "n": 30,
+    "st": "다웨 피 티패 쿠테코디 워야카 채 우 키포카",
+    "back": "The button text says to stop, but it saves."
+   },
+   {
+    "n": 31,
+    "st": "야헤 피 티포 카푸 다웨 피레 페 후태카",
+    "back": "The dropdown is above the submit button."
+   },
+   {
+    "n": 32,
+    "st": "왜워 도 헤 파캐 피토 파 테패카",
+    "back": "The spreadsheet needs a new row for the results."
+   },
+   {
+    "n": 33,
+    "st": "요웨 케포 페포타카 아 요웨 파 웨코디 티캐루카",
+    "back": "A battery message was displayed; I cannot find the battery."
+   },
+   {
+    "n": 34,
+    "st": "쿠로 피 세쿠 쿠테카 유추 피 카티 니로 카유 페 레타카",
+    "back": "The service stopped; the firewall rule changed yesterday."
+   },
+   {
+    "n": 35,
+    "st": "미네 피 차 유 마소카 아 에 하 요 파 얘코디 티캐 추",
+    "back": "The query takes a long time; can we give it a name?"
+   },
+   {
+    "n": 36,
+    "st": "카티 피 무네 무소 파 테패카 매수 내 케포 얘카",
+    "back": "The threshold needs an increase; there are frequent error messages."
+   },
+   {
+    "n": 37,
+    "st": "페포 피 매노 테 대다 페 래카",
+    "back": "The layout is bad on a small screen."
+   },
+   {
+    "n": 38,
+    "st": "소히 피 니포 피 미네 수래카 쿠피 파 테패카",
+    "back": "The sensor data is spread out; it needs to be removed."
+   },
+   {
+    "n": 39,
+    "st": "파테 피 피토 쿠태 파테 피 피토 호 니로카 아 우 파 쿠태 호 레코디 티페 추",
+    "back": "The branch is older than the base branch; should I update it from the base?"
+   },
+   {
+    "n": 40,
+    "st": "유 피 쿠테 피 새루 태 왜 피 페티 헤 테카",
+    "back": "The timeout setting is small for large file imports."
+   },
+   {
+    "n": 41,
+    "st": "시왜 메루카 세와 대다 페 후태카",
+    "back": "The login repeats. The password is on the screen."
+   },
+   {
+    "n": 42,
+    "st": "파시 피 왜얘 파캐루카 메루 호하루카",
+    "back": "The cache is not new. Therefore repeating does not help."
+   },
+   {
+    "n": 43,
+    "st": "티피 피 새루 레포 피 왜얘 헤 얘루카",
+    "back": "There are no permissions for the shared drive."
+   },
+   {
+    "n": 44,
+    "st": "왜 피 하레 캐토 레타카 왜워 우 파 포하루카",
+    "back": "The export type changed. Therefore the spreadsheet does not open it."
+   },
+   {
+    "n": 45,
+    "st": "로얘 피 수포 태카 얘요 라두 파수코디 쿠태카",
+    "back": "The number of tabs is big. Therefore the browser window is getting slow."
+   }
+  ]
+ },
+ "judges": {
+  "anthropic/claude-sonnet-4.5": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "LOSS",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "DEGRADED",
+    "5": "LOSS",
+    "6": "FAITHFUL",
+    "7": "FAITHFUL",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "LOSS",
+    "12": "LOSS",
+    "13": "DEGRADED",
+    "14": "LOSS",
+    "15": "FAITHFUL",
+    "16": "FAITHFUL",
+    "17": "LOSS",
+    "18": "DEGRADED",
+    "19": "FAITHFUL",
+    "20": "LOSS",
+    "21": "BROKEN",
+    "22": "LOSS",
+    "23": "FAITHFUL",
+    "24": "FAITHFUL",
+    "25": "LOSS",
+    "26": "BROKEN",
+    "27": "DEGRADED",
+    "28": "BROKEN",
+    "29": "DEGRADED",
+    "30": "BROKEN",
+    "31": "LOSS",
+    "32": "DEGRADED",
+    "33": "BROKEN",
+    "34": "FAITHFUL",
+    "35": "FAITHFUL",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "DEGRADED",
+    "39": "DEGRADED",
+    "40": "FAITHFUL",
+    "41": "DEGRADED",
+    "42": "FAITHFUL",
+    "43": "FAITHFUL",
+    "44": "FAITHFUL",
+    "45": "DEGRADED"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "LOSS",
+    "5": "DEGRADED",
+    "6": "DEGRADED",
+    "7": "FAITHFUL",
+    "8": "DEGRADED",
+    "9": "DEGRADED",
+    "10": "BROKEN",
+    "11": "DEGRADED",
+    "12": "LOSS",
+    "13": "DEGRADED",
+    "14": "DEGRADED",
+    "15": "FAITHFUL",
+    "16": "DEGRADED",
+    "17": "LOSS",
+    "18": "DEGRADED",
+    "19": "FAITHFUL",
+    "20": "BROKEN",
+    "21": "FAITHFUL",
+    "22": "LOSS",
+    "23": "FAITHFUL",
+    "24": "LOSS",
+    "25": "LOSS",
+    "26": "DEGRADED",
+    "27": "DEGRADED",
+    "28": "DEGRADED",
+    "29": "BROKEN",
+    "30": "LOSS",
+    "31": "FAITHFUL",
+    "32": "DEGRADED",
+    "33": "DEGRADED",
+    "34": "FAITHFUL",
+    "35": "BROKEN",
+    "36": "LOSS",
+    "37": "FAITHFUL",
+    "38": "BROKEN",
+    "39": "FAITHFUL",
+    "40": "LOSS",
+    "41": "DEGRADED",
+    "42": "FAITHFUL",
+    "43": "FAITHFUL",
+    "44": "FAITHFUL",
+    "45": "DEGRADED"
+   }
+  },
+  "openai/gpt-5.6-luna": {
+   "gemini-3.8-flash->grok-4.6": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "BROKEN",
+    "5": "FAITHFUL",
+    "6": "FAITHFUL",
+    "7": "FAITHFUL",
+    "8": "LOSS",
+    "9": "DEGRADED",
+    "10": "FAITHFUL",
+    "11": "DEGRADED",
+    "12": "DEGRADED",
+    "13": "FAITHFUL",
+    "14": "FAITHFUL",
+    "15": "FAITHFUL",
+    "16": "FAITHFUL",
+    "17": "FAITHFUL",
+    "18": "LOSS",
+    "19": "FAITHFUL",
+    "20": "FAITHFUL",
+    "21": "DEGRADED",
+    "22": "FAITHFUL",
+    "23": "FAITHFUL",
+    "24": "LOSS",
+    "25": "FAITHFUL",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "BROKEN",
+    "29": "BROKEN",
+    "30": "BROKEN",
+    "31": "FAITHFUL",
+    "32": "BROKEN",
+    "33": "BROKEN",
+    "34": "FAITHFUL",
+    "35": "FAITHFUL",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "DEGRADED",
+    "39": "DEGRADED",
+    "40": "FAITHFUL",
+    "41": "BROKEN",
+    "42": "FAITHFUL",
+    "43": "FAITHFUL",
+    "44": "FAITHFUL",
+    "45": "DEGRADED"
+   },
+   "grok-4.6->gemini-3.8-flash": {
+    "1": "FAITHFUL",
+    "2": "FAITHFUL",
+    "3": "FAITHFUL",
+    "4": "FAITHFUL",
+    "5": "FAITHFUL",
+    "6": "LOSS",
+    "7": "FAITHFUL",
+    "8": "LOSS",
+    "9": "BROKEN",
+    "10": "DEGRADED",
+    "11": "DEGRADED",
+    "12": "FAITHFUL",
+    "13": "DEGRADED",
+    "14": "FAITHFUL",
+    "15": "FAITHFUL",
+    "16": "LOSS",
+    "17": "FAITHFUL",
+    "18": "LOSS",
+    "19": "FAITHFUL",
+    "20": "BROKEN",
+    "21": "FAITHFUL",
+    "22": "FAITHFUL",
+    "23": "FAITHFUL",
+    "24": "LOSS",
+    "25": "FAITHFUL",
+    "26": "DEGRADED",
+    "27": "BROKEN",
+    "28": "FAITHFUL",
+    "29": "DEGRADED",
+    "30": "FAITHFUL",
+    "31": "DEGRADED",
+    "32": "BROKEN",
+    "33": "BROKEN",
+    "34": "FAITHFUL",
+    "35": "BROKEN",
+    "36": "FAITHFUL",
+    "37": "FAITHFUL",
+    "38": "BROKEN",
+    "39": "FAITHFUL",
+    "40": "FAITHFUL",
+    "41": "FAITHFUL",
+    "42": "DEGRADED",
+    "43": "FAITHFUL",
+    "44": "FAITHFUL",
+    "45": "LOSS"
+   }
+  }
+ }
+}
