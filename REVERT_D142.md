@@ -23,4 +23,4 @@ All of it is in one commit, `D142: names carried in their own spelling (trial)`.
 4. Append a decisions entry saying D142 is reverted and why, and update STATE.
 
 ## Commit
-- Trial commit: (filled in by the next commit)
+- Trial commit: `d126a18` (`git revert d126a18`)
